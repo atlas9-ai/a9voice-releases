@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="t d">
+  <title id="t">Windows protected your PC</title>
+  <desc id="d">Two mock-up Windows SmartScreen dialogs. In the first, More info is highlighted in blue. In the second, a Run anyway button is highlighted in blue.</desc>
+  <rect width="720" height="300" rx="16" fill="#17181B"/>
+  <g font-family="Segoe UI, system-ui, sans-serif">
+    <rect x="24" y="24" width="324" height="252" rx="6" fill="#1E3A8A"/>
+    <text x="44" y="62" font-size="19" font-weight="600" fill="#FFFFFF">Windows protected your PC</text>
+    <text x="44" y="92" font-size="12.5" fill="#DCE6FD">Microsoft Defender SmartScreen prevented an</text>
+    <text x="44" y="110" font-size="12.5" fill="#DCE6FD">unrecognized app from starting.</text>
+    <text x="44" y="150" font-size="13" fill="#FFFFFF" text-decoration="underline">More info</text>
+    <rect x="36" y="134" width="82" height="24" rx="6" fill="none" stroke="#7AA2F7" stroke-width="2" stroke-dasharray="5 4"/>
+    <rect x="236" y="232" width="96" height="30" fill="#FFFFFF" fill-opacity=".14" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <text x="284" y="252" text-anchor="middle" font-size="13" fill="#FFFFFF">Don't run</text>
+    <path d="M356 150h16m-6-6 6 6-6 6" fill="none" stroke="#7AA2F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="388" y="24" width="308" height="252" rx="6" fill="#1E3A8A"/>
+    <text x="408" y="62" font-size="19" font-weight="600" fill="#FFFFFF">Windows protected your PC</text>
+    <text x="408" y="92" font-size="12.5" fill="#DCE6FD">App: A9Voice-Setup-x64.exe</text>
+    <text x="408" y="112" font-size="12.5" fill="#DCE6FD">Publisher: Unknown publisher</text>
+    <rect x="456" y="226" width="112" height="36" fill="#FFFFFF"/>
+    <text x="512" y="249" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1E3A8A">Run anyway</text>
+    <rect x="448" y="218" width="128" height="52" rx="8" fill="none" stroke="#7AA2F7" stroke-width="2" stroke-dasharray="5 4"/>
+    <rect x="584" y="232" width="96" height="30" fill="#FFFFFF" fill-opacity=".14" stroke="#FFFFFF" stroke-opacity=".5"/>
+    <text x="632" y="252" text-anchor="middle" font-size="13" fill="#FFFFFF">Don't run</text>
+  </g>
+</svg>

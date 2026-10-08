@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/docs.css">
 <script src="/js/site.js" defer></script>
+
 </head>
 <body class="docs">
 <a class="skip" href="#main">Skip to content</a>
@@ -61,7 +62,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
     </div>
   </aside>
@@ -70,13 +71,18 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Start here</p>
       <h1>Getting started</h1>
       <p class="docs-lead">Install A9 Voice, set it up in five short steps, then dictate your first sentence and record your first meeting note.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.3</p>
-      <p>A9 Voice is for Windows 10 and 11 (64-bit). It does two jobs. <strong>Transcribe</strong> types what you say into any app while you hold a key. <strong>Notes</strong> records a meeting, a video or a voice memo and turns it into a transcript and a summary. This page takes you from a fresh install to both.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
+      <p>A9 Voice is for Windows 10 and 11 (64-bit). It is free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. It does two jobs. <strong>Transcribe</strong> types what you say into any app while you hold a key. <strong>Notes</strong> records a meeting, a video or a voice memo and turns it into a transcript and a summary. This page takes you from a fresh install to both.</p>
 <h2 id="install">Install<a class="anchor" href="#install" aria-label="Link to Install">#</a></h2>
 <ol>
 <li><a href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download the installer</a>. The link always gives you the newest version.</li>
 <li>Open the file you downloaded. A9 Voice installs for your Windows user only. It does not ask for administrator rights.</li>
-<li>If Windows shows a blue <strong>Windows protected your PC</strong> screen, click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer is not code-signed yet, so Windows shows this once. Later updates install quietly and do not show it.</li>
+<li>Your browser may say the file &quot;isn&#39;t commonly downloaded&quot;. Open the downloads list and choose <strong>Keep</strong>.</li>
+</ol>
+<figure class="shot"><img src="/img/install-keep.svg" width="720" height="300" alt="A mock-up of the browser's download panel with the Keep button highlighted." loading="lazy"></figure><ol start="4">
+<li>If Windows shows a blue <strong>Windows protected your PC</strong> screen, click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer is not code-signed yet, so Windows shows this once. It comes from our GitHub Releases, and every later update is checked against a signature by the app itself, so later updates install quietly and do not show it.</li>
+</ol>
+<figure class="shot"><img src="/img/install-smartscreen.svg" width="720" height="300" alt="Two mock-up Windows dialogs: More info is highlighted in the first, and the Run anyway button in the second." loading="lazy"></figure><ol start="5">
 <li>Follow the installer to the end. If A9 Voice does not open by itself, open it from the <strong>A9 Voice</strong> folder in the Start menu.</li>
 </ol>
 <p>A9 Voice starts with Windows and waits in the tray (the small icons by the clock). Closing its window does not quit it; the first time you close it, a notice says &quot;A9 Voice is still running in the tray&quot;. To quit, right-click the tray icon and choose <strong>Quit</strong>.</p>

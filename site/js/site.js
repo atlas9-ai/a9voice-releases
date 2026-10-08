@@ -1,7 +1,34 @@
-// Hero demo, screenshot tabs, mobile menu, latest version. No third-party requests
-// apart from the one GitHub API call for the version number.
+// Hero demo, screenshot tabs, mobile menu, latest version, campaign carry. The only requests
+// to other hosts: the GitHub API call for the version number and Cloudflare's cookieless
+// Web Analytics beacon (a separate script, present only when the site has a token).
 (function () {
   "use strict";
+
+  // Campaign carry: the first page of a visit may arrive with utm_* in its address. Keep them for the
+  // visit (sessionStorage: no cookie, gone when the tab closes) and add them to every Download link
+  // as src/med/ct/cmp, so the download is attributed to the post that brought the visitor.
+  // Tags are lower case a-z 0-9 _ . : - and at most 40 long; anything else is dropped.
+  try {
+    var tag = function (v) { v = String(v || "").trim().toLowerCase(); return /^[a-z0-9_.:-]{1,40}$/.test(v) ? v : ""; };
+    var KEY = "a9v-campaign";
+    var seen = null;
+    try { seen = JSON.parse(sessionStorage.getItem(KEY) || "null"); } catch (e) { seen = null; }
+    if (!seen) {
+      var q = new URLSearchParams(location.search);
+      var s = tag(q.get("utm_source"));
+      if (s) {
+        seen = { src: s, med: tag(q.get("utm_medium")), ct: tag(q.get("utm_content")), cmp: tag(q.get("utm_campaign")) };
+        try { sessionStorage.setItem(KEY, JSON.stringify(seen)); } catch (e) { /* private mode: still works for this page */ }
+      }
+    }
+    if (seen) {
+      Array.prototype.forEach.call(document.querySelectorAll('a[href^="/download"]'), function (a) {
+        var u = new URL(a.getAttribute("href"), location.origin);
+        ["src", "med", "ct", "cmp"].forEach(function (k) { if (seen[k]) u.searchParams.set(k, seen[k]); });
+        a.setAttribute("href", u.pathname + u.search);
+      });
+    }
+  } catch (e) { /* a broken storage must never break the page */ }
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Hero: idle -> recording -> transcribing -> pasted. The HTML ships the end state,

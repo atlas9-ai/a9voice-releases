@@ -248,3 +248,12 @@ kbd.wide { padding: 0 28px; }
 .more { align-self: flex-start; font-size: 15px; font-weight: 500; color: var(--link); text-decoration: none; }
 .more:hover { color: #DCE6FD; text-decoration: underline; }
 .panel .more { align-self: flex-start; }
+
+/* The "download started" page (/downloading/, served by the edge Worker at /download) */
+.dlp h2 { font-size: 24px; font-weight: 600; margin: 40px 0 10px; }
+.dlp h3 { font-size: 18px; font-weight: 600; margin: 26px 0 6px; }
+.dlp p { margin: 0 0 10px; color: var(--text-2); }
+.dlp figure.shot { margin: 14px 0 6px; }
+.dlp figure.shot img { width: 100%; max-width: 720px; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.dlp .winget { margin-top: 26px; }
+.dlp code { font-family: var(--mono); font-size: .92em; background: var(--surface); padding: 2px 6px; border-radius: 6px; }

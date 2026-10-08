@@ -26,6 +26,7 @@
 <link rel="preload" href="img/hero.webp" as="image" type="image/webp">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/site.js" defer></script>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -238,7 +239,7 @@
     </div>
     <div class="grid g240 roomy">
       <div class="point"><h3>On this PC, nothing leaves</h3><p>With speech models on your PC and a language model on your PC, what you say and write stays on your PC.</p></div>
-      <div class="point"><h3>Only to the providers you pick</h3><p>With cloud keys, audio and text go only to the speech and AI providers you choose. No A9 Voice server in between, no telemetry.</p></div>
+      <div class="point"><h3>Only to the providers you pick</h3><p>With cloud keys, audio and text go only to the speech and AI providers you choose. No A9 Voice server in between. The one thing counted is installs, anonymously, and you can turn it off (<a href="/docs/privacy/">what is counted</a>).</p></div>
       <div class="point"><h3>Voiceprints stay on your PC</h3><p>Voice recognition keeps voiceprints on your PC only. They are never uploaded, and never sent to a webhook or the connector.</p></div>
       <div class="point"><h3>Voice recognition is opt-in</h3><p>It stays off until you turn it on.</p></div>
       <div class="point"><h3>Delete any voice, any time</h3><p>Forget one person’s voice, or all of them at once.</p></div>
@@ -257,7 +258,7 @@
     <details><summary>Do I need a graphics card?<span class="plus" aria-hidden="true">+</span></summary><p>No. Everything works on the processor. A graphics card is optional, any brand with DirectX 12 support, and it lets the bigger Whisper models run much faster than the processor on a modern card. If the card has a problem, A9 Voice finishes on the processor.</p></details>
     <details><summary>How does it know who’s talking?<span class="plus" aria-hidden="true">+</span></summary><p>Your mic and the call’s audio are recorded separately, so your own lines are yours. The other people are told apart by their voices, and you tag each voice once in the Live window. If you turn on voice recognition, A9 Voice also learns voices from the names you give it and recognizes them in later calls.</p></details>
     <details><summary>Is there a Mac version?<span class="plus" aria-hidden="true">+</span></summary><p>No. A9 Voice runs on Windows 10 and 11, 64-bit.</p></details>
-    <details><summary>Why is it free?<span class="plus" aria-hidden="true">+</span></summary><p>It’s free during the preview. You pay your speech and AI providers directly for what you use.</p></details>
+    <details><summary>Why is it free?<span class="plus" aria-hidden="true">+</span></summary><p>Free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. You pay your speech and AI providers directly for what you use.</p></details>
     <details><summary>Where does my data live?<span class="plus" aria-hidden="true">+</span></summary><p>On your PC: history and settings in your app data folder, notes as Markdown in a folder you pick, keys in Windows Credential Manager. Audio and text go only to the providers you choose. The <a href="/docs/privacy-and-data/">privacy page</a> lists every place.</p></details>
     <details><summary>How do updates work?<span class="plus" aria-hidden="true">+</span></summary><p>A9 Voice checks for updates and downloads them in the background. You restart into one with a click, or turn on a switch to restart by itself when you’re idle; it never restarts while you’re dictating or recording. Every update is signed. You can follow Stable or Dev; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p></details>
     <details><summary>Windows says it protected my PC. Is that normal?<span class="plus" aria-hidden="true">+</span></summary><p>Yes, for this preview. The installer isn’t code-signed yet, so Windows shows SmartScreen once. Click More info, then Run anyway.</p></details>
@@ -268,7 +269,7 @@
   <div class="dl">
     <img src="img/icon-64.svg" alt="" width="64" height="64">
     <h2>Stop typing what you can say.</h2>
-    <p class="sub">Free during the preview. One small installer, no admin rights needed.</p>
+    <p class="sub">Free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. One small installer, no admin rights needed.</p>
     <a class="btn btn-xl" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v10M5 8l4 4 4-4M3 15h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download free</a>
     <span class="fine">Version <span id="ver">latest</span> · Windows 10/11, 64-bit · <a href="/docs/">Manual</a> · <a href="/changelog/">Changelog</a> · <a href="https://github.com/atlas9-ai/a9voice-releases/releases">All releases</a></span>
   </div>

@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/docs.css">
 <script src="/js/site.js" defer></script>
+
 </head>
 <body class="docs">
 <a class="skip" href="#main">Skip to content</a>
@@ -61,7 +62,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/" aria-current="page">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/" aria-current="page">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
     </div>
   </aside>
@@ -70,12 +71,12 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.4</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
 <li><strong>Audio and text go only to the services you choose</strong>, with your keys. If you use models on this PC, nothing you say leaves it.</li>
-<li><strong>No telemetry and no analytics.</strong> A9 Voice does not report usage, crashes or anything else. This is a rule of how the app is built.</li>
+<li><strong>One anonymous count, which you can turn off.</strong> The update check carries a random ID, the version, your channel, your Windows version and your country, so we can count installs. No crash reports, no content. See <a href="/docs/privacy/">Anonymous usage counts</a>.</li>
 <li><strong>Your keys live in Windows Credential Manager</strong> and nowhere else: not in settings, logs, the repository or the app&#39;s own storage.</li>
 <li><strong>Logs hold timings, lengths and status codes, never your words or your keys.</strong> This is also a rule of how the app is built.</li>
 <li><strong>Voiceprints stay on this PC</strong>, are opt-in, and you can delete any of them or all of them at any time.</li>
@@ -98,7 +99,7 @@
 <tr><td><strong>Test</strong> button on a provider</td><td>A 2-second test clip (speech) or a short test phrase (language model) goes to that provider.</td><td>Nothing.</td></tr>
 <tr><td><strong>Webhooks</strong></td><td>Only the parts of a note you ticked go to the address you saved.</td><td>n/a</td></tr>
 <tr><td><strong>The connector for AI apps</strong></td><td>Notes and action items you search for go to the AI app you connected, on this PC. What that app does with them is up to that app and its service.</td><td>n/a</td></tr>
-<tr><td><strong>Updates</strong></td><td>A request for the list of builds, then the update file.</td><td>n/a</td></tr>
+<tr><td><strong>Updates</strong></td><td>A request for the list of builds, then the update file. Unless you turn it off in Settings › Privacy, the request also carries the anonymous count: a random ID, the version, the channel, your Windows version and your country.</td><td>n/a</td></tr>
 </tbody></table></div>
 <p>A few details that matter:</p>
 <ul>
@@ -127,12 +128,12 @@
 </ol>
 <p>What still uses the network in this setup:</p>
 <ul>
-<li><strong>The update check.</strong> A9 Voice checks a9voice.com and the project&#39;s release files on GitHub a few seconds after it starts and then every 6 hours. There is no switch to turn it off. If the PC is offline the check simply fails and tries again later.</li>
+<li><strong>The update check.</strong> A9 Voice checks a9voice.com and the project&#39;s release files on GitHub a few seconds after it starts and then every 6 hours. There is no switch to turn the check off; the anonymous count that rides on it has one (<strong>Settings › Privacy</strong>), and with it off the check sends nothing extra. If the PC is offline the check simply fails and tries again later.</li>
 <li><strong>Downloads you start.</strong> Speech models come from Hugging Face. <strong>Graphics-card support</strong> (about 25 MB, once) comes from files.pythonhosted.org. The speaker model for voice recognition comes from the project&#39;s release page on GitHub. All are fixed to one version and checked against a known checksum before use. After they are downloaded you can work with no internet at all.</li>
 <li><strong>Web pages you open.</strong> The <strong>Get your key</strong> buttons open the provider&#39;s own page in your browser. That is your browser, not A9 Voice.</li>
 </ul>
-<h2 id="no-telemetry">No telemetry<a class="anchor" href="#no-telemetry" aria-label="Link to No telemetry">#</a></h2>
-<p>A9 Voice sends no usage data, no crash reports and no analytics. The only network calls are to the speech and language services you set up, to the update locations above, to the download locations above, and to webhook addresses you add. This is a rule of how the app is built, and the About card says it too.</p>
+<h2 id="anonymous-usage-counts">Anonymous usage counts<a class="anchor" href="#anonymous-usage-counts" aria-label="Link to Anonymous usage counts">#</a></h2>
+<p>A9 Voice sends no crash reports and no content-based analytics. The one thing it counts is installs: with the update check it sends a random ID, the app version, the channel, your Windows version and processor type, and a9voice.com adds the country. It is on by default and has a switch in <strong>Settings › Privacy</strong>. With it off, nothing extra is sent and nothing is recorded. The page <a href="/docs/privacy/">Anonymous usage counts</a> says exactly what is counted and what never is. The only network calls are to the speech and language services you set up, to the update locations above, to the download locations above, and to webhook addresses you add.</p>
 <h2 id="where-your-files-live">Where your files live<a class="anchor" href="#where-your-files-live" aria-label="Link to Where your files live">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What</th><th scope="col">Where</th></tr></thead><tbody>
 <tr><td>Settings, history, notes database, search index, voice database</td><td><code>%APPDATA%\com.riptide9.scribe</code> (the folder name is the app&#39;s permanent internal identifier): <code>settings.json</code>, <code>history.db</code>, <code>notes.db</code>, <code>search.db</code>, <code>voices.db</code>, and <code>window.json</code> (the main window&#39;s size and place)</td></tr>
@@ -200,9 +201,9 @@
 </ul>
 
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
-      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/updates-and-channels/"><span class="docs-step-l">Previous</span><span>Updates and channels</span></a><a class="docs-step next" href="/docs/keyboard-shortcuts/"><span class="docs-step-l">Next</span><span>Keyboard shortcuts</span></a></nav>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/updates-and-channels/"><span class="docs-step-l">Previous</span><span>Updates and channels</span></a><a class="docs-step next" href="/docs/privacy/"><span class="docs-step-l">Next</span><span>Anonymous usage counts</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#no-telemetry">No telemetry</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#anonymous-usage-counts">Anonymous usage counts</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="foot wrap">

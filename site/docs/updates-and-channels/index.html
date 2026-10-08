@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/docs.css">
 <script src="/js/site.js" defer></script>
+
 </head>
 <body class="docs">
 <a class="skip" href="#main">Skip to content</a>
@@ -61,7 +62,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/" aria-current="page">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/" aria-current="page">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
     </div>
   </aside>
@@ -70,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Updates and channels</h1>
       <p class="docs-lead">How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
       <p>A9 Voice looks for updates in the background, downloads them, checks that they are genuine and installs them when it is safe to. You do not have to do anything, but you can check by hand, choose how early you get new builds, and decide when the app restarts.</p>
 <h2 id="stable-and-dev">Stable and Dev<a class="anchor" href="#stable-and-dev" aria-label="Link to Stable and Dev">#</a></h2>
 <p>There are two channels. A channel is just a stream of builds you follow.</p>
@@ -93,7 +94,7 @@
 <h2 id="how-an-update-reaches-you">How an update reaches you<a class="anchor" href="#how-an-update-reaches-you" aria-label="Link to How an update reaches you">#</a></h2>
 <p>A9 Voice checks for an update a few seconds after it starts and then every 6 hours while it runs. The <strong>Check for updates</strong> link in the sidebar, <strong>Check now</strong> on the Updates card and <strong>Check for updates</strong> in the tray menu check right away.</p>
 <ol>
-<li><strong>The check.</strong> A9 Voice asks a9voice.com and the project&#39;s release files on GitHub, all at once, for the newest build on your channel. It takes the newest build any of them offers, and prefers a9voice.com when they offer the same one. If one place is down, the others still count.</li>
+<li><strong>The check.</strong> A9 Voice asks a9voice.com and the project&#39;s release files on GitHub, all at once, for the newest build on your channel. It takes the newest build any of them offers, and prefers a9voice.com when they offer the same one. If one place is down, the others still count. The request to a9voice.com carries the anonymous count (a random ID, the version, the channel, your Windows version) unless you turned it off in <strong>Settings › Privacy</strong>; GitHub never gets it. See <a href="/docs/privacy/">Anonymous usage counts</a>.</li>
 <li><strong>The download.</strong> The update downloads in the background while you keep working. The sidebar shows <strong>Downloading</strong> with a small progress bar.</li>
 <li><strong>The check of the download.</strong> Every update is signed. A9 Voice checks the signature against a key built into the app before it keeps the file. If the signature does not match, the update is thrown away and you see &quot;The update failed its signature check and was not installed&quot;.</li>
 <li><strong>Ready.</strong> The sidebar shows <strong>Restart to update</strong>, and the Updates card shows a banner, &quot;Update ready&quot;, with a <strong>Restart A9 Voice</strong> button. The tray menu item changes to &quot;Update ready — Restart A9 Voice&quot;.</li>

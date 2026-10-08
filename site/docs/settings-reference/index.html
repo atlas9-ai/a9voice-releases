@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/docs.css">
 <script src="/js/site.js" defer></script>
+
 </head>
 <body class="docs">
 <a class="skip" href="#main">Skip to content</a>
@@ -61,7 +62,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/" aria-current="page">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/" aria-current="page">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
     </div>
   </aside>
@@ -70,16 +71,16 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Settings reference</h1>
       <p class="docs-lead">Every page in Settings and every option on it, in the order the app shows them, with what it does and what a new install starts with.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.4</p>
-      <p>Open <strong>Settings</strong> at the bottom of the sidebar. The list on the left has four parts: <strong>Account</strong> and <strong>General</strong> at the top, then <strong>Shared</strong>, <strong>Transcribe</strong> and <strong>Notes</strong>. In a narrow window the list turns into a drop-down called <strong>Settings page</strong>.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
+      <p>Open <strong>Settings</strong> at the bottom of the sidebar. The list on the left has four parts: <strong>Account</strong>, <strong>General</strong> and <strong>Privacy</strong> at the top, then <strong>Shared</strong>, <strong>Transcribe</strong> and <strong>Notes</strong>. In a narrow window the list turns into a drop-down called <strong>Settings page</strong>.</p>
 <p>This page follows that list. Each option is one line: its name exactly as the app shows it, what it does, and its default for a <strong>new install</strong>. A copy that was updated from an older version keeps the choices it already had. Changes save as you make them; there is no Save button except where a page says so.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-list-1x.webp" srcset="/img/docs/settings-reference-list-1x.webp 1x, /img/docs/settings-reference-list.webp 2x" width="190" height="760" alt="The Settings list: Account and General, then Shared, Transcribe and Notes." loading="lazy" decoding="async"><figcaption>The Settings list. The page you pick opens on the right.</figcaption></figure></p>
 <h2 id="account">Account<a class="anchor" href="#account" aria-label="Link to Account">#</a></h2>
 <p>Account is the first page in Settings, above the groups. It holds your plan, your profile (the &quot;You&quot; that meetings use) and the backup of your setup.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-account-1x.webp" srcset="/img/docs/settings-reference-account-1x.webp 1x, /img/docs/settings-reference-account.webp 2x" width="1032" height="760" alt="Settings › Account: the plan card, the profile fields and the Data card." loading="lazy" decoding="async"></figure></p>
 <ul>
-<li id="opt-plan"><strong>Plan:</strong> shows <strong>Preview</strong> with &quot;all features unlocked&quot;. Every feature is on during the preview, and personal use is free.</li>
-<li id="opt-manage-license"><strong>Manage license:</strong> a button that is switched off for now. Licenses arrive with 1.0.</li>
+<li id="opt-plan"><strong>Plan:</strong> shows <strong>Preview — everything unlocked</strong>. Every feature is on during the preview. <strong>Transcribe</strong> is free, always. <strong>Notes</strong> (meetings, voices, search) will become a one-time purchase later; when that arrives you get 30 days free before deciding, and nothing you have recorded is ever locked away.</li>
+<li id="opt-manage-license"><strong>Manage license:</strong> a button that is switched off for now (&quot;Not needed during preview&quot;).</li>
 <li id="opt-your-name"><strong>Your name:</strong> the name your own lines carry in meeting transcripts and the name summaries use for you. It is required. If you empty the box, A9 Voice goes back to your Windows account name. Setup asks for it in step 1.</li>
 <li id="opt-other-names-people-use"><strong>Other names people use:</strong> nicknames and short forms, separated by commas. Saved with your profile on this PC.</li>
 <li id="opt-role-or-title"><strong>Role or title:</strong> optional, saved with your profile on this PC.</li>
@@ -120,6 +121,13 @@
 <li id="opt-open-source-on-this-pc"><strong>Open source on this PC:</strong> a list of the speech models you can download and the engine that runs them, each with its license.</li>
 </ul>
 <p>More: <a href="/docs/troubleshooting/">Troubleshooting</a> and <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h2 id="privacy">Privacy<a class="anchor" href="#privacy" aria-label="Link to Privacy">#</a></h2>
+<p>Privacy is the third page in Settings, under General. It holds the one switch for the anonymous install count. Details: <a href="/docs/privacy/">Anonymous usage counts</a>.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-privacy-1x.webp" srcset="/img/docs/settings-reference-privacy-1x.webp 1x, /img/docs/settings-reference-privacy.webp 2x" width="1032" height="760" alt="Settings › Privacy: the usage-counts switch and the Reset ID button." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-send-anonymous-usage-counts"><strong>Send anonymous usage counts:</strong> on for a new install. When on, the update check carries a random ID, the app version, your channel, your Windows version and your country (worked out from the request) so installs can be counted. It never carries audio, text, names or keys. Off sends no ID and nothing about your PC, and updates work the same.</li>
+<li id="opt-reset-id"><strong>Reset ID:</strong> makes a new random ID. The old one is forgotten on this PC and nothing links the two.</li>
+</ul>
 <h2 id="speech-models">Speech models<a class="anchor" href="#speech-models" aria-label="Link to Speech models">#</a></h2>
 <p>Part of the <strong>Shared</strong> group. Speech models turn your voice into text, for dictation and for notes. Your keys are kept in Windows Credential Manager and nowhere else.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-speech-models-1x.webp" srcset="/img/docs/settings-reference-speech-models-1x.webp 1x, /img/docs/settings-reference-speech-models.webp 2x" width="1032" height="760" alt="Settings › Speech models: the cloud tiles, the graphics-card switch and the models that run on this PC." loading="lazy" decoding="async"></figure></p>
@@ -361,7 +369,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/webhooks/"><span class="docs-step-l">Previous</span><span>Webhooks</span></a><a class="docs-step next" href="/docs/updates-and-channels/"><span class="docs-step-l">Next</span><span>Updates and channels</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#account">Account</a></li><li class="d2"><a href="#general">General</a></li><li class="d3"><a href="#updates">Updates</a></li><li class="d3"><a href="#about">About</a></li><li class="d2"><a href="#speech-models">Speech models</a></li><li class="d2"><a href="#language-models">Language models</a></li><li class="d2"><a href="#usage-and-cost">Usage &amp; cost</a></li><li class="d2"><a href="#connectors">Connectors</a></li><li class="d2"><a href="#dictation">Dictation</a></li><li class="d2"><a href="#microphone">Microphone</a></li><li class="d2"><a href="#dictation-audio">Dictation audio</a></li><li class="d2"><a href="#recording">Recording</a></li><li class="d2"><a href="#live-window">Live window</a></li><li class="d2"><a href="#transcript-and-summary">Transcript &amp; summary</a></li><li class="d2"><a href="#templates">Templates</a></li><li class="d2"><a href="#voices">Voices</a></li><li class="d2"><a href="#integrations">Integrations</a></li><li class="d2"><a href="#storage">Storage</a></li><li class="d2"><a href="#search">Search</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#account">Account</a></li><li class="d2"><a href="#general">General</a></li><li class="d3"><a href="#updates">Updates</a></li><li class="d3"><a href="#about">About</a></li><li class="d2"><a href="#privacy">Privacy</a></li><li class="d2"><a href="#speech-models">Speech models</a></li><li class="d2"><a href="#language-models">Language models</a></li><li class="d2"><a href="#usage-and-cost">Usage &amp; cost</a></li><li class="d2"><a href="#connectors">Connectors</a></li><li class="d2"><a href="#dictation">Dictation</a></li><li class="d2"><a href="#microphone">Microphone</a></li><li class="d2"><a href="#dictation-audio">Dictation audio</a></li><li class="d2"><a href="#recording">Recording</a></li><li class="d2"><a href="#live-window">Live window</a></li><li class="d2"><a href="#transcript-and-summary">Transcript &amp; summary</a></li><li class="d2"><a href="#templates">Templates</a></li><li class="d2"><a href="#voices">Voices</a></li><li class="d2"><a href="#integrations">Integrations</a></li><li class="d2"><a href="#storage">Storage</a></li><li class="d2"><a href="#search">Search</a></li></ul></nav>
   </main>
 </div>
 <footer class="foot wrap">
