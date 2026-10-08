@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>A9 Voice: dictation and meeting notes for Windows</title>
 <meta name="description" content="Hold a key and talk. Join a call and know who’s talking. Dictation and meeting notes for Windows: no bot in your meeting, works offline on your PC or with your own keys, plain files you own.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0B0C0E">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://a9voice.com/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A9 Voice">
 <meta property="og:title" content="A9 Voice: dictation and meeting notes for Windows">
@@ -22,272 +22,186 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A9 Voice: dictation and meeting notes for Windows">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/hero.webp" as="image" type="image/webp">
-<link rel="stylesheet" href="css/site.css">
-<script src="js/site.js" defer></script>
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="/img/desk-800.webp 800w, /img/desk-1440.webp 1440w, /img/desk-2000.webp 2000w" imagesizes="100vw">
+<link rel="stylesheet" href="/css/chrome.css">
+<link rel="stylesheet" href="/css/home.css">
+<script src="/js/chrome.js" defer></script>
+<script src="/js/home.js" defer></script>
 
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="top wrap">
-  <a class="brand" href="/" aria-label="A9 Voice home">
-    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
-    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
-  </a>
-  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
-    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-    <span class="sr">Menu</span>
-  </button>
-  <nav id="nav" aria-label="Main">
-    <a href="/#transcribe" aria-current="page">Transcribe</a>
-    <a href="/#notes" aria-current="page">Notes</a>
-    <a href="/#privacy" aria-current="page">Privacy</a>
-    <a href="/docs/">Manual</a>
-    <a href="/changelog/">Changelog</a>
-  </nav>
-  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+<header class="sitenav" id="top-nav">
+  <div class="sn-wrap sn-in">
+    <a class="sn-logo" href="/" aria-label="A9 Voice home"><img src="/img/lockup-dark.svg" alt="" width="161" height="32"></a>
+    <nav class="sn-links" aria-label="Main"><a href="#day">A day with it</a><a href="#switch">Why switch</a><a href="#compare">Compare</a><a href="/docs/">Manual</a></nav>
+    <a class="gh-chip" href="https://github.com/atlas9-ai/a9voice-releases/releases"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub · v0.6.5</a>
+    <a class="sn-btn" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe" data-src="nav">Download free</a>
+    <button class="sn-menu" type="button" aria-expanded="false" aria-controls="sn-sheet" aria-label="Menu">
+      <svg class="bars3" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="x" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="sn-sheet" id="sn-sheet">
+    <nav aria-label="Menu"><a href="#day">A day with it</a><a href="#switch">Why switch</a><a href="#compare">Compare</a><a href="/docs/">Manual</a></nav>
+    <div class="sn-sheet-row"><a class="gh-chip" href="https://github.com/atlas9-ai/a9voice-releases/releases"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub · v0.6.5</a><a class="sn-btn" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe" data-src="nav">Download free</a></div>
+  </div>
 </header>
 
 <main id="main">
 
-<section id="top" class="hero wrap">
-  <div class="hero-copy">
-    <span class="chip"><span class="chip-dot"></span>Free during the preview · Windows 10 &amp; 11</span>
-    <h1>Hold a key and talk.<br><span class="blue">Join a call and know who’s talking.</span></h1>
-    <p class="lead">Dictation and meeting notes for Windows. No bot in your meeting. Runs on your PC or with your own keys. Your files.</p>
-    <div class="ctas">
-      <a class="btn btn-lg" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v10M5 8l4 4 4-4M3 15h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download free</a>
-      <a class="btn btn-lg btn-ghost" href="/docs/getting-started/">Read the manual</a>
+<section class="hero" id="top" data-loop aria-labelledby="hero-h">
+  <img src="/img/desk-1440.webp" srcset="/img/desk-800.webp 800w, /img/desk-1440.webp 1440w, /img/desk-2000.webp 2000w" sizes="100vw" width="2000" height="1116" fetchpriority="high" decoding="async" alt="A woman at her desk at dusk, talking to her laptop with her hands off the keyboard">
+  <div class="hero-dict" aria-hidden="true">
+    <div class="card glass on" id="hcard"><small>Pasted into your email</small><div class="texts" id="htexts"><span class="on">Thanks, Priya. Screenshots will be ready by Wednesday.</span><span>Running ten minutes late, start without me.</span><span>Approved. Ship it Monday if payments pass.</span></div></div>
+    <span class="pill glass" id="hpill"><span class="ok">✓ Pasted · 0.23 s</span></span>
+  </div>
+  <div class="wrap">
+    <a class="newchip" href="/changelog/"><b>New in 0.6</b> · uses your graphics card <span aria-hidden="true">→</span></a>
+    <p class="eyebrow">Dictation + meeting notes · Windows</p>
+    <h1 id="hero-h">Talk through your day. <span>It's all written down.</span></h1>
+    <p class="sub">Say your emails instead of typing them. Sit in your meetings instead of taking notes. A9 Voice writes both, knows who said what, and keeps it all in files on your PC.</p>
+    <div class="cta"><a class="btn btn-primary" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe" data-src="home-hero">Download free</a><a class="btn btn-ghost" href="#day">See a day with it</a></div>
+  </div>
+</section>
+
+<div id="day" class="day wrap">
+  <div class="day-intro"><p class="eyebrow">One Tuesday</p><h2>Here's what a workday looks like when you stop typing it.</h2></div>
+
+  <article class="moment rv">
+    <div class="when"><time>8:52 am</time><small>Inbox</small></div>
+    <div class="what">
+      <div><h3>Twelve emails before stand-up.</h3><p>Hold Ctrl+Space and answer them out loud. You talk about three times faster than you type, and the "um"s are gone before the text lands.</p><div class="meta"><span>Hold to talk</span><span>0.23 s to paste</span><span>Works in any text box</span></div></div>
+      <div class="scene" data-loop><img src="/img/talk-1100.webp" srcset="/img/talk-640.webp 640w, /img/talk-1100.webp 1100w" sizes="(max-width: 900px) 100vw, 520px" width="1100" height="1970" loading="lazy" decoding="async" alt="A man at his desk at night, talking toward his monitor" style="object-position:50% 30%">
+        <div class="mailcard glass"><div class="to">Re: Store screenshots</div><p id="typed">Thanks, Priya. The store screenshots will be ready by Wednesday, and I'll send the release notes to Dana tonight.</p><div class="row"><span class="pill" id="mailpill" hidden><span class="dot"></span><span class="bars"><i></i><i></i><i></i><i></i></span>0:05</span><span class="done" id="mailok">✓ Pasted · 0.23 s</span></div></div>
+      </div>
     </div>
-    <span class="fine">One small installer, no admin rights. Updates download by themselves.</span>
-  </div>
-  <figure class="hero-media">
-    <video id="hero-video" width="960" height="600" muted loop playsinline preload="none" poster="img/hero.webp"
-      aria-label="Demo: dictation lands in an email, then the Live window names a speaker after one tag.">
-      <source src="img/hero.webm" type="video/webm">
-      <source src="img/hero.mp4" type="video/mp4">
-    </video>
-    <figcaption>Hold Ctrl+Space and talk: the words land in your email. In a call, tag a voice once and every line gets the name.</figcaption>
-  </figure>
-</section>
+  </article>
 
-<section class="wrap pad" aria-label="Why A9 Voice">
-  <div class="proof">
-    <div><h2 class="proof-h">No bot joins your call</h2><p>A9 Voice records your mic and your computer’s audio. Nobody sees an assistant in the participant list.</p></div>
-    <div><h2 class="proof-h">Offline, or your own keys</h2><p>Run speech models on your PC with no key and no internet, or use your own provider keys and pay them directly: a 27-minute meeting cost 24¢ in our test.</p></div>
-    <div><h2 class="proof-h">Plain files your AI can read</h2><p>Every note is a folder of Markdown on your PC. Point Claude or ChatGPT at it, or connect them with the built-in connector.</p></div>
-  </div>
-</section>
-
-<section id="transcribe" class="wrap pad split">
-  <div class="split-copy">
-    <span class="eyebrow">TRANSCRIBE</span>
-    <h2>Hold a key anywhere. Your words appear.</h2>
-    <ul class="ticks">
-      <li>About 0.23 s from letting go to text on screen (median, measured with a cloud key)</li>
-      <li>Works in apps with a text box: email, chat, browser, code editor</li>
-      <li>Cloud key or a model on your PC: dictate with no internet at all</li>
-      <li>Dictionary: names and jargon spelled your way, and fixes that apply every time</li>
-      <li>Enhance with AI: removes “um” and fixes punctuation, never rewrites what you said</li>
-      <li>Hands-free on its own key; your clipboard is put back afterwards</li>
-    </ul>
-    <a class="more" href="/docs/transcribe/">How dictation works →</a>
-  </div>
-  <div class="split-media">
-    <figure class="shot"><img src="img/pill.webp" srcset="img/pill-1x.webp 1080w, img/pill.webp 2160w" sizes="(max-width: 900px) 100vw, 60vw" width="2160" height="1520" alt="The dictation pill in four states: recording, hands-free, transcribing, and pasted with the time it took." loading="lazy" decoding="async"><figcaption>The pill sits at the bottom of the screen and never takes focus.</figcaption></figure>
-    <figure class="shot"><img src="img/history.webp" srcset="img/history-1x.webp 1080w, img/history.webp 2160w" sizes="(max-width: 900px) 100vw, 60vw" width="2160" height="1520" alt="The Transcribe screen: recent dictations, the app each went to and how long each took." loading="lazy" decoding="async"><figcaption>Every dictation, where it went and how fast.</figcaption></figure>
-  </div>
-</section>
-
-<section id="notes" class="wrap pad stack">
-  <div class="head wide">
-    <span class="eyebrow">NOTES</span>
-    <h2>Meeting notes that know who said what.</h2>
-    <p class="sub">A9 Voice starts recording when Teams, Zoom or another meeting app you pick opens the mic, with an 8-second Discard notice. It stops when the call ends. Record a video or a voice note by hand with one key.</p>
-  </div>
-  <div class="grid g240">
-    <div class="card"><h3>Live window</h3><p>The transcript as it happens, with a chip for each speaker and a soft glow on whoever is talking. Tag a voice once and every line from that person shows the name. Undo takes a mistake back.</p></div>
-    <div class="card"><h3>Ask mid-meeting</h3><p>“What did Marcus say about the payment fix?” works while the call is still going. Mark Action, Decision and Callout moments with one click.</p></div>
-    <div class="card"><h3>Snips in place</h3><p>Win+Shift+S during a call drops the screenshot into the transcript at that moment, and into the note’s folder.</p></div>
-    <div class="card"><h3>Summaries your way</h3><p>Templates set the sections and rules. Your action items come first, and decisions point to the moment they were made.</p></div>
-    <div class="card"><h3>Branded exports</h3><p>Put your logo and a footer on PDF, Word and HTML email files, or Copy for email with the formatting intact. Markdown, text and VTT or SRT captions too, and the audio as MP3, M4A or Opus.</p></div>
-    <div class="card"><h3>Named after the meeting</h3><p>Notes take the meeting’s name from the call window and live in folders like “2026-10-07 Platform stand-up”. Notes from a recurring meeting are linked together.</p></div>
-  </div>
-  <div class="gallery">
-    <figure class="shot"><img src="img/live.webp" srcset="img/live-1x.webp 640w, img/live.webp 1280w" sizes="(max-width: 900px) 100vw, 60vw" width="1280" height="1520" alt="The Live window during a call: a strip of speaker chips, lines from Sam, Marcus and two people not yet named, and a Who’s this? field." loading="lazy" decoding="async"><figcaption>Live window: a chip per speaker, one click to name them.</figcaption></figure>
-    <figure class="shot"><img src="img/note.webp" srcset="img/note-1x.webp 1080w, img/note.webp 2160w" sizes="(max-width: 900px) 100vw, 60vw" width="2160" height="1520" alt="A note page: title, speakers, your action items, overview and decisions with a time and a name." loading="lazy" decoding="async"><figcaption>The note: your action items first, decisions cite the moment.</figcaption></figure>
-    <figure class="shot"><img src="img/export.webp" srcset="img/export-1x.webp 1080w, img/export.webp 2160w" sizes="(max-width: 900px) 100vw, 60vw" width="2160" height="1520" alt="The Export window with a preview of the summary and the formats to choose from." loading="lazy" decoding="async"><figcaption>Export with a preview.</figcaption></figure>
-  </div>
-  <a class="more" href="/docs/recording-a-meeting/">How recording a meeting works →</a>
-</section>
-
-<section id="local" class="wrap pad stack">
-  <div class="head wide">
-    <span class="eyebrow">ON THIS PC</span>
-    <h2>Works offline. Nothing has to leave your PC.</h2>
-    <p class="sub">Download a speech model once and dictate or transcribe meetings with no key and no internet. If your connection drops, a downloaded model answers by itself.</p>
-  </div>
-  <div class="grid g280">
-    <div class="card"><h3>No key, no internet</h3><p>Parakeet V2 (English) and the Whisper models run on your processor. Downloads are checked and can resume. A speed test shows how fast each one runs on your PC.</p></div>
-    <div class="card"><span class="tag">New in 0.6</span><h3>Uses your graphics card</h3><p>Optional, and any brand: a DirectX 12 card can run the bigger Whisper models, much faster than the processor on a modern graphics card. One small download turns it on. If the card has a problem, A9 Voice finishes on the processor and tells you once.</p></div>
-    <div class="card"><h3>Summaries on your PC too</h3><p>Point the app at a language model running on your PC and summaries and Ask stay there as well. Or use your own key with the provider you like.</p></div>
-  </div>
-  <figure class="shot wide-shot"><img src="img/local.webp" srcset="img/local-1x.webp 900w, img/local.webp 1800w" sizes="(max-width: 900px) 100vw, 60vw" width="1800" height="1216" alt="Speech models: cloud providers and, under On this PC, downloaded models with a graphics card in use." loading="lazy" decoding="async"><figcaption>Cloud providers and models on your PC, side by side.</figcaption></figure>
-  <a class="more" href="/docs/speech-models/">Set up speech models →</a>
-</section>
-
-<section id="voices" class="wrap pad split">
-  <div class="split-copy">
-    <span class="eyebrow">VOICES</span>
-    <h2>Knows who’s talking.</h2>
-    <p class="sub">Turn on voice recognition and A9 Voice learns each person’s voice from the names you give it. Next time they join, their lines carry their name after a few seconds of speech.</p>
-    <ul class="ticks">
-      <li>Off until you turn it on</li>
-      <li>Voiceprints stay on your PC and are never uploaded</li>
-      <li>Not sure? It shows “Name?” and waits for your click, instead of guessing</li>
-      <li>Forget one person’s voice, or all of them at once</li>
-    </ul>
-    <a class="more" href="/docs/voices/">How voice recognition works →</a>
-  </div>
-  <div class="split-media">
-    <figure class="shot"><img src="img/voices.webp" srcset="img/voices-1x.webp 790w, img/voices.webp 1580w" sizes="(max-width: 900px) 100vw, 60vw" width="1580" height="1266" alt="The Voices page: people the app has learned, when each was last recognized, and the buttons to rename, merge or forget." loading="lazy" decoding="async"><figcaption>The people it knows, and a Forget button for each.</figcaption></figure>
-  </div>
-</section>
-
-<section id="search" class="wrap pad stack">
-  <div class="head wide">
-    <span class="eyebrow">SEARCH &amp; ASK</span>
-    <h2>Find anything. Ask across every note.</h2>
-    <p class="sub">Press Ctrl+K anywhere to search every note, and your dictations if you like. Ask a question and get an answer with links to the exact moment, or “I couldn’t find that in your notes”.</p>
-  </div>
-  <div class="grid g240">
-    <div class="card"><h3>Quick and Deep</h3><p>Quick answers from the best matches. Deep looks across more of your meetings and writes a dated answer with quotes.</p></div>
-    <div class="card"><h3>Past meetings too</h3><p>Add folders of older notes and search them alongside the new ones. They are read only: A9 Voice never changes them.</p></div>
-    <div class="card"><h3>A connector for Claude and ChatGPT</h3><p>Let your AI assistant search and read your notes through a local connector. Read only, off until you turn it on, and never audio or voiceprints.</p></div>
-    <div class="card"><h3>Webhooks</h3><p>Send each finished note to n8n, Zapier, Make, Discord, Slack or Telegram. You choose what is included; JSON requests can be signed, and failed sends are retried.</p></div>
-  </div>
-  <figure class="shot wide-shot"><img src="img/ask.webp" srcset="img/ask-1x.webp 760w, img/ask.webp 1520w" sizes="(max-width: 900px) 100vw, 60vw" width="1520" height="568" alt="Ask your notes: a question, an answer with citation chips that open the exact moment, and the model that answered." loading="lazy" decoding="async"><figcaption>Ask your notes: every claim links to its moment.</figcaption></figure>
-  <a class="more" href="/docs/search-and-ask/">How Search and Ask work →</a>
-</section>
-
-<section class="wrap pad stack-md" aria-labelledby="folder-h">
-  <div class="head wide">
-    <span class="eyebrow">YOUR NOTES, YOUR FOLDER</span>
-    <h2 id="folder-h">Every note is plain files on your PC.</h2>
-    <p class="sub">summary.md, transcript.md and an images folder, kept up to date as you edit. Any AI tool that can read files can answer questions about your meetings.</p>
-  </div>
-  <figure class="shot wide-shot"><img src="img/folder.webp" srcset="img/folder-sm.webp 1240w, img/folder.webp 2480w" sizes="(max-width: 900px) 100vw, 60vw" width="2480" height="1120" alt="File Explorer showing a note folder with summary.md, transcript.md and images, next to an AI chat that reads summary.md and answers what was decided." loading="lazy" decoding="async"><figcaption>A note’s folder, and an AI assistant reading it.</figcaption></figure>
-</section>
-
-<section id="compare" class="wrap pad stack-md">
-  <div class="head wide">
-    <span class="eyebrow">COMPARE</span>
-    <h2>How A9 Voice compares.</h2>
-    <p class="sub">Checked against each company’s own pages on October 5, 2026. Prices are per user per month; the annual rate is in brackets.</p>
-  </div>
-  <!-- copy-guard:allow -->
-  <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table">
-    <table class="cmp">
-      <thead>
-        <tr><th scope="col"></th><th scope="col">A9 Voice</th><th scope="col"><a href="https://wisprflow.ai/pricing">Wispr Flow</a></th><th scope="col"><a href="https://otter.ai/pricing">Otter</a></th><th scope="col"><a href="https://www.granola.ai/pricing">Granola</a></th><th scope="col"><a href="https://fireflies.ai/pricing">Fireflies</a></th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">Joins your call as a bot?</th><td class="us">No</td><td>No</td><td>Bot or desktop app</td><td>No</td><td><a href="https://guide.fireflies.ai/articles/6666374717-how-to-record-meetings-without-a-bot-on-the-fireflies-desktop-app">Bot or desktop app</a></td></tr>
-        <tr><th scope="row">Names people live</th><td class="us">Tag a voice once, or let it learn voices (opt-in)</td><td>From the calendar invite</td><td><a href="https://help.otter.ai/hc/en-us/articles/360048465453-Tagging-speaker-names-in-a-conversation">On Zoom only</a></td><td><a href="https://docs.granola.ai/help-center/taking-notes/speaker-attribution">Meeting display names</a></td><td>With the bot</td></tr>
-        <tr><th scope="row">Your own API keys</th><td class="us">Yes, or none: models run on your PC</td><td>No</td><td>No</td><td>No</td><td>No</td></tr>
-        <tr><th scope="row">Notes stored as local files</th><td class="us">Markdown on your PC</td><td>Their cloud</td><td>Their cloud</td><td>Their cloud</td><td>Their cloud</td></tr>
-        <tr><th scope="row">Price</th><td class="us">Free during the preview</td><td>Free plan; Pro $15 ($12)</td><td>Free 300 min/month; Pro $16.99 ($8.33)</td><td>Free with 30-day history; Business $14</td><td>Pro $18 ($10)</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <!-- copy-guard:end -->
-  <span class="fine">As of October 5, 2026. Product names link to each company’s pricing page; other links go to their own help pages. Tell us at <a href="mailto:contact@a9voice.com">contact@a9voice.com</a> if something has changed.</span>
-</section>
-
-<section id="requirements" class="wrap pad stack-md" aria-labelledby="req-h">
-  <div class="head wide">
-    <span class="eyebrow">REQUIREMENTS</span>
-    <h2 id="req-h">What you need.</h2>
-  </div>
-  <div class="grid g240">
-    <div class="tile"><h3>Windows 10 or 11, 64-bit</h3><p>Installs for your Windows user. No admin rights, no UAC prompt.</p></div>
-    <div class="tile"><h3>Cloud keys or models on your PC</h3><p>Bring keys for the speech and AI providers you pick, or download models and run with no key at all.</p></div>
-    <div class="tile"><h3>A graphics card is optional</h3><p>Any DirectX 12 card, any brand. It helps the big models; dictation with Parakeet V2 doesn’t need one.</p></div>
-    <div class="tile"><h3>Disk space per model</h3><p>The installer is small. Each model on your PC is its own download, from about 100 MB to about 4.7 GB; the app shows the size first. Graphics-card support is about 25 MB.</p></div>
-  </div>
-</section>
-
-<section class="wrap pad stack-md" aria-labelledby="soon-h">
-  <div class="head wide">
-    <span class="eyebrow">WHAT’S NEXT</span>
-    <h2 id="soon-h">What’s next. Not in the app yet.</h2>
-    <p class="sub">What’s here today is in the <a href="/changelog/">changelog</a>. These are things we’re working toward; none of them ships today.</p>
-  </div>
-  <div class="grid g260">
-    <div class="card"><span class="tag">Planned</span><h3>Calendar connection</h3><p>Pick up meeting names and attendees from your calendar, so notes start out with the right title and people.</p></div>
-    <div class="card"><span class="tag">Exploring</span><h3>A faster NVIDIA path</h3><p>Today’s graphics-card support works with any brand of card. We’re looking at an NVIDIA-specific route that could be faster still on those cards.</p></div>
-  </div>
-</section>
-
-<section id="privacy" class="wrap pad">
-  <div class="panel">
-    <div class="head">
-      <span class="eyebrow">PRIVACY</span>
-      <h2>What leaves your PC, and what never does.</h2>
+  <article class="moment rv">
+    <div class="when"><time>8:58 am</time><small>Enhance with AI</small></div>
+    <div class="what">
+      <div><h3>You say it messy. It reads clean.</h3><p>It drops the "um"s and fixes the punctuation. It never rewrites what you meant, and your dictionary spells names and jargon your way, every time.</p><div class="meta"><span>Filler removed</span><span>Punctuation fixed</span><span>Your dictionary</span></div></div>
+      <div class="scene" id="cleanScene" data-loop><div class="cleanscene">
+        <span class="lbl">What you said</span>
+        <p class="said"><span class="f x">Um, so</span> yeah, <span class="f x">I think, uh,</span> let's hold the launch <span class="f x">to like</span> Monday the twentieth <span class="f x">if, you know,</span> if the payment fix lands by Thursday</p>
+        <span class="arrow">↓ WHAT LANDS IN THE EMAIL</span>
+        <p class="wrote on">Let's hold the launch for Monday the 20th if the payment fix lands by Thursday.</p>
+        <div class="dict"><span>north wind → <b>Northwind</b></span><span>priya nair → <b>Priya Nair</b></span><span>k eights → <b>K8s</b></span></div>
+      </div></div>
     </div>
-    <div class="grid g240 roomy">
-      <div class="point"><h3>On this PC, nothing leaves</h3><p>With speech models on your PC and a language model on your PC, what you say and write stays on your PC.</p></div>
-      <div class="point"><h3>Only to the providers you pick</h3><p>With cloud keys, audio and text go only to the speech and AI providers you choose. No A9 Voice server in between. The one thing counted is installs, anonymously, and you can turn it off (<a href="/docs/privacy/">what is counted</a>).</p></div>
-      <div class="point"><h3>Voiceprints stay on your PC</h3><p>Voice recognition keeps voiceprints on your PC only. They are never uploaded, and never sent to a webhook or the connector.</p></div>
-      <div class="point"><h3>Voice recognition is opt-in</h3><p>It stays off until you turn it on.</p></div>
-      <div class="point"><h3>Delete any voice, any time</h3><p>Forget one person’s voice, or all of them at once.</p></div>
-      <div class="point"><h3>Plain files on your disk</h3><p>Notes are Markdown files in a folder you pick. Keys live in Windows Credential Manager.</p></div>
-      <div class="point"><h3>Recording consent</h3><p>Some places require everyone’s permission to record. You’re responsible for getting it.</p></div>
+  </article>
+
+  <article class="moment rv">
+    <div class="when"><time>9:00 am</time><small>Stand-up</small></div>
+    <div class="what">
+      <div><h3>The call starts. So does the recording.</h3><p>When Teams, Zoom or any app you pick opens the mic, A9 Voice starts recording on its own. You get eight seconds to discard it if this one shouldn't be kept.</p><div class="meta"><span>No bot joins</span><span>Mic + computer audio</span></div></div>
+      <div class="scene" data-loop><img src="/img/office-1280.webp" srcset="/img/office-640.webp 640w, /img/office-1280.webp 1280w, /img/office-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 520px" width="2000" height="1116" loading="lazy" decoding="async" alt="A woman at a standing desk on a video call at golden hour">
+        <div class="recbanner glass"><span class="dot"></span><span>Recording Teams call</span><span class="discard">Discard <span class="count" id="count">8</span></span></div>
+      </div>
     </div>
-    <a class="more" href="/docs/privacy-and-data/">The full privacy page →</a>
+  </article>
+
+  <article class="moment wide rv">
+    <div class="when"><time>9:03 am</time><small>Live names</small></div>
+    <div class="what">
+      <div class="head"><h3>Speaker 3 becomes Priya. In seconds.</h3><div><p>Tag a voice once and every line from that person carries the name. With voice recognition on, regulars are named as they speak. It's off until you turn it on, and voiceprints never leave your PC.</p><div class="meta"><span>Tag once</span><span>Opt-in voice recognition</span><span>No bot</span></div></div></div>
+      <div class="room" id="room" data-loop>
+        <div class="rtoast glass" id="rtoast" role="presentation"></div>
+        <div class="grid4" id="rgrid">
+          <figure><img src="/img/cam-priya-900.webp" srcset="/img/cam-priya-480.webp 480w, /img/cam-priya-900.webp 900w" sizes="(max-width: 900px) 46vw, 260px" width="900" height="506" loading="lazy" decoding="async" alt="Priya on the call"><figcaption>Priya Nair</figcaption></figure>
+          <figure id="rmarco"><img src="/img/cam-marco-900.webp" srcset="/img/cam-marco-480.webp 480w, /img/cam-marco-900.webp 900w" sizes="(max-width: 900px) 46vw, 260px" width="900" height="502" loading="lazy" decoding="async" alt="Marco on the call"><img class="alt" src="/img/chart.webp" width="960" height="600" loading="lazy" decoding="async" alt=""><figcaption>Marco Silva</figcaption></figure>
+          <figure><img src="/img/cam-elena-900.webp" srcset="/img/cam-elena-480.webp 480w, /img/cam-elena-900.webp 900w" sizes="(max-width: 900px) 46vw, 260px" width="900" height="506" loading="lazy" decoding="async" alt="Elena on the call"><figcaption>Elena Ruiz</figcaption></figure>
+          <figure><img src="/img/cam-tom-900.webp" srcset="/img/cam-tom-480.webp 480w, /img/cam-tom-900.webp 900w" sizes="(max-width: 900px) 46vw, 260px" width="900" height="502" loading="lazy" decoding="async" alt="Tom on the call"><figcaption>Tom Becker</figcaption></figure>
+          <div class="rflash" id="rflash"></div>
+        </div>
+        <div class="tscript" id="tscript"><div class="hd"><span class="rec"><i></i>Recording · Teams</span><span>Northwind launch review</span></div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="moment rv">
+    <div class="when"><time>9:14 am</time><small>Snips</small></div>
+    <div class="what">
+      <div><h3>Someone shares a chart. Snip it into the record.</h3><p>Win+Shift+S during a call drops the screenshot into the transcript at that moment, and into the meeting's folder.</p><div class="meta"><span>Win+Shift+S</span><span>Lands at 14:32</span></div></div>
+      <div class="scene" data-loop><div class="snip2"><div class="chart"><img src="/img/chart.webp" width="960" height="600" loading="lazy" decoding="async" alt="Crash reports chart shared in the call"><div class="sel"></div><div class="fl"></div></div><div class="chip glass"><span></span><div><b>Screenshot added</b><small>00:27 · images/</small></div></div></div></div>
+    </div>
+  </article>
+
+  <article class="moment rv">
+    <div class="when"><time>9:31 am</time><small>Notes</small></div>
+    <div class="what">
+      <div><h3>The call ends. The notes are already there.</h3><p>Your own action items come first. Decisions link to the moment they were made. Named after the meeting, filed in a folder with the date.</p><div class="meta"><span>Summary templates</span><span>PDF · Word · email</span></div></div>
+      <div class="scene"><div class="shot"><img src="/img/ui-note-crop.webp" width="1130" height="960" loading="lazy" decoding="async" alt="A9 Voice note page: your action items, overview, decisions"></div></div>
+    </div>
+  </article>
+
+  <article class="moment rv">
+    <div class="when"><time>4:45 pm</time><small>Ask</small></div>
+    <div class="what">
+      <div><h3>"What did Marco say about the payment fix?"</h3><p>Press Ctrl+K and ask across every meeting you've recorded. Every answer links to the exact moment, or says it couldn't find it.</p><div class="meta"><span>Ctrl+K</span><span>Quick and Deep</span></div></div>
+      <div class="scene" data-loop><img src="/img/desk-1440.webp" srcset="/img/desk-800.webp 800w, /img/desk-1440.webp 1440w, /img/desk-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 520px" width="2000" height="1116" loading="lazy" decoding="async" alt="" style="object-position:30% 40%;filter:brightness(.55)">
+        <div class="askcard glass"><div class="q"><kbd>Ctrl K</kbd><span class="typed" id="askq"><span class="full">What did Marco say about the payment fix?</span><span class="live" aria-hidden="true"></span></span></div><div class="a" id="aska">He's taking the payment fix himself and wants a second tester on older Android phones before the launch on Monday the 20th. <a href="#day">01:10 · Launch review</a></div></div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<section class="switch" id="switch" aria-labelledby="switch-h">
+  <img src="/img/hands-1280.webp" srcset="/img/hands-800.webp 800w, /img/hands-1280.webp 1280w, /img/hands-1800.webp 1800w" sizes="100vw" width="1800" height="1004" loading="lazy" decoding="async" alt="" id="swimg">
+  <div class="wrap">
+    <h2 class="eyebrow" id="switch-h">Why people switch</h2>
+    <div class="three">
+      <article class="rv"><h3>No bot in your call.</h3><p>It records your mic and your computer's audio, right on your PC. Nobody sees an assistant in the participant list.</p></article>
+      <article class="rv"><h3>Your files, not their cloud.</h3><p>Every note is a folder of plain Markdown on your PC. Claude, ChatGPT or any tool that reads files can use it.</p></article>
+      <article class="rv"><h3>Your keys. Or no internet at all.</h3><p>Run speech models on your PC with no key, or bring your own provider keys and pay them directly.</p></article>
+    </div>
   </div>
 </section>
 
-<section id="faq" class="wrap narrow pad stack-md">
-  <h2 class="h2s">Questions</h2>
-  <div class="faq">
-    <details><summary>What do my own keys cost?<span class="plus" aria-hidden="true">+</span></summary><p>You pay each speech and AI provider directly, at its own prices. In our test, a 27-minute meeting cost about 24 cents at list prices: Deepgram transcribed both sides of the call and Claude Haiku 4.5 (through OpenRouter) wrote the summary. An hour of dictation with Groq’s Whisper Large v3 Turbo costs about 4 cents. Settings › Usage &amp; cost shows your own estimate for the month, worked out from a price table you can edit. Models that run on your PC cost nothing per use.</p></details>
-    <details><summary>Does it work offline?<span class="plus" aria-hidden="true">+</span></summary><p>Yes. Download a speech model in Settings › Speech models and dictation and meeting transcripts work with no internet. For summaries, point the app at a language model running on your PC, or wait until you’re online and use your key.</p></details>
-    <details><summary>Do I need a graphics card?<span class="plus" aria-hidden="true">+</span></summary><p>No. Everything works on the processor. A graphics card is optional, any brand with DirectX 12 support, and it lets the bigger Whisper models run much faster than the processor on a modern card. If the card has a problem, A9 Voice finishes on the processor.</p></details>
-    <details><summary>How does it know who’s talking?<span class="plus" aria-hidden="true">+</span></summary><p>Your mic and the call’s audio are recorded separately, so your own lines are yours. The other people are told apart by their voices, and you tag each voice once in the Live window. If you turn on voice recognition, A9 Voice also learns voices from the names you give it and recognizes them in later calls.</p></details>
-    <details><summary>Is there a Mac version?<span class="plus" aria-hidden="true">+</span></summary><p>No. A9 Voice runs on Windows 10 and 11, 64-bit.</p></details>
-    <details><summary>Why is it free?<span class="plus" aria-hidden="true">+</span></summary><p>Free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. You pay your speech and AI providers directly for what you use.</p></details>
-    <details><summary>Where does my data live?<span class="plus" aria-hidden="true">+</span></summary><p>On your PC: history and settings in your app data folder, notes as Markdown in a folder you pick, keys in Windows Credential Manager. Audio and text go only to the providers you choose. The <a href="/docs/privacy-and-data/">privacy page</a> lists every place.</p></details>
-    <details><summary>How do updates work?<span class="plus" aria-hidden="true">+</span></summary><p>A9 Voice checks for updates and downloads them in the background. You restart into one with a click, or turn on a switch to restart by itself when you’re idle; it never restarts while you’re dictating or recording. Every update is signed. You can follow Stable or Dev; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p></details>
-    <details><summary>Windows says it protected my PC. Is that normal?<span class="plus" aria-hidden="true">+</span></summary><p>Yes, for this preview. The installer isn’t code-signed yet, so Windows shows SmartScreen once. Click More info, then Run anyway.</p></details>
+<!-- copy-guard:allow -->
+<section class="vsrow wrap" id="compare" aria-labelledby="compare-h">
+  <p class="eyebrow">If you're using one of these now</p>
+  <h2 id="compare-h">What changes when you switch.</h2>
+  <div class="vsgrid">
+    <div><h3>From <a href="https://otter.ai/pricing">Otter</a></h3><p>No bot or cloud account. <em>Names work on Teams too</em>, and your notes are files you keep.</p></div>
+    <div><h3>From <a href="https://fireflies.ai/pricing">Fireflies</a></h3><p>No assistant joins the call. <em>Voices stay on your PC</em>, never uploaded.</p></div>
+    <div><h3>From <a href="https://www.granola.ai/pricing">Granola</a></h3><p>Same bot-free capture, plus <em>live speaker names</em>, your own keys and offline models.</p></div>
+    <div><h3>From <a href="https://wisprflow.ai/pricing">Wispr Flow</a></h3><p>The same hold-to-talk dictation, <em>plus meeting notes</em>, in one app.</p></div>
   </div>
+  <p class="src">Based on each company's own pages, checked October 5, 2026.</p>
+  <a class="more" href="/features/">See everything it does →</a>
 </section>
+<!-- copy-guard:end -->
 
-<section id="download" class="wrap pad">
-  <div class="dl">
-    <img src="img/icon-64.svg" alt="" width="64" height="64">
-    <h2>Stop typing what you can say.</h2>
-    <p class="sub">Free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. One small installer, no admin rights needed.</p>
-    <a class="btn btn-xl" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v10M5 8l4 4 4-4M3 15h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download free</a>
-    <span class="fine">Version <span id="ver">latest</span> · Windows 10/11, 64-bit · <a href="/docs/">Manual</a> · <a href="/changelog/">Changelog</a> · <a href="https://github.com/atlas9-ai/a9voice-releases/releases">All releases</a></span>
-  </div>
+<section class="end" id="download">
+  <div class="wrap"><h2>Stop typing what you can <span>say.</span></h2>
+  <div class="cta"><a class="btn btn-primary" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe" data-src="home-end">Download free for Windows</a></div>
+  <small>Free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first.</small></div>
 </section>
 
 </main>
 
-<footer class="foot wrap">
-  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
-  <nav class="foot-links" aria-label="Footer">
-    <a href="/docs/">Manual</a>
-    <a href="/changelog/">Changelog</a>
-    <a href="/docs/privacy-and-data/">Privacy</a>
-    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
-    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
-    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
-    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
-  </nav>
+<footer class="sitefoot">
+  <div class="sn-wrap">
+    <div class="sf-row">
+      <span class="sf-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+      <nav class="sf-links" aria-label="Footer">
+        <a href="/docs/">Manual</a>
+        <a href="/features/">All features</a>
+        <a href="/changelog/">Changelog</a>
+        <a href="/docs/privacy-and-data/">Privacy</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+        <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+      </nav>
+    </div>
+    <p class="sf-note">Photos are illustrative; people shown are fictional.</p>
+  </div>
 </footer>
 </body>
 </html>
