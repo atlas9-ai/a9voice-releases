@@ -1,0 +1,61 @@
+name: pages
+
+# Builds site/ and deploys it to GitHub Pages (custom domain in site/site.config.json).
+# Also serves the update channels at a9voice.com/channels/{dev,stable}.json, the
+# app's first update endpoint (it doesn't change if the repo moves), so channels/
+# commits from the release and promote workflows redeploy too.
+# Pull requests build (and check) the site but don't deploy.
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "channels/dev.json", "channels/stable.json", "README.md", ".copy-guard-allow", ".github/workflows/pages.yml"]
+  pull_request:
+    paths: ["site/**", "channels/dev.json", "channels/stable.json", "README.md", ".copy-guard-allow", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The site and README never name other products, the lab or internal
+      # tooling; the comparison table is the one listed exception.
+      - run: node site/tools/copy-guard.mjs .
+      - run: node site/build.mjs _site
+      - name: Update channels
+        run: |
+          mkdir -p _site/channels
+          for c in dev stable; do
+            node -e 'const m = JSON.parse(require("fs").readFileSync(process.argv[1])); if (!m.version || !m.platforms["windows-x86_64"].signature) process.exit(1)' "channels/$c.json"
+            cp "channels/$c.json" "_site/channels/$c.json"
+          done
+      - name: Check the build
+        run: |
+          test -f _site/index.html && test -f _site/robots.txt && test -f _site/CNAME
+          ! grep -rn '{{' _site --include='*.html' --include='*.js' --include='*.css' --include='*.txt'
+          for f in $(grep -o 'img/[a-z-]*\.\(webp\|png\)' _site/index.html | sort -u); do test -f "_site/$f" || { echo "missing $f"; exit 1; }; done
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
