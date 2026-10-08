@@ -1,11 +1,11 @@
 {
-  "version": "0.6.4",
-  "notes": "- Fixes the **AI:** chip at the top not following the checkmark on Settings › Language models. One pick now sets Enhance, Summaries and Ask together, and the chip changes with it. If you give one job its own model, the chip says **+1 override** and the page lists that job with a **Change** link.\n- The Live window's bottom bar now says only who is talking: **Now: Speaker 4**. The person before them is small and grey underneath (\"after Marcus\"), and the field asks **Who's talking? Type a name**.\n- After you name someone from the bar, it shows **Tagged Ana ✓** for a few seconds instead of putting that in the field.\n- The group names in the Settings list (Shared, Transcribe, Notes) are blue with more room above, and the plan card in Settings › Account shows the A9 Voice name next to the mark.",
-  "pub_date": "2026-10-08T16:51:56Z",
+  "version": "0.6.5",
+  "notes": "- Moved downloads and updates to the Atlas9 organization. No user-facing change.",
+  "pub_date": "2026-10-08T20:06:25Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExhTXhSRm9MWGRnRkhhc21xdVJLM011YlVIMDhhVXFvc3FiS0tPbW45cVY3clcxNkF2ZjlTUHRKYWpKckpLMGxKY0RoQlkrSTRXVHBhckRXTGJqcndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDc4MjY0CWZpbGU6QTkgVm9pY2VfMC42LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi40CnhRaklLZHdabmNrNEZEcUtlTUdJdWdIeWVLYjZrYXMyajNDM050a3R0NDROWEsyTk5UYWxkRVE0R0Z2UEUvN3BWd3hFNGU2QWxUNFFFb1VzZW51S0FBPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.4/A9Voice_0.6.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEtMYjZmaHgwa3NvUTIweXpBYndIZmQzSjQ2bzVxL1lRUTN2VHovbU40ZDJYOUphTmpZL1IrR01JU00xSUR3K0xiR0FvbG9sMC94ODJDdEZiVGxKWndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDg5OTE5CWZpbGU6QTkgVm9pY2VfMC42LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi41CjlOejFQK1JqNHFoWG1PUzU1Uy9ic25SVWd5eFhEVUp6RUV6eFdoTzlRQmhPaERkZVJORklUNEptYjNZcTZUQys0a2dQOHRWQnM1bG1oUnliM0dlTUFBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.5/A9Voice_0.6.5_x64-setup.exe"
     }
   }
 }
