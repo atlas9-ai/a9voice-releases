@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings reference · A9 Voice Manual</title>
+<meta name="description" content="Every page in Settings and every option on it, in the order the app shows them, with what it does and what a new install starts with.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/settings-reference/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Settings reference · A9 Voice Manual">
+<meta property="og:description" content="Every page in Settings and every option on it, in the order the app shows them, with what it does and what a new install starts with.">
+<meta property="og:url" content="https://a9voice.com/docs/settings-reference/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/" aria-current="page">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
+      <h1>Settings reference</h1>
+      <p class="docs-lead">Every page in Settings and every option on it, in the order the app shows them, with what it does and what a new install starts with.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.4</p>
+      <p>Open <strong>Settings</strong> at the bottom of the sidebar. The list on the left has four parts: <strong>Account</strong> and <strong>General</strong> at the top, then <strong>Shared</strong>, <strong>Transcribe</strong> and <strong>Notes</strong>. In a narrow window the list turns into a drop-down called <strong>Settings page</strong>.</p>
+<p>This page follows that list. Each option is one line: its name exactly as the app shows it, what it does, and its default for a <strong>new install</strong>. A copy that was updated from an older version keeps the choices it already had. Changes save as you make them; there is no Save button except where a page says so.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-list-1x.webp" srcset="/img/docs/settings-reference-list-1x.webp 1x, /img/docs/settings-reference-list.webp 2x" width="190" height="760" alt="The Settings list: Account and General, then Shared, Transcribe and Notes." loading="lazy" decoding="async"><figcaption>The Settings list. The page you pick opens on the right.</figcaption></figure></p>
+<h2 id="account">Account<a class="anchor" href="#account" aria-label="Link to Account">#</a></h2>
+<p>Account is the first page in Settings, above the groups. It holds your plan, your profile (the &quot;You&quot; that meetings use) and the backup of your setup.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-account-1x.webp" srcset="/img/docs/settings-reference-account-1x.webp 1x, /img/docs/settings-reference-account.webp 2x" width="1032" height="760" alt="Settings › Account: the plan card, the profile fields and the Data card." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-plan"><strong>Plan:</strong> shows <strong>Preview</strong> with &quot;all features unlocked&quot;. Every feature is on during the preview, and personal use is free.</li>
+<li id="opt-manage-license"><strong>Manage license:</strong> a button that is switched off for now. Licenses arrive with 1.0.</li>
+<li id="opt-your-name"><strong>Your name:</strong> the name your own lines carry in meeting transcripts and the name summaries use for you. It is required. If you empty the box, A9 Voice goes back to your Windows account name. Setup asks for it in step 1.</li>
+<li id="opt-other-names-people-use"><strong>Other names people use:</strong> nicknames and short forms, separated by commas. Saved with your profile on this PC.</li>
+<li id="opt-role-or-title"><strong>Role or title:</strong> optional, saved with your profile on this PC.</li>
+<li id="opt-organization"><strong>Organization:</strong> optional, saved with your profile on this PC.</li>
+<li id="opt-back-up-or-move-your-setup"><strong>Back up or move your setup:</strong> two buttons, <strong>Import…</strong> and <strong>Export…</strong>. Export writes one zip file with your settings, your Dictionary, your summary templates (with their logos) and the names of your tags. It never contains API keys, webhook addresses, signing secrets, your history, your notes, any audio or your voiceprints. The settings in it do include folder paths, custom server addresses and your profile, so treat the file as personal. Import reads such a zip and keeps what belongs to this PC: your microphone and speaker choices, your notes folder and Audio folder, where the windows sit, whether setup is finished, your update channel and the voice-recognition switch.</li>
+</ul>
+<p>Your profile never leaves this PC except for your name, which goes into the instructions for summaries (see <a href="/docs/privacy-and-data/">Privacy and data</a>).</p>
+<h2 id="general">General<a class="anchor" href="#general" aria-label="Link to General">#</a></h2>
+<p>General has no group heading. It is the second page in Settings and it also holds the update controls and the About card, further down the same page.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-general-1x.webp" srcset="/img/docs/settings-reference-general-1x.webp 1x, /img/docs/settings-reference-general.webp 2x" width="1032" height="760" alt="Settings › General: start-up, the pill and how much history to keep." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-start-with-windows"><strong>Start with Windows:</strong> starts A9 Voice when you sign in, waiting in the tray. On for a new install.</li>
+<li id="opt-start-minimized"><strong>Start minimized:</strong> no window opens at sign-in; only the tray icon. On for a new install. After an automatic update the app also comes back quietly when this is on.</li>
+<li id="opt-show-the-pill-when-idle"><strong>Show the pill when idle:</strong> keeps a small dot of the dictation pill on screen when nothing is happening. Off for a new install.</li>
+<li id="opt-pill-at-the-top-of-the-screen"><strong>Pill at the top of the screen:</strong> moves the pill from the bottom of the screen to the top. Off for a new install, so the pill sits at the bottom.</li>
+<li id="opt-history-kept"><strong>History kept:</strong> how many dictations the Transcribe history keeps; older ones are deleted. Choices: Last 100, 500, 1,000, 5,000 or 20,000. Default Last 1,000.</li>
+<li id="opt-search-dictations-too"><strong>Search dictations too:</strong> lets <strong>Ctrl+K</strong> search, Ask your notes and connected AI apps include your dictation history. On for a new install.</li>
+</ul>
+<p>More: <a href="/docs/transcribe/">Transcribe</a> and <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h3 id="updates">Updates<a class="anchor" href="#updates" aria-label="Link to Updates">#</a></h3>
+<p>The Updates card is on the General page, under the options above. The version line at the bottom of the sidebar opens it.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-updates-1x.webp" srcset="/img/docs/settings-reference-updates-1x.webp 1x, /img/docs/settings-reference-updates.webp 2x" width="814" height="219" alt="The Updates card: this version, the channel and the automatic restart." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-this-version"><strong>This version:</strong> the version you run, with <strong>Check now</strong>. The line under it says what the last check found: &quot;Checking…&quot;, &quot;You&#39;re up to date&quot;, &quot;Downloading&quot; with the version, an error, or when it last checked.</li>
+<li id="opt-channel"><strong>Channel:</strong> <strong>Stable</strong> or <strong>Dev</strong>. Stable is the default for a new install. Dev gets every new build first; Stable gets builds once they have proven reliable. Picking a channel checks for updates at once.</li>
+<li id="opt-restart-automatically-when-idle"><strong>Restart automatically when idle:</strong> when an update is downloaded and checked, restart into it after 2 minutes without dictation. Never while you are dictating or recording. If you never set it, it is off on Stable and on for Dev.</li>
+</ul>
+<p>Details: <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
+<h3 id="about">About<a class="anchor" href="#about" aria-label="Link to About">#</a></h3>
+<p>The About card is at the bottom of the General page. It shows the version and the copyright line, <strong>Atlas9 LLC</strong>, and says &quot;Proprietary, free for personal use during the preview.&quot;</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-about-1x.webp" srcset="/img/docs/settings-reference-about-1x.webp 1x, /img/docs/settings-reference-about.webp 2x" width="814" height="349" alt="The About card: version, license link and the four buttons." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-view-license"><strong>View license:</strong> shows the license text on the page. The link then reads <strong>Hide license</strong>.</li>
+<li id="opt-copy-diagnostics"><strong>Copy diagnostics:</strong> copies a block of text to the clipboard for an email to <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>. It holds the version, Windows, microphone, the speech and language providers you set up (names only), your dictation shortcuts and whether they registered, the update channel, graphics-card and display details, and the last 200 log lines with anything key-like removed. It never holds API keys or transcript text. The same command is in the tray menu under <strong>Help</strong>.</li>
+<li id="opt-open-logs-folder"><strong>Open logs folder:</strong> opens the folder with the log files.</li>
+<li id="opt-run-setup-again"><strong>Run setup again:</strong> opens the first-run setup from step 1. The tray menu does the same under <strong>Help › Restart setup</strong>; <strong>Skip setup</strong> is there too.</li>
+<li id="opt-third-party-notices"><strong>Third-party notices:</strong> shows the notices for the open-source parts of A9 Voice. The button then reads <strong>Hide notices</strong>.</li>
+<li id="opt-open-source-on-this-pc"><strong>Open source on this PC:</strong> a list of the speech models you can download and the engine that runs them, each with its license.</li>
+</ul>
+<p>More: <a href="/docs/troubleshooting/">Troubleshooting</a> and <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h2 id="speech-models">Speech models<a class="anchor" href="#speech-models" aria-label="Link to Speech models">#</a></h2>
+<p>Part of the <strong>Shared</strong> group. Speech models turn your voice into text, for dictation and for notes. Your keys are kept in Windows Credential Manager and nowhere else.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-speech-models-1x.webp" srcset="/img/docs/settings-reference-speech-models-1x.webp 1x, /img/docs/settings-reference-speech-models.webp 2x" width="1032" height="760" alt="Settings › Speech models: the cloud tiles, the graphics-card switch and the models that run on this PC." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-dictation-notes-and-fallback"><strong>Dictation, Notes and Fallback:</strong> the line at the top names the model that handles each. Click a name to open it.</li>
+<li id="opt-groq"><strong>Groq:</strong> cloud speech. The default for dictation, with Whisper Large v3 Turbo. You choose the model in its window.</li>
+<li id="opt-deepgram"><strong>Deepgram:</strong> cloud speech with live streaming and speaker separation. The default fallback for dictation and the default for notes, with Nova-3.</li>
+<li id="opt-openai"><strong>OpenAI:</strong> cloud speech. Its key is shared with OpenAI on the Language models page.</li>
+<li id="opt-elevenlabs"><strong>ElevenLabs:</strong> cloud speech with speaker separation.</li>
+<li id="opt-add-custom-api"><strong>Add custom API:</strong> adds a speech server of your own that has an OpenAI-compatible transcription endpoint, such as one running on this PC. Needs a <strong>Base URL</strong>; give it a <strong>Name</strong> and a <strong>Model</strong> too. The <strong>API key</strong> and an <strong>Extra header</strong> are optional.</li>
+<li id="opt-api-key"><strong>API key:</strong> the key for a provider. It is saved to Windows Credential Manager when you press Save. <strong>Get your key</strong> opens the provider&#39;s own page in your browser.</li>
+<li id="opt-test"><strong>Test:</strong> sends a 2-second test clip to the provider and shows what it heard.</li>
+<li id="opt-use-for-dictation"><strong>Use for dictation:</strong> makes this model the one that hears you when you hold the dictation key. Default Groq.</li>
+<li id="opt-use-for-notes"><strong>Use for notes:</strong> makes this model transcribe meetings. Default Deepgram. Models that cannot tell speakers apart label lines Me and Them.</li>
+<li id="opt-use-as-fallback"><strong>Use as fallback:</strong> the model tried once if the dictation model fails, is rate limited or takes longer than 4 seconds. Default Deepgram. It has to be a different model from the one used for dictation.</li>
+<li id="opt-disconnect"><strong>Disconnect:</strong> removes the saved key (and, for a custom server, the server). It is greyed out for the model used for dictation; choose another first.</li>
+<li id="opt-use-graphics-card"><strong>Use graphics card:</strong> lets the Whisper models that support it run on a DirectX 12 graphics card. On for a new install, and it does nothing on a PC without a supported card. The line under it names the card and its memory, or says why none can be used. Integrated graphics have only memory they borrow from the PC, so the line says &quot;shared memory&quot; and models that need a graphics card do not run on it.</li>
+<li id="opt-graphics-card"><strong>Graphics card:</strong> appears only when the PC has more than one usable card. Models run on the one you pick; the best one is the default.</li>
+<li id="opt-graphics-card-support"><strong>Graphics-card support:</strong> a one-time download of about 25 MB that lets models use the card. It is checked before use. <strong>Download</strong>, <strong>Cancel</strong> and <strong>Remove</strong> manage it.</li>
+<li id="opt-graphics-card-unavailable-used-the-processor"><strong>Graphics card unavailable, used the processor:</strong> a notice row that appears after the card had a problem. The job finished on the processor. Turn <strong>Use graphics card</strong> off and on to try the card again.</li>
+<li id="opt-graphics-card-gave-a-bad-result-used-the-processor"><strong>Graphics card gave a bad result, used the processor:</strong> the same kind of notice, for a card that answered with text that did not pass A9 Voice&#39;s checks. The text from the card is thrown away, the processor does the job again, and only that result is used.</li>
+<li id="opt-english-only"><strong>English only:</strong> models that run on this PC and only understand English: Parakeet V2, Whisper Small, Base and Tiny (English).</li>
+<li id="opt-multilingual"><strong>Multilingual:</strong> models that run on this PC and understand many languages: Parakeet V3 and Whisper Tiny, Base and Small, plus Medium, Large v3 and Large v3 Turbo, which run on a graphics card.</li>
+<li id="opt-model-tags"><strong>Model tags:</strong> a model that cannot run here says why on its tile: &quot;Needs a graphics card&quot;, &quot;Needs Use graphics card&quot;, &quot;Needs&quot; and the amount of graphics memory it wants, &quot;Needs its own memory&quot; (integrated graphics), or &quot;Graphics card unavailable&quot;.</li>
+<li id="opt-the-models-folder"><strong>The models folder:</strong> the link under the models opens the folder where they are saved, <code>%LOCALAPPDATA%\A9 Voice\models</code>. Without internet, dictation and notes use a downloaded model automatically.</li>
+</ul>
+<p>Details: <a href="/docs/speech-models/">Speech models</a>.</p>
+<h2 id="language-models">Language models<a class="anchor" href="#language-models" aria-label="Link to Language models">#</a></h2>
+<p>Part of the <strong>Shared</strong> group. Language models write meeting summaries and titles, answer Ask, and power Enhance with AI in Dictation.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-language-models-1x.webp" srcset="/img/docs/settings-reference-language-models-1x.webp 1x, /img/docs/settings-reference-language-models.webp 2x" width="1032" height="760" alt="Settings › Language models: one tile per provider and the lines that say which model does what." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-enhance-summaries-and-ask"><strong>Enhance, Summaries and Ask:</strong> the lines at the top show the model each one uses, with a <strong>Change</strong> link to the page where you choose it.</li>
+<li id="opt-openrouter"><strong>OpenRouter:</strong> one key for models from several companies. Your text goes to OpenRouter, which passes it to the model you picked.</li>
+<li id="opt-openai-2"><strong>OpenAI:</strong> small chat models. The key is shared with OpenAI speech.</li>
+<li id="opt-anthropic"><strong>Anthropic:</strong> Claude Haiku 4.5.</li>
+<li id="opt-groq-2"><strong>Groq:</strong> open models on Groq. The key is shared with Groq speech.</li>
+<li id="opt-google"><strong>Google:</strong> Gemini models through Google AI Studio.</li>
+<li id="opt-add-custom-api-2"><strong>Add custom API:</strong> adds a language-model server that has an OpenAI-compatible chat endpoint, for example one running on your own PC (the page gives <code>http://localhost:11434/v1</code> as an example address). Needs a <strong>Base URL</strong>; give it a <strong>Name</strong> and a <strong>Model</strong> too. The <strong>API key</strong> and an <strong>Extra header</strong> are optional.</li>
+<li id="opt-model"><strong>Model:</strong> the model to use at that provider. Pick from the list or type a name.</li>
+<li id="opt-test-2"><strong>Test:</strong> cleans up a short test phrase so you can see that the key works.</li>
+<li id="opt-use-for-enhance-summaries-and-ask"><strong>Use for Enhance, summaries and Ask:</strong> makes this provider the one all three use, and clears any model you had set for one of them (it asks first when there is one). The checkmark on a tile marks it, and the <strong>AI:</strong> chip at the top shows it too.</li>
+<li id="opt-disconnect-2"><strong>Disconnect:</strong> removes the saved key (or the custom server).</li>
+</ul>
+<p>Details: <a href="/docs/language-models/">Language models</a>.</p>
+<h2 id="usage-and-cost">Usage &amp; cost<a class="anchor" href="#usage-and-cost" aria-label="Link to Usage &amp; cost">#</a></h2>
+<p>Part of the <strong>Shared</strong> group. It estimates what dictation and notes cost this month from the prices below. You pay each provider directly with your own keys, and the provider&#39;s bill is the final word.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-usage-and-cost-1x.webp" srcset="/img/docs/settings-reference-usage-and-cost-1x.webp 1x, /img/docs/settings-reference-usage-and-cost.webp 2x" width="1032" height="760" alt="Settings › Usage &amp; cost: this month's estimate, the cost per meeting hour and dictation." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-estimated-this-month"><strong>Estimated this month:</strong> the total for the month, with hours of meetings and minutes of dictation.</li>
+<li id="opt-average-per-meeting-hour"><strong>Average per meeting hour:</strong> transcript and summary cost per hour of meeting. Shows a dash until there is a meeting.</li>
+<li id="opt-dictation-this-month"><strong>Dictation this month:</strong> cost, number and minutes of dictations.</li>
+<li id="opt-by-provider-this-month"><strong>By provider, this month:</strong> a bar for each provider.</li>
+<li id="opt-the-table"><strong>The table:</strong> one row per note and day with Date, Note, Providers, Length and Cost. Click a heading to sort. A row for a note opens that note.</li>
+<li id="opt-price-table-usd"><strong>Price table (USD):</strong> opens an editable table: price per audio hour (speech), and per million tokens in and out (language models). Speech is counted per channel, so a meeting sends your side and the other side separately. <strong>Reset to defaults</strong> puts the list prices back.</li>
+</ul>
+<p>The defaults are the providers&#39; public list prices for each one&#39;s usual model, checked on 2026-10-05. The line <strong>Set</strong> and a date beside the table&#39;s name shows when the table was last set or edited.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Provider</th><th scope="col">Per audio hour</th><th scope="col">Per 1M tokens in</th><th scope="col">Per 1M tokens out</th></tr></thead><tbody>
+<tr><td>Groq</td><td>$0.04</td><td>$0.075</td><td>$0.30</td></tr>
+<tr><td>Deepgram</td><td>$0.258</td><td>none</td><td>none</td></tr>
+<tr><td>ElevenLabs</td><td>$0.22</td><td>none</td><td>none</td></tr>
+<tr><td>OpenAI</td><td>$0.36</td><td>$0.40</td><td>$1.60</td></tr>
+<tr><td>OpenRouter</td><td>none</td><td>$1.00</td><td>$5.00</td></tr>
+<tr><td>Anthropic</td><td>none</td><td>$1.00</td><td>$5.00</td></tr>
+<tr><td>Google</td><td>none</td><td>$0.10</td><td>$0.40</td></tr>
+</tbody></table></div>
+<p>Models that run on this PC cost nothing per use. Details: <a href="/docs/speech-models/">Speech models</a> and <a href="/docs/language-models/">Language models</a>.</p>
+<h2 id="connectors">Connectors<a class="anchor" href="#connectors" aria-label="Link to Connectors">#</a></h2>
+<p>Part of the <strong>Shared</strong> group. Connectors let AI apps on this PC search and read your notes. It is read only, and nothing is shared until you turn it on and connect an app.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-connectors-1x.webp" srcset="/img/docs/settings-reference-connectors-1x.webp 1x, /img/docs/settings-reference-connectors.webp 2x" width="1032" height="760" alt="Settings › Connectors: the switch and the ways to connect an app." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-connector-for-ai-apps"><strong>Connector for AI apps:</strong> the master switch. Off for a new install. When it is off, a connected app gets a short message instead of your notes.</li>
+<li id="opt-connect-to-claude-desktop"><strong>Connect to Claude Desktop…:</strong> under <strong>Claude Desktop</strong>, a one-click connect for the one app A9 Voice can set up itself. It shows the change it will make to that app&#39;s settings file first and makes a backup copy before changing an existing file. If the connector is off, the button reads <strong>Turn on &amp; connect to Claude Desktop…</strong> and also turns the connector on.</li>
+<li id="opt-other-apps"><strong>Other apps:</strong> <strong>Copy command</strong> and <strong>Copy settings (JSON)</strong> copy what another app needs to start the connector. The app&#39;s own settings page is where you paste it.</li>
+<li id="opt-recent-requests"><strong>Recent requests:</strong> the log, kept on this PC, of what connected apps asked for and when.</li>
+</ul>
+<p>Details: <a href="/docs/connector/">Connector for AI apps</a>.</p>
+<h2 id="dictation">Dictation<a class="anchor" href="#dictation" aria-label="Link to Dictation">#</a></h2>
+<p>Part of the <strong>Transcribe</strong> group. These are the keys and the way text goes into the app you are typing in.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-dictation-1x.webp" srcset="/img/docs/settings-reference-dictation-1x.webp 1x, /img/docs/settings-reference-dictation.webp 2x" width="1032" height="760" alt="Settings › Dictation: the keys, how text goes in, hands-free mode and Enhance with AI." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-dictation-key"><strong>Dictation key:</strong> hold to talk, let go to insert. A quick tap does nothing. Default <kbd>Ctrl</kbd>+<kbd>Space</kbd>. Click it and press the new shortcut. If another app has it, the sidebar says <strong>Key in use · fix</strong>.</li>
+<li id="opt-dictation-microphone"><strong>Dictation microphone:</strong> the microphone for dictation. The first choice is <strong>Windows default</strong>, which follows Windows if you change it. Pick a second microphone to keep dictating while your headset is muted in a call. It is the same setting as <strong>Microphone</strong> on the Microphone page.</li>
+<li id="opt-paste-last-transcription"><strong>Paste last transcription:</strong> puts the last result in again. Default <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>. You can clear it to turn it off.</li>
+<li id="opt-how-text-goes-in"><strong>How text goes in:</strong> <strong>Paste</strong> (fastest, the default) or <strong>Type</strong> (for apps that block paste).</li>
+<li id="opt-put-my-clipboard-back-afterwards"><strong>Put my clipboard back afterwards:</strong> restores whatever you had copied once the text is in. On for a new install.</li>
+<li id="opt-add-a-space-after"><strong>Add a space after:</strong> adds a space after the text so the next sentence does not run on. On for a new install.</li>
+<li id="opt-keep-out-of-clipboard-history"><strong>Keep out of clipboard history:</strong> shows <strong>Always</strong>. Dictations never appear in Win+V or the cloud clipboard.</li>
+<li id="opt-language"><strong>Language:</strong> the language you speak. Choices: English (the default), Detect automatically, Spanish, French, German, Portuguese, Italian, Dutch, Japanese, Chinese. Setting it is faster and more accurate than detecting.</li>
+<li id="opt-hands-free-mode"><strong>Hands-free mode:</strong> <strong>Off</strong> (the default for a new install), <strong>Its own key</strong> (press once to start, again to stop and insert; Esc cancels) or <strong>Tap the dictation key</strong> (a quick tap starts it and the next tap stops).</li>
+<li id="opt-hands-free-key"><strong>Hands-free key:</strong> appears with <strong>Its own key</strong>. Default <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>. You can clear it.</li>
+<li id="opt-hands-free-limit"><strong>Hands-free limit:</strong> appears when hands-free is on. Stops and pastes after this long, with a warning a minute before. Choices: 1, 2, 5, 10, 15 or 30 minutes. Default 10 minutes.</li>
+<li id="opt-enhance-with-ai"><strong>Enhance with AI:</strong> a language model tidies each dictation before it is inserted: removes &quot;um&quot; and &quot;uh&quot;, fixes punctuation and capitals, and spells your Dictionary words right. It never rewrites, shortens or answers what you said. Off for a new install. The text of the dictation goes to the language model you choose.</li>
+<li id="opt-model-2"><strong>Model:</strong> the language model Enhance uses. It lists the models you have set up on Language models; until you add a key, text is inserted as heard. A small, fast model keeps dictation quick.</li>
+<li id="opt-style"><strong>Style:</strong> <strong>Light cleanup</strong> (the default) or <strong>Formal</strong>, which only adjusts tone a little and never adds content.</li>
+<li id="opt-wait-at-most"><strong>Wait at most:</strong> how long Enhance may take: 1.0, 1.5, 2.0 or 3.0 seconds. Default 1.5. Past that, the raw text is inserted so dictation never stalls.</li>
+<li id="opt-custom-instructions"><strong>Custom instructions:</strong> your own rules for Enhance, for example how to write a name. They cannot override its built-in rules.</li>
+<li id="opt-paste-keys"><strong>Paste keys:</strong> under <strong>Show advanced</strong>. <strong>Ctrl+V</strong> (the default) or <strong>Shift+Insert</strong>, which some terminals and remote desktops prefer.</li>
+<li id="opt-clipboard-restore-delay"><strong>Clipboard restore delay:</strong> under <strong>Show advanced</strong>. How long the app gets to read the text before your clipboard comes back: 200, 400, 800, 1500 or 3000 ms. Default 400 ms.</li>
+</ul>
+<p>Details: <a href="/docs/transcribe/">Transcribe</a>, <a href="/docs/dictionary/">Dictionary</a> and <a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a>.</p>
+<h2 id="microphone">Microphone<a class="anchor" href="#microphone" aria-label="Link to Microphone">#</a></h2>
+<p>Part of the <strong>Transcribe</strong> group. The page&#39;s own heading in the app reads <strong>Audio</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-microphone-1x.webp" srcset="/img/docs/settings-reference-microphone-1x.webp 1x, /img/docs/settings-reference-microphone.webp 2x" width="1032" height="760" alt="Settings › Microphone: the microphone picker with Test, and the three options under it." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-microphone"><strong>Microphone:</strong> the input device for dictation. <strong>Windows default</strong> follows Windows; or pick one. <strong>Test</strong> shows a live level meter: say a few words and the bar should move when you talk and rest when you do not.</li>
+<li id="opt-keep-microphone-ready"><strong>Keep microphone ready:</strong> starts a little faster, because the microphone is already open. Windows shows the microphone as in use. Off for a new install.</li>
+<li id="opt-sounds"><strong>Sounds:</strong> a soft tone when recording starts, stops or is cancelled. On for a new install. In a call with a Bluetooth headset the tone plays on the headset&#39;s call audio and can come a moment late.</li>
+<li id="opt-volume"><strong>Volume:</strong> how loud those tones are. Default is half.</li>
+</ul>
+<p>Details: <a href="/docs/transcribe/">Transcribe</a> and <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="dictation-audio">Dictation audio<a class="anchor" href="#dictation-audio" aria-label="Link to Dictation audio">#</a></h2>
+<p>Part of the <strong>Transcribe</strong> group. A9 Voice can keep the audio of each dictation for a few days, so one that failed can be transcribed again. Settings, history and logs stay in the app&#39;s data folder; only audio goes in the Audio folder.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-dictation-audio-1x.webp" srcset="/img/docs/settings-reference-dictation-audio-1x.webp 1x, /img/docs/settings-reference-dictation-audio.webp 2x" width="1032" height="760" alt="Settings › Dictation audio: save audio, the Audio folder and how long to keep it." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-save-audio-recordings"><strong>Save audio recordings:</strong> keeps a small compressed file (under 100 KB a minute) for each dictation. On for a new install.</li>
+<li id="opt-audio-folder"><strong>Audio folder:</strong> where audio goes, <code>Documents\A9 Voice\Audio</code> unless you change it. Dictation audio is in its <strong>Transcribe</strong> folder and meeting audio in its <strong>Notes</strong> folder. <strong>Change…</strong> asks whether to move the existing recordings or start fresh; <strong>Open</strong> opens the folder. A9 Voice only counts, moves or deletes files it made itself.</li>
+<li id="opt-keep-dictation-audio"><strong>Keep dictation audio:</strong> how long audio is kept; older recordings are deleted daily. Choices: 1 day, 7 days, 30 days, 90 days or Forever. Default 7 days. Audio for a failed dictation is kept until you retry or delete it.</li>
+</ul>
+<p>Details: <a href="/docs/transcribe/">Transcribe</a> and <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h2 id="recording">Recording<a class="anchor" href="#recording" aria-label="Link to Recording">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. When a meeting app you pick uses your microphone, A9 Voice starts recording by itself, with an 8-second <strong>Discard</strong> notice. It stops when the app lets go of the microphone. Dictation never starts a recording.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-recording-1x.webp" srcset="/img/docs/settings-reference-recording-1x.webp 1x, /img/docs/settings-reference-recording.webp 2x" width="1032" height="760" alt="Settings › Recording: the meeting apps and the keys used while recording." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-microsoft-teams"><strong>Microsoft Teams:</strong> the desktop app starts a recording. On for a new install.</li>
+<li id="opt-zoho-cliq-and-zoho-meeting"><strong>Zoho Cliq and Zoho Meeting:</strong> the desktop apps. Calls in a browser need <strong>Browser calls</strong>. On for a new install.</li>
+<li id="opt-zoom"><strong>Zoom:</strong> the desktop app. Off for a new install.</li>
+<li id="opt-webex"><strong>Webex:</strong> the desktop app. Off for a new install.</li>
+<li id="opt-slack-huddles"><strong>Slack huddles:</strong> the desktop app. Off for a new install.</li>
+<li id="opt-discord"><strong>Discord:</strong> the desktop app. Off for a new install.</li>
+<li id="opt-browser-calls"><strong>Browser calls:</strong> Google Meet, Teams or Zoom on the web, in Chrome, Edge or Firefox. Any site using the microphone counts. Off for a new install.</li>
+<li id="opt-other-app"><strong>Other app:</strong> join a call in the app first, then pick it with <strong>Choose from apps using your mic now…</strong>. <strong>Add</strong> puts it on the list and <strong>Remove</strong> takes it off.</li>
+<li id="opt-record-key"><strong>Record key:</strong> starts and stops a recording from anywhere. Default <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd>. You can clear it.</li>
+<li id="opt-snip-key"><strong>Snip key:</strong> opens the snipping overlay while recording. None by default; Win+Shift+S always works too.</li>
+<li id="opt-show-recording-bar"><strong>Show recording bar:</strong> brings the recording bar back from the mini pill or the tray, or hides it. Default <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>. The tray icon does the same.</li>
+<li id="opt-and-quot-still-recording-and-quot"><strong>&quot;Still recording?&quot;:</strong> a recording you started yourself asks after this much silence, and stops 2 minutes later if nobody answers. Choices: 5, 10, 15, 30 or 60 minutes. Default 15.</li>
+<li id="opt-wait-while-another-recording-app-runs"><strong>Wait while another recording app runs:</strong> A9 Voice does not start by itself while another recording app is capturing the same call, so the two never both record. The recording bar says so and offers <strong>Record now</strong>. <strong>Record</strong> always works. On for a new install.</li>
+<li id="opt-fade-the-minimized-bar"><strong>Fade the minimized bar:</strong> the mini pill fades to 60% after 5 seconds and comes back when the mouse is on it. Off for a new install.</li>
+<li id="opt-microphone-me"><strong>Microphone (Me):</strong> your side of the call. The default is <strong>Same as Transcribe</strong>. Shared with the meeting app; nothing is muted or changed.</li>
+<li id="opt-computer-audio-them"><strong>Computer audio (Them):</strong> records what your speakers or headset play, which is the other people in a call. On for a new install.</li>
+<li id="opt-output-device"><strong>Output device:</strong> appears when computer audio is on. Follows the Windows default unless you pick one.</li>
+</ul>
+<p>Details: <a href="/docs/recording-a-meeting/">Recording a meeting</a> and <a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a>.</p>
+<h2 id="live-window">Live window<a class="anchor" href="#live-window" aria-label="Link to Live window">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. See who said what while the meeting is still going, tag a voice with a name, mark moments and ask questions.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-live-window-1x.webp" srcset="/img/docs/settings-reference-live-window-1x.webp 1x, /img/docs/settings-reference-live-window.webp 2x" width="1032" height="760" alt="Settings › Live window: the three options." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-live-transcript"><strong>Live transcript:</strong> shows a live transcript while you record. If Notes use a speech model on this PC that keeps up, the live transcript is made on this PC. Otherwise, with a Deepgram key saved, both sides stream to Deepgram (billed per channel). With no Deepgram key it uses a downloaded model that keeps up, and if there is none the note is still recorded without a live transcript. On for a new install.</li>
+<li id="opt-open-the-live-window-when-a-meeting-starts"><strong>Open the Live window when a meeting starts:</strong> the window opens docked under the recording bar and moves with it. Otherwise open it from the bar&#39;s Live button. On for a new install.</li>
+<li id="opt-keep-dictation-out-of-notes"><strong>Keep dictation out of notes:</strong> what you dictate into other apps during a meeting is not recorded as part of it. On for a new install.</li>
+</ul>
+<p>Details: <a href="/docs/live-window/">Live window</a>.</p>
+<h2 id="transcript-and-summary">Transcript &amp; summary<a class="anchor" href="#transcript-and-summary" aria-label="Link to Transcript &amp; summary">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. These options decide how a recording becomes a transcript and a summary.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-transcript-and-summary-1x.webp" srcset="/img/docs/settings-reference-transcript-and-summary-1x.webp 1x, /img/docs/settings-reference-transcript-and-summary.webp 2x" width="1032" height="760" alt="Settings › Transcript &amp; summary: the speech model, summary model and template." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-speech-model"><strong>Speech model:</strong> the model that transcribes notes. Default Deepgram. Deepgram, ElevenLabs and models on this PC tell speakers apart; other models label lines Me and Them. A model without a key says &quot;(not set up)&quot; and needs its key in Speech models first.</li>
+<li id="opt-name-notes-after-the-meeting"><strong>Name notes after the meeting:</strong> uses the meeting&#39;s own name from the call app&#39;s window, so folders read like &quot;2026-10-06 Sprint Standup&quot;. <strong>On</strong> (the default), <strong>Only log what it would choose</strong> or <strong>Off</strong>. A title you type always wins; without a usable name the AI names the note.</li>
+<li id="opt-identify-speakers"><strong>Identify speakers:</strong> separates the other people into Speaker 2, 3 and so on. On for a new install. It needs a speech model that can do it.</li>
+<li id="opt-summary-model"><strong>Summary model:</strong> the language model that writes the summary, title and tags, and answers Ask. <strong>Automatic</strong> is the default. If it hits a rate limit or takes too long, the next set-up model answers.</li>
+<li id="opt-summary-template"><strong>Summary template:</strong> the sections and rules used unless a note picks another. Default <strong>Meeting Notes</strong>. Edit them in Templates.</li>
+<li id="opt-ai-auto-tag"><strong>AI auto-tag:</strong> after the summary, adds up to 3 of your existing tags that clearly fit. A new tag is only ever suggested. On for a new install.</li>
+<li id="opt-tags"><strong>Tags:</strong> the list of your tags, with how many notes use each. <strong>Rename or merge</strong> (type an existing tag&#39;s name to merge two) and <strong>Delete</strong> change every note&#39;s files.</li>
+</ul>
+<p>Details: <a href="/docs/note-page/">Note page</a> and <a href="/docs/templates-and-export/">Templates and export</a>.</p>
+<h2 id="templates">Templates<a class="anchor" href="#templates" aria-label="Link to Templates">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. The page&#39;s own heading in the app reads <strong>Summary templates</strong>. A template says how the AI writes each note&#39;s summary. The starred one is the default.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-templates-1x.webp" srcset="/img/docs/settings-reference-templates-1x.webp 1x, /img/docs/settings-reference-templates.webp 2x" width="1032" height="760" alt="Settings › Templates: the template list and the editor with sections and branding." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-default-star"><strong>Default (star):</strong> the star on a template makes it the default. Default <strong>Meeting Notes</strong>. The default one cannot be deleted.</li>
+<li id="opt-add-from-library"><strong>Add from library:</strong> adds a copy of Meeting Recap, Stand-up, 1:1 or Decision log.</li>
+<li id="opt-create-template"><strong>+ Create template:</strong> a new template with a Summary and an Action items section.</li>
+<li id="opt-template-name"><strong>Template name</strong> and <strong>Description:</strong> what the list shows.</li>
+<li id="opt-sections"><strong>Sections:</strong> the headings of the summary, each with an instruction for what the AI writes under it. Drag to reorder, or use the arrows; the cross removes one; <strong>+ Add section</strong> adds one. &quot;Your action items&quot; always comes first.</li>
+<li id="opt-rules"><strong>Rules:</strong> the rules the AI follows for every section.</li>
+<li id="opt-capture-system-audio"><strong>Capture system audio:</strong> record the other people, not just your mic. On in new templates.</li>
+<li id="opt-generate-ai-summary"><strong>Generate AI summary:</strong> off means transcript, title and tags only. On in new templates.</li>
+<li id="opt-summary-language"><strong>Summary language:</strong> the language the summary is written in: <strong>Same as the meeting</strong> (the default), English, Spanish, French, German, Portuguese, Italian, Dutch, Japanese or Chinese.</li>
+<li id="opt-tags-2"><strong>Tags:</strong> added to every note that uses the template.</li>
+<li id="opt-logo"><strong>Logo:</strong> <strong>Upload logo…</strong> (PNG, SVG or JPG, up to 2 MB), with an optional version for dark backgrounds. It shows on PDF, Word and email exports and on <strong>Copy for email</strong>; the note&#39;s summary.md stays plain.</li>
+<li id="opt-placement"><strong>Placement:</strong> Left (the default), Center or Right.</li>
+<li id="opt-logo-height"><strong>Logo height:</strong> 32, 48 or 64 px at most. Default 48.</li>
+<li id="opt-header-text"><strong>Header text:</strong> a company or team name above the note.</li>
+<li id="opt-second-line"><strong>Second line:</strong> for example &quot;Confidential: internal&quot;.</li>
+<li id="opt-accent-color"><strong>Accent color:</strong> the color of headings and dividers. <strong>Use neutral</strong> clears it.</li>
+<li id="opt-footer"><strong>Footer:</strong> a checkbox and a text, &quot;Notes prepared with A9 Voice&quot; by default. Off for a new template.</li>
+<li id="opt-custom-instructions-2"><strong>Custom instructions:</strong> extra instructions for the AI, for example &quot;Keep it under 200 words&quot;.</li>
+<li id="opt-view-full-prompt"><strong>View full prompt:</strong> shows the full instructions the AI will get for this template.</li>
+<li id="opt-save-cancel-and-delete"><strong>Save, Cancel and Delete…:</strong> <strong>Save</strong> and <strong>Cancel</strong> are available once you change something. <strong>Delete…</strong> asks again before it removes a template.</li>
+</ul>
+<p>Details: <a href="/docs/templates-and-export/">Templates and export</a>.</p>
+<h2 id="voices">Voices<a class="anchor" href="#voices" aria-label="Link to Voices">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. Recognize people in meetings by their voice. Voices stay on this PC.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-voices-1x.webp" srcset="/img/docs/settings-reference-voices-1x.webp 1x, /img/docs/settings-reference-voices.webp 2x" width="1032" height="760" alt="Settings › Voices: the switch and the list of people." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-recognize-people-by-voice"><strong>Recognize people by voice:</strong> names people on the live transcript and in the note, a few seconds after they start talking. Off until you turn it on; turning it on shows an explainer first and downloads the speaker model once.</li>
+<li id="opt-speaker-model"><strong>Speaker model:</strong> appears while the speaker model is not ready. Shows its download progress, or <strong>Download</strong> (<strong>Try again</strong> after a problem).</li>
+<li id="opt-people"><strong>People:</strong> a list with Name, Samples, Last recognized and Meetings. Click a name for its history. <strong>Rename</strong>, <strong>Merge</strong> and <strong>Forget</strong> work on one person; Forget removes that voice from this PC for good.</li>
+<li id="opt-not-heard-in-60-days"><strong>Not heard in 60+ days:</strong> a filter that shows voices not recognized for 60 days or more, with <strong>Forget all</strong> to remove the ones shown.</li>
+<li id="opt-check-voiceprints"><strong>Check voiceprints:</strong> lists voices that sound suspiciously alike. It never changes or deletes anything.</li>
+<li id="opt-import-voices-from-a-file"><strong>Import voices from a file…:</strong> adds voices from a file you pick. Voices already here are left as they are.</li>
+<li id="opt-delete-all-voices"><strong>Delete all voices:</strong> removes every voice from this PC now and for good. You type DELETE to confirm. Notes keep the names they already show.</li>
+</ul>
+<p>Details: <a href="/docs/voices/">Voices</a>.</p>
+<h2 id="integrations">Integrations<a class="anchor" href="#integrations" aria-label="Link to Integrations">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. Send notes to another service when they are ready: a &quot;second brain&quot;, an automation service or a chat channel. Your receiver gets what you tick, nothing else. Audio and voiceprints are never sent.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-integrations-1x.webp" srcset="/img/docs/settings-reference-integrations-1x.webp 1x, /img/docs/settings-reference-integrations.webp 2x" width="1032" height="760" alt="Settings › Integrations: a webhook with its Test, Log, Edit and Delete buttons." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-add-webhook"><strong>+ Add webhook:</strong> opens the form below. Each webhook then has <strong>Test</strong>, <strong>Log</strong>, <strong>Edit</strong> and <strong>Delete…</strong>.</li>
+<li id="opt-type"><strong>Type:</strong> <strong>Generic JSON</strong> sends the documented payload to any receiver; the other types are ready-made for automation services (JSON payload) and chat channels (the summary as text). The form explains each one.</li>
+<li id="opt-name"><strong>Name:</strong> how the webhook is listed. Defaults to the type&#39;s name.</li>
+<li id="opt-url"><strong>URL:</strong> the address to send to. It must start with https:// (an address on your own PC, such as localhost, also works). It is kept in Windows Credential Manager, like an API key.</li>
+<li id="opt-what-to-send"><strong>What to send:</strong> for JSON types: Summary and Action items (structured) are on for a new webhook; Decisions, Transcript, Typed notes and markers, and Image captions (never the image files) are off. Chat types always send the summary only.</li>
+<li id="opt-when"><strong>When:</strong> <strong>When a note finishes</strong> (the default), <strong>When a note finishes, and again when it changes</strong> (JSON types only; 60 seconds after the last change) or <strong>Manual only</strong>.</li>
+<li id="opt-only"><strong>Only:</strong> limit to notes with certain tags, or notes from certain templates. Empty means every note.</li>
+<li id="opt-signing-secret"><strong>Signing secret:</strong> optional, JSON types only. Each request then carries a signature header so the receiver can check it came from you.</li>
+<li id="opt-header"><strong>Header:</strong> an optional header name and value, for example <code>Authorization</code>. The value is kept in Windows Credential Manager.</li>
+<li id="opt-send-a-test"><strong>Send a test:</strong> posts a made-up note and shows the reply.</li>
+<li id="opt-log"><strong>Log:</strong> shows each send with its time, event, status and size, and <strong>Resend</strong>. Failed sends are retried after 10 seconds, 1 minute and 5 minutes; sends made while offline wait until you are back online, up to 24 hours.</li>
+</ul>
+<p>Details: <a href="/docs/webhooks/">Webhooks</a>.</p>
+<h2 id="storage">Storage<a class="anchor" href="#storage" aria-label="Link to Storage">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. Each note is one folder with summary.md, transcript.md and its images, always up to date. Audio is kept separately.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-storage-1x.webp" srcset="/img/docs/settings-reference-storage-1x.webp 1x, /img/docs/settings-reference-storage.webp 2x" width="1032" height="760" alt="Settings › Storage: the notes folder, how long to keep audio and Tidy folder names." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-notes-folder"><strong>Notes folder:</strong> where new notes go, <code>Documents\A9 Voice\Notes</code> unless you change it. <strong>Change…</strong> and <strong>Open</strong> manage it. Point it at a folder your AI tools can read.</li>
+<li id="opt-keep-notes-audio"><strong>Keep notes audio:</strong> how long meeting audio is kept, for checking speakers by ear. Choices: 1 day, 7 days, 30 days, 90 days or Forever. Default 30 days. Only the audio goes; summaries, transcripts and images stay until you delete the note. Audio of a note that failed or is still being written up is kept.</li>
+<li id="opt-tidy-folder-names"><strong>Tidy folder names:</strong> new notes get folders named by day and meeting, like &quot;2026-10-06 Sprint Standup&quot;. Older ones keep their names until you press <strong>Preview…</strong>, check the list and press <strong>Rename</strong>. A9 Voice only renames folders it made itself.</li>
+</ul>
+<p>Notes audio goes in the <strong>Notes</strong> folder inside your Audio folder (see Dictation audio). Details: <a href="/docs/note-page/">Note page</a> and <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h2 id="search">Search<a class="anchor" href="#search" aria-label="Link to Search">#</a></h2>
+<p>Part of the <strong>Notes</strong> group. Search (<strong>Ctrl+K</strong>), Ask your notes and connected AI apps cover your A9 Voice notes. They can also cover notes that another app keeps in a folder.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-search-1x.webp" srcset="/img/docs/settings-reference-search-1x.webp 1x, /img/docs/settings-reference-search.webp 2x" width="1032" height="760" alt="Settings › Search: extra folders to search and the model for Deep answers." loading="lazy" decoding="async"></figure></p>
+<ul>
+<li id="opt-also-search-these-folders"><strong>Also search these folders:</strong> add folders of notes or transcripts from other apps (Markdown and text files, or an exported vault). A9 Voice only reads them and never changes them. <strong>Add folder…</strong> adds one, <strong>Read again now</strong> re-reads, <strong>Remove</strong> takes one out and <strong>Make editable copies of all notes in this folder…</strong> copies a folder&#39;s notes into A9 Voice so you can regenerate summaries and fix speakers. Changes are picked up as they happen, and every folder is read again once a day.</li>
+<li id="opt-model-for-deep-answers"><strong>Model for Deep answers:</strong> the language model for Ask&#39;s <strong>Deep</strong> mode. Default <strong>Same as the Summary model</strong>. Deep reads many more passages than Quick and writes a dated answer with quotes; a stronger model writes better ones.</li>
+</ul>
+<p>Details: <a href="/docs/search-and-ask/">Search and Ask</a>.</p>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/webhooks/"><span class="docs-step-l">Previous</span><span>Webhooks</span></a><a class="docs-step next" href="/docs/updates-and-channels/"><span class="docs-step-l">Next</span><span>Updates and channels</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#account">Account</a></li><li class="d2"><a href="#general">General</a></li><li class="d3"><a href="#updates">Updates</a></li><li class="d3"><a href="#about">About</a></li><li class="d2"><a href="#speech-models">Speech models</a></li><li class="d2"><a href="#language-models">Language models</a></li><li class="d2"><a href="#usage-and-cost">Usage &amp; cost</a></li><li class="d2"><a href="#connectors">Connectors</a></li><li class="d2"><a href="#dictation">Dictation</a></li><li class="d2"><a href="#microphone">Microphone</a></li><li class="d2"><a href="#dictation-audio">Dictation audio</a></li><li class="d2"><a href="#recording">Recording</a></li><li class="d2"><a href="#live-window">Live window</a></li><li class="d2"><a href="#transcript-and-summary">Transcript &amp; summary</a></li><li class="d2"><a href="#templates">Templates</a></li><li class="d2"><a href="#voices">Voices</a></li><li class="d2"><a href="#integrations">Integrations</a></li><li class="d2"><a href="#storage">Storage</a></li><li class="d2"><a href="#search">Search</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

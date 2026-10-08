@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The note page · A9 Voice Manual</title>
+<meta name="description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/note-page/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="The note page · A9 Voice Manual">
+<meta property="og:description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.">
+<meta property="og:url" content="https://a9voice.com/docs/note-page/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/" aria-current="page">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
+      <h1>The note page</h1>
+      <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.2</p>
+      <p>Every recording becomes a note. You find it in the <strong>Notes</strong> list, open it, and the note page shows the summary, the transcript, the people, the pictures and the audio in one place. Everything you change here is also written to the note&#39;s folder on your PC at once.</p>
+<h2 id="the-notes-list">The Notes list<a class="anchor" href="#the-notes-list" aria-label="Link to The Notes list">#</a></h2>
+<p>Click <strong>Notes</strong> in the sidebar.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-list-1x.webp" srcset="/img/docs/note-page-list-1x.webp 1x, /img/docs/note-page-list.webp 2x" width="936" height="891" alt="The Notes list: a search box, filter chips and notes grouped by day" loading="lazy" decoding="async"><figcaption>The Notes list, newest first, with a recording in progress, two notes being processed and one that needs a look.</figcaption></figure></p>
+<ol>
+<li>Type in <strong>Search titles and #tags</strong> to find a note by words in its title. Type <code>#vendor</code> to show only notes with that tag. You can use both: <code>stand-up #release</code>.</li>
+<li>Use the chips under the title: <strong>All</strong>, <strong>Auto-recorded</strong>, <strong>Manual</strong>, then your five most used tags. <strong>All tags ▾</strong> appears when you have more than five and lists every tag with its count. Click a chip again to turn it off.</li>
+<li>Press <strong>Record</strong> to start a recording. While one is running the button says <strong>Stop recording</strong>.</li>
+</ol>
+<p>Notes are always newest first, grouped by day (<strong>TODAY</strong>, <strong>YESTERDAY</strong>, then the weekday and date). Each row shows the time, the title, a line saying where it came from (for example &quot;Teams · auto-recorded · Sam, Priya &amp; 2 more&quot; or &quot;Mic only · manual&quot;), the number of images, up to two tags and the length.</p>
+<p>The word at the right of a row tells you where a note is:</p>
+<ul>
+<li><strong>Recording</strong> (red): still being recorded.</li>
+<li><strong>Waiting…</strong>: queued behind another note.</li>
+<li><strong>Transcribing…</strong>: turning the audio into text. With a model on this PC it also shows a percentage.</li>
+<li><strong>Summarizing…</strong>: writing the summary.</li>
+<li><strong>Needs a look</strong>: something failed. Open the note; see <a href="#if-something-goes-wrong">If something goes wrong</a>.</li>
+</ul>
+<p>Notes you made from another app&#39;s folder say <strong>Editable copy</strong>; see <a href="#notes-from-an-added-folder">Notes from an added folder</a>.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-list-filter-1x.webp" srcset="/img/docs/note-page-list-filter-1x.webp 1x, /img/docs/note-page-list-filter.webp 2x" width="936" height="362" alt="A filtered list with a row's menu open" loading="lazy" decoding="async"><figcaption>Filtered by #stand-up, with the row's ⋯ menu: Rename, Show in folder, Delete…</figcaption></figure></p>
+<p>Click a row, or select it with <kbd>↑</kbd> and <kbd>↓</kbd> and press <kbd>Enter</kbd>, to open it. The <strong>⋯</strong> button on a row has <strong>Rename</strong> (also <kbd>F2</kbd>), <strong>Show in folder</strong> and <strong>Delete…</strong>. The line under the list reminds you how long audio is kept; see <a href="#deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept</a>.</p>
+<p>The search box at the very top of the page (&quot;Search notes, transcripts and dictations&quot;) is a different search that looks inside what was said. See <a href="/docs/search-and-ask/">Search and ask</a>.</p>
+<h2 id="open-a-note">Open a note<a class="anchor" href="#open-a-note" aria-label="Link to Open a note">#</a></h2>
+<p>Click a note. The page has three parts.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-summary-1x.webp" srcset="/img/docs/note-page-summary-1x.webp 1x, /img/docs/note-page-summary.webp 2x" width="1036" height="1191" alt="A note open on the Summary tab, with four numbered areas" loading="lazy" decoding="async"><figcaption>The note page: title and chips, the tabs, Export, and the right-hand column.</figcaption></figure></p>
+<ol>
+<li>The <strong>title</strong> and the chips under it. Click the title to rename it.</li>
+<li>The tabs: <strong>Summary</strong>, <strong>Transcript</strong> and <strong>Ask AI</strong>.</li>
+<li><strong>Export</strong> and the <strong>⋯</strong> menu at the top.</li>
+<li>The right-hand column: speakers, <strong>Regenerate transcript</strong>, <strong>Regenerate summary</strong> and more. It stays in view while the text scrolls.</li>
+</ol>
+<p>Click <strong>← Notes</strong> to go back to the list.</p>
+<h3 id="the-title">The title<a class="anchor" href="#the-title" aria-label="Link to The title">#</a></h3>
+<p>A new recording is called <strong>Recording</strong>, or for a call that A9 Voice started, the app&#39;s name plus &quot;call&quot; (for example &quot;Teams call&quot;). It then gets a real name:</p>
+<ol>
+<li>If <strong>Name notes after the meeting</strong> is <strong>On</strong> (<strong>Settings › Notes › Transcript &amp; summary</strong>), A9 Voice reads the meeting&#39;s own name from the Teams, Zoho Cliq or browser meeting window during the first 90 seconds of the call and uses it.</li>
+<li>Otherwise, or if no usable name is found, the AI names the note when it writes the summary, in at most eight words.</li>
+<li>A title you type always wins, and A9 Voice never replaces it.</li>
+</ol>
+<p>When the title came from the meeting window or from you, the AI&#39;s own title is shown in grey under it, so you keep both.</p>
+<p>To rename a note, click the title, type, and press <kbd>Enter</kbd>. <kbd>Esc</kbd> cancels.</p>
+<h3 id="the-chips-under-the-title">The chips under the title<a class="anchor" href="#the-chips-under-the-title" aria-label="Link to The chips under the title">#</a></h3>
+<ul>
+<li>The date, time and length.</li>
+<li><strong>Copied from</strong> and the app&#39;s name, on an editable copy.</li>
+<li>The people who spoke (&quot;Sam, Priya &amp; 2 more&quot;). Hover to see everyone.</li>
+<li>The template used, for example <strong>Meeting Notes template</strong>.</li>
+<li>Your tags, each with an <strong>×</strong> to remove it.</li>
+</ul>
+<h3 id="tags">Tags<a class="anchor" href="#tags" aria-label="Link to Tags">#</a></h3>
+<p>Click <strong>+ add tag</strong>, type a name and press <kbd>Enter</kbd>. As you type, the tags you already use are offered; click one to add it. <kbd>Esc</kbd> closes the box.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-tags-1x.webp" srcset="/img/docs/note-page-tags-1x.webp 1x, /img/docs/note-page-tags.webp 2x" width="772" height="140" alt="Adding a tag, with a suggested tag next to it" loading="lazy" decoding="async"><figcaption>Typing a tag shows your existing tags. A dashed chip like + #release is the AI's suggestion.</figcaption></figure></p>
+<p>A dashed chip such as <strong>+ #release</strong> is a tag the AI suggests for this note. Click it to add it, or click its <strong>×</strong> to dismiss it. The AI only suggests; it never adds a tag you do not already use unless you click. With <strong>AI auto-tag</strong> on (<strong>Settings › Notes › Transcript &amp; summary</strong>), it adds up to three of your existing tags that clearly fit. A template can also add its own tags to every note that uses it; see <a href="/docs/templates-and-export/">Templates and export</a>.</p>
+<p>To rename, merge or delete a tag everywhere, use <strong>Settings › Notes › Transcript &amp; summary › Tags</strong>.</p>
+<h2 id="the-summary">The summary<a class="anchor" href="#the-summary" aria-label="Link to The summary">#</a></h2>
+<p>The <strong>Summary</strong> tab is written from the template. The sections follow the template&#39;s order. One section is always first: <strong>Your action items</strong>, with the tasks that belong to you (&quot;None.&quot; when there are none). The section called <strong>Action items</strong> lists everyone&#39;s tasks as check-box lines: task, owner, due date.</p>
+<p>Where the summary points at a moment in the recording, it shows a small blue time chip, such as <code>00:22 Priya</code>. Click the chip to play from there. A chip that ends in <strong>snip</strong> opens the picture taken at that moment.</p>
+<p>If you rename a speaker, the new name replaces the old one in the summary too.</p>
+<p>To change how summaries are written, edit the template. See <a href="/docs/templates-and-export/">Templates and export</a>.</p>
+<h3 id="when-the-summary-is-out-of-date">When the summary is out of date<a class="anchor" href="#when-the-summary-is-out-of-date" aria-label="Link to When the summary is out of date">#</a></h3>
+<p>If you fix a line in the transcript, a bar appears: &quot;Transcript edited · the summary was written from the earlier text.&quot; Click <strong>Re-summarize</strong> to write it again from the corrected text. You can also leave it as it is.</p>
+<h3 id="ask-ai">Ask AI<a class="anchor" href="#ask-ai" aria-label="Link to Ask AI">#</a></h3>
+<p>The <strong>Ask AI</strong> tab and the bar at the bottom answer questions about this one note, such as &quot;What did I promise?&quot;. Type a question, choose a language model next to the arrow, and press <kbd>Enter</kbd>. Answers cite the moment; click the citation to play it. The bar&#39;s small tags tell you what the AI is given: the summary (with its word count), the transcript (number of turns) and the images. To ask across all your notes, see <a href="/docs/search-and-ask/">Search and ask</a>.</p>
+<h2 id="the-transcript">The transcript<a class="anchor" href="#the-transcript" aria-label="Link to The transcript">#</a></h2>
+<p>Click the <strong>Transcript</strong> tab. Each line has a time, the speaker&#39;s name in their own color and what was said.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-transcript-1x.webp" srcset="/img/docs/note-page-transcript-1x.webp 1x, /img/docs/note-page-transcript.webp 2x" width="1036" height="1109" alt="The Transcript tab with lines, a picture, a typed note and an edited line" loading="lazy" decoding="async"><figcaption>The Transcript tab. The picture card and the dashed box are things added during the recording.</figcaption></figure></p>
+<ul>
+<li>Click any line to hear it. This works while the audio is still kept. The hint above the transcript reminds you: <strong>Click any line to hear it · Space play/pause · ←/→ 5 s</strong>.</li>
+<li>Pictures taken during the recording appear in place as cards with the time, where they came from (<strong>clipboard</strong>, <strong>paste</strong> or <strong>drop</strong>) and the caption.</li>
+<li>Notes you typed during the recording appear in dashed boxes: <strong>your note</strong>, or <strong>Action</strong>, <strong>Decision</strong> or <strong>Callout</strong> when you marked the moment from the Live window. See <a href="/docs/live-window/">The Live window</a>.</li>
+<li>On an editable copy of a note that had no times, a <strong>~</strong> before a time means it is an estimate.</li>
+</ul>
+<h3 id="fix-a-misheard-word">Fix a misheard word<a class="anchor" href="#fix-a-misheard-word" aria-label="Link to Fix a misheard word">#</a></h3>
+<ol>
+<li>Double-click the text of a line, or click the pencil (<strong>✎</strong>) at the end of the line.</li>
+<li>Type the correction. <kbd>Enter</kbd> saves; <kbd>Shift</kbd>+<kbd>Enter</kbd> starts a new line in the box; <kbd>Esc</kbd> cancels.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/note-page-edit-line-1x.webp" srcset="/img/docs/note-page-edit-line-1x.webp 1x, /img/docs/note-page-edit-line.webp 2x" width="724" height="193" alt="A line being edited" loading="lazy" decoding="async"><figcaption>Editing a line in place.</figcaption></figure></p>
+<p>A message appears at the bottom, &quot;Line edited&quot;, with <strong>Undo</strong>. The line gets a small <strong>edited</strong> label and a <strong>Revert</strong> button; hover the label to see the original words. A9 Voice keeps the transcript as it was first written in a hidden <code>.original</code> folder inside the note&#39;s folder, so a correction never loses the original.</p>
+<p>If you changed exactly one word, A9 Voice offers to fix it everywhere:</p>
+<p><figure class="shot"><img src="/img/docs/note-page-edit-offer-1x.webp" srcset="/img/docs/note-page-edit-offer-1x.webp 1x, /img/docs/note-page-edit-offer.webp 2x" width="724" height="286" alt="The offer to replace a word everywhere" loading="lazy" decoding="async"><figcaption>After changing rooting to routing, A9 Voice offers to replace the other one.</figcaption></figure></p>
+<ul>
+<li><strong>Replace all N in this note</strong> changes every other time that word appears in the transcript.</li>
+<li><strong>and in the summary</strong> appears when the summary has the word too.</li>
+<li><strong>Add to Dictionary</strong> also teaches the Dictionary to write it your way next time. See <a href="/docs/dictionary/">Dictionary</a>.</li>
+</ul>
+<p>Click <strong>Apply</strong> to do what is ticked, or <strong>No thanks</strong>.</p>
+<h3 id="fix-the-speaker-of-one-line">Fix the speaker of one line<a class="anchor" href="#fix-the-speaker-of-one-line" aria-label="Link to Fix the speaker of one line">#</a></h3>
+<p>Sometimes one line is under the wrong person.</p>
+<ol>
+<li>Click the speaker&#39;s name at the start of the line. The name picker opens under it, the same one the <a href="/docs/live-window/">Live window</a> uses.</li>
+<li>Type a name, pick a person from the list, or pick one of the <strong>Speakers</strong> chips to move the line to that speaker. A new name shows as <strong>+ Add &quot;name&quot; as a new person</strong> at the top of the list. A name another speaker here already has says whose it is, for example <strong>Speaker 3</strong>.</li>
+<li>Under <strong>Apply to</strong>, choose <strong>Just this line</strong>, <strong>This and the lines after it, until the speaker changes</strong>, or <strong>Everything from</strong> that speaker. A speaker with no name yet starts on <strong>Everything from</strong>; a named speaker starts on <strong>Just this line</strong>.</li>
+<li>Press <kbd>Enter</kbd> or <strong>Name</strong>. <strong>Not sure</strong> and <kbd>Esc</kbd> close the picker and change nothing.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/note-page-line-speaker-1x.webp" srcset="/img/docs/note-page-line-speaker-1x.webp 1x, /img/docs/note-page-line-speaker.webp 2x" width="1280" height="940" alt="The name picker under a line's speaker name" loading="lazy" decoding="async"><figcaption>Click a line's speaker to name it: this line, the lines after it, or everything from that speaker.</figcaption></figure></p>
+<p>A message says &quot;Line moved to another speaker&quot; and offers <strong>Undo</strong>. Naming one line never teaches a voice. Choosing <strong>Everything from</strong> and a name another speaker already has asks <strong>Same person?</strong> first.</p>
+<h2 id="name-the-speakers">Name the speakers<a class="anchor" href="#name-the-speakers" aria-label="Link to Name the speakers">#</a></h2>
+<p>The column on the right lists everyone who spoke, under <strong>SPEAKERS</strong>. Your own side is marked <strong>Speaker 1 · mic</strong>. Each person shows their total talk time.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-speakers-1x.webp" srcset="/img/docs/note-page-speakers-1x.webp 1x, /img/docs/note-page-speakers.webp 2x" width="299" height="446" alt="The speaker list with names, a suggestion and a note that one was recognized by voice" loading="lazy" decoding="async"><figcaption>The Speakers list: type a name in the box (1). A suggestion appears under the name (2).</figcaption></figure></p>
+<ol>
+<li><p>Click the name under a speaker. The name picker opens under it: type to narrow the list by first or last name, then click a person or press <kbd>↓</kbd> and <kbd>Enter</kbd>. People you named lately are first. To use a new name, type it and press <kbd>Enter</kbd>, or click <strong>+ Add &quot;name&quot; as a new person</strong>. <kbd>Tab</kbd> goes to <strong>Name</strong>, <kbd>Esc</kbd> or <strong>Not sure</strong> closes the picker with nothing changed, and <strong>Clear name</strong> takes a name off.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-name-picker-1x.webp" srcset="/img/docs/note-page-name-picker-1x.webp 1x, /img/docs/note-page-name-picker.webp 2x" width="1280" height="940" alt="The name picker under Speaker 4, with the typed letters ja" loading="lazy" decoding="async"><figcaption>Type to narrow the list. A name another speaker already has shows whose it is.</figcaption></figure></p>
+</li>
+<li><p>If the box has a suggestion under it, &quot;Sounds like <strong>Dana</strong>?&quot;, click <strong>Yes</strong> to accept it or <strong>No</strong> to dismiss it. A name shown with &quot;Recognized by voice&quot; was matched from a voiceprint. See <a href="/docs/voices/">Voices</a>.</p>
+</li>
+</ol>
+<p>A message at the bottom says &quot;Renamed to Dana&quot; and offers <strong>Undo</strong>. Every rename rewrites the summary and <code>transcript.md</code> in the note&#39;s folder straight away, and a rename of a whole speaker can also teach A9 Voice that voice if you have turned Voices on.</p>
+<p>If you pick a name that another speaker in this note already has, A9 Voice asks <strong>Same person?</strong>. <strong>Merge</strong> moves all the lines to one person; <strong>No, different person</strong> keeps both speakers with that name.</p>
+<h3 id="the-speaker-menu">The speaker menu<a class="anchor" href="#the-speaker-menu" aria-label="Link to The speaker menu">#</a></h3>
+<p>The <strong>⋯</strong> next to a speaker&#39;s name opens:</p>
+<ul>
+<li><strong>This is me</strong>: gives that speaker the name from your Account.</li>
+<li><strong>Merge into</strong> and each other speaker&#39;s name: moves all of this speaker&#39;s lines to that person, and removes this speaker.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/note-page-speaker-menu-1x.webp" srcset="/img/docs/note-page-speaker-menu-1x.webp 1x, /img/docs/note-page-speaker-menu.webp 2x" width="299" height="446" alt="The speaker menu" loading="lazy" decoding="async"><figcaption>The ⋯ menu of a speaker.</figcaption></figure></p>
+<h3 id="hear-who-someone-is">Hear who someone is<a class="anchor" href="#hear-who-someone-is" aria-label="Link to Hear who someone is">#</a></h3>
+<p>If you are not sure who &quot;Speaker 4&quot; is, click the small <strong>▶</strong> at the right of their name. It plays one of their lines. Each click plays their next line, and wraps to the first after the last. A small label such as <strong>Line 1 of 3</strong> tells you where you are. Click the button again, now showing <strong>❚❚</strong>, to pause.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-step-1x.webp" srcset="/img/docs/note-page-step-1x.webp 1x, /img/docs/note-page-step.webp 2x" width="299" height="458" alt="The play button of a speaker, with the Line 1 of 3 label under it" loading="lazy" decoding="async"><figcaption>Step through one person's lines with their play button.</figcaption></figure></p>
+<h2 id="play-the-recording">Play the recording<a class="anchor" href="#play-the-recording" aria-label="Link to Play the recording">#</a></h2>
+<p>When the audio is still kept, a player sits at the top of the note.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-player-1x.webp" srcset="/img/docs/note-page-player-1x.webp 1x, /img/docs/note-page-player.webp 2x" width="708" height="90" alt="The player: back, play, forward, wave, time, speed and the Others, Everyone, Me switch" loading="lazy" decoding="async"><figcaption>The player. The Others, Everyone and Me switch (1) appears for recordings of two sides.</figcaption></figure></p>
+<ul>
+<li><strong>10</strong> buttons jump back or forward 10 seconds.</li>
+<li>Click the wave to jump to a place in the recording.</li>
+<li>The speed button cycles <strong>1×</strong>, <strong>1.25×</strong>, <strong>1.5×</strong> and <strong>2×</strong>.</li>
+</ul>
+<p>Keys, when you are not typing in a box:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
+<tr><td><kbd>Space</kbd></td><td>Play or pause</td></tr>
+<tr><td><kbd>←</kbd></td><td>Back 5 seconds</td></tr>
+<tr><td><kbd>→</kbd></td><td>Forward 5 seconds</td></tr>
+</tbody></table></div>
+<h3 id="who-you-hear-others-everyone-me">Who you hear: Others, Everyone, Me<a class="anchor" href="#who-you-hear-others-everyone-me" aria-label="Link to Who you hear: Others, Everyone, Me">#</a></h3>
+<p>A meeting is recorded on two sides: your microphone, and the computer audio (the other people). Played as they are, they would come out of different ears. So A9 Voice plays both in both ears, and the switch at the right of the player chooses what you hear:</p>
+<ul>
+<li><strong>Others</strong> (the default): the computer audio only, the other people.</li>
+<li><strong>Everyone</strong>: both sides, with your microphone a little lower so your own voice and room noise do not cover the others.</li>
+<li><strong>Me</strong>: your microphone only.</li>
+</ul>
+<p>Your choice is remembered. When you click a line, or play a person with their <strong>▶</strong>, you hear that person&#39;s own side whatever the switch says. The switch only changes how the note <em>plays</em>; the file on disk keeps both channels. A recording of only one side has no switch.</p>
+<p>If the audio is gone you see &quot;Audio removed after 30 days. The summary, transcript and images stay.&quot; instead of the player (the number is your <strong>Keep notes audio</strong> setting).</p>
+<h2 id="pictures">Pictures<a class="anchor" href="#pictures" aria-label="Link to Pictures">#</a></h2>
+<p>Pictures captured during a call (a snip, or any image you copy) are saved into the note. You can also add them later.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-images-1x.webp" srcset="/img/docs/note-page-images-1x.webp 1x, /img/docs/note-page-images.webp 2x" width="720" height="92" alt="The Images strip with one picture and the Drop or paste box" loading="lazy" decoding="async"><figcaption>The strip of pictures (1) and the Drop or paste box (2).</figcaption></figure></p>
+<ol>
+<li>Drag an image from a folder onto the note page, or copy an image and press <kbd>Ctrl</kbd>+<kbd>V</kbd> on it. A9 Voice saves it as a PNG in the note&#39;s <code>images</code> folder and says &quot;Image added at 00:34&quot;. The time is where the player is, or the recording&#39;s timer if you are recording now.</li>
+<li>Click a picture in the strip, or a picture card in the transcript, to open it larger. The player jumps to its moment.</li>
+<li>Type a <strong>Caption (goes into the summary)</strong>. The AI reads captions the next time it writes the summary.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/note-page-image-viewer-1x.webp" srcset="/img/docs/note-page-image-viewer-1x.webp 1x, /img/docs/note-page-image-viewer.webp 2x" width="672" height="442" alt="The picture viewer with a caption box" loading="lazy" decoding="async"><figcaption>The picture viewer. The caption is saved when you click out of the box.</figcaption></figure></p>
+<p>In the viewer, <strong>Show in folder</strong> opens the picture&#39;s place on disk, <strong>Delete</strong> removes it from the note, and <strong>Close</strong> (or <kbd>Esc</kbd>) goes back.</p>
+<h2 id="the-right-hand-column">The right-hand column<a class="anchor" href="#the-right-hand-column" aria-label="Link to The right-hand column">#</a></h2>
+<p>Below the speakers:</p>
+<p><figure class="shot"><img src="/img/docs/note-page-regenerate-1x.webp" srcset="/img/docs/note-page-regenerate-1x.webp 1x, /img/docs/note-page-regenerate.webp 2x" width="299" height="334" alt="Regenerate transcript and Regenerate summary, with the model line" loading="lazy" decoding="async"><figcaption>Run the transcript or the summary again, with a different model or template.</figcaption></figure></p>
+<ul>
+<li><strong>Regenerate transcript</strong>: see below.</li>
+<li><strong>Regenerate summary</strong>: see below.</li>
+<li>A small grey line with the speech model and the language model that made this note, for example &quot;Deepgram · nova-3 · OpenRouter · …&quot;.</li>
+<li>One block per webhook you set up, with <strong>Send to</strong> and its name, and a line such as &quot;Sent automatically at 3:09 AM · delivered&quot;. See <a href="/docs/webhooks/">Webhooks</a>.</li>
+<li><strong>Other notes from this meeting</strong>: see <a href="#other-notes-from-the-same-meeting">Other notes from the same meeting</a>.</li>
+</ul>
+<h3 id="run-the-transcript-again">Run the transcript again<a class="anchor" href="#run-the-transcript-again" aria-label="Link to Run the transcript again">#</a></h3>
+<p>Use this when the speakers were mixed up, or you want to try another speech model.</p>
+<ol>
+<li>Under <strong>Regenerate transcript</strong>, pick a speech model. Models that are not set up yet are greyed out &quot;(set up first)&quot;. Models on this PC appear as &quot;(on this PC)&quot;.</li>
+<li>Leave <strong>Identify speakers</strong> ticked to separate the people. It is greyed out for a model that cannot do it.</li>
+<li>Click <strong>Regenerate transcript</strong>.</li>
+</ol>
+<p>The audio is transcribed again and the note shows &quot;Transcribing…&quot; until it is done. What this does:</p>
+<ul>
+<li>It replaces every line. Corrections you made to lines are not kept.</li>
+<li>It keeps the names you gave speakers, matching them by who spoke when.</li>
+<li>It does not write the summary again. Click <strong>Regenerate summary</strong> afterwards if you want a new one.</li>
+<li>A cloud speech model uses your own key with that provider, and is billed by them to you. A model on this PC works without the internet.</li>
+<li>It needs the audio. If the audio has been removed, the button is greyed out.</li>
+</ul>
+<h3 id="run-the-summary-again">Run the summary again<a class="anchor" href="#run-the-summary-again" aria-label="Link to Run the summary again">#</a></h3>
+<p>Use this after you fixed the transcript or the speakers, or to try another template or language model.</p>
+<ol>
+<li>Under <strong>Regenerate summary</strong>, choose a <strong>Template</strong> and a <strong>Language model</strong>.</li>
+<li>Click <strong>Regenerate summary</strong>.</li>
+</ol>
+<p>The note shows &quot;Writing the summary…&quot;. What this does:</p>
+<ul>
+<li>It writes the summary, action items and the tags from the template again, using the current transcript, speaker names, captions and typed notes.</li>
+<li>The template you chose becomes the note&#39;s template.</li>
+<li>It gives the note a new AI title only if the title was not typed by you and not taken from the meeting window.</li>
+<li>It does not touch the transcript.</li>
+<li>It uses your own language-model key. See <a href="/docs/language-models/">Language models</a>.</li>
+<li>The button is greyed out when there is no transcript or no language model set up.</li>
+</ul>
+<h3 id="other-notes-from-the-same-meeting">Other notes from the same meeting<a class="anchor" href="#other-notes-from-the-same-meeting" aria-label="Link to Other notes from the same meeting">#</a></h3>
+<p>When you have recorded the same meeting more than once, <strong>Other notes from this meeting</strong> lists up to five of the others, newest first, each with its date. Click one to open it. Two notes belong together when their titles match once dates and numbers are ignored: &quot;Sprint Standup #12&quot; and &quot;Sprint standup Oct 6&quot; are the same meeting. Placeholder titles such as &quot;Recording&quot; or &quot;Teams call&quot; never match.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-series-1x.webp" srcset="/img/docs/note-page-series-1x.webp 1x, /img/docs/note-page-series.webp 2x" width="299" height="148" alt="Other notes from this meeting" loading="lazy" decoding="async"><figcaption>The list of earlier notes of the same meeting.</figcaption></figure></p>
+<h2 id="the-menu-at-the-top">The menu at the top<a class="anchor" href="#the-menu-at-the-top" aria-label="Link to The menu at the top">#</a></h2>
+<p>The <strong>⋯</strong> at the top of the note has:</p>
+<p><figure class="shot"><img src="/img/docs/note-page-menu-1x.webp" srcset="/img/docs/note-page-menu-1x.webp 1x, /img/docs/note-page-menu.webp 2x" width="316" height="330" alt="The note's ⋯ menu" loading="lazy" decoding="async"><figcaption>The ⋯ menu at the top of the note.</figcaption></figure></p>
+<ul>
+<li><strong>Open recording</strong>: plays the audio file in your default player. Greyed out if there is no audio.</li>
+<li><strong>Show in folder</strong>: opens the note&#39;s folder in File Explorer.</li>
+<li><strong>Export…</strong>: the same as the <strong>Export</strong> button. See <a href="/docs/templates-and-export/">Templates and export</a>.</li>
+<li><strong>Copy summary as markdown</strong>: copies the summary text to the clipboard.</li>
+<li><strong>Copy for email</strong>: copies the summary as a formatted message, with the template&#39;s logo and colors, ready to paste into a new email.</li>
+<li><strong>Send to</strong> and the name of each webhook you set up.</li>
+<li><strong>Delete…</strong>: see <a href="#deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept</a>.</li>
+</ul>
+<h2 id="notes-still-being-made-and-notes-that-failed">Notes still being made, and notes that failed<a class="anchor" href="#notes-still-being-made-and-notes-that-failed" aria-label="Link to Notes still being made, and notes that failed">#</a></h2>
+<h3 id="recording-right-now">Recording right now<a class="anchor" href="#recording-right-now" aria-label="Link to Recording right now">#</a></h3>
+<p>While a note is still recording, the note page shows a red box with the timer and <strong>Live window</strong>, <strong>Snip</strong>, <strong>Pause</strong> (then <strong>Resume</strong>), <strong>Stop &amp; discard</strong> and <strong>Stop</strong>. Type in the box and press <kbd>Enter</kbd> to add a typed note at this moment. The transcript and summary appear when you stop. See <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-recording-1x.webp" srcset="/img/docs/note-page-recording-1x.webp 1x, /img/docs/note-page-recording.webp 2x" width="704" height="164" alt="The red recording box on the note page" loading="lazy" decoding="async"><figcaption>A note that is recording now. Type a note and press Enter to place it at this moment.</figcaption></figure></p>
+<h3 id="processing">Processing<a class="anchor" href="#processing" aria-label="Link to Processing">#</a></h3>
+<p>A box with a spinner says what is happening: <strong>Transcribing…</strong> (with a percentage on this PC), <strong>Writing the summary…</strong>, or <strong>Waiting for the note before it…</strong>. You can close the note and come back; it finishes on its own. <strong>Regenerate</strong> waits until it is done.</p>
+<h3 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/note-page-failed-1x.webp" srcset="/img/docs/note-page-failed-1x.webp 1x, /img/docs/note-page-failed.webp 2x" width="704" height="72" alt="A note that failed, with the reason and Try again" loading="lazy" decoding="async"><figcaption>A failed note names the reason. Try again runs the transcript again.</figcaption></figure></p>
+<ul>
+<li><strong>A note says &quot;Needs a look&quot; and shows a reason.</strong> Read the reason, for example that the speech provider could not be reached. Fix that (see <a href="/docs/speech-models/">Speech models</a>), then click <strong>Try again</strong>. <strong>Try again</strong> needs the audio; if the audio was removed it is greyed out. The audio of a failed or unfinished note is never removed by the retention rule, so you can try again.</li>
+<li><strong>The summary is missing and a grey bar shows a message.</strong> Often no language model is set up. The transcript is still a good note. Add a key in <strong>Settings › Language models</strong> (see <a href="/docs/language-models/">Language models</a>), then click <strong>Regenerate summary</strong>.</li>
+<li><strong>The summary is old after you edited the transcript.</strong> Click <strong>Re-summarize</strong> in the bar.</li>
+<li><strong>A speaker is wrong everywhere.</strong> Rename or merge the speaker in the right-hand column, or run the transcript again with <strong>Identify speakers</strong> ticked.</li>
+</ul>
+<p>For anything else, see <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="the-notes-folder-on-disk">The note&#39;s folder on disk<a class="anchor" href="#the-notes-folder-on-disk" aria-label="Link to The note's folder on disk">#</a></h2>
+<p>Every note is also a plain folder you can open, copy and give to other tools. By default it lives in <code>Documents\A9 Voice\Notes</code> and is named by day and meeting, for example <code>2026-10-05 Platform stand-up</code>. Change where notes go in <strong>Settings › Notes › Storage</strong>.</p>
+<p>The folder holds:</p>
+<ul>
+<li><code>summary.md</code>: the summary.</li>
+<li><code>transcript.md</code>: every line as <code>[mm:ss] Name: text</code>.</li>
+<li><code>notes.md</code>: only if you typed notes during the recording.</li>
+<li><code>images</code>: the pictures.</li>
+</ul>
+<p>The files are always current. A rename, a corrected line, a new tag or a regenerate rewrites them and renames the folder straight away. Branding from a template never goes into these files; it is only added when you export.</p>
+<p>A9 Voice only changes, renames or deletes folders that it made itself. Each carries a hidden <code>.a9voice</code> file. A folder without that file is never touched.</p>
+<p>To open the folder, use <strong>Show in folder</strong> on the list row or in the <strong>⋯</strong> menu.</p>
+<h2 id="deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept<a class="anchor" href="#deleting-a-note-and-how-long-audio-is-kept" aria-label="Link to Deleting a note and how long audio is kept">#</a></h2>
+<h3 id="delete-one-note">Delete one note<a class="anchor" href="#delete-one-note" aria-label="Link to Delete one note">#</a></h3>
+<ol>
+<li>Click <strong>⋯</strong> on the note (or on its row in the list) and choose <strong>Delete…</strong>.</li>
+<li>The item changes to <strong>Delete audio, files and note</strong>. Click it to confirm.</li>
+</ol>
+<p>This removes the note, its audio, and the files A9 Voice put in the note&#39;s folder: <code>summary.md</code>, <code>transcript.md</code>, <code>notes.md</code>, the pictures and the hidden files. Anything else you saved in that folder stays. The app has no undo for this.</p>
+<h3 id="how-long-audio-is-kept">How long audio is kept<a class="anchor" href="#how-long-audio-is-kept" aria-label="Link to How long audio is kept">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/note-page-storage-1x.webp" srcset="/img/docs/note-page-storage-1x.webp 1x, /img/docs/note-page-storage.webp 2x" width="826" height="420" alt="Settings, Storage: the notes folder and Keep notes audio" loading="lazy" decoding="async"><figcaption>Settings › Notes › Storage: where notes are kept, and Keep notes audio.</figcaption></figure></p>
+<p>Audio is the largest part of a note. In <strong>Settings › Notes › Storage</strong>, <strong>Keep notes audio</strong> deletes only the audio, after <strong>1 day</strong>, <strong>7 days</strong>, <strong>30 days</strong>, <strong>90 days</strong> or <strong>Forever</strong>. The summary, transcript and pictures stay until you delete the note. A9 Voice checks about a minute after it starts, then once a day, and right away when you change the setting.</p>
+<p>Once the audio is gone you cannot play lines or run the transcript again, but you can still read, edit, export and re-summarize the note.</p>
+<h2 id="notes-from-an-added-folder">Notes from an added folder<a class="anchor" href="#notes-from-an-added-folder" aria-label="Link to Notes from an added folder">#</a></h2>
+<p>If you added a folder in <strong>Settings › Notes › Search</strong>, notes that live in it can be found and opened. They are read only: A9 Voice never changes, moves or deletes anything in that folder. See <a href="/docs/search-and-ask/">Search and ask</a> for how to add one.</p>
+<p><figure class="shot"><img src="/img/docs/note-page-readonly-1x.webp" srcset="/img/docs/note-page-readonly-1x.webp 1x, /img/docs/note-page-readonly.webp 2x" width="936" height="491" alt="A read-only note with the Make editable copy button" loading="lazy" decoding="async"><figcaption>A note from an added folder. The badge (1) names where it came from. Make editable copy (2) makes a copy that you can change.</figcaption></figure></p>
+<p>The page shows a badge with the app or folder it came from, the date, the people, <strong>Read only</strong>, and the sentence &quot;This note lives in another app&#39;s folder. A9 Voice will make its own copy to edit. The original stays untouched.&quot; You can read the summary and transcript, play a line if there is audio, and use <strong>Open in folder</strong> to see the original files.</p>
+<p>To change anything, click <strong>Make editable copy</strong>. A9 Voice copies the note into your own notes, leaves the original as it was, and opens the copy as a normal note. It shows <strong>Copied from</strong> on its chips and <strong>Editable copy</strong> in the list. If you click a speaker&#39;s name, double-click a line, or click <strong>Regenerate summary</strong> on a read-only note, A9 Voice asks first:</p>
+<p><figure class="shot"><img src="/img/docs/note-page-readonly-copy-1x.webp" srcset="/img/docs/note-page-readonly-copy-1x.webp 1x, /img/docs/note-page-readonly-copy.webp 2x" width="892" height="72" alt="The question before an editable copy is made" loading="lazy" decoding="async"><figcaption>Make editable copy? The original stays untouched.</figcaption></figure></p>
+<p>Click <strong>Make copy</strong> to go ahead, or <strong>Cancel</strong>. Once a copy exists, the read-only page says &quot;An editable copy exists.&quot; with <strong>Open it</strong>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/templates-and-export/">Templates and export</a>: change how the summary is written, and send it as a PDF, Word file or email.</li>
+<li><a href="/docs/recording-a-meeting/">Recording a meeting</a> and <a href="/docs/live-window/">The Live window</a>: what happens before the note exists.</li>
+<li><a href="/docs/voices/">Voices</a>: let A9 Voice recognize people by voice.</li>
+<li><a href="/docs/search-and-ask/">Search and ask</a>: find and question every note at once.</li>
+<li><a href="/docs/webhooks/">Webhooks</a>: send a summary somewhere when it is ready.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/live-window/"><span class="docs-step-l">Previous</span><span>Live window</span></a><a class="docs-step next" href="/docs/voices/"><span class="docs-step-l">Next</span><span>Voices (voice recognition)</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-notes-list">The Notes list</a></li><li class="d2"><a href="#open-a-note">Open a note</a></li><li class="d3"><a href="#the-title">The title</a></li><li class="d3"><a href="#the-chips-under-the-title">The chips under the title</a></li><li class="d3"><a href="#tags">Tags</a></li><li class="d2"><a href="#the-summary">The summary</a></li><li class="d3"><a href="#when-the-summary-is-out-of-date">When the summary is out of date</a></li><li class="d3"><a href="#ask-ai">Ask AI</a></li><li class="d2"><a href="#the-transcript">The transcript</a></li><li class="d3"><a href="#fix-a-misheard-word">Fix a misheard word</a></li><li class="d3"><a href="#fix-the-speaker-of-one-line">Fix the speaker of one line</a></li><li class="d2"><a href="#name-the-speakers">Name the speakers</a></li><li class="d3"><a href="#the-speaker-menu">The speaker menu</a></li><li class="d3"><a href="#hear-who-someone-is">Hear who someone is</a></li><li class="d2"><a href="#play-the-recording">Play the recording</a></li><li class="d3"><a href="#who-you-hear-others-everyone-me">Who you hear: Others, Everyone, Me</a></li><li class="d2"><a href="#pictures">Pictures</a></li><li class="d2"><a href="#the-right-hand-column">The right-hand column</a></li><li class="d3"><a href="#run-the-transcript-again">Run the transcript again</a></li><li class="d3"><a href="#run-the-summary-again">Run the summary again</a></li><li class="d3"><a href="#other-notes-from-the-same-meeting">Other notes from the same meeting</a></li><li class="d2"><a href="#the-menu-at-the-top">The menu at the top</a></li><li class="d2"><a href="#notes-still-being-made-and-notes-that-failed">Notes still being made, and notes that failed</a></li><li class="d3"><a href="#recording-right-now">Recording right now</a></li><li class="d3"><a href="#processing">Processing</a></li><li class="d3"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#the-notes-folder-on-disk">The note's folder on disk</a></li><li class="d2"><a href="#deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept</a></li><li class="d3"><a href="#delete-one-note">Delete one note</a></li><li class="d3"><a href="#how-long-audio-is-kept">How long audio is kept</a></li><li class="d2"><a href="#notes-from-an-added-folder">Notes from an added folder</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

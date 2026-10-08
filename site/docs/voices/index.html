@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voices (voice recognition) · A9 Voice Manual</title>
+<meta name="description" content="Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/voices/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Voices (voice recognition) · A9 Voice Manual">
+<meta property="og:description" content="Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.">
+<meta property="og:url" content="https://a9voice.com/docs/voices/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/" aria-current="page">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
+      <h1>Voices (voice recognition)</h1>
+      <p class="docs-lead">Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.4</p>
+      <p>Without this, people on a call show up as <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, until you name them. With
+<strong>Recognize people by voice</strong> on, A9 Voice remembers how each person you have named sounds, and names them for you
+in later meetings, both on the live transcript and in the finished note.</p>
+<p>It works on the other people on the call. Your own voice is never learned or matched: A9 Voice already knows which
+speaker is you, because that is your microphone.</p>
+<h2 id="what-is-stored-and-where">What is stored, and where<a class="anchor" href="#what-is-stored-and-where" aria-label="Link to What is stored, and where">#</a></h2>
+<ul>
+<li><strong>A voiceprint:</strong> a set of numbers that describes how a person sounds. It is not a recording.</li>
+<li><strong>Where:</strong> in a file called <code>voices.db</code> in A9 Voice&#39;s own data folder on your PC. Not in your Notes folder.</li>
+<li><strong>Never anywhere else:</strong> voiceprints are never put in a note, a log, an export, a webhook, or any request to a
+speech or AI service. The <a href="/docs/connector/">connector for AI apps</a> never returns them either.</li>
+<li><strong>Next to each person:</strong> a short history in plain words (when the voice was learned or strengthened, renamed, merged).</li>
+</ul>
+<p>For everything else A9 Voice keeps, see <a href="/docs/privacy-and-data/">Privacy and your data</a>.</p>
+<h2 id="turn-it-on">Turn it on<a class="anchor" href="#turn-it-on" aria-label="Link to Turn it on">#</a></h2>
+<ol>
+<li><p>Open <strong>Settings › Notes › Voices</strong> and switch <strong>Recognize people by voice</strong> on.</p>
+<p><figure class="shot"><img src="/img/docs/voices-off-1x.webp" srcset="/img/docs/voices-off-1x.webp 1x, /img/docs/voices-off.webp 2x" width="790" height="345" alt="The Voices page with Recognize people by voice switched off and no people yet. The switch is marked 1." loading="lazy" decoding="async"><figcaption>Voices is off until you turn it on.</figcaption></figure></p>
+</li>
+<li><p>A window called <strong>Before you turn this on</strong> opens. It says what is stored, where, how to delete it, and that
+you are responsible for consent. Read it, then choose <strong>Turn on</strong>. <strong>Not now</strong> leaves the switch off.</p>
+<p><figure class="shot"><img src="/img/docs/voices-explainer-1x.webp" srcset="/img/docs/voices-explainer-1x.webp 1x, /img/docs/voices-explainer.webp 2x" width="592" height="394" alt="The window Before you turn this on, with four points: What's stored, Where, Deleting and Consent, and the buttons Not now and Turn on." loading="lazy" decoding="async"></figure></p>
+<p>The consent point reads: &quot;you&#39;re responsible for any consent your location requires before you record or
+recognize people.&quot; Rules about recording people, and about recognizing them, differ from place to place.</p>
+</li>
+<li><p>A9 Voice downloads the <strong>Speaker model</strong> once (80.3 MB). A progress bar shows how far it has got. If the
+download fails, a message appears and the button reads <strong>Try again</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/voices-download-1x.webp" srcset="/img/docs/voices-download-1x.webp 1x, /img/docs/voices-download.webp 2x" width="794" height="153" alt="The Voices page with the Speaker model row showing Downloading, 29.6 MB of 80.3 MB, 36 percent." loading="lazy" decoding="async"></figure></p>
+</li>
+</ol>
+<p>When you switch <strong>Recognize people by voice</strong> off again, the voices you already have stay on your PC until you forget
+them or delete them (see <a href="#manage-people">Manage people</a>).</p>
+<h2 id="how-a9-voice-learns-a-voice">How A9 Voice learns a voice<a class="anchor" href="#how-a9-voice-learns-a-voice" aria-label="Link to How A9 Voice learns a voice">#</a></h2>
+<p>A voice is learned only when you tell A9 Voice who someone is, in one of two ways:</p>
+<ul>
+<li><strong>Naming a whole speaker in the Live window.</strong> While you record, type the name into <strong>Who&#39;s talking?</strong> and press
+<strong>Tag</strong>, name a speaker from their chip, or press <strong>Yes</strong> next to a likely match. See
+<a href="/docs/live-window/">The Live window</a>.</li>
+<li><strong>Naming a whole speaker in a note.</strong> In the note&#39;s <strong>Speakers</strong> list, type a name for a speaker (or answer <strong>Yes</strong> to
+&quot;Sounds like ...?&quot;). See <a href="/docs/note-page/">The note page</a>.</li>
+</ul>
+<p>A few rules keep wrong names out:</p>
+<ul>
+<li><strong>Never from a single line.</strong> Moving one line to another speaker does not teach anything. Only a name for the whole
+speaker does.</li>
+<li><strong>Never your own voice.</strong> Your microphone channel, and any speaker you name as yourself, are skipped.</li>
+<li><strong>Never from an editable copy of a note that came from an added folder.</strong> See
+<a href="/docs/search-and-ask/">Search and Ask</a>.</li>
+<li><strong>After the call.</strong> Tags taught during a call are learned when the note is processed afterwards, not during the
+call. That is also why Undo in the Live window leaves no trace.</li>
+<li><strong>It needs the audio.</strong> A voice is learned from the note&#39;s recording, so nothing is learned from a note whose audio
+has been removed (see <strong>Keep notes audio</strong> in <a href="/docs/note-page/#deleting-a-note-and-how-long-audio-is-kept">The note page</a>).</li>
+<li><strong>Enough speech.</strong> A voice is learned only from at least 12 seconds of that person&#39;s clear speech. With less,
+the history says &quot;not enough clear speech&quot;.</li>
+<li><strong>Too different.</strong> If the new sample sounds too unlike the voice already stored under that name, it is not added.
+The history says &quot;voice too different&quot;, and it is probably the wrong person.</li>
+<li><strong>A tag on the wrong person.</strong> If you Tag a name that already has a voice stored, but the speaker clearly sounds like a
+different person you taught, A9 Voice names the speaker with that other person and learns nothing from the tag.</li>
+</ul>
+<p>The <strong>Samples</strong> column on the Voices page counts how many times a voice has been learned or strengthened.</p>
+<h2 id="how-names-show-up">How names show up<a class="anchor" href="#how-names-show-up" aria-label="Link to How names show up">#</a></h2>
+<h3 id="during-a-call">During a call<a class="anchor" href="#during-a-call" aria-label="Link to During a call">#</a></h3>
+<p>A9 Voice starts to compare a speaker with the voices you taught it after about 8 seconds of that speaker&#39;s talking, and
+tries again as more speech comes in. A name is shown only once two tries in a row agree on it, and it does not change
+after that.</p>
+<ul>
+<li><strong>A sure match</strong> (the voice is alike enough, and clearly closer to this person than to anyone else you taught)
+names the speaker on every line, past and future.</li>
+<li><strong>A likely match</strong> (alike, but not sure enough) shows the name with a question mark, such as <strong>Priya?</strong>, and a <strong>Yes</strong> button. One click confirms it
+and counts as a Tag.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/voices-live-suggestion-1x.webp" srcset="/img/docs/voices-live-suggestion-1x.webp 1x, /img/docs/voices-live-suggestion.webp 2x" width="760" height="560" alt="The Live window with the chip Priya? highlighted and a Yes button beside her lines." loading="lazy" decoding="async"><figcaption>A likely match: Priya? with Yes.</figcaption></figure></p>
+<h3 id="in-the-finished-note">In the finished note<a class="anchor" href="#in-the-finished-note" aria-label="Link to In the finished note">#</a></h3>
+<p>When the note is ready, speakers nobody named yet are checked against your voices again, using everything that person
+said. In the note&#39;s <strong>Speakers</strong> list you will see one of three things:</p>
+<ul>
+<li><strong>Recognized by voice</strong> under a name A9 Voice was sure about.</li>
+<li><strong>Sounds like Dana?</strong> with <strong>Yes</strong> and <strong>No</strong>. <strong>Yes</strong> names the speaker, which also teaches the voice. <strong>No</strong>
+dismisses the guess.</li>
+<li>Nothing, and the speaker stays <strong>Speaker N</strong>. A speaker with very little speech is not judged at all.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/voices-note-speakers-1x.webp" srcset="/img/docs/voices-note-speakers-1x.webp 1x, /img/docs/voices-note-speakers.webp 2x" width="266" height="402" alt="The note's Speakers list: Marcus marked Recognized by voice, and Speaker 4 with the question Sounds like Dana, Yes or No." loading="lazy" decoding="async"></figure></p>
+<p>Two rules apply in every meeting. A speaker gets at most one name, and a person is matched to at most one speaker, so
+two speakers never both become Priya. A name you have already given in this meeting is never offered again to another
+speaker.</p>
+<p>Naming a speaker yourself always wins over a guess.</p>
+<h2 id="the-voices-page">The Voices page<a class="anchor" href="#the-voices-page" aria-label="Link to The Voices page">#</a></h2>
+<p>Open <strong>Settings › Notes › Voices</strong> to see everyone A9 Voice has learned.</p>
+<p><figure class="shot"><img src="/img/docs/voices-people-1x.webp" srcset="/img/docs/voices-people-1x.webp 1x, /img/docs/voices-people.webp 2x" width="790" height="633" alt="The Voices page: the switch is on and the People table lists Priya, Marcus, Dana, Omar and Lena with Samples, Last recognized and Meetings." loading="lazy" decoding="async"></figure></p>
+<p>Each row shows the person&#39;s <strong>Name</strong>, <strong>Samples</strong>, <strong>Last recognized</strong> (the date, or <strong>Never</strong>) and <strong>Meetings</strong> (how
+many meetings they were recognized in). <strong>Last recognized</strong> and <strong>Meetings</strong> move when A9 Voice names someone with a sure
+match in a finished note.</p>
+<h3 id="manage-people">Manage people<a class="anchor" href="#manage-people" aria-label="Link to Manage people">#</a></h3>
+<p>Each row ends with three links.</p>
+<ul>
+<li><strong>Rename</strong> opens the name picker with the current name. Type the new name and press <kbd>Enter</kbd>. If that name
+already belongs to another saved voice, A9 Voice asks <strong>Same person?</strong>: <strong>Merge</strong> joins the two, <strong>No, different
+person</strong> keeps both.</li>
+<li><strong>Merge</strong> folds this voice into another one, for when the same person was taught under two names. Pick the other
+person in the name picker, which lists only people that are already saved. The two voices become one, weighted by
+how many samples each had.</li>
+<li><strong>Forget</strong> removes the person and their history now. A line opens under the row asking you to confirm with
+<strong>Forget</strong>. The space the voiceprint used is overwritten, so nothing about that voice is left on your PC.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/voices-merge-1x.webp" srcset="/img/docs/voices-merge-1x.webp 1x, /img/docs/voices-merge.webp 2x" width="1080" height="820" alt="The name picker under Merge, listing the other saved people." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/voices-forget-1x.webp" srcset="/img/docs/voices-forget-1x.webp 1x, /img/docs/voices-forget.webp 2x" width="790" height="298" alt="The row under Dana asking Forget Dana's voice now? It's removed from this PC for good, with a Forget button." loading="lazy" decoding="async"></figure></p>
+<p>Click a person&#39;s name to open their history, one short line per event.</p>
+<p><figure class="shot"><img src="/img/docs/voices-history-1x.webp" srcset="/img/docs/voices-history-1x.webp 1x, /img/docs/voices-history.webp 2x" width="790" height="345" alt="Priya's history opened under her name: learned from a tag, strengthened from naming a speaker, not updated because the voice was too different, strengthened from a tag." loading="lazy" decoding="async"><figcaption>A person's history.</figcaption></figure></p>
+<h3 id="clear-out-voices-you-no-longer-need">Clear out voices you no longer need<a class="anchor" href="#clear-out-voices-you-no-longer-need" aria-label="Link to Clear out voices you no longer need">#</a></h3>
+<p>When someone has not been heard for 60 days or more (or was added that long ago and never heard), a box labeled
+<strong>Not heard in 60+ days</strong> appears, with the count. Tick it to show only those people. <strong>Forget all N shown</strong> then asks once more (&quot;This can&#39;t be undone&quot;) and removes them
+together.</p>
+<p><figure class="shot"><img src="/img/docs/voices-stale-1x.webp" srcset="/img/docs/voices-stale-1x.webp 1x, /img/docs/voices-stale.webp 2x" width="790" height="571" alt="The People list filtered to Omar and Lena, with the question Forget these 2 voices now and the buttons Forget 2 and Cancel." loading="lazy" decoding="async"></figure></p>
+<h3 id="check-voiceprints">Check voiceprints<a class="anchor" href="#check-voiceprints" aria-label="Link to Check voiceprints">#</a></h3>
+<p><strong>Check voiceprints</strong> looks for two people whose voices sound too alike. That usually means one of them picked up some
+of the other person&#39;s voice, from a stretch where both talked. It only reports: it changes nothing. Listen in a recent
+note, then rename or forget the wrong one yourself.</p>
+<p><figure class="shot"><img src="/img/docs/voices-check-1x.webp" srcset="/img/docs/voices-check-1x.webp 1x, /img/docs/voices-check.webp 2x" width="794" height="183" alt="The Voiceprint check result: Marcus and Dana, 62 percent alike, with the explanation and a Close button." loading="lazy" decoding="async"></figure></p>
+<h3 id="import-voices-from-a-file">Import voices from a file<a class="anchor" href="#import-voices-from-a-file" aria-label="Link to Import voices from a file">#</a></h3>
+<p><strong>Import voices from a file...</strong> reads a voiceprints file you already have and lets you pick who to add. People who are
+already here are shown as <strong>already here</strong> and left as they are, and nothing is replaced. Choose who to add and press
+<strong>Import</strong> with the number of people. A9 Voice does not export voices, so this is only for a file that came from somewhere
+else. A file it cannot use gives an error such as &quot;Not a voiceprints file&quot;.</p>
+<p><figure class="shot"><img src="/img/docs/voices-import-1x.webp" srcset="/img/docs/voices-import-1x.webp 1x, /img/docs/voices-import.webp 2x" width="794" height="213" alt="The Import voices box: Priya marked already here, Tomas and Ines ticked, and the buttons Import 2 and Cancel." loading="lazy" decoding="async"></figure></p>
+<h3 id="delete-all-voices">Delete all voices<a class="anchor" href="#delete-all-voices" aria-label="Link to Delete all voices">#</a></h3>
+<p>At the bottom of the page, <strong>Delete all voices</strong> removes every voice from your PC at once. Type <code>DELETE</code> in the box and
+press <strong>Delete all voices</strong>. This removes the whole <code>voices.db</code> file. Notes keep the names they already show: only
+the voiceprints go.</p>
+<p><figure class="shot"><img src="/img/docs/voices-delete-all-1x.webp" srcset="/img/docs/voices-delete-all-1x.webp 1x, /img/docs/voices-delete-all.webp 2x" width="794" height="140" alt="The Delete all voices box with DELETE typed in the confirmation field." loading="lazy" decoding="async"></figure></p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>Nobody is named.</strong> Check that the switch is <strong>On</strong> and the <strong>Speaker model</strong> has finished downloading. A9 Voice
+also needs at least one person in the list, so name someone first. Matching needs a few seconds of clear speech
+from each speaker.</li>
+<li><strong>The wrong name appears.</strong> Rename the speaker in the note. If the same mistake keeps coming, run
+<strong>Check voiceprints</strong>, then <strong>Forget</strong> the voice that is wrong and teach it again.</li>
+<li><strong>Two people keep getting each other&#39;s names.</strong> The two voices probably mixed during a call where both talked. Use
+<strong>Check voiceprints</strong>, then forget or rename the wrong one.</li>
+</ul>
+<p>More in <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/live-window/">The Live window</a>: Tag people while you record.</li>
+<li><a href="/docs/note-page/">The note page</a>: name speakers in a finished note.</li>
+<li><a href="/docs/privacy-and-data/">Privacy and your data</a>: what stays on your PC.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/note-page/"><span class="docs-step-l">Previous</span><span>The note page</span></a><a class="docs-step next" href="/docs/templates-and-export/"><span class="docs-step-l">Next</span><span>Templates and export</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-stored-and-where">What is stored, and where</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#how-a9-voice-learns-a-voice">How A9 Voice learns a voice</a></li><li class="d2"><a href="#how-names-show-up">How names show up</a></li><li class="d3"><a href="#during-a-call">During a call</a></li><li class="d3"><a href="#in-the-finished-note">In the finished note</a></li><li class="d2"><a href="#the-voices-page">The Voices page</a></li><li class="d3"><a href="#manage-people">Manage people</a></li><li class="d3"><a href="#clear-out-voices-you-no-longer-need">Clear out voices you no longer need</a></li><li class="d3"><a href="#check-voiceprints">Check voiceprints</a></li><li class="d3"><a href="#import-voices-from-a-file">Import voices from a file</a></li><li class="d3"><a href="#delete-all-voices">Delete all voices</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speech models · A9 Voice Manual</title>
+<meta name="description" content="Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/speech-models/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Speech models · A9 Voice Manual">
+<meta property="og:description" content="Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.">
+<meta property="og:url" content="https://a9voice.com/docs/speech-models/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/" aria-current="page">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
+      <h1>Speech models</h1>
+      <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
+<p>Everything here is in <strong>Settings › Speech models</strong>. The page has two parts: <strong>CLOUD</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="424" alt="The Speech models page: which model does what, and the cloud providers" loading="lazy" decoding="async"><figcaption>1: who does what. 2: the providers. 3: your own server.</figcaption></figure></p>
+<p>The line under the title shows who does what right now: <strong>Dictation</strong>, <strong>Notes</strong> and <strong>Fallback</strong>. Each name opens that model&#39;s window. Each tile also carries small badges (<strong>Dictation</strong>, <strong>Notes</strong>, <strong>Fallback</strong>) for what it does. A tile with a blue <strong>Add key</strong> button has no key yet; a gear means it is set up.</p>
+<h2 id="choose-who-does-what">Choose who does what<a class="anchor" href="#choose-who-does-what" aria-label="Link to Choose who does what">#</a></h2>
+<p>Every model&#39;s window has up to three boxes. They are how you give a model a job.</p>
+<ul>
+<li><strong>Use for dictation:</strong> this model types what you say when you hold the dictation key.</li>
+<li><strong>Use for notes:</strong> this model writes the transcript of your recordings. The box appears for every cloud provider and custom server, and for models on this PC.</li>
+<li><strong>Use as fallback:</strong> this model steps in when the one doing dictation fails.</li>
+</ul>
+<p>A few rules keep you from ending up with nothing:</p>
+<ul>
+<li>Dictation and notes always need a model. If you uncheck <strong>Use for dictation</strong> and a fallback is set, the fallback takes over. If there is no fallback, the box stays checked and the window says <strong>Dictation needs a speech model. Pick another one first.</strong> Pick another model first, then come back. Notes work the same way: they move to the dictation model if it can do notes, otherwise the box stays checked.</li>
+<li>A model can&#39;t be its own fallback. Checking <strong>Use as fallback</strong> on the model that does dictation gives <strong>This model does dictation. The fallback has to be a different one.</strong></li>
+<li>You can&#39;t <strong>Disconnect</strong> the model that does dictation. Choose another one for dictation first.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/speech-models-needs-dictation-1x.webp" srcset="/img/docs/speech-models-needs-dictation-1x.webp 1x, /img/docs/speech-models-needs-dictation.webp 2x" width="552" height="413" alt="Trying to turn off dictation on its only model" loading="lazy" decoding="async"><figcaption>The box stays checked and says why.</figcaption></figure></p>
+<h3 id="what-the-fallback-does">What the fallback does<a class="anchor" href="#what-the-fallback-does" aria-label="Link to What the fallback does">#</a></h3>
+<p>The fallback is tried once when the model in use fails, is rate-limited, or takes longer than the limit shown under the cloud tiles (4 s). In the pill you see <strong>via</strong> and the fallback&#39;s name when it answered.</p>
+<p>If you have a model on this PC and both cloud models fail, it answers last. With no internet at all, the cloud fallback is skipped (it would fail too) and a model on this PC answers straight away; the pill says <strong>offline</strong>. More in <a href="#without-internet">Without internet</a>.</p>
+<h3 id="which-models-tell-speakers-apart">Which models tell speakers apart<a class="anchor" href="#which-models-tell-speakers-apart" aria-label="Link to Which models tell speakers apart">#</a></h3>
+<p>For notes, <strong>Deepgram</strong> and <strong>ElevenLabs</strong> (and models on this PC) tell the people on a call apart. Groq, OpenAI and custom servers can&#39;t: notes label the lines <strong>Me</strong> and <strong>Them</strong>. If you choose one of those for notes, its tile says <strong>Can&#39;t tell speakers apart: notes label lines Me / Them</strong>, and Deepgram&#39;s tile says <strong>Best at telling speakers apart</strong>.</p>
+<p>When you save your first Deepgram key and your notes model can&#39;t tell speakers apart, <strong>Use for notes</strong> starts checked for Deepgram. Your dictation model is never changed by that.</p>
+<h2 id="set-up-a-cloud-provider">Set up a cloud provider<a class="anchor" href="#set-up-a-cloud-provider" aria-label="Link to Set up a cloud provider">#</a></h2>
+<p>The steps are the same for every provider. The only things that change are where you get the key and which model you pick. Your keys stay on your PC: they go into Windows Credential Manager and never into a file, a log or the app&#39;s storage. A9 Voice only ever learns &quot;key saved&quot; or &quot;no key&quot;.</p>
+<ol>
+<li>Open <strong>Settings › Speech models</strong> and click the provider&#39;s tile.</li>
+<li>Click the big blue <strong>Get your Groq key →</strong> button (the name changes with the provider). A9 Voice opens the provider&#39;s key page in your browser.</li>
+<li>On that page, sign in, create an API key, and copy it. Come back to A9 Voice: the cursor is already in the key box.</li>
+<li>Paste the key into <strong>API key</strong>.</li>
+<li>Click <strong>Test</strong>. A9 Voice sends a 2-second test clip and shows what it heard, for example <strong>Heard “Testing one two three.”</strong> and how long it took. Nothing is saved yet.</li>
+<li>Tick the boxes for the jobs you want, then click <strong>Save</strong>.</li>
+</ol>
+<p>The strip under the big button follows you: <strong>Get a key</strong>, <strong>Paste it here</strong>, <strong>Test</strong>, with each one ticked when done.</p>
+<h3 id="groq">Groq<a class="anchor" href="#groq" aria-label="Link to Groq">#</a></h3>
+<p>Key page: <a href="https://console.groq.com/keys">console.groq.com/keys</a>. The window says <strong>Free tier, no card needed.</strong> and the button reads <strong>Get your free Groq key →</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-groq-key-1x.webp" srcset="/img/docs/speech-models-groq-key-1x.webp 1x, /img/docs/speech-models-groq-key.webp 2x" width="552" height="565" alt="The Groq window with no key yet" loading="lazy" decoding="async"><figcaption>1: the key button opens Groq's key page.</figcaption></figure></p>
+<p>Paste the key and test it. Then choose the model (<strong>Whisper Large v3 Turbo</strong> or <strong>Whisper Large v3</strong>) and the jobs.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-groq-tested-1x.webp" srcset="/img/docs/speech-models-groq-tested-1x.webp 1x, /img/docs/speech-models-groq-tested.webp 2x" width="552" height="565" alt="A pasted key, a passed test and the boxes" loading="lazy" decoding="async"><figcaption>2: paste. 3: test. 4: choose jobs. 5: save.</figcaption></figure></p>
+<p>Groq can&#39;t tell speakers apart and doesn&#39;t stream. The same Groq key is also used for <a href="/docs/language-models/">Language models</a>, so you only add it once.</p>
+<h3 id="deepgram">Deepgram<a class="anchor" href="#deepgram" aria-label="Link to Deepgram">#</a></h3>
+<p>Key page: <a href="https://console.deepgram.com/">console.deepgram.com</a>. The window says <strong>$200 of free credit, no card needed.</strong> and the button reads <strong>Get your free Deepgram key →</strong>.</p>
+<p>Models: <strong>Nova-3</strong> and <strong>Nova-2</strong>. Deepgram tells speakers apart, which makes it the best choice for notes, and it is the one used for the live transcript during a recording (see <a href="/docs/live-window/">Live window</a>).</p>
+<p>Once a key is saved, the key box folds away and shows <strong>Key saved</strong> and <strong>Manage key</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-deepgram-1x.webp" srcset="/img/docs/speech-models-deepgram-1x.webp 1x, /img/docs/speech-models-deepgram.webp 2x" width="552" height="404" alt="A saved key, and the three boxes" loading="lazy" decoding="async"><figcaption>1: the key is saved. 2: what this model does.</figcaption></figure></p>
+<h3 id="openai">OpenAI<a class="anchor" href="#openai" aria-label="Link to OpenAI">#</a></h3>
+<p>Key page: <a href="https://platform.openai.com/api-keys">platform.openai.com/api-keys</a>. The button reads <strong>Get your OpenAI key →</strong>, with no promise of a free tier.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-openai-key-1x.webp" srcset="/img/docs/speech-models-openai-key-1x.webp 1x, /img/docs/speech-models-openai-key.webp 2x" width="552" height="541" alt="The OpenAI window with no key yet" loading="lazy" decoding="async"><figcaption>The model list is a drop-down.</figcaption></figure></p>
+<p>Models: <strong>GPT-4o mini Transcribe</strong>, <strong>GPT-4o Transcribe</strong> and <strong>Whisper</strong>. OpenAI can&#39;t tell speakers apart. For notes, A9 Voice uses <strong>Whisper</strong> with OpenAI because the GPT-4o models don&#39;t give the timestamps a note needs. The same key is used for OpenAI <a href="/docs/language-models/">language models</a>.</p>
+<h3 id="elevenlabs">ElevenLabs<a class="anchor" href="#elevenlabs" aria-label="Link to ElevenLabs">#</a></h3>
+<p>Key page: <a href="https://elevenlabs.io/app/settings/api-keys">elevenlabs.io/app/settings/api-keys</a>. The button reads <strong>Get your ElevenLabs key →</strong>.</p>
+<p>Models: <strong>Scribe v2</strong> and <strong>Scribe v1</strong>. ElevenLabs tells speakers apart, so it works well for notes.</p>
+<h3 id="providers-marked-soon">Providers marked Soon<a class="anchor" href="#providers-marked-soon" aria-label="Link to Providers marked Soon">#</a></h3>
+<p>A few more services appear dimmed with a <strong>Soon</strong> badge. They can&#39;t be opened yet.</p>
+<h3 id="what-the-capability-line-means">What the capability line means<a class="anchor" href="#what-the-capability-line-means" aria-label="Link to What the capability line means">#</a></h3>
+<p>Every cloud window shows three facts under its name: <strong>Languages</strong>, <strong>Streaming</strong> and <strong>Diarization</strong>. Diarization is telling speakers apart. Streaming means the service can return words while you are still talking; the live transcript during a recording uses Deepgram, or a fast model on this PC.</p>
+<h3 id="add-a-custom-api">Add a custom API<a class="anchor" href="#add-a-custom-api" aria-label="Link to Add a custom API">#</a></h3>
+<p>Use <strong>Add custom API</strong> for your own server, or any service that speaks the same language as OpenAI&#39;s speech API: it must have a <code>/audio/transcriptions</code> address. A speech server running on your own PC or network works.</p>
+<ol>
+<li>Click <strong>Add custom API</strong> at the end of the cloud tiles.</li>
+<li>Fill in <strong>Name</strong> (what the tile will say), <strong>Base URL</strong> (for example <code>http://localhost:8000/v1</code>) and <strong>Model</strong> (the model name your server expects, for example <code>whisper-small</code>). A9 Voice adds <code>/audio/transcriptions</code> to the Base URL itself.</li>
+<li><strong>API key (optional)</strong>: fill it in only if your server needs one.</li>
+<li><strong>Extra header (optional)</strong> and <strong>Header value</strong>: if your server wants an extra HTTP header, type its name (for example <code>X-Org</code>) and its value. The value goes into Credential Manager like a key.</li>
+<li>Click <strong>Test</strong>, then tick the jobs and click <strong>Save</strong>.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/speech-models-custom-1x.webp" srcset="/img/docs/speech-models-custom-1x.webp 1x, /img/docs/speech-models-custom.webp 2x" width="552" height="635" alt="A custom server: name, address, model and an extra header" loading="lazy" decoding="async"><figcaption>1: name. 2: address. 3: model. 4: extra header.</figcaption></figure></p>
+<p>Only the Base URL is required to save. The server gets your audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint. For notes, the server must answer with timestamps (the Whisper <code>verbose_json</code> style). <strong>Disconnect</strong> on a custom server removes the provider and its saved key and header.</p>
+<h3 id="change-a-key-or-remove-a-provider">Change a key or remove a provider<a class="anchor" href="#change-a-key-or-remove-a-provider" aria-label="Link to Change a key or remove a provider">#</a></h3>
+<ul>
+<li>To replace a key: open the tile, click <strong>Manage key</strong>, paste the new one, <strong>Save</strong>.</li>
+<li>To remove one: open the tile and click <strong>Disconnect</strong>. This deletes the saved key from Credential Manager. If the provider was your fallback, the fallback is cleared.</li>
+<li>To see the keys in Windows: open Credential Manager, then <strong>Windows Credentials</strong>. A9 Voice&#39;s entries end in a slash and the provider&#39;s name (for example <code>/groq</code>).</li>
+<li>Groq and OpenAI use one key for speech and for <a href="/docs/language-models/">language models</a>. Disconnecting it in either place removes it for both.</li>
+</ul>
+<h2 id="on-this-pc">On this PC<a class="anchor" href="#on-this-pc" aria-label="Link to On this PC">#</a></h2>
+<p>Models in the <strong>ON THIS PC</strong> part run on your computer. They are free, work offline, and nothing you say leaves the PC. They don&#39;t need a key.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-local-page-1x.webp" srcset="/img/docs/speech-models-local-page-1x.webp 1x, /img/docs/speech-models-local-page.webp 2x" width="900" height="608" alt="The models on this PC" loading="lazy" decoding="async"><figcaption>English-only models first, then multilingual ones.</figcaption></figure></p>
+<p>The tiles are split into <strong>ENGLISH ONLY</strong> and <strong>MULTILINGUAL</strong>:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Model</th><th scope="col">Languages</th><th scope="col">Runs on</th></tr></thead><tbody>
+<tr><td>Parakeet V2</td><td>English</td><td>the processor</td></tr>
+<tr><td>Whisper Small, Base, Tiny (English)</td><td>English</td><td>the processor</td></tr>
+<tr><td>Parakeet V3</td><td>25 European languages, picked by the model</td><td>the processor</td></tr>
+<tr><td>Whisper Small, Base, Tiny</td><td>99 languages</td><td>the processor (Small can also use the graphics card)</td></tr>
+<tr><td>Whisper Medium, Large v3, Large v3 Turbo</td><td>99 languages</td><td>the graphics card only</td></tr>
+</tbody></table></div>
+<p>The multilingual Whisper models use the language set for dictation. Parakeet V3 detects it by itself.</p>
+<h3 id="download-a-model">Download a model<a class="anchor" href="#download-a-model" aria-label="Link to Download a model">#</a></h3>
+<ol>
+<li>Click a model&#39;s tile. The window says what it is, its languages, its <strong>Size</strong>, and how much room is free: for example <strong>111.8 GB free on this drive</strong>.</li>
+<li>Click <strong>Download</strong>. A9 Voice downloads from Hugging Face, checks every file before use, and also fetches a small set of shared tools (finding speech and telling voices apart) the first time.</li>
+<li>A progress bar shows <strong>Downloading… … of …</strong>. Click <strong>Cancel</strong> to stop.</li>
+<li>When it finishes, A9 Voice runs a quick speed test by itself.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/speech-models-local-download-1x.webp" srcset="/img/docs/speech-models-local-download-1x.webp 1x, /img/docs/speech-models-local-download.webp 2x" width="552" height="300" alt="A model ready to download" loading="lazy" decoding="async"><figcaption>It says what it needs before you click.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-local-downloading-1x.webp" srcset="/img/docs/speech-models-local-downloading-1x.webp 1x, /img/docs/speech-models-local-downloading.webp 2x" width="552" height="293" alt="A download in progress" loading="lazy" decoding="async"><figcaption>Cancel stops it.</figcaption></figure></p>
+<p>If the drive is too full you get <strong>Not enough free space: it needs …, and … is free</strong>; A9 Voice keeps 500 MB spare. A download that stops, because you cancelled or the connection dropped, picks up where it stopped when you click <strong>Download</strong> again. If it ends in an error, <strong>Discard partial download</strong> clears what was fetched.</p>
+<h3 id="use-a-model">Use a model<a class="anchor" href="#use-a-model" aria-label="Link to Use a model">#</a></h3>
+<p>Open the model&#39;s window. The same three boxes are there: <strong>Use for dictation</strong>, <strong>Use as fallback</strong> and <strong>Use for notes</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-local-ready-1x.webp" srcset="/img/docs/speech-models-local-ready-1x.webp 1x, /img/docs/speech-models-local-ready.webp 2x" width="552" height="355" alt="A ready model: its speed and its jobs" loading="lazy" decoding="async"><figcaption>1: speed on this PC. 2: jobs.</figcaption></figure></p>
+<h3 id="speed-on-this-pc">Speed on this PC<a class="anchor" href="#speed-on-this-pc" aria-label="Link to Speed on this PC">#</a></h3>
+<p>The window shows <strong>Speed on this PC</strong>, for example <strong>0.2 s for 3 s of speech (14× faster than speaking)</strong>. It is measured on a short built-in clip after the download. Click <strong>Test speed</strong> to measure again.</p>
+<p>Under the speed, one line tells you about live notes:</p>
+<ul>
+<li><strong>Fast enough for the live transcript.</strong> The model is at least twice as fast as speech.</li>
+<li><strong>Too slow for the live transcript on this PC; notes are transcribed after the call.</strong> The note is still recorded and gets its transcript afterwards.</li>
+</ul>
+<p>If notes use a model that is too slow, the live transcript stays off for that recording with the message <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></p>
+<h3 id="which-one-to-pick">Which one to pick<a class="anchor" href="#which-one-to-pick" aria-label="Link to Which one to pick">#</a></h3>
+<ul>
+<li><strong>Parakeet V2</strong> is the app&#39;s recommendation for English, especially on a PC without a graphics card: it adds punctuation and capitals. It&#39;s the one setup offers first.</li>
+<li><strong>Parakeet V3</strong> if you dictate in a European language.</li>
+<li><strong>Whisper Small, Base and Tiny</strong>: Small is more accurate, Tiny is the smallest and the least accurate.</li>
+<li><strong>Whisper Medium, Large v3 Turbo and Large v3</strong> are for a PC with a graphics card; see <a href="#graphics-card">Graphics card</a>.</li>
+</ul>
+<h3 id="without-internet">Without internet<a class="anchor" href="#without-internet" aria-label="Link to Without internet">#</a></h3>
+<p>With no internet, dictation and notes use a model on this PC by themselves, no clicking needed. For dictation, A9 Voice picks the best model you have downloaded for your language, in this order for English: Parakeet V2, Parakeet V3, then Whisper Small, Base and Tiny. For other languages: Parakeet V3, then Whisper Small, Base and Tiny. Models that need a graphics card are never chosen this way.</p>
+<p>The pill says <strong>offline</strong> when this happened. Notes whose cloud model can&#39;t be reached are transcribed on the PC the same way. If you have no model downloaded, dictation ends with <strong>No internet</strong>.</p>
+<h3 id="the-models-folder">The models folder<a class="anchor" href="#the-models-folder" aria-label="Link to The models folder">#</a></h3>
+<p>Models are stored in <code>%LOCALAPPDATA%\A9 Voice\models</code>. Click <strong>the models folder</strong> under the tiles to open it.</p>
+<h3 id="delete-a-model">Delete a model<a class="anchor" href="#delete-a-model" aria-label="Link to Delete a model">#</a></h3>
+<p>Open the model&#39;s window, click <strong>Delete</strong>, then click it again to confirm. If the model is in use, the button says what uses it, for example <strong>Delete (used for dictation and notes)</strong>. Pick another model for dictation first. Deleting removes both versions of a model (processor and graphics card). The shared tools go when the last model goes.</p>
+<h2 id="graphics-card">Graphics card<a class="anchor" href="#graphics-card" aria-label="Link to Graphics card">#</a></h2>
+<p>New in 0.6.0. A9 Voice can run the larger Whisper models on your graphics card, which is much faster than the processor on a modern graphics card. It is optional, it works with any brand of card that supports DirectX 12, and if anything goes wrong it finishes the job on the processor by itself, so you are never worse off than without it.</p>
+<h3 id="what-uses-the-card">What uses the card<a class="anchor" href="#what-uses-the-card" aria-label="Link to What uses the card">#</a></h3>
+<ul>
+<li>Whisper <strong>Small</strong>, <strong>Medium</strong>, <strong>Large v3 Turbo</strong> and <strong>Large v3</strong> can use the card.</li>
+<li><strong>Medium</strong>, <strong>Large v3 Turbo</strong> and <strong>Large v3</strong> run on the card only. <strong>Small</strong> has a processor version and a card version, so you can have either.</li>
+<li><strong>Parakeet</strong>, voice detection and telling speakers apart always stay on the processor.</li>
+</ul>
+<h3 id="turn-it-on-and-download-support">Turn it on and download support<a class="anchor" href="#turn-it-on-and-download-support" aria-label="Link to Turn it on and download support">#</a></h3>
+<p>At the top of <strong>ON THIS PC</strong> is a box with the <strong>Use graphics card</strong> switch. It is on by default. Under its name you see the card it found and its memory, written like <strong>Your card&#39;s name · 12.0 GB of memory</strong>.</p>
+<p>Below it, <strong>Graphics-card support</strong> is a small one-time download (the page shows its size: 23.9 MB). It holds the software that lets the models use your card. A9 Voice checks it when it arrives.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-support-1x.webp" srcset="/img/docs/speech-models-gpu-support-1x.webp 1x, /img/docs/speech-models-gpu-support.webp 2x" width="900" height="153" alt="Use graphics card and Graphics-card support" loading="lazy" decoding="async"><figcaption>1: the switch. 2: the one-time download.</figcaption></figure></p>
+<ol>
+<li>Click <strong>Download</strong> next to <strong>Graphics-card support</strong>. A progress line shows <strong>Downloading… … of … (…%)</strong> and <strong>Cancel</strong> stops it.</li>
+<li>When it is done the line says <strong>Ready. Checked when it was downloaded.</strong> and the button becomes <strong>Remove</strong>. Remove deletes it; Download brings it back.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-downloading-1x.webp" srcset="/img/docs/speech-models-gpu-downloading-1x.webp 1x, /img/docs/speech-models-gpu-downloading.webp 2x" width="900" height="153" alt="Support downloading" loading="lazy" decoding="async"><figcaption>Cancel stops the download.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-ready-1x.webp" srcset="/img/docs/speech-models-gpu-ready-1x.webp 1x, /img/docs/speech-models-gpu-ready.webp 2x" width="900" height="153" alt="Support ready" loading="lazy" decoding="async"><figcaption>Remove deletes it again.</figcaption></figure></p>
+<p>You don&#39;t have to do this first. Downloading a card model downloads the support with it if it isn&#39;t there yet, and the model&#39;s window lists it: <strong>graphics-card support (23.9 MB, once)</strong>.</p>
+<h3 id="download-a-model-for-the-card">Download a model for the card<a class="anchor" href="#download-a-model-for-the-card" aria-label="Link to Download a model for the card">#</a></h3>
+<ol>
+<li>Click a model&#39;s tile, for example <strong>Large v3 Turbo</strong>. The window says <strong>Runs on</strong> and your card&#39;s name, then <strong>It needs about 3.5 GB of graphics memory.</strong></li>
+<li>Click <strong>Download</strong>.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-download-1x.webp" srcset="/img/docs/speech-models-gpu-download-1x.webp 1x, /img/docs/speech-models-gpu-download.webp 2x" width="552" height="387" alt="Downloading a card model" loading="lazy" decoding="async"><figcaption>Support comes with it the first time.</figcaption></figure></p>
+<p>For <strong>Small</strong> (multilingual) you choose: <strong>Download for the graphics card</strong> or <strong>Download for the processor</strong>. If you already have the processor version, its window offers <strong>Faster on</strong> your card&#39;s name, <strong>the graphics-card version</strong>, with a <strong>Download</strong> button.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-choice-1x.webp" srcset="/img/docs/speech-models-gpu-choice-1x.webp 1x, /img/docs/speech-models-gpu-choice.webp 2x" width="552" height="435" alt="Small has two versions" loading="lazy" decoding="async"><figcaption>The card version needs support.</figcaption></figure></p>
+<p>Once it is on the card, the tile reads <strong>Whisper · on</strong> followed by your card&#39;s name and carries a <strong>GPU</strong> badge. In the window, <strong>Runs</strong> says <strong>On the graphics card, offline</strong>, and the speed shown was measured on the card.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-model-ready-1x.webp" srcset="/img/docs/speech-models-gpu-model-ready-1x.webp 1x, /img/docs/speech-models-gpu-model-ready.webp 2x" width="552" height="355" alt="A model running on the card" loading="lazy" decoding="async"><figcaption>Speed on this PC is measured on the card.</figcaption></figure></p>
+<h3 id="choose-a-card">Choose a card<a class="anchor" href="#choose-a-card" aria-label="Link to Choose a card">#</a></h3>
+<p>If your PC has more than one card that can run models, an extra row appears: <strong>Graphics card</strong>, <strong>This PC has more than one. Models run on the one you pick.</strong> Pick one from the list; the memory is shown next to each name. Without a choice, A9 Voice uses the card Windows prefers for performance, usually the separate card rather than the integrated one.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-two-cards-1x.webp" srcset="/img/docs/speech-models-gpu-two-cards-1x.webp 1x, /img/docs/speech-models-gpu-two-cards.webp 2x" width="900" height="219" alt="Picking between two cards" loading="lazy" decoding="async"><figcaption>1: pick the card to use.</figcaption></figure></p>
+<h3 id="memory-and-the-needs-about-message">Memory and the &quot;Needs about&quot; message<a class="anchor" href="#memory-and-the-needs-about-message" aria-label="Link to Memory and the &quot;Needs about&quot; message">#</a></h3>
+<p>A model must fit in the card&#39;s memory with some room left for Windows. If it doesn&#39;t, its window says, for example, <strong>Needs about 8.1 GB of graphics memory; this card has 4.0 GB. Try Medium instead.</strong> and the tile says <strong>Needs 8.1 GB of graphics memory</strong> with a <strong>Needs GPU</strong> badge. The model it names is the next one down in size; it may still be too big for a small card, and its own window then says so. The figures the app shows for the models that run only on the card:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Model</th><th scope="col">Graphics memory it needs</th></tr></thead><tbody>
+<tr><td>Large v3 Turbo</td><td>about 3.5 GB</td></tr>
+<tr><td>Medium</td><td>about 4.7 GB</td></tr>
+<tr><td>Large v3</td><td>about 8.1 GB</td></tr>
+</tbody></table></div>
+<p>Whisper Small needs less than any of them. For an integrated card, the memory Windows lets it borrow from the PC counts too.</p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-small-card-1x.webp" srcset="/img/docs/speech-models-gpu-small-card-1x.webp 1x, /img/docs/speech-models-gpu-small-card.webp 2x" width="900" height="539" alt="A small card and the models it can't run" loading="lazy" decoding="async"><figcaption>Tiles say what they need.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-no-fit-1x.webp" srcset="/img/docs/speech-models-gpu-no-fit-1x.webp 1x, /img/docs/speech-models-gpu-no-fit.webp 2x" width="552" height="313" alt="The message for a model that doesn't fit" loading="lazy" decoding="async"><figcaption>It names a model that fits.</figcaption></figure></p>
+<h3 id="every-state-you-can-see">Every state you can see<a class="anchor" href="#every-state-you-can-see" aria-label="Link to Every state you can see">#</a></h3>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What you see</th><th scope="col">What it means</th><th scope="col">What to do</th></tr></thead><tbody>
+<tr><td><strong>No supported graphics card found. Whisper models run on the processor.</strong> The card-only tiles say <strong>Needs a graphics card</strong>.</td><td>No usable card.</td><td>Use <strong>Parakeet V2</strong> for English, as the app suggests, or a Whisper model that runs on the processor.</td></tr>
+<tr><td><strong>The driver is too old for DirectX 12. Update the graphics driver.</strong></td><td>A card was found but its driver can&#39;t do the job.</td><td>Update the graphics driver in Windows, then reopen the page.</td></tr>
+<tr><td>The switch is off and the tiles say <strong>Needs Use graphics card</strong>. The window says <strong>Turn on Use graphics card (above the models) to use this one.</strong></td><td>You turned it off.</td><td>Turn <strong>Use graphics card</strong> on.</td></tr>
+<tr><td><strong>Needs … of graphics memory</strong>, with a <strong>Needs GPU</strong> badge.</td><td>The model is too big for the card.</td><td>Choose the smaller model the message suggests.</td></tr>
+<tr><td><strong>Downloading… … of …</strong> next to <strong>Graphics-card support</strong> or on a tile.</td><td>A download is running.</td><td>Wait, or click <strong>Cancel</strong>.</td></tr>
+<tr><td><strong>Too slow for the live transcript on this PC; notes are transcribed after the call.</strong> on a model that says it runs on the card.</td><td>The card is no faster than live speech, which can happen with integrated graphics.</td><td>Check <strong>Speed on this PC</strong>. Use a faster model, or a cloud key for live notes.</td></tr>
+<tr><td><strong>Graphics card unavailable</strong> on tiles, and <strong>The graphics card isn&#39;t working right now. Turn Use graphics card off and on to try again.</strong></td><td>The card failed (see below).</td><td>Turn the switch off and on.</td></tr>
+</tbody></table></div>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-none-1x.webp" srcset="/img/docs/speech-models-gpu-none-1x.webp 1x, /img/docs/speech-models-gpu-none.webp 2x" width="900" height="87" alt="No card found" loading="lazy" decoding="async"><figcaption>Whisper models run on the processor.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-old-driver-1x.webp" srcset="/img/docs/speech-models-gpu-old-driver-1x.webp 1x, /img/docs/speech-models-gpu-old-driver.webp 2x" width="900" height="87" alt="An old driver" loading="lazy" decoding="async"><figcaption>Update the graphics driver.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-off-1x.webp" srcset="/img/docs/speech-models-gpu-off-1x.webp 1x, /img/docs/speech-models-gpu-off.webp 2x" width="900" height="153" alt="The switch is off" loading="lazy" decoding="async"><figcaption>Turn it on to use the card.</figcaption></figure></p>
+<h3 id="when-the-card-fails">When the card fails<a class="anchor" href="#when-the-card-fails" aria-label="Link to When the card fails">#</a></h3>
+<p>If the card stops working in the middle of a job (it was removed, it ran out of memory, the driver crashed), A9 Voice finishes that job on the processor. You still get your text. It says <strong>Graphics card unavailable, used the processor</strong> once, in the pill and on this page. From then on the models use the processor until you turn <strong>Use graphics card</strong> off and on again, or restart A9 Voice.</p>
+<p>The row <strong>Graphics card unavailable, used the processor</strong> says <strong>The model finished on the processor. Turn Use graphics card off and on to try the card again.</strong></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-gpu-failed-1x.webp" srcset="/img/docs/speech-models-gpu-failed-1x.webp 1x, /img/docs/speech-models-gpu-failed.webp 2x" width="900" height="219" alt="The notice after the card failed" loading="lazy" decoding="async"><figcaption>The job finished on the processor.</figcaption></figure></p>
+<p>The reason is kept for support. Open <strong>Settings › General</strong> and click <strong>Copy diagnostics</strong>: it includes the switch, your cards (names and memory only), the support state and the last failure.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>Groq key rejected</strong>, <strong>Deepgram key rejected</strong> and so on: the key is wrong or expired. Open the tile, click <strong>Manage key</strong>, paste a new one, <strong>Test</strong>, <strong>Save</strong>.</li>
+<li><strong>… key missing</strong>: there is no saved key for that provider. Add one.</li>
+<li><strong>… rate limit hit</strong>: you used up the provider&#39;s allowance for now. The fallback answers.</li>
+<li><strong>… timed out</strong> or <strong>… error</strong> and a number: the provider is slow or down. The fallback answers.</li>
+<li><strong>No internet</strong>: you are offline and no model on this PC is downloaded. Download one from <strong>ON THIS PC</strong> so dictation keeps working offline.</li>
+<li><strong>Test</strong> works but nothing is typed: check that the model has <strong>Use for dictation</strong> ticked, in <strong>Settings › Speech models</strong> or in the <strong>Dictation</strong> chip at the top of the window.</li>
+</ul>
+<p>More in <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/language-models/">Language models</a>: the keys for summaries, Ask and Enhance with AI.</li>
+<li><a href="/docs/transcribe/">Transcribe</a>: dictation, which uses the model you choose here.</li>
+<li><a href="/docs/recording-a-meeting/">Recording a meeting</a> and <a href="/docs/live-window/">Live window</a>: notes use the notes model.</li>
+<li><a href="/docs/privacy-and-data/">Privacy and data</a>: what leaves your PC and when.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/dictionary/"><span class="docs-step-l">Previous</span><span>Dictionary</span></a><a class="docs-step next" href="/docs/language-models/"><span class="docs-step-l">Next</span><span>Language models</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#choose-who-does-what">Choose who does what</a></li><li class="d3"><a href="#what-the-fallback-does">What the fallback does</a></li><li class="d3"><a href="#which-models-tell-speakers-apart">Which models tell speakers apart</a></li><li class="d2"><a href="#set-up-a-cloud-provider">Set up a cloud provider</a></li><li class="d3"><a href="#groq">Groq</a></li><li class="d3"><a href="#deepgram">Deepgram</a></li><li class="d3"><a href="#openai">OpenAI</a></li><li class="d3"><a href="#elevenlabs">ElevenLabs</a></li><li class="d3"><a href="#providers-marked-soon">Providers marked Soon</a></li><li class="d3"><a href="#what-the-capability-line-means">What the capability line means</a></li><li class="d3"><a href="#add-a-custom-api">Add a custom API</a></li><li class="d3"><a href="#change-a-key-or-remove-a-provider">Change a key or remove a provider</a></li><li class="d2"><a href="#on-this-pc">On this PC</a></li><li class="d3"><a href="#download-a-model">Download a model</a></li><li class="d3"><a href="#use-a-model">Use a model</a></li><li class="d3"><a href="#speed-on-this-pc">Speed on this PC</a></li><li class="d3"><a href="#which-one-to-pick">Which one to pick</a></li><li class="d3"><a href="#without-internet">Without internet</a></li><li class="d3"><a href="#the-models-folder">The models folder</a></li><li class="d3"><a href="#delete-a-model">Delete a model</a></li><li class="d2"><a href="#graphics-card">Graphics card</a></li><li class="d3"><a href="#what-uses-the-card">What uses the card</a></li><li class="d3"><a href="#turn-it-on-and-download-support">Turn it on and download support</a></li><li class="d3"><a href="#download-a-model-for-the-card">Download a model for the card</a></li><li class="d3"><a href="#choose-a-card">Choose a card</a></li><li class="d3"><a href="#memory-and-the-needs-about-message">Memory and the &quot;Needs about&quot; message</a></li><li class="d3"><a href="#every-state-you-can-see">Every state you can see</a></li><li class="d3"><a href="#when-the-card-fails">When the card fails</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

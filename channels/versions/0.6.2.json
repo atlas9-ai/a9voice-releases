@@ -1,0 +1,11 @@
+{
+  "version": "0.6.2",
+  "notes": "- Naming people is the same everywhere now: the note page's Speakers list and a line's name open the Live window's name picker instead of a Windows list.\n- Type to narrow the list by first or last name, see who already has a name (\"Speaker 4\"), add a new person, and use the keyboard: <kbd>↑</kbd> <kbd>↓</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd>.\n- A name another speaker already has asks \"Same person?\" on the note page too. **Not sure** changes nothing, and a named speaker has **Clear name**.\n- Settings › Voices **Rename** and **Merge**, and the Person filter in Search, use the same picker.",
+  "pub_date": "2026-10-08T14:46:36Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE41K2xiZi9VRisrVzNJNHRHamhMamZIS29RMTBoZ3pYWEFlWkpMRVpJMEZGU0ZDTDNMeitUbG93QytsN3R2c1g5Y1lXR0VZejJHcWRkcHFxRWhZSlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDcwNzUwCWZpbGU6QTkgVm9pY2VfMC42LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4yCmRRdkJlSkg1T2x4T1ZhUEpHWklUWHJiNi9iMGFNTWV5dUZ6T09OZXBDdzR4dnl1U0xPSGpRUkpwNUg2ck9UbGZaUTQzU1VHdHl0ZmtWQzViVzQ0UENnPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.2/A9Voice_0.6.2_x64-setup.exe"
+    }
+  }
+}

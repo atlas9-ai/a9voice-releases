@@ -1,0 +1,830 @@
+{
+ "ask-deep": {
+  "w": 760,
+  "h": 508
+ },
+ "ask-not-found": {
+  "w": 760,
+  "h": 210
+ },
+ "ask-quick": {
+  "w": 760,
+  "h": 284
+ },
+ "connector-claude-missing": {
+  "w": 794,
+  "h": 116
+ },
+ "connector-claude-preview": {
+  "w": 794,
+  "h": 191
+ },
+ "connector-connected": {
+  "w": 790,
+  "h": 752
+ },
+ "connector-other-apps": {
+  "w": 794,
+  "h": 204
+ },
+ "connector-page-off": {
+  "w": 790,
+  "h": 689
+ },
+ "connector-requests": {
+  "w": 794,
+  "h": 152
+ },
+ "dictionary-add-fix": {
+  "w": 908,
+  "h": 280
+ },
+ "dictionary-add-word": {
+  "w": 908,
+  "h": 154
+ },
+ "dictionary-page": {
+  "w": 908,
+  "h": 509
+ },
+ "export-audio": {
+  "w": 1040,
+  "h": 700
+ },
+ "export-captions": {
+  "w": 1040,
+  "h": 700
+ },
+ "export-copied": {
+  "w": 1038,
+  "h": 64
+ },
+ "export-dialog": {
+  "w": 1040,
+  "h": 700
+ },
+ "export-email": {
+  "w": 1038,
+  "h": 64
+ },
+ "export-include": {
+  "w": 342,
+  "h": 590
+ },
+ "export-pdf": {
+  "w": 1040,
+  "h": 700
+ },
+ "export-saved": {
+  "w": 1038,
+  "h": 64
+ },
+ "getting-started-bar": {
+  "w": 272,
+  "h": 72
+ },
+ "getting-started-chips": {
+  "w": 900,
+  "h": 210
+ },
+ "getting-started-export": {
+  "w": 1040,
+  "h": 700
+ },
+ "getting-started-home-keys": {
+  "w": 900,
+  "h": 122
+ },
+ "getting-started-key": {
+  "w": 900,
+  "h": 863
+ },
+ "getting-started-mic": {
+  "w": 900,
+  "h": 620
+ },
+ "getting-started-name": {
+  "w": 900,
+  "h": 620
+ },
+ "getting-started-note": {
+  "w": 716,
+  "h": 798
+ },
+ "getting-started-notes-empty": {
+  "w": 1024,
+  "h": 234
+ },
+ "getting-started-processing": {
+  "w": 1024,
+  "h": 119
+ },
+ "getting-started-speech": {
+  "w": 900,
+  "h": 753
+ },
+ "getting-started-stop": {
+  "w": 364,
+  "h": 72
+ },
+ "getting-started-try": {
+  "w": 900,
+  "h": 620
+ },
+ "keyboard-shortcuts-dictation": {
+  "w": 818,
+  "h": 360
+ },
+ "keyboard-shortcuts-recording": {
+  "w": 818,
+  "h": 441
+ },
+ "language-models-ai-chip": {
+  "w": 288,
+  "h": 286
+ },
+ "language-models-custom": {
+  "w": 552,
+  "h": 635
+ },
+ "language-models-enhance": {
+  "w": 900,
+  "h": 485
+ },
+ "language-models-google-key": {
+  "w": 552,
+  "h": 502
+ },
+ "language-models-groq-saved": {
+  "w": 552,
+  "h": 369
+ },
+ "language-models-openrouter-key": {
+  "w": 552,
+  "h": 497
+ },
+ "language-models-openrouter-tested": {
+  "w": 552,
+  "h": 497
+ },
+ "language-models-override": {
+  "w": 912,
+  "h": 205
+ },
+ "language-models-page": {
+  "w": 912,
+  "h": 313
+ },
+ "language-models-summary-model": {
+  "w": 898,
+  "h": 102
+ },
+ "live-window-ask": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-bar-button-on": {
+  "w": 529,
+  "h": 96
+ },
+ "live-window-bar-button": {
+  "w": 529,
+  "h": 96
+ },
+ "live-window-change": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-chip": {
+  "w": 760,
+  "h": 640
+ },
+ "live-window-line-menu": {
+  "w": 760,
+  "h": 700
+ },
+ "live-window-locked": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-many": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-markers": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-merge": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-overview": {
+  "w": 760,
+  "h": 700
+ },
+ "live-window-settings": {
+  "w": 698,
+  "h": 314
+ },
+ "live-window-small": {
+  "w": 380,
+  "h": 480
+ },
+ "live-window-snip-toast": {
+  "w": 372,
+  "h": 160
+ },
+ "live-window-tagged": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-undo": {
+  "w": 760,
+  "h": 560
+ },
+ "live-window-undocked": {
+  "w": 760,
+  "h": 40
+ },
+ "note-page-edit-line": {
+  "w": 724,
+  "h": 193
+ },
+ "note-page-edit-offer": {
+  "w": 724,
+  "h": 286
+ },
+ "note-page-failed": {
+  "w": 704,
+  "h": 72
+ },
+ "note-page-image-viewer": {
+  "w": 672,
+  "h": 442
+ },
+ "note-page-images": {
+  "w": 720,
+  "h": 92
+ },
+ "note-page-line-speaker": {
+  "w": 1280,
+  "h": 940
+ },
+ "note-page-list-filter": {
+  "w": 936,
+  "h": 362
+ },
+ "note-page-list": {
+  "w": 936,
+  "h": 891
+ },
+ "note-page-menu": {
+  "w": 316,
+  "h": 330
+ },
+ "note-page-name-picker": {
+  "w": 1280,
+  "h": 940
+ },
+ "note-page-player": {
+  "w": 708,
+  "h": 90
+ },
+ "note-page-readonly-copy": {
+  "w": 892,
+  "h": 72
+ },
+ "note-page-readonly": {
+  "w": 936,
+  "h": 491
+ },
+ "note-page-recording": {
+  "w": 704,
+  "h": 164
+ },
+ "note-page-regenerate": {
+  "w": 299,
+  "h": 334
+ },
+ "note-page-series": {
+  "w": 299,
+  "h": 148
+ },
+ "note-page-speaker-menu": {
+  "w": 299,
+  "h": 446
+ },
+ "note-page-speakers": {
+  "w": 299,
+  "h": 446
+ },
+ "note-page-step": {
+  "w": 299,
+  "h": 458
+ },
+ "note-page-storage": {
+  "w": 826,
+  "h": 420
+ },
+ "note-page-summary": {
+  "w": 1036,
+  "h": 1191
+ },
+ "note-page-tags": {
+  "w": 772,
+  "h": 140
+ },
+ "note-page-transcript": {
+  "w": 1036,
+  "h": 1109
+ },
+ "recording-a-meeting-bar-hover": {
+  "w": 529,
+  "h": 96
+ },
+ "recording-a-meeting-bar": {
+  "w": 284,
+  "h": 84
+ },
+ "recording-a-meeting-discard": {
+  "w": 562,
+  "h": 84
+ },
+ "recording-a-meeting-ended": {
+  "w": 372,
+  "h": 199
+ },
+ "recording-a-meeting-held-back": {
+  "w": 372,
+  "h": 111
+ },
+ "recording-a-meeting-mic-menu": {
+  "w": 517,
+  "h": 300
+ },
+ "recording-a-meeting-mini-pill": {
+  "w": 332,
+  "h": 124
+ },
+ "recording-a-meeting-notes-list": {
+  "w": 1080,
+  "h": 600
+ },
+ "recording-a-meeting-notice": {
+  "w": 372,
+  "h": 227
+ },
+ "recording-a-meeting-other-app": {
+  "w": 708,
+  "h": 233
+ },
+ "recording-a-meeting-paused": {
+  "w": 284,
+  "h": 84
+ },
+ "recording-a-meeting-record-button": {
+  "w": 992,
+  "h": 417
+ },
+ "recording-a-meeting-saved": {
+  "w": 372,
+  "h": 94
+ },
+ "recording-a-meeting-settings-apps": {
+  "w": 698,
+  "h": 723
+ },
+ "recording-a-meeting-settings-while": {
+  "w": 698,
+  "h": 802
+ },
+ "recording-a-meeting-still": {
+  "w": 372,
+  "h": 215
+ },
+ "recording-a-meeting-stop": {
+  "w": 376,
+  "h": 84
+ },
+ "search-box": {
+  "w": 1020,
+  "h": 66
+ },
+ "search-deep-model": {
+  "w": 790,
+  "h": 99
+ },
+ "search-dictations-setting": {
+  "w": 794,
+  "h": 417
+ },
+ "search-ext-note": {
+  "w": 936,
+  "h": 467
+ },
+ "search-filters": {
+  "w": 758,
+  "h": 77
+ },
+ "search-folder-copy": {
+  "w": 794,
+  "h": 364
+ },
+ "search-folders-hint": {
+  "w": 1016,
+  "h": 91
+ },
+ "search-opens-note": {
+  "w": 1180,
+  "h": 800
+ },
+ "search-results": {
+  "w": 760,
+  "h": 630
+ },
+ "search-settings": {
+  "w": 790,
+  "h": 277
+ },
+ "settings-reference-about": {
+  "w": 814,
+  "h": 349
+ },
+ "settings-reference-account": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-connectors": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-dictation-audio": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-dictation": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-general": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-integrations": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-language-models": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-list": {
+  "w": 190,
+  "h": 760
+ },
+ "settings-reference-live-window": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-microphone": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-recording": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-search": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-speech-models": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-storage": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-templates": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-transcript-and-summary": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-updates": {
+  "w": 814,
+  "h": 219
+ },
+ "settings-reference-usage-and-cost": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-voices": {
+  "w": 1032,
+  "h": 760
+ },
+ "speech-models-custom": {
+  "w": 552,
+  "h": 635
+ },
+ "speech-models-deepgram": {
+  "w": 552,
+  "h": 404
+ },
+ "speech-models-gpu-choice": {
+  "w": 552,
+  "h": 435
+ },
+ "speech-models-gpu-download": {
+  "w": 552,
+  "h": 387
+ },
+ "speech-models-gpu-downloading": {
+  "w": 900,
+  "h": 153
+ },
+ "speech-models-gpu-failed": {
+  "w": 900,
+  "h": 219
+ },
+ "speech-models-gpu-model-ready": {
+  "w": 552,
+  "h": 355
+ },
+ "speech-models-gpu-no-fit": {
+  "w": 552,
+  "h": 313
+ },
+ "speech-models-gpu-none": {
+  "w": 900,
+  "h": 87
+ },
+ "speech-models-gpu-off": {
+  "w": 900,
+  "h": 153
+ },
+ "speech-models-gpu-old-driver": {
+  "w": 900,
+  "h": 87
+ },
+ "speech-models-gpu-ready": {
+  "w": 900,
+  "h": 153
+ },
+ "speech-models-gpu-slow": {
+  "w": 552,
+  "h": 355
+ },
+ "speech-models-gpu-small-card": {
+  "w": 900,
+  "h": 539
+ },
+ "speech-models-gpu-support": {
+  "w": 900,
+  "h": 153
+ },
+ "speech-models-gpu-two-cards": {
+  "w": 900,
+  "h": 219
+ },
+ "speech-models-groq-key": {
+  "w": 552,
+  "h": 565
+ },
+ "speech-models-groq-tested": {
+  "w": 552,
+  "h": 565
+ },
+ "speech-models-local-download": {
+  "w": 552,
+  "h": 300
+ },
+ "speech-models-local-downloading": {
+  "w": 552,
+  "h": 293
+ },
+ "speech-models-local-page": {
+  "w": 900,
+  "h": 608
+ },
+ "speech-models-local-ready": {
+  "w": 552,
+  "h": 355
+ },
+ "speech-models-needs-dictation": {
+  "w": 552,
+  "h": 413
+ },
+ "speech-models-openai-key": {
+  "w": 552,
+  "h": 541
+ },
+ "speech-models-page": {
+  "w": 912,
+  "h": 424
+ },
+ "templates-branding-empty": {
+  "w": 634,
+  "h": 634
+ },
+ "templates-branding": {
+  "w": 634,
+  "h": 756
+ },
+ "templates-library": {
+  "w": 476,
+  "h": 596
+ },
+ "templates-list": {
+  "w": 296,
+  "h": 323
+ },
+ "templates-options": {
+  "w": 634,
+  "h": 326
+ },
+ "templates-prompt": {
+  "w": 634,
+  "h": 628
+ },
+ "templates-save": {
+  "w": 634,
+  "h": 196
+ },
+ "templates-sections": {
+  "w": 634,
+  "h": 468
+ },
+ "transcribe-advanced": {
+  "w": 818,
+  "h": 161
+ },
+ "transcribe-dictation-settings": {
+  "w": 818,
+  "h": 573
+ },
+ "transcribe-enhance": {
+  "w": 818,
+  "h": 464
+ },
+ "transcribe-hands-free": {
+  "w": 818,
+  "h": 227
+ },
+ "transcribe-history": {
+  "w": 900,
+  "h": 653
+ },
+ "transcribe-microphone": {
+  "w": 810,
+  "h": 455
+ },
+ "transcribe-pill-states": {
+  "w": 514,
+  "h": 314
+ },
+ "transcribe-saved-audio": {
+  "w": 810,
+  "h": 345
+ },
+ "troubleshooting-diagnostics": {
+  "w": 818,
+  "h": 357
+ },
+ "troubleshooting-gpu-failed": {
+  "w": 810,
+  "h": 219
+ },
+ "troubleshooting-held-back": {
+  "w": 372,
+  "h": 111
+ },
+ "troubleshooting-key-in-use": {
+  "w": 223,
+  "h": 64
+ },
+ "troubleshooting-key-rejected": {
+  "w": 520,
+  "h": 100
+ },
+ "troubleshooting-mic-muted": {
+  "w": 520,
+  "h": 100
+ },
+ "updates-and-channels-banner": {
+  "w": 814,
+  "h": 95
+ },
+ "updates-and-channels-card": {
+  "w": 818,
+  "h": 227
+ },
+ "updates-and-channels-sidebar-dev": {
+  "w": 223,
+  "h": 50
+ },
+ "updates-and-channels-sidebar-downloading": {
+  "w": 223,
+  "h": 84
+ },
+ "updates-and-channels-sidebar-ready": {
+  "w": 223,
+  "h": 82
+ },
+ "updates-and-channels-sidebar-recording": {
+  "w": 223,
+  "h": 84
+ },
+ "voices-check": {
+  "w": 794,
+  "h": 183
+ },
+ "voices-delete-all": {
+  "w": 794,
+  "h": 140
+ },
+ "voices-download": {
+  "w": 794,
+  "h": 153
+ },
+ "voices-explainer": {
+  "w": 592,
+  "h": 394
+ },
+ "voices-forget": {
+  "w": 790,
+  "h": 298
+ },
+ "voices-history": {
+  "w": 790,
+  "h": 345
+ },
+ "voices-import": {
+  "w": 794,
+  "h": 213
+ },
+ "voices-live-suggestion": {
+  "w": 760,
+  "h": 560
+ },
+ "voices-merge": {
+  "w": 1080,
+  "h": 820
+ },
+ "voices-note-speakers": {
+  "w": 266,
+  "h": 402
+ },
+ "voices-off": {
+  "w": 790,
+  "h": 345
+ },
+ "voices-people": {
+  "w": 790,
+  "h": 633
+ },
+ "voices-stale": {
+  "w": 790,
+  "h": 571
+ },
+ "webhooks-add-button": {
+  "w": 156,
+  "h": 68
+ },
+ "webhooks-form-discord": {
+  "w": 790,
+  "h": 495
+ },
+ "webhooks-form-filters": {
+  "w": 790,
+  "h": 839
+ },
+ "webhooks-form-n8n": {
+  "w": 790,
+  "h": 817
+ },
+ "webhooks-log": {
+  "w": 790,
+  "h": 320
+ },
+ "webhooks-note-warning": {
+  "w": 790,
+  "h": 85
+ },
+ "webhooks-page": {
+  "w": 790,
+  "h": 219
+ },
+ "webhooks-send-from-note": {
+  "w": 342,
+  "h": 130
+ },
+ "webhooks-test": {
+  "w": 790,
+  "h": 845
+ }
+}

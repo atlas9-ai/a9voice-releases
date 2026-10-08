@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transcribe · A9 Voice Manual</title>
+<meta name="description" content="Hold a key, talk, let go, and your words are typed into whatever app you are in. Use it for emails, chats, documents and anywhere else you can type.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/transcribe/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Transcribe · A9 Voice Manual">
+<meta property="og:description" content="Hold a key, talk, let go, and your words are typed into whatever app you are in. Use it for emails, chats, documents and anywhere else you can type.">
+<meta property="og:url" content="https://a9voice.com/docs/transcribe/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/" aria-current="page">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Transcribe</p>
+      <h1>Transcribe</h1>
+      <p class="docs-lead">Hold a key, talk, let go, and your words are typed into whatever app you are in. Use it for emails, chats, documents and anywhere else you can type.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p>Transcribe is A9 Voice&#39;s dictation. It needs a speech service, which you set up in <a href="/docs/getting-started/">Getting started</a> or in <a href="/docs/speech-models/">Speech models</a>. Everything on this page happens on your PC except the speech service you chose: your audio goes there, and nowhere else. See <a href="/docs/privacy-and-data/">Privacy and data</a>.</p>
+<h2 id="dictate-with-the-dictation-key">Dictate with the dictation key<a class="anchor" href="#dictate-with-the-dictation-key" aria-label="Link to Dictate with the dictation key">#</a></h2>
+<p>The dictation key is <kbd>Ctrl</kbd>+<kbd>Space</kbd>.</p>
+<ol>
+<li>Click in a text box in any app.</li>
+<li><strong>Hold</strong> the dictation key and talk.</li>
+<li><strong>Let go.</strong> After a moment the text appears where your cursor was.</li>
+</ol>
+<p>A quick tap does nothing: no sound, no pill, nothing sent. A9 Voice treats a key press as dictation only once you have held it for a moment.</p>
+<p>To change the key, open <strong>Settings › Dictation</strong> and click the <strong>Dictation key</strong> box. It says <strong>Press keys…</strong>. Press the new combination. It needs <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, <kbd>Shift</kbd> or <kbd>Win</kbd> in it (F13 to F24 work alone). Press <kbd>Esc</kbd> to cancel. If another program already uses that key, A9 Voice tells you, and the sidebar shows <strong>Key in use · fix</strong> until you pick another.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-dictation-settings-1x.webp" srcset="/img/docs/transcribe-dictation-settings-1x.webp 1x, /img/docs/transcribe-dictation-settings.webp 2x" width="818" height="573" alt="Settings › Dictation: the dictation key, the microphone, Paste last transcription and How text goes in, numbered 1 to 4" loading="lazy" decoding="async"></figure></p>
+<p>The numbers match the sections below. See <a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a> for every key.</p>
+<h3 id="cancel-a-dictation">Cancel a dictation<a class="anchor" href="#cancel-a-dictation" aria-label="Link to Cancel a dictation">#</a></h3>
+<p>Press <kbd>Esc</kbd> while you are recording. The pill says <strong>Cancelled</strong> and nothing is sent. <kbd>Esc</kbd> is only watched while you record, so it works normally the rest of the time.</p>
+<h2 id="hands-free-mode">Hands-free mode<a class="anchor" href="#hands-free-mode" aria-label="Link to Hands-free mode">#</a></h2>
+<p>Hands-free lets you talk for as long as you like without holding a key. Open <strong>Settings › Dictation</strong>. <strong>Hands-free mode</strong> has three choices:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Choice</th><th scope="col">What it does</th></tr></thead><tbody>
+<tr><td><strong>Off</strong></td><td>Only hold-to-talk. This is how a new install starts.</td></tr>
+<tr><td><strong>Its own key</strong></td><td>A second key. Press it once to start, press it again to stop and insert. Its default is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>.</td></tr>
+<tr><td><strong>Tap the dictation key</strong></td><td>A quick tap of the dictation key starts hands-free; the next tap stops it. Holding still works as hold-to-talk.</td></tr>
+</tbody></table></div>
+<p><figure class="shot"><img src="/img/docs/transcribe-hands-free-1x.webp" srcset="/img/docs/transcribe-hands-free-1x.webp 1x, /img/docs/transcribe-hands-free.webp 2x" width="818" height="227" alt="Hands-free mode set to Its own key, with the key and the limit" loading="lazy" decoding="async"></figure></p>
+<p>With <strong>Its own key</strong>, the <strong>Hands-free key</strong> row appears. Click it to record a new key, or press <kbd>Backspace</kbd> while it listens to clear it. If you hold the hands-free key down for a moment and let go, it finishes like hold-to-talk. <kbd>Esc</kbd> cancels in every mode.</p>
+<p><strong>Hands-free limit</strong> (1, 2, 5, 10, 15 or 30 minutes; 10 by default) stops the recording and inserts the text after that long. The pill warns you a minute before: the timer turns amber and says how long is left.</p>
+<h2 id="the-pill">The pill<a class="anchor" href="#the-pill" aria-label="Link to The pill">#</a></h2>
+<p>While you dictate, a small pill shows what is happening. It appears at the bottom centre of the screen where the app you are working in is (you can move it to the top in <strong>Settings › General</strong> with <strong>Pill at the top of the screen</strong>). It never takes focus, so your cursor stays where it was. It is click-through, except for its buttons.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-pill-states-1x.webp" srcset="/img/docs/transcribe-pill-states-1x.webp 1x, /img/docs/transcribe-pill-states.webp 2x" width="514" height="314" alt="The pill from top to bottom: recording, hands-free, transcribing, pasted, mic muted, a key missing" loading="lazy" decoding="async"></figure></p>
+<p>From top to bottom:</p>
+<ul>
+<li><strong>Recording</strong> (red dot, level bars, timer): you are being heard. The bars move with your voice.</li>
+<li><strong>Hands-free</strong> adds the label <strong>Hands-free · Ctrl+Shift+Space to finish</strong> (your key), a square stop button (stop and paste) and a cross (cancel).</li>
+<li><strong>Transcribing</strong>: your speech is being turned into text.</li>
+<li><strong>Pasted</strong> (or <strong>Typed</strong>, or <strong>Copied</strong>) with the time it took: done. It fades after a moment. If a second service answered, it adds <strong>via Deepgram</strong> (or the one that did); if there was no internet and a model on this PC answered, it adds <strong>offline</strong>.</li>
+<li><strong>Mic muted (in Teams or Windows)</strong>: see <a href="#microphone-and-muted-mics">Microphone and muted mics</a>.</li>
+<li>An amber message with <strong>Fix</strong>: something needs your attention, for example a missing key. Click the pill to open the setting that fixes it.</li>
+</ul>
+<p>Other short messages: <strong>Didn&#39;t catch that</strong> (no speech was heard), <strong>Cancelled</strong>, <strong>Nothing to paste yet</strong>, and <strong>Timed out after 15 s. Nothing was pasted</strong>, which appears if a dictation has not finished after 15 seconds.</p>
+<p>Turn on <strong>Show the pill when idle</strong> in <strong>Settings › General</strong> if you want a small dot to show that A9 Voice is running.</p>
+<h2 id="the-transcribe-screen">The Transcribe screen<a class="anchor" href="#the-transcribe-screen" aria-label="Link to The Transcribe screen">#</a></h2>
+<p>Click <strong>Transcribe</strong> in the sidebar to see your dictations. Each is a row with the text, the time, the app it went into and how long it took.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-history-1x.webp" srcset="/img/docs/transcribe-history-1x.webp 1x, /img/docs/transcribe-history.webp 2x" width="900" height="653" alt="The Transcribe screen: totals, then a failed row with Retry, an enhanced row, and rows typed or copied" loading="lazy" decoding="async"></figure></p>
+<p>At the top: <strong>Today</strong>, <strong>Typical speed</strong> and <strong>Words this week</strong>, counted on this PC. Type in <strong>Search dictations</strong> to find a row. Each row&#39;s buttons:</p>
+<ul>
+<li><strong>Copy</strong> puts the text on the clipboard. <strong>Paste again</strong> hides A9 Voice and pastes it into the app you were in.</li>
+<li><strong>Delete</strong> removes the row. <strong>Clear all</strong> at the bottom deletes every row, after asking.</li>
+<li><strong>Play recording</strong> and <strong>Show in folder</strong> appear when the audio was saved (see <a href="#dictation-audio-saved-for-retries">Dictation audio</a>).</li>
+<li><strong>Retry</strong> appears on a failed row.</li>
+</ul>
+<p>Under each text, a line says how it went in: the time, the app, and <strong>typed</strong> or <strong>copied</strong> when it was not pasted. <strong>via Groq</strong> (or the other service) means your first choice failed and the backup answered. Hover over the time on the right to see where it went: from the key release to the audio being sent, the model, and the paste. <strong>Settings › General › History kept</strong> sets how many rows stay (the last 100, 500, 1,000, 5,000 or 20,000).</p>
+<h3 id="failed-dictations">Failed dictations<a class="anchor" href="#failed-dictations" aria-label="Link to Failed dictations">#</a></h3>
+<p>If the speech service cannot be reached, the row says <strong>Transcription failed. The audio is saved; retry when you&#39;re back online.</strong> Click <strong>Retry</strong> and the row fills in with the text. A retry does not paste anything; use <strong>Copy</strong> to take the text. If audio saving was off, the row says <strong>The audio is gone.</strong></p>
+<h3 id="enhanced-rows">Enhanced rows<a class="anchor" href="#enhanced-rows" aria-label="Link to Enhanced rows">#</a></h3>
+<p>When <a href="#enhance-with-ai">Enhance with AI</a> changed the text, the row says <strong>AI</strong> and the time it took, with <strong>Show original</strong> to see what was heard and <strong>Show enhanced</strong> to go back.</p>
+<h3 id="copy-the-last-transcription-from-the-tray">Copy the last transcription from the tray<a class="anchor" href="#copy-the-last-transcription-from-the-tray" aria-label="Link to Copy the last transcription from the tray">#</a></h3>
+<p>Missed the text box? Right-click the A9 Voice icon in the tray (the small icons by the clock) and choose <strong>Copy last transcription</strong>, or open <strong>Recent</strong> and click one of your last five dictations. The text goes on your clipboard as a normal copy; paste it with <kbd>Ctrl</kbd>+<kbd>V</kbd>. <strong>Copy last transcription</strong> is greyed out while the history is empty.</p>
+<h3 id="paste-the-last-transcription-again">Paste the last transcription again<a class="anchor" href="#paste-the-last-transcription-again" aria-label="Link to Paste the last transcription again">#</a></h3>
+<p>Press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> (the <strong>Paste last transcription</strong> key, number 3 above) to put your newest dictation in again at the cursor. Change it in <strong>Settings › Dictation</strong>, or press <kbd>Backspace</kbd> while it listens to turn it off. If you have not dictated yet, the pill says <strong>Nothing to paste yet</strong>.</p>
+<h2 id="microphone-and-muted-mics">Microphone and muted mics<a class="anchor" href="#microphone-and-muted-mics" aria-label="Link to Microphone and muted mics">#</a></h2>
+<p>A9 Voice uses the <strong>Windows default</strong> microphone, which follows what you pick in Windows. To choose one yourself, open <strong>Settings › Microphone</strong> (or <strong>Dictation microphone</strong> in <strong>Settings › Dictation</strong>; it is the same setting). Click <strong>Test</strong> and talk: the bar should move when you talk and rest when you do not.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-microphone-1x.webp" srcset="/img/docs/transcribe-microphone-1x.webp 1x, /img/docs/transcribe-microphone.webp 2x" width="810" height="455" alt="Settings › Microphone: the microphone list, a live level bar, and the Sounds and Volume settings" loading="lazy" decoding="async"></figure></p>
+<ul>
+<li><strong>Keep microphone ready</strong> makes dictation start a little faster. Windows shows the microphone as in use while it is on.</li>
+<li><strong>Dictation microphone</strong> lets you use a second microphone for dictating while your headset is muted in a call. Notes can use another one: <strong>Settings › Recording › Microphone (Me)</strong> says <strong>Same as Transcribe</strong> by default.</li>
+</ul>
+<p>If you speak and the pill says <strong>Mic muted (in Teams or Windows)</strong>, the microphone&#39;s Windows mute switch is on (a headset can do this when you mute yourself in Teams), or the microphone is sending complete silence. A9 Voice never unmutes anything for you. Unmute, or click <strong>Use … for dictation</strong> on the pill when it offers another microphone that is not muted. Clicking the message itself opens <strong>Settings › Microphone</strong>. A microphone that is only muted inside Teams, not in Windows, still works for A9 Voice.</p>
+<h3 id="sounds">Sounds<a class="anchor" href="#sounds" aria-label="Link to Sounds">#</a></h3>
+<p>A soft tone plays when recording starts, stops or is cancelled, and a lower tone when something goes wrong. The start tone comes just after you press the key, so a quick tap stays silent. Turn the tones off with <strong>Sounds</strong> and set <strong>Volume</strong> in <strong>Settings › Microphone</strong>. During a call, or with a headset in call mode, the tones play on the headset&#39;s call audio and can come a moment late.</p>
+<h2 id="how-text-goes-in">How text goes in<a class="anchor" href="#how-text-goes-in" aria-label="Link to How text goes in">#</a></h2>
+<p><figure class="shot"><img src="/img/docs/transcribe-advanced-1x.webp" srcset="/img/docs/transcribe-advanced-1x.webp 1x, /img/docs/transcribe-advanced.webp 2x" width="818" height="161" alt="Settings › Dictation advanced: Paste keys and Clipboard restore delay" loading="lazy" decoding="async"></figure></p>
+<p><strong>How text goes in</strong> (number 4 above) has two choices:</p>
+<ul>
+<li><strong>Paste</strong> is the default and fastest. A9 Voice puts your text on the clipboard, sends <kbd>Ctrl</kbd>+<kbd>V</kbd>, and puts back whatever you had copied before. Dictations are kept out of Windows clipboard history (<kbd>Win</kbd>+<kbd>V</kbd> and the cloud clipboard).</li>
+<li><strong>Type</strong> types the text key by key. Use it in apps that block paste.</li>
+</ul>
+<p>Related settings in the same card: <strong>Put my clipboard back afterwards</strong> (on by default), <strong>Add a space after</strong> (on by default, so the next sentence does not run on) and <strong>Language</strong> (English by default; also detect automatically, Spanish, French, German, Portuguese, Italian, Dutch, Japanese or Chinese). A language that is set is faster and more accurate. Click <strong>Show advanced</strong> for <strong>Paste keys</strong> (switch to <strong>Shift+Insert</strong> for some terminals and remote desktops) and <strong>Clipboard restore delay</strong>.</p>
+<h3 id="dictating-into-a9-voice-itself">Dictating into A9 Voice itself<a class="anchor" href="#dictating-into-a9-voice-itself" aria-label="Link to Dictating into A9 Voice itself">#</a></h3>
+<p>You can dictate into A9 Voice&#39;s own text boxes too: Ask, a note&#39;s title, tags and transcript lines, search, and Settings. Click in the box first, then hold the dictation key. The text goes in at the cursor and the pill says <strong>Typed</strong>. If no A9 Voice text box has the cursor, the text is copied and the pill says <strong>Copied — click a text box in A9 Voice first</strong>.</p>
+<h2 id="enhance-with-ai">Enhance with AI<a class="anchor" href="#enhance-with-ai" aria-label="Link to Enhance with AI">#</a></h2>
+<p>Enhance with AI cleans up each dictation before it is inserted. It is off by default. Open <strong>Settings › Dictation</strong> and scroll to the <strong>Enhance with AI</strong> heading.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-enhance-1x.webp" srcset="/img/docs/transcribe-enhance-1x.webp 1x, /img/docs/transcribe-enhance.webp 2x" width="818" height="464" alt="The Enhance with AI card, switched on: model, style, wait time and custom instructions" loading="lazy" decoding="async"></figure></p>
+<ol>
+<li>Switch <strong>Enhance with AI</strong> on.</li>
+<li>Pick a <strong>Model</strong>. If the list is empty, add a key in <strong>Settings › Language models</strong> first (see <a href="/docs/language-models/">Language models</a>); until then text is pasted as heard. A small, fast model keeps dictation quick.</li>
+<li>Choose a <strong>Style</strong>: <strong>Light cleanup</strong> or <strong>Formal</strong> (Formal only adjusts tone a little and never adds content).</li>
+<li>Set <strong>Wait at most</strong> (1.0 to 3.0 seconds; 1.5 by default). Past this, the plain text is pasted so dictation never stalls.</li>
+<li>Optionally write <strong>Custom instructions</strong>, for example which spellings to use. They cannot override the rules below.</li>
+</ol>
+<p>What it does: removes &quot;um&quot; and &quot;uh&quot;, fixes punctuation and capitals, and spells your <a href="/docs/dictionary/">Dictionary</a> words right. What it never does: rewrite, shorten or answer what you said. If the answer comes back much longer or shorter than what you said, A9 Voice ignores it and pastes your words as heard. The History line then says <strong>AI too slow · as heard</strong>, <strong>AI failed · as heard</strong> or <strong>AI reply skipped · as heard</strong>; when nothing needed changing it says <strong>AI: no changes</strong>.</p>
+<p>When Enhance is on, the text of each dictation is sent to the language model you chose, in addition to the speech service.</p>
+<h2 id="dictation-audio-saved-for-retries">Dictation audio saved for retries<a class="anchor" href="#dictation-audio-saved-for-retries" aria-label="Link to Dictation audio saved for retries">#</a></h2>
+<p>By default A9 Voice keeps a small compressed copy of each dictation&#39;s audio for 7 days, so a dictation that failed can be transcribed again. Open <strong>Settings › Dictation audio</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/transcribe-saved-audio-1x.webp" srcset="/img/docs/transcribe-saved-audio-1x.webp 1x, /img/docs/transcribe-saved-audio.webp 2x" width="810" height="345" alt="Settings › Dictation audio: Save audio recordings, the Audio folder and how long to keep it" loading="lazy" decoding="async"></figure></p>
+<ul>
+<li><strong>Save audio recordings</strong> turns it on or off.</li>
+<li><strong>Audio folder</strong> shows where the files go (by default in <strong>Documents\A9 Voice\Audio</strong>, in a <strong>Transcribe</strong> folder). <strong>Change…</strong> moves it; <strong>Open</strong> shows it. Settings, history and logs stay in AppData.</li>
+<li><strong>Keep dictation audio</strong> is 1 day, 7 days, 30 days, 90 days or <strong>Forever</strong>. Older audio is deleted daily. Audio for a failed dictation is kept until you retry or delete it.</li>
+</ul>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<h3 id="nothing-pastes">Nothing pastes<a class="anchor" href="#nothing-pastes" aria-label="Link to Nothing pastes">#</a></h3>
+<p>Work down this list.</p>
+<ol>
+<li><strong>Nothing happens at all when you hold the key.</strong> Another program may own the shortcut. Look for <strong>Key in use · fix</strong> in the sidebar and choose another key in <strong>Settings › Dictation</strong>. Also check the tray: if you chose <strong>Pause dictation</strong> there, the keys are switched off. Hovering the tray icon says <strong>dictation paused</strong> or shows your key.</li>
+<li><strong>The pill says &quot;Pick how A9 Voice hears you first&quot;.</strong> No speech service is set up. Click <strong>Fix</strong> and add a key or download a model in <a href="/docs/speech-models/">Speech models</a>.</li>
+<li><strong>The pill says &quot;key missing&quot;, &quot;key rejected&quot;, &quot;rate limit hit&quot; or &quot;timed out&quot;.</strong> Check the key in <strong>Settings › Speech models</strong>. A backup service (see <a href="/docs/speech-models/">Speech models</a>) takes over when the first one fails, and the History line shows <strong>via</strong> and its name.</li>
+<li><strong>The pill says &quot;No internet&quot;.</strong> The dictation is kept as a failed row if audio saving is on; click <strong>Retry</strong> on it later. If you have downloaded a model to this PC, A9 Voice uses it instead and the pill says <strong>offline</strong>.</li>
+<li><strong>The pill says &quot;Didn&#39;t catch that&quot; or &quot;Mic muted&quot;.</strong> The microphone heard nothing. Check <strong>Settings › Microphone</strong>.</li>
+<li><strong>The pill says &quot;Can&#39;t type into an admin window — copied instead&quot;.</strong> Windows does not let a normal app send keystrokes to a program running as administrator. Press <kbd>Ctrl</kbd>+<kbd>V</kbd> yourself; the text is on your clipboard.</li>
+<li><strong>The pill says &quot;Paste was blocked — copied instead&quot; or &quot;Typing was blocked — copied instead&quot;.</strong> Windows did not let A9 Voice send the keys. The text is on your clipboard meanwhile, so press <kbd>Ctrl</kbd>+<kbd>V</kbd> yourself. If the pill says <strong>Pasted</strong> but nothing appears, the app may ignore <kbd>Ctrl</kbd>+<kbd>V</kbd> (some terminals and remote desktops do): switch <strong>How text goes in</strong> to <strong>Type</strong>, or under <strong>Show advanced</strong> set <strong>Paste keys</strong> to <strong>Shift+Insert</strong>.</li>
+<li><strong>The pill says &quot;The clipboard was busy — try again&quot;.</strong> Another program was holding the clipboard. Dictate again, or use <strong>Paste again</strong> on the row.</li>
+<li><strong>Text pasted somewhere unexpected.</strong> The text goes into the window that has focus when the transcription finishes. Keep the right window in front until the pill says <strong>Pasted</strong>.</li>
+</ol>
+<p>If it still does not work, see <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/dictionary/">Dictionary</a>: names and fixes that apply to every dictation.</li>
+<li><a href="/docs/speech-models/">Speech models</a>: choose the speech service and a backup.</li>
+<li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li>
+<li><a href="/docs/settings-reference/">Settings reference</a></li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/"><span class="docs-step-l">Previous</span><span>Getting started</span></a><a class="docs-step next" href="/docs/dictionary/"><span class="docs-step-l">Next</span><span>Dictionary</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#dictate-with-the-dictation-key">Dictate with the dictation key</a></li><li class="d3"><a href="#cancel-a-dictation">Cancel a dictation</a></li><li class="d2"><a href="#hands-free-mode">Hands-free mode</a></li><li class="d2"><a href="#the-pill">The pill</a></li><li class="d2"><a href="#the-transcribe-screen">The Transcribe screen</a></li><li class="d3"><a href="#failed-dictations">Failed dictations</a></li><li class="d3"><a href="#enhanced-rows">Enhanced rows</a></li><li class="d3"><a href="#copy-the-last-transcription-from-the-tray">Copy the last transcription from the tray</a></li><li class="d3"><a href="#paste-the-last-transcription-again">Paste the last transcription again</a></li><li class="d2"><a href="#microphone-and-muted-mics">Microphone and muted mics</a></li><li class="d3"><a href="#sounds">Sounds</a></li><li class="d2"><a href="#how-text-goes-in">How text goes in</a></li><li class="d3"><a href="#dictating-into-a9-voice-itself">Dictating into A9 Voice itself</a></li><li class="d2"><a href="#enhance-with-ai">Enhance with AI</a></li><li class="d2"><a href="#dictation-audio-saved-for-retries">Dictation audio saved for retries</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d3"><a href="#nothing-pastes">Nothing pastes</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

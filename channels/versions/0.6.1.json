@@ -1,0 +1,11 @@
+{
+  "version": "0.6.1",
+  "notes": "- Fixes 0.6.0 on some graphics cards, where dictation could come out as a string of odd characters or one word repeated. If you ran 0.6.0 with a graphics card, update; nothing else changes about how you use it.\n- Every answer from the graphics card is checked before it is used. A bad one is thrown away, the processor does the job again, and A9 Voice tells you once: \"Graphics card gave a bad result, used the processor\".\n- A PC with two graphics cards can use either one. The second card used to show \"Graphics card unavailable\".\n- Integrated graphics show \"shared memory\" instead of a size, because they borrow the PC's memory. Models that need a graphics card say so in one line instead of trying it.",
+  "pub_date": "2026-10-08T14:02:32Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEhSemthTnlIT3BNRkRSKzQrUStuNzZEc2VCYmZ0b2VVbTcyL1dlaHdYbFJSUklJMjE4c3poUExhcm02ZVp0dzlWS2hNUlBVNEdxS1dQZ0d3dlRQSndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDY4MTE2CWZpbGU6QTkgVm9pY2VfMC42LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4xCjFLMUxITHZ2dmc1N0tETitjb3ZzOTdhR1M2WjRyNER2aE12enRkR0tTckhXTnRNSzZ2ZFZQTW9KUzVOR3Q3aEk2Z1hRZEovdmJMRTdESzJhSElEMUJRPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.1/A9Voice_0.6.1_x64-setup.exe"
+    }
+  }
+}

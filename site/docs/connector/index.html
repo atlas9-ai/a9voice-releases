@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connector for AI apps (MCP) · A9 Voice Manual</title>
+<meta name="description" content="Let an AI app on your PC, such as Claude Desktop or ChatGPT desktop, search and read your A9 Voice notes, so you can ask it about your meetings. It is read only, off until you turn it on, and nothing leaves your PC except what that app reads.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/connector/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Connector for AI apps (MCP) · A9 Voice Manual">
+<meta property="og:description" content="Let an AI app on your PC, such as Claude Desktop or ChatGPT desktop, search and read your A9 Voice notes, so you can ask it about your meetings. It is read only, off until you turn it on, and nothing leaves your PC except what that app reads.">
+<meta property="og:url" content="https://a9voice.com/docs/connector/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/" aria-current="page">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Connect</p>
+      <h1>Connector for AI apps (MCP)</h1>
+      <p class="docs-lead">Let an AI app on your PC, such as Claude Desktop or ChatGPT desktop, search and read your A9 Voice notes, so you can ask it about your meetings. It is read only, off until you turn it on, and nothing leaves your PC except what that app reads.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p>The connector is a small helper that AI apps can start on your PC. Once an app is connected, you can ask it things like
+&quot;What did Priya say about the approval routing?&quot; or &quot;What action items do I have from this week?&quot; and it looks the
+answer up in your notes.</p>
+<p>It is also called an MCP server, which is the name the AI apps use for a connector they run on your own PC. You will see
+&quot;MCP&quot; in those apps&#39; settings.</p>
+<h2 id="what-the-connector-does">What the connector does<a class="anchor" href="#what-the-connector-does" aria-label="Link to What the connector does">#</a></h2>
+<ul>
+<li><strong>It runs on your PC.</strong> The AI app starts it itself as a small background program with no window and no tray icon.
+A9 Voice does not have to be open. It reads your notes from the same place A9 Voice keeps them.</li>
+<li><strong>It is read only.</strong> It can search and read. It cannot add, change or delete a note.</li>
+<li><strong>It is off by default.</strong> Until you turn it on, an app that asks gets a short message instead of your notes:
+&quot;The A9 Voice connector is turned off. Turn it on in A9 Voice › Settings › Connectors.&quot;</li>
+<li><strong>You choose the apps.</strong> Nothing is shared until you connect an app yourself.</li>
+</ul>
+<h3 id="what-an-ai-app-can-ask-for">What an AI app can ask for<a class="anchor" href="#what-an-ai-app-can-ask-for" aria-label="Link to What an AI app can ask for">#</a></h3>
+<p>Once you connect an app, it can use four tools. All four are marked read only.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Tool</th><th scope="col">What it returns</th></tr></thead><tbody>
+<tr><td><code>search_notes</code></td><td>The best matches for some words: the note&#39;s id, title and date, the time in the meeting, who spoke, which part matched and a snippet. It can be narrowed by date range, tag, person, meeting name, or notes versus dictations. Up to 50 results (10 unless it asks for more).</td></tr>
+<tr><td><code>list_notes</code></td><td>Your notes, newest first: id, title, date, length, tags and people. It can be narrowed by date, tag and person. Up to 100 (20 unless it asks for more).</td></tr>
+<tr><td><code>read_note</code></td><td>One note: its summary (the default), its full transcript with <code>[mm:ss] Speaker</code> lines, or the notes you typed during the meeting.</td></tr>
+<tr><td><code>get_action_items</code></td><td>Action items, newest first: the task, owner, due date, whether it is ticked off, and the note it came from. Done items are left out unless it asks for them.</td></tr>
+</tbody></table></div>
+<p>The tools cover your A9 Voice notes and any folders you added under <strong>Settings › Notes › Search</strong> (see
+<a href="/docs/search-and-ask/">Search and Ask</a>). Your dictations are included in search results while <strong>Search dictations too</strong>
+in <strong>Settings › General</strong> is on. It is on for a new install; switch it off to keep dictations out.</p>
+<h3 id="what-an-ai-app-can-never-get">What an AI app can never get<a class="anchor" href="#what-an-ai-app-can-never-get" aria-label="Link to What an AI app can never get">#</a></h3>
+<ul>
+<li><strong>Audio.</strong> No recording, ever.</li>
+<li><strong>Voiceprints.</strong> The voices A9 Voice has learned (see <a href="/docs/voices/">Voices</a>) are not part of any tool&#39;s answer.</li>
+<li><strong>Your keys and settings.</strong> The tools return notes only.</li>
+</ul>
+<h3 id="what-it-can-read-once-you-connect-it">What it can read once you connect it<a class="anchor" href="#what-it-can-read-once-you-connect-it" aria-label="Link to What it can read once you connect it">#</a></h3>
+<p>Plainly: a connected app can read the <strong>titles, dates, summaries, full transcripts (with the speakers&#39; names),
+typed notes, image captions, tags and action items</strong> of the notes it asks for, and it can ask for as many as it likes. A transcript is
+everything that was said in the meeting.</p>
+<p>When the app reads something, that text becomes part of your conversation with the app. From that point it is handled by
+that app and the service behind it, under their own terms and privacy settings, not by A9 Voice. A9 Voice cannot see what
+the app does with it afterwards. Connect only apps you trust with your meetings, and use the switch to turn the connector
+off when you do not want to share.</p>
+<h2 id="turn-it-on">Turn it on<a class="anchor" href="#turn-it-on" aria-label="Link to Turn it on">#</a></h2>
+<ol>
+<li><p>Open <strong>Settings › Connectors</strong>.</p>
+</li>
+<li><p>Switch <strong>Connector for AI apps</strong> on. The switch is marked 1 below.</p>
+<p><figure class="shot"><img src="/img/docs/connector-page-off-1x.webp" srcset="/img/docs/connector-page-off-1x.webp 1x, /img/docs/connector-page-off.webp 2x" width="790" height="689" alt="The Connectors page: a short explanation, the switch Connector for AI apps (marked 1, currently Off), a Claude Desktop section with a Turn on and connect button, Other apps with the Copy command and Copy settings (JSON) buttons, and an empty Recent requests list." loading="lazy" decoding="async"></figure></p>
+</li>
+</ol>
+<p>Then connect an app: either Claude Desktop with one button, or any other app by pasting a command.</p>
+<h2 id="connect-claude-desktop">Connect Claude Desktop<a class="anchor" href="#connect-claude-desktop" aria-label="Link to Connect Claude Desktop">#</a></h2>
+<p>Under <strong>Claude Desktop</strong>, click <strong>Connect to Claude Desktop...</strong> (or <strong>Turn on &amp; connect to Claude Desktop...</strong> if the
+switch is still off).</p>
+<ol>
+<li><p>A9 Voice first <strong>shows what it will change</strong>, before it changes anything. It lists one line: it adds (or updates, if it
+is already there) an entry called <code>a9-voice</code>, the &quot;A9 Voice notes connector&quot;, in Claude Desktop&#39;s settings file.</p>
+<p><figure class="shot"><img src="/img/docs/connector-claude-preview-1x.webp" srcset="/img/docs/connector-claude-preview-1x.webp 1x, /img/docs/connector-claude-preview.webp 2x" width="794" height="191" alt="The preview: This change goes into Claude Desktop's settings file, Adds a9-voice, A9 Voice notes connector. The rest of the file stays as it is. A backup copy of the file is made first. Buttons Turn on and connect, and Cancel." loading="lazy" decoding="async"></figure></p>
+</li>
+<li><p>The rest of the file stays exactly as it is. Your other connectors and settings are not touched. If the file already
+exists, A9 Voice makes a backup copy of it first, in the same folder, with <code>.a9v-backup</code> added to the name.</p>
+</li>
+<li><p>Click <strong>Connect</strong> (or <strong>Turn on &amp; connect</strong>, which also turns the connector on), or <strong>Cancel</strong> to change nothing.</p>
+</li>
+<li><p>Quit Claude Desktop completely and open it again, so it loads the new connector. The page says &quot;Connected, and the
+connector is on. Quit and reopen Claude Desktop to load it.&quot;</p>
+</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/connector-connected-1x.webp" srcset="/img/docs/connector-connected-1x.webp 1x, /img/docs/connector-connected.webp 2x" width="790" height="752" alt="The Claude Desktop section saying Connected, Restart Claude Desktop if you just connected it, then ask it about your meetings." loading="lazy" decoding="async"><figcaption>Connected. The switch is On and Recent requests show what has been asked.</figcaption></figure></p>
+<p>Claude Desktop&#39;s settings file is <code>%APPDATA%\Claude\claude_desktop_config.json</code>.</p>
+<p>If Claude Desktop is not installed on your PC, the page says so (&quot;Claude Desktop isn&#39;t installed on this PC. You can
+connect it later, or use the steps for other apps below.&quot;).</p>
+<p><figure class="shot"><img src="/img/docs/connector-claude-missing-1x.webp" srcset="/img/docs/connector-claude-missing-1x.webp 1x, /img/docs/connector-claude-missing.webp 2x" width="794" height="116" alt="The Claude Desktop section when it is not installed, with the message and the connect button." loading="lazy" decoding="async"></figure></p>
+<h2 id="connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app<a class="anchor" href="#connect-chatgpt-desktop-or-another-app" aria-label="Link to Connect ChatGPT desktop or another app">#</a></h2>
+<p>Under <strong>Other apps</strong>, A9 Voice gives you two things to copy.</p>
+<ul>
+<li><strong>Copy command</strong> copies the command that starts the connector: the full path to A9 Voice&#39;s program followed by
+<code>--mcp</code>.</li>
+<li><strong>Copy settings (JSON)</strong> copies the same thing as a settings block, for apps that read a settings file.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/connector-other-apps-1x.webp" srcset="/img/docs/connector-other-apps-1x.webp 1x, /img/docs/connector-other-apps.webp 2x" width="794" height="204" alt="The Other apps section with the steps for ChatGPT desktop and Cursor, and the Copy command and Copy settings (JSON) buttons." loading="lazy" decoding="async"></figure></p>
+<p>The steps, as the page words them:</p>
+<ul>
+<li><strong>ChatGPT desktop:</strong> <strong>Settings › MCP servers › Add server.</strong> Pick STDIO, paste the command, save, then Restart.
+ChatGPT&#39;s web chats can&#39;t use connectors on your PC: it has to be the desktop app.</li>
+<li><strong>Cursor:</strong> paste the settings into <code>%USERPROFILE%\.cursor\mcp.json</code> (or <strong>Settings › MCP › Add</strong>).</li>
+</ul>
+<p>Any other app that runs local connectors (the page calls them MCP servers) can use A9 Voice the same way: paste the
+command, or the settings, where that app asks for a local server.</p>
+<p>The names and screens of those apps are theirs and can change. If a step does not match what you see, look for the
+app&#39;s own section on connectors or MCP servers.</p>
+<h2 id="see-what-apps-asked">See what apps asked<a class="anchor" href="#see-what-apps-asked" aria-label="Link to See what apps asked">#</a></h2>
+<p><strong>Recent requests</strong> lists what connected apps have asked for, newest first: the time, what kind of request it was
+(<strong>Searched</strong>, <strong>Listed notes</strong>, <strong>Read</strong>, <strong>Action items</strong>) and what it was about, such as the words searched. It keeps
+the latest requests on your PC, nothing more.</p>
+<p><figure class="shot"><img src="/img/docs/connector-requests-1x.webp" srcset="/img/docs/connector-requests-1x.webp 1x, /img/docs/connector-requests.webp 2x" width="794" height="152" alt="Recent requests: four lines, Read note 1 summary, Searched approval routing, Action items Priya, Listed notes stand-up, each with a time." loading="lazy" decoding="async"></figure></p>
+<p>Requests made while the connector is off are not run, so they do not show here.</p>
+<h2 id="turn-it-off-or-remove-it">Turn it off or remove it<a class="anchor" href="#turn-it-off-or-remove-it" aria-label="Link to Turn it off or remove it">#</a></h2>
+<ul>
+<li><strong>Pause sharing:</strong> switch <strong>Connector for AI apps</strong> off. Connected apps stay set up, but they get the short &quot;turned
+off&quot; message instead of your notes. Switch it back on to resume.</li>
+<li><strong>Remove an app for good:</strong> A9 Voice has no remove button. In the other app, delete the <code>a9-voice</code> connector in its own
+settings. For Claude Desktop that means removing the <code>a9-voice</code> entry from <code>claude_desktop_config.json</code> (A9 Voice&#39;s
+backup, <code>claude_desktop_config.json.a9v-backup</code>, is the file as it was before). The A9 Voice page shows &quot;Connected&quot; for
+as long as that entry is there.</li>
+</ul>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>The AI app says it has no tools from A9 Voice.</strong> Quit and reopen the app fully after connecting, and check that the
+switch on <strong>Settings › Connectors</strong> is On.</li>
+<li><strong>The app says the connector is turned off.</strong> Switch <strong>Connector for AI apps</strong> on.</li>
+<li><strong>Connect to Claude Desktop shows an error about the file.</strong> The settings file is not valid JSON. Fix or remove it,
+then try again.</li>
+<li><strong>A9 Voice does not show Connected after you moved or reinstalled it.</strong> The connected entry points to where A9 Voice
+was installed. Click <strong>Connect</strong> again to update it.</li>
+</ul>
+<p>More in <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/search-and-ask/">Search and Ask</a>: the same notes, searched from inside A9 Voice.</li>
+<li><a href="/docs/voices/">Voices</a>: voiceprints stay on your PC and are never part of the connector.</li>
+<li><a href="/docs/privacy-and-data/">Privacy and your data</a>: everything A9 Voice sends and stores.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/search-and-ask/"><span class="docs-step-l">Previous</span><span>Search and Ask</span></a><a class="docs-step next" href="/docs/webhooks/"><span class="docs-step-l">Next</span><span>Webhooks</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-the-connector-does">What the connector does</a></li><li class="d3"><a href="#what-an-ai-app-can-ask-for">What an AI app can ask for</a></li><li class="d3"><a href="#what-an-ai-app-can-never-get">What an AI app can never get</a></li><li class="d3"><a href="#what-it-can-read-once-you-connect-it">What it can read once you connect it</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#connect-claude-desktop">Connect Claude Desktop</a></li><li class="d2"><a href="#connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app</a></li><li class="d2"><a href="#see-what-apps-asked">See what apps asked</a></li><li class="d2"><a href="#turn-it-off-or-remove-it">Turn it off or remove it</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

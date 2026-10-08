@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search and Ask · A9 Voice Manual</title>
+<meta name="description" content="Find anything you or anyone said in your notes with Ctrl+K, or ask a question in plain words and get an answer with links to the exact moment.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/search-and-ask/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Search and Ask · A9 Voice Manual">
+<meta property="og:description" content="Find anything you or anyone said in your notes with Ctrl+K, or ask a question in plain words and get an answer with links to the exact moment.">
+<meta property="og:url" content="https://a9voice.com/docs/search-and-ask/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/" aria-current="page">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
+      <h1>Search and Ask</h1>
+      <p class="docs-lead">Find anything you or anyone said in your notes with Ctrl+K, or ask a question in plain words and get an answer with links to the exact moment.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p><strong>Search</strong> finds words in your notes. <strong>Ask your notes</strong> answers a question from them. Both read one index that
+A9 Voice keeps on your PC, and both open the note at the moment you need.</p>
+<h2 id="what-gets-searched">What gets searched<a class="anchor" href="#what-gets-searched" aria-label="Link to What gets searched">#</a></h2>
+<ul>
+<li>Every note&#39;s title, summary, transcript, the notes you typed during the meeting, image captions and action items.</li>
+<li>Your dictations, unless you switch off <strong>Search dictations too</strong> (see <a href="#search-dictations-too">Search dictations too</a>).</li>
+<li>Folders of past notes you add yourself (see <a href="#also-search-these-folders">Also search these folders</a>).</li>
+</ul>
+<p>The index is a file called <code>search.db</code> in A9 Voice&#39;s data folder, on your PC. It is kept current in the background, soon
+after a note changes. Notes are read from their files in the Notes folder, so an edit you make outside A9 Voice, in
+<code>summary.md</code> or <code>transcript.md</code> for example, counts too.</p>
+<h2 id="search">Search<a class="anchor" href="#search" aria-label="Link to Search">#</a></h2>
+<ol>
+<li><p>Press <kbd>Ctrl</kbd>+<kbd>K</kbd> in the A9 Voice window, or click the search box at the top of <strong>Home</strong> or <strong>Notes</strong>.
+Press <kbd>Ctrl</kbd>+<kbd>K</kbd> again, or <kbd>Esc</kbd>, to close it. The box is marked 1 below. The button
+marked 2, <strong>Ask your notes</strong>, opens the question tab (see <a href="#ask-your-notes">Ask your notes</a>).</p>
+<p><figure class="shot"><img src="/img/docs/search-box-1x.webp" srcset="/img/docs/search-box-1x.webp 1x, /img/docs/search-box.webp 2x" width="1020" height="66" alt="The search box on the Notes page, &quot;Search notes, transcripts and dictations&quot; with Ctrl K, and the Ask your notes button beside it." loading="lazy" decoding="async"></figure></p>
+</li>
+<li><p>Type what you remember. Every word you type has to match, and each word also matches longer words that start with
+it, so &quot;approval routing&quot; finds &quot;approvals&quot; and &quot;routing&quot;.</p>
+<p><figure class="shot"><img src="/img/docs/search-results-1x.webp" srcset="/img/docs/search-results-1x.webp 1x, /img/docs/search-results.webp 2x" width="760" height="630" alt="The Search tab with approval routing typed in, the filter row and five results with the matching words highlighted. The last result says Dictation." loading="lazy" decoding="async"><figcaption>Matches are highlighted. The footer says how many results and that the search ran on this PC.</figcaption></figure></p>
+</li>
+<li><p>Each result shows the note&#39;s title and date, what part matched (<strong>Title</strong>, <strong>Summary</strong>, <strong>Transcript</strong>,
+<strong>Typed note</strong>, <strong>Image</strong>, <strong>Action item</strong> or <strong>Dictation</strong>), who said it and when, and a snippet. A result from an
+added folder carries a badge with that folder&#39;s name. If nothing matches, the panel says so, and tells you if your
+filters are the reason.</p>
+</li>
+<li><p>Click a result. The note opens at that moment, with the transcript line highlighted. A dictation result opens your
+dictation history instead.</p>
+<p><figure class="shot"><img src="/img/docs/search-opens-note-1x.webp" srcset="/img/docs/search-opens-note-1x.webp 1x, /img/docs/search-opens-note.webp 2x" width="1180" height="800" alt="A note opened at 11:52 from a search result, with Priya's line in the transcript marked." loading="lazy" decoding="async"><figcaption>The note opens on the line you searched for.</figcaption></figure></p>
+</li>
+</ol>
+<h3 id="narrow-it-down">Narrow it down<a class="anchor" href="#narrow-it-down" aria-label="Link to Narrow it down">#</a></h3>
+<p>The row of menus under the box limits what is searched. Changing one runs the search again.</p>
+<ul>
+<li><strong>When:</strong> <strong>Any time</strong>, <strong>Past week</strong>, <strong>Past month</strong> or <strong>Past year</strong>.</li>
+<li><strong>What:</strong> <strong>Notes and dictations</strong>, <strong>Notes</strong> or <strong>Dictations</strong>. <strong>Dictations</strong> is greyed out when
+<strong>Search dictations too</strong> is off.</li>
+<li><strong>Template:</strong> only notes made with one template.</li>
+<li><strong>Tag:</strong> only notes with one tag.</li>
+<li><strong>Same meeting:</strong> only notes of a meeting that comes back again, such as a weekly stand-up. It appears when you have
+meetings with the same name on different days.</li>
+<li><strong>Person:</strong> only notes where that person spoke.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/search-filters-1x.webp" srcset="/img/docs/search-filters-1x.webp 1x, /img/docs/search-filters.webp 2x" width="758" height="77" alt="The filter row with the Person menu set to Priya." loading="lazy" decoding="async"></figure></p>
+<h2 id="ask-your-notes">Ask your notes<a class="anchor" href="#ask-your-notes" aria-label="Link to Ask your notes">#</a></h2>
+<p>Ask when you want an answer instead of a list.</p>
+<ol>
+<li><p>Click <strong>Ask your notes</strong> next to the search box, or open the <strong>Ask your notes</strong> tab in the search panel.</p>
+</li>
+<li><p>Type a question, such as &quot;When is the release cut, and what did Priya flag?&quot; Press <kbd>Enter</kbd> or <strong>Ask</strong>.</p>
+</li>
+<li><p>Read the answer. Each fact has a citation in blue that names the note, the date, the time and who said it. Click it to open the
+note at that moment.</p>
+<p><figure class="shot"><img src="/img/docs/ask-quick-1x.webp" srcset="/img/docs/ask-quick-1x.webp 1x, /img/docs/ask-quick.webp 2x" width="760" height="284" alt="The Ask your notes tab with a short answer, two blue citations, and the line Answered by OpenRouter, Claude Haiku 4.5, 10 passages sent, about $0.0011." loading="lazy" decoding="async"><figcaption>A Quick answer, and the line that says which model answered and what it cost.</figcaption></figure></p>
+</li>
+</ol>
+<p>Answers come only from your notes (and dictations, if you search them). The answer line under it tells you which model
+answered, how many passages were sent to it, and about what that cost. Ask needs a language model with a key set up; if
+none is, you are asked to add one in <strong>Settings › Language models</strong> (see <a href="/docs/language-models/">Language models</a>).</p>
+<h3 id="quick-or-deep">Quick or Deep<a class="anchor" href="#quick-or-deep" aria-label="Link to Quick or Deep">#</a></h3>
+<p>The two buttons next to the question choose how hard A9 Voice works.</p>
+<ul>
+<li><strong>Quick</strong> searches with the words of your question and sends the 10 best passages to the model. You get a short
+answer fast. This is the default.</li>
+<li><strong>Deep</strong> first asks the model for more search words, then searches more widely, and groups what it finds by meeting
+with each meeting&#39;s overview. The answer comes back dated and in sections, with short quotes. It takes longer
+(the app says up to a minute) and costs more, &quot;a few cents at most&quot;, as the app puts it.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/ask-deep-1x.webp" srcset="/img/docs/ask-deep-1x.webp 1x, /img/docs/ask-deep.webp 2x" width="760" height="508" alt="A Deep answer with a title, sections called How it started, How it developed and Where it stands, citations, and the line Deep, Answered by, 31 passages sent, about $0.04." loading="lazy" decoding="async"><figcaption>A Deep answer.</figcaption></figure></p>
+<p>Quick uses your <strong>Summary model</strong> (<strong>Settings › Notes › Transcript &amp; summary</strong>). If you have not chosen one, A9 Voice
+uses the best one you have set up. If that model is busy or too slow, the next one you set up answers instead, and the
+line says &quot;(after: ...)&quot; with what went wrong. Deep can use a different, stronger model: see <a href="#choose-the-deep-model">Model for Deep
+answers</a>.</p>
+<p>The cost is an estimate from the price table in <strong>Settings › Usage &amp; cost</strong>, not a bill. Only the passages A9 Voice picked
+go to your language model, never a whole note or any audio. See <a href="/docs/privacy-and-data/">Privacy and your data</a>.</p>
+<h3 id="limit-the-question">Limit the question<a class="anchor" href="#limit-the-question" aria-label="Link to Limit the question">#</a></h3>
+<p>Under the box are chips and menus: <strong>All</strong>, <strong>This week</strong>, <strong>Any tag</strong>, <strong>Any meeting</strong> and <strong>Anyone</strong>. Pick one before
+you press <strong>Ask</strong> to answer only from that slice, for example only notes tagged vendor, or only meetings where
+Marcus spoke.</p>
+<h3 id="when-there-is-no-answer">When there is no answer<a class="anchor" href="#when-there-is-no-answer" aria-label="Link to When there is no answer">#</a></h3>
+<p>If nothing in your notes is about the question, you get &quot;I couldn&#39;t find that in your notes.&quot; Nothing is invented. When
+the search finds no passages at all, nothing from your notes is sent to the model. Try different words,
+or widen the scope chip.</p>
+<p><figure class="shot"><img src="/img/docs/ask-not-found-1x.webp" srcset="/img/docs/ask-not-found-1x.webp 1x, /img/docs/ask-not-found.webp 2x" width="760" height="210" alt="The Ask tab with This week selected, a question about a parking policy, and the answer I couldn't find that in your notes." loading="lazy" decoding="async"></figure></p>
+<h2 id="search-dictations-too">Search dictations too<a class="anchor" href="#search-dictations-too" aria-label="Link to Search dictations too">#</a></h2>
+<p>Search and Ask can include everything you have dictated. This is on to begin with. To leave dictations out, open
+<strong>Settings › General</strong> and switch off <strong>Search dictations too</strong>. The same switch decides whether connected AI apps (see
+<a href="/docs/connector/">the connector</a>) can see your dictation history.</p>
+<p><figure class="shot"><img src="/img/docs/search-dictations-setting-1x.webp" srcset="/img/docs/search-dictations-setting-1x.webp 1x, /img/docs/search-dictations-setting.webp 2x" width="794" height="417" alt="Settings, General page, with Search dictations too switched on and marked 1." loading="lazy" decoding="async"></figure></p>
+<h2 id="also-search-these-folders">Also search these folders<a class="anchor" href="#also-search-these-folders" aria-label="Link to Also search these folders">#</a></h2>
+<p>You can also search notes you kept before A9 Voice: folders of past notes, Markdown or text files, or exports that have
+a summary and a transcript file. A9 Voice only reads these folders. It never changes, moves or deletes anything in them.</p>
+<ol>
+<li><p>Open <strong>Settings › Notes › Search</strong>.</p>
+</li>
+<li><p>Under <strong>Also search these folders</strong>, click <strong>Add folder...</strong> and choose the folder.</p>
+<p><figure class="shot"><img src="/img/docs/search-settings-1x.webp" srcset="/img/docs/search-settings-1x.webp 1x, /img/docs/search-settings.webp 2x" width="790" height="277" alt="Settings, Notes, Search: two folders. Platform team notes shows 142 notes, read just now, with a link to make editable copies. Archive 2025 shows That folder isn't there. Add folder and Read again now are underneath." loading="lazy" decoding="async"></figure></p>
+</li>
+<li><p>A9 Voice reads the folder. Its row shows the folder&#39;s name, its path and a count, such as &quot;142 notes · read just now&quot;.
+The count fills in while the folder is read for the first time.</p>
+</li>
+</ol>
+<p>What counts as one note: a folder holding a summary and/or a transcript (<code>summary.md</code>, <code>transcript.md</code> or <code>.txt</code>
+versions of them), with <code>notes.md</code> and an audio file beside them if there are any; and otherwise each Markdown or text
+file on its own. Formats are told apart by what is in the files, not by which app wrote them. A9 Voice&#39;s own note folders
+are skipped, so a folder that contains your Notes folder does not count notes twice.</p>
+<p>Good to know:</p>
+<ul>
+<li><strong>The badge is the folder&#39;s own name.</strong> That is what shows next to results from it.</li>
+<li><strong>Changes are picked up as they happen</strong>, and every folder is read again once a day. <strong>Read again now</strong> does it
+immediately. <strong>Remove</strong> stops searching the folder and forgets what was read from it. The folder itself is not touched.</li>
+<li><strong>A folder can&#39;t overlap another.</strong> You can&#39;t add your own Notes folder, a folder inside it, or a folder that overlaps
+one you have already added. The app says which.</li>
+<li><strong>If a folder goes missing,</strong> its row shows the problem, for example &quot;That folder isn&#39;t there.&quot;</li>
+</ul>
+<h3 id="the-first-run-hint">The first-run hint<a class="anchor" href="#the-first-run-hint" aria-label="Link to The first-run hint">#</a></h3>
+<p>When you open <strong>Notes</strong>, A9 Voice looks next to your Notes folder for other folders that hold at least three
+notes. If it finds some, it asks &quot;Bring in your older meetings?&quot; and names them. <strong>Add folder</strong> adds them; <strong>Not now</strong>
+dismisses the question for good. If it finds none and you have added no folder, a plain link &quot;Add a folder of past
+notes&quot; is there instead.</p>
+<p><figure class="shot"><img src="/img/docs/search-folders-hint-1x.webp" srcset="/img/docs/search-folders-hint-1x.webp 1x, /img/docs/search-folders-hint.webp 2x" width="1016" height="91" alt="The card Bring in your older meetings, We found notes in Platform team notes, with the buttons Add folder and Not now." loading="lazy" decoding="async"></figure></p>
+<h3 id="open-a-note-from-an-added-folder">Open a note from an added folder<a class="anchor" href="#open-a-note-from-an-added-folder" aria-label="Link to Open a note from an added folder">#</a></h3>
+<p>A result from an added folder opens as a read-only note, with the badge and <strong>Read only</strong> at the top. You can read
+the summary and transcript, play the audio if the folder has some, and use <strong>Open in folder</strong>.</p>
+<p><figure class="shot"><img src="/img/docs/search-ext-note-1x.webp" srcset="/img/docs/search-ext-note-1x.webp 1x, /img/docs/search-ext-note.webp 2x" width="936" height="467" alt="A note from an added folder: the folder badge Platform team notes, Read only, and the buttons Open in folder, Regenerate summary and Make editable copy." loading="lazy" decoding="async"></figure></p>
+<p>To change it, click <strong>Make editable copy</strong>. A9 Voice puts a copy in your Notes folder with the original date, and the
+original stays untouched. If you start to edit something (rename a speaker, edit a line, or <strong>Regenerate summary</strong>), it
+asks &quot;Make an editable copy to do this?&quot; first, then carries on in the copy. Once a copy exists, search shows the copy
+instead of the original, and the original&#39;s page offers <strong>Open it</strong>. Copies are never used to teach
+<a href="/docs/voices/">voices</a>.</p>
+<h3 id="copy-a-whole-folder">Copy a whole folder<a class="anchor" href="#copy-a-whole-folder" aria-label="Link to Copy a whole folder">#</a></h3>
+<p>Under a folder&#39;s row, <strong>Make editable copies of all notes in this folder...</strong> copies everything in one go.</p>
+<ol>
+<li>Click it. A9 Voice says how many notes it will copy (and how many have a recording), that the copies go to your
+Notes folder, that the originals stay untouched, and that summaries aren&#39;t rewritten, so no AI is used.</li>
+<li>Click <strong>Make copies</strong>. A progress bar shows &quot;Copying 3 of 142&quot;.</li>
+<li>When it says &quot;Made N editable copies&quot;, you can also rewrite their summaries with a template of your choice. Click
+<strong>Show the cost...</strong> first: it shows about what it will cost with which model. <strong>Regenerate summaries</strong> then works
+through them one at a time. <strong>Not now</strong> leaves the old summaries as they are.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/search-folder-copy-1x.webp" srcset="/img/docs/search-folder-copy-1x.webp 1x, /img/docs/search-folder-copy.webp 2x" width="794" height="364" alt="The folder row with the copy box open: 142 notes to copy (12 with a recording), the originals stay untouched, and the buttons Make copies and Cancel." loading="lazy" decoding="async"></figure></p>
+<h3 id="choose-the-deep-model">Choose the Deep model<a class="anchor" href="#choose-the-deep-model" aria-label="Link to Choose the Deep model">#</a></h3>
+<p>Under <strong>Ask your notes</strong> on the same page, <strong>Model for Deep answers</strong> picks the model that writes Deep answers. <strong>Same
+as the Summary model</strong> is the default. A stronger model writes better ones; each Deep answer costs a few cents at most.</p>
+<p><figure class="shot"><img src="/img/docs/search-deep-model-1x.webp" srcset="/img/docs/search-deep-model-1x.webp 1x, /img/docs/search-deep-model.webp 2x" width="790" height="99" alt="The Model for Deep answers row set to Same as the Summary model." loading="lazy" decoding="async"></figure></p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>A note you just made is not found.</strong> Give it a few seconds: the index updates in the background.</li>
+<li><strong>Search finds nothing in a folder you added.</strong> Check the folder&#39;s row on <strong>Settings › Notes › Search</strong> for a message,
+then try <strong>Read again now</strong>.</li>
+<li><strong>Ask says to add a key.</strong> Ask uses a language model. Add one in <strong>Settings › Language models</strong>.</li>
+<li><strong>Dictations never show up.</strong> Check that <strong>Search dictations too</strong> is on in <strong>Settings › General</strong>.</li>
+</ul>
+<p>More in <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/note-page/">The note page</a>: ask about one note, and read it in full.</li>
+<li><a href="/docs/connector/">Connector for AI apps</a>: let Claude or ChatGPT search the same notes.</li>
+<li><a href="/docs/language-models/">Language models</a>: the keys Ask needs.</li>
+<li><a href="/docs/voices/">Voices</a>: names for the people in your notes.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/templates-and-export/"><span class="docs-step-l">Previous</span><span>Templates and export</span></a><a class="docs-step next" href="/docs/connector/"><span class="docs-step-l">Next</span><span>Connector for AI apps (MCP)</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-gets-searched">What gets searched</a></li><li class="d2"><a href="#search">Search</a></li><li class="d3"><a href="#narrow-it-down">Narrow it down</a></li><li class="d2"><a href="#ask-your-notes">Ask your notes</a></li><li class="d3"><a href="#quick-or-deep">Quick or Deep</a></li><li class="d3"><a href="#limit-the-question">Limit the question</a></li><li class="d3"><a href="#when-there-is-no-answer">When there is no answer</a></li><li class="d2"><a href="#search-dictations-too">Search dictations too</a></li><li class="d2"><a href="#also-search-these-folders">Also search these folders</a></li><li class="d3"><a href="#the-first-run-hint">The first-run hint</a></li><li class="d3"><a href="#open-a-note-from-an-added-folder">Open a note from an added folder</a></li><li class="d3"><a href="#copy-a-whole-folder">Copy a whole folder</a></li><li class="d3"><a href="#choose-the-deep-model">Choose the Deep model</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

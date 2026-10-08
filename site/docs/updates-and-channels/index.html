@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updates and channels · A9 Voice Manual</title>
+<meta name="description" content="How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/updates-and-channels/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Updates and channels · A9 Voice Manual">
+<meta property="og:description" content="How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.">
+<meta property="og:url" content="https://a9voice.com/docs/updates-and-channels/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/" aria-current="page">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
+      <h1>Updates and channels</h1>
+      <p class="docs-lead">How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p>A9 Voice looks for updates in the background, downloads them, checks that they are genuine and installs them when it is safe to. You do not have to do anything, but you can check by hand, choose how early you get new builds, and decide when the app restarts.</p>
+<h2 id="stable-and-dev">Stable and Dev<a class="anchor" href="#stable-and-dev" aria-label="Link to Stable and Dev">#</a></h2>
+<p>There are two channels. A channel is just a stream of builds you follow.</p>
+<ul>
+<li><strong>Stable</strong> is the default for a new download. It gets a build once that build has proven reliable.</li>
+<li><strong>Dev</strong> gets every new build first. You see new features sooner, and you may meet a rough edge before Stable does.</li>
+</ul>
+<p>Choose Stable unless you want to try new things early. A build reaches Stable only after it has been tried on Dev. The <a href="/changelog/">Changelog</a> lists what changed in each version.</p>
+<h3 id="switch-channel">Switch channel<a class="anchor" href="#switch-channel" aria-label="Link to Switch channel">#</a></h3>
+<ol>
+<li>Open <strong>Settings</strong> from the sidebar, then <strong>General</strong>.</li>
+<li>Scroll to the <strong>Updates</strong> card, to the row called <strong>Channel</strong>.</li>
+<li>Pick <strong>Stable</strong> or <strong>Dev</strong>. A9 Voice checks for updates on that channel straight away.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-card-1x.webp" srcset="/img/docs/updates-and-channels-card-1x.webp 1x, /img/docs/updates-and-channels-card.webp 2x" width="818" height="227" alt="The Updates card: 1 the version and Check now, 2 the channel, 3 the automatic restart switch." loading="lazy" decoding="async"></figure></p>
+<p>The version line at the bottom of the sidebar also shows which channel you are on: a small <strong>Dev</strong> tag appears next to the version when you follow Dev, and nothing appears on Stable. Click the version to jump to this card.</p>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-dev-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-dev-1x.webp 1x, /img/docs/updates-and-channels-sidebar-dev.webp 2x" width="223" height="50" alt="The bottom of the sidebar on Dev: the version with a Dev tag and the Check for updates link." loading="lazy" decoding="async"></figure></p>
+<h3 id="going-back-to-stable">Going back to Stable<a class="anchor" href="#going-back-to-stable" aria-label="Link to Going back to Stable">#</a></h3>
+<p>Switching from Dev to Stable does not install an older version. A9 Voice only installs a build that is newer than the one you have, so if your Dev build is ahead of Stable, nothing changes until Stable catches up. After that, updates continue as normal on Stable.</p>
+<h2 id="how-an-update-reaches-you">How an update reaches you<a class="anchor" href="#how-an-update-reaches-you" aria-label="Link to How an update reaches you">#</a></h2>
+<p>A9 Voice checks for an update a few seconds after it starts and then every 6 hours while it runs. The <strong>Check for updates</strong> link in the sidebar, <strong>Check now</strong> on the Updates card and <strong>Check for updates</strong> in the tray menu check right away.</p>
+<ol>
+<li><strong>The check.</strong> A9 Voice asks a9voice.com and the project&#39;s release files on GitHub, all at once, for the newest build on your channel. It takes the newest build any of them offers, and prefers a9voice.com when they offer the same one. If one place is down, the others still count.</li>
+<li><strong>The download.</strong> The update downloads in the background while you keep working. The sidebar shows <strong>Downloading</strong> with a small progress bar.</li>
+<li><strong>The check of the download.</strong> Every update is signed. A9 Voice checks the signature against a key built into the app before it keeps the file. If the signature does not match, the update is thrown away and you see &quot;The update failed its signature check and was not installed&quot;.</li>
+<li><strong>Ready.</strong> The sidebar shows <strong>Restart to update</strong>, and the Updates card shows a banner, &quot;Update ready&quot;, with a <strong>Restart A9 Voice</strong> button. The tray menu item changes to &quot;Update ready — Restart A9 Voice&quot;.</li>
+<li><strong>The restart.</strong> When you press the button, A9 Voice installs and starts again. Nothing you have recorded or typed is lost.</li>
+</ol>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-downloading-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-downloading-1x.webp 1x, /img/docs/updates-and-channels-sidebar-downloading.webp 2x" width="223" height="84" alt="The sidebar while an update is downloading, with a progress bar." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-ready-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-ready-1x.webp 1x, /img/docs/updates-and-channels-sidebar-ready.webp 2x" width="223" height="82" alt="The sidebar when the update is ready: a Restart to update button." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-banner-1x.webp" srcset="/img/docs/updates-and-channels-banner-1x.webp 1x, /img/docs/updates-and-channels-banner.webp 2x" width="814" height="95" alt="The Updates card banner when an update is ready, with the Restart A9 Voice button." loading="lazy" decoding="async"></figure></p>
+<p>The installer runs for your Windows user only. It does not ask for administrator rights and does not show a Windows permission (UAC) prompt, and your settings, history, notes and keys stay where they are. After an update the app comes back quietly in the tray, without opening its window, when <strong>Start minimized</strong> (Settings › General) is on.</p>
+<h2 id="the-sidebar-version-line">The sidebar version line<a class="anchor" href="#the-sidebar-version-line" aria-label="Link to The sidebar version line">#</a></h2>
+<p>The bottom of the sidebar shows your version, for example <strong>v0.6.0</strong>, and one of these:</p>
+<ul>
+<li><strong>Check for updates:</strong> press it to check now. It then says <strong>Checking…</strong>, and for a few seconds <strong>Up to date</strong> or <strong>Couldn&#39;t check</strong>.</li>
+<li><strong>Downloading</strong> with the new version and a progress bar: an update is on its way.</li>
+<li><strong>Restart to update:</strong> the update is ready. Press it to install now.</li>
+<li><strong>Update after this recording:</strong> an update is ready but you are recording. Press it to queue the update; it installs when the recording and its note are finished. The button then becomes <strong>Updates after this recording</strong>, a label with nothing to press.</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-recording-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-recording-1x.webp 1x, /img/docs/updates-and-channels-sidebar-recording.webp 2x" width="223" height="84" alt="The sidebar during a recording: Update after this recording." loading="lazy" decoding="async"></figure></p>
+<p>In a narrow window the sidebar shows icons only. The version then shortens (to <strong>v0.6</strong>), and hovering over it or over the update button tells the rest. If pressing <strong>Restart to update</strong> fails, a short message appears under it for a few seconds, for example &quot;Busy dictating; try again in a moment&quot;.</p>
+<h2 id="restart-automatically-when-idle">Restart automatically when idle<a class="anchor" href="#restart-automatically-when-idle" aria-label="Link to Restart automatically when idle">#</a></h2>
+<p>On the Updates card, <strong>Restart automatically when idle</strong> decides whether A9 Voice restarts into a ready update by itself.</p>
+<ul>
+<li>When it is on, A9 Voice restarts into the update once you have not dictated for 2 minutes. It never does this while you are dictating, or recording, or while a note is being written up.</li>
+<li>When it is off, the update waits until you press <strong>Restart to update</strong>.</li>
+<li>If you have never touched the switch, it is off on Stable and on for Dev.</li>
+</ul>
+<p>Either way, an update you queued during a recording installs by itself once the recording and its note are done.</p>
+<h2 id="the-updates-card">The Updates card<a class="anchor" href="#the-updates-card" aria-label="Link to The Updates card">#</a></h2>
+<p>The card is on Settings › General, under the General options and above the About card.</p>
+<ul>
+<li><strong>This version</strong> shows the version you run and the last check: &quot;Checking…&quot;, &quot;You&#39;re up to date&quot;, &quot;Downloading&quot;, an error message, or when it last checked (&quot;Last checked 12 minutes ago&quot;). <strong>Check now</strong> checks right away.</li>
+<li><strong>Channel</strong> is the Dev / Stable choice described above.</li>
+<li><strong>Restart automatically when idle</strong> is the switch described above.</li>
+</ul>
+<p>Every option is described on the <a href="/docs/settings-reference/">Settings reference</a>.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>&quot;Couldn&#39;t reach the update server&quot;.</strong> The PC is offline or something blocks the connection. A9 Voice tries again at the next check. The update check is the only thing A9 Voice does on its own that is not part of a service you set up; see <a href="/docs/privacy-and-data/">Privacy and data</a>.</li>
+<li><strong>&quot;No release on the dev channel yet&quot; (or stable).</strong> The channel has no build published yet. Switch channel or check again later.</li>
+<li><strong>&quot;The update failed its signature check and was not installed&quot;.</strong> The download did not match what the project signed, so A9 Voice refused it. Check again; if it keeps happening, see <a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
+<li><strong>The version line says &quot;Couldn&#39;t check&quot;.</strong> The check could not finish. Press <strong>Check for updates</strong> again in a minute.</li>
+</ul>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/settings-reference/">Settings reference</a> for the whole Updates card.</li>
+<li><a href="/docs/privacy-and-data/">Privacy and data</a> for what the update check sends.</li>
+<li><a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/settings-reference/"><span class="docs-step-l">Previous</span><span>Settings reference</span></a><a class="docs-step next" href="/docs/privacy-and-data/"><span class="docs-step-l">Next</span><span>Privacy and data</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#stable-and-dev">Stable and Dev</a></li><li class="d3"><a href="#switch-channel">Switch channel</a></li><li class="d3"><a href="#going-back-to-stable">Going back to Stable</a></li><li class="d2"><a href="#how-an-update-reaches-you">How an update reaches you</a></li><li class="d2"><a href="#the-sidebar-version-line">The sidebar version line</a></li><li class="d2"><a href="#restart-automatically-when-idle">Restart automatically when idle</a></li><li class="d2"><a href="#the-updates-card">The Updates card</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

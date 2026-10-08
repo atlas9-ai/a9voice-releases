@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting started · A9 Voice Manual</title>
+<meta name="description" content="Install A9 Voice, set it up in five short steps, then dictate your first sentence and record your first meeting note.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Getting started · A9 Voice Manual">
+<meta property="og:description" content="Install A9 Voice, set it up in five short steps, then dictate your first sentence and record your first meeting note.">
+<meta property="og:url" content="https://a9voice.com/docs/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/" aria-current="page">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Start here</p>
+      <h1>Getting started</h1>
+      <p class="docs-lead">Install A9 Voice, set it up in five short steps, then dictate your first sentence and record your first meeting note.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.3</p>
+      <p>A9 Voice is for Windows 10 and 11 (64-bit). It does two jobs. <strong>Transcribe</strong> types what you say into any app while you hold a key. <strong>Notes</strong> records a meeting, a video or a voice memo and turns it into a transcript and a summary. This page takes you from a fresh install to both.</p>
+<h2 id="install">Install<a class="anchor" href="#install" aria-label="Link to Install">#</a></h2>
+<ol>
+<li><a href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download the installer</a>. The link always gives you the newest version.</li>
+<li>Open the file you downloaded. A9 Voice installs for your Windows user only. It does not ask for administrator rights.</li>
+<li>If Windows shows a blue <strong>Windows protected your PC</strong> screen, click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer is not code-signed yet, so Windows shows this once. Later updates install quietly and do not show it.</li>
+<li>Follow the installer to the end. If A9 Voice does not open by itself, open it from the <strong>A9 Voice</strong> folder in the Start menu.</li>
+</ol>
+<p>A9 Voice starts with Windows and waits in the tray (the small icons by the clock). Closing its window does not quit it; the first time you close it, a notice says &quot;A9 Voice is still running in the tray&quot;. To quit, right-click the tray icon and choose <strong>Quit</strong>.</p>
+<h2 id="set-up-a9-voice">Set up A9 Voice<a class="anchor" href="#set-up-a9-voice" aria-label="Link to Set up A9 Voice">#</a></h2>
+<p>The first time you open A9 Voice, a setup screen walks you through five steps. A row of dots at the top shows where you are. You can click <strong>Back</strong>, <strong>Skip this step</strong> or <strong>Skip setup</strong> at any time, and you can finish later: if you close the window part-way, setup picks up where it stopped.</p>
+<h3 id="step-1-your-name">Step 1: your name<a class="anchor" href="#step-1-your-name" aria-label="Link to Step 1: your name">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-name-1x.webp" srcset="/img/docs/getting-started-name-1x.webp 1x, /img/docs/getting-started-name.webp 2x" width="900" height="620" alt="Step 1 of 5: the name box, filled in from your Windows account" loading="lazy" decoding="async"></figure></p>
+<p>A9 Voice asks what to call you. It fills in your Windows name. Your name labels your voice in meeting transcripts and lets summaries say &quot;you&quot; and mean you. Change it any time in <strong>Settings › Account</strong>. Click <strong>Continue</strong>.</p>
+<h3 id="step-2-your-microphone">Step 2: your microphone<a class="anchor" href="#step-2-your-microphone" aria-label="Link to Step 2: your microphone">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-mic-1x.webp" srcset="/img/docs/getting-started-mic-1x.webp 1x, /img/docs/getting-started-mic.webp 2x" width="900" height="620" alt="Step 2 of 5: the microphone list and a level bar that moves when you talk" loading="lazy" decoding="async"></figure></p>
+<p>Pick your microphone, or leave <strong>Windows default</strong>. Say a few words: the bar moves when you talk and rests when you do not, and the text under it says <strong>Hearing you clearly.</strong> If nothing moves, check that the microphone is not muted. Click <strong>Continue</strong>.</p>
+<h3 id="step-3-how-a9-voice-hears-you">Step 3: how A9 Voice hears you<a class="anchor" href="#step-3-how-a9-voice-hears-you" aria-label="Link to Step 3: how A9 Voice hears you">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-speech-1x.webp" srcset="/img/docs/getting-started-speech-1x.webp 1x, /img/docs/getting-started-speech.webp 2x" width="900" height="753" alt="Step 3 of 5: On this PC and the cloud services, with On this PC open" loading="lazy" decoding="async"></figure></p>
+<p>A9 Voice needs a speech service to turn your voice into text. Pick one; you can change it any time in <strong>Settings › Speech models</strong> (see <a href="/docs/speech-models/">Speech models</a>).</p>
+<ul>
+<li><strong>On this PC</strong> is marked <strong>Recommended: free, private, works offline.</strong> Click the tile, then <strong>Download Parakeet V2</strong>. It downloads once. Then A9 Voice checks its speed on your PC (&quot;Checking its speed on this PC…&quot;) and the tile says <strong>Ready</strong>. After that, nothing you say leaves your PC. Parakeet V2 is an English model.</li>
+<li><strong>Groq</strong>, <strong>Deepgram</strong>, <strong>OpenAI</strong> and <strong>ElevenLabs</strong> are cloud services. You bring your own key and pay the service directly. The setup screen notes that Groq has a free plan and that new Deepgram accounts get $200 of free credit.</li>
+<li><strong>Custom server</strong> is for any OpenAI-compatible speech server. You add it later in <strong>Settings › Speech models</strong>.</li>
+</ul>
+<p>To use a cloud service, click its tile and follow the three steps shown:</p>
+<p><figure class="shot"><img src="/img/docs/getting-started-key-1x.webp" srcset="/img/docs/getting-started-key-1x.webp 1x, /img/docs/getting-started-key.webp 2x" width="900" height="863" alt="The Groq tile open: a Get your free Groq key button, three steps, and a box for the key" loading="lazy" decoding="async"></figure></p>
+<ol>
+<li>Click <strong>Get your free Groq key →</strong>. Your browser opens the service&#39;s own key page. Sign in there and create a key. (For Groq, this is <a href="https://console.groq.com/keys">console.groq.com/keys</a>.)</li>
+<li>Come back to A9 Voice, click in the <strong>Paste API key</strong> box and paste the key.</li>
+<li>Click <strong>Test</strong>. A9 Voice saves the key and tries it. A line says <strong>Connected</strong> and shows what it heard.</li>
+</ol>
+<p>The tile then says <strong>Key saved</strong>. The key is stored in Windows Credential Manager, never in a file. The first service that has a key becomes the one A9 Voice uses. You can pick nothing and click <strong>Continue</strong> anyway; A9 Voice reminds you before your first dictation.</p>
+<h3 id="step-4-try-it">Step 4: try it<a class="anchor" href="#step-4-try-it" aria-label="Link to Step 4: try it">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-try-1x.webp" srcset="/img/docs/getting-started-try-1x.webp 1x, /img/docs/getting-started-try.webp 2x" width="900" height="620" alt="Step 4 of 5: a box with a dictated sentence and the line Done in 0.91 s" loading="lazy" decoding="async"></figure></p>
+<p>Click in the box. <strong>Hold <kbd>Ctrl</kbd>+<kbd>Space</kbd></strong>, say a sentence, then <strong>let go</strong>. Your words appear in the box and a line below says how long it took. While you hold the keys it says <strong>Listening… let go of the keys to finish.</strong> If something goes wrong, a card says <strong>That didn&#39;t work</strong>, explains why, and offers <strong>Try again</strong>, <strong>Pick another provider</strong>, <strong>Skip</strong> and <strong>Copy diagnostics</strong>.</p>
+<h3 id="step-5-notes">Step 5: Notes<a class="anchor" href="#step-5-notes" aria-label="Link to Step 5: Notes">#</a></h3>
+<p>The last step tells you that A9 Voice can also record meetings, and shows the record key (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd>). If you have no language model yet, it reminds you that summaries need one. This step is optional. Click <strong>Finish</strong>.</p>
+<p>If you want to see setup again, right-click the tray icon and choose <strong>Help › Restart setup</strong>.</p>
+<h2 id="your-first-dictation">Your first dictation<a class="anchor" href="#your-first-dictation" aria-label="Link to Your first dictation">#</a></h2>
+<p>You can dictate into any app, anywhere you can type: a document, an email, a chat, a web page.</p>
+<ol>
+<li>Click in a text box.</li>
+<li><strong>Hold <kbd>Ctrl</kbd>+<kbd>Space</kbd></strong> and talk. A small pill appears at the bottom of the screen with a level meter and a timer. It never takes focus from the app you are in.</li>
+<li><strong>Let go.</strong> The pill says <strong>Transcribing</strong> and then <strong>Pasted</strong>, and your words appear where your cursor was.</li>
+</ol>
+<p>A quick tap of the key does nothing. To cancel while you are talking, press <kbd>Esc</kbd>.</p>
+<p>When you finish setup you land on <strong>Home</strong>, which lists your keys:</p>
+<p><figure class="shot"><img src="/img/docs/getting-started-home-keys-1x.webp" srcset="/img/docs/getting-started-home-keys-1x.webp 1x, /img/docs/getting-started-home-keys.webp 2x" width="900" height="122" alt="The Home key list: Ctrl+Space to dictate, Ctrl+Alt+N to record a note" loading="lazy" decoding="async"></figure></p>
+<p>Everything about dictation, including hands-free mode, is on the <a href="/docs/transcribe/">Transcribe</a> page.</p>
+<h2 id="your-first-meeting-note">Your first meeting note<a class="anchor" href="#your-first-meeting-note" aria-label="Link to Your first meeting note">#</a></h2>
+<p>A note is a recording of a meeting, a video or a voice memo. A9 Voice records your microphone and the sound your PC plays, so it hears both sides of a call. No bot joins the meeting.</p>
+<h3 id="1-check-which-models-it-will-use">1. Check which models it will use<a class="anchor" href="#1-check-which-models-it-will-use" aria-label="Link to 1. Check which models it will use">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-chips-1x.webp" srcset="/img/docs/getting-started-chips-1x.webp 1x, /img/docs/getting-started-chips.webp 2x" width="900" height="210" alt="The three model chips at the top of the window with the Notes menu open" loading="lazy" decoding="async"></figure></p>
+<p>The three chips at the top right show what A9 Voice uses: <strong>Dictation</strong> (speech to text for dictating), <strong>Notes</strong> (speech to text for meetings) and <strong>AI</strong> (the language model that writes summaries and answers questions). Click a chip to switch.</p>
+<ul>
+<li><strong>Notes</strong> can use Deepgram, ElevenLabs, a model on this PC, or the other services you have set up. Deepgram, ElevenLabs and models on this PC tell the people on a call apart. The others label lines Me and Them. If you only added a Groq key, open the <strong>Notes</strong> chip and pick it.</li>
+<li><strong>AI</strong> needs a key from a language-model service. Without one, you still get a transcript, but no summary. Add one in <strong>Settings › Language models</strong> (see <a href="/docs/language-models/">Language models</a>).</li>
+</ul>
+<h3 id="2-start-recording">2. Start recording<a class="anchor" href="#2-start-recording" aria-label="Link to 2. Start recording">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-notes-empty-1x.webp" srcset="/img/docs/getting-started-notes-empty-1x.webp 1x, /img/docs/getting-started-notes-empty.webp 2x" width="1024" height="234" alt="The Notes page with no notes yet and the Record button numbered 1" loading="lazy" decoding="async"></figure></p>
+<p>Open <strong>Notes</strong> and click <strong>Record</strong>, or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> from anywhere. The <strong>Record</strong> button in the left sidebar does the same, and turns into <strong>Stop</strong> with a timer while you record.</p>
+<p>If you join a Microsoft Teams or Zoho Cliq call, A9 Voice starts by itself and shows an 8-second notice with <strong>Discard</strong> and <strong>Keep</strong>. You can turn that off, or add other meeting apps, in <strong>Settings › Recording</strong>.</p>
+<p>A small recording bar appears on your screen:</p>
+<p><figure class="shot"><img src="/img/docs/getting-started-bar-1x.webp" srcset="/img/docs/getting-started-bar-1x.webp 1x, /img/docs/getting-started-bar.webp 2x" width="272" height="72" alt="The recording bar: a level meter, the word Recording, a timer, Pause and Stop" loading="lazy" decoding="async"></figure></p>
+<p>It shows <strong>Recording</strong>, the time, <strong>Pause</strong> and <strong>Stop</strong>. Hover over it for more buttons: <strong>Snip</strong> (add a screenshot to the note), <strong>Live window</strong> (watch the transcript as it happens), the microphone and computer-audio pickers, and a button that shrinks it to a small pill. The full story is on <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
+<h3 id="3-stop">3. Stop<a class="anchor" href="#3-stop" aria-label="Link to 3. Stop">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-stop-1x.webp" srcset="/img/docs/getting-started-stop-1x.webp 1x, /img/docs/getting-started-stop.webp 2x" width="364" height="72" alt="The recording bar asking Stop recording? with Stop and Stop &amp; discard" loading="lazy" decoding="async"></figure></p>
+<p>Click the square stop button on the bar. It asks <strong>Stop recording?</strong>: choose <strong>Stop</strong> to keep the recording, or <strong>Stop &amp; discard…</strong> to delete it (it asks once more before it deletes anything). <kbd>Esc</kbd> closes the question.</p>
+<h3 id="4-wait-for-the-note">4. Wait for the note<a class="anchor" href="#4-wait-for-the-note" aria-label="Link to 4. Wait for the note">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-processing-1x.webp" srcset="/img/docs/getting-started-processing-1x.webp 1x, /img/docs/getting-started-processing.webp 2x" width="1024" height="119" alt="A note in the list marked Summarizing" loading="lazy" decoding="async"></figure></p>
+<p>The note appears at once in <strong>Notes</strong>. Its row says <strong>Transcribing…</strong> and then <strong>Summarizing…</strong>. When the status disappears, the note is ready. If it says <strong>Needs a look</strong>, open it for the reason and click <strong>Try again</strong>.</p>
+<h3 id="5-open-it">5. Open it<a class="anchor" href="#5-open-it" aria-label="Link to 5. Open it">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-note-1x.webp" srcset="/img/docs/getting-started-note-1x.webp 1x, /img/docs/getting-started-note.webp 2x" width="716" height="798" alt="The note page with a summary, a speakers list and the Export button numbered 1" loading="lazy" decoding="async"></figure></p>
+<p>Click the note. The page has three tabs: <strong>Summary</strong>, <strong>Transcript</strong> and <strong>Ask AI</strong>. The right column lists the speakers: type a real name in a box to rename someone everywhere in the note. If the summary is missing because you had no language model, add a key, then click <strong>Regenerate summary</strong> in the right column. More on this page in <a href="/docs/note-page/">The note page</a>.</p>
+<h3 id="6-export">6. Export<a class="anchor" href="#6-export" aria-label="Link to 6. Export">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/getting-started-export-1x.webp" srcset="/img/docs/getting-started-export-1x.webp 1x, /img/docs/getting-started-export.webp 2x" width="1040" height="700" alt="The Export window: choose Summary, Transcript or Audio recording, a format, and a preview" loading="lazy" decoding="async"></figure></p>
+<p>Click <strong>Export</strong> at the top of the note. Choose what to export (<strong>Summary</strong>, <strong>Transcript</strong> or <strong>Audio recording</strong>), pick a format (for the summary: Markdown, plain text, PDF, Word or an HTML email file), and click the blue button, for example <strong>Export Markdown</strong>. When it says <strong>Saved.</strong>, click <strong>Show in folder</strong>. <strong>Copy for email</strong> puts the summary on the clipboard, ready to paste into a new message.</p>
+<p>Every note also lives in its own folder on your PC (by default under <code>Documents\A9 Voice\Notes</code>) with its summary and transcript as plain files. Open it from the <strong>⋯</strong> menu with <strong>Show in folder</strong>. See <a href="/docs/templates-and-export/">Templates and export</a> for all the formats.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
+<ul>
+<li><strong>Nothing happens when you hold the key.</strong> The sidebar shows <strong>Key in use · fix</strong> if another app has the same shortcut. Click it, or open <strong>Settings › Dictation</strong> and choose another key.</li>
+<li><strong>The pill says a key is missing or rejected.</strong> Click the pill&#39;s <strong>Fix</strong> link, then check the key in <strong>Settings › Speech models</strong>.</li>
+<li><strong>The note failed or has no summary.</strong> See the steps above and <a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
+</ul>
+<h2 id="where-to-go-next">Where to go next<a class="anchor" href="#where-to-go-next" aria-label="Link to Where to go next">#</a></h2>
+<p>The manual is also one click away inside the app: the <strong>?</strong> at the top right of every page opens the manual at that screen, and <strong>Manual</strong> in the sidebar (or <strong>Help › Manual</strong> in the tray menu) opens its front page.</p>
+<ul>
+<li><a href="/docs/transcribe/">Transcribe</a>: hands-free mode, history, Enhance with AI and what to do when text does not paste.</li>
+<li><a href="/docs/dictionary/">Dictionary</a>: teach A9 Voice your names and jargon.</li>
+<li><a href="/docs/speech-models/">Speech models</a> and <a href="/docs/language-models/">Language models</a>: choose and add services.</li>
+<li><a href="/docs/recording-a-meeting/">Recording a meeting</a> and <a href="/docs/note-page/">The note page</a>: everything about notes.</li>
+<li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a>: every key in one place.</li>
+<li><a href="/docs/privacy-and-data/">Privacy and data</a>: where your audio, text and keys go.</li>
+<li><a href="/docs/updates-and-channels/">Updates and channels</a>: how A9 Voice keeps itself current.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><span></span><a class="docs-step next" href="/docs/transcribe/"><span class="docs-step-l">Next</span><span>Transcribe</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#install">Install</a></li><li class="d2"><a href="#set-up-a9-voice">Set up A9 Voice</a></li><li class="d3"><a href="#step-1-your-name">Step 1: your name</a></li><li class="d3"><a href="#step-2-your-microphone">Step 2: your microphone</a></li><li class="d3"><a href="#step-3-how-a9-voice-hears-you">Step 3: how A9 Voice hears you</a></li><li class="d3"><a href="#step-4-try-it">Step 4: try it</a></li><li class="d3"><a href="#step-5-notes">Step 5: Notes</a></li><li class="d2"><a href="#your-first-dictation">Your first dictation</a></li><li class="d2"><a href="#your-first-meeting-note">Your first meeting note</a></li><li class="d3"><a href="#1-check-which-models-it-will-use">1. Check which models it will use</a></li><li class="d3"><a href="#2-start-recording">2. Start recording</a></li><li class="d3"><a href="#3-stop">3. Stop</a></li><li class="d3"><a href="#4-wait-for-the-note">4. Wait for the note</a></li><li class="d3"><a href="#5-open-it">5. Open it</a></li><li class="d3"><a href="#6-export">6. Export</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#where-to-go-next">Where to go next</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

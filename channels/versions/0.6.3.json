@@ -1,0 +1,11 @@
+{
+  "version": "0.6.3",
+  "notes": "- A small **?** button on every page, on the note page and on the Live window opens the manual in your browser at the page that explains that screen.\n- **Manual** in the sidebar and **Help › Manual** in the tray menu open the manual's front page.",
+  "pub_date": "2026-10-08T15:16:24Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE13VWZCcTc1NDF4YitFQjZSMjAzcTRwUkhuVnVHZk5pU2YxSFdGYXVJdEdSREFMNFUxYlEyNnBYaEtuT2hOQi9vdHdHaUlmRXkxRWp3VkhJVzZsT1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDcyNTcxCWZpbGU6QTkgVm9pY2VfMC42LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4zClRHMkROS2JHR2hxbEp2akdZS3RXZnpoOCtzcXk5U2NTRmRUVmZVc0tqc0NYTGN1U09NK0xLRHRkM2FYZ0ZVcDIxTWlYcVVnNGFrU21OejlCbjRBSEJRPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.3/A9Voice_0.6.3_x64-setup.exe"
+    }
+  }
+}

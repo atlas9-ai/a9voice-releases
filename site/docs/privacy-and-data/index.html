@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy and data · A9 Voice Manual</title>
+<meta name="description" content="What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/privacy-and-data/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Privacy and data · A9 Voice Manual">
+<meta property="og:description" content="What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.">
+<meta property="og:url" content="https://a9voice.com/docs/privacy-and-data/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/" aria-current="page">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
+      <h1>Privacy and data</h1>
+      <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.4</p>
+      <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
+<h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
+<ul>
+<li><strong>Audio and text go only to the services you choose</strong>, with your keys. If you use models on this PC, nothing you say leaves it.</li>
+<li><strong>No telemetry and no analytics.</strong> A9 Voice does not report usage, crashes or anything else. This is a rule of how the app is built.</li>
+<li><strong>Your keys live in Windows Credential Manager</strong> and nowhere else: not in settings, logs, the repository or the app&#39;s own storage.</li>
+<li><strong>Logs hold timings, lengths and status codes, never your words or your keys.</strong> This is also a rule of how the app is built.</li>
+<li><strong>Voiceprints stay on this PC</strong>, are opt-in, and you can delete any of them or all of them at any time.</li>
+<li><strong>Notes are plain files in a folder you pick.</strong></li>
+<li><strong>Recording consent is up to you.</strong> Some places require everyone&#39;s permission to record a conversation.</li>
+</ul>
+<h2 id="what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature<a class="anchor" href="#what-leaves-your-pc-feature-by-feature" aria-label="Link to What leaves your PC, feature by feature">#</a></h2>
+<p>The table says what is sent, to whom, and what happens when you use a model on this PC instead.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What you do</th><th scope="col">With a cloud service</th><th scope="col">With a model on this PC</th></tr></thead><tbody>
+<tr><td><strong>Dictate</strong> (hold the key)</td><td>The audio of that dictation, the language, and your Dictionary words as spelling hints go to the speech service chosen for dictation. If it fails or takes longer than 4 seconds, the same audio goes once to your fallback service.</td><td>Nothing leaves.</td></tr>
+<tr><td><strong>Enhance with AI</strong></td><td>The dictated text, your Dictionary spellings and your custom instructions go to the one language model you chose for Enhance.</td><td>Nothing leaves if that model is a server on your own PC.</td></tr>
+<tr><td><strong>Live transcript</strong> during a meeting</td><td>Your microphone and the computer audio stream live, as two channels, to Deepgram.</td><td>If Notes use a speech model on this PC that keeps up, the live transcript is made on this PC.</td></tr>
+<tr><td><strong>Meeting transcript</strong> after a recording</td><td>The audio of each channel (your microphone, and what your speakers played) goes to the speech service chosen for notes.</td><td>Nothing leaves.</td></tr>
+<tr><td><strong>Summary, title and tags</strong></td><td>The transcript with speaker names and times, any notes you typed or marked during the meeting, your name, the template, your Dictionary spellings, your existing tags and the times and captions of your images go to a language model. Images and audio are not sent.</td><td>Nothing leaves if the model is a server on your own PC.</td></tr>
+<tr><td><strong>Ask</strong> (on a note, or in the Live window)</td><td>The question goes to the summary model with the note&#39;s summary, its image times and captions, and its transcript (in the Live window: the transcript so far).</td><td>Same as above.</td></tr>
+<tr><td><strong>Ask your notes</strong> (Ctrl+K)</td><td>The question and only the best matching passages (at most 10 for <strong>Quick</strong>, more for <strong>Deep</strong>) go to the language model.</td><td>Same as above.</td></tr>
+<tr><td><strong>Search</strong> (Ctrl+K)</td><td>Nothing. The search index is a file on your PC.</td><td>Nothing.</td></tr>
+<tr><td><strong>Recognize people by voice</strong></td><td>Nothing, once the speaker model is downloaded.</td><td>Nothing.</td></tr>
+<tr><td><strong>Export</strong> (Markdown, PDF, Word, email file, captions, audio)</td><td>Nothing. Files are made on your PC.</td><td>Nothing.</td></tr>
+<tr><td><strong>Test</strong> button on a provider</td><td>A 2-second test clip (speech) or a short test phrase (language model) goes to that provider.</td><td>Nothing.</td></tr>
+<tr><td><strong>Webhooks</strong></td><td>Only the parts of a note you ticked go to the address you saved.</td><td>n/a</td></tr>
+<tr><td><strong>The connector for AI apps</strong></td><td>Notes and action items you search for go to the AI app you connected, on this PC. What that app does with them is up to that app and its service.</td><td>n/a</td></tr>
+<tr><td><strong>Updates</strong></td><td>A request for the list of builds, then the update file.</td><td>n/a</td></tr>
+</tbody></table></div>
+<p>A few details that matter:</p>
+<ul>
+<li><strong>Fallback.</strong> If the service you use for dictation fails or is slow, A9 Voice sends the same audio to your fallback service. If you do not want audio to reach a second company, set <strong>Use as fallback</strong> to a model on this PC, or to none.</li>
+<li><strong>Summaries try more than one model.</strong> Summaries, Ask and Deep answers try the model you chose first and, if it fails or is rate limited, the next language model you have set up. If you want text to go to only one place, set up only one language model.</li>
+<li><strong>OpenRouter</strong> is a routing service: your text goes to OpenRouter, which passes it to the model you picked. The same is true of any custom server you point at a remote service.</li>
+<li><strong>Deepgram live.</strong> With <strong>Live transcript</strong> on, a Deepgram key saved, and a Notes speech model that is not on this PC, both sides of the call stream to Deepgram live, whatever the Notes speech model is. To stop that, turn <strong>Live transcript</strong> off, use a Notes speech model on this PC, or disconnect the Deepgram key.</li>
+<li><strong>Keeping the dictation connection ready.</strong> While A9 Voice runs and a cloud service is set for dictation, it sends that service a small request every few minutes, so the next dictation starts without delay. The request carries your key and no audio or text. With a model on this PC set for dictation, there is no such request.</li>
+<li><strong>Dictation uses the clipboard briefly.</strong> It puts the text on the clipboard to paste it, keeps it out of Windows clipboard history and the cloud clipboard, and puts back what you had copied. When you ask for a copy yourself (tray <strong>Copy last transcription</strong>), that copy is allowed into clipboard history.</li>
+</ul>
+<h2 id="what-each-service-receives">What each service receives<a class="anchor" href="#what-each-service-receives" aria-label="Link to What each service receives">#</a></h2>
+<p>The services A9 Voice can call are the ones in <strong>Settings › Speech models</strong> and <strong>Settings › Language models</strong>. Each one only receives data when you set up its key (or address) and use it.</p>
+<ul>
+<li><strong>Speech:</strong> Groq, Deepgram, OpenAI, ElevenLabs, and any server you add with <strong>Add custom API</strong>.</li>
+<li><strong>Language models:</strong> OpenRouter, OpenAI, Anthropic, Groq, Google, and any server you add with <strong>Add custom API</strong>.</li>
+</ul>
+<p>Each service&#39;s own terms say what it does with data it receives, and you pay it directly. A9 Voice has no copy of what you send.</p>
+<h2 id="keeping-everything-on-this-pc">Keeping everything on this PC<a class="anchor" href="#keeping-everything-on-this-pc" aria-label="Link to Keeping everything on this PC">#</a></h2>
+<p>You can use A9 Voice with no cloud service at all:</p>
+<ol>
+<li>In <strong>Settings › Speech models</strong>, download a model under <strong>On this PC</strong> (Parakeet V2 for English, or a multilingual model) and tick <strong>Use for dictation</strong> and <strong>Use for notes</strong>. Set <strong>Use as fallback</strong> to another model on this PC, or none.</li>
+<li>In the same page, <strong>Disconnect</strong> any cloud speech keys you no longer want. With no key saved, nothing can be sent there.</li>
+<li>For summaries, Enhance and Ask, run a language-model server on your own PC and add it in <strong>Settings › Language models</strong> with <strong>Add custom API</strong>. The page shows <code>http://localhost:11434/v1</code> as an example address. Tick <strong>Use for Enhance, summaries and Ask</strong> (this also sets the <strong>Summary model</strong> in <strong>Settings › Transcript &amp; summary</strong>). <strong>Disconnect</strong> any cloud language models, because summaries fall back to them.</li>
+<li>Leave <strong>Settings › Integrations</strong> empty, and leave <strong>Connector for AI apps</strong> off if you do not want notes to reach another app.</li>
+<li>For <strong>Live transcript</strong>, use a speech model on this PC that keeps up (its window says whether it does), or turn <strong>Live transcript</strong> off.</li>
+</ol>
+<p>What still uses the network in this setup:</p>
+<ul>
+<li><strong>The update check.</strong> A9 Voice checks a9voice.com and the project&#39;s release files on GitHub a few seconds after it starts and then every 6 hours. There is no switch to turn it off. If the PC is offline the check simply fails and tries again later.</li>
+<li><strong>Downloads you start.</strong> Speech models come from Hugging Face. <strong>Graphics-card support</strong> (about 25 MB, once) comes from files.pythonhosted.org. The speaker model for voice recognition comes from the project&#39;s release page on GitHub. All are fixed to one version and checked against a known checksum before use. After they are downloaded you can work with no internet at all.</li>
+<li><strong>Web pages you open.</strong> The <strong>Get your key</strong> buttons open the provider&#39;s own page in your browser. That is your browser, not A9 Voice.</li>
+</ul>
+<h2 id="no-telemetry">No telemetry<a class="anchor" href="#no-telemetry" aria-label="Link to No telemetry">#</a></h2>
+<p>A9 Voice sends no usage data, no crash reports and no analytics. The only network calls are to the speech and language services you set up, to the update locations above, to the download locations above, and to webhook addresses you add. This is a rule of how the app is built, and the About card says it too.</p>
+<h2 id="where-your-files-live">Where your files live<a class="anchor" href="#where-your-files-live" aria-label="Link to Where your files live">#</a></h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What</th><th scope="col">Where</th></tr></thead><tbody>
+<tr><td>Settings, history, notes database, search index, voice database</td><td><code>%APPDATA%\com.riptide9.scribe</code> (the folder name is the app&#39;s permanent internal identifier): <code>settings.json</code>, <code>history.db</code>, <code>notes.db</code>, <code>search.db</code>, <code>voices.db</code>, and <code>window.json</code> (the main window&#39;s size and place)</td></tr>
+<tr><td>Template logos</td><td><code>%APPDATA%\com.riptide9.scribe\templates</code></td></tr>
+<tr><td>Logs</td><td><code>%APPDATA%\com.riptide9.scribe\logs</code> (<strong>Open logs folder</strong> in Settings › General › About)</td></tr>
+<tr><td>Notes (summary, transcript, images)</td><td><code>Documents\A9 Voice\Notes</code>, or the folder you pick in <strong>Settings › Storage</strong></td></tr>
+<tr><td>Audio (dictation and meetings)</td><td><code>Documents\A9 Voice\Audio</code>, or the folder you pick in <strong>Settings › Dictation audio</strong>. Dictation audio is in <strong>Transcribe</strong>, meeting audio in <strong>Notes</strong></td></tr>
+<tr><td>Speech models and graphics-card support</td><td><code>%LOCALAPPDATA%\A9 Voice\models</code></td></tr>
+<tr><td>API keys, webhook addresses and secrets</td><td>Windows Credential Manager, under names that start with <code>com.riptide9.scribe/</code></td></tr>
+</tbody></table></div>
+<p>A copy of a recording is also kept briefly while it is being recorded and written up, in a temporary <code>notes-spool</code> folder in the app&#39;s data folder. It is removed afterwards.</p>
+<p>Settings, the databases and the logs stay in the app&#39;s data folder on purpose: Documents may be synced by a cloud-storage service you use, and a synced database file can be damaged. The notes and audio folders are in Documents by default, so if your Documents folder is synced, they are too. That is your choice of folder, not something A9 Voice does.</p>
+<p>If a hard crash damages the settings file or a database, A9 Voice keeps the damaged file beside the new one and tells you with a notice in the pill. Settings come back from the last good copy (or start from the defaults if there is none); a damaged history or notes database is rebuilt with the rows that could be read.</p>
+<h2 id="your-keys">Your keys<a class="anchor" href="#your-keys" aria-label="Link to Your keys">#</a></h2>
+<p>API keys are stored in <strong>Windows Credential Manager</strong> as generic credentials, on this PC. A9 Voice never writes them to <code>settings.json</code>, the logs, the exported settings zip or the app&#39;s own storage. The windows in the app only ever learn whether a key is set. Webhook addresses are stored the same way, because many contain a secret. <strong>Disconnect</strong> on a provider removes its key.</p>
+<p><strong>Copy diagnostics</strong> removes anything that looks like a key before it copies the last 200 log lines.</p>
+<h2 id="what-the-logs-hold">What the logs hold<a class="anchor" href="#what-the-logs-hold" aria-label="Link to What the logs hold">#</a></h2>
+<p>The log files record timings, lengths (&quot;90 characters&quot;), status codes, provider and model names, and the name of the app a dictation went into. They never hold API keys or what you said. The files are kept to about 2 MB each, with a few older ones; the oldest are removed.</p>
+<p>One more file is local and worth knowing about: <code>meeting-titles.jsonl</code> in the logs folder. When <strong>Name notes after the meeting</strong> is on (or logging), A9 Voice reads the call app&#39;s window titles for the first 90 seconds of a call to find the meeting&#39;s name. This file keeps the titles it saw and the name it chose, for the last 200 calls, so you can check a wrong pick. It stays on your PC.</p>
+<h2 id="voiceprints">Voiceprints<a class="anchor" href="#voiceprints" aria-label="Link to Voiceprints">#</a></h2>
+<p><strong>Recognize people by voice</strong> is off until you turn it on, after an explainer. When on, A9 Voice keeps a <strong>voiceprint</strong> for a person you tag in the Live window or name in a note: numbers that describe how they sound, not a recording. Voiceprints:</p>
+<ul>
+<li>are stored only in <code>voices.db</code> in the app&#39;s data folder, and the database is set up to overwrite deleted data;</li>
+<li>are never in your notes and never sent anywhere, including to the speech and language services, webhooks and the connector;</li>
+<li>are learned only from names you give, never from a guess;</li>
+<li>are deleted for good with <strong>Forget</strong> (one person) or <strong>Delete all voices</strong> in <strong>Settings › Voices</strong>.</li>
+</ul>
+<p>Turning the feature on downloads the speaker model once. See <a href="/docs/voices/">Voices</a>.</p>
+<h2 id="how-long-things-are-kept">How long things are kept<a class="anchor" href="#how-long-things-are-kept" aria-label="Link to How long things are kept">#</a></h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What</th><th scope="col">How long</th></tr></thead><tbody>
+<tr><td>Dictation history</td><td>The last 1,000 dictations, or the number you choose in <strong>Settings › General › History kept</strong>. <strong>Clear all</strong> in the Transcribe history deletes the rest.</td></tr>
+<tr><td>Dictation audio</td><td>Saved by default and kept 7 days, or the time you choose in <strong>Keep dictation audio</strong>. Audio for a failed dictation is kept until you retry or delete it.</td></tr>
+<tr><td>Notes</td><td>Until you delete the note.</td></tr>
+<tr><td>Notes audio</td><td>30 days, or the time you choose in <strong>Keep notes audio</strong>. Only the audio goes; the summary, transcript and images stay. Audio of a note that failed is kept.</td></tr>
+<tr><td>Voiceprints</td><td>Until you forget them. The Voices page can show people not recognized in 60 days or more.</td></tr>
+<tr><td>Logs</td><td>A few files of about 2 MB.</td></tr>
+<tr><td>Meeting-title log</td><td>The last 200 calls.</td></tr>
+</tbody></table></div>
+<h2 id="exporting-and-importing-your-setup">Exporting and importing your setup<a class="anchor" href="#exporting-and-importing-your-setup" aria-label="Link to Exporting and importing your setup">#</a></h2>
+<p><strong>Export…</strong> in <strong>Settings › Account</strong> writes a zip with your settings, Dictionary, templates (with logos) and tag names. It does not contain API keys, webhook addresses or secrets, your history, notes, audio or voiceprints. The settings do contain folder paths, custom server addresses and your profile, so treat the file as personal. <strong>Import…</strong> reads such a zip and keeps what belongs to this PC (devices, folders, window places, setup and update state, and the voice-recognition switch). Keys are not carried over; add them again on the new PC.</p>
+<h2 id="the-connector-and-webhooks">The connector and webhooks<a class="anchor" href="#the-connector-and-webhooks" aria-label="Link to The connector and webhooks">#</a></h2>
+<p>Both let something outside A9 Voice receive your notes, and both are off until you set them up.</p>
+<ul>
+<li><strong>The connector for AI apps</strong> lets an AI app on this PC search and read your notes. It is read only. It can see titles, summaries, transcripts, typed notes, image captions and action items (and your dictation history if <strong>Search dictations too</strong> is on). It never gets audio, images or voiceprints. Each request is logged on the Connectors page. See <a href="/docs/connector/">Connector for AI apps</a>.</li>
+<li><strong>Webhooks</strong> send a note to an address you add, when it is ready. The receiver gets exactly the parts you ticked, nothing else. Audio, image files and voiceprints are never sent. Whoever can read that service can read what you send, so add only places you trust. See <a href="/docs/webhooks/">Webhooks</a>.</li>
+</ul>
+<h2 id="recording-consent">Recording consent<a class="anchor" href="#recording-consent" aria-label="Link to Recording consent">#</a></h2>
+<p>Some places require everyone&#39;s permission before you record a conversation. A9 Voice records what your microphone hears and what your computer plays, and no bot joins the call. Getting permission is your responsibility, not the app&#39;s.</p>
+<h2 id="delete-your-data">Delete your data<a class="anchor" href="#delete-your-data" aria-label="Link to Delete your data">#</a></h2>
+<p>Pick what you want gone. Everything below is on your PC only.</p>
+<ol>
+<li><strong>Dictation history:</strong> open <strong>Transcribe</strong> and use <strong>Clear all</strong>, or delete single dictations. Set <strong>Save audio recordings</strong> off in Settings › Dictation audio to stop keeping new audio.</li>
+<li><strong>Notes:</strong> in <strong>Notes</strong>, open the <strong>⋯</strong> menu of a note and choose <strong>Delete…</strong>, then <strong>Delete audio, files and note</strong>.</li>
+<li><strong>Voiceprints:</strong> <strong>Settings › Voices › Delete all voices</strong>.</li>
+<li><strong>Keys:</strong> <strong>Disconnect</strong> on each provider in Speech models and Language models. This removes the key from Credential Manager.</li>
+<li><strong>Webhooks:</strong> <strong>Delete…</strong> on each one in Integrations removes its address and secrets.</li>
+<li><strong>Models:</strong> open a model under <strong>On this PC</strong> and choose <strong>Delete</strong>.</li>
+<li><strong>Everything else:</strong> uninstall A9 Voice in Windows <strong>Settings › Apps</strong>. To also remove the files it leaves, delete the app&#39;s data folder, <code>%APPDATA%\com.riptide9.scribe</code>, the models folder in <code>%LOCALAPPDATA%\A9 Voice</code>, and your notes and audio folders in <code>Documents\A9 Voice</code>. Then open Windows <strong>Credential Manager</strong>, choose <strong>Windows Credentials</strong>, and remove any entries whose names start with <code>com.riptide9.scribe/</code>.</li>
+</ol>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/settings-reference/">Settings reference</a> for every option.</li>
+<li><a href="/docs/speech-models/">Speech models</a> and <a href="/docs/language-models/">Language models</a>.</li>
+<li><a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/updates-and-channels/"><span class="docs-step-l">Previous</span><span>Updates and channels</span></a><a class="docs-step next" href="/docs/keyboard-shortcuts/"><span class="docs-step-l">Next</span><span>Keyboard shortcuts</span></a></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#no-telemetry">No telemetry</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+name: Bug report
+description: Something in A9 Voice doesn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!CAUTION]
+        > **Never paste API keys, tokens or your settings.json.** Logs: remove any line containing `key`, `token` or `Bearer` first.
+  - type: input
+    id: version
+    attributes:
+      label: A9 Voice version
+      description: Find it in Settings › About.
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Which feature
+      options:
+        - Transcribe
+        - Notes
+        - Settings
+        - Updates
+        - Other
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Speech provider
+      options:
+        - Groq
+        - Deepgram
+        - OpenAI
+        - ElevenLabs
+        - Custom
+        - n/a
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image here. Check that it shows no keys or private text.

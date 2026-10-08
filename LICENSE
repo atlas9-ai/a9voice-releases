@@ -1,0 +1,50 @@
+A9 Voice — Proprietary Software License (Preview)
+
+Copyright (c) 2026 Atlas9 LLC. All rights reserved.
+
+A9 Voice ("the Software") is proprietary software owned by Atlas9 LLC.
+The Software is not open source.
+
+1. Permitted use. During the preview you may download, install and use the
+   Software free of charge for your own personal or internal business use on
+   devices you own or control.
+
+2. Restrictions. You may not, and may not allow others to:
+   (a) copy, modify, translate or create derivative works of the Software,
+       except as needed to install and use it;
+   (b) decompile, disassemble, reverse engineer or attempt to extract the
+       source code of the Software, except to the extent applicable law
+       expressly permits this despite this restriction;
+   (c) redistribute, sell, rent, lease, sublicense, host or otherwise make the
+       Software available to third parties;
+   (d) remove or alter any copyright, trademark or other notices; or
+   (e) use the A9 Voice name or logos except to refer to the Software.
+
+3. Third-party services. The Software sends audio or text only to the speech
+   and AI providers you choose and configure with your own API keys. Your use
+   of those providers is governed by their terms and pricing. You are
+   responsible for your keys and for having any consent required to record
+   or transcribe other people.
+
+4. Website and documentation. The website, documentation, screenshots and
+   other materials in this repository are also (c) Atlas9 LLC, all rights
+   reserved, unless a file states otherwise. Third-party fonts and libraries
+   remain under their own licenses (for example, fonts/OFL.txt).
+
+5. Updates and changes. Future versions may require a paid license. This
+   license may be updated for future versions; the version that ships with a
+   release applies to that release.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+7. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, ATLAS9
+   LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR
+   CONSEQUENTIAL DAMAGES, OR ANY LOSS OF DATA, PROFITS OR BUSINESS, ARISING
+   FROM THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+8. Termination. This license ends automatically if you breach it. You must
+   then stop using the Software and delete all copies.
+
+Questions: contact@a9voice.com

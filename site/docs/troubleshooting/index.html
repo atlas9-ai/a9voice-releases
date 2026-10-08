@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting and FAQ · A9 Voice Manual</title>
+<meta name="description" content="Fixes for the things that go wrong most often, how to copy the diagnostics that help someone find the cause, and short answers to common questions.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/docs/troubleshooting/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Troubleshooting and FAQ · A9 Voice Manual">
+<meta property="og:description" content="Fixes for the things that go wrong most often, how to copy the diagnostics that help someone find the cause, and short answers to common questions.">
+<meta property="og:url" content="https://a9voice.com/docs/troubleshooting/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/docs.css">
+<script src="/js/site.js" defer></script>
+</head>
+<body class="docs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <a class="brand" href="/" aria-label="A9 Voice home">
+    <img class="mark" src="/img/icon-32.svg" alt="" width="32" height="32">
+    <img class="wordmark" src="/img/wordmark-dark.svg" alt="A9 Voice" width="121" height="32">
+  </a>
+  <button class="menu" type="button" aria-expanded="false" aria-controls="nav">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr">Menu</span>
+  </button>
+  <nav id="nav" aria-label="Main">
+    <a href="/#transcribe">Transcribe</a>
+    <a href="/#notes">Notes</a>
+    <a href="/#privacy">Privacy</a>
+    <a href="/docs/" aria-current="page">Manual</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
+  <a class="btn btn-sm" href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe">Download free</a>
+</header>
+<div class="docs-shell wrap">
+  <aside class="docs-side">
+    <button class="docs-toggle" type="button" aria-expanded="false" aria-controls="docs-nav">Manual menu</button>
+    <div id="docs-nav" class="docs-nav-wrap">
+      <form class="docs-search" role="search" action="/docs/" onsubmit="return false">
+        <label class="sr" for="docs-q">Search the manual</label>
+        <input id="docs-q" type="search" placeholder="Search the manual" autocomplete="off" spellcheck="false" aria-controls="docs-results" aria-describedby="docs-q-hint">
+        <span id="docs-q-hint" class="sr">Press the slash key to jump to search. Results appear below the box.</span>
+      </form>
+      <div id="docs-status" class="sr" role="status" aria-live="polite"></div>
+      <ul id="docs-results" class="docs-results" hidden></ul>
+      <nav class="docs-nav" aria-label="Manual">
+<div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/" aria-current="page">Troubleshooting and FAQ</a></li></ul></div>
+      </nav>
+    </div>
+  </aside>
+  <main id="main" class="docs-main">
+    <article class="docs-article">
+      <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
+      <h1>Troubleshooting and FAQ</h1>
+      <p class="docs-lead">Fixes for the things that go wrong most often, how to copy the diagnostics that help someone find the cause, and short answers to common questions.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.3</p>
+      <p>Find the symptom, read the cause, try the fix. Each entry links to the page with the full story. If none of them helps, <a href="#report-a-problem">copy your diagnostics and report the problem</a>.</p>
+<h2 id="dictation">Dictation<a class="anchor" href="#dictation" aria-label="Link to Dictation">#</a></h2>
+<h3 id="i-hear-no-tone-when-i-start-dictating">I hear no tone when I start dictating<a class="anchor" href="#i-hear-no-tone-when-i-start-dictating" aria-label="Link to I hear no tone when I start dictating">#</a></h3>
+<p>The start tone is a soft two-note sound that plays about a quarter of a second after you press the dictation key, so a quick tap stays silent.</p>
+<ul>
+<li><strong>Check the switch.</strong> Open <strong>Settings › Microphone</strong>. <strong>Sounds</strong> must be on, and <strong>Volume</strong> must not be at the bottom.</li>
+<li><strong>Sleepy or Bluetooth outputs.</strong> A USB or Bluetooth headset that has gone to sleep used to swallow the tone. A9 Voice now wakes the output when you press the key. If you run an older version, <a href="/docs/updates-and-channels/">update</a>.</li>
+<li><strong>In a call.</strong> During a call, or with a headset whose microphone is in call mode, the tone plays on the headset&#39;s call audio and can come a moment late.</li>
+</ul>
+<p>Every tone is written to the log with where it played, so <strong>Copy diagnostics</strong> shows whether it was sent. More: <a href="/docs/transcribe/">Transcribe</a>.</p>
+<h3 id="the-pill-says-mic-muted">The pill says &quot;Mic muted&quot;<a class="anchor" href="#the-pill-says-mic-muted" aria-label="Link to The pill says &quot;Mic muted&quot;">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-mic-muted-1x.webp" srcset="/img/docs/troubleshooting-mic-muted-1x.webp 1x, /img/docs/troubleshooting-mic-muted.webp 2x" width="520" height="100" alt="The amber pill that says the microphone is muted, with a button to use another microphone." loading="lazy" decoding="async"></figure></p>
+<p>The microphone is muted in Windows or in your call app (for example Teams), so A9 Voice heard only silence. Unmute it and try again. If another microphone is available and not muted, the pill offers a button, <strong>Use</strong> followed by that microphone&#39;s name and <strong>for dictation</strong>; press it to switch. Clicking the pill opens <strong>Settings › Microphone</strong>. To keep dictating while your headset is muted in a call, pick a second microphone for <strong>Dictation microphone</strong> in <strong>Settings › Dictation</strong>.</p>
+<h3 id="the-pill-says-didnt-catch-that">The pill says &quot;Didn&#39;t catch that&quot;<a class="anchor" href="#the-pill-says-didnt-catch-that" aria-label="Link to The pill says &quot;Didn't catch that&quot;">#</a></h3>
+<p>A9 Voice heard no speech. Open <strong>Settings › Microphone</strong>, press <strong>Test</strong> and say a few words: the bar should move when you talk. Check that the right microphone is picked and not muted, hold the key a little longer, and speak after the tone. Make sure <strong>Language</strong> in <strong>Settings › Dictation</strong> matches what you speak.</p>
+<h3 id="ctrl-space-is-in-use-by-another-app">&quot;Ctrl+Space is in use by another app&quot;<a class="anchor" href="#ctrl-space-is-in-use-by-another-app" aria-label="Link to &quot;Ctrl+Space is in use by another app&quot;">#</a></h3>
+<p>Another program has the same shortcut, often another dictation tool. A9 Voice shows <strong>Key in use · fix</strong> in the sidebar until it is solved, and A9 Voice cannot use that key meanwhile.</p>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-key-in-use-1x.webp" srcset="/img/docs/troubleshooting-key-in-use-1x.webp 1x, /img/docs/troubleshooting-key-in-use.webp 2x" width="223" height="64" alt="The sidebar showing Key in use · fix in place of Ready." loading="lazy" decoding="async"></figure></p>
+<p>Quit the other program, or open <strong>Settings › Dictation</strong> and press the <strong>Dictation key</strong> box to choose a different shortcut. The same applies to the hands-free key and the other keys: the page shows the conflict under the key. More: <a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a>.</p>
+<h3 id="nothing-is-pasted-or-copied-instead-appears">Nothing is pasted, or &quot;copied instead&quot; appears<a class="anchor" href="#nothing-is-pasted-or-copied-instead-appears" aria-label="Link to Nothing is pasted, or &quot;copied instead&quot; appears">#</a></h3>
+<p>When A9 Voice cannot put text where you are typing, it copies the text to the clipboard so you can paste it yourself with <kbd>Ctrl</kbd>+<kbd>V</kbd>, and the pill says why:</p>
+<ul>
+<li><strong>&quot;Can&#39;t type into an admin window — copied instead&quot;.</strong> Windows does not let a normal app type into a program running as administrator. Paste with <kbd>Ctrl</kbd>+<kbd>V</kbd>.</li>
+<li><strong>&quot;Paste was blocked — copied instead&quot; or &quot;Typing was blocked — copied instead&quot;.</strong> The app ignores pasted or typed input. Try the other <strong>How text goes in</strong> setting in <strong>Settings › Dictation</strong>, or set <strong>Paste keys</strong> to <strong>Shift+Insert</strong> under <strong>Show advanced</strong>, which some terminals and remote desktops prefer.</li>
+<li><strong>&quot;The clipboard was busy — try again&quot;.</strong> Another program was holding the clipboard. Dictate again.</li>
+<li><strong>&quot;Copied — click a text box in A9 Voice first&quot;.</strong> You dictated while an A9 Voice window without a text box was in front. Click a text box first.</li>
+</ul>
+<p>You can also put the last result in again with <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>, or use <strong>Copy last transcription</strong> in the tray menu. More: <a href="/docs/transcribe/">Transcribe</a>.</p>
+<h3 id="the-pill-shows-an-amber-error">The pill shows an amber error<a class="anchor" href="#the-pill-shows-an-amber-error" aria-label="Link to The pill shows an amber error">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-key-rejected-1x.webp" srcset="/img/docs/troubleshooting-key-rejected-1x.webp 1x, /img/docs/troubleshooting-key-rejected.webp 2x" width="520" height="100" alt="An amber pill that says a key was rejected, with a Fix button." loading="lazy" decoding="async"></figure></p>
+<p>Press <strong>Fix</strong> in the pill: it opens the page where the problem is. The message names the service and the problem:</p>
+<ul>
+<li><strong>&quot;Groq key missing&quot; or &quot;Groq key rejected&quot;</strong> (or the name of whichever service you use). The key is not saved or the service refused it. Open the service in <strong>Settings › Speech models</strong>, paste a fresh key and press <strong>Test</strong>.</li>
+<li><strong>&quot;Groq rate limit hit&quot;.</strong> You sent too many requests, or your plan&#39;s limit was reached. Wait a moment, or use another service as the <strong>fallback</strong>.</li>
+<li><strong>&quot;Groq timed out&quot; or &quot;Groq error 503&quot;</strong> (an error followed by a number). The service is slow or down. If a fallback is set, A9 Voice already tried it once.</li>
+<li><strong>&quot;No internet&quot;.</strong> A9 Voice could not reach the service. If you have downloaded a model on this PC, it answers automatically, and the pill adds <strong>offline</strong> to the result.</li>
+<li><strong>&quot;Groq sent a bad reply&quot; or &quot;Groq couldn&#39;t run&quot;.</strong> The service gave something A9 Voice could not read. Try again; if it repeats, copy the diagnostics.</li>
+<li><strong>&quot;Pick how A9 Voice hears you first&quot;.</strong> No speech service or model is set up yet. Open <strong>Settings › Speech models</strong>.</li>
+<li><strong>&quot;Timed out after 15 s. Nothing was pasted&quot;.</strong> A dictation took longer than 15 seconds. Check your connection and try again.</li>
+<li><strong>&quot;The microphone stopped&quot;.</strong> The microphone disappeared while you spoke. Re-plug it and check <strong>Settings › Microphone</strong>.</li>
+</ul>
+<p>After a successful dictation the pill may add <strong>via Deepgram</strong> (or another name): that means your fallback answered because the first service failed. Details: <a href="/docs/speech-models/">Speech models</a>.</p>
+<h2 id="meetings-and-notes">Meetings and notes<a class="anchor" href="#meetings-and-notes" aria-label="Link to Meetings and notes">#</a></h2>
+<h3 id="the-recording-bar-or-the-pill-is-gone">The recording bar or the pill is gone<a class="anchor" href="#the-recording-bar-or-the-pill-is-gone" aria-label="Link to The recording bar or the pill is gone">#</a></h3>
+<p>The recording bar is a small window that stays above other windows. If you cannot see it:</p>
+<ul>
+<li>Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>. This is <strong>Show recording bar</strong> in <strong>Settings › Recording</strong>. It brings the bar back from wherever it is, including from the small minimized pill; pressing it again hides the bar.</li>
+<li>Click the <strong>A9 Voice tray icon</strong>. While a recording is on it brings the bar back. The tray menu also has <strong>Show recording bar</strong>.</li>
+<li>Right-click the tray icon and choose <strong>Reset bar position</strong> to put the bar back at its default place on this monitor setup. An undocked Live window goes back under the bar.</li>
+<li>Every button in the Live window also brings the bar back.</li>
+</ul>
+<p>If the dictation pill looks cut off or the wrong size, <a href="#copy-diagnostics">copy the diagnostics</a>: they include the display details that help. More: <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
+<h3 id="a-call-did-not-start-recording">A call did not start recording<a class="anchor" href="#a-call-did-not-start-recording" aria-label="Link to A call did not start recording">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-held-back-1x.webp" srcset="/img/docs/troubleshooting-held-back-1x.webp 1x, /img/docs/troubleshooting-held-back.webp 2x" width="372" height="111" alt="The recording bar's notice that a call was found but not recorded, with a Record now button." loading="lazy" decoding="async"></figure></p>
+<p>Check these in order:</p>
+<ol>
+<li><strong>Is the app on?</strong> Open <strong>Settings › Recording</strong>. Only <strong>Microsoft Teams</strong> and <strong>Zoho Cliq and Zoho Meeting</strong> are on in a new install. Turn on <strong>Zoom</strong>, <strong>Webex</strong>, <strong>Slack huddles</strong>, <strong>Discord</strong>, or <strong>Browser calls</strong> for calls in a web browser, or add another app under <strong>Other app</strong>.</li>
+<li><strong>Is the app using the microphone?</strong> A9 Voice starts when the app starts using your microphone, and stops when the app lets go of it.</li>
+<li><strong>Is another recording app capturing the call?</strong> With <strong>Wait while another recording app runs</strong> on, A9 Voice holds back only while another recording app is really capturing the call. The bar says, for example, &quot;Teams call detected: not recording&quot; and &quot;Another recording app is capturing it&quot;, and offers <strong>Record now</strong>. Press it to record anyway, or turn the setting off.</li>
+</ol>
+<p>You can always start a recording yourself with the <strong>Record</strong> button, <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> or <strong>Start recording</strong> in the tray menu. More: <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
+<h3 id="show-in-folder-opens-the-wrong-place">Show in folder opens the wrong place<a class="anchor" href="#show-in-folder-opens-the-wrong-place" aria-label="Link to Show in folder opens the wrong place">#</a></h3>
+<p>Older versions could open Documents instead of the note&#39;s folder or file. This is fixed; <a href="/docs/updates-and-channels/">update</a> to the latest build. If it still opens the wrong place, copy the diagnostics and report it.</p>
+<h3 id="i-named-a-speaker-wrong-in-the-live-window">I named a speaker wrong in the Live window<a class="anchor" href="#i-named-a-speaker-wrong-in-the-live-window" aria-label="Link to I named a speaker wrong in the Live window">#</a></h3>
+<p>Every naming action in the Live window can be undone for 10 seconds with <strong>Undo</strong> in the small bar that appears. Nothing is learned during a call, so <strong>Undo</strong> leaves no trace. To fix a name later, click it in the transcript and choose whether the fix is for that line or for everything that speaker said. If the name is already used, A9 Voice asks &quot;Same person?&quot; and can merge the two speakers. After the call you can rename speakers on the note page. More: <a href="/docs/live-window/">Live window</a> and <a href="/docs/note-page/">Note page</a>.</p>
+<h3 id="a-note-is-stuck-on-transcribing-or-says-it-failed">A note is stuck on &quot;Transcribing…&quot; or says it failed<a class="anchor" href="#a-note-is-stuck-on-transcribing-or-says-it-failed" aria-label="Link to A note is stuck on &quot;Transcribing…&quot; or says it failed">#</a></h3>
+<ul>
+<li><strong>Wait for it to finish.</strong> A long meeting takes a while to write up. The note shows its stage: transcribing, then &quot;Writing the summary…&quot;.</li>
+<li><strong>After a crash or a restart,</strong> A9 Voice finishes any note that was left unfinished the next time it starts. Open A9 Voice and give it a minute.</li>
+<li><strong>If the note says it failed,</strong> read the message on the note, then press <strong>Try again</strong> (this needs the audio, which is kept for a failed note). If a service rejected your key, fix it in <strong>Settings › Speech models</strong> first.</li>
+<li><strong>If the transcript is fine but there is no summary,</strong> add a key in <strong>Settings › Language models</strong>, then press <strong>Regenerate summary</strong> in the right-hand column of the note. You can also choose another speech model and press <strong>Regenerate transcript</strong>.</li>
+</ul>
+<p>More: <a href="/docs/note-page/">Note page</a>.</p>
+<h2 id="speech-models-and-the-graphics-card">Speech models and the graphics card<a class="anchor" href="#speech-models-and-the-graphics-card" aria-label="Link to Speech models and the graphics card">#</a></h2>
+<h3 id="a-model-will-not-download">A model will not download<a class="anchor" href="#a-model-will-not-download" aria-label="Link to A model will not download">#</a></h3>
+<p>Model files come from Hugging Face and are checked before use. Messages you may see:</p>
+<ul>
+<li><strong>&quot;The download was cut short; try again&quot;.</strong> The connection dropped. Press <strong>Download</strong> again: it picks up where it stopped.</li>
+<li><strong>&quot;A downloaded file was damaged; try again&quot;.</strong> The checksum did not match, so the file was thrown away. Try again.</li>
+<li><strong>&quot;The download server answered …&quot;.</strong> The server refused or could not find the file. Try later.</li>
+</ul>
+<p>Also check the free space: the model window shows how much is free on the drive. If the download keeps failing, press <strong>Discard partial download</strong> and start again. A firewall, proxy or security tool that blocks huggingface.co will stop downloads. More: <a href="/docs/speech-models/">Speech models</a>.</p>
+<h3 id="the-graphics-card-is-not-used">The graphics card is not used<a class="anchor" href="#the-graphics-card-is-not-used" aria-label="Link to The graphics card is not used">#</a></h3>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-gpu-failed-1x.webp" srcset="/img/docs/troubleshooting-gpu-failed-1x.webp 1x, /img/docs/troubleshooting-gpu-failed.webp 2x" width="810" height="219" alt="The graphics-card panel on Speech models after the card had a problem." loading="lazy" decoding="async"></figure></p>
+<p>Open <strong>Settings › Speech models</strong> and read the <strong>Use graphics card</strong> row. It tells you why:</p>
+<ul>
+<li><strong>&quot;No supported graphics card found. Whisper models run on the processor.&quot;</strong> The PC has no DirectX 12 card that can run models. That is fine: everything works on the processor.</li>
+<li><strong>&quot;The driver is too old for DirectX 12. Update the graphics driver.&quot;</strong> Update the driver from your card&#39;s maker or Windows Update.</li>
+<li><strong>The switch is off.</strong> Turn <strong>Use graphics card</strong> on. A model tile says &quot;Needs Use graphics card&quot; in that case.</li>
+<li><strong>The graphics-card support is not downloaded.</strong> Press <strong>Download</strong> on the <strong>Graphics-card support</strong> row. It is a one-time download of about 25 MB.</li>
+<li><strong>&quot;Needs … of graphics memory&quot;.</strong> The model needs more memory than the card has. The model window names a smaller model to use.</li>
+<li><strong>The PC has two cards.</strong> A <strong>Graphics card</strong> row lets you pick which one runs models.</li>
+</ul>
+<h3 id="graphics-card-unavailable-used-the-processor">&quot;Graphics card unavailable, used the processor&quot;<a class="anchor" href="#graphics-card-unavailable-used-the-processor" aria-label="Link to &quot;Graphics card unavailable, used the processor&quot;">#</a></h3>
+<p>The card had a problem while a model was running, so A9 Voice finished the job on the processor and told you once. Nothing was lost. To try the card again, turn <strong>Use graphics card</strong> off and on. If it keeps happening, copy the diagnostics: they list the card, the driver and the last failure.</p>
+<h2 id="settings-and-files">Settings and files<a class="anchor" href="#settings-and-files" aria-label="Link to Settings and files">#</a></h2>
+<h3 id="a-notice-says-my-settings-or-a-database-was-damaged">A notice says my settings or a database was damaged<a class="anchor" href="#a-notice-says-my-settings-or-a-database-was-damaged" aria-label="Link to A notice says my settings or a database was damaged">#</a></h3>
+<p>A hard crash or power cut can damage a file. At the next start A9 Voice keeps the damaged file beside the new one and shows a notice in the pill:</p>
+<ul>
+<li><strong>&quot;Settings were damaged; restored the last good copy&quot;.</strong> Your settings came back from the previous good version. You might lose the very last change.</li>
+<li><strong>&quot;Settings were damaged and reset; the old file is kept beside them&quot;.</strong> There was no good copy, so settings started from the defaults. Your keys are safe, because they are not in that file.</li>
+<li><strong>&quot;History was damaged. Rebuilt it and kept what could be read; the old file is saved beside it&quot;</strong> (or <strong>Notes</strong>). The rows that could be read were copied back.</li>
+</ul>
+<p>The damaged files are in <code>%APPDATA%\com.riptide9.scribe</code> with a name ending in <code>.bad-</code> or <code>.damaged-</code> and a number. You can send them with a report if you want them looked at; they hold your data, so do not post them in public.</p>
+<h3 id="the-window-looks-wrong-cut-off-or-too-small">The window looks wrong, cut off or too small<a class="anchor" href="#the-window-looks-wrong-cut-off-or-too-small" aria-label="Link to The window looks wrong, cut off or too small">#</a></h3>
+<ul>
+<li>The main window needs at least 960 × 640. Below 1150 pixels wide the sidebar shows only icons; <strong>Keep the sidebar open</strong> at the bottom keeps it open.</li>
+<li>If Windows text size or scaling is above 100%, try 100% to see whether it changes.</li>
+<li><a href="#copy-diagnostics">Copy the diagnostics</a> and attach them to a report: they include your monitors, scaling, Windows text size, the WebView version and the size the pill and recording bar were given.</li>
+</ul>
+<h2 id="getting-help">Getting help<a class="anchor" href="#getting-help" aria-label="Link to Getting help">#</a></h2>
+<h3 id="open-the-manual-from-the-app">Open the manual from the app<a class="anchor" href="#open-the-manual-from-the-app" aria-label="Link to Open the manual from the app">#</a></h3>
+<p>Every page of A9 Voice has a small <strong>?</strong> button at the top right, beside the model chips. It opens this manual in your browser at the page that explains the screen you are on, for example the Speech models page opens <a href="/docs/speech-models/">Speech models</a>. The Live window has the same <strong>?</strong> button in its header. The <strong>Manual</strong> button in the sidebar, and <strong>Help › Manual</strong> in the tray menu, open the front page of the manual.</p>
+<h3 id="copy-diagnostics">Copy diagnostics<a class="anchor" href="#copy-diagnostics" aria-label="Link to Copy diagnostics">#</a></h3>
+<p>Copy diagnostics puts a block of text on your clipboard that tells someone what you are running, without anything private.</p>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-diagnostics-1x.webp" srcset="/img/docs/troubleshooting-diagnostics-1x.webp 1x, /img/docs/troubleshooting-diagnostics.webp 2x" width="818" height="357" alt="The About card with the Copy diagnostics button." loading="lazy" decoding="async"></figure></p>
+<p>You find it in two places: <strong>Settings › General</strong>, at the bottom in the <strong>About</strong> card, and the tray menu under <strong>Help › Copy diagnostics</strong>. Paste it into your message.</p>
+<p>It contains:</p>
+<ul>
+<li>the A9 Voice version and your Windows version,</li>
+<li>the microphone in use,</li>
+<li>which speech and language services you have set up (names only), and which is first and which is the fallback,</li>
+<li>your dictation shortcuts and whether Windows accepted them, and your update channel,</li>
+<li>the graphics-card section: whether <strong>Use graphics card</strong> is on, the cards found with their memory and driver, whether graphics-card support is downloaded, and the last failure,</li>
+<li>the display section: monitors, scaling, text size, WebView version, the font in use, and the size given to the pill and recording bar,</li>
+<li>the last 200 lines of the log.</li>
+</ul>
+<p>It never contains your API keys: anything that looks like a key is replaced by <code>[redacted]</code>. It never contains what you said or the text of your notes, because the logs do not hold them. It does contain names of your devices and the apps you dictated into, so read it before you post it in public.</p>
+<h3 id="report-a-problem">Report a problem<a class="anchor" href="#report-a-problem" aria-label="Link to Report a problem">#</a></h3>
+<ol>
+<li>Press <strong>Copy diagnostics</strong> (above).</li>
+<li>Open the <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">issue form</a> on GitHub and describe what you did, what you expected and what happened. Paste the diagnostics.</li>
+<li>Or paste the diagnostics into an email to <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>.</li>
+</ol>
+<p>Do not post API keys, meeting content or other people&#39;s names in a public issue.</p>
+<h2 id="common-questions">Common questions<a class="anchor" href="#common-questions" aria-label="Link to Common questions">#</a></h2>
+<h3 id="how-much-does-it-cost">How much does it cost?<a class="anchor" href="#how-much-does-it-cost" aria-label="Link to How much does it cost?">#</a></h3>
+<p>A9 Voice is free during the preview. You pay the speech and language services directly, with your own keys, at their prices. <strong>Settings › Usage &amp; cost</strong> shows your own estimate for the month, worked out from a price table you can edit. Models that run on this PC cost nothing per use. See the <a href="/docs/settings-reference/#usage-and-cost">Settings reference</a>.</p>
+<h3 id="is-there-a-mac-version">Is there a Mac version?<a class="anchor" href="#is-there-a-mac-version" aria-label="Link to Is there a Mac version?">#</a></h3>
+<p>No. A9 Voice runs on Windows 10 and 11, 64-bit.</p>
+<h3 id="why-is-it-free">Why is it free?<a class="anchor" href="#why-is-it-free" aria-label="Link to Why is it free?">#</a></h3>
+<p>A9 Voice is free for personal use during the preview. The <strong>Manage license</strong> button on <strong>Settings › Account</strong> says that licenses arrive with 1.0. The speech and language services you use bill you directly either way.</p>
+<h3 id="windows-says-it-protected-my-pc-when-i-install">Windows says it protected my PC when I install<a class="anchor" href="#windows-says-it-protected-my-pc-when-i-install" aria-label="Link to Windows says it protected my PC when I install">#</a></h3>
+<p>That is normal for this preview. The installer is not code-signed yet, so Windows SmartScreen shows a warning once. Click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer runs for your user only and does not ask for administrator rights. Updates after that install without the warning.</p>
+<h3 id="does-a-bot-join-my-meetings">Does a bot join my meetings?<a class="anchor" href="#does-a-bot-join-my-meetings" aria-label="Link to Does a bot join my meetings?">#</a></h3>
+<p>No. A9 Voice records what your microphone hears and what your computer plays. See <a href="/docs/recording-a-meeting/">Recording a meeting</a>, and remember that some places require everyone&#39;s permission to record.</p>
+<h3 id="i-closed-the-window-is-a9-voice-still-running">I closed the window. Is A9 Voice still running?<a class="anchor" href="#i-closed-the-window-is-a9-voice-still-running" aria-label="Link to I closed the window. Is A9 Voice still running?">#</a></h3>
+<p>Yes. Closing the window hides it to the tray, and A9 Voice tells you so the first time. Dictation keeps working. To quit, right-click the tray icon and choose <strong>Quit</strong>.</p>
+<h3 id="does-it-work-without-internet">Does it work without internet?<a class="anchor" href="#does-it-work-without-internet" aria-label="Link to Does it work without internet?">#</a></h3>
+<p>Yes, if you download a speech model under <strong>On this PC</strong>. See <a href="/docs/privacy-and-data/">Privacy and data</a> for how to keep everything on your PC.</p>
+<h3 id="where-is-my-data">Where is my data?<a class="anchor" href="#where-is-my-data" aria-label="Link to Where is my data?">#</a></h3>
+<p>On your PC: settings and history in the app&#39;s data folder, notes as files in a folder you pick, keys in Windows Credential Manager. <a href="/docs/privacy-and-data/">Privacy and data</a> lists every folder and every place data can go.</p>
+<h3 id="why-does-windows-show-my-microphone-as-in-use">Why does Windows show my microphone as in use?<a class="anchor" href="#why-does-windows-show-my-microphone-as-in-use" aria-label="Link to Why does Windows show my microphone as in use?">#</a></h3>
+<p>While you dictate or record, A9 Voice uses the microphone. If <strong>Keep microphone ready</strong> is on in <strong>Settings › Microphone</strong>, the microphone is held open so dictation starts faster, and Windows shows it as in use all the time. Turn the setting off if you do not want that.</p>
+<h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
+<ul>
+<li><a href="/docs/settings-reference/">Settings reference</a></li>
+<li><a href="/docs/privacy-and-data/">Privacy and data</a></li>
+<li><a href="/docs/updates-and-channels/">Updates and channels</a></li>
+</ul>
+
+      <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/keyboard-shortcuts/"><span class="docs-step-l">Previous</span><span>Keyboard shortcuts</span></a><span></span></nav>
+    </article>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#dictation">Dictation</a></li><li class="d3"><a href="#i-hear-no-tone-when-i-start-dictating">I hear no tone when I start dictating</a></li><li class="d3"><a href="#the-pill-says-mic-muted">The pill says &quot;Mic muted&quot;</a></li><li class="d3"><a href="#the-pill-says-didnt-catch-that">The pill says &quot;Didn't catch that&quot;</a></li><li class="d3"><a href="#ctrl-space-is-in-use-by-another-app">&quot;Ctrl+Space is in use by another app&quot;</a></li><li class="d3"><a href="#nothing-is-pasted-or-copied-instead-appears">Nothing is pasted, or &quot;copied instead&quot; appears</a></li><li class="d3"><a href="#the-pill-shows-an-amber-error">The pill shows an amber error</a></li><li class="d2"><a href="#meetings-and-notes">Meetings and notes</a></li><li class="d3"><a href="#the-recording-bar-or-the-pill-is-gone">The recording bar or the pill is gone</a></li><li class="d3"><a href="#a-call-did-not-start-recording">A call did not start recording</a></li><li class="d3"><a href="#show-in-folder-opens-the-wrong-place">Show in folder opens the wrong place</a></li><li class="d3"><a href="#i-named-a-speaker-wrong-in-the-live-window">I named a speaker wrong in the Live window</a></li><li class="d3"><a href="#a-note-is-stuck-on-transcribing-or-says-it-failed">A note is stuck on &quot;Transcribing…&quot; or says it failed</a></li><li class="d2"><a href="#speech-models-and-the-graphics-card">Speech models and the graphics card</a></li><li class="d3"><a href="#a-model-will-not-download">A model will not download</a></li><li class="d3"><a href="#the-graphics-card-is-not-used">The graphics card is not used</a></li><li class="d3"><a href="#graphics-card-unavailable-used-the-processor">&quot;Graphics card unavailable, used the processor&quot;</a></li><li class="d2"><a href="#settings-and-files">Settings and files</a></li><li class="d3"><a href="#a-notice-says-my-settings-or-a-database-was-damaged">A notice says my settings or a database was damaged</a></li><li class="d3"><a href="#the-window-looks-wrong-cut-off-or-too-small">The window looks wrong, cut off or too small</a></li><li class="d2"><a href="#getting-help">Getting help</a></li><li class="d3"><a href="#open-the-manual-from-the-app">Open the manual from the app</a></li><li class="d3"><a href="#copy-diagnostics">Copy diagnostics</a></li><li class="d3"><a href="#report-a-problem">Report a problem</a></li><li class="d2"><a href="#common-questions">Common questions</a></li><li class="d3"><a href="#how-much-does-it-cost">How much does it cost?</a></li><li class="d3"><a href="#is-there-a-mac-version">Is there a Mac version?</a></li><li class="d3"><a href="#why-is-it-free">Why is it free?</a></li><li class="d3"><a href="#windows-says-it-protected-my-pc-when-i-install">Windows says it protected my PC when I install</a></li><li class="d3"><a href="#does-a-bot-join-my-meetings">Does a bot join my meetings?</a></li><li class="d3"><a href="#i-closed-the-window-is-a9-voice-still-running">I closed the window. Is A9 Voice still running?</a></li><li class="d3"><a href="#does-it-work-without-internet">Does it work without internet?</a></li><li class="d3"><a href="#where-is-my-data">Where is my data?</a></li><li class="d3"><a href="#why-does-windows-show-my-microphone-as-in-use">Why does Windows show my microphone as in use?</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+  </main>
+</div>
+<footer class="foot wrap">
+  <span class="foot-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+  <nav class="foot-links" aria-label="Footer">
+    <a href="/docs/">Manual</a>
+    <a href="/changelog/">Changelog</a>
+    <a href="/docs/privacy-and-data/">Privacy</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+    <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+    <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+  </nav>
+</footer>
+<script type="module" src="/js/docs.js"></script>
+</body>
+</html>
