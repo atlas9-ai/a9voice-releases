@@ -1,7 +1,7 @@
 {
   "version": "0.6.7",
   "notes": "- Fixes the bright outline that stayed on a speaker's chip at the top of the Live window after you named them with <kbd>Enter</kbd>. Only the person talking now glows.\n- Fixes the **This is →** box in the Live window being squeezed: the **Speakers** chips now wrap in full and only the list of people scrolls.",
-  "pub_date": "2026-10-09T15:00:59Z",
+  "pub_date": "2026-10-09T15:00:58Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEF1WGtTVmtBSGlXSXdWNFhIYUlDV214RzVSVnkrUFBNSkpWK0ovV05MWURTdjc0WTNDVlYzUjBVSXZObWxhUFE4SjB6QkFiTEI2U2REZjdlYzEvS1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTU4MDEwCWZpbGU6QTkgVm9pY2VfMC42LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi43CjAxVmxXUWZybE5hd0VjTVNXVU5WWncydHNiNEwxdGNiNVZaQ2pzUGF1elhuWXE5YzIzSmhPbSt0MkJJMDlZVDhhNnlGblY0Y0lXSjk4ei9LbjhvSkJBPT0K",
