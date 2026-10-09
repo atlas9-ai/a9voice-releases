@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="t d">
-  <title id="t">The browser's download bar</title>
-  <desc id="d">A mock-up of a browser download panel. It says the installer isn't commonly downloaded and has a Keep button, highlighted in blue.</desc>
+  <title id="t">A browser's download panel</title>
+  <desc id="d">A mock-up of a browser download panel listing the installer with a note that it isn't commonly downloaded.</desc>
   <rect width="720" height="300" rx="16" fill="#17181B"/>
   <rect x="24" y="24" width="672" height="44" rx="10" fill="#1E1F23" stroke="#2A2C31"/>
   <circle cx="48" cy="46" r="6" fill="#34363C"/><circle cx="68" cy="46" r="6" fill="#34363C"/><circle cx="88" cy="46" r="6" fill="#34363C"/>
   <rect x="116" y="34" width="420" height="24" rx="12" fill="#0B0C0E" stroke="#2A2C31"/>
-  <text x="134" y="51" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">a9voice.com/downloading</text>
+  <text x="134" y="51" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">a9voice.com/download</text>
   <rect x="600" y="34" width="80" height="24" rx="12" fill="#2B5BD7" opacity=".25"/>
   <path d="M632 40v10m-5-4 5 5 5-5m-12 9h14" fill="none" stroke="#7AA2F7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   <rect x="332" y="84" width="364" height="190" rx="12" fill="#1E1F23" stroke="#34363C"/>
@@ -15,11 +15,6 @@
   <text x="352" y="170" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">Make sure you trust it before you open it.</text>
   <rect x="352" y="198" width="132" height="44" rx="10" fill="#2B5BD7"/>
   <text x="418" y="226" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Keep</text>
-  <rect x="345" y="191" width="146" height="58" rx="14" fill="none" stroke="#7AA2F7" stroke-width="2" stroke-dasharray="5 4"/>
   <rect x="504" y="204" width="96" height="32" rx="8" fill="none" stroke="#34363C"/>
   <text x="552" y="225" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">Delete</text>
-  <text x="24" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="15" font-weight="600" fill="#7AA2F7">1</text>
-  <text x="48" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="15" fill="#ECEDEE">Open the browser's</text>
-  <text x="48" y="142" font-family="Segoe UI, system-ui, sans-serif" font-size="15" fill="#ECEDEE">downloads list and</text>
-  <text x="48" y="164" font-family="Segoe UI, system-ui, sans-serif" font-size="15" fill="#ECEDEE">choose <tspan font-weight="600" fill="#7AA2F7">Keep</tspan>.</text>
 </svg>

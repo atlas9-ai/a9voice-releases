@@ -39,7 +39,7 @@ A9 Voice is an early preview for Windows 10 and 11 (64-bit), free during the pre
 ## Install
 
 1. [Download the installer](https://a9voice.com/download?src=readme) and run it. It installs for your Windows user only: no admin rights.
-2. Windows may say it "protected your PC", because the installer isn't code-signed yet. Click **More info**, then **Run anyway**. You see this once.
+2. The installer isn't code-signed yet, so Windows shows a note for new publishers. The [download page](https://a9voice.com/download) explains it and lists the installer's SHA-256.
 3. Follow the first-run steps, then see [Getting started](https://a9voice.com/docs/getting-started/).
 
 Everything else (every screen, every setting, webhooks, troubleshooting) is in the [manual](https://a9voice.com/docs/).

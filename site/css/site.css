@@ -221,11 +221,25 @@ kbd.wide { padding: 0 28px; }
 .more:hover { color: #DCE6FD; text-decoration: underline; }
 .panel .more { align-self: flex-start; }
 
-/* The "download started" page (/downloading/, served by the edge Worker at /download) */
-.dlp h2 { font-size: 24px; font-weight: 600; margin: 40px 0 10px; }
-.dlp h3 { font-size: 18px; font-weight: 600; margin: 26px 0 6px; }
+/* The download page (/downloading/, served by the edge Worker at /download) */
+.dlp h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
 .dlp p { margin: 0 0 10px; color: var(--text-2); }
 .dlp figure.shot { margin: 14px 0 6px; }
 .dlp figure.shot img { width: 100%; max-width: 720px; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .dlp .winget { margin-top: 26px; }
 .dlp code { font-family: var(--mono); font-size: .92em; background: var(--surface); padding: 2px 6px; border-radius: 6px; }
+.dlp .dl-card { margin: 28px 0 32px; }
+.dlp .dl-card .btn { max-width: 100%; white-space: normal; text-align: center; }
+.dlp .dl-file { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.dlp .dl-file code { background: none; padding: 0; color: var(--text-2); overflow-wrap: anywhere; }
+.dlp .dl-pub { border-top: 1px solid var(--line); padding-top: 22px; margin-bottom: 26px; }
+.dlp .dl-facts { margin: 14px 0 0; display: grid; gap: 12px; }
+.dlp .dl-facts > div { display: grid; grid-template-columns: 90px 1fr; gap: 12px; align-items: baseline; }
+.dlp .dl-facts dt { font-size: 13px; color: var(--muted); }
+.dlp .dl-facts dd { margin: 0; min-width: 0; color: var(--text-2); }
+.dlp .dl-sha { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; word-break: break-all; color: var(--text); }
+.dlp .dl-note { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); margin: 0 0 8px; }
+.dlp .dl-note > summary { cursor: pointer; padding: 14px 16px; font-weight: 600; color: var(--text); }
+.dlp .dl-note > summary:focus-visible { outline: 2px solid var(--signal, #7AA2F7); outline-offset: 2px; border-radius: 12px; }
+.dlp .dl-note-body { padding: 0 16px 8px; }
+@media (max-width: 520px) { .dlp .dl-facts > div { grid-template-columns: 1fr; gap: 4px; } }
