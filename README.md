@@ -8,7 +8,7 @@
 <p align="center"><b>Hold a key and talk. Join a call and know who's talking.</b><br>Dictation and meeting notes for Windows. No bot in your meeting. Runs on your PC or with your own keys.</p>
 
 <p align="center">
-  <a href="https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe"><b>Download for Windows</b></a> ·
+  <a href="https://a9voice.com/download?src=readme"><b>Download for Windows</b></a> ·
   <a href="https://a9voice.com">Website</a> ·
   <a href="https://a9voice.com/docs/">Manual</a> ·
   <a href="https://a9voice.com/changelog/">Changelog</a> ·
@@ -38,7 +38,7 @@ A9 Voice is an early preview for Windows 10 and 11 (64-bit), free during the pre
 
 ## Install
 
-1. [Download the installer](https://github.com/atlas9-ai/a9voice-releases/releases/latest/download/A9Voice-Setup-x64.exe) and run it. It installs for your Windows user only: no admin rights.
+1. [Download the installer](https://a9voice.com/download?src=readme) and run it. It installs for your Windows user only: no admin rights.
 2. Windows may say it "protected your PC", because the installer isn't code-signed yet. Click **More info**, then **Run anyway**. You see this once.
 3. Follow the first-run steps, then see [Getting started](https://a9voice.com/docs/getting-started/).
 
