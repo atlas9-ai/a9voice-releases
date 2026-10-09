@@ -1,11 +1,13 @@
 {
-  "version": "0.6.5",
-  "notes": "- Moved downloads and updates to the Atlas9 organization. No user-facing change.",
-  "pub_date": "2026-10-08T20:06:25Z",
+  "version": "0.6.7",
+  "notes": "- Fixes the bright outline that stayed on a speaker's chip at the top of the Live window after you named them with <kbd>Enter</kbd>. Only the person talking now glows.\n- Fixes the **This is →** box in the Live window being squeezed: the **Speakers** chips now wrap in full and only the list of people scrolls.",
+  "pub_date": "2026-10-09T15:00:58Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEtMYjZmaHgwa3NvUTIweXpBYndIZmQzSjQ2bzVxL1lRUTN2VHovbU40ZDJYOUphTmpZL1IrR01JU00xSUR3K0xiR0FvbG9sMC94ODJDdEZiVGxKWndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDg5OTE5CWZpbGU6QTkgVm9pY2VfMC42LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi41CjlOejFQK1JqNHFoWG1PUzU1Uy9ic25SVWd5eFhEVUp6RUV6eFdoTzlRQmhPaERkZVJORklUNEptYjNZcTZUQys0a2dQOHRWQnM1bG1oUnliM0dlTUFBPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.5/A9Voice_0.6.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEF1WGtTVmtBSGlXSXdWNFhIYUlDV214RzVSVnkrUFBNSkpWK0ovV05MWURTdjc0WTNDVlYzUjBVSXZObWxhUFE4SjB6QkFiTEI2U2REZjdlYzEvS1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTU4MDEwCWZpbGU6QTkgVm9pY2VfMC42LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi43CjAxVmxXUWZybE5hd0VjTVNXVU5WWncydHNiNEwxdGNiNVZaQ2pzUGF1elhuWXE5YzIzSmhPbSt0MkJJMDlZVDhhNnlGblY0Y0lXSjk4ei9LbjhvSkJBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.7/A9Voice_0.6.7_x64-setup.exe"
     }
-  }
+  },
+  "installer_sha256": "60cd1f602b385927f124ef92308d6a23a794a1481175ae96674e405f8b58a57c",
+  "installer_size": 11354589
 }
