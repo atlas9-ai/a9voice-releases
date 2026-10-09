@@ -64,9 +64,6 @@ a { color: var(--signal); }
 .hero h1 span { color: var(--signal); }
 .hero p.sub { margin-top: 24px; font-size: clamp(17px, 1.5vw, 21px); color: var(--text-2); max-width: 50ch; }
 .hero .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
-.newchip { display: inline-flex; align-items: center; gap: 8px; height: 28px; padding: 0 12px; margin-bottom: 14px; border-radius: 999px; border: 1px solid var(--glass-line); background: rgba(18,19,23,.6); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font: 500 12px/1 var(--mono); color: var(--text-2); text-decoration: none; transition: border-color .2s; }
-.newchip b { font-weight: 500; color: var(--signal); }
-.newchip:hover { border-color: var(--signal); color: var(--text); }
 .hero-dict { position: absolute; right: clamp(16px, 5vw, 96px); top: clamp(300px, 56%, 560px); width: min(360px, 28vw); display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
 .hero-dict .card { width: 100%; padding: 16px 18px; font-size: 15px; line-height: 1.55; color: var(--text); opacity: 0; transform: translateY(10px); transition: opacity .5s, transform .5s var(--e2); }
 .hero-dict .card.on { opacity: 1; transform: none; }

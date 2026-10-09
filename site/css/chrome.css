@@ -54,4 +54,5 @@ body:not(.home) .sn-wrap { padding-inline: 24px; }
 .sf-links { display: flex; gap: 8px 20px; flex-wrap: wrap; }
 .sitefoot a { color: var(--muted); }
 .sitefoot a:hover { color: var(--text); }
+.sitefoot a.sf-ver { font-family: var(--mono, ui-monospace, Consolas, monospace); font-size: 12px; }
 .sf-note { margin: 18px 0 0; font-size: 12px; color: var(--muted); }
