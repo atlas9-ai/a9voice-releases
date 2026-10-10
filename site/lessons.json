@@ -1,0 +1,12 @@
+[
+  {
+    "id": "install",
+    "title": "Installing A9 Voice",
+    "chip": "Installing",
+    "duration": "0:59",
+    "src16x9": "/media/a9voice-lesson-install-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-install-9x16.mp4",
+    "poster": "/media/a9voice-lesson-install-poster.jpg",
+    "vtt": "/media/a9voice-lesson-install-16x9.vtt"
+  }
+]

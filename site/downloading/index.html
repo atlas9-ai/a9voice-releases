@@ -14,7 +14,9 @@
 <link rel="stylesheet" href="/css/site.css">
 <link rel="stylesheet" href="/css/chrome.css">
 <link rel="stylesheet" href="/css/docs.css">
+<link rel="stylesheet" href="/css/lightbox.css">
 <script src="/js/chrome.js" defer></script>
+<script src="/js/lessons.js" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ae721dd5a82b40b5844414bb9f3b9522"}'></script>
 <noscript><style>.js-only{display:none}</style></noscript>
 </head>
@@ -57,13 +59,14 @@
     </dl>
   </section>
 
-  <details class="dl-note">
+  <details class="dl-note" open>
     <summary>What Windows shows for a new publisher</summary>
     <div class="dl-note-body">
-      <p>Windows Defender SmartScreen shows a note for installers from publishers it hasn’t seen many downloads from yet. A9 Voice isn’t code-signed yet (that’s a paid certificate we’ll add once the project is self-funding). The note shows the publisher and file; choosing <em>More info</em> reveals the details and the option to continue.</p>
+      <p class="lesson-row"><a class="lesson-chip" href="/media/a9voice-lesson-install-16x9.mp4" data-lesson="install" data-title="Installing A9 Voice" data-src16="/media/a9voice-lesson-install-16x9.mp4" data-src9="/media/a9voice-lesson-install-9x16.mp4" data-poster="/media/a9voice-lesson-install-poster.jpg" data-vtt="/media/a9voice-lesson-install-16x9.vtt"><span class="lesson-chip-icon" aria-hidden="true">▶</span> Watch: Installing (0:59)</a></p>
+      <p>Edge may say the file “isn’t commonly downloaded”. A9 Voice is new and isn’t code-signed yet (that’s a paid certificate we’ll add once the project is self-funding), so browsers and Windows haven’t seen it often. In Edge’s Downloads panel, the three dots next to the file offer <em>Keep</em>; a second box then asks you to confirm, and the arrow on its <em>Delete</em> button offers <em>Keep anyway</em>. Chrome shows a similar note.</p>
+      <figure class="shot"><img src="/img/install-keep.svg" width="720" height="300" alt="A mock-up of Edge’s Downloads panel in two steps: the installer is listed with a note that it isn’t commonly downloaded and a three-dots menu with Keep, then a box asks you to confirm, with Keep anyway behind the arrow on its Delete button." loading="lazy"></figure>
+      <p>Windows Defender SmartScreen can also show a note for installers from publishers it hasn’t seen many downloads from yet. It shows the publisher and the file; choosing <em>More info</em> reveals the details and the option to continue.</p>
       <figure class="shot"><img src="/img/install-smartscreen.svg" width="720" height="300" alt="A mock-up of the two Windows SmartScreen screens: the first with a More info link, the second with the file details and the option to continue." loading="lazy"></figure>
-      <p>Chrome and Edge can add a similar line in their downloads list for files they haven’t seen often.</p>
-      <figure class="shot"><img src="/img/install-keep.svg" width="720" height="300" alt="A mock-up of a browser download panel listing the installer with a note that it isn’t commonly downloaded." loading="lazy"></figure>
       <p>To verify the file, compare its SHA-256 with the one above, or open the GitHub release. In PowerShell, <code>Get-FileHash</code> followed by the file name prints it.</p>
     </div>
   </details>

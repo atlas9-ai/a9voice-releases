@@ -1,20 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="t d">
-  <title id="t">A browser's download panel</title>
-  <desc id="d">A mock-up of a browser download panel listing the installer with a note that it isn't commonly downloaded.</desc>
+  <title id="t">Edge's Downloads panel, in two steps</title>
+  <desc id="d">A mock-up of Edge's Downloads panel. First, the installer is listed with a note that it isn't commonly downloaded, and the menu behind its three dots offers Keep. Then a box asks you to confirm, and the arrow on its Delete button offers Keep anyway. The file name is A9Voice_ and the version, then _x64-setup.exe.</desc>
   <rect width="720" height="300" rx="16" fill="#17181B"/>
-  <rect x="24" y="24" width="672" height="44" rx="10" fill="#1E1F23" stroke="#2A2C31"/>
-  <circle cx="48" cy="46" r="6" fill="#34363C"/><circle cx="68" cy="46" r="6" fill="#34363C"/><circle cx="88" cy="46" r="6" fill="#34363C"/>
-  <rect x="116" y="34" width="420" height="24" rx="12" fill="#0B0C0E" stroke="#2A2C31"/>
-  <text x="134" y="51" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">a9voice.com/download</text>
-  <rect x="600" y="34" width="80" height="24" rx="12" fill="#2B5BD7" opacity=".25"/>
-  <path d="M632 40v10m-5-4 5 5 5-5m-12 9h14" fill="none" stroke="#7AA2F7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="332" y="84" width="364" height="190" rx="12" fill="#1E1F23" stroke="#34363C"/>
-  <rect x="352" y="104" width="30" height="36" rx="5" fill="#0B0C0E" stroke="#34363C"/>
-  <text x="396" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="15" font-weight="600" fill="#ECEDEE">A9Voice-Setup-x64.exe</text>
-  <text x="396" y="140" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#C9CBD0">isn't commonly downloaded.</text>
-  <text x="352" y="170" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">Make sure you trust it before you open it.</text>
-  <rect x="352" y="198" width="132" height="44" rx="10" fill="#2B5BD7"/>
-  <text x="418" y="226" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Keep</text>
-  <rect x="504" y="204" width="96" height="32" rx="8" fill="none" stroke="#34363C"/>
-  <text x="552" y="225" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="13" fill="#9A9DA4">Delete</text>
+  <g font-family="Segoe UI, system-ui, sans-serif">
+    <rect x="24" y="24" width="324" height="252" rx="12" fill="#1E1F23" stroke="#34363C"/>
+    <text x="44" y="52" font-size="14" font-weight="600" fill="#ECEDEE">Downloads</text>
+    <rect x="36" y="64" width="300" height="68" rx="8" fill="#26272C"/>
+    <text x="50" y="86" font-size="11.5" fill="#ECEDEE">A9Voice_x.y.z_x64-setup.exe isn't</text>
+    <text x="50" y="102" font-size="11.5" fill="#ECEDEE">commonly downloaded. Make sure you trust</text>
+    <text x="50" y="118" font-size="11.5" fill="#ECEDEE">A9Voice_x.y.z_x64-setup.exe before you open it.</text>
+    <circle cx="304" cy="76" r="1.8" fill="#C9CBD0"/><circle cx="312" cy="76" r="1.8" fill="#C9CBD0"/><circle cx="320" cy="76" r="1.8" fill="#C9CBD0"/>
+    <rect x="176" y="138" width="160" height="104" rx="8" fill="#26272C" stroke="#34363C"/>
+    <text x="192" y="156" font-size="12" fill="#ECEDEE">Delete</text>
+    <rect x="182" y="164" width="148" height="24" rx="6" fill="#2B5BD7"/>
+    <text x="192" y="180" font-size="12" font-weight="600" fill="#FFFFFF">Keep</text>
+    <text x="192" y="204" font-size="12" fill="#C9CBD0">Report this file as safe</text>
+    <text x="192" y="226" font-size="12" fill="#C9CBD0">Learn more</text>
+    <text x="44" y="266" font-size="11.5" fill="#9A9DA4">1  The three dots: Keep</text>
+    <rect x="372" y="24" width="324" height="252" rx="12" fill="#1E1F23" stroke="#34363C"/>
+    <text x="392" y="52" font-size="14" font-weight="600" fill="#ECEDEE">Make sure you trust</text>
+    <text x="392" y="70" font-size="14" font-weight="600" fill="#ECEDEE">A9Voice_x.y.z_x64-setup.exe</text>
+    <text x="392" y="88" font-size="14" font-weight="600" fill="#ECEDEE">before you open it</text>
+    <text x="392" y="112" font-size="11" fill="#9A9DA4">Microsoft Defender SmartScreen couldn't verify if</text>
+    <text x="392" y="127" font-size="11" fill="#9A9DA4">this file is safe because it isn't commonly</text>
+    <text x="392" y="142" font-size="11" fill="#9A9DA4">downloaded. Make sure you trust the file.</text>
+    <text x="392" y="166" font-size="11" fill="#9A9DA4">Name: A9Voice_x.y.z_x64-setup.exe</text>
+    <text x="392" y="182" font-size="11" fill="#9A9DA4">Publisher: Unknown</text>
+    <rect x="530" y="206" width="62" height="28" rx="8" fill="none" stroke="#34363C"/>
+    <text x="561" y="224" text-anchor="middle" font-size="12" fill="#ECEDEE">Cancel</text>
+    <rect x="600" y="206" width="76" height="28" rx="8" fill="#ECEDEE"/>
+    <text x="628" y="224" text-anchor="middle" font-size="12" font-weight="600" fill="#0B0C0E">Delete</text>
+    <path d="M656 218l4 4 4-4" fill="none" stroke="#0B0C0E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="560" y="238" width="116" height="26" rx="6" fill="#2B5BD7"/>
+    <text x="618" y="255" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">Keep anyway</text>
+    <text x="392" y="266" font-size="11.5" fill="#9A9DA4">2  The arrow on Delete</text>
+  </g>
 </svg>
