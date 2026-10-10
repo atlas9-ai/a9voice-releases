@@ -55,4 +55,6 @@ body:not(.home) .sn-wrap { padding-inline: 24px; }
 .sitefoot a { color: var(--muted); }
 .sitefoot a:hover { color: var(--text); }
 .sitefoot a.sf-ver { font-family: var(--mono, ui-monospace, Consolas, monospace); font-size: 12px; }
+.sitefoot a.sf-icon { display: inline-flex; align-items: center; margin-block: -3px; padding: 3px 2px; }
+.sf-icon svg { display: block; }
 .sf-note { margin: 18px 0 0; font-size: 12px; color: var(--muted); }

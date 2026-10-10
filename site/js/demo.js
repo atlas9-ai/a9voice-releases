@@ -13,7 +13,7 @@
     history.replaceState(null, "", a.getAttribute("href"));
   }));
   const m = /^#t=(\d+)$/.exec(location.hash);
-  if (m && Number(m[1]) < 60) seek(Number(m[1]), false);
+  if (m && Number(m[1]) < 53) seek(Number(m[1]), false);
   v.addEventListener("timeupdate", () => {
     let cur = null;
     for (const a of links) if (v.currentTime >= Number(a.dataset.t)) cur = a;
