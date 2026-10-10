@@ -48,7 +48,14 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-6-8">
+  <section class="log-entry" aria-labelledby="v-0-6-9">
+  <h2 id="v-0-6-9">0.6.9 <time datetime="2026-10-10">October 10, 2026</time></h2>
+  <ul><li>Updates no longer stop at &quot;Failed to kill A9 Voice&quot;. The installer now waits up to 10 seconds for the running copy to close, ends it if it won&#39;t, and if even that fails it says &quot;Restart your PC to finish the update&quot; and leaves the old version working instead of showing an error.</li>
+<li>A9 Voice lets go of the microphone, speakers, shortcuts and windows one step at a time before handing over to the installer, and logs each step, so an update starts faster and a hang names the step it stopped on.</li>
+<li>If an update did not finish, A9 Voice now says so when it starts (&quot;The update to X didn&#39;t finish&quot;) instead of reporting a restart after an update, and tries it once more when you are not dictating or recording.</li>
+<li>Opening A9 Voice while a stuck copy is still running now ends the stuck copy and starts normally, instead of opening nothing.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-6-8">
   <h2 id="v-0-6-8">0.6.8 <time datetime="2026-10-10">October 10, 2026</time></h2>
   <ul><li>Back-to-back meetings no longer merge into one note or go unrecorded. The <strong>Meeting ended</strong> card has a new <strong>Next meeting</strong> button, and the record key does the same during the countdown: the first meeting is saved and the next one starts at once, with under a second of audio missing between them.</li>
 <li>If the call comes back during the countdown, the card asks <strong>New meeting</strong> or <strong>Same meeting</strong> (it stays the same meeting after 15 seconds).</li>

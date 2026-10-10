@@ -70,7 +70,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Updates and channels</h1>
       <p class="docs-lead">How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.9</p>
       <p>A9 Voice looks for updates in the background, downloads them, checks that they are genuine and installs them when it is safe to. You do not have to do anything, but you can check by hand, choose how early you get new builds, and decide when the app restarts.</p>
 <h2 id="stable-and-dev">Stable and Dev<a class="anchor" href="#stable-and-dev" aria-label="Link to Stable and Dev">#</a></h2>
 <p>There are two channels. A channel is just a stream of builds you follow.</p>
@@ -99,6 +99,7 @@
 <li><strong>Ready.</strong> The sidebar shows <strong>Restart to update</strong>, and the Updates card shows a banner, &quot;Update ready&quot;, with a <strong>Restart A9 Voice</strong> button. The tray menu item changes to &quot;Update ready — Restart A9 Voice&quot;.</li>
 <li><strong>The restart.</strong> When you press the button, A9 Voice installs and starts again. Nothing you have recorded or typed is lost.</li>
 </ol>
+<p>Before the installer starts, A9 Voice lets go of the microphone, the speakers, its shortcuts and its windows one at a time, so it leaves quickly. The installer then gives the old copy up to 10 seconds to close on its own, ends it if it is still there, and waits a few seconds more before it gives up with a message instead of an error. If an update did not finish, the next start of A9 Voice says so and tries once more when you are not dictating or recording.</p>
 <p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-downloading-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-downloading-1x.webp 1x, /img/docs/updates-and-channels-sidebar-downloading.webp 2x" width="223" height="84" alt="The sidebar while an update is downloading, with a progress bar." loading="lazy" decoding="async"></figure></p>
 <p><figure class="shot"><img src="/img/docs/updates-and-channels-sidebar-ready-1x.webp" srcset="/img/docs/updates-and-channels-sidebar-ready-1x.webp 1x, /img/docs/updates-and-channels-sidebar-ready.webp 2x" width="223" height="82" alt="The sidebar when the update is ready: a Restart to update button." loading="lazy" decoding="async"></figure></p>
 <p><figure class="shot"><img src="/img/docs/updates-and-channels-banner-1x.webp" srcset="/img/docs/updates-and-channels-banner-1x.webp 1x, /img/docs/updates-and-channels-banner.webp 2x" width="814" height="95" alt="The Updates card banner when an update is ready, with the Restart A9 Voice button." loading="lazy" decoding="async"></figure></p>
@@ -134,6 +135,8 @@
 <li><strong>&quot;Couldn&#39;t reach the update server&quot;.</strong> The PC is offline or something blocks the connection. A9 Voice tries again at the next check. The update check is the only thing A9 Voice does on its own that is not part of a service you set up; see <a href="/docs/privacy-and-data/">Privacy and data</a>.</li>
 <li><strong>&quot;No release on the dev channel yet&quot; (or stable).</strong> The channel has no build published yet. Switch channel or check again later.</li>
 <li><strong>&quot;The update failed its signature check and was not installed&quot;.</strong> The download did not match what the project signed, so A9 Voice refused it. Check again; if it keeps happening, see <a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
+<li><strong>&quot;The update to 0.6.9 didn&#39;t finish.&quot;</strong> You pressed <strong>Restart to update</strong> (or A9 Voice restarted itself when idle), but the installer never replaced the app, so this is still the old version. A9 Voice shows this once when it starts, and tries the update again by itself when you are not dictating or recording, once per start. You can also press <strong>Restart to update</strong> when it shows. If it keeps happening, restart the PC and update again, then see <a href="/docs/troubleshooting/#an-update-did-not-finish">Troubleshooting</a>.</li>
+<li><strong>&quot;A9 Voice is still closing. Restart your PC to finish the update; A9 Voice will update itself next time it starts.&quot;</strong> The installer could not end the running copy of A9 Voice, even after waiting and trying to force it. Nothing was changed: the version you had still works. Restart the PC; the update installs by itself the next time A9 Voice starts.</li>
 <li><strong>The version line says &quot;Couldn&#39;t check&quot;.</strong> The check could not finish. Press <strong>Check for updates</strong> again in a minute.</li>
 </ul>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
