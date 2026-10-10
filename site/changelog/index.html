@@ -48,7 +48,14 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-6-7">
+  <section class="log-entry" aria-labelledby="v-0-6-8">
+  <h2 id="v-0-6-8">0.6.8 <time datetime="2026-10-10">October 10, 2026</time></h2>
+  <ul><li>Back-to-back meetings no longer merge into one note or go unrecorded. The <strong>Meeting ended</strong> card has a new <strong>Next meeting</strong> button, and the record key does the same during the countdown: the first meeting is saved and the next one starts at once, with under a second of audio missing between them.</li>
+<li>If the call comes back during the countdown, the card asks <strong>New meeting</strong> or <strong>Same meeting</strong> (it stays the same meeting after 15 seconds).</li>
+<li>Fixes <strong>Stop now</strong>, the record key or a discard on an auto-recorded call keeping the next call from being recorded: after the call has ended nothing holds it back any more, and a new call on the microphone always clears the hold.</li>
+<li>New <strong>Meeting ended countdown</strong> in Settings › Notes › Recording: Off, 5, 10 or 30 seconds (10 as before).</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-6-7">
   <h2 id="v-0-6-7">0.6.7 <time datetime="2026-10-09">October 9, 2026</time></h2>
   <ul><li>Fixes the bright outline that stayed on a speaker&#39;s chip at the top of the Live window after you named them with <kbd>Enter</kbd>. Only the person talking now glows.</li>
 <li>Fixes the <strong>This is →</strong> box in the Live window being squeezed: the <strong>Speakers</strong> chips now wrap in full and only the list of people scrolls.</li></ul>

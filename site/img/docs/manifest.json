@@ -137,7 +137,7 @@
  },
  "keyboard-shortcuts-recording": {
   "w": 818,
-  "h": 441
+  "h": 523
  },
  "language-models-ai-chip": {
   "w": 288,
@@ -339,6 +339,10 @@
   "w": 1036,
   "h": 1109
  },
+ "recording-a-meeting-back": {
+  "w": 372,
+  "h": 211
+ },
  "recording-a-meeting-bar-hover": {
   "w": 529,
   "h": 96
@@ -353,7 +357,7 @@
  },
  "recording-a-meeting-ended": {
   "w": 372,
-  "h": 199
+  "h": 211
  },
  "recording-a-meeting-held-back": {
   "w": 372,
@@ -397,7 +401,7 @@
  },
  "recording-a-meeting-settings-while": {
   "w": 698,
-  "h": 802
+  "h": 884
  },
  "recording-a-meeting-still": {
   "w": 372,
@@ -471,10 +475,6 @@
   "w": 1032,
   "h": 760
  },
- "settings-reference-privacy": {
-  "w": 1032,
-  "h": 760
- },
  "settings-reference-integrations": {
   "w": 1032,
   "h": 760
@@ -492,6 +492,10 @@
   "h": 760
  },
  "settings-reference-microphone": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-privacy": {
   "w": 1032,
   "h": 760
  },
