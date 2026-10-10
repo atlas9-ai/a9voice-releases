@@ -1,7 +1,7 @@
 {
   "version": "0.6.8",
   "notes": "- Back-to-back meetings no longer merge into one note or go unrecorded. The **Meeting ended** card has a new **Next meeting** button, and the record key does the same during the countdown: the first meeting is saved and the next one starts at once, with under a second of audio missing between them.\n- If the call comes back during the countdown, the card asks **New meeting** or **Same meeting** (it stays the same meeting after 15 seconds).\n- Fixes **Stop now**, the record key or a discard on an auto-recorded call keeping the next call from being recorded: after the call has ended nothing holds it back any more, and a new call on the microphone always clears the hold.\n- New **Meeting ended countdown** in Settings › Notes › Recording: Off, 5, 10 or 30 seconds (10 as before).",
-  "pub_date": "2026-10-10T13:13:31Z",
+  "pub_date": "2026-10-10T13:13:30Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERCU1lUa1NHRFY3T1NxNU9qYVorRUk1c282bHZneDJLcDFZL1JISm1QdFRpWDlSRkZYanpMOWpXeFZuSDdubkt3QWwyU0IxL2RNa2M2SGl4cjgrVXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjM3OTcwCWZpbGU6QTkgVm9pY2VfMC42LjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi44CjkrUDlkUDlkNFFxTC9vWFpjdU1iTHIzaTY2KzJDY3pLNmtzczRnUG1yK2xnYzlVbUl4Znc3d2d0NG9ZVUpkU0xWT0JUa1dGMGxsVmljUk9RbzU2cERnPT0K",
