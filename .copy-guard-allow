@@ -2,6 +2,9 @@
 # in the private app repo from its .copy-guard-allow; don't edit here.
 site/index.html: regions
 site/features/index.html: regions
+site/brand.html: scribe
+site/brand/index.html: scribe
+site/brand/README.txt: scribe
 site/docs/webhooks/index.html: python
 site/docs/speech-models/index.html: scribe
 site/docs/settings-reference/index.html: scribe

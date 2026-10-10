@@ -1,0 +1,13 @@
+{
+  "ground": "#0B0C0E",
+  "surface": "#17181B",
+  "raised": "#1E1F23",
+  "line": "#2A2C31",
+  "text": "#ECEDEE",
+  "text-secondary": "#C9CBD0",
+  "muted": "#9A9DA4",
+  "action-blue": "#2B5BD7",
+  "signal-blue": "#7AA2F7",
+  "record-red": "#E5484D",
+  "green": "#4CC38A"
+}

@@ -101,7 +101,7 @@ function scanned(p) {
   if (/^(src|site)\//.test(r) && /\.(svelte|ts|js|mjs|html)$/.test(r)) return !r.startsWith("site/tools/");
   if (/^[^/]+\.html$/.test(r)) return true;
   if (/^src-tauri\/src\/.*\.rs$/.test(r)) return true;
-  if (/^(README\.md|site\/.*\.md)$/.test(r)) return true;
+  if (/^(README\.md|site\/.*\.md|site\/brand\/README\.txt)$/.test(r)) return true;
   return false;
 }
 
