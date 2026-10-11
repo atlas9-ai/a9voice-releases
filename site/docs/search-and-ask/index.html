@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Search and Ask</h1>
       <p class="docs-lead">Find anything you or anyone said in your notes with Ctrl+K, or ask a question in plain words and get an answer with links to the exact moment.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.10</p>
       <p><strong>Search</strong> finds words in your notes. <strong>Ask your notes</strong> answers a question from them. Both read one index that
 A9 Voice keeps on your PC, and both open the note at the moment you need.</p>
 <h2 id="what-gets-searched">What gets searched<a class="anchor" href="#what-gets-searched" aria-label="Link to What gets searched">#</a></h2>
@@ -169,12 +169,26 @@ a summary and a transcript file. A9 Voice only reads these folders. It never cha
 <li><p>Open <strong>Settings › Notes › Search</strong>.</p>
 </li>
 <li><p>Under <strong>Also search these folders</strong>, click <strong>Add folder...</strong> and choose the folder.</p>
-<p><figure class="shot"><img src="/img/docs/search-settings-1x.webp" srcset="/img/docs/search-settings-1x.webp 1x, /img/docs/search-settings.webp 2x" width="790" height="277" alt="Settings, Notes, Search: two folders. Platform team notes shows 142 notes, read just now, with a link to make editable copies. Archive 2025 shows That folder isn't there. Add folder and Read again now are underneath." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/search-settings-1x.webp" srcset="/img/docs/search-settings-1x.webp 1x, /img/docs/search-settings.webp 2x" width="790" height="277" alt="Settings, Notes, Search: two folders. Platform team notes shows 142 notes in this folder, read just now, with a link to make editable copies. Archive 2025 shows That folder isn't there. Add folder and Read again now are underneath." loading="lazy" decoding="async"></figure></p>
 </li>
-<li><p>A9 Voice reads the folder. Its row shows the folder&#39;s name, its path and a count, such as &quot;142 notes · read just now&quot;.
-The count fills in while the folder is read for the first time.</p>
+<li><p>A9 Voice reads the folder. Its row shows the folder&#39;s name, its path and what is in it, such as &quot;142 notes in this
+folder · read just now&quot;. The count fills in while the folder is read for the first time.</p>
 </li>
 </ol>
+<p>The row counts notes in the folder itself:</p>
+<ul>
+<li><strong>N notes in this folder</strong> is every note A9 Voice can read there.</li>
+<li><strong>M already copied into A9</strong> appears when some of those notes already have an editable copy in your Notes folder.
+Search shows the copy, so they are not indexed twice.
+Notes that are copied still count here, so a folder whose notes are all copied reads &quot;13 notes in this folder · 13
+already copied into A9&quot;, not zero.</li>
+<li><strong>K couldn&#39;t be read</strong> appears when files were skipped (over 20 MB, in use by another program, or no access). Click it
+to open the logs folder, which names the files.</li>
+<li><strong>includes Name</strong> appears when you also added a folder inside this one. Each note is read once, under the inner
+folder&#39;s row.</li>
+</ul>
+<p>You can&#39;t add the folder that holds your A9 Voice notes, a folder inside it, or a folder that contains it. Those notes
+are already searchable, and the Settings page says so.</p>
 <p>What counts as one note: a folder holding a summary and/or a transcript (<code>summary.md</code>, <code>transcript.md</code> or <code>.txt</code>
 versions of them), with <code>notes.md</code> and an audio file beside them if there are any; and otherwise each Markdown or text
 file on its own. Formats are told apart by what is in the files, not by which app wrote them. A9 Voice&#39;s own note folders

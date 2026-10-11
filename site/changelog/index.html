@@ -48,7 +48,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-6-9">
+  <section class="log-entry" aria-labelledby="v-0-6-10">
+  <h2 id="v-0-6-10">0.6.10 <time datetime="2026-10-11">October 11, 2026</time></h2>
+  <ul><li>Settings › Notes › Search now shows what is really in each folder: &quot;13 notes in this folder · 13 already copied into A9&quot;. A folder whose notes were all copied no longer reads &quot;0 notes&quot;.</li>
+<li>A row says &quot;3 couldn&#39;t be read&quot; when files were skipped, with a link to the logs, and &quot;includes Name&quot; when you also added a folder inside it.</li>
+<li>A9 Voice refuses to add the folder that holds your A9 notes (or one inside it), and reads a note once when you add a folder and one of its subfolders.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-6-9">
   <h2 id="v-0-6-9">0.6.9 <time datetime="2026-10-10">October 10, 2026</time></h2>
   <ul><li>Updates no longer stop at &quot;Failed to kill A9 Voice&quot;. The installer now waits up to 10 seconds for the running copy to close, ends it if it won&#39;t, and if even that fails it says &quot;Restart your PC to finish the update&quot; and leaves the old version working instead of showing an error.</li>
 <li>A9 Voice lets go of the microphone, speakers, shortcuts and windows one step at a time before handing over to the installer, and logs each step, so an update starts faster and a hang names the step it stopped on.</li>
