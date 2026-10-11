@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.2</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
@@ -108,6 +108,7 @@
 <li><strong>Fallback.</strong> If the service you use for dictation fails or is slow, A9 Voice sends the same audio to your fallback service. If you do not want audio to reach a second company, set <strong>Use as fallback</strong> to a model on this PC, or to none.</li>
 <li><strong>Summaries try more than one model.</strong> Summaries, Ask and Deep answers try the model you chose first and, if it fails or is rate limited, the next language model you have set up. If you want text to go to only one place, set up only one language model.</li>
 <li><strong>OpenRouter</strong> is a routing service: your text goes to OpenRouter, which passes it to the model you picked. The same is true of any custom server you point at a remote service.</li>
+<li><strong>A first Deepgram key asks before meeting audio goes there.</strong> When you save your first Deepgram key while Meeting notes use a model that can&#39;t tell speakers apart, the key window shows <strong>Also use Deepgram for Meeting notes</strong>, checked. Meeting audio goes to Deepgram only if you leave it checked. Unchecked, the key is saved and Meeting notes stay where they were. The setup step asks the same way and moves nothing until you click <strong>Continue</strong>.</li>
 <li><strong>Deepgram live.</strong> With <strong>Live transcript</strong> on, a Deepgram key saved, and a Notes speech model that is not on this PC, both sides of the call stream to Deepgram live, whatever the Notes speech model is. To stop that, turn <strong>Live transcript</strong> off, use a Notes speech model on this PC, or disconnect the Deepgram key.</li>
 <li><strong>Keeping the dictation connection ready.</strong> While A9 Voice runs and a cloud service is set for dictation, it sends that service a small request every few minutes, so the next dictation starts without delay. The request carries your key and no audio or text. With a model on this PC set for dictation, there is no such request.</li>
 <li><strong>Dictation uses the clipboard briefly.</strong> It puts the text on the clipboard to paste it, keeps it out of Windows clipboard history and the cloud clipboard, and puts back what you had copied. When you ask for a copy yourself (tray <strong>Copy last transcription</strong>), that copy is allowed into clipboard history.</li>
