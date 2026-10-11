@@ -48,7 +48,15 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-6-10">
+  <section class="log-entry" aria-labelledby="v-0-6-11">
+  <h2 id="v-0-6-11">0.6.11 <time datetime="2026-10-11">October 11, 2026</time></h2>
+  <ul><li>Settings has one <strong>Models</strong> page, organized by job: Dictation, Meeting notes, Summaries, Ask: Quick, Ask: Deep and Enhance, each with its model and a <strong>Change</strong> button. Keys and downloads sit underneath. The old Speech models and Language models links still work.</li>
+<li>The model list comes from your providers (OpenRouter, Anthropic, OpenAI, Groq, Google), so new models such as Claude Haiku 5.5 appear without an update. It is searchable, shows context and price, marks models that are <strong>Good for Deep</strong>, and shows what a Deep answer costs.</li>
+<li>Ask Quick and Ask Deep each have their own model. A request that is too big for a model is called out as &quot;request too large&quot;, not &quot;rate limit&quot;, and is skipped before it is sent when it can&#39;t fit.</li>
+<li>Meeting notes with an engine that can&#39;t tell the other people on a call apart now says so in amber, with a <strong>Fix this</strong> button.</li>
+<li>Answers no longer show a model&#39;s own citation marks such as 【13】; only A9 Voice&#39;s citations appear.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-6-10">
   <h2 id="v-0-6-10">0.6.10 <time datetime="2026-10-11">October 11, 2026</time></h2>
   <ul><li>Settings › Notes › Search now shows what is really in each folder: &quot;13 notes in this folder · 13 already copied into A9&quot;. A folder whose notes were all copied no longer reads &quot;0 notes&quot;.</li>
 <li>A row says &quot;3 couldn&#39;t be read&quot; when files were skipped, with a link to the logs, and &quot;includes Name&quot; when you also added a folder inside it.</li>

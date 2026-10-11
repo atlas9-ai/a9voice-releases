@@ -59,7 +59,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/" aria-current="page">Getting started</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Start here</p>
       <h1>Getting started</h1>
       <p class="docs-lead">Install A9 Voice, set it up in five short steps, then dictate your first sentence and record your first meeting note.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.9</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.11</p>
       <p>A9 Voice is for Windows 10 and 11 (64-bit). It is free while in preview. Transcribe stays free; Notes becomes a one-time purchase later, with 30 days free first. It does two jobs. <strong>Transcribe</strong> types what you say into any app while you hold a key. <strong>Notes</strong> records a meeting, a video or a voice memo and turns it into a transcript and a summary. This page takes you from a fresh install to both.</p>
 <h2 id="install">Install<a class="anchor" href="#install" aria-label="Link to Install">#</a></h2>
 <ol>
@@ -91,11 +91,11 @@
 <p>Pick your microphone, or leave <strong>Windows default</strong>. Say a few words: the bar moves when you talk and rests when you do not, and the text under it says <strong>Hearing you clearly.</strong> If nothing moves, check that the microphone is not muted. Click <strong>Continue</strong>.</p>
 <h3 id="step-3-how-a9-voice-hears-you">Step 3: how A9 Voice hears you<a class="anchor" href="#step-3-how-a9-voice-hears-you" aria-label="Link to Step 3: how A9 Voice hears you">#</a></h3>
 <p><figure class="shot"><img src="/img/docs/getting-started-speech-1x.webp" srcset="/img/docs/getting-started-speech-1x.webp 1x, /img/docs/getting-started-speech.webp 2x" width="900" height="753" alt="Step 3 of 5: On this PC and the cloud services, with On this PC open" loading="lazy" decoding="async"></figure></p>
-<p>A9 Voice needs a speech service to turn your voice into text. Pick one; you can change it any time in <strong>Settings › Speech models</strong> (see <a href="/docs/speech-models/">Speech models</a>).</p>
+<p>A9 Voice needs a speech service to turn your voice into text. Pick one; you can change it any time in <strong>Settings › Models</strong> (see <a href="/docs/speech-models/">Speech models</a>).</p>
 <ul>
 <li><strong>On this PC</strong> is marked <strong>Recommended: free, private, works offline.</strong> Click the tile, then <strong>Download Parakeet V2</strong>. It downloads once. Then A9 Voice checks its speed on your PC (&quot;Checking its speed on this PC…&quot;) and the tile says <strong>Ready</strong>. After that, nothing you say leaves your PC. Parakeet V2 is an English model.</li>
 <li><strong>Groq</strong>, <strong>Deepgram</strong>, <strong>OpenAI</strong> and <strong>ElevenLabs</strong> are cloud services. You bring your own key and pay the service directly. The setup screen notes that Groq has a free plan and that new Deepgram accounts get $200 of free credit.</li>
-<li><strong>Custom server</strong> is for any OpenAI-compatible speech server. You add it later in <strong>Settings › Speech models</strong>.</li>
+<li><strong>Custom server</strong> is for any OpenAI-compatible speech server. You add it later in <strong>Settings › Models</strong>.</li>
 </ul>
 <p>To use a cloud service, click its tile and follow the three steps shown:</p>
 <p><figure class="shot"><img src="/img/docs/getting-started-key-1x.webp" srcset="/img/docs/getting-started-key-1x.webp 1x, /img/docs/getting-started-key.webp 2x" width="900" height="863" alt="The Groq tile open: a Get your free Groq key button, three steps, and a box for the key" loading="lazy" decoding="async"></figure></p>
@@ -131,7 +131,7 @@
 <p>The three chips at the top right show what A9 Voice uses: <strong>Dictation</strong> (speech to text for dictating), <strong>Notes</strong> (speech to text for meetings) and <strong>AI</strong> (the language model that writes summaries and answers questions). Click a chip to switch.</p>
 <ul>
 <li><strong>Notes</strong> can use Deepgram, ElevenLabs, a model on this PC, or the other services you have set up. Deepgram, ElevenLabs and models on this PC tell the people on a call apart. The others label lines Me and Them. If you only added a Groq key, open the <strong>Notes</strong> chip and pick it.</li>
-<li><strong>AI</strong> needs a key from a language-model service. Without one, you still get a transcript, but no summary. Add one in <strong>Settings › Language models</strong> (see <a href="/docs/language-models/">Language models</a>).</li>
+<li><strong>AI</strong> needs a key from a language-model service. Without one, you still get a transcript, but no summary. Add one in <strong>Settings › Models</strong> (see <a href="/docs/language-models/">Language models</a>).</li>
 </ul>
 <h3 id="2-start-recording">2. Start recording<a class="anchor" href="#2-start-recording" aria-label="Link to 2. Start recording">#</a></h3>
 <p><figure class="shot"><img src="/img/docs/getting-started-notes-empty-1x.webp" srcset="/img/docs/getting-started-notes-empty-1x.webp 1x, /img/docs/getting-started-notes-empty.webp 2x" width="1024" height="234" alt="The Notes page with no notes yet and the Record button numbered 1" loading="lazy" decoding="async"></figure></p>
@@ -156,7 +156,7 @@
 <h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
 <ul>
 <li><strong>Nothing happens when you hold the key.</strong> The sidebar shows <strong>Key in use · fix</strong> if another app has the same shortcut. Click it, or open <strong>Settings › Dictation</strong> and choose another key.</li>
-<li><strong>The pill says a key is missing or rejected.</strong> Click the pill&#39;s <strong>Fix</strong> link, then check the key in <strong>Settings › Speech models</strong>.</li>
+<li><strong>The pill says a key is missing or rejected.</strong> Click the pill&#39;s <strong>Fix</strong> link, then check the key in <strong>Settings › Models</strong>.</li>
 <li><strong>The note failed or has no summary.</strong> See the steps above and <a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
 </ul>
 <h2 id="where-to-go-next">Where to go next<a class="anchor" href="#where-to-go-next" aria-label="Link to Where to go next">#</a></h2>

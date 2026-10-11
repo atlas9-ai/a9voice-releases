@@ -145,7 +145,7 @@
  },
  "language-models-custom": {
   "w": 552,
-  "h": 635
+  "h": 632
  },
  "language-models-enhance": {
   "w": 900,
@@ -153,19 +153,19 @@
  },
  "language-models-google-key": {
   "w": 552,
-  "h": 502
+  "h": 499
  },
  "language-models-groq-saved": {
   "w": 552,
-  "h": 369
+  "h": 366
  },
  "language-models-openrouter-key": {
   "w": 552,
-  "h": 497
+  "h": 494
  },
  "language-models-openrouter-tested": {
   "w": 552,
-  "h": 497
+  "h": 494
  },
  "language-models-override": {
   "w": 912,
@@ -173,7 +173,7 @@
  },
  "language-models-page": {
   "w": 912,
-  "h": 313
+  "h": 185
  },
  "language-models-summary-model": {
   "w": 898,
@@ -246,6 +246,18 @@
  "live-window-undocked": {
   "w": 760,
   "h": 40
+ },
+ "models-jobs": {
+  "w": 806,
+  "h": 803
+ },
+ "models-picker": {
+  "w": 652,
+  "h": 652
+ },
+ "models-warning": {
+  "w": 796,
+  "h": 232
  },
  "note-page-edit-line": {
   "w": 724,
@@ -453,7 +465,7 @@
  },
  "settings-reference-about": {
   "w": 814,
-  "h": 349
+  "h": 365
  },
  "settings-reference-account": {
   "w": 1032,
@@ -492,6 +504,10 @@
   "h": 760
  },
  "settings-reference-microphone": {
+  "w": 1032,
+  "h": 760
+ },
+ "settings-reference-models": {
   "w": 1032,
   "h": 760
  },
@@ -537,11 +553,11 @@
  },
  "speech-models-custom": {
   "w": 552,
-  "h": 635
+  "h": 632
  },
  "speech-models-deepgram": {
   "w": 552,
-  "h": 404
+  "h": 401
  },
  "speech-models-gpu-choice": {
   "w": 552,
@@ -561,7 +577,7 @@
  },
  "speech-models-gpu-model-ready": {
   "w": 552,
-  "h": 355
+  "h": 368
  },
  "speech-models-gpu-no-fit": {
   "w": 552,
@@ -585,7 +601,7 @@
  },
  "speech-models-gpu-slow": {
   "w": 552,
-  "h": 355
+  "h": 442
  },
  "speech-models-gpu-small-card": {
   "w": 900,
@@ -601,11 +617,11 @@
  },
  "speech-models-groq-key": {
   "w": 552,
-  "h": 565
+  "h": 562
  },
  "speech-models-groq-tested": {
   "w": 552,
-  "h": 565
+  "h": 562
  },
  "speech-models-local-download": {
   "w": 552,
@@ -621,7 +637,7 @@
  },
  "speech-models-local-ready": {
   "w": 552,
-  "h": 355
+  "h": 368
  },
  "speech-models-needs-dictation": {
   "w": 552,
@@ -629,11 +645,11 @@
  },
  "speech-models-openai-key": {
   "w": 552,
-  "h": 541
+  "h": 538
  },
  "speech-models-page": {
   "w": 912,
-  "h": 424
+  "h": 385
  },
  "templates-branding-empty": {
   "w": 634,
@@ -701,7 +717,7 @@
  },
  "troubleshooting-diagnostics": {
   "w": 818,
-  "h": 357
+  "h": 373
  },
  "troubleshooting-gpu-failed": {
   "w": 810,

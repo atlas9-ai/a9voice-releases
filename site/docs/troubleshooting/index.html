@@ -59,7 +59,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/" aria-current="page">Troubleshooting and FAQ</a></li></ul></div>
@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Troubleshooting and FAQ</h1>
       <p class="docs-lead">Fixes for the things that go wrong most often, how to copy the diagnostics that help someone find the cause, and short answers to common questions.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.9</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.11</p>
       <p>Find the symptom, read the cause, try the fix. Each entry links to the page with the full story. If none of them helps, <a href="#report-a-problem">copy your diagnostics and report the problem</a>.</p>
 <h2 id="dictation">Dictation<a class="anchor" href="#dictation" aria-label="Link to Dictation">#</a></h2>
 <h3 id="i-hear-no-tone-when-i-start-dictating">I hear no tone when I start dictating<a class="anchor" href="#i-hear-no-tone-when-i-start-dictating" aria-label="Link to I hear no tone when I start dictating">#</a></h3>
@@ -104,12 +104,12 @@
 <p><figure class="shot"><img src="/img/docs/troubleshooting-key-rejected-1x.webp" srcset="/img/docs/troubleshooting-key-rejected-1x.webp 1x, /img/docs/troubleshooting-key-rejected.webp 2x" width="520" height="100" alt="An amber pill that says a key was rejected, with a Fix button." loading="lazy" decoding="async"></figure></p>
 <p>Press <strong>Fix</strong> in the pill: it opens the page where the problem is. The message names the service and the problem:</p>
 <ul>
-<li><strong>&quot;Groq key missing&quot; or &quot;Groq key rejected&quot;</strong> (or the name of whichever service you use). The key is not saved or the service refused it. Open the service in <strong>Settings › Speech models</strong>, paste a fresh key and press <strong>Test</strong>.</li>
+<li><strong>&quot;Groq key missing&quot; or &quot;Groq key rejected&quot;</strong> (or the name of whichever service you use). The key is not saved or the service refused it. Open the service in <strong>Settings › Models</strong>, paste a fresh key and press <strong>Test</strong>.</li>
 <li><strong>&quot;Groq rate limit hit&quot;.</strong> You sent too many requests, or your plan&#39;s limit was reached. Wait a moment, or use another service as the <strong>fallback</strong>.</li>
 <li><strong>&quot;Groq timed out&quot; or &quot;Groq error 503&quot;</strong> (an error followed by a number). The service is slow or down. If a fallback is set, A9 Voice already tried it once.</li>
 <li><strong>&quot;No internet&quot;.</strong> A9 Voice could not reach the service. If you have downloaded a model on this PC, it answers automatically, and the pill adds <strong>offline</strong> to the result.</li>
 <li><strong>&quot;Groq sent a bad reply&quot; or &quot;Groq couldn&#39;t run&quot;.</strong> The service gave something A9 Voice could not read. Try again; if it repeats, copy the diagnostics.</li>
-<li><strong>&quot;Pick how A9 Voice hears you first&quot;.</strong> No speech service or model is set up yet. Open <strong>Settings › Speech models</strong>.</li>
+<li><strong>&quot;Pick how A9 Voice hears you first&quot;.</strong> No speech service or model is set up yet. Open <strong>Settings › Models</strong>.</li>
 <li><strong>&quot;Timed out after 15 s. Nothing was pasted&quot;.</strong> A dictation took longer than 15 seconds. Check your connection and try again.</li>
 <li><strong>&quot;The microphone stopped&quot;.</strong> The microphone disappeared while you spoke. Re-plug it and check <strong>Settings › Microphone</strong>.</li>
 </ul>
@@ -141,8 +141,8 @@
 <ul>
 <li><strong>Wait for it to finish.</strong> A long meeting takes a while to write up. The note shows its stage: transcribing, then &quot;Writing the summary…&quot;.</li>
 <li><strong>After a crash or a restart,</strong> A9 Voice finishes any note that was left unfinished the next time it starts. Open A9 Voice and give it a minute.</li>
-<li><strong>If the note says it failed,</strong> read the message on the note, then press <strong>Try again</strong> (this needs the audio, which is kept for a failed note). If a service rejected your key, fix it in <strong>Settings › Speech models</strong> first.</li>
-<li><strong>If the transcript is fine but there is no summary,</strong> add a key in <strong>Settings › Language models</strong>, then press <strong>Regenerate summary</strong> in the right-hand column of the note. You can also choose another speech model and press <strong>Regenerate transcript</strong>.</li>
+<li><strong>If the note says it failed,</strong> read the message on the note, then press <strong>Try again</strong> (this needs the audio, which is kept for a failed note). If a service rejected your key, fix it in <strong>Settings › Models</strong> first.</li>
+<li><strong>If the transcript is fine but there is no summary,</strong> add a key in <strong>Settings › Models</strong>, then press <strong>Regenerate summary</strong> in the right-hand column of the note. You can also choose another speech model and press <strong>Regenerate transcript</strong>.</li>
 </ul>
 <p>More: <a href="/docs/note-page/">Note page</a>.</p>
 <h2 id="speech-models-and-the-graphics-card">Speech models and the graphics card<a class="anchor" href="#speech-models-and-the-graphics-card" aria-label="Link to Speech models and the graphics card">#</a></h2>
@@ -156,7 +156,7 @@
 <p>Also check the free space: the model window shows how much is free on the drive. If the download keeps failing, press <strong>Discard partial download</strong> and start again. A firewall, proxy or security tool that blocks huggingface.co will stop downloads. More: <a href="/docs/speech-models/">Speech models</a>.</p>
 <h3 id="the-graphics-card-is-not-used">The graphics card is not used<a class="anchor" href="#the-graphics-card-is-not-used" aria-label="Link to The graphics card is not used">#</a></h3>
 <p><figure class="shot"><img src="/img/docs/troubleshooting-gpu-failed-1x.webp" srcset="/img/docs/troubleshooting-gpu-failed-1x.webp 1x, /img/docs/troubleshooting-gpu-failed.webp 2x" width="810" height="219" alt="The graphics-card panel on Speech models after the card had a problem." loading="lazy" decoding="async"></figure></p>
-<p>Open <strong>Settings › Speech models</strong> and read the <strong>Use graphics card</strong> row. It tells you why:</p>
+<p>Open <strong>Settings › Models</strong> and read the <strong>Use graphics card</strong> row. It tells you why:</p>
 <ul>
 <li><strong>&quot;No supported graphics card found. Whisper models run on the processor.&quot;</strong> The PC has no DirectX 12 card that can run models. That is fine: everything works on the processor.</li>
 <li><strong>&quot;The driver is too old for DirectX 12. Update the graphics driver.&quot;</strong> Update the driver from your card&#39;s maker or Windows Update.</li>
@@ -193,7 +193,7 @@
 <p>Every page of A9 Voice has a small <strong>?</strong> button at the top right, beside the model chips. It opens this manual in your browser at the page that explains the screen you are on, for example the Speech models page opens <a href="/docs/speech-models/">Speech models</a>. The Live window has the same <strong>?</strong> button in its header. The <strong>Manual</strong> button in the sidebar, and <strong>Help › Manual</strong> in the tray menu, open the front page of the manual.</p>
 <h3 id="copy-diagnostics">Copy diagnostics<a class="anchor" href="#copy-diagnostics" aria-label="Link to Copy diagnostics">#</a></h3>
 <p>Copy diagnostics puts a block of text on your clipboard that tells someone what you are running, without anything private.</p>
-<p><figure class="shot"><img src="/img/docs/troubleshooting-diagnostics-1x.webp" srcset="/img/docs/troubleshooting-diagnostics-1x.webp 1x, /img/docs/troubleshooting-diagnostics.webp 2x" width="818" height="357" alt="The About card with the Copy diagnostics button." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/troubleshooting-diagnostics-1x.webp" srcset="/img/docs/troubleshooting-diagnostics-1x.webp 1x, /img/docs/troubleshooting-diagnostics.webp 2x" width="818" height="373" alt="The About card with the Copy diagnostics button." loading="lazy" decoding="async"></figure></p>
 <p>You find it in two places: <strong>Settings › General</strong>, at the bottom in the <strong>About</strong> card, and the tray menu under <strong>Help › Copy diagnostics</strong>. Paste it into your message.</p>
 <p>It contains:</p>
 <ul>

@@ -59,7 +59,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/" aria-current="page">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.6</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.6.11</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
@@ -111,7 +111,7 @@
 <li><strong>Dictation uses the clipboard briefly.</strong> It puts the text on the clipboard to paste it, keeps it out of Windows clipboard history and the cloud clipboard, and puts back what you had copied. When you ask for a copy yourself (tray <strong>Copy last transcription</strong>), that copy is allowed into clipboard history.</li>
 </ul>
 <h2 id="what-each-service-receives">What each service receives<a class="anchor" href="#what-each-service-receives" aria-label="Link to What each service receives">#</a></h2>
-<p>The services A9 Voice can call are the ones in <strong>Settings › Speech models</strong> and <strong>Settings › Language models</strong>. Each one only receives data when you set up its key (or address) and use it.</p>
+<p>The services A9 Voice can call are the ones in <strong>Settings › Models</strong> and <strong>Settings › Models</strong>. Each one only receives data when you set up its key (or address) and use it.</p>
 <ul>
 <li><strong>Speech:</strong> Groq, Deepgram, OpenAI, ElevenLabs, and any server you add with <strong>Add custom API</strong>.</li>
 <li><strong>Language models:</strong> OpenRouter, OpenAI, Anthropic, Groq, Google, and any server you add with <strong>Add custom API</strong>.</li>
@@ -120,9 +120,9 @@
 <h2 id="keeping-everything-on-this-pc">Keeping everything on this PC<a class="anchor" href="#keeping-everything-on-this-pc" aria-label="Link to Keeping everything on this PC">#</a></h2>
 <p>You can use A9 Voice with no cloud service at all:</p>
 <ol>
-<li>In <strong>Settings › Speech models</strong>, download a model under <strong>On this PC</strong> (Parakeet V2 for English, or a multilingual model) and tick <strong>Use for dictation</strong> and <strong>Use for notes</strong>. Set <strong>Use as fallback</strong> to another model on this PC, or none.</li>
+<li>In <strong>Settings › Models</strong>, download a model under <strong>On this PC</strong> (Parakeet V2 for English, or a multilingual model). Under <strong>What each job uses</strong>, click <strong>Change</strong> on <strong>Dictation</strong> and <strong>Meeting notes</strong> and pick it. Set <strong>Fallback for dictation</strong> to another model on this PC, or none.</li>
 <li>In the same page, <strong>Disconnect</strong> any cloud speech keys you no longer want. With no key saved, nothing can be sent there.</li>
-<li>For summaries, Enhance and Ask, run a language-model server on your own PC and add it in <strong>Settings › Language models</strong> with <strong>Add custom API</strong>. The page shows <code>http://localhost:11434/v1</code> as an example address. Tick <strong>Use for Enhance, summaries and Ask</strong> (this also sets the <strong>Summary model</strong> in <strong>Settings › Transcript &amp; summary</strong>). <strong>Disconnect</strong> any cloud language models, because summaries fall back to them.</li>
+<li>For summaries, Enhance and Ask, run a language-model server on your own PC and add it in <strong>Settings › Models</strong> with <strong>Add custom API</strong>. The page shows <code>http://localhost:11434/v1</code> as an example address. Under <strong>What each job uses</strong>, click <strong>Change</strong> on <strong>Summaries</strong> and pick it; Ask and Enhance follow it. <strong>Disconnect</strong> any cloud language models, because summaries fall back to them.</li>
 <li>Leave <strong>Settings › Integrations</strong> empty, and leave <strong>Connector for AI apps</strong> off if you do not want notes to reach another app.</li>
 <li>For <strong>Live transcript</strong>, use a speech model on this PC that keeps up (its window says whether it does), or turn <strong>Live transcript</strong> off.</li>
 </ol>
