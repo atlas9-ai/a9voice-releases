@@ -24,7 +24,7 @@
     const box = el("div", "lb-box");
     const close = el("button", "lb-close", { type: "button", "aria-label": "Close" }, "\u2715");
     const frame = el("div", "lb-frame");
-    video = el("video", "", { controls: "", playsinline: "", preload: "none", poster: POSTER, "aria-label": "A9 Voice: meet Sarah, 53-second demo" });
+    video = el("video", "", { controls: "", playsinline: "", preload: "none", poster: POSTER, "aria-label": "A9 Voice: meet Sara, 53-second demo" });
     frame.append(video);
     const row = el("div", "lb-row");
     const yt = el("a", "lb-link", { href: YT, target: "_blank", rel: "noopener" }, "Watch on YouTube \u2197");

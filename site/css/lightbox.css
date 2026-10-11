@@ -26,11 +26,11 @@
   .lb-row .btn { width: 100%; justify-content: center; }
 }
 
-/* A lesson's player: the 9:16 file on phones gets a tall frame, and "Sarah is an AI presenter." sits under it. */
+/* A lesson's player: the 9:16 file on phones gets a tall frame, and "Sara is an AI presenter." sits under it. */
 .lb-frame.vert { aspect-ratio: 9 / 16; width: min(100%, calc((100dvh - 150px) * 9 / 16)); }
 .lb-note { margin: 12px 0 0; text-align: center; color: var(--muted-2); font-size: 14px; }
 
-/* The lesson card next to the step a lesson explains: the lesson's designed picture (its label and Sarah are in the image) with a play
+/* The lesson card next to the step a lesson explains: the lesson's designed picture (its label and Sara are in the image) with a play
    button top-left and its length top-right, then its title.
    The whole card is one link; without JS it goes to the 16:9 MP4. Sized by the box it sits in: 320 px, or the full width up to
    360 px on phones. The thumbnail has its own 16:9 box, so nothing moves when the image arrives. */

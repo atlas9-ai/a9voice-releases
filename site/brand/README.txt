@@ -47,7 +47,7 @@ VOICE
   Tagline: Dictation and meeting notes for Windows.
 
 VIDEO AND PRESENTER
-  Sarah is an AI presenter. Always say so: on the page, and with the platform's AI-content label.
+  Sara is an AI presenter. Always say so: on the page, and with the platform's AI-content label.
   Never present her as a real employee or customer. No surname. No lines that claim personal experience.
   Look: dusk office, city window, warm brass desk lamp, dark sweater or white shirt. Natural, conversational, mid-shot, real-looking.
   Voice: warm, professional, upbeat but not salesy. She says "Ay-nine Voice" and "Ay-nine voice dot com".

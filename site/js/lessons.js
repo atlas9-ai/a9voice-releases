@@ -24,7 +24,7 @@
     const box = el("div", "lb-box");
     const close = el("button", "lb-close", { type: "button", "aria-label": "Close" }, "✕");
     frame = el("div", "lb-frame");
-    const note = el("p", "lb-note", {}, "Sarah is an AI presenter.");
+    const note = el("p", "lb-note", {}, "Sara is an AI presenter.");
     box.append(close, frame, note);
     dlg.append(box);
     document.body.append(dlg);
