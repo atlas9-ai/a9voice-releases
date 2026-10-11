@@ -22,5 +22,17 @@
     "vtt": "/media/a9voice-lesson-dictation-16x9.vtt",
     "cardLabel": "First dictation",
     "number": 2
+  },
+  {
+    "id": "meeting",
+    "title": "Your first meeting",
+    "chip": "Your first meeting",
+    "duration": "0:57",
+    "src16x9": "/media/a9voice-lesson-meeting-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-meeting-9x16.mp4",
+    "poster": "/media/a9voice-lesson-meeting-poster.jpg",
+    "vtt": "/media/a9voice-lesson-meeting-16x9.vtt",
+    "cardLabel": "First meeting",
+    "number": 3
   }
 ]
