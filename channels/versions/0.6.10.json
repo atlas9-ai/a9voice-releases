@@ -1,0 +1,13 @@
+{
+  "version": "0.6.10",
+  "notes": "- Settings › Notes › Search now shows what is really in each folder: \"13 notes in this folder · 13 already copied into A9\". A folder whose notes were all copied no longer reads \"0 notes\".\n- A row says \"3 couldn't be read\" when files were skipped, with a link to the logs, and \"includes Name\" when you also added a folder inside it.\n- A9 Voice refuses to add the folder that holds your A9 notes (or one inside it), and reads a note once when you add a folder and one of its subfolders.",
+  "pub_date": "2026-10-11T12:50:56Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcER4WHkxNms4MFZMcjFPQTlha1NDZWcrcUc5NVZvSDVpbHliV0tMbVFpYXFBVHM2RnZOZ0NyNDY3S29mZk9DSjhPRnB3czZBbGxWRUR6TGNBQitjbFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzIzMDEwCWZpbGU6QTkgVm9pY2VfMC42LjEwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTAKWW5ZZDhwNVE3Vkw3bUJwYlJEMzB6VG5TNGZuVStvM3Y1N21QcVUyZG1aTzlaM0t6OWFYby9PTUtqY2VKZWZPWEFUR0htN3dQUDV4c2ZJWG9iYkNZQlE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.10/A9Voice_0.6.10_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "486b15a4b1e090df63d0b17afdbef6afe1f13da8a3324ca2b9665a4b120c0459",
+  "installer_size": 11391393
+}
