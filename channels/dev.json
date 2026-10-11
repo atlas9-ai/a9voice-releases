@@ -1,13 +1,13 @@
 {
-  "version": "0.6.12",
-  "notes": "- Ask your notes has answer templates, like summary templates: **Quick answer**, **Briefing**, **Latest on…**, **Who owes what**, **Decision log**, **Meeting prep** and **Exec status**. The menu next to the question replaces the Quick and Deep buttons, and the last one you used is kept.\n- Questions about \"the last ask\" or \"the latest\" now read the newest matching meetings first and lead with the most recent mention and its date, even when an older meeting matches the words better.\n- Each template sets how many passages to read, how far back to look, whether the newest come first, and which model answers. Edit them, duplicate them or reset them in **Settings › Templates › Ask templates**.\n- The line under an answer names the template, the model, how many passages were sent and what it cost.",
-  "pub_date": "2026-10-11T14:37:59Z",
+  "version": "0.6.13",
+  "notes": "- Settings › Privacy shows the first 8 characters of this PC's anonymous ID, with a **Copy ID** button.\n- With **Send anonymous usage counts** on, A9 Voice sends three one-time messages: when you finish setup, make your first dictation and record your first note. Never what you said or recorded. An update does not send any step you had already passed, and with the switch off none are sent.",
+  "pub_date": "2026-10-11T15:05:03Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENiMnE1MTU3ci9LZlBMV2oyREN6aCtGQTQzaklYV2l6Qm45bnZ6WjlqN2hFWWhXQ3R4UmFWbCtaSHdsVmh4Zjg4Q1B1T21rR3dzaG50TzdKa1Fhb0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzI5NDM4CWZpbGU6QTkgVm9pY2VfMC42LjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTIKcDkwR2ZMTFJ6M2lJcTM3Y3A1RkVldHlpQVEyZDV5VWVmRSsrZEZRKzNIaEMwNGhURnQ0aWpJZHBIaE9KNkNFUEFVSC8yWEZXcG1nQWdwc2luWHhTQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.12/A9Voice_0.6.12_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEVGT1ZlYS9ZeVphYnZJM1gwM1hoaURIQ1dCZzNkR1R1TXN0YU4ybEFFN2h2SzN2a2s2eHVKVWlnRzJucWRJSmVocXcrMWRrQjQzSGttbW5mTS83T2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzMxMDcwCWZpbGU6QTkgVm9pY2VfMC42LjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTMKcThwdXN3NHBVdWVTMS9vOWV2N2JlWXcwYW4wZXRaMkFiQ0JHNjFjMkFWLzVjMFFMbDlXY20vRVR0Q3JNdUN4OVdBYW1kZ052eHY4bUJUOFhBdzV5QVE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.13/A9Voice_0.6.13_x64-setup.exe"
     }
   },
-  "installer_sha256": "2607d5936adf1ae40907ede1e49fcf645173e6e025ca04213720fce86ad3765a",
-  "installer_size": 11495895
+  "installer_sha256": "d156a84eb9716042ffb9ff773687b20314b16da3404e5534ea6da5e0863afc0a",
+  "installer_size": 11504646
 }
