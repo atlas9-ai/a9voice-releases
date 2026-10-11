@@ -1,13 +1,13 @@
 {
-  "version": "0.6.13",
-  "notes": "- Settings › Privacy shows the first 8 characters of this PC's anonymous ID, with a **Copy ID** button.\n- With **Send anonymous usage counts** on, A9 Voice sends three one-time messages: when you finish setup, make your first dictation and record your first note. Never what you said or recorded. An update does not send any step you had already passed, and with the switch off none are sent.",
-  "pub_date": "2026-10-11T15:05:03Z",
+  "version": "0.7.0",
+  "notes": "- Notes has a 30-day free trial that starts the first time you use it. Transcribe stays free, always. After the trial a new Notes recording needs a license ($49 once, for you on up to 3 of your PCs, with every update); everything you already recorded stays readable, searchable and exportable.\n- **Settings › Account** shows where you are: the days left, **Buy Notes — $49**, **Enter a license key** and **Deactivate this machine**. In the last 5 days of the trial you can get 14 more with your email, once per PC.\n- The Notes list says so when the trial is nearly over and when it has ended. The logo on the Account card now lines up with the **CURRENT PLAN** label.\n- The trial keeps its dates when you reinstall on the same PC. The code it uses is a one-way hash of your PC's machine ID; **Anonymous usage counts** says what is sent.",
+  "pub_date": "2026-10-11T19:20:14Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEVGT1ZlYS9ZeVphYnZJM1gwM1hoaURIQ1dCZzNkR1R1TXN0YU4ybEFFN2h2SzN2a2s2eHVKVWlnRzJucWRJSmVocXcrMWRrQjQzSGttbW5mTS83T2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzMxMDcwCWZpbGU6QTkgVm9pY2VfMC42LjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTMKcThwdXN3NHBVdWVTMS9vOWV2N2JlWXcwYW4wZXRaMkFiQ0JHNjFjMkFWLzVjMFFMbDlXY20vRVR0Q3JNdUN4OVdBYW1kZ052eHY4bUJUOFhBdzV5QVE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.13/A9Voice_0.6.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEhJUnJYYzJRNUZqSERpWEp6aFNIRk9KQ1ljTTAyVHdnVDBYWVNXQWkzdmlMV3Bsd2tHRUg4UXpydEVEeGNyTVE1L280ekFaTVJmeDNSbFQyMU13MGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzQ2MzM3CWZpbGU6QTkgVm9pY2VfMC43LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4wCjEzZVFMZ0lxSmlBUVlCS2NqWktBMk5lajgyZmxlSEZxVHY5MSs5TDhSOFIxSmNtaUY3a1dlUy9EbWw1QVNIU0RsNk5uQXFmd3J0VVh2ZjBvbDRZMUR3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.0/A9Voice_0.7.0_x64-setup.exe"
     }
   },
-  "installer_sha256": "d156a84eb9716042ffb9ff773687b20314b16da3404e5534ea6da5e0863afc0a",
-  "installer_size": 11504646
+  "installer_sha256": "b4ed96161e47d4665d64032fc050d2756fcebfc3946b5439a012f1f1c7fd6d03",
+  "installer_size": 11584576
 }
