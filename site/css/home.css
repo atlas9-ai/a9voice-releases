@@ -212,6 +212,8 @@ a { color: var(--signal); }
 .end h2 span { color: var(--signal); }
 .end .cta { margin-top: 36px; display: flex; justify-content: center; }
 .end small { display: block; margin-top: 14px; color: var(--muted); font-size: 13px; }
+.end small a { color: var(--signal); white-space: nowrap; }
+.end small a:hover { color: #DCE6FD; }
 
 /* Glide-in on scroll: only what starts below the fold is hidden first (home.js). */
 .rv { transition: opacity .8s var(--e2), transform .9s var(--e2); }
