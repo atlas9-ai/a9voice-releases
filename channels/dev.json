@@ -1,13 +1,13 @@
 {
-  "version": "0.7.2",
-  "notes": "- Saving your first Deepgram key asks before it changes Meeting notes. The key window and the setup step show **Also use Deepgram for Meeting notes**, checked. Uncheck it and the key is saved while Meeting notes stay on the model they use now; check it and your meeting audio goes to Deepgram. Dictation is never changed.",
-  "pub_date": "2026-10-11T21:32:21Z",
+  "version": "0.7.3",
+  "notes": "- **Notes** now opens with what it does and one button, **Try Notes free for 30 days**. The trial starts when you press it, never by itself, and nothing is recorded before that. If a call starts first, a small card asks **Start trial** or **Not now**. Notes you already have stay in the list.\n- **Buy Notes — $49** is now in every place the trial shows: the Account card, the license key box, a slim bar on the Notes page and a small chip by the version. The plan card no longer says \"trial\" before there is one.\n- Buy from the PC you use and Notes unlocks by itself when the payment goes through: no key to copy and paste. The page you land on still shows the key, for a purchase made on another PC.\n- The checkout page and the **Finish paying in your browser** sheet say your card statement will show LINK.COM* ATLAS9 LLC.",
+  "pub_date": "2026-10-11T21:54:54Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEY2TjBNWmwzcWl1L21TUFl3bk9lVDdzSTVRSGhNOGdDY1FuazgxTGpzaTQ3WGZURFdGdmRjNS90RGI3cTFQSDZqTERlZWlheUVBV0dsWEx1Q0xzZndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzU0MjU5CWZpbGU6QTkgVm9pY2VfMC43LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4yCkZ1ZDg1K0JhWHNQalF4cFBFRjVDYzFqdzJoZnlUZDA0cFZoVmV3dDlKYmdDMDZpZ2JQdldod0JqeVVOREhxeWF1RUI1WnZMWkc4WkFnQWlFb1JoQkFBPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.2/A9Voice_0.7.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExVWklSM0IvR3RSZnhHV0pKd2g2Wkg3Mm93QWM4c2dKUlVkblhEYUJzSmw1T3ladGNOMHNWdFYrNVZpY0RielJJbys5NDNDekdBVUFzRm1Ea2NGaVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzU1NjQ1CWZpbGU6QTkgVm9pY2VfMC43LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4zCmp5bkxNcWtWNDBleXFTaFRwdjkyN2tybWRFWlpacVhaWEROR0N3QjkvOStUYnUvbHhQYTA3N3dIOExwWDdrZjc0NmhLOW12QWV3QkF4NENhNUtkSkJ3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.3/A9Voice_0.7.3_x64-setup.exe"
     }
   },
-  "installer_sha256": "9ec58978b604f2202a8f87b9f3e86e4799fb4e438098c0e0c0ab41aab9123fc5",
-  "installer_size": 11669088
+  "installer_sha256": "7400c445612df1c531ca530281ebe6a31d199d0dc27bb42a01f252516aa224b8",
+  "installer_size": 11695691
 }
