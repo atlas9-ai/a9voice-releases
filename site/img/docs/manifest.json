@@ -3,6 +3,10 @@
   "w": 760,
   "h": 508
  },
+ "ask-latest": {
+  "w": 760,
+  "h": 484
+ },
  "ask-not-found": {
   "w": 760,
   "h": 210
@@ -10,6 +14,10 @@
  "ask-quick": {
   "w": 760,
   "h": 284
+ },
+ "ask-template-editor": {
+  "w": 710,
+  "h": 1305
  },
  "connector-claude-missing": {
   "w": 794,
@@ -166,10 +174,6 @@
  "language-models-openrouter-tested": {
   "w": 552,
   "h": 494
- },
- "language-models-override": {
-  "w": 912,
-  "h": 205
  },
  "language-models-page": {
   "w": 912,
@@ -427,10 +431,6 @@
   "w": 1020,
   "h": 66
  },
- "search-deep-model": {
-  "w": 790,
-  "h": 99
- },
  "search-dictations-setting": {
   "w": 794,
   "h": 417
@@ -491,10 +491,6 @@
   "w": 1032,
   "h": 760
  },
- "settings-reference-language-models": {
-  "w": 1032,
-  "h": 760
- },
  "settings-reference-list": {
   "w": 190,
   "h": 760
@@ -520,10 +516,6 @@
   "h": 760
  },
  "settings-reference-search": {
-  "w": 1032,
-  "h": 760
- },
- "settings-reference-speech-models": {
   "w": 1032,
   "h": 760
  },
@@ -638,10 +630,6 @@
  "speech-models-local-ready": {
   "w": 552,
   "h": 368
- },
- "speech-models-needs-dictation": {
-  "w": 552,
-  "h": 413
  },
  "speech-models-openai-key": {
   "w": 552,
