@@ -9,7 +9,8 @@
     "poster": "/media/a9voice-lesson-install-poster.jpg",
     "vtt": "/media/a9voice-lesson-install-16x9.vtt",
     "cardLabel": "Install",
-    "number": 1
+    "number": 1,
+    "guide": "/docs/getting-started/#install"
   },
   {
     "id": "dictation",
@@ -21,7 +22,8 @@
     "poster": "/media/a9voice-lesson-dictation-poster.jpg",
     "vtt": "/media/a9voice-lesson-dictation-16x9.vtt",
     "cardLabel": "First dictation",
-    "number": 2
+    "number": 2,
+    "guide": "/docs/transcribe/"
   },
   {
     "id": "meeting",
@@ -33,6 +35,59 @@
     "poster": "/media/a9voice-lesson-meeting-poster.jpg",
     "vtt": "/media/a9voice-lesson-meeting-16x9.vtt",
     "cardLabel": "First meeting",
-    "number": 3
+    "number": 3,
+    "guide": "/docs/recording-a-meeting/"
+  },
+  {
+    "id": "voices",
+    "title": "Naming speakers",
+    "chip": "Naming speakers",
+    "duration": "0:49",
+    "src16x9": "/media/a9voice-lesson-voices-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-voices-9x16.mp4",
+    "poster": "/media/a9voice-lesson-voices-poster.jpg",
+    "vtt": "/media/a9voice-lesson-voices-16x9.vtt",
+    "cardLabel": "Name speakers",
+    "number": 4,
+    "guide": "/docs/live-window/"
+  },
+  {
+    "id": "dictionary",
+    "title": "Custom words",
+    "chip": "Custom words",
+    "duration": "0:40",
+    "src16x9": "/media/a9voice-lesson-dictionary-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-dictionary-9x16.mp4",
+    "poster": "/media/a9voice-lesson-dictionary-poster.jpg",
+    "vtt": "/media/a9voice-lesson-dictionary-16x9.vtt",
+    "cardLabel": "Custom words",
+    "number": 6,
+    "guide": "/docs/dictionary/"
+  },
+  {
+    "id": "files",
+    "title": "Your notes, your files",
+    "chip": "Your notes, your files",
+    "duration": "0:45",
+    "src16x9": "/media/a9voice-lesson-files-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-files-9x16.mp4",
+    "poster": "/media/a9voice-lesson-files-poster.jpg",
+    "vtt": "/media/a9voice-lesson-files-16x9.vtt",
+    "cardLabel": "Your files",
+    "number": 7,
+    "guide": "/docs/note-page/"
+  },
+  {
+    "id": "models",
+    "title": "Speech models and your graphics card",
+    "chip": "Speech models",
+    "duration": "0:43",
+    "src16x9": "/media/a9voice-lesson-models-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-models-9x16.mp4",
+    "poster": "/media/a9voice-lesson-models-poster.jpg",
+    "vtt": "/media/a9voice-lesson-models-16x9.vtt",
+    "cardLabel": "Speech models",
+    "number": 8,
+    "guide": "/docs/speech-models/"
   }
 ]
