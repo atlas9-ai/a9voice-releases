@@ -1,13 +1,13 @@
 {
-  "version": "0.7.0",
-  "notes": "- Notes has a 30-day free trial that starts the first time you use it. Transcribe stays free, always. After the trial a new Notes recording needs a license ($49 once, for you on up to 3 of your PCs, with every update); everything you already recorded stays readable, searchable and exportable.\n- **Settings › Account** shows where you are: the days left, **Buy Notes — $49**, **Enter a license key** and **Deactivate this machine**. In the last 5 days of the trial you can get 14 more with your email, once per PC.\n- The Notes list says so when the trial is nearly over and when it has ended. The logo on the Account card now lines up with the **CURRENT PLAN** label.\n- The trial keeps its dates when you reinstall on the same PC. The code it uses is a one-way hash of your PC's machine ID; **Anonymous usage counts** says what is sent.",
-  "pub_date": "2026-10-11T19:20:14Z",
+  "version": "0.7.1",
+  "notes": "- **Ask** is its own page in the sidebar, after Notes: a big question box, your filters, the answer with links to the exact moment, and your last 50 questions on the side (kept on this PC only; **Clear all** removes them). **Ask a follow-up** carries the answer along for one more question. Ctrl+K keeps its **Ask your notes** tab, with **Open in Ask**.\n- **Quick | Deep | Template** sits next to **Ask**. Quick is the default every time. Deep and a template apply to that one question, then it goes back. <kbd>Ctrl</kbd>+<kbd>Enter</kbd> asks Deep; <kbd>Alt</kbd>+<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> pick the segments. **Settings › Search › Default answer** can make Deep the default.\n- **Deep** finds every meeting a topic came up in: your question is searched several ways, each meeting gives its best passages before any gives more, and the answer lists each item with every dated meeting, ending with what was covered (\"Searched 168 notes (Jul 2 – Oct 10) with 4 searches; 7 meetings matched.\").\n- Times and names in a question (\"last Wednesday\", \"this week\", a person's name) become chips above the answer that you can remove. \"What did Ana say\" reads what Ana said before what was said about her, and a day with nothing says so and shows the nearest days.",
+  "pub_date": "2026-10-11T20:59:35Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEhJUnJYYzJRNUZqSERpWEp6aFNIRk9KQ1ljTTAyVHdnVDBYWVNXQWkzdmlMV3Bsd2tHRUg4UXpydEVEeGNyTVE1L280ekFaTVJmeDNSbFQyMU13MGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzQ2MzM3CWZpbGU6QTkgVm9pY2VfMC43LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4wCjEzZVFMZ0lxSmlBUVlCS2NqWktBMk5lajgyZmxlSEZxVHY5MSs5TDhSOFIxSmNtaUY3a1dlUy9EbWw1QVNIU0RsNk5uQXFmd3J0VVh2ZjBvbDRZMUR3PT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.0/A9Voice_0.7.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExUMTBoQk83Z0JBd21vTFJmanpQbWdrc3pWQk42cFNNUXE4N2dDNzdMWnlCNWR2L3NUWm56N1BXWU8xNjByQWVHNGJPY3Z0ZVQ3Z2ZMb3g5a0JBeWdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzUyMjU4CWZpbGU6QTkgVm9pY2VfMC43LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4xCnpFbXFIVWtZRWhhVzh0RFRnakFDZE5xL0Y0aWJib20xTUZIMHVxWW5xaXE5eHR4cmY0QnMzK3BOdnlxTUx5Sk5YNG0vWnQ1dThrb0RxVU41NmQyMkNBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.1/A9Voice_0.7.1_x64-setup.exe"
     }
   },
-  "installer_sha256": "b4ed96161e47d4665d64032fc050d2756fcebfc3946b5439a012f1f1c7fd6d03",
-  "installer_size": 11584576
+  "installer_sha256": "35f07fca0cf2ded91d2f1cee621e413ac1d2aa2fba19eed4b24bc1d747c6dd77",
+  "installer_size": 11666209
 }
