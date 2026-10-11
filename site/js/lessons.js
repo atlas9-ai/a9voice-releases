@@ -1,12 +1,12 @@
-// Lesson pop-ups: a "▶ Watch" chip (a.lesson-chip[data-lesson], built from site/lessons.json) opens the lesson in the same kind of
+// Lesson pop-ups: a video card (a.lesson-card[data-lesson], built from site/lessons.json) opens the lesson in the same kind of
 // lightbox as the home page's demo (css/lightbox.css; a native modal dialog gives Esc, the focus trap, the inert page and the focus
 // return). Same rules as that one: play() is called synchronously inside the click, which is the only way a browser lets a video
 // start with sound; closing pauses and resets; nothing loads before the click (preload="none", no src until then). Without JS, or on
-// a middle-click or new tab, the chip is a plain link to the 16:9 MP4. Phones (up to 600 px) get the 9:16 file with its words burned
+// a middle-click or new tab, the card is a plain link to the 16:9 MP4. Phones (up to 600 px) get the 9:16 file with its words burned
 // in; everyone else gets the 16:9 with its captions track on. Native video only: no YouTube, no third-party script.
 (() => {
-  const chips = document.querySelectorAll("a.lesson-chip[data-lesson]");
-  if (!chips.length || typeof HTMLDialogElement === "undefined") return;
+  const cards = document.querySelectorAll("a.lesson-card[data-lesson]");
+  if (!cards.length || typeof HTMLDialogElement === "undefined") return;
   let dlg = null;
   let frame = null;
   let video = null;
@@ -40,11 +40,11 @@
     });
   };
 
-  chips.forEach((chip) => chip.addEventListener("click", (e) => {
+  cards.forEach((card) => card.addEventListener("click", (e) => {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     if (!dlg) build();
     if (typeof dlg.showModal !== "function") return; // let the link go to the MP4
-    const d = chip.dataset;
+    const d = card.dataset;
     const vertical = !!d.src9 && window.matchMedia("(max-width: 600px)").matches;
     e.preventDefault();
     dlg.setAttribute("aria-label", "Lesson: " + (d.title || "video"));
