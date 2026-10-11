@@ -1,0 +1,13 @@
+/* /thanks: where Stripe sends a buyer. The key, a Copy button and two steps. Built on site.css. Blue for the
+   clickable thing; no red, no orange. Not in the sitemap, not linked from anywhere, noindex. */
+.th-main { max-width: 720px; padding-top: clamp(40px, 7vw, 88px); padding-bottom: clamp(56px, 8vw, 104px); display: flex; flex-direction: column; gap: 20px; }
+.th-main h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.08; }
+.th-main h2 { font-size: 20px; line-height: 1.25; letter-spacing: -0.01em; }
+.th-key { padding: 24px; border: 1px solid var(--action); border-radius: 16px; background: linear-gradient(180deg, rgba(43, 91, 215, .14), var(--surface) 70%); display: flex; flex-direction: column; gap: 14px; }
+.th-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.th-row code { font: 600 clamp(18px, 3.4vw, 26px)/1.3 var(--mono); letter-spacing: 0.04em; padding: 10px 14px; border-radius: 10px; background: var(--ground); border: 1px solid var(--line); overflow-wrap: anywhere; }
+.th-note { margin: 0; font-size: 14px; line-height: 1.55; color: var(--muted); max-width: 60ch; }
+.th-note a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
+.th-steps { display: flex; flex-direction: column; gap: 10px; padding-top: 12px; }
+.th-steps ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.55; color: var(--text-2); }
+.th-steps strong { color: var(--text); font-weight: 600; }

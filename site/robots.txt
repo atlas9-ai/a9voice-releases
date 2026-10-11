@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /brand
+Disallow: /thanks
 Sitemap: https://a9voice.com/sitemap.xml
