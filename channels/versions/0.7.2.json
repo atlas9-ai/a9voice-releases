@@ -1,0 +1,13 @@
+{
+  "version": "0.7.2",
+  "notes": "- Saving your first Deepgram key asks before it changes Meeting notes. The key window and the setup step show **Also use Deepgram for Meeting notes**, checked. Uncheck it and the key is saved while Meeting notes stay on the model they use now; check it and your meeting audio goes to Deepgram. Dictation is never changed.",
+  "pub_date": "2026-10-11T21:32:20Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEY2TjBNWmwzcWl1L21TUFl3bk9lVDdzSTVRSGhNOGdDY1FuazgxTGpzaTQ3WGZURFdGdmRjNS90RGI3cTFQSDZqTERlZWlheUVBV0dsWEx1Q0xzZndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzU0MjU5CWZpbGU6QTkgVm9pY2VfMC43LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4yCkZ1ZDg1K0JhWHNQalF4cFBFRjVDYzFqdzJoZnlUZDA0cFZoVmV3dDlKYmdDMDZpZ2JQdldod0JqeVVOREhxeWF1RUI1WnZMWkc4WkFnQWlFb1JoQkFBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.2/A9Voice_0.7.2_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "9ec58978b604f2202a8f87b9f3e86e4799fb4e438098c0e0c0ab41aab9123fc5",
+  "installer_size": 11669088
+}
