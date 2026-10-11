@@ -30,7 +30,8 @@
 .lb-frame.vert { aspect-ratio: 9 / 16; width: min(100%, calc((100dvh - 150px) * 9 / 16)); }
 .lb-note { margin: 12px 0 0; text-align: center; color: var(--muted-2); font-size: 14px; }
 
-/* The lesson card next to the step a lesson explains: the lesson's thumbnail with a play button and its length, then its title.
+/* The lesson card next to the step a lesson explains: the lesson's designed picture (its label and Sarah are in the image) with a play
+   button top-left and its length top-right, then its title.
    The whole card is one link; without JS it goes to the 16:9 MP4. Sized by the box it sits in: 320 px, or the full width up to
    360 px on phones. The thumbnail has its own 16:9 box, so nothing moves when the image arrives. */
 a.lesson-card { display: block; width: 320px; max-width: 100%; margin: 14px 0; border-radius: 12px; color: var(--text); text-decoration: none; }
@@ -38,9 +39,9 @@ a.lesson-card:hover { color: var(--text); }
 a.lesson-card:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
 .lesson-thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
 .lesson-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.lesson-play { position: absolute; inset: 0; width: 56px; height: 56px; margin: auto; display: grid; place-items: center; padding-left: 3px; border-radius: 50%;
+.lesson-play { position: absolute; top: 10px; left: 10px; width: 48px; height: 48px; display: grid; place-items: center; padding-left: 2px; border-radius: 50%;
   background: rgba(11,12,14,.66); border: 1px solid rgba(255,255,255,.28); color: #fff; }
-.lesson-dur { position: absolute; right: 8px; bottom: 8px; padding: 2px 7px; border-radius: 6px; background: rgba(11,12,14,.82); color: var(--text);
+.lesson-dur { position: absolute; top: 10px; right: 10px; padding: 2px 7px; border-radius: 6px; background: rgba(11,12,14,.82); color: var(--text);
   font-family: var(--mono); font-size: 12px; font-weight: 500; line-height: 1.5; }
 .lesson-title { display: block; margin-top: 10px; font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--text); }
 .lesson-sub { display: block; margin-top: 2px; font-size: 14px; line-height: 1.4; color: var(--muted); }
