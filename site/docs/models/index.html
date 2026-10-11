@@ -60,7 +60,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/" aria-current="page">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Models</h1>
       <p class="docs-lead">One page for every model A9 Voice uses, organized by job: dictation, meeting notes, summaries, Ask and Enhance.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.11</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
       <p>People think in jobs, not in engines. <strong>Settings › Models</strong> starts with what each job uses and a <strong>Change</strong> button for each, and keeps the keys and downloads underneath.</p>
 <p><figure class="shot"><img src="/img/docs/models-jobs-1x.webp" srcset="/img/docs/models-jobs-1x.webp 1x, /img/docs/models-jobs.webp 2x" width="806" height="803" alt="Settings, Models: a row per job, each with its model and a blue Change button." loading="lazy" decoding="async"><figcaption>What each job uses. Change opens the right list.</figcaption></figure></p>
 <h2 id="what-each-job-uses">What each job uses<a class="anchor" href="#what-each-job-uses" aria-label="Link to What each job uses">#</a></h2>
@@ -80,8 +80,8 @@
 <tr><td><strong>Fallback for dictation</strong></td><td>Tried once if the dictation model fails, is rate-limited or takes too long.</td><td>the same list, or none</td></tr>
 <tr><td><strong>Meeting notes</strong></td><td>Speech-to-text for recordings. Telling speakers apart matters most.</td><td>speech services and models on this PC</td></tr>
 <tr><td><strong>Summaries</strong></td><td>The language model that writes titles, summaries and tags.</td><td>every language model you have a key for</td></tr>
-<tr><td><strong>Ask: Quick</strong></td><td>Short answers from about 10 passages.</td><td>language models, or <strong>Same as Summaries</strong></td></tr>
-<tr><td><strong>Ask: Deep</strong></td><td>Long, dated answers with quotes from 40 to 60 passages.</td><td>language models, or <strong>Same as Summaries</strong></td></tr>
+<tr><td><strong>Ask: Quick</strong></td><td>Short answers from about 10 passages. It also thinks of the extra searches for a Deep answer.</td><td>language models, or <strong>Same as Summaries</strong></td></tr>
+<tr><td><strong>Ask: Deep</strong></td><td>Deep answers that find every meeting a topic came up in, and the longer templates such as Briefing: up to 120 passages, with dates and quotes.</td><td>language models, or <strong>Same as Summaries</strong></td></tr>
 <tr><td><strong>Enhance</strong></td><td>Cleans up dictation when <strong>Enhance with AI</strong> is on.</td><td>language models, or <strong>Same as Summaries</strong></td></tr>
 </tbody></table></div>
 <p>A job set to <strong>Same as Summaries</strong> follows the Summaries row: change that one and the others move with it. Summaries itself can be <strong>Automatic</strong>, which uses the first model you have set up (Claude Haiku 5.5 on Anthropic or OpenRouter, then the others).</p>
@@ -108,7 +108,7 @@
 <p><figure class="shot"><img src="/img/docs/models-picker-1x.webp" srcset="/img/docs/models-picker-1x.webp 1x, /img/docs/models-picker.webp 2x" width="652" height="652" alt="The model list: search, the Good for Deep badge, context windows, prices and the cost of a Deep answer." loading="lazy" decoding="async"><figcaption>Type to search. Good for Deep models come first for Ask: Deep.</figcaption></figure></p>
 <p>Each row shows the model&#39;s name, its provider, its <strong>context</strong> (how much text it reads at once) and its price in dollars per million tokens, in and out. <strong>price unknown</strong> means the provider doesn&#39;t say.</p>
 <ul>
-<li><strong>Good for Deep</strong> marks a model with a context of 100,000 tokens or more and a stronger tier. Deep answers read 40 to 60 passages, and a small model gives them thin.</li>
+<li><strong>Good for Deep</strong> marks a model with a context of 100,000 tokens or more and a stronger tier. Deep answers read up to 120 passages, and a small model gives them thin.</li>
 <li>For <strong>Ask: Deep</strong> the list also shows <strong>about $0.04 a Deep answer</strong> per model. The estimate uses the median size of your last 20 Deep answers, or about 20,000 tokens in and 1,500 out until you have some.</li>
 </ul>
 <h2 id="a-newer-model">A newer model<a class="anchor" href="#a-newer-model" aria-label="Link to A newer model">#</a></h2>
@@ -123,12 +123,13 @@
 <li><strong>request too large for OpenAI&#39;s context window on this model</strong>: the question and passages don&#39;t fit the model&#39;s context.</li>
 <li><strong>Groq rate limit (429)</strong>: a real rate limit; wait a minute or use another model.</li>
 </ul>
-<p>The next model you have set up answers instead. See <a href="/docs/search-and-ask/">Search and Ask</a>.</p>
+<p>The next model you have set up answers instead. See <a href="/docs/asking-your-notes/">Asking your notes</a>.</p>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
 <ul>
 <li><a href="/docs/speech-models/">Speech models</a>: keys, models on this PC and your graphics card.</li>
 <li><a href="/docs/language-models/">Language models</a>: keys for summaries, Ask and Enhance.</li>
-<li><a href="/docs/search-and-ask/">Search and Ask</a>: Quick and Deep answers.</li>
+<li><a href="/docs/asking-your-notes/">Asking your notes</a>: Quick and Deep answers.</li>
+<li><a href="/docs/search-and-ask/">Search and Ask</a>: find words in your notes.</li>
 <li><a href="/docs/recording-a-meeting/">Recording a meeting</a>: notes and speakers.</li>
 </ul>
 

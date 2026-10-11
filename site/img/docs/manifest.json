@@ -1,23 +1,39 @@
 {
- "ask-deep": {
-  "w": 760,
-  "h": 508
- },
- "ask-latest": {
-  "w": 760,
-  "h": 484
- },
- "ask-not-found": {
-  "w": 760,
-  "h": 210
- },
  "ask-quick": {
   "w": 760,
-  "h": 284
+  "h": 358
  },
  "ask-template-editor": {
   "w": 710,
-  "h": 1305
+  "h": 1327
+ },
+ "asking-your-notes-chips": {
+  "w": 746,
+  "h": 312
+ },
+ "asking-your-notes-deep": {
+  "w": 746,
+  "h": 457
+ },
+ "asking-your-notes-empty": {
+  "w": 916,
+  "h": 343
+ },
+ "asking-your-notes-modes": {
+  "w": 642,
+  "h": 334
+ },
+ "asking-your-notes-not-found": {
+  "w": 646,
+  "h": 180
+ },
+ "asking-your-notes-page": {
+  "w": 1016,
+  "h": 447
+ },
+ "asking-your-notes-recent": {
+  "w": 266,
+  "h": 381
  },
  "connector-claude-missing": {
   "w": 794,
