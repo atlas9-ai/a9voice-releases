@@ -29,7 +29,7 @@
     const row = el("div", "lb-row");
     const yt = el("a", "lb-link", { href: YT, target: "_blank", rel: "noopener" }, "Watch on YouTube \u2197");
     const page = el("a", "lb-link", { href: "/demo" }, "Open demo page");
-    const dl = el("a", "btn btn-primary", { href: link.dataset.dl || "/download", "data-src": "demo" }, "Download free");
+    const dl = el("a", "btn btn-primary", { href: link.dataset.dl || "/download?pl=demo", "data-pl": "demo" }, "Download free");
     row.append(yt, page, dl);
     box.append(close, frame, row);
     dlg.append(box);
