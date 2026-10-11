@@ -1,13 +1,13 @@
 {
-  "version": "0.6.11",
-  "notes": "- Settings has one **Models** page, organized by job: Dictation, Meeting notes, Summaries, Ask: Quick, Ask: Deep and Enhance, each with its model and a **Change** button. Keys and downloads sit underneath. The old Speech models and Language models links still work.\n- The model list comes from your providers (OpenRouter, Anthropic, OpenAI, Groq, Google), so new models such as Claude Haiku 5.5 appear without an update. It is searchable, shows context and price, marks models that are **Good for Deep**, and shows what a Deep answer costs.\n- Ask Quick and Ask Deep each have their own model. A request that is too big for a model is called out as \"request too large\", not \"rate limit\", and is skipped before it is sent when it can't fit.\n- Meeting notes with an engine that can't tell the other people on a call apart now says so in amber, with a **Fix this** button.\n- Answers no longer show a model's own citation marks such as 【13】; only A9 Voice's citations appear.\n- Claude Haiku 5.5 works on Anthropic and OpenRouter: A9 Voice asks it not to think out loud, which used up its whole answer budget, and drops the `temperature` setting it refuses.",
-  "pub_date": "2026-10-11T14:12:23Z",
+  "version": "0.6.12",
+  "notes": "- Ask your notes has answer templates, like summary templates: **Quick answer**, **Briefing**, **Latest on…**, **Who owes what**, **Decision log**, **Meeting prep** and **Exec status**. The menu next to the question replaces the Quick and Deep buttons, and the last one you used is kept.\n- Questions about \"the last ask\" or \"the latest\" now read the newest matching meetings first and lead with the most recent mention and its date, even when an older meeting matches the words better.\n- Each template sets how many passages to read, how far back to look, whether the newest come first, and which model answers. Edit them, duplicate them or reset them in **Settings › Templates › Ask templates**.\n- The line under an answer names the template, the model, how many passages were sent and what it cost.",
+  "pub_date": "2026-10-11T14:37:59Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEYyYXREMXQ5OTg2VXg3OTE3cFB2ZmljT2o2a2ZrZHJwMFBSM0VtWHpyRmV0WTc4THFTMTlXREoxalRBZ3V0eTB1VjVNTUZaZTNYRU1qU0IwbFNHdHd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzI3OTI2CWZpbGU6QTkgVm9pY2VfMC42LjExX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTEKcG02V25xSC85akpjKzVZaWRvRklUTXVxdWx2cGdXWUtKaFdHNmc4WTNKbVZTRUxYY0hvVTFtVUhWV08xREM5cnB2eld3NE84eHhDQVhaNDFsekVmQ0E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.11/A9Voice_0.6.11_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENiMnE1MTU3ci9LZlBMV2oyREN6aCtGQTQzaklYV2l6Qm45bnZ6WjlqN2hFWWhXQ3R4UmFWbCtaSHdsVmh4Zjg4Q1B1T21rR3dzaG50TzdKa1Fhb0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzI5NDM4CWZpbGU6QTkgVm9pY2VfMC42LjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjYuMTIKcDkwR2ZMTFJ6M2lJcTM3Y3A1RkVldHlpQVEyZDV5VWVmRSsrZEZRKzNIaEMwNGhURnQ0aWpJZHBIaE9KNkNFUEFVSC8yWEZXcG1nQWdwc2luWHhTQ1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.12/A9Voice_0.6.12_x64-setup.exe"
     }
   },
-  "installer_sha256": "ad178915976ee72f9ce5506c1ae51b465375b560a6c9264915ece34cbc6db6b6",
-  "installer_size": 11449263
+  "installer_sha256": "2607d5936adf1ae40907ede1e49fcf645173e6e025ca04213720fce86ad3765a",
+  "installer_size": 11495895
 }
