@@ -1,13 +1,13 @@
 {
-  "version": "0.6.7",
-  "notes": "- Fixes the bright outline that stayed on a speaker's chip at the top of the Live window after you named them with <kbd>Enter</kbd>. Only the person talking now glows.\n- Fixes the **This is →** box in the Live window being squeezed: the **Speakers** chips now wrap in full and only the list of people scrolls.",
-  "pub_date": "2026-10-09T15:00:58Z",
+  "version": "0.6.9",
+  "notes": "- Updates no longer stop at \"Failed to kill A9 Voice\". The installer now waits up to 10 seconds for the running copy to close, ends it if it won't, and if even that fails it says \"Restart your PC to finish the update\" and leaves the old version working instead of showing an error.\n- A9 Voice lets go of the microphone, speakers, shortcuts and windows one step at a time before handing over to the installer, and logs each step, so an update starts faster and a hang names the step it stopped on.\n- If an update did not finish, A9 Voice now says so when it starts (\"The update to X didn't finish\") instead of reporting a restart after an update, and tries it once more when you are not dictating or recording.\n- Opening A9 Voice while a stuck copy is still running now ends the stuck copy and starts normally, instead of opening nothing.",
+  "pub_date": "2026-10-10T15:33:38Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEF1WGtTVmtBSGlXSXdWNFhIYUlDV214RzVSVnkrUFBNSkpWK0ovV05MWURTdjc0WTNDVlYzUjBVSXZObWxhUFE4SjB6QkFiTEI2U2REZjdlYzEvS1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTU4MDEwCWZpbGU6QTkgVm9pY2VfMC42LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi43CjAxVmxXUWZybE5hd0VjTVNXVU5WWncydHNiNEwxdGNiNVZaQ2pzUGF1elhuWXE5YzIzSmhPbSt0MkJJMDlZVDhhNnlGblY0Y0lXSjk4ei9LbjhvSkJBPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.7/A9Voice_0.6.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEgrdmlDOFR1cC9KYzFMWXdtUVZGNzJGakpISGI5YmJSSFJRODZFV1ZHUG11YlprdHRXUkp1UUpycXUvSkh2akgyMmttMEYzMzM1NG9rOUs1MmZXZXdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjQ2MzQ0CWZpbGU6QTkgVm9pY2VfMC42LjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi45CnNKdThUQzRIYXljSnlEWnFQRTRVeVJuRldielY3SFRVZlhqcnNITm9oUFRiV0x4R01WcHU1OU55UXo1NDhYMW5MRFV6WlRNczdGM3BLS0krWUhHTEF3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.6.9/A9Voice_0.6.9_x64-setup.exe"
     }
   },
-  "installer_sha256": "60cd1f602b385927f124ef92308d6a23a794a1481175ae96674e405f8b58a57c",
-  "installer_size": 11354589
+  "installer_sha256": "5b47d0b14b724f4f71ab44cec0edf1939ae3e22a1687de8e755a5262b88fec39",
+  "installer_size": 11384825
 }
