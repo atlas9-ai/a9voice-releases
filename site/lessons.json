@@ -52,6 +52,19 @@
     "guide": "/docs/live-window/"
   },
   {
+    "id": "ask",
+    "title": "Find anything and ask your notes",
+    "chip": "Find anything",
+    "duration": "0:40",
+    "src16x9": "/media/a9voice-lesson-ask-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-ask-9x16.mp4",
+    "poster": "/media/a9voice-lesson-ask-poster.jpg",
+    "vtt": "/media/a9voice-lesson-ask-16x9.vtt",
+    "cardLabel": "Find anything",
+    "number": 5,
+    "guide": "/docs/search-and-ask/"
+  },
+  {
     "id": "dictionary",
     "title": "Custom words",
     "chip": "Custom words",
