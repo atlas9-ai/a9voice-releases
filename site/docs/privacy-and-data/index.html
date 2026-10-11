@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.2</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.3</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
@@ -101,7 +101,7 @@
 <tr><td><strong>Webhooks</strong></td><td>Only the parts of a note you ticked go to the address you saved.</td><td>n/a</td></tr>
 <tr><td><strong>The connector for AI apps</strong></td><td>Notes and action items you search for go to the AI app you connected, on this PC. What that app does with them is up to that app and its service.</td><td>n/a</td></tr>
 <tr><td><strong>Updates</strong></td><td>A request for the list of builds, then the update file. Unless you turn it off in Settings › Privacy, the request also carries the anonymous count: a random ID, the version, the channel, your Windows version and your country.</td><td>n/a</td></tr>
-<tr><td><strong>Notes trial and license</strong></td><td>When you first use Notes, a code made from your PC (a one-way hash of its Windows machine ID; the ID itself never leaves) so the 30 days survive a reinstall. Your email only if you ask for the 14 extra days. A purchase goes through Stripe&#39;s checkout in your browser; A9 Voice and a9voice.com never see card details. An activated key is checked with a9voice.com about once a week. Nothing you said, wrote or recorded.</td><td>Transcribe never asks. Notes needs this to run.</td></tr>
+<tr><td><strong>Notes trial and license</strong></td><td>When you open Notes, press <strong>Try Notes free</strong> or buy, a code made from your PC (a one-way hash of its Windows machine ID; the ID itself never leaves) so the 30 days survive a reinstall and a purchase can unlock this PC by itself. Your email only if you ask for the 14 extra days. A purchase goes through Stripe&#39;s checkout in your browser; A9 Voice and a9voice.com never see card details. An activated key is checked with a9voice.com about once a week. Nothing you said, wrote or recorded.</td><td>Transcribe never asks. Notes needs this to run.</td></tr>
 </tbody></table></div>
 <p>A few details that matter:</p>
 <ul>
@@ -134,7 +134,7 @@
 <p>What still uses the network in this setup:</p>
 <ul>
 <li><strong>The update check.</strong> A9 Voice checks a9voice.com and the project&#39;s release files on GitHub a few seconds after it starts and then every 6 hours. There is no switch to turn the check off; the anonymous count that rides on it has one (<strong>Settings › Privacy</strong>), and with it off the check sends nothing extra. If the PC is offline the check simply fails and tries again later.</li>
-<li><strong>The Notes trial and license.</strong> Notes asks a9voice.com about its trial or key when you first use it and about once a week after that, and holds for 14 days (a trial) or 30 days (a key) when it can&#39;t. Transcribe never does.</li>
+<li><strong>The Notes trial and license.</strong> Notes asks a9voice.com about its trial or key when you open it, press <strong>Try Notes free</strong> or buy (while you finish paying it asks every few seconds, for up to 15 minutes, whether the payment has gone through), and about once a week after that, and holds for 14 days (a trial) or 30 days (a key) when it can&#39;t. Transcribe never does.</li>
 <li><strong>Downloads you start.</strong> Speech models come from Hugging Face. <strong>Graphics-card support</strong> (about 25 MB, once) comes from files.pythonhosted.org. The speaker model for voice recognition comes from the project&#39;s release page on GitHub. All are fixed to one version and checked against a known checksum before use. After they are downloaded you can work with no internet at all.</li>
 <li><strong>Web pages you open.</strong> The <strong>Get your key</strong> buttons open the provider&#39;s own page in your browser. That is your browser, not A9 Voice.</li>
 </ul>
