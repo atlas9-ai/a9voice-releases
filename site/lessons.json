@@ -8,5 +8,15 @@
     "src9x16": "/media/a9voice-lesson-install-9x16.mp4",
     "poster": "/media/a9voice-lesson-install-poster.jpg",
     "vtt": "/media/a9voice-lesson-install-16x9.vtt"
+  },
+  {
+    "id": "dictation",
+    "title": "Your first dictation",
+    "chip": "Your first dictation",
+    "duration": "0:47",
+    "src16x9": "/media/a9voice-lesson-dictation-16x9.mp4",
+    "src9x16": "/media/a9voice-lesson-dictation-9x16.mp4",
+    "poster": "/media/a9voice-lesson-dictation-poster.jpg",
+    "vtt": "/media/a9voice-lesson-dictation-16x9.vtt"
   }
 ]
