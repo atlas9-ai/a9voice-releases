@@ -53,15 +53,33 @@ a.lesson-card:hover .lesson-thumb, a.lesson-card:focus-visible .lesson-thumb { b
 }
 @media (max-width: 600px) { a.lesson-card { width: 100%; max-width: 360px; } }
 
-/* The manual's Video tutorials page: every lesson's card in a grid (lib/lessons.mjs lessonGrid), 3 across, 2 on a tablet, 1 on a phone. Each tile is
-   the same card as on the pages (same pop-up), with its label and length under it and a link to its guide. */
-.docs-article ul.lesson-grid { list-style: none; margin: 8px 0 28px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px 20px; }
-.docs-article .lesson-grid li.lesson-tile { margin: 0; min-width: 0; }
-.lesson-grid a.lesson-card { width: 100%; max-width: none; margin: 0; }
-.lesson-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 10px; }
-.lesson-label { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--text); }
-.lesson-length { flex: none; font-family: var(--mono); font-size: 13px; color: var(--muted); }
-.docs-article a.lesson-guide { display: inline-block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: var(--signal); text-underline-offset: 3px; }
+/* The manual's Video tutorials page (lib/lessons.mjs lessonList): one lesson per row, in order, at every width. The page is `wide: true`, so
+   its column is up to 880 px (a negative margin gives the last 40 px on big screens), left-aligned with the H1. Each row: the poster (the same
+   card and pop-up as everywhere), "Lesson N · 0:59", the title as an H2 with an anchor, what the video shows, and links to the guides. */
+.docs-wide .docs-main { grid-template-columns: minmax(0, 1fr); }
+.docs-wide .docs-article { max-width: 880px; }
+@media (min-width: 1280px) { .docs-wide .docs-main { margin-right: -40px; } }
+.docs-article ol.lesson-list { list-style: none; margin: 8px 0 28px; padding: 0; }
+.docs-article ol.lesson-list > li.lesson-row { margin: 0; padding: 0 0 60px; border-bottom: 1px solid var(--line); }
+.docs-article ol.lesson-list > li.lesson-row + li.lesson-row { padding-top: 60px; }
+.docs-article ol.lesson-list > li.lesson-row:last-child { border-bottom: 0; padding-bottom: 12px; }
+.lesson-list a.lesson-card { width: 100%; max-width: none; margin: 0; }
+.lesson-list .lesson-thumb { border-radius: 14px; box-shadow: 0 16px 48px rgba(0,0,0,.4); }
+.lesson-list .lesson-play { top: 18px; left: 18px; width: 72px; height: 72px; padding-left: 3px; }
+.lesson-list .lesson-play svg { width: 28px; height: 28px; }
+.lesson-list .lesson-dur { top: 18px; right: 18px; font-size: 14px; padding: 3px 9px; }
+.docs-article .lesson-eyebrow { margin: 20px 0 0; font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--signal); }
+.docs-article .lesson-list h2 { margin: 4px 0 10px; font-size: 28px; line-height: 1.2; scroll-margin-top: 84px; }
+.docs-article .lesson-summary { margin: 0 0 12px; max-width: 70ch; font-size: 17px; line-height: 1.6; color: var(--text-2); }
+.docs-article .lesson-links { margin: 0; font-size: 15px; color: var(--muted); }
+.docs-article a.lesson-guide { color: var(--signal); text-underline-offset: 3px; }
 .docs-article a.lesson-guide:hover { color: var(--text); }
-@media (max-width: 900px) { .docs-article ul.lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .docs-article ul.lesson-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; } }
+@media (max-width: 600px) {
+  .docs-article ol.lesson-list > li.lesson-row { padding-bottom: 44px; }
+  .docs-article ol.lesson-list > li.lesson-row + li.lesson-row { padding-top: 44px; }
+  .lesson-list .lesson-play { top: 10px; left: 10px; width: 52px; height: 52px; }
+  .lesson-list .lesson-play svg { width: 22px; height: 22px; }
+  .lesson-list .lesson-dur { top: 10px; right: 10px; font-size: 12px; }
+  .docs-article .lesson-list h2 { font-size: 23px; }
+  .docs-article .lesson-summary { font-size: 16px; }
+}

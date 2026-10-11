@@ -10,7 +10,12 @@
     "vtt": "/media/a9voice-lesson-install-16x9.vtt",
     "cardLabel": "Install",
     "number": 1,
-    "guide": "/docs/getting-started/#install"
+    "guide": "/docs/getting-started/#install",
+    "summary": "Download A9 Voice and see what your browser and Windows show for a new app that isn't code-signed yet, step by step. Then check the file's SHA-256 fingerprint on the download page if you want to be sure.",
+    "guide2": {
+      "href": "/docs/troubleshooting/",
+      "label": "Troubleshooting"
+    }
   },
   {
     "id": "dictation",
@@ -23,7 +28,12 @@
     "vtt": "/media/a9voice-lesson-dictation-16x9.vtt",
     "cardLabel": "First dictation",
     "number": 2,
-    "guide": "/docs/transcribe/"
+    "guide": "/docs/transcribe/",
+    "summary": "Click where you want the words, hold Ctrl and Space, talk, and let go: your words are typed where your cursor is. Esc cancels, and hands-free mode is in Settings.",
+    "guide2": {
+      "href": "/docs/getting-started/",
+      "label": "Getting started"
+    }
   },
   {
     "id": "meeting",
@@ -36,7 +46,12 @@
     "vtt": "/media/a9voice-lesson-meeting-16x9.vtt",
     "cardLabel": "First meeting",
     "number": 3,
-    "guide": "/docs/recording-a-meeting/"
+    "guide": "/docs/recording-a-meeting/",
+    "summary": "Start a recording from Notes or with a key, or let it start with a call. The bar and the Live window follow along, and when it ends you get the transcript, then a summary with decisions and action items.",
+    "guide2": {
+      "href": "/docs/live-window/",
+      "label": "Live window"
+    }
   },
   {
     "id": "voices",
@@ -49,7 +64,12 @@
     "vtt": "/media/a9voice-lesson-voices-16x9.vtt",
     "cardLabel": "Name speakers",
     "number": 4,
-    "guide": "/docs/live-window/"
+    "guide": "/docs/live-window/",
+    "summary": "Turn Speaker 2 and Speaker 3 into real names: live during the call, or on the note page afterwards. Recognize people by voice is off until you turn it on; then A9 Voice names people you have named before, and the voiceprints stay on your PC.",
+    "guide2": {
+      "href": "/docs/voices/",
+      "label": "Voices"
+    }
   },
   {
     "id": "ask",
@@ -62,7 +82,12 @@
     "vtt": "/media/a9voice-lesson-ask-16x9.vtt",
     "cardLabel": "Find anything",
     "number": 5,
-    "guide": "/docs/search-and-ask/"
+    "guide": "/docs/search-and-ask/",
+    "summary": "In A9 Voice, press Ctrl + K to search your notes and dictations, or ask a question and get an answer with links to where it was said. During a call, the Live window answers questions about that meeting.",
+    "guide2": {
+      "href": "/docs/live-window/",
+      "label": "Live window"
+    }
   },
   {
     "id": "dictionary",
@@ -75,7 +100,8 @@
     "vtt": "/media/a9voice-lesson-dictionary-16x9.vtt",
     "cardLabel": "Custom words",
     "number": 6,
-    "guide": "/docs/dictionary/"
+    "guide": "/docs/dictionary/",
+    "summary": "Teach A9 Voice your names and jargon: add words as hints, and add fixes for mistakes that keep coming back. The same lists work for dictation and for meeting notes."
   },
   {
     "id": "files",
@@ -88,7 +114,12 @@
     "vtt": "/media/a9voice-lesson-files-16x9.vtt",
     "cardLabel": "Your files",
     "number": 7,
-    "guide": "/docs/note-page/"
+    "guide": "/docs/note-page/",
+    "summary": "Every note is a folder of plain Markdown files, with the audio kept in your Audio folder. See where they live, how Export works and how templates shape the summary.",
+    "guide2": {
+      "href": "/docs/templates-and-export/",
+      "label": "Templates and export"
+    }
   },
   {
     "id": "models",
@@ -101,6 +132,11 @@
     "vtt": "/media/a9voice-lesson-models-16x9.vtt",
     "cardLabel": "Speech models",
     "number": 8,
-    "guide": "/docs/speech-models/"
+    "guide": "/docs/speech-models/",
+    "summary": "Use a cloud service with your own key, or a model that runs on your PC, with the graphics card for the bigger ones. Then choose who handles dictation, who handles meeting notes and the fallback for dictation.",
+    "guide2": {
+      "href": "/docs/models/",
+      "label": "Models"
+    }
   }
 ]
