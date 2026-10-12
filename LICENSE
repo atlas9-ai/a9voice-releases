@@ -1,50 +1,85 @@
-A9 Voice — Proprietary Software License (Preview)
+A9 Voice — Software License
 
 Copyright (c) 2026 Atlas9 LLC. All rights reserved.
 
 A9 Voice ("the Software") is proprietary software owned by Atlas9 LLC.
-The Software is not open source.
+The Software is not open source. By installing or using it you agree to
+this license.
 
-1. Permitted use. During the preview you may download, install and use the
-   Software free of charge for your own personal or internal business use on
-   devices you own or control.
+1. Permitted use. You may download, install and use the Software for your
+   own personal or internal business use on devices you own or control.
 
-2. Restrictions. You may not, and may not allow others to:
+2. Transcribe and Notes. Transcribe (dictation) is free to use. Notes
+   (meeting recording and notes) includes a free 30-day trial. After the
+   trial, recording new notes requires a Notes license. Notes you have
+   already recorded stay yours to open, search and export, with or
+   without a license.
+
+3. Notes license. A Notes license is a one-time purchase. It is for one
+   person, on up to 3 of that person's devices at a time, and includes
+   every future update of the Software at no extra charge. You may move a
+   license by deactivating it on one device and activating it on another.
+   You may not share, resell or transfer a license key. A complimentary
+   license has the same terms, except that the number of devices may
+   differ. Atlas9 LLC may revoke a license that was refunded, charged
+   back, or shared or obtained in breach of this license.
+
+4. Payment and refunds. Purchases are processed by our payment provider,
+   Stripe. Prices do not include sales tax, which is added at checkout
+   where it applies. Your card statement shows LINK.COM* ATLAS9 LLC. You
+   can ask for a full refund within 14 days of purchase by writing to
+   contact@a9voice.com. A refunded license stops working at the
+   Software's next license check (see clause 5).
+
+5. Trial and license checks. When you open Notes, start a trial, ask for
+   the extra 14 days, buy, or activate a license, and then periodically
+   while a trial or license is in use, the Software contacts a9voice.com.
+   It sends an identifier derived from your PC and, if you have one, your
+   license key. If you ask for the extra 14 days or buy, it also sends
+   the email address you give. It does not send your recordings, notes or
+   transcripts. a9voice.com also learns the Software's version and, from
+   the request, your country. If your PC is offline, a license keeps
+   working for up to 30 days and a trial for up to 14 days after the
+   last successful check.
+
+6. Restrictions. You may not, and may not allow others to:
    (a) copy, modify, translate or create derivative works of the Software,
        except as needed to install and use it;
    (b) decompile, disassemble, reverse engineer or attempt to extract the
-       source code of the Software, except to the extent applicable law
-       expressly permits this despite this restriction;
-   (c) redistribute, sell, rent, lease, sublicense, host or otherwise make the
-       Software available to third parties;
+       source code of the Software, or to bypass its license checks,
+       except to the extent applicable law expressly permits this despite
+       this restriction;
+   (c) redistribute, sell, rent, lease, sublicense, host or otherwise make
+       the Software available to third parties;
    (d) remove or alter any copyright, trademark or other notices; or
    (e) use the A9 Voice name or logos except to refer to the Software.
 
-3. Third-party services. The Software sends audio or text only to the speech
-   and AI providers you choose and configure with your own API keys. Your use
-   of those providers is governed by their terms and pricing. You are
-   responsible for your keys and for having any consent required to record
-   or transcribe other people.
+7. Third-party services. The Software sends audio or text only to the
+   speech and AI providers you choose and configure with your own API
+   keys. Your use of those providers is governed by their terms and
+   pricing. You are responsible for your keys and for having any consent
+   required to record or transcribe other people.
 
-4. Website and documentation. The website, documentation, screenshots and
-   other materials in this repository are also (c) Atlas9 LLC, all rights
-   reserved, unless a file states otherwise. Third-party fonts and libraries
-   remain under their own licenses (for example, fonts/OFL.txt).
+8. Website and documentation. The website, documentation, screenshots and
+   other materials are also (c) Atlas9 LLC, all rights reserved, unless a
+   file states otherwise. Third-party fonts and libraries remain under
+   their own licenses.
 
-5. Updates and changes. Future versions may require a paid license. This
-   license may be updated for future versions; the version that ships with a
-   release applies to that release.
+9. Changes. This license may be updated for future versions; the version
+   that ships with a release applies to that release. A Notes license you
+   bought keeps working in later versions.
 
-6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-   KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
-   PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+10. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+    KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NON-INFRINGEMENT.
 
-7. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, ATLAS9
-   LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR
-   CONSEQUENTIAL DAMAGES, OR ANY LOSS OF DATA, PROFITS OR BUSINESS, ARISING
-   FROM THE USE OF OR INABILITY TO USE THE SOFTWARE.
+11. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW,
+    ATLAS9 LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL
+    OR CONSEQUENTIAL DAMAGES, OR ANY LOSS OF DATA, PROFITS OR BUSINESS,
+    ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE. ATLAS9 LLC'S
+    TOTAL LIABILITY IS LIMITED TO THE AMOUNT YOU PAID FOR THE SOFTWARE.
 
-8. Termination. This license ends automatically if you breach it. You must
-   then stop using the Software and delete all copies.
+12. Termination. This license ends automatically if you breach it. You
+    must then stop using the Software and delete all copies.
 
 Questions: contact@a9voice.com
