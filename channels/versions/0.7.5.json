@@ -1,0 +1,13 @@
+{
+  "version": "0.7.5",
+  "notes": "- The license agreement now describes how A9 Voice is licensed: Transcribe is free; Notes has a 30-day trial, then a one-time license for up to 3 PCs with every update included.",
+  "pub_date": "2026-10-12T01:19:53Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExBdmpaZWJ5S09qUmxZZkk3Wm4xaUMvc1kybjdSQm9PUXFJbkoreXQ5dW1UdEJrR2dRN0J0aFR4VUlZbmx5L3h4YlZZSWE1eXhheWw3T3NLNDlPUHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzY3OTI0CWZpbGU6QTkgVm9pY2VfMC43LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy41CmExbGRDSnh5UDlGRkdHcnZiMnBoK05VQ2FlYzNqeXZmcHAyVk5rNzdrYmRQUHpLaURkc1IvUVBSLzdRL1k4bjF6ME1FeUZRdFdXdDl2RE02VGFwQUFBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.5/A9Voice_0.7.5_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "b0ead784e43d48f92b827dfa2255d026e52ca0f5a1322bb7467d99a7a7523bdd",
+  "installer_size": 11701076
+}

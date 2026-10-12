@@ -1,13 +1,13 @@
 {
-  "version": "0.7.4",
-  "notes": "- If you already used Notes (you have notes, or a meeting app set to start by itself), updating starts your 30-day trial for you, once, so your recordings never silently stop. The Notes page says so with **Buy Notes**, **Enter a license key** and **Got it**. A new install still starts with **Try Notes free**.\n- A9 Voice checks your Notes trial or license every 24 hours while it runs, when it starts, and when a recording starts and the last check is a day old. A refunded or revoked key stops working within a day. A recording in progress is never cut, and offline you keep the same 14 days (trial) or 30 days (key).\n- When a check changes your plan you get one line saying so, and **Settings › Account** shows why. Notes you recorded stay readable, searchable and exportable.\n- The 14-day extension shows only while it can email you the code, so there is no offer you can't complete.",
-  "pub_date": "2026-10-12T00:24:20Z",
+  "version": "0.7.5",
+  "notes": "- The license agreement now describes how A9 Voice is licensed: Transcribe is free; Notes has a 30-day trial, then a one-time license for up to 3 PCs with every update included.",
+  "pub_date": "2026-10-12T01:19:53Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEo2eEk4OXFxSDAwbGJMK2xxZkoxbzlWV0N4N0phUGx3QWRLWWhOL29yem1hVzRHTzRVa2djUzBuUTFyQ0lyRmdEN3p1T3dsSGUrQWwveCtKTkgrTWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzY0NjAyCWZpbGU6QTkgVm9pY2VfMC43LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy40CjNpQ3FyWUhjQjBHYUlyTlRVd20wRlFWUFNTRmwxK1RXVmF4MHlnclRGdm5tRFgrSHlKY2hHZUY2dUhobUY5VFlzN2o1WDB1UEZxSDNIQitYT3NYSUNBPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.4/A9Voice_0.7.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExBdmpaZWJ5S09qUmxZZkk3Wm4xaUMvc1kybjdSQm9PUXFJbkoreXQ5dW1UdEJrR2dRN0J0aFR4VUlZbmx5L3h4YlZZSWE1eXhheWw3T3NLNDlPUHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzY3OTI0CWZpbGU6QTkgVm9pY2VfMC43LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy41CmExbGRDSnh5UDlGRkdHcnZiMnBoK05VQ2FlYzNqeXZmcHAyVk5rNzdrYmRQUHpLaURkc1IvUVBSLzdRL1k4bjF6ME1FeUZRdFdXdDl2RE02VGFwQUFBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.5/A9Voice_0.7.5_x64-setup.exe"
     }
   },
-  "installer_sha256": "f725fa1a4a5d3a945a4c2a35202b4b35bdfa7204f7c828937cf3bd27e651b330",
-  "installer_size": 11698776
+  "installer_sha256": "b0ead784e43d48f92b827dfa2255d026e52ca0f5a1322bb7467d99a7a7523bdd",
+  "installer_size": 11701076
 }
