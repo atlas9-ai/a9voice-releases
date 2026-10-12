@@ -1,13 +1,13 @@
 {
-  "version": "0.7.7",
-  "notes": "- **Not part of the meeting.** A video, a song or any other sound your PC played during a call can show up as its own speaker. On the note page, **⋯ › Not part of the meeting** (or the same button in a line's name box, for one line or everything from that speaker) leaves it out of the transcript, the summary, search and Ask, the people list, exports and what webhooks send. The summary is written again without it, unless you changed it yourself, and then it asks first.\n- Undo brings everything back as it was with no new summary request, and **Include again** in the **Excluded** group (or on a single line) works any time. The recording is never changed, and a speaker who is left out is never used to learn a voice.\n- **Regenerate transcript** keeps what you left out, by time, and says when a speaker got another number.",
-  "pub_date": "2026-10-12T17:28:22Z",
+  "version": "0.7.8",
+  "notes": "- **Home keeps counting.** Words dictated, Time saved and Dictations come from daily totals that **History kept** never deletes, so they no longer fall back when old dictations are trimmed, and a change can't equal the total any more. Counting starts from the dictations History still held when you updated; ones deleted earlier can't be recovered.\n- **A range switch above Home's tiles:** 7 days, 30 days or All time (the default), remembered. All time shows \"+X last 7 days\" under each number; the other two compare with the days before (\"▲ 18% vs prior 7 days\", or \"First week\" when there is nothing before). Notes recorded follows the same range.\n- **Settings › General › Reset counts** starts Home's counts again from zero and leaves History alone. **Clear all** in Transcribe leaves them alone too, and says so.\n- **Words this week** on the Transcribe screen reads the same counts as Home, so the two agree.",
+  "pub_date": "2026-10-12T20:21:28Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE81TDlhYjMxMHFyWHBrQk1pRndFRkc5OVFoczdIWWk3MUVIZWMwK3NqYktMUk9icVIwalBNNUlFOTQrd2lMM0N5bzkyQzExekJGZEE4M2J2dk9icGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODI2MDM4CWZpbGU6QTkgVm9pY2VfMC43LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy43CnhSYVFoaEVjWVBud2JMZzF1Z204SG9KM3dyVWE4NkNSbjBFUFUyWDRIY1BzREJJYTJlb21TSUdBMDZsVGEvUUZkNXI3MG1PdHpiYlBsMStvVDlWbUJRPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.7/A9Voice_0.7.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE1LZm5Oc00vNG9GNlZKT0pveW5aZ2FiWXJKaG4wUlAycWl6eXhPWENqbHZKOGwrSWt2T1pJKzg1TUZaYXQ3MkJXdkJwdlp2bzZFRmptT3NETitXSEFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODM2NDA4CWZpbGU6QTkgVm9pY2VfMC43LjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy44CjR4ZmdZbDRjN3M4Q0llTDBGZ21XVmZyR0d1UnNvUENnWkRhRXYxSmo4RDJ2VTBBMXBVS2E2U0F4R3hZakpGWktIVzVuK3V0U0lUOW1JZ3AzSTd5QUF3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.8/A9Voice_0.7.8_x64-setup.exe"
     }
   },
-  "installer_sha256": "b99a80b520e69da70c0d8256020c97474406efd55ae1bf1c0600441e91820aea",
-  "installer_size": 11732456
+  "installer_sha256": "52be734e8aa52681916327b9b6365c91b0030b95dd4f8dbc9b0f607badee3a34",
+  "installer_size": 11738689
 }
