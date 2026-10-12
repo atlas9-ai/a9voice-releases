@@ -1,13 +1,13 @@
 {
-  "version": "0.7.3",
-  "notes": "- **Notes** now opens with what it does and one button, **Try Notes free for 30 days**. The trial starts when you press it, never by itself, and nothing is recorded before that. If a call starts first, a small card asks **Start trial** or **Not now**. Notes you already have stay in the list.\n- **Buy Notes — $49** is now in every place the trial shows: the Account card, the license key box, a slim bar on the Notes page and a small chip by the version. The plan card no longer says \"trial\" before there is one.\n- Buy from the PC you use and Notes unlocks by itself when the payment goes through: no key to copy and paste. The page you land on still shows the key, for a purchase made on another PC.\n- The checkout page and the **Finish paying in your browser** sheet say your card statement will show LINK.COM* ATLAS9 LLC.",
-  "pub_date": "2026-10-11T21:54:54Z",
+  "version": "0.7.4",
+  "notes": "- If you already used Notes (you have notes, or a meeting app set to start by itself), updating starts your 30-day trial for you, once, so your recordings never silently stop. The Notes page says so with **Buy Notes**, **Enter a license key** and **Got it**. A new install still starts with **Try Notes free**.\n- A9 Voice checks your Notes trial or license every 24 hours while it runs, when it starts, and when a recording starts and the last check is a day old. A refunded or revoked key stops working within a day. A recording in progress is never cut, and offline you keep the same 14 days (trial) or 30 days (key).\n- When a check changes your plan you get one line saying so, and **Settings › Account** shows why. Notes you recorded stay readable, searchable and exportable.\n- The 14-day extension shows only while it can email you the code, so there is no offer you can't complete.",
+  "pub_date": "2026-10-12T00:24:20Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExVWklSM0IvR3RSZnhHV0pKd2g2Wkg3Mm93QWM4c2dKUlVkblhEYUJzSmw1T3ladGNOMHNWdFYrNVZpY0RielJJbys5NDNDekdBVUFzRm1Ea2NGaVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzU1NjQ1CWZpbGU6QTkgVm9pY2VfMC43LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy4zCmp5bkxNcWtWNDBleXFTaFRwdjkyN2tybWRFWlpacVhaWEROR0N3QjkvOStUYnUvbHhQYTA3N3dIOExwWDdrZjc0NmhLOW12QWV3QkF4NENhNUtkSkJ3PT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.3/A9Voice_0.7.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEo2eEk4OXFxSDAwbGJMK2xxZkoxbzlWV0N4N0phUGx3QWRLWWhOL29yem1hVzRHTzRVa2djUzBuUTFyQ0lyRmdEN3p1T3dsSGUrQWwveCtKTkgrTWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzY0NjAyCWZpbGU6QTkgVm9pY2VfMC43LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy40CjNpQ3FyWUhjQjBHYUlyTlRVd20wRlFWUFNTRmwxK1RXVmF4MHlnclRGdm5tRFgrSHlKY2hHZUY2dUhobUY5VFlzN2o1WDB1UEZxSDNIQitYT3NYSUNBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.4/A9Voice_0.7.4_x64-setup.exe"
     }
   },
-  "installer_sha256": "7400c445612df1c531ca530281ebe6a31d199d0dc27bb42a01f252516aa224b8",
-  "installer_size": 11695691
+  "installer_sha256": "f725fa1a4a5d3a945a4c2a35202b4b35bdfa7204f7c828937cf3bd27e651b330",
+  "installer_size": 11698776
 }
