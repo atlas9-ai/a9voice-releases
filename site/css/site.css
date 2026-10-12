@@ -232,6 +232,7 @@ kbd.wide { padding: 0 28px; }
 .dlp .dl-card .btn { max-width: 100%; white-space: normal; text-align: center; }
 .dlp .dl-file { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 .dlp .dl-file code { background: none; padding: 0; color: var(--text-2); overflow-wrap: anywhere; }
+.dlp .dl-file.dl-code { margin-top: 4px; font-size: 13px; }
 .dlp .dl-pub { border-top: 1px solid var(--line); padding-top: 22px; margin-bottom: 26px; }
 .dlp .dl-facts { margin: 14px 0 0; display: grid; gap: 12px; }
 .dlp .dl-facts > div { display: grid; grid-template-columns: 90px 1fr; gap: 12px; align-items: baseline; }

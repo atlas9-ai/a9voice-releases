@@ -48,6 +48,7 @@
   <div class="dl-card">
     <a id="dl" class="btn btn-primary btn-lg" href="__A9V_GO__"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v10M5 8l4 4 4-4M3 15h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="dl-label">Download A9 Voice <span id="dl-version">__A9V_VERSION__</span> for Windows</span></a>
     <p class="dl-file" id="dl-file"><code>__A9V_FILE__</code><!--A9V-SIZE--> · __A9V_SIZE__<!--/A9V-SIZE--></p>
+    <p class="dl-file dl-code" id="dl-code">The saved file name ends in a short download code.</p>
     <p class="phone-handoff" data-phone-handoff hidden>A9 Voice runs on Windows PCs. On your phone? <button class="phone-send" type="button">Send yourself the link</button><span class="phone-note" role="status" aria-live="polite"></span></p>
   </div>
 
@@ -105,7 +106,7 @@
   if (!a || (a.getAttribute("href") || "").indexOf("__A9V") !== 0) return;
   a.setAttribute("href", "https://github.com/atlas9-ai/a9voice-releases/releases/latest");
   document.getElementById("dl-label").textContent = "Get A9 Voice from GitHub";
-  ["dl-file", "dl-links"].forEach(function (id) { var e = document.getElementById(id); if (e) e.remove(); });
+  ["dl-file", "dl-code", "dl-links"].forEach(function (id) { var e = document.getElementById(id); if (e) e.remove(); });
   var sha = document.querySelector(".dl-facts > div"); if (sha && sha.querySelector(".dl-sha")) sha.remove();
 })();
 </script>
