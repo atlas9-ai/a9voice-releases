@@ -18,7 +18,7 @@
 
 <p align="center"><img src="docs/home.png" width="820" alt="The A9 Voice Home screen: words dictated, time saved, dictations and notes, the hotkeys, and recent notes."></p>
 
-A9 Voice is an early preview for Windows 10 and 11 (64-bit), free during the preview. It has two parts:
+A9 Voice is for Windows 10 and 11 (64-bit). It has two parts:
 
 - **Transcribe:** hold a key in any app, talk, let go. The words appear where your cursor is.
 - **Notes:** records meetings, videos and voice notes from your mic and your computer's audio. No bot joins the call.
@@ -46,7 +46,7 @@ Everything else (every screen, every setting, webhooks, troubleshooting) is in t
 
 ## License
 
-A9 Voice is proprietary software, free for personal use during the preview. See [LICENSE](LICENSE).
+A9 Voice is proprietary software. Transcribe is free; Notes has a 30-day free trial, then a one-time license. See [LICENSE](LICENSE).
 The website is © Atlas9 LLC, all rights reserved.
 
 ---
