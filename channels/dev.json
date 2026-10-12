@@ -1,13 +1,13 @@
 {
-  "version": "0.7.6",
-  "notes": "- Installers downloaded from a9voice.com now carry a random code in the file name. The app sends it once with the first-launch count, so we know which link a download came from. It isn't tied to you, it is deleted after it is sent (or unsent when **Send anonymous usage counts** is off), and the file is byte for byte the same installer.\n- **Settings › Privacy** now lists five one-time counts: setup finished, first dictation, first note, Notes trial started and Notes bought. They follow the same switch; a license you already had, or a trial that started before this version, sends nothing.\n- The download page says the saved file name ends in a short download code.",
-  "pub_date": "2026-10-12T14:27:16Z",
+  "version": "0.7.7",
+  "notes": "- **Not part of the meeting.** A video, a song or any other sound your PC played during a call can show up as its own speaker. On the note page, **⋯ › Not part of the meeting** (or the same button in a line's name box, for one line or everything from that speaker) leaves it out of the transcript, the summary, search and Ask, the people list, exports and what webhooks send. The summary is written again without it, unless you changed it yourself, and then it asks first.\n- Undo brings everything back as it was with no new summary request, and **Include again** in the **Excluded** group (or on a single line) works any time. The recording is never changed, and a speaker who is left out is never used to learn a voice.\n- **Regenerate transcript** keeps what you left out, by time, and says when a speaker got another number.",
+  "pub_date": "2026-10-12T17:28:22Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBrTnk1dEhzTU9jQzNWV0ZxWi9lMWNRSmNjSnpYeDJkTDFYY09nbDBwRnZpbE9KYm1uZm5iWS9mMmUzRzh2TWFtUmR2KzFpR1ExTnN2YmsxL3lUYlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODE1MTY5CWZpbGU6QTkgVm9pY2VfMC43LjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy42CmpwQkpia1RiWDhuN2tMM01jWW83MFV3TlkrTEZMNGx4NEZtVjhnSVBhdVRvNHhQRVY3ZDNKMjYvb1ROYlN6SFk3TEIzdm40b1RxUitiNTJDNjFyekJnPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.6/A9Voice_0.7.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE81TDlhYjMxMHFyWHBrQk1pRndFRkc5OVFoczdIWWk3MUVIZWMwK3NqYktMUk9icVIwalBNNUlFOTQrd2lMM0N5bzkyQzExekJGZEE4M2J2dk9icGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODI2MDM4CWZpbGU6QTkgVm9pY2VfMC43LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy43CnhSYVFoaEVjWVBud2JMZzF1Z204SG9KM3dyVWE4NkNSbjBFUFUyWDRIY1BzREJJYTJlb21TSUdBMDZsVGEvUUZkNXI3MG1PdHpiYlBsMStvVDlWbUJRPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.7/A9Voice_0.7.7_x64-setup.exe"
     }
   },
-  "installer_sha256": "7225bfba89cbf6490e27ca880034226628c9ac83f9c23323aec0e07d0185d54d",
-  "installer_size": 11703453
+  "installer_sha256": "b99a80b520e69da70c0d8256020c97474406efd55ae1bf1c0600441e91820aea",
+  "installer_size": 11732456
 }
