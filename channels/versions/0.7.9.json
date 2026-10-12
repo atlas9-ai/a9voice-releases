@@ -1,0 +1,13 @@
+{
+  "version": "0.7.9",
+  "notes": "- Once Notes is licensed, the **Notes ✓** chip by the version in the sidebar is gone: it only shows when something needs you (the trial countdown, a trial that ended, or an amber **Notes · check license**). **Settings › Account** now shows the license in green, with a check on the status line and a **Licensed** badge on the plan card.",
+  "pub_date": "2026-10-12T21:26:06Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE1PUHhxZ2FWa1JCSFhYR0dpaGRGOTBHMS91RjFnUU41NHpmcll5Z2JLY0FyS09idS85U0hySHZiN2ZuTWNuRFRrOFNpVVFnYS9PLzdkdFkyQjlZSUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODQwMzA2CWZpbGU6QTkgVm9pY2VfMC43LjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy45CnB2Z05IemwybmZXb24xQTlJcjc3WVJ6MCtPMjEzYm8wV0o3djBFeCtWWFVRazlnNDRDMTRTcUpFOVFobDF0dWxUUTlFRkdrOEpQUkNwK0kzUG5HVkN3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.9/A9Voice_0.7.9_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "6db96380a1516e619524c15f33c8ab7e22b21d150dc2b1ad68a91544c8353a1d",
+  "installer_size": 11738303
+}
