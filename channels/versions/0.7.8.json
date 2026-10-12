@@ -1,0 +1,13 @@
+{
+  "version": "0.7.8",
+  "notes": "- **Home keeps counting.** Words dictated, Time saved and Dictations come from daily totals that **History kept** never deletes, so they no longer fall back when old dictations are trimmed, and a change can't equal the total any more. Counting starts from the dictations History still held when you updated; ones deleted earlier can't be recovered.\n- **A range switch above Home's tiles:** 7 days, 30 days or All time (the default), remembered. All time shows \"+X last 7 days\" under each number; the other two compare with the days before (\"▲ 18% vs prior 7 days\", or \"First week\" when there is nothing before). Notes recorded follows the same range.\n- **Settings › General › Reset counts** starts Home's counts again from zero and leaves History alone. **Clear all** in Transcribe leaves them alone too, and says so.\n- **Words this week** on the Transcribe screen reads the same counts as Home, so the two agree.",
+  "pub_date": "2026-10-12T20:21:28Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE1LZm5Oc00vNG9GNlZKT0pveW5aZ2FiWXJKaG4wUlAycWl6eXhPWENqbHZKOGwrSWt2T1pJKzg1TUZaYXQ3MkJXdkJwdlp2bzZFRmptT3NETitXSEFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODM2NDA4CWZpbGU6QTkgVm9pY2VfMC43LjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNy44CjR4ZmdZbDRjN3M4Q0llTDBGZ21XVmZyR0d1UnNvUENnWkRhRXYxSmo4RDJ2VTBBMXBVS2E2U0F4R3hZakpGWktIVzVuK3V0U0lUOW1JZ3AzSTd5QUF3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.8/A9Voice_0.7.8_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "52be734e8aa52681916327b9b6365c91b0030b95dd4f8dbc9b0f607badee3a34",
+  "installer_size": 11738689
+}
