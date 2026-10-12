@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The note page · A9 Voice Manual</title>
-<meta name="description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.">
+<meta name="description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.">
 
 <meta name="theme-color" content="#0B0C0E">
 <meta name="color-scheme" content="dark">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A9 Voice">
 <meta property="og:title" content="The note page · A9 Voice Manual">
-<meta property="og:description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.">
+<meta property="og:description" content="Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.">
 <meta property="og:url" content="https://a9voice.com/docs/note-page/">
 <meta property="og:image" content="https://a9voice.com/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -70,8 +70,8 @@
     <article class="docs-article">
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>The note page</h1>
-      <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, play any line back, and run the transcript or summary again.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
+      <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.7</p>
       <p>Every recording becomes a note. You find it in the <strong>Notes</strong> list, open it, and the note page shows the summary, the transcript, the people, the pictures and the audio in one place. Everything you change here is also written to the note&#39;s folder on your PC at once.</p>
 <h2 id="the-notes-list">The Notes list<a class="anchor" href="#the-notes-list" aria-label="Link to The Notes list">#</a></h2>
 <p>Click <strong>Notes</strong> in the sidebar.</p>
@@ -169,6 +169,7 @@
 </ol>
 <p><figure class="shot"><img src="/img/docs/note-page-line-speaker-1x.webp" srcset="/img/docs/note-page-line-speaker-1x.webp 1x, /img/docs/note-page-line-speaker.webp 2x" width="1280" height="940" alt="The name picker under a line's speaker name" loading="lazy" decoding="async"><figcaption>Click a line's speaker to name it: this line, the lines after it, or everything from that speaker.</figcaption></figure></p>
 <p>A message says &quot;Line moved to another speaker&quot; and offers <strong>Undo</strong>. Naming one line never teaches a voice. Choosing <strong>Everything from</strong> and a name another speaker already has asks <strong>Same person?</strong> first.</p>
+<p>The same box has <strong>Not part of the meeting</strong>, for a line that was never said in the meeting. It uses the same <strong>Apply to</strong> choice. See <a href="#leave-something-out-of-the-note">Leave something out of the note</a>.</p>
 <h2 id="name-the-speakers">Name the speakers<a class="anchor" href="#name-the-speakers" aria-label="Link to Name the speakers">#</a></h2>
 <p>The column on the right lists everyone who spoke, under <strong>SPEAKERS</strong>. Your own side is marked <strong>Speaker 1 · mic</strong>. Each person shows their total talk time.</p>
 <p>To see a speaker named here, after the call:</p>
@@ -188,11 +189,29 @@
 <ul>
 <li><strong>This is me</strong>: gives that speaker the name from your Account.</li>
 <li><strong>Merge into</strong> and each other speaker&#39;s name: moves all of this speaker&#39;s lines to that person, and removes this speaker.</li>
+<li><strong>Not part of the meeting</strong>: leaves this speaker out of the note, for a voice that was never in the meeting. Your own side doesn&#39;t have it. See <a href="#leave-something-out-of-the-note">Leave something out of the note</a>.</li>
 </ul>
 <p><figure class="shot"><img src="/img/docs/note-page-speaker-menu-1x.webp" srcset="/img/docs/note-page-speaker-menu-1x.webp 1x, /img/docs/note-page-speaker-menu.webp 2x" width="299" height="446" alt="The speaker menu" loading="lazy" decoding="async"><figcaption>The ⋯ menu of a speaker.</figcaption></figure></p>
 <h3 id="hear-who-someone-is">Hear who someone is<a class="anchor" href="#hear-who-someone-is" aria-label="Link to Hear who someone is">#</a></h3>
 <p>If you are not sure who &quot;Speaker 4&quot; is, click the small <strong>▶</strong> at the right of their name. It plays one of their lines. Each click plays their next line, and wraps to the first after the last. A small label such as <strong>Line 1 of 3</strong> tells you where you are. Click the button again, now showing <strong>❚❚</strong>, to pause.</p>
 <p><figure class="shot"><img src="/img/docs/note-page-step-1x.webp" srcset="/img/docs/note-page-step-1x.webp 1x, /img/docs/note-page-step.webp 2x" width="299" height="458" alt="The play button of a speaker, with the Line 1 of 3 label under it" loading="lazy" decoding="async"><figcaption>Step through one person's lines with their play button.</figcaption></figure></p>
+<h2 id="leave-something-out-of-the-note">Leave something out of the note<a class="anchor" href="#leave-something-out-of-the-note" aria-label="Link to Leave something out of the note">#</a></h2>
+<p>A9 Voice records everything your PC plays, not only the meeting. If a video, a song or a notification read aloud played during the call, it can show up as its own speaker, and its words end up in the transcript, the summary and your searches. <strong>Not part of the meeting</strong> takes them out again.</p>
+<ol>
+<li>Open the <strong>⋯</strong> next to that speaker and choose <strong>Not part of the meeting</strong>. To leave out only some lines, click the speaker&#39;s name at the start of a line, pick <strong>Just this line</strong> or <strong>This and the lines after it, until the speaker changes</strong> under <strong>Apply to</strong>, then click <strong>Not part of the meeting</strong>.</li>
+<li>A message says &quot;Speaker 5 left out of this note&quot; and offers <strong>Undo</strong> for 10 seconds. There is no question first.</li>
+</ol>
+<p>What changes:</p>
+<ul>
+<li><strong>The transcript.</strong> Their lines are removed from <code>transcript.md</code>. Each stretch is replaced by one line such as <code>*[Not part of the meeting · 06:30–06:32]*</code>. In the app the lines are greyed and collapsed under <strong>Show 3 excluded lines</strong>; they stay playable, so you can check what was left out.</li>
+<li><strong>The summary.</strong> It is written again from the rest of the meeting with the note&#39;s template and model: the card says &quot;Re-summarizing without Speaker 5…&quot;. The title and the action items come from that same pass. If you changed the summary yourself (for example with <strong>Replace all … and in the summary</strong>), A9 Voice does not overwrite it: a bar says <strong>Speaker excluded · Re-summarize? (replaces your edits)</strong>, with <strong>Re-summarize</strong> and <strong>Keep my summary</strong>. Until you choose, that summary isn&#39;t sent, indexed or shown to a model.</li>
+<li><strong>Everything else.</strong> Their words are not in search or Ask, the people list, talk time, exports, what a webhook sends, or what a connected app can read. A speaker who is left out is never used to learn a voice.</li>
+<li><strong>The recording</strong> is never changed.</li>
+</ul>
+<p>Speakers who are left out move to <strong>Excluded</strong> at the bottom of the Speakers list, with their talk time, a <strong>▶</strong> to hear them and <strong>Include again</strong>. In the transcript, <strong>Show 3 excluded lines</strong> opens a stretch, and each line has its own <strong>Include again</strong>. It works any time, not only for 10 seconds: the lines come back, <code>transcript.md</code> is written again, and the summary is redone under the same rule.</p>
+<p><strong>Undo</strong> puts the transcript, the search index and the earlier summary back exactly as they were, and does not ask the language model for anything.</p>
+<p>If you run <strong>Regenerate transcript</strong>, the speakers are numbered afresh, so A9 Voice puts what you left out back by time: a new line is left out when at least half of it falls inside a stretch you left out. If a speaker got another number, or only part of it matched, a note says so, for example &quot;Kept 1 exclusion (Speaker 5 is now Speaker 4). Check it.&quot; Click <strong>OK</strong> when you have looked.</p>
+<p>Your own side, <strong>Speaker 1 · mic</strong>, can&#39;t be left out as a whole, but any single line of it can.</p>
 <h2 id="play-the-recording">Play the recording<a class="anchor" href="#play-the-recording" aria-label="Link to Play the recording">#</a></h2>
 <p>When the audio is still kept, a player sits at the top of the note.</p>
 <p><figure class="shot"><img src="/img/docs/note-page-player-1x.webp" srcset="/img/docs/note-page-player-1x.webp 1x, /img/docs/note-page-player.webp 2x" width="708" height="90" alt="The player: back, play, forward, wave, time, speed and the Others, Everyone, Me switch" loading="lazy" decoding="async"><figcaption>The player. The Others, Everyone and Me switch (1) appears for recordings of two sides.</figcaption></figure></p>
@@ -341,7 +360,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/live-window/"><span class="docs-step-l">Previous</span><span>Live window</span></a><a class="docs-step next" href="/docs/voices/"><span class="docs-step-l">Next</span><span>Voices (voice recognition)</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-notes-list">The Notes list</a></li><li class="d2"><a href="#open-a-note">Open a note</a></li><li class="d3"><a href="#the-title">The title</a></li><li class="d3"><a href="#the-chips-under-the-title">The chips under the title</a></li><li class="d3"><a href="#tags">Tags</a></li><li class="d2"><a href="#the-summary">The summary</a></li><li class="d3"><a href="#when-the-summary-is-out-of-date">When the summary is out of date</a></li><li class="d3"><a href="#ask-ai">Ask AI</a></li><li class="d2"><a href="#the-transcript">The transcript</a></li><li class="d3"><a href="#fix-a-misheard-word">Fix a misheard word</a></li><li class="d3"><a href="#fix-the-speaker-of-one-line">Fix the speaker of one line</a></li><li class="d2"><a href="#name-the-speakers">Name the speakers</a></li><li class="d3"><a href="#the-speaker-menu">The speaker menu</a></li><li class="d3"><a href="#hear-who-someone-is">Hear who someone is</a></li><li class="d2"><a href="#play-the-recording">Play the recording</a></li><li class="d3"><a href="#who-you-hear-others-everyone-me">Who you hear: Others, Everyone, Me</a></li><li class="d2"><a href="#pictures">Pictures</a></li><li class="d2"><a href="#the-right-hand-column">The right-hand column</a></li><li class="d3"><a href="#run-the-transcript-again">Run the transcript again</a></li><li class="d3"><a href="#run-the-summary-again">Run the summary again</a></li><li class="d3"><a href="#other-notes-from-the-same-meeting">Other notes from the same meeting</a></li><li class="d2"><a href="#the-menu-at-the-top">The menu at the top</a></li><li class="d2"><a href="#notes-still-being-made-and-notes-that-failed">Notes still being made, and notes that failed</a></li><li class="d3"><a href="#recording-right-now">Recording right now</a></li><li class="d3"><a href="#processing">Processing</a></li><li class="d3"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#the-notes-folder-on-disk">The note's folder on disk</a></li><li class="d2"><a href="#deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept</a></li><li class="d3"><a href="#delete-one-note">Delete one note</a></li><li class="d3"><a href="#how-long-audio-is-kept">How long audio is kept</a></li><li class="d2"><a href="#notes-from-an-added-folder">Notes from an added folder</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-notes-list">The Notes list</a></li><li class="d2"><a href="#open-a-note">Open a note</a></li><li class="d3"><a href="#the-title">The title</a></li><li class="d3"><a href="#the-chips-under-the-title">The chips under the title</a></li><li class="d3"><a href="#tags">Tags</a></li><li class="d2"><a href="#the-summary">The summary</a></li><li class="d3"><a href="#when-the-summary-is-out-of-date">When the summary is out of date</a></li><li class="d3"><a href="#ask-ai">Ask AI</a></li><li class="d2"><a href="#the-transcript">The transcript</a></li><li class="d3"><a href="#fix-a-misheard-word">Fix a misheard word</a></li><li class="d3"><a href="#fix-the-speaker-of-one-line">Fix the speaker of one line</a></li><li class="d2"><a href="#name-the-speakers">Name the speakers</a></li><li class="d3"><a href="#the-speaker-menu">The speaker menu</a></li><li class="d3"><a href="#hear-who-someone-is">Hear who someone is</a></li><li class="d2"><a href="#leave-something-out-of-the-note">Leave something out of the note</a></li><li class="d2"><a href="#play-the-recording">Play the recording</a></li><li class="d3"><a href="#who-you-hear-others-everyone-me">Who you hear: Others, Everyone, Me</a></li><li class="d2"><a href="#pictures">Pictures</a></li><li class="d2"><a href="#the-right-hand-column">The right-hand column</a></li><li class="d3"><a href="#run-the-transcript-again">Run the transcript again</a></li><li class="d3"><a href="#run-the-summary-again">Run the summary again</a></li><li class="d3"><a href="#other-notes-from-the-same-meeting">Other notes from the same meeting</a></li><li class="d2"><a href="#the-menu-at-the-top">The menu at the top</a></li><li class="d2"><a href="#notes-still-being-made-and-notes-that-failed">Notes still being made, and notes that failed</a></li><li class="d3"><a href="#recording-right-now">Recording right now</a></li><li class="d3"><a href="#processing">Processing</a></li><li class="d3"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#the-notes-folder-on-disk">The note's folder on disk</a></li><li class="d2"><a href="#deleting-a-note-and-how-long-audio-is-kept">Deleting a note and how long audio is kept</a></li><li class="d3"><a href="#delete-one-note">Delete one note</a></li><li class="d3"><a href="#how-long-audio-is-kept">How long audio is kept</a></li><li class="d2"><a href="#notes-from-an-added-folder">Notes from an added folder</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -354,7 +373,7 @@
         <a href="/features/">All features</a>
         <a href="/pricing">Pricing</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.5</a>
+        <a class="sf-ver" href="/changelog/">v0.7.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

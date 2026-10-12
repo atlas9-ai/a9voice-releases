@@ -71,7 +71,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Voices (voice recognition)</h1>
       <p class="docs-lead">Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.13</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.7</p>
       <p>Without this, people on a call show up as <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, until you name them. With
 <strong>Recognize people by voice</strong> on, A9 Voice remembers how each person you have named sounds, and names them for you
 in later meetings, both on the live transcript and in the finished note.</p>
@@ -120,6 +120,9 @@ them or delete them (see <a href="#manage-people">Manage people</a>).</p>
 <li><strong>Never from a single line.</strong> Moving one line to another speaker does not teach anything. Only a name for the whole
 speaker does.</li>
 <li><strong>Never your own voice.</strong> Your microphone channel, and any speaker you name as yourself, are skipped.</li>
+<li><strong>Never a speaker you left out.</strong> A speaker marked <strong>Not part of the meeting</strong> in a note is never learned from, and
+leaving one out never changes a stored voice. If that speaker had been named from a voice, the person&#39;s history
+says &quot;Excluded from a note&quot;, so a wrong match shows.</li>
 <li><strong>Never from an editable copy of a note that came from an added folder.</strong> See
 <a href="/docs/search-and-ask/">Search and Ask</a>.</li>
 <li><strong>After the call.</strong> Tags taught during a call are learned when the note is processed afterwards, not during the
@@ -237,7 +240,7 @@ from each speaker.</li>
         <a href="/features/">All features</a>
         <a href="/pricing">Pricing</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.5</a>
+        <a class="sf-ver" href="/changelog/">v0.7.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
