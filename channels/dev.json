@@ -1,13 +1,13 @@
 {
-  "version": "0.7.16",
-  "notes": "- **Works on a work network that blocks a9voice.com.** Activating a license, the Notes trial, the update check and the opt-in counts now try **a9voice.atlas9.ai**, a copy of the same server, when a9voice.com can't be reached or is answered by a filter's block page. A9 Voice remembers which one answered and tries it first next time. A real \"no\" from the server (a wrong key, a PC limit) is shown as it is and never retried elsewhere. If neither can be reached the message names both.\n- **The Live transcript connects on networks that inspect traffic.** Its connection used a built-in list of trusted certificate authorities, so on a network that re-signs HTTPS with the company's own certificate it failed while everything else worked, and the Live window stayed empty with no explanation. It now trusts the same Windows certificate store as the rest of A9 Voice.\n- **The Live window says when it can't connect.** After about 10 seconds without a connection it shows \"Live transcript can't connect from this network. Recording continues; the full transcript with speakers is made when you stop.\" A9 Voice keeps trying for the whole recording and the line goes away when it connects. If a speech model is installed on this PC, the Live transcript switches to it and says so.",
-  "pub_date": "2026-10-13T18:04:46Z",
+  "version": "0.7.17",
+  "notes": "- **Add someone to the meeting before they speak.** **+ Person** at the end of the Live window's strip adds a person with a dashed pill and no voice yet. It names no line and teaches no voice; it is a name you can pick from any line's menu. The **×** on the pill takes it away.\n- **Number keys in a line's menu.** The people on the call, then the people you added, are numbered <kbd>1</kbd> to <kbd>9</kbd> at the top of every line menu. Click a name, press the number, done: \"this isn't Ana, it's Riley\" in two keystrokes. The note page's line menu numbers its speakers the same way.\n- **More lines that sound like the same person (note page, with [Voices](/docs/voices/) on).** After you move some lines of a wrongly split speaker to another person, the note says **12 more lines from Ana Example sound like Ben Sample** and lets you review them with play and ✓ / ✗. Nothing moves without a ✓, and nothing is learned or saved from the check.",
+  "pub_date": "2026-10-13T18:52:22Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJQL0Q2QnFBQjdLcWlPVTBDYllJSHRXZ09HQVl4T1czU3ZQanBNelNiRFNGaCsvcHNRMnQyVndBa2Jta3gvYms2L1M0RktKNTdnSVpQbWdEaFZwZndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTE0NjM5CWZpbGU6QTkgVm9pY2VfMC43LjE2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTYKelY1ZERJL2VwL2UyZTVLK0RDMnBBaFdnNzM2YlNFUTNYdHMzOW51eW5kN29KRm9xaG1GMFNNU2pIZ1JMVitiVmVqNVE0N0dCZ0p6ZUtNeE5kZjZxQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.16/A9Voice_0.7.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEhkeGY4UnhjZXpCSjZ6bElLZjU3TmExeHBYWDkybkZ3c2h1L00rdE1kQU96c1ZXT0tFYk81aGFoNWYwN3lrU1E3QzhXTTdEVlFlbVNuZVVYTVJ2dUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTE3NDk1CWZpbGU6QTkgVm9pY2VfMC43LjE3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTcKbUROdzVZRytUK3lYc0xKOE1abWdHVnYyU09lUWJzT3BPQkRYM2ZrWVZVdWNRZ0phK3UyZnEyWUkvb2I3bUkyVXA1OGJpNWFBdG55QlZqcUJnK3N0RHc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.17/A9Voice_0.7.17_x64-setup.exe"
     }
   },
-  "installer_sha256": "189d46b7e90d66cf86ceeba46633498edc8098e7325d73fba2b89b73d8bd97ce",
-  "installer_size": 11718785
+  "installer_sha256": "4f91c80cd4ef420220ff468be42a6e7910088c3d21dbb50cdfd5c250a74b5627",
+  "installer_size": 11745459
 }
