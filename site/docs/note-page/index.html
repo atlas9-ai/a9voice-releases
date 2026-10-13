@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.16"
+      "softwareVersion": "0.7.17"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>The note page</h1>
       <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.17</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.18</p>
       <p>Every recording becomes a note. You find it in the <strong>Notes</strong> list, open it, and the note page shows the summary, the transcript, the people, the pictures and the audio in one place. Everything you change here is also written to the note&#39;s folder on your PC at once.</p>
 <h2 id="the-notes-list">The Notes list<a class="anchor" href="#the-notes-list" aria-label="Link to The Notes list">#</a></h2>
 <p>Click <strong>Notes</strong> in the sidebar.</p>
@@ -197,7 +197,7 @@
 <h3 id="when-the-summary-is-out-of-date">When the summary is out of date<a class="anchor" href="#when-the-summary-is-out-of-date" aria-label="Link to When the summary is out of date">#</a></h3>
 <p>If you fix a line in the transcript, a bar appears: &quot;Transcript edited · the summary was written from the earlier text.&quot; Click <strong>Re-summarize</strong> to write it again from the corrected text. You can also leave it as it is.</p>
 <h3 id="ask-ai">Ask AI<a class="anchor" href="#ask-ai" aria-label="Link to Ask AI">#</a></h3>
-<p>The <strong>Ask AI</strong> tab and the bar at the bottom answer questions about this one note, such as &quot;What did I promise?&quot;. Type a question, choose a language model next to the arrow, and press <kbd>Enter</kbd>. Answers cite the moment; click the citation to play it. The bar&#39;s small tags tell you what the AI is given: the summary (with its word count), the transcript (number of turns) and the images. To ask across all your notes, use the <strong>Ask</strong> page: see <a href="/docs/asking-your-notes/">Asking your notes</a>.</p>
+<p>The <strong>Ask AI</strong> tab and the bar at the bottom answer questions about this one note, such as &quot;What did I promise?&quot;. Type a question, choose a language model next to the arrow, and press <kbd>Enter</kbd>. Answers cite the moment; click the citation to play it. The bar&#39;s small tags tell you what the AI is given: the summary (with its word count), the transcript (number of turns) and the images. When the meeting is longer than the model takes in one request, the model is given the summary and the parts of the transcript that match your question, as many as fit, and the answer&#39;s footer says so: <strong>answered from the summary + 14 relevant passages</strong>. To ask across all your notes, use the <strong>Ask</strong> page: see <a href="/docs/asking-your-notes/">Asking your notes</a>.</p>
 <h2 id="the-transcript">The transcript<a class="anchor" href="#the-transcript" aria-label="Link to The transcript">#</a></h2>
 <p>Click the <strong>Transcript</strong> tab. Each line has a time, the speaker&#39;s name in their own color and what was said.</p>
 <p><figure class="shot"><img src="/img/docs/note-page-transcript-1x.webp" srcset="/img/docs/note-page-transcript-1x.webp 1x, /img/docs/note-page-transcript.webp 2x" width="1036" height="1109" alt="The Transcript tab with lines, a picture, a typed note and an edited line" loading="lazy" decoding="async"><figcaption>The Transcript tab. The picture card and the dashed box are things added during the recording.</figcaption></figure></p>
@@ -378,7 +378,7 @@
 <p>While a note is still recording, the note page shows a red box with the timer and <strong>Live window</strong>, <strong>Snip</strong>, <strong>Pause</strong> (then <strong>Resume</strong>), <strong>Stop &amp; discard</strong> and <strong>Stop</strong>. Type in the box and press <kbd>Enter</kbd> to add a typed note at this moment. The transcript and summary appear when you stop. See <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
 <p><figure class="shot"><img src="/img/docs/note-page-recording-1x.webp" srcset="/img/docs/note-page-recording-1x.webp 1x, /img/docs/note-page-recording.webp 2x" width="704" height="164" alt="The red recording box on the note page" loading="lazy" decoding="async"><figcaption>A note that is recording now. Type a note and press Enter to place it at this moment.</figcaption></figure></p>
 <h3 id="processing">Processing<a class="anchor" href="#processing" aria-label="Link to Processing">#</a></h3>
-<p>A box with a spinner says what is happening: <strong>Transcribing…</strong> (with a percentage on this PC), <strong>Writing the summary…</strong>, or <strong>Waiting for the note before it…</strong>. You can close the note and come back; it finishes on its own. <strong>Regenerate</strong> waits until it is done.</p>
+<p>A box with a spinner says what is happening: <strong>Transcribing…</strong> (with a percentage on this PC), <strong>Writing the summary…</strong>, or <strong>Waiting for the note before it…</strong>. A long meeting on a model with a small limit is written in parts and says <strong>Writing summary… part 2 of 4</strong>, with <strong>waiting for Groq&#39;s per-minute limit</strong> when it has to wait (see <a href="/docs/language-models/#long-meetings">Long meetings</a>). You can close the note and come back; it finishes on its own. <strong>Regenerate</strong> waits until it is done.</p>
 <h3 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h3>
 <p><figure class="shot"><img src="/img/docs/note-page-failed-1x.webp" srcset="/img/docs/note-page-failed-1x.webp 1x, /img/docs/note-page-failed.webp 2x" width="704" height="72" alt="A note that failed, with the reason and Try again" loading="lazy" decoding="async"><figcaption>A failed note names the reason. Try again runs the transcript again.</figcaption></figure></p>
 <ul>
@@ -448,7 +448,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.16</a>
+        <a class="sf-ver" href="/changelog/">v0.7.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

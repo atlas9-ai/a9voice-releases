@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.16"
+      "softwareVersion": "0.7.17"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Language models</h1>
       <p class="docs-lead">Add the AI models that write your meeting summaries, answer Ask, and tidy your dictation with Enhance with AI. Use a cloud key or a model on your own PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.18</p>
       <p>A language model reads text and writes text. <a href="/docs/speech-models/">Speech models</a> turn your voice into words; language models do things with the words:</p>
 <ul>
 <li><strong>Summaries:</strong> after a meeting, one request writes the summary, a title and tags for the note.</li>
@@ -182,6 +182,16 @@
 <p><strong>Summaries</strong> picks the model that writes the summary, title and tags. The other three follow it unless you give them their own. Leave it on <strong>Automatic</strong> and A9 Voice uses the first one you have set up, in this order: OpenRouter (the newest Claude Haiku, Claude Haiku 5.5 today), Anthropic (the same), OpenAI (GPT-4.1 mini), Groq. Groq comes last because a long meeting can be more than a free Groq key allows per minute. Any other model you set up, including your own server, is tried after those.</p>
 <p>The <strong>Summary model</strong> row in <strong>Settings › Transcript &amp; summary</strong> is the same choice.</p>
 <p><figure class="shot"><img src="/img/docs/language-models-summary-model-1x.webp" srcset="/img/docs/language-models-summary-model-1x.webp 1x, /img/docs/language-models-summary-model.webp 2x" width="898" height="102" alt="The Summary model row" loading="lazy" decoding="async"><figcaption>Automatic shows which model it would use.</figcaption></figure></p>
+<h3 id="long-meetings">Long meetings<a class="anchor" href="#long-meetings" aria-label="Link to Long meetings">#</a></h3>
+<p>Some models take only so much text in one request. Groq&#39;s free tier, for example, allows its GPT-OSS models 8,000 tokens a minute, which is less than a 30-minute meeting. When a meeting is more than the Summary model takes at once, A9 Voice writes it in parts: it reads the transcript a part at a time, never cutting a turn in two, keeps short notes on each part, then puts the notes together into the same summary, title, tags and action items as any other. The finished summary looks the same. Where Groq&#39;s per-minute limit asks for it, A9 Voice waits for the minute to pass, so a long meeting takes a few minutes longer. While it works the note says <strong>Writing summary… part 2 of 4</strong>, and <strong>waiting for Groq&#39;s per-minute limit</strong> when it is waiting.</p>
+<p>You can have it the other way. <strong>Settings › Transcript &amp; summary › Long meetings</strong> has two choices:</p>
+<ul>
+<li><strong>Chunk on the same model</strong> (the default): the Summary model writes the meeting in parts.</li>
+<li><strong>Use fallback model</strong>: when another model you have set up takes the whole meeting in one request, it writes the summary instead, and the Summary model is tried after it.</li>
+</ul>
+<p>With Groq as the only language model, <strong>Settings › Models</strong> says under <strong>Summaries</strong> that long meetings are handled in parts and take a bit longer. Another provider&#39;s key makes them single-pass.</p>
+<p>A meeting that failed before with <strong>request too large for Groq&#39;s per-minute token cap on this model</strong> in the last 30 days is summarized again by itself the first time you open this version, oldest first, one at a time. Nothing needs a click.</p>
+<p>If it still can&#39;t be done, the note names the limit and when it resets, for example <strong>Groq&#39;s daily token limit for this model is used up; resets in 3 h. Try another model or try again later.</strong></p>
 <h3 id="ask">Ask<a class="anchor" href="#ask" aria-label="Link to Ask">#</a></h3>
 <p><strong>Ask: Quick</strong> and <strong>Ask: Deep</strong> each take their own model, or <strong>Same as Summaries</strong>. Deep reads more passages, so a stronger model is worth it; the list marks models that are <strong>Good for Deep</strong>. <strong>Ask: Quick</strong> also thinks of the extra search words for a Deep answer.</p>
 <h3 id="enhance">Enhance<a class="anchor" href="#enhance" aria-label="Link to Enhance">#</a></h3>
@@ -230,7 +240,8 @@
 <li><strong>OpenRouter key rejected</strong> (or another name): the key is wrong or expired. Open the tile, <strong>Manage key</strong>, paste a new one, <strong>Test</strong>, <strong>Save</strong>.</li>
 <li><strong>… key missing</strong>: add a key for that provider.</li>
 <li><strong>… rate limit (429)</strong> or <strong>… took too long</strong>: the provider is busy. Summaries and Ask move to the next model; Enhance pastes the text as heard.</li>
-<li><strong>request too large for … on this model</strong>: the request is bigger than that model takes (its context window, or Groq&#39;s per-minute token cap). It never counts as usage. The next model answers.</li>
+<li><strong>request too large for … on this model</strong>: the request is bigger than that model takes (its context window, or Groq&#39;s per-minute token cap). It never counts as usage. A summary is written in parts instead (see <a href="#long-meetings">Long meetings</a>); Ask and Enhance go to the next model.</li>
+<li><strong>… daily token limit for this model is used up; resets in …</strong>: the provider&#39;s allowance for the day is spent. Waiting a minute won&#39;t help. Pick another model, or try again after the time it names.</li>
 <li><strong>No internet</strong>: language models need a connection unless they run on your PC.</li>
 <li><strong>Add your OpenRouter key in Settings › Models to get summaries</strong>: no model is set up. Add a key for any provider above.</li>
 <li><strong>Test</strong> is greyed out on a custom server: fill in <strong>Model</strong>.</li>
@@ -250,7 +261,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/speech-models/"><span class="docs-step-l">Previous</span><span>Speech models</span></a><a class="docs-step next" href="/docs/recording-a-meeting/"><span class="docs-step-l">Next</span><span>Recording a meeting</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#set-up-a-provider">Set up a provider</a></li><li class="d3"><a href="#providers-and-key-pages">Providers and key pages</a></li><li class="d3"><a href="#a-key-you-already-added">A key you already added</a></li><li class="d2"><a href="#choose-which-model-does-what">Choose which model does what</a></li><li class="d3"><a href="#summaries-and-titles">Summaries and titles</a></li><li class="d3"><a href="#ask">Ask</a></li><li class="d3"><a href="#enhance">Enhance</a></li><li class="d3"><a href="#the-ai-chip">The AI chip</a></li><li class="d3"><a href="#when-a-model-fails">When a model fails</a></li><li class="d2"><a href="#enhance-with-ai">Enhance with AI</a></li><li class="d3"><a href="#what-it-never-does">What it never does</a></li><li class="d3"><a href="#when-it-is-skipped">When it is skipped</a></li><li class="d2"><a href="#use-a-model-on-your-own-pc">Use a model on your own PC</a></li><li class="d2"><a href="#what-it-costs">What it costs</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#set-up-a-provider">Set up a provider</a></li><li class="d3"><a href="#providers-and-key-pages">Providers and key pages</a></li><li class="d3"><a href="#a-key-you-already-added">A key you already added</a></li><li class="d2"><a href="#choose-which-model-does-what">Choose which model does what</a></li><li class="d3"><a href="#summaries-and-titles">Summaries and titles</a></li><li class="d3"><a href="#long-meetings">Long meetings</a></li><li class="d3"><a href="#ask">Ask</a></li><li class="d3"><a href="#enhance">Enhance</a></li><li class="d3"><a href="#the-ai-chip">The AI chip</a></li><li class="d3"><a href="#when-a-model-fails">When a model fails</a></li><li class="d2"><a href="#enhance-with-ai">Enhance with AI</a></li><li class="d3"><a href="#what-it-never-does">What it never does</a></li><li class="d3"><a href="#when-it-is-skipped">When it is skipped</a></li><li class="d2"><a href="#use-a-model-on-your-own-pc">Use a model on your own PC</a></li><li class="d2"><a href="#what-it-costs">What it costs</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -265,7 +276,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.16</a>
+        <a class="sf-ver" href="/changelog/">v0.7.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

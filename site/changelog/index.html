@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.16"
+      "softwareVersion": "0.7.17"
     }
   ]
 }
@@ -111,7 +111,14 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-17">
+  <section class="log-entry" aria-labelledby="v-0-7-18">
+  <h2 id="v-0-7-18">0.7.18 <time datetime="2026-10-13">October 13, 2026</time></h2>
+  <ul><li><strong>Long meetings now summarize on any model, including a free Groq key.</strong> A meeting too long for the Summary model&#39;s limit (Groq&#39;s free tier allows 8,000 tokens a minute, less than a 30-minute meeting) is read in parts and put together into the same summary, title, tags and action items. While it works the note says <strong>Writing summary… part 2 of 4</strong>, and <strong>waiting for Groq&#39;s per-minute limit</strong> when it waits. See <a href="/docs/language-models/#long-meetings">Long meetings</a>.</li>
+<li><strong>Summaries that failed as &quot;too large&quot; write themselves again.</strong> The first time you open this version, a note whose summary failed with <strong>request too large</strong> in the last 30 days is summarized again, oldest first, with nothing to click. A limit that stops it now says which one and when it resets, for example <strong>Groq&#39;s daily token limit for this model is used up; resets in 3 h.</strong></li>
+<li><strong>Ask AI on a long note answers.</strong> When the whole transcript won&#39;t fit the model, it is given the summary and the passages that match the question, and the footer says <strong>answered from the summary + 14 relevant passages</strong>.</li>
+<li><strong>A new choice, Settings › Transcript &amp; summary › Long meetings:</strong> <strong>Chunk on the same model</strong> (default) or <strong>Use fallback model</strong>. With Groq as your only language model, Settings › Models says long meetings are handled in parts.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-17">
   <h2 id="v-0-7-17">0.7.17 <time datetime="2026-10-13">October 13, 2026</time></h2>
   <ul><li><strong>Add someone to the meeting before they speak.</strong> <strong>+ Person</strong> at the end of the Live window&#39;s strip adds a person with a dashed pill and no voice yet. It names no line and teaches no voice; it is a name you can pick from any line&#39;s menu. The <strong>×</strong> on the pill takes it away.</li>
 <li><strong>Number keys in a line&#39;s menu.</strong> The people on the call, then the people you added, are numbered <kbd>1</kbd> to <kbd>9</kbd> at the top of every line menu. Click a name, press the number, done: &quot;this isn&#39;t Ana, it&#39;s Riley&quot; in two keystrokes. The note page&#39;s line menu numbers its speakers the same way.</li>
@@ -454,7 +461,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.16</a>
+        <a class="sf-ver" href="/changelog/">v0.7.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
