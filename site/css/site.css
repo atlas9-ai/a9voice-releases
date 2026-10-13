@@ -247,3 +247,12 @@ kbd.wide { padding: 0 28px; }
 .dlp .dl-note > summary:focus-visible { outline: 2px solid var(--signal, #7AA2F7); outline-offset: 2px; border-radius: 12px; }
 .dlp .dl-note-body { padding: 0 16px 8px; }
 @media (max-width: 520px) { .dlp .dl-facts > div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* Guides (/guides/...): numbered steps and a small key cap that sits inside a line of text. */
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+.steps li { counter-increment: step; display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; font-size: 16px; line-height: 1.6; color: var(--text-2); }
+.steps li::before { content: counter(step); flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--action); color: #fff; display: grid; place-items: center; font: 600 14px/1 var(--mono); }
+.steps li > span { min-width: 0; padding-top: 2px; }
+.steps kbd, kbd.sm { height: 26px; padding: 0 8px; font-size: 13px; vertical-align: middle; }
+.cmp.cmp-narrow { min-width: 0; }
+.cmp-narrow tbody th { width: 46%; }
