@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Anonymous usage counts</h1>
       <p class="docs-lead">What A9 Voice counts, what it is, what never leaves your PC, and how to turn it off or reset it.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.15</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.16</p>
       <p>A9 Voice counts installs so we know whether anyone is using it, which version they are on, and whether people get through setup and use it. The count is anonymous: there is no account to tie it to, and it carries nothing you said, wrote or recorded. It is on by default and you can turn it off in <strong>Settings › Privacy</strong>.</p>
 <h2 id="what-is-counted">What is counted<a class="anchor" href="#what-is-counted" aria-label="Link to What is counted">#</a></h2>
 <p>When A9 Voice checks for an update, the request to a9voice.com carries a random ID, the app version, your update channel (Stable or Dev), your Windows version (for example &quot;Windows 11, build 26200&quot;) and your PC&#39;s processor type. a9voice.com adds your country, worked out from the request. The ID is a random number made on your PC the first time A9 Voice ran. It is not made from your name, your PC or your account, and it cannot be turned back into any of them. A brand-new install also sends one extra message the first time it starts, so we can tell a real install from a download that was never opened. Installers downloaded from a9voice.com carry a random code in the file name. The app sends it once with the first-launch count so we know which link the download came from. It isn&#39;t tied to you.</p>
@@ -158,6 +158,7 @@
 </ol>
 <p>With the switch off, the update check sends no ID and nothing about your PC, and neither the first-start message (with its download code, which is then deleted) nor the five milestones are sent. a9voice.com records nothing at all for those requests. Updates work the same.</p>
 <p>The switch is for the app. It does not affect what the website counts about a visit to a9voice.com, which has no ID and no cookie.</p>
+<p>If your network blocks a9voice.com, A9 Voice sends the same requests (the update check, the Notes trial and license checks, the counts when the switch is on) to a9voice.atlas9.ai, a mirror of the same server, and remembers which one answered. It sends nothing more and nothing different.</p>
 <h2 id="reset-the-id">Reset the ID<a class="anchor" href="#reset-the-id" aria-label="Link to Reset the ID">#</a></h2>
 <p><strong>Reset ID</strong> in <strong>Settings › Privacy</strong> makes a new random ID. The old one is forgotten on this PC, and nothing links the old and the new. An exported settings file never contains the ID or the milestones, so importing it on another PC does not copy them.</p>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
