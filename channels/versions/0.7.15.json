@@ -1,0 +1,13 @@
+{
+  "version": "0.7.15",
+  "notes": "- **A short recording-consent notice when Notes starts.** Under **Try Notes free**, and under **Start trial** on the \"Want notes for this call?\" card, a line says that by starting Notes you agree to get any consent the law requires before you record other people, and that some places, including several US states, require everyone's consent. **Learn more** opens [Recording consent](/docs/privacy-and-data/#recording-consent). Pressing the button is the agreement; there is no checkbox.\n- **If your Notes trial started before you saw that, you see it once.** A small card on the Notes page and the first time the recording bar appears has the same line with **Got it**. It never blocks, delays or stops a recording. **Settings › Notes › Recording** always shows the line.\n- **What is kept.** A9 Voice remembers on your PC when you accepted and which version of the notice you saw (never in exports). The Notes trial start and the next trial or license check send a9voice.com one number, the notice's version, and a9voice.com stores it with the time it arrived. No name, no email, no content; it rides on a check A9 Voice already makes. See [Anonymous usage counts](/docs/privacy/).\n- **The sidebar starts open.** On a new install it is open at any window width, where before it shrank to icons below 1150 pixels. **Shrink sidebar** at the bottom still shrinks it, and A9 Voice remembers your choice.",
+  "pub_date": "2026-10-13T17:18:09Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEM3L255d1hSdlhsMHEwMFVsUmt6OEk3K1NWdmpNMWtLTDJaT1dUcm5UejBwUm1jNGRQSnk1QkVCb0M1QlpGeDlKSG5Fa2lTTzRlSk5rc2pBTmNTdEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTExODEyCWZpbGU6QTkgVm9pY2VfMC43LjE1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTUKU0l3Uk9jUTkwK3dxT0poODBwekQzZW83cUluN1Fqd0JJS2xFaitwRjltdnBYVmFxVzVVR091NWhzOXUvRlJmWEhSQ04rRklaZlBmaHlmdjhiWjk1RFE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.15/A9Voice_0.7.15_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "fe99747e135bca74b53c56f519ada4ecd55b8e888109cefc61b76a1f1a8955f1",
+  "installer_size": 11746122
+}
