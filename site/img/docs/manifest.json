@@ -219,6 +219,10 @@
   "w": 760,
   "h": 640
  },
+ "live-window-guess": {
+  "w": 760,
+  "h": 640
+ },
  "live-window-line-menu": {
   "w": 760,
   "h": 700
