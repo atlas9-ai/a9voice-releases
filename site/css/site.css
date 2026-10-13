@@ -53,6 +53,7 @@ img { max-width: 100%; height: auto; display: block; }
 .chip-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
 h1 { font-size: clamp(44px, 6vw, 72px); line-height: 1.02; font-weight: 600; letter-spacing: -0.035em; }
 .lead { font-size: 19px; line-height: 1.55; color: var(--text-2); max-width: 520px; }
+.lead.wide { max-width: 720px; }
 .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 .fine { font-size: 13px; color: var(--muted); }
 .fine a { color: var(--link); }
@@ -187,6 +188,8 @@ kbd.wide { padding: 0 28px; }
 .cmp thead th { font-weight: 600; color: var(--text); background: var(--surface); }
 .cmp tbody th { font-weight: 500; color: var(--text-2); width: 190px; }
 .cmp td { color: var(--muted); }
+.cmp-two { min-width: 640px; }
+.cmp thead a.cmp-more { display: block; margin-top: 4px; font-size: 13px; font-weight: 500; color: var(--link); }
 .cmp td.us { color: var(--text); background: rgba(43,91,215,.10); font-weight: 500; }
 .cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: 0; }
 @media (max-width: 900px) {

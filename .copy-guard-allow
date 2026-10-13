@@ -2,6 +2,8 @@
 # in the private app repo from its .copy-guard-allow; don't edit here.
 site/index.html: regions
 site/features/index.html: regions
+site/compare/wispr-flow/index.html: regions
+site/compare/wispr-flow.html: regions
 site/brand.html: scribe
 site/brand/index.html: scribe
 site/brand/README.txt: scribe
