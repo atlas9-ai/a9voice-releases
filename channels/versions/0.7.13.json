@@ -1,0 +1,13 @@
+{
+  "version": "0.7.13",
+  "notes": "- Nothing changes in the app. This is the first build made on A9 Voice's own build machine instead of GitHub's, so you can check that the update arrives and installs as usual.",
+  "pub_date": "2026-10-13T13:22:59Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERRME1jQm43MFJPWG9SZ084bHJqSngwRW9DQ2thRlJaWnNudVBiTExrYnozdUpobUhUYi8ybGJVRUltM2c2N0NBejFxMmVDbkpocDNxNUZrbkhpNEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk3NzE0CWZpbGU6QTkgVm9pY2VfMC43LjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTMKa0RjOWpDNDJ3aHFVZ0tYejgxUlNoNCtXMGZXSC9MTUFtZTlKREVIelN2cUp1Mkc2YWF4WE1NeVRzd2hpSFFhMG10MEpRdkNPWGtYbUdMQng4NzUyQ0E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.13/A9Voice_0.7.13_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "710a92aa22e1d6ce159e1cf33bd61f436645bcc59e99db8844f92241b0da0c7e",
+  "installer_size": 11736542
+}

@@ -1,13 +1,13 @@
 {
-  "version": "0.7.12",
-  "notes": "- **A9 Voice now works with a larger Windows Text size.** With **Settings › Accessibility › Text size** above 100% the dictation pill was drawn too big for its window and cut off on the right, and the recording bar and the main window were sized for the smaller text. Every window now fits what it shows, grows with the Text size and never goes off the screen; the main window's smallest size grows with it too.\n- **New: Settings › General › Interface size.** **Follow Windows** (the default), **100%**, **125%** or **150%**. A fixed size replaces Windows' Text size for A9 Voice only, takes effect at once, and keeps your display's own scaling.\n- The dictation pill stays on screen when hands-free dictation starts (its buttons and the key to finish were hidden the moment it began).\n- Copy diagnostics shows each small window's scale: the page's, the monitor's and the Text size, and says `MISMATCH` when a window is smaller than its content.",
-  "pub_date": "2026-10-13T01:00:07Z",
+  "version": "0.7.13",
+  "notes": "- Nothing changes in the app. This is the first build made on A9 Voice's own build machine instead of GitHub's, so you can check that the update arrives and installs as usual.",
+  "pub_date": "2026-10-13T13:23:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE15dVpDS1hzanZWMzMvWDZ6cU5sbGVPQWd0VGRidmc1Y2V5eFpwdkI0aVZ2bUlHSEE3USthb1JaSGlYM1lna1ZycHRlMnRHSVpJRVpUTU9JM3BCVHd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUzMTI2CWZpbGU6QTkgVm9pY2VfMC43LjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTIKTnZlZmRoVXZzVVlJU0ltRThneUNUd1MvQ2RDQVl5OVFZN0Y0VnV2OTMzbStaS1lnSlNWbkd2dDQwQ1VZYkdIemxkZERBaFV0SUxOcHZiQVh5RFdoRHc9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.12/A9Voice_0.7.12_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERRME1jQm43MFJPWG9SZ084bHJqSngwRW9DQ2thRlJaWnNudVBiTExrYnozdUpobUhUYi8ybGJVRUltM2c2N0NBejFxMmVDbkpocDNxNUZrbkhpNEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk3NzE0CWZpbGU6QTkgVm9pY2VfMC43LjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTMKa0RjOWpDNDJ3aHFVZ0tYejgxUlNoNCtXMGZXSC9MTUFtZTlKREVIelN2cUp1Mkc2YWF4WE1NeVRzd2hpSFFhMG10MEpRdkNPWGtYbUdMQng4NzUyQ0E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.13/A9Voice_0.7.13_x64-setup.exe"
     }
   },
-  "installer_sha256": "8918fce3600838e17572dc085f881a9d37692c21ec71c23086ceef12bf3774dc",
-  "installer_size": 11749797
+  "installer_sha256": "710a92aa22e1d6ce159e1cf33bd61f436645bcc59e99db8844f92241b0da0c7e",
+  "installer_size": 11736542
 }
