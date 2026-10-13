@@ -1,0 +1,13 @@
+{
+  "version": "0.7.11",
+  "notes": "- **Settings › Privacy** no longer shows your ID or a **Copy ID** button. **Reset ID** is still there and works as before. Nothing about the anonymous counts changed: same ID, same messages, same switch.",
+  "pub_date": "2026-10-13T00:14:23Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcElMSi9UUDhqdHkrdmphT0lpU1B1cTBPTjF6MUh6MlhUd2RWaFVHVU50Y1o4a21sc1JhVXlrUW05bGp2alN2NnhCc2c1SGd6Vy9QamRmNGo1eFZ1N2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUwMjk0CWZpbGU6QTkgVm9pY2VfMC43LjExX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTEKeTZKbkFsQTlEb3FRdW4zbnNRM1prN3pMOVV1R25EOGNZTXBidzZPZUM5SmNIL1ZVUDVkUy83OFNuV2NzVFFHanoyRDJ6d0FxRlZ2a3hvVjhuRWpIQUE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.11/A9Voice_0.7.11_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "6e6d471d8a9212a4d341a6530e243e93e80bd234bc424880c78278fbc76a9491",
+  "installer_size": 11738899
+}
