@@ -32,6 +32,127 @@
 <script src="/js/home.js" defer></script>
 <script src="/js/demo-lightbox.js" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ae721dd5a82b40b5844414bb9f3b9522"}'></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://a9voice.com/#org",
+      "name": "Atlas9 LLC",
+      "url": "https://a9voice.com/",
+      "email": "contact@a9voice.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://a9voice.com/img/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "sameAs": [
+        "https://www.youtube.com/@a9voiceapp",
+        "https://github.com/atlas9-ai/a9voice-releases"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://a9voice.com/#site",
+      "name": "A9 Voice",
+      "url": "https://a9voice.com/",
+      "publisher": {
+        "@id": "https://a9voice.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://a9voice.com/#app",
+      "name": "A9 Voice",
+      "url": "https://a9voice.com/",
+      "description": "A9 Voice is a Windows app for dictation and meeting notes: hold Ctrl+Space to type with your voice in any app, and record Teams or Zoom calls with no bot joining.",
+      "downloadUrl": "https://a9voice.com/download",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+      "publisher": {
+        "@id": "https://a9voice.com/#org"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Transcribe (dictation)",
+          "url": "https://a9voice.com/pricing",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Notes (meeting notes), one-time license",
+          "url": "https://a9voice.com/pricing",
+          "price": "49",
+          "priceCurrency": "USD"
+        }
+      ],
+      "softwareVersion": "0.7.12"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://a9voice.com/#faq",
+      "url": "https://a9voice.com/",
+      "isPartOf": {
+        "@id": "https://a9voice.com/#site"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is A9 Voice free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transcribe, the dictation half, is free with no limits and no account. Notes, the meeting half, is free for 30 days and then $49 once. If you use cloud models you pay those providers directly; models that run on your PC cost nothing per use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it join my Teams or Zoom call as a bot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It records your microphone and your computer’s audio on your PC, so nobody sees an assistant in the participant list. Because nothing announces the recording, tell the people on the call that you’re recording."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Download a speech model in Settings › Speech models and dictation and meeting transcripts work with no internet. For summaries and Ask offline, point A9 Voice at a language model running on your PC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a Mac version?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do my notes go?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Into a folder you pick on your PC, as plain Markdown files (summary.md, transcript.md and an images folder). Claude, ChatGPT or any tool that reads files can use them. Voiceprints never leave your PC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need permission to record a meeting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Laws differ by place. Some US states require everyone’s consent, others only one person’s, and you’re responsible for getting it. See what leaves your PC."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
@@ -65,6 +186,7 @@
     <p class="eyebrow">Dictation + meeting notes · Windows</p>
     <h1 id="hero-h">Talk through your day. <span>It's all written down.</span></h1>
     <p class="sub">Say your emails instead of typing them. Sit in your meetings instead of taking notes. A9 Voice writes both, knows who said what, and keeps it all in files on your PC.</p>
+    <p class="def">A9 Voice is a Windows app for dictation and meeting notes: hold Ctrl+Space to type with your voice in any app, and record Teams or Zoom calls with no bot joining.</p>
     <div class="cta"><a class="btn btn-primary" href="/download?pl=home-hero" data-pl="home-hero">Download free</a><a class="btn btn-ghost" href="#day">See a day with it</a><a class="btn btn-ghost btn-demo" href="/demo?play=1" data-dl="/download?pl=demo">Watch the demo <span aria-hidden="true">▶</span></a></div>
     <p class="phone-handoff" data-phone-handoff hidden>A9 Voice runs on Windows PCs. On your phone? <button class="phone-send" type="button">Send yourself the link</button><span class="phone-note" role="status" aria-live="polite"></span></p>
   </div>
@@ -179,6 +301,18 @@
 </section>
 <!-- copy-guard:end -->
 
+<section class="faq-sec wrap" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Questions</h2>
+  <div class="faq">
+    <details><summary>Is A9 Voice free?<span class="plus" aria-hidden="true">+</span></summary><p>Transcribe, the dictation half, is free with no limits and no account. Notes, the meeting half, is free for 30 days and then $49 once. If you use cloud models you pay those providers directly; models that run on your PC cost nothing per use.</p></details>
+    <details><summary>Does it join my Teams or Zoom call as a bot?<span class="plus" aria-hidden="true">+</span></summary><p>No. It records your microphone and your computer’s audio on your PC, so nobody sees an assistant in the participant list. Because nothing announces the recording, tell the people on the call that you’re recording.</p></details>
+    <details><summary>Does it work offline?<span class="plus" aria-hidden="true">+</span></summary><p>Yes. Download a speech model in Settings › Speech models and dictation and meeting transcripts work with no internet. For summaries and Ask offline, point A9 Voice at a language model running on your PC.</p></details>
+    <details><summary>Is there a Mac version?<span class="plus" aria-hidden="true">+</span></summary><p>No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights.</p></details>
+    <details><summary>Where do my notes go?<span class="plus" aria-hidden="true">+</span></summary><p>Into a folder you pick on your PC, as plain Markdown files (summary.md, transcript.md and an images folder). Claude, ChatGPT or any tool that reads files can use them. Voiceprints never leave your PC.</p></details>
+    <details><summary>Do I need permission to record a meeting?<span class="plus" aria-hidden="true">+</span></summary><p>Laws differ by place. Some US states require everyone’s consent, others only one person’s, and you’re responsible for getting it. See <a href="/docs/privacy-and-data/">what leaves your PC</a>.</p></details>
+  </div>
+</section>
+
 <section class="end" id="download">
   <div class="wrap"><h2>Stop typing what you can <span>say.</span></h2>
   <div class="cta"><a class="btn btn-primary" href="/download?pl=home-end" data-pl="home-end">Download free for Windows</a></div>
@@ -196,8 +330,9 @@
         <a href="/demo">Demo</a>
         <a href="/features/">All features</a>
         <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.8</a>
+        <a class="sf-ver" href="/changelog/">v0.7.12</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

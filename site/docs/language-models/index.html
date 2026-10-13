@@ -26,6 +26,69 @@
 <link rel="stylesheet" href="/css/lightbox.css">
 <script src="/js/chrome.js" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ae721dd5a82b40b5844414bb9f3b9522"}'></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://a9voice.com/#org",
+      "name": "Atlas9 LLC",
+      "url": "https://a9voice.com/",
+      "email": "contact@a9voice.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://a9voice.com/img/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "sameAs": [
+        "https://www.youtube.com/@a9voiceapp",
+        "https://github.com/atlas9-ai/a9voice-releases"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://a9voice.com/#site",
+      "name": "A9 Voice",
+      "url": "https://a9voice.com/",
+      "publisher": {
+        "@id": "https://a9voice.com/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://a9voice.com/#app",
+      "name": "A9 Voice",
+      "url": "https://a9voice.com/",
+      "description": "A9 Voice is a Windows app for dictation and meeting notes: hold Ctrl+Space to type with your voice in any app, and record Teams or Zoom calls with no bot joining.",
+      "downloadUrl": "https://a9voice.com/download",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+      "publisher": {
+        "@id": "https://a9voice.com/#org"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Transcribe (dictation)",
+          "url": "https://a9voice.com/pricing",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Notes (meeting notes), one-time license",
+          "url": "https://a9voice.com/pricing",
+          "price": "49",
+          "priceCurrency": "USD"
+        }
+      ],
+      "softwareVersion": "0.7.12"
+    }
+  ]
+}
+</script>
 </head>
 <body class="docs">
 <a class="skip" href="#main">Skip to content</a>
@@ -199,8 +262,9 @@
         <a href="/demo">Demo</a>
         <a href="/features/">All features</a>
         <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.8</a>
+        <a class="sf-ver" href="/changelog/">v0.7.12</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
