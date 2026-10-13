@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-16">
+  <section class="log-entry" aria-labelledby="v-0-7-17">
+  <h2 id="v-0-7-17">0.7.17 <time datetime="2026-10-13">October 13, 2026</time></h2>
+  <ul><li><strong>Add someone to the meeting before they speak.</strong> <strong>+ Person</strong> at the end of the Live window&#39;s strip adds a person with a dashed pill and no voice yet. It names no line and teaches no voice; it is a name you can pick from any line&#39;s menu. The <strong>×</strong> on the pill takes it away.</li>
+<li><strong>Number keys in a line&#39;s menu.</strong> The people on the call, then the people you added, are numbered <kbd>1</kbd> to <kbd>9</kbd> at the top of every line menu. Click a name, press the number, done: &quot;this isn&#39;t Ana, it&#39;s Riley&quot; in two keystrokes. The note page&#39;s line menu numbers its speakers the same way.</li>
+<li><strong>More lines that sound like the same person (note page, with <a href="/docs/voices/">Voices</a> on).</strong> After you move some lines of a wrongly split speaker to another person, the note says <strong>12 more lines from Ana Example sound like Ben Sample</strong> and lets you review them with play and ✓ / ✗. Nothing moves without a ✓, and nothing is learned or saved from the check.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-16">
   <h2 id="v-0-7-16">0.7.16 <time datetime="2026-10-13">October 13, 2026</time></h2>
   <ul><li><strong>Works on a work network that blocks a9voice.com.</strong> Activating a license, the Notes trial, the update check and the opt-in counts now try <strong>a9voice.atlas9.ai</strong>, a copy of the same server, when a9voice.com can&#39;t be reached or is answered by a filter&#39;s block page. A9 Voice remembers which one answered and tries it first next time. A real &quot;no&quot; from the server (a wrong key, a PC limit) is shown as it is and never retried elsewhere. If neither can be reached the message names both.</li>
 <li><strong>The Live transcript connects on networks that inspect traffic.</strong> Its connection used a built-in list of trusted certificate authorities, so on a network that re-signs HTTPS with the company&#39;s own certificate it failed while everything else worked, and the Live window stayed empty with no explanation. It now trusts the same Windows certificate store as the rest of A9 Voice.</li>

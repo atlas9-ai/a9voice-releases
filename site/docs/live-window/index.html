@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.16</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.17</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window sits beside your call while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -215,6 +215,14 @@
 <li><strong>Names Speaker 2 in this meeting</strong>: the same, with Voices off. Only this note is named.</li>
 <li><strong>Names this line only · no voiceprint</strong>: one line, with <strong>Just this line</strong> chosen. A single line never teaches a voice.</li>
 </ul>
+<h3 id="add-someone-who-hasnt-spoken-person">Add someone who hasn&#39;t spoken: + Person<a class="anchor" href="#add-someone-who-hasnt-spoken-person" aria-label="Link to Add someone who hasn't spoken: + Person">#</a></h3>
+<p>Sometimes you know who is on the call before they have said a word, or one of the people on a track is somebody else. <strong>+ Person</strong> at the end of the strip adds a person to this meeting without waiting for their voice.</p>
+<ol>
+<li>Press <strong>+ Person</strong>. The box asks <strong>Add someone to this meeting</strong>.</li>
+<li>Type a name, or pick one from the list (your saved voices and names from other notes are in it, and typing narrows it down as everywhere else). People already on the call are not listed again.</li>
+<li>Press <kbd>Enter</kbd> or <strong>Add</strong>. A pill with a dashed outline joins the strip. Rest the pointer on it and its tooltip says <strong>no voice yet</strong>.</li>
+</ol>
+<p>An added person has no track and no voiceprint, and adding them changes no line. They are a name you can pick from any line&#39;s menu (next section). The <strong>×</strong> next to the pill takes it away; lines you already named for them keep the name. When someone on the call later gets the same name, the pill goes and that person&#39;s chip is used.</p>
 <h3 id="answer-a-guess">Answer a guess<a class="anchor" href="#answer-a-guess" aria-label="Link to Answer a guess">#</a></h3>
 <p>With <a href="/docs/voices/">Voices</a> on, A9 Voice can guess who is talking from their voice. A guess shows on the chip as <strong>Kim Jansen?</strong>.</p>
 <ol>
@@ -247,7 +255,7 @@
 <li>The box asks <strong>This is →</strong>. Do one of:<ul>
 <li>Type a name, then press <kbd>Enter</kbd> or <strong>Name</strong>.</li>
 <li>Pick a person from <strong>People</strong>.</li>
-<li>Pick one of the <strong>Speakers</strong> chips to move the line to that speaker.</li>
+<li>Pick one of the pills under <strong>In this meeting</strong>, or press its number. The pills are the people on the call, then the people you added with <strong>+ Person</strong>, numbered <kbd>1</kbd> to <kbd>9</kbd>. With the field empty, pressing a number does what clicking that pill does: a person on the call takes the line; an added person&#39;s name goes on it. Once you have typed a letter, digits are part of the name.</li>
 <li>If the line&#39;s speaker is a guess, press the first row, <strong>✓ Yes, Kim Jansen</strong>.</li>
 </ul>
 </li>
@@ -257,6 +265,7 @@
 <ul>
 <li>A line named on its own shows its name with a dotted underline. Click it again to correct it.</li>
 <li>Typing the name of someone already on the call moves the line to that person. Typing your own name moves it to you.</li>
+<li>This is the quick way to say &quot;this isn&#39;t Ana, it&#39;s Riley&quot;: click the name above the line, press the number of Riley&#39;s pill, done. <strong>Apply to</strong> decides whether it is that line or everything from the speaker, as it does for a click.</li>
 <li>Everything from <strong>you</strong> cannot be renamed or turned into someone else; fix those lines one at a time.</li>
 <li>With <strong>Everything from</strong> and a speaker chosen, the two speakers are joined into one (see the next section).</li>
 </ul>
@@ -344,7 +353,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/recording-a-meeting/"><span class="docs-step-l">Previous</span><span>Recording a meeting</span></a><a class="docs-step next" href="/docs/note-page/"><span class="docs-step-l">Next</span><span>The note page</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-it-is">What it is</a></li><li class="d3"><a href="#the-window-holds-still">The window holds still</a></li><li class="d2"><a href="#open-it">Open it</a></li><li class="d3"><a href="#where-it-sits">Where it sits</a></li><li class="d2"><a href="#the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source</a></li><li class="d2"><a href="#name-the-people">Name the people</a></li><li class="d3"><a href="#the-speaker-strip-and-now">The speaker strip and Now</a></li><li class="d3"><a href="#name-a-speaker-from-their-chip">Name a speaker from their chip</a></li><li class="d3"><a href="#answer-a-guess">Answer a guess</a></li><li class="d3"><a href="#name-whoever-is-talking-whos-talking">Name whoever is talking: Who's talking?</a></li><li class="d3"><a href="#fix-one-line-or-everything-from-a-speaker">Fix one line, or everything from a speaker</a></li><li class="d3"><a href="#one-name-one-person">One name, one person</a></li><li class="d3"><a href="#undo">Undo</a></li><li class="d3"><a href="#what-is-learned-from-your-names">What is learned from your names</a></li><li class="d2"><a href="#ask-during-the-meeting">Ask during the meeting</a></li><li class="d2"><a href="#mark-moments-and-add-notes">Mark moments and add notes</a></li><li class="d2"><a href="#add-a-screenshot">Add a screenshot</a></li><li class="d2"><a href="#other-buttons">Other buttons</a></li><li class="d2"><a href="#settings-for-the-live-window">Settings for the Live window</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-it-is">What it is</a></li><li class="d3"><a href="#the-window-holds-still">The window holds still</a></li><li class="d2"><a href="#open-it">Open it</a></li><li class="d3"><a href="#where-it-sits">Where it sits</a></li><li class="d2"><a href="#the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source</a></li><li class="d2"><a href="#name-the-people">Name the people</a></li><li class="d3"><a href="#the-speaker-strip-and-now">The speaker strip and Now</a></li><li class="d3"><a href="#name-a-speaker-from-their-chip">Name a speaker from their chip</a></li><li class="d3"><a href="#add-someone-who-hasnt-spoken-person">Add someone who hasn't spoken: + Person</a></li><li class="d3"><a href="#answer-a-guess">Answer a guess</a></li><li class="d3"><a href="#name-whoever-is-talking-whos-talking">Name whoever is talking: Who's talking?</a></li><li class="d3"><a href="#fix-one-line-or-everything-from-a-speaker">Fix one line, or everything from a speaker</a></li><li class="d3"><a href="#one-name-one-person">One name, one person</a></li><li class="d3"><a href="#undo">Undo</a></li><li class="d3"><a href="#what-is-learned-from-your-names">What is learned from your names</a></li><li class="d2"><a href="#ask-during-the-meeting">Ask during the meeting</a></li><li class="d2"><a href="#mark-moments-and-add-notes">Mark moments and add notes</a></li><li class="d2"><a href="#add-a-screenshot">Add a screenshot</a></li><li class="d2"><a href="#other-buttons">Other buttons</a></li><li class="d2"><a href="#settings-for-the-live-window">Settings for the Live window</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
