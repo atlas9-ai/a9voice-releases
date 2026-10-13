@@ -1,0 +1,13 @@
+{
+  "version": "0.7.18",
+  "notes": "- **Long meetings now summarize on any model, including a free Groq key.** A meeting too long for the Summary model's limit (Groq's free tier allows 8,000 tokens a minute, less than a 30-minute meeting) is read in parts and put together into the same summary, title, tags and action items. While it works the note says **Writing summary… part 2 of 4**, and **waiting for Groq's per-minute limit** when it waits. See [Long meetings](/docs/language-models/#long-meetings).\n- **Summaries that failed as \"too large\" write themselves again.** The first time you open this version, a note whose summary failed with **request too large** in the last 30 days is summarized again, oldest first, with nothing to click. A limit that stops it now says which one and when it resets, for example **Groq's daily token limit for this model is used up; resets in 3 h.**\n- **Ask AI on a long note answers.** When the whole transcript won't fit the model, it is given the summary and the passages that match the question, and the footer says **answered from the summary + 14 relevant passages**.\n- **A new choice, Settings › Transcript & summary › Long meetings:** **Chunk on the same model** (default) or **Use fallback model**. With Groq as your only language model, Settings › Models says long meetings are handled in parts.",
+  "pub_date": "2026-10-13T21:09:03Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE1TNTVQNFlqRHp2bzRGUWZEQUhkVHJDR3B3WmFmR2pBWEpPbjVqZkcwTGtMTzQzTTZHUEI5bnkrL2NqQm1WUkI4OEpjRzdkYnZvVEJkTDhQRDlwSXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTI1NzAxCWZpbGU6QTkgVm9pY2VfMC43LjE4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTgKN0VGOVVwdDJDSHBTNnpaeHFDbnpVbE5Ba2YzWlZqeTg3RFVlWHBoVnd4YVZtblplMU9EcWtaR0FPK3VSMDFNd055TWVqZ3lmZTFUZVlWQm9YYmlxQmc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.18/A9Voice_0.7.18_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "ddfc3496b0da07845d013133e9b18e65ebad9382b3de2e1e225c12ce32a4775e",
+  "installer_size": 11798887
+}
