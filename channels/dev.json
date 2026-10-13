@@ -1,13 +1,13 @@
 {
-  "version": "0.7.13",
-  "notes": "- Nothing changes in the app. This is the first build made on A9 Voice's own build machine instead of GitHub's, so you can check that the update arrives and installs as usual.",
-  "pub_date": "2026-10-13T13:23:00Z",
+  "version": "0.7.14",
+  "notes": "- **The Live window holds still while you name someone.** The transcript no longer rides up under your pointer: it pauses while the pointer is over it (**Live · paused**) and while a name box is open (**Live · paused while naming**), then jumps to live. The name box opens once, in one size everywhere, and only its list of people scrolls, so **Name** and **Not sure** are never cut off, in a short window too.\n- **Say yes or no to a guess in one click.** A guess like **Kim Jansen?** shows **✓** and **✕** on the chip. **✓** names the speaker (with **Undo**); **✕** opens the name box with the guess at the bottom. Clicking the chip asks **Is this Kim Jansen?**, and <kbd>Enter</kbd> means Yes.\n- **Typing finds the people you saved.** The list of people stopped after 40 names, so saved voices and names late in the alphabet could not be found by typing, and a guessed name offered itself as a new person. The list is no longer cut, and the same list and matching are used in the Live window, the note page and Settings › Voices. **+ Add** now comes after the matches and says what it does: **Names Speaker 4 · saves a new voice**, **in this meeting**, or **Names this line only · no voiceprint**.",
+  "pub_date": "2026-10-13T15:04:58Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERRME1jQm43MFJPWG9SZ084bHJqSngwRW9DQ2thRlJaWnNudVBiTExrYnozdUpobUhUYi8ybGJVRUltM2c2N0NBejFxMmVDbkpocDNxNUZrbkhpNEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk3NzE0CWZpbGU6QTkgVm9pY2VfMC43LjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTMKa0RjOWpDNDJ3aHFVZ0tYejgxUlNoNCtXMGZXSC9MTUFtZTlKREVIelN2cUp1Mkc2YWF4WE1NeVRzd2hpSFFhMG10MEpRdkNPWGtYbUdMQng4NzUyQ0E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.13/A9Voice_0.7.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExGYk4yM1ZIUkVXcEhuRkx1Qkc1RFB3eDVtWnAwVlpXWXlKc2ZxOStMbkJ1QWNNc0RTUnVVZlFvelZpdkZBTWRVQzFyTVRvSUgwdVVxQkN2Z0x0dVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTAzODI4CWZpbGU6QTkgVm9pY2VfMC43LjE0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTQKbm0rSUMrbVl0UE9mdEx1d1B2MFRtcWhnbFMrVWplYUFmRUIzQkFmUU5PcVlhc3lVNVhuR0tCSjRiVjliR0kyRGNhaXVCSDRvSkN5UmVjQThCV05kQXc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.14/A9Voice_0.7.14_x64-setup.exe"
     }
   },
-  "installer_sha256": "710a92aa22e1d6ce159e1cf33bd61f436645bcc59e99db8844f92241b0da0c7e",
-  "installer_size": 11736542
+  "installer_sha256": "05a25ba5d50c5c02e0349912e9f4f0e656138b63b4c0bf15f56dbac58ef172ee",
+  "installer_size": 11738780
 }
