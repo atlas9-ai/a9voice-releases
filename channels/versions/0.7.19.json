@@ -1,0 +1,13 @@
+{
+  "version": "0.7.19",
+  "notes": "- **Long meetings keep every action item and decision.** Checked on a real Groq key, a summary written in parts sometimes lost a task a part had found, or ran out of room on a part and had to cut it again. The parts now list every commitment and decision first and get more room when one has to be cut, and anything a part found that the finished summary left out is put back.",
+  "pub_date": "2026-10-13T23:49:33Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBrWGNmbi9rNVhNUEc1WktOUk1RZ1k3SklpRXdLQXFNNVVTY29JYXZjakFkSXpubTQvYWpCRkdGNVB3STBTT0h5KzVCdmxOMUp6VDdmS0F2amZwakE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM1MzI4CWZpbGU6QTkgVm9pY2VfMC43LjE5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTkKOWJNbEVNTy8rNXdZNUthN3F2TjRhUCt0elo3TXNFNXdmU09HdUllaWJVUVQ5N1hDZE1hMnlETE52aDFhbUJTS09kbzcvNnhyQlFkOFZldlgweldmQ1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.19/A9Voice_0.7.19_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "fa5895da803dbfb96d4de698b972c63c252d12b4d31e5128a10b2832fafee905",
+  "installer_size": 11806349
+}
