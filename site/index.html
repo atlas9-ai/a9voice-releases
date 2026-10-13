@@ -90,7 +90,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.14"
+      "softwareVersion": "0.7.16"
     },
     {
       "@type": "FAQPage",
@@ -129,7 +129,7 @@
           "name": "Is there a Mac version?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights."
+            "text": "No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights. The installer is not code-signed yet, so Edge or Windows SmartScreen may warn you about it; the download page explains the screens and lists the installer’s SHA-256 so you can check the file."
           }
         },
         {
@@ -147,8 +147,32 @@
             "@type": "Answer",
             "text": "Laws differ by place. Some US states require everyone’s consent, others only one person’s, and you’re responsible for getting it. See what leaves your PC."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What’s new in the latest version?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New builds reach the Dev channel first and move to Stable once they have been tried; the app updates itself. The changelog lists every version with two to five plain lines, newest first."
+          }
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://a9voice.com/#webpage",
+      "url": "https://a9voice.com/",
+      "name": "A9 Voice: dictation and meeting notes for Windows",
+      "dateModified": "2026-10-13",
+      "about": {
+        "@id": "https://a9voice.com/#app"
+      },
+      "publisher": {
+        "@id": "https://a9voice.com/#org"
+      },
+      "isPartOf": {
+        "@id": "https://a9voice.com/#site"
+      }
     }
   ]
 }
@@ -307,10 +331,12 @@
     <details><summary>Is A9 Voice free?<span class="plus" aria-hidden="true">+</span></summary><p>Transcribe, the dictation half, is free with no limits and no account. Notes, the meeting half, is free for 30 days and then $49 once. If you use cloud models you pay those providers directly; models that run on your PC cost nothing per use. Windows also has its own voice typing (Win+H); the <a href="/guides/voice-typing-windows/">guide to Windows voice typing</a> says how it works and when an app is worth it.</p></details>
     <details><summary>Does it join my Teams or Zoom call as a bot?<span class="plus" aria-hidden="true">+</span></summary><p>No. It records your microphone and your computer’s audio on your PC, so nobody sees an assistant in the participant list. Because nothing announces the recording, tell the people on the call that you’re recording.</p></details>
     <details><summary>Does it work offline?<span class="plus" aria-hidden="true">+</span></summary><p>Yes. Download a speech model in Settings › Speech models and dictation and meeting transcripts work with no internet. For summaries and Ask offline, point A9 Voice at a language model running on your PC.</p></details>
-    <details><summary>Is there a Mac version?<span class="plus" aria-hidden="true">+</span></summary><p>No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights.</p></details>
+    <details><summary>Is there a Mac version?<span class="plus" aria-hidden="true">+</span></summary><p>No. A9 Voice runs on Windows 10 and 11, 64-bit. It installs for your Windows user with no admin rights. The installer is not code-signed yet, so Edge or Windows SmartScreen may warn you about it; the <a href="/download">download page</a> explains the screens and lists the installer’s SHA-256 so you can check the file.</p></details>
     <details><summary>Where do my notes go?<span class="plus" aria-hidden="true">+</span></summary><p>Into a folder you pick on your PC, as plain Markdown files (summary.md, transcript.md and an images folder). Claude, ChatGPT or any tool that reads files can use them. Voiceprints never leave your PC.</p></details>
     <details><summary>Do I need permission to record a meeting?<span class="plus" aria-hidden="true">+</span></summary><p>Laws differ by place. Some US states require everyone’s consent, others only one person’s, and you’re responsible for getting it. See <a href="/docs/privacy-and-data/">what leaves your PC</a>.</p></details>
+    <details><summary>What’s new in the latest version?<span class="plus" aria-hidden="true">+</span></summary><p>New builds reach the Dev channel first and move to Stable once they have been tried; the app updates itself. The <a href="/changelog/">changelog</a> lists every version with two to five plain lines, newest first.</p></details>
   </div>
+  <p class="fine">Updated <time id="updated" datetime="2026-10-13">October 13, 2026</time> · <a href="/changelog/">v0.7.16</a></p>
 </section>
 
 <section class="end" id="download">
@@ -333,7 +359,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.14</a>
+        <a class="sf-ver" href="/changelog/">v0.7.16</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

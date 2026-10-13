@@ -1,0 +1,23 @@
+# A9 Voice
+
+> A9 Voice is a Windows app for dictation and meeting notes: hold Ctrl+Space to type with your voice in
+> any app, and record Teams or Zoom calls with no bot joining. Made by Atlas9 LLC. Transcribe (dictation)
+> is free; Notes (meetings) is $49 once after a 30-day trial. Data stays on the user's PC.
+
+## Product
+- [Home](https://a9voice.com/): what it does, questions and answers
+- [Features](https://a9voice.com/features/): the full tour, measured numbers, comparison table
+- [Pricing](https://a9voice.com/pricing): Transcribe free, Notes $49 once
+- [About](https://a9voice.com/about): Atlas9 LLC, how the numbers were measured, contact
+- [Changelog](https://a9voice.com/changelog/): every version, newest first
+
+## Guides and comparisons
+- [Voice typing on Windows (Win+H) and when to use a dictation app](https://a9voice.com/guides/voice-typing-windows/)
+- [A9 Voice vs Wispr Flow](https://a9voice.com/compare/wispr-flow/)
+- [A9 Voice vs Otter](https://a9voice.com/compare/otter/)
+- [A9 Voice vs Granola](https://a9voice.com/compare/granola/)
+- [A9 Voice vs Fireflies](https://a9voice.com/compare/fireflies/)
+
+## Manual
+- [Manual](https://a9voice.com/docs/): every page, Getting started to Troubleshooting
+- [Privacy and data](https://a9voice.com/docs/privacy-and-data/): what leaves the PC, recording consent

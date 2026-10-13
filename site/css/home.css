@@ -217,6 +217,7 @@ a { color: var(--signal); }
 .faq .plus { font-size: 22px; color: var(--muted); transition: transform .15s; line-height: 1; flex: none; }
 .faq details[open] .plus { transform: rotate(45deg); }
 .faq p { margin: 0 0 20px; font-size: 15px; line-height: 1.6; color: var(--text-2); }
+.faq-sec .fine { margin-top: 20px; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .end { text-align: center; padding-block: clamp(80px, 12vw, 160px); background: radial-gradient(60% 80% at 50% 100%, rgba(43,91,215,.22), transparent 70%); }
 .end h2 { font-size: clamp(44px, 8vw, 128px); line-height: .95; letter-spacing: -.05em; font-weight: 650; }
 .end h2 span { color: var(--signal); }
