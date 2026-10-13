@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.12</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.15</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
@@ -144,7 +144,7 @@
 <li><strong>Logs hold timings, lengths and status codes, never your words or your keys.</strong> This is also a rule of how the app is built.</li>
 <li><strong>Voiceprints stay on this PC</strong>, are opt-in, and you can delete any of them or all of them at any time.</li>
 <li><strong>Notes are plain files in a folder you pick.</strong></li>
-<li><strong>Recording consent is up to you.</strong> Some places require everyone&#39;s permission to record a conversation.</li>
+<li><strong>Recording consent is up to you.</strong> Some places require everyone&#39;s permission to record a conversation. A9 Voice shows a short notice about it when Notes starts. See <a href="#recording-consent">Recording consent</a>.</li>
 </ul>
 <h2 id="what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature<a class="anchor" href="#what-leaves-your-pc-feature-by-feature" aria-label="Link to What leaves your PC, feature by feature">#</a></h2>
 <p>The table says what is sent, to whom, and what happens when you use a model on this PC instead.</p>
@@ -164,7 +164,7 @@
 <tr><td><strong>Webhooks</strong></td><td>Only the parts of a note you ticked go to the address you saved.</td><td>n/a</td></tr>
 <tr><td><strong>The connector for AI apps</strong></td><td>Notes and action items you search for go to the AI app you connected, on this PC. What that app does with them is up to that app and its service.</td><td>n/a</td></tr>
 <tr><td><strong>Updates</strong></td><td>A request for the list of builds, then the update file. Unless you turn it off in Settings › Privacy, the request also carries the anonymous count: a random ID, the version, the channel, your Windows version and your country.</td><td>n/a</td></tr>
-<tr><td><strong>Notes trial and license</strong></td><td>When you open Notes, press <strong>Try Notes free</strong> or buy, a code made from your PC (a one-way hash of its Windows machine ID; the ID itself never leaves) so the 30 days survive a reinstall and a purchase can unlock this PC by itself. Your email only if you ask for the 14 extra days. A purchase goes through Stripe&#39;s checkout in your browser; A9 Voice and a9voice.com never see card details. An activated key is checked with a9voice.com about once a week. Nothing you said, wrote or recorded.</td><td>Transcribe never asks. Notes needs this to run.</td></tr>
+<tr><td><strong>Notes trial and license</strong></td><td>When you open Notes, press <strong>Try Notes free</strong> or buy, a code made from your PC (a one-way hash of its Windows machine ID; the ID itself never leaves) so the 30 days survive a reinstall and a purchase can unlock this PC by itself. Your email only if you ask for the 14 extra days. One number, the version of the recording-consent notice you saw, goes with the trial start and the next check (see <a href="#recording-consent">Recording consent</a>). A purchase goes through Stripe&#39;s checkout in your browser; A9 Voice and a9voice.com never see card details. An activated key is checked with a9voice.com about once a week. Nothing you said, wrote or recorded.</td><td>Transcribe never asks. Notes needs this to run.</td></tr>
 </tbody></table></div>
 <p>A few details that matter:</p>
 <ul>
@@ -253,7 +253,24 @@
 <li><strong>Webhooks</strong> send a note to an address you add, when it is ready. The receiver gets exactly the parts you ticked, nothing else. Audio, image files and voiceprints are never sent. Whoever can read that service can read what you send, so add only places you trust. See <a href="/docs/webhooks/">Webhooks</a>.</li>
 </ul>
 <h2 id="recording-consent">Recording consent<a class="anchor" href="#recording-consent" aria-label="Link to Recording consent">#</a></h2>
-<p>Some places require everyone&#39;s permission before you record a conversation. A9 Voice records what your microphone hears and what your computer plays, and no bot joins the call. Getting permission is your responsibility, not the app&#39;s.</p>
+<p>You are responsible for getting the consent the law requires before you record other people. Some places, including several US states, require everyone&#39;s consent, not just yours. What applies depends on where you and the other people are, so check the rules that cover you. This page can&#39;t tell you what they are.</p>
+<p>A9 Voice records what your microphone hears and what your computer plays. No bot joins the call and the app does not announce itself, so A9 Voice tells nobody on the call. Telling them is up to you.</p>
+<h3 id="the-notice">The notice<a class="anchor" href="#the-notice" aria-label="Link to The notice">#</a></h3>
+<p>When Notes starts, A9 Voice shows one sentence and a <strong>Learn more</strong> link to this section:</p>
+<blockquote>
+<p>By starting Notes, you agree to get any consent the law requires before you record other people. Some places, including several US states, require everyone&#39;s consent.</p>
+</blockquote>
+<ul>
+<li><strong>Where.</strong> Under <strong>Try Notes free</strong> on the Notes page, and under <strong>Start trial</strong> on the &quot;Want notes for this call?&quot; card. Pressing the button is the agreement. There is no checkbox.</li>
+<li><strong>If Notes started without it.</strong> A trial that A9 Voice started for you when you updated, or a license you already had, never showed the notice. A small card with the same sentence appears once on the Notes page and the first time the recording bar appears. <strong>Got it</strong> closes it.</li>
+<li><strong>Always there.</strong> <strong>Settings › Notes › Recording</strong> shows the same sentence and link as plain text.</li>
+<li><strong>It never stops a recording.</strong> The notice doesn&#39;t block, delay or interrupt anything. Telling the people you record, and getting their consent, is up to you.</li>
+</ul>
+<h3 id="what-is-recorded-about-it">What is recorded about it<a class="anchor" href="#what-is-recorded-about-it" aria-label="Link to What is recorded about it">#</a></h3>
+<ul>
+<li><strong>On your PC:</strong> the time you accepted and the version number of the notice, in the settings file. An exported settings file doesn&#39;t contain it.</li>
+<li><strong>With a9voice.com:</strong> one number, the notice&#39;s version (<code>consent_v</code>). It goes with the Notes trial start, and with the next trial or license check if you pressed <strong>Got it</strong> later, so it needs no extra request. a9voice.com stores it with the time it arrived. It carries no name, email or content, and a9voice.com never sends it back. Transcribe never sends it.</li>
+</ul>
 <h2 id="delete-your-data">Delete your data<a class="anchor" href="#delete-your-data" aria-label="Link to Delete your data">#</a></h2>
 <p>Pick what you want gone. Everything below is on your PC only.</p>
 <ol>
@@ -275,7 +292,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/updates-and-channels/"><span class="docs-step-l">Previous</span><span>Updates and channels</span></a><a class="docs-step next" href="/docs/privacy/"><span class="docs-step-l">Next</span><span>Anonymous usage counts</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#anonymous-usage-counts">Anonymous usage counts</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#anonymous-usage-counts">Anonymous usage counts</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d3"><a href="#the-notice">The notice</a></li><li class="d3"><a href="#what-is-recorded-about-it">What is recorded about it</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
