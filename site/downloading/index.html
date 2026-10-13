@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Download A9 Voice for Windows</title>
-<meta name="description" content="Download A9 Voice for Windows 10 and 11. Published by Atlas9 LLC, built on GitHub, with the installer's SHA-256 and a link to the release.">
+<meta name="description" content="Download A9 Voice for Windows 10 and 11. Published by Atlas9 LLC, built on GitHub, with the installer's SHA-256 and a link to the release notes.">
 <meta name="theme-color" content="#0B0C0E">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://a9voice.com/download">
@@ -120,7 +120,7 @@
     <p>Published by Atlas9 LLC · built on GitHub, with every update signature-checked by the app · source of every release: <a href="https://github.com/atlas9-ai/a9voice-releases">github.com/atlas9-ai/a9voice-releases</a></p>
     <dl class="dl-facts">
       <!--A9V-SHA--><div><dt>SHA-256</dt><dd><code class="dl-sha">__A9V_SHA256__</code></dd></div><!--/A9V-SHA-->
-      <div id="dl-links"><dt>Check it</dt><dd><a id="dl-release" href="__A9V_RELEASE__">The GitHub release</a><span class="dl-sep" aria-hidden="true"> · </span><a id="dl-scan" href="__A9V_SCAN__" rel="noopener">Scan this file on VirusTotal</a></dd></div>
+      <div id="dl-links"><dt>Check it</dt><dd><a id="dl-release" href="__A9V_RELEASE__">Release notes</a><span class="dl-sep" aria-hidden="true"> · </span><a id="dl-scan" href="__A9V_SCAN__" rel="noopener">Scan this file on VirusTotal</a></dd></div>
     </dl>
   </section>
 
@@ -132,7 +132,7 @@
       <figure class="shot"><img src="/img/install-keep.svg" width="720" height="300" alt="A mock-up of Edge’s Downloads panel in two steps: the installer is listed with a note that it isn’t commonly downloaded and a three-dots menu with Keep, then a box asks you to confirm, with Keep anyway behind the arrow on its Delete button." loading="lazy"></figure>
       <p>Windows Defender SmartScreen can also show a note for installers from publishers it hasn’t seen many downloads from yet. It shows the publisher and the file; choosing <em>More info</em> reveals the details and the option to continue.</p>
       <figure class="shot"><img src="/img/install-smartscreen.svg" width="720" height="300" alt="A mock-up of the two Windows SmartScreen screens: the first with a More info link, the second with the file details and the option to continue." loading="lazy"></figure>
-      <p>To verify the file, compare its SHA-256 with the one above, or open the GitHub release. In PowerShell, <code>Get-FileHash</code> followed by the file name prints it.</p>
+      <p>To verify the file, compare its SHA-256 with the one above, or scan it on VirusTotal. In PowerShell, <code>Get-FileHash</code> followed by the file name prints it.</p>
     </div>
   </details>
   
@@ -163,13 +163,14 @@
   </div>
 </footer>
 <script>
-// Served without the edge Worker the placeholders are still in the page: point at GitHub's release page instead
-// (never straight at the installer) and drop the lines that need a value.
+// Served without the edge Worker the placeholders are still in the page: send the button to the real download page,
+// which the Worker fills in and counts (never to GitHub's release page: it offers the installer, uncounted), and drop
+// the lines that need a value.
 (function () {
   var a = document.getElementById("dl");
   if (!a || (a.getAttribute("href") || "").indexOf("__A9V") !== 0) return;
-  a.setAttribute("href", "https://github.com/atlas9-ai/a9voice-releases/releases/latest");
-  document.getElementById("dl-label").textContent = "Get A9 Voice from GitHub";
+  a.setAttribute("href", "/download");
+  document.getElementById("dl-label").textContent = "Get A9 Voice";
   ["dl-file", "dl-code", "dl-links"].forEach(function (id) { var e = document.getElementById(id); if (e) e.remove(); });
   var sha = document.querySelector(".dl-facts > div"); if (sha && sha.querySelector(".dl-sha")) sha.remove();
 })();

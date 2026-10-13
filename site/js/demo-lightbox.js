@@ -30,6 +30,11 @@
     const yt = el("a", "lb-link", { href: YT, target: "_blank", rel: "noopener" }, "Watch on YouTube \u2197");
     const page = el("a", "lb-link", { href: "/demo" }, "Open demo page");
     const dl = el("a", "btn btn-primary", { href: link.dataset.dl || "/download?pl=demo", "data-pl": "demo" }, "Download free");
+    // On a phone (js/chrome.js) this button sends the link to a PC like every other Download button.
+    if (window.a9vPhone) {
+      window.a9vPhone.convert(dl);
+      dl.addEventListener("click", () => dlg.close());
+    }
     row.append(yt, page, dl);
     box.append(close, frame, row);
     dlg.append(box);

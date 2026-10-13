@@ -67,3 +67,32 @@ body:not(.home) .sn-wrap { padding-inline: 24px; }
 .phone-send:hover { color: #DCE6FD; }
 .phone-note { display: block; margin-top: 4px; color: var(--muted); }
 .phone-note:empty { display: none; }
+
+/* "Send it to my PC" (js/chrome.js, phones only): the Download buttons open this panel. A sheet from the top edge,
+   so the on-screen keyboard never covers the email field or the button. Blue for actions; a problem is amber, never red. */
+.hp { position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: min(100%, 480px); max-width: 100%; max-height: 100dvh; padding: 0; overflow: auto; border: 0; border-bottom: 1px solid var(--line-2); border-radius: 0 0 16px 16px; background: var(--surface); color: var(--text); box-shadow: 0 24px 64px rgba(0,0,0,.6); }
+.hp::backdrop { background: rgba(11,12,14,.72); }
+.hp [hidden] { display: none !important; }
+.hp-box { position: relative; display: flex; flex-direction: column; gap: 14px; margin: 0; padding: max(24px, env(safe-area-inset-top)) 20px 20px; }
+.hp-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 10px; background: none; color: var(--text-2); font-size: 18px; cursor: pointer; }
+.hp-close:hover { color: var(--text); }
+.hp-title { margin: 0; padding-right: 44px; font-size: 22px; line-height: 1.25; font-weight: 600; letter-spacing: 0; outline: none; }
+.hp-lead { margin: 0; font-size: 15px; line-height: 1.5; color: var(--text-2); }
+.hp-field { display: block; margin: 0; }
+.hp-input { display: block; width: 100%; height: 52px; margin: 0; padding: 0 14px; border: 1px solid var(--line-2); border-radius: 12px; background: var(--ground); color: var(--text); font: 16px/1.2 "Geist", "Segoe UI", system-ui, sans-serif; -webkit-appearance: none; appearance: none; }
+.hp-input::placeholder { color: var(--muted-2); }
+.hp-input:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; }
+.hp-input[aria-invalid="true"] { border-color: #E0B36A; }
+.hp-trap { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
+.hp-send { height: 52px; padding: 0 20px; border: 1px solid transparent; border-radius: 12px; background: var(--action); color: #fff; font: 600 16px/1 "Geist", "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.hp-send:hover { background: #3A68E0; }
+.hp-send:disabled { opacity: .6; cursor: default; }
+.hp-status { margin: 0; font-size: 14px; line-height: 1.5; color: var(--text-2); }
+.hp-status:empty { display: none; }
+.hp-status[data-bad="1"] { color: #E0B36A; }
+.hp-alt { display: flex; gap: 10px; }
+.hp-alt-btn { flex: 1 1 0; min-width: 0; height: 48px; padding: 0 12px; border: 1px solid var(--line-2); border-radius: 12px; background: var(--ground); color: var(--text); font: 600 15px/1 "Geist", "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.hp-alt-btn:hover { background: var(--raised); }
+.hp-fine { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.sn-btn[data-handoff] { padding: 0 14px; }
+@media (max-width: 400px) { .sn-btn[data-handoff] { padding: 0 10px; font-size: 13px; } }
