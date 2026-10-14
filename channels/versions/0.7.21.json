@@ -1,0 +1,13 @@
+{
+  "version": "0.7.21",
+  "notes": "- **Add custom API asks \"Which service?\" first.** DeepSeek, Mistral, xAI, Together, Fireworks and Cerebras fill in their own address, so you paste a key and you're done. Ollama and LM Studio (on this PC) need no key. **Other (OpenAI-compatible)** is the old form, and entries you made before open that way, unchanged. See [Adding another service](/docs/language-models/#adding-another-service).\n- **Model is a list.** Once your key is in (at once for Ollama and LM Studio), the window asks the service which chat models it has and preselects a small, cheap one. If it can't, **Model** stays a box and one line says why. The extra header and an editable Base URL moved under **Advanced**.\n- **A line about your data where the terms say something.** Google's free tier, DeepSeek and Mistral's free plan show one neutral sentence on the window and the tile. Nothing is shown where a service's terms say it doesn't train on what you send.\n- **Test says what's wrong in plain words**: wrong key, wrong address, no such model, or **Local server not running**.",
+  "pub_date": "2026-10-14T13:53:16Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcElqK0dKazFrV1l4aGNiN2ZZREcvS1VtQUpod1hFV1BuaUkxc2lRajBvSDZFYVpRcEt2bG5ITWZldUQvNEZRSjM1Y1ZFdUsxSFAwWXNmRS8xNDdqVndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTg1ODU5CWZpbGU6QTkgVm9pY2VfMC43LjIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMjEKNWlEUll6Q3NlWlVydHdqMDhCVkNTN09UaVdWc0hMMWh1Z1Vad3NoRTVTTVFwREpCWUprWkpUaXpPTDAyRitBa3gybEdxNUtGQkxrKzNEM25GVXRJQlE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.21/A9Voice_0.7.21_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "fc271530d2dc1cb735c99b6b7d4675a423ec34dfb385ebb70bdc6d7a332b6890",
+  "installer_size": 11827879
+}
