@@ -1,13 +1,13 @@
 {
-  "version": "0.7.19",
-  "notes": "- **Long meetings keep every action item and decision.** Checked on a real Groq key, a summary written in parts sometimes lost a task a part had found, or ran out of room on a part and had to cut it again. The parts now list every commitment and decision first and get more room when one has to be cut, and anything a part found that the finished summary left out is put back.",
-  "pub_date": "2026-10-13T23:49:33Z",
+  "version": "0.7.20",
+  "notes": "- **A very long meeting no longer stops at \"wouldn't fit\".** When putting the notes of many parts together, a merge that came back cut off could leave the notes too big for the last step and the summary failed. The merge now gets more room, and if it still isn't usable the notes are put together and trimmed without it, keeping every action item and decision.",
+  "pub_date": "2026-10-14T00:49:32Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBrWGNmbi9rNVhNUEc1WktOUk1RZ1k3SklpRXdLQXFNNVVTY29JYXZjakFkSXpubTQvYWpCRkdGNVB3STBTT0h5KzVCdmxOMUp6VDdmS0F2amZwakE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM1MzI4CWZpbGU6QTkgVm9pY2VfMC43LjE5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTkKOWJNbEVNTy8rNXdZNUthN3F2TjRhUCt0elo3TXNFNXdmU09HdUllaWJVUVQ5N1hDZE1hMnlETE52aDFhbUJTS09kbzcvNnhyQlFkOFZldlgweldmQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.19/A9Voice_0.7.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEttSTZaYnRsUnNLWkVzOVBabDExMVhpL1Zmb0RJS1VqOGFuc0sxY21oRWU5cTJzNzZTMDJUVCs4OUoxYmtJNUxvNlloc2p3bW5aakFvRE1TdzgzZndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM4OTM0CWZpbGU6QTkgVm9pY2VfMC43LjIwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMjAKVFFxYUx6Rit0Y3JVaVZIeEFrNE9DZ3JlRjJETTJ5RGNFdnhjNUI4RkRwcjRPOUZlQkNVd1VaS2lsMnhwVU14S3RzM0RLVXlJeWdmSnoyMHBWSGhFQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.20/A9Voice_0.7.20_x64-setup.exe"
     }
   },
-  "installer_sha256": "fa5895da803dbfb96d4de698b972c63c252d12b4d31e5128a10b2832fafee905",
-  "installer_size": 11806349
+  "installer_sha256": "3ac0a600b50b7c50cce3f2864270543d52f3782e38325578a3dda784ea31dfe8",
+  "installer_size": 11806767
 }
