@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.22"
+      "softwareVersion": "0.7.23"
     }
   ]
 }
@@ -111,7 +111,20 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-23">
+  <section class="log-entry" aria-labelledby="v-0-7-25">
+  <h2 id="v-0-7-25">0.7.25 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>Usage &amp; cost is rebuilt, and the estimate is no longer low.</strong> A meeting with the live window on is billed twice by Deepgram (streamed live, then uploaded after the call) and the old table counted only the second. Each side of a call is now written down as it is sent, live or after the call, and priced at the rate for that mode. <strong>Overview</strong> has a gauge against an optional monthly budget, the cost per meeting hour against an optional target, daily spend by provider, and your most expensive notes. See <a href="/docs/usage-and-cost/">Usage and cost</a>.</li>
+<li><strong>Prices are per model, with two speech rates.</strong> <strong>After the call</strong> and <strong>Live</strong> per audio hour, <strong>Input</strong> and <strong>Output</strong> per 1M tokens, so Claude Haiku 5.5 and Haiku 4.5 are no longer priced alike. A price you type is marked <strong>Edited</strong> and stays through updates; <strong>Reset to defaults</strong> puts the shipped ones back. Where OpenRouter reports what a call cost, that number is used.</li>
+<li><strong>History is a short list again.</strong> Today and Yesterday are open, the rest of the month is one group, every past month is one line, and a day&#39;s dictations are one row. Filter by Meetings, Dictation or Ask, search, <strong>Export CSV</strong>, and see the month on a calendar. A note nothing was recorded for says <strong>Not tracked</strong> instead of $0.00.</li>
+<li><strong>Ask and Enhance are counted now</strong>, and a note&#39;s summary uses the tokens the provider counted.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-24">
+  <h2 id="v-0-7-24">0.7.24 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>&quot;Don&#39;t have one? Get a DeepSeek key →&quot; under every preset&#39;s API key box</strong> (with the service&#39;s own name). DeepSeek, Mistral, xAI, Together, Fireworks and Cerebras (language models) and Together and Mistral (speech) open the service&#39;s own key page in your browser. Servers on this PC and <strong>Other</strong> have no link, and a built-in service&#39;s window keeps the link under the key box after <strong>Manage key</strong>.</li>
+<li><strong>The Mistral tile in Speech services is live.</strong> It opens the Mistral (Voxtral) preset instead of sitting dimmed as <strong>Soon</strong>; once you save it, your entry is the tile. AssemblyAI, Speechmatics and Gladia stay <strong>Soon</strong>.</li>
+<li><strong>A line under each &quot;Which service?&quot; list</strong> says where the other kind of service is added: summaries and Ask under Language models, dictation and meeting transcripts under Speech services.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-23">
   <h2 id="v-0-7-23">0.7.23 <time datetime="2026-10-14">October 14, 2026</time></h2>
   <ul><li><strong>Speech services › Add custom API asks &quot;Which service?&quot; too.</strong> Together (Whisper and others), Mistral (Voxtral) and Speaches on this PC (no key) fill in their own address; <strong>Other (OpenAI-compatible)</strong> keeps the plain form, and entries you made before open that way, unchanged. <strong>Model</strong> is a list asked of the server (a text box with the reason when it can&#39;t), the extra header and an editable Base URL sit under <strong>Advanced</strong>, and <strong>Test</strong> sends the 2-second clip and says in plain words what&#39;s wrong. Each says it doesn&#39;t tell speakers apart, so Meeting notes show <strong>One speaker for everyone else</strong>. See <a href="/docs/speech-models/#adding-another-service">Adding another service</a>.</li>
 <li><strong>The &quot;Add custom API&quot; tile is one tile tall</strong> in both Speech services and Language models, however tall the tiles beside it are.</li></ul>
@@ -486,7 +499,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.22</a>
+        <a class="sf-ver" href="/changelog/">v0.7.23</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

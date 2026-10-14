@@ -169,11 +169,11 @@
  },
  "language-models-custom-deepseek": {
   "w": 552,
-  "h": 482
+  "h": 510
  },
  "language-models-custom-picker": {
   "w": 552,
-  "h": 538
+  "h": 566
  },
  "language-models-custom": {
   "w": 552,
@@ -573,11 +573,11 @@
  },
  "speech-models-custom-picker": {
   "w": 552,
-  "h": 340
+  "h": 368
  },
  "speech-models-custom": {
   "w": 552,
-  "h": 482
+  "h": 510
  },
  "speech-models-deepgram": {
   "w": 552,
@@ -782,6 +782,22 @@
  "updates-and-channels-sidebar-recording": {
   "w": 223,
   "h": 84
+ },
+ "usage-gauge": {
+  "w": 806,
+  "h": 864
+ },
+ "usage-history": {
+  "w": 806,
+  "h": 1837
+ },
+ "usage-overview": {
+  "w": 806,
+  "h": 1991
+ },
+ "usage-prices": {
+  "w": 806,
+  "h": 830
  },
  "voices-check": {
   "w": 794,

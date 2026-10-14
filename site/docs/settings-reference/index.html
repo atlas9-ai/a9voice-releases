@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.22"
+      "softwareVersion": "0.7.23"
     }
   ]
 }
@@ -122,7 +122,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li><li><a href="/docs/usage-and-cost/">Usage and cost</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/" aria-current="page">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
@@ -228,27 +228,14 @@
 </ul>
 <p>Details: <a href="/docs/models/">Models</a>, <a href="/docs/speech-models/">Speech models</a> and <a href="/docs/language-models/">Language models</a>.</p>
 <h2 id="usage-and-cost">Usage &amp; cost<a class="anchor" href="#usage-and-cost" aria-label="Link to Usage &amp; cost">#</a></h2>
-<p>Part of the <strong>Shared</strong> group. It estimates what dictation and notes cost this month from the prices below. You pay each provider directly with your own keys, and the provider&#39;s bill is the final word.</p>
-<p><figure class="shot"><img src="/img/docs/settings-reference-usage-and-cost-1x.webp" srcset="/img/docs/settings-reference-usage-and-cost-1x.webp 1x, /img/docs/settings-reference-usage-and-cost.webp 2x" width="1032" height="760" alt="Settings › Usage &amp; cost: this month's estimate, the cost per meeting hour and dictation." loading="lazy" decoding="async"></figure></p>
+<p>Part of the <strong>Shared</strong> group. It estimates what meetings, dictation, summaries and Ask cost from what A9 Voice sent and a price table. You pay each provider directly with your own keys, and the provider&#39;s bill is the final word. The page has three tabs, and its own manual page: <a href="/docs/usage-and-cost/">Usage and cost</a>.</p>
+<p><figure class="shot"><img src="/img/docs/settings-reference-usage-and-cost-1x.webp" srcset="/img/docs/settings-reference-usage-and-cost-1x.webp 1x, /img/docs/settings-reference-usage-and-cost.webp 2x" width="1032" height="760" alt="Settings › Usage &amp; cost: this month's gauge, the cost per meeting hour and dictation." loading="lazy" decoding="async"></figure></p>
 <ul>
-<li id="opt-estimated-this-month"><strong>Estimated this month:</strong> the total for the month, with hours of meetings and minutes of dictation.</li>
-<li id="opt-average-per-meeting-hour"><strong>Average per meeting hour:</strong> transcript and summary cost per hour of meeting. Shows a dash until there is a meeting.</li>
-<li id="opt-dictation-this-month"><strong>Dictation this month:</strong> cost, number and minutes of dictations.</li>
-<li id="opt-by-provider-this-month"><strong>By provider, this month:</strong> a bar for each provider.</li>
-<li id="opt-the-table"><strong>The table:</strong> one row per note and day with Date, Note, Providers, Length and Cost. Click a heading to sort. A row for a note opens that note.</li>
-<li id="opt-price-table-usd"><strong>Price table (USD):</strong> opens an editable table: price per audio hour (speech), and per million tokens in and out (language models). Speech is counted per channel, so a meeting sends your side and the other side separately. <strong>Reset to defaults</strong> puts the list prices back.</li>
+<li id="opt-overview"><strong>Overview:</strong> a period switch (this month, last month, 90 days, All time), the gauge against an optional <strong>monthly budget</strong>, <strong>Cost per meeting hour</strong> with an optional target, <strong>Meetings</strong>, <strong>Dictation</strong>, <strong>Summaries &amp; Ask</strong>, <strong>Daily spend</strong>, <strong>By provider</strong> and <strong>Most expensive</strong>.</li>
+<li id="opt-history"><strong>History:</strong> every note and dictation by day, the filters <strong>All</strong>, <strong>Meetings</strong>, <strong>Dictation</strong> and <strong>Ask</strong>, a search, <strong>Export CSV</strong>, a calendar and <strong>This month at a glance</strong>.</li>
+<li id="opt-prices"><strong>Prices:</strong> one row per model. Speech has <strong>After the call</strong> and <strong>Live</strong> rates per audio hour; language models have <strong>Input</strong> and <strong>Output</strong> per 1M tokens. Click a price to change it; an edited price is marked <strong>Edited</strong> and survives updates. <strong>Reset to defaults</strong> puts the shipped prices back.</li>
 </ul>
-<p>The defaults are the providers&#39; public list prices for each one&#39;s usual model, checked on 2026-10-05. The line <strong>Set</strong> and a date beside the table&#39;s name shows when the table was last set or edited.</p>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Provider</th><th scope="col">Per audio hour</th><th scope="col">Per 1M tokens in</th><th scope="col">Per 1M tokens out</th></tr></thead><tbody>
-<tr><td>Groq</td><td>$0.04</td><td>$0.075</td><td>$0.30</td></tr>
-<tr><td>Deepgram</td><td>$0.258</td><td>none</td><td>none</td></tr>
-<tr><td>ElevenLabs</td><td>$0.22</td><td>none</td><td>none</td></tr>
-<tr><td>OpenAI</td><td>$0.36</td><td>$0.40</td><td>$1.60</td></tr>
-<tr><td>OpenRouter</td><td>none</td><td>$1.00</td><td>$5.00</td></tr>
-<tr><td>Anthropic</td><td>none</td><td>$1.00</td><td>$5.00</td></tr>
-<tr><td>Google</td><td>none</td><td>$0.10</td><td>$0.40</td></tr>
-</tbody></table></div>
-<p>Models that run on this PC cost nothing per use. Details: <a href="/docs/models/">Models</a>.</p>
+<p>The shipped prices are the providers&#39; public list prices, checked on 2026-10-14; the <strong>Prices</strong> tab shows the date and where each number came from.</p>
 <h2 id="connectors">Connectors<a class="anchor" href="#connectors" aria-label="Link to Connectors">#</a></h2>
 <p>Part of the <strong>Shared</strong> group. Connectors let AI apps on this PC search and read your notes. It is read only, and nothing is shared until you turn it on and connect an app.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-connectors-1x.webp" srcset="/img/docs/settings-reference-connectors-1x.webp 1x, /img/docs/settings-reference-connectors.webp 2x" width="1032" height="760" alt="Settings › Connectors: the switch and the ways to connect an app." loading="lazy" decoding="async"></figure></p>
@@ -450,7 +437,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.22</a>
+        <a class="sf-ver" href="/changelog/">v0.7.23</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

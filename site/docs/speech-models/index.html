@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.22"
+      "softwareVersion": "0.7.23"
     }
   ]
 }
@@ -122,7 +122,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/" aria-current="page">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/" aria-current="page">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li><li><a href="/docs/usage-and-cost/">Usage and cost</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.23</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.24</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="385" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -185,7 +185,7 @@
 <p>Key page: <a href="https://elevenlabs.io/app/settings/api-keys">elevenlabs.io/app/settings/api-keys</a>. The button reads <strong>Get your ElevenLabs key →</strong>.</p>
 <p>Models: <strong>Scribe v2</strong> and <strong>Scribe v1</strong>. ElevenLabs tells speakers apart, so it works well for notes.</p>
 <h3 id="providers-marked-soon">Providers marked Soon<a class="anchor" href="#providers-marked-soon" aria-label="Link to Providers marked Soon">#</a></h3>
-<p>A few more services appear dimmed with a <strong>Soon</strong> badge. They can&#39;t be opened yet.</p>
+<p>A few more services (AssemblyAI, Speechmatics and Gladia) appear dimmed with a <strong>Soon</strong> badge. They can&#39;t be opened yet. Mistral&#39;s <strong>Voxtral</strong> has its own tile with an <strong>Add key</strong> button: it opens the <strong>Mistral (Voxtral)</strong> choice of <a href="#adding-another-service">Adding another service</a> below, and once you save it your Mistral entry is the tile.</p>
 <h3 id="what-the-capability-line-means">What the capability line means<a class="anchor" href="#what-the-capability-line-means" aria-label="Link to What the capability line means">#</a></h3>
 <p>Every cloud window shows three facts under its name: <strong>Languages</strong>, <strong>Streaming</strong> and <strong>Diarization</strong>. Diarization is telling speakers apart. Streaming means the service can return words while you are still talking; the live transcript during a recording uses Deepgram, or a fast model on this PC.</p>
 <h3 id="add-a-custom-api">Add a custom API<a class="anchor" href="#add-a-custom-api" aria-label="Link to Add a custom API">#</a></h3>
@@ -199,15 +199,15 @@
 </tbody></table></div>
 <p>Every one of them is Whisper-style: A9 Voice sends the audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint, and gets back the text. None of them is asked to tell speakers apart, so in <strong>Meeting notes</strong> each shows <strong>One speaker for everyone else</strong>: it works for dictation and for notes with you and one other voice, but use Deepgram, ElevenLabs or a model on this PC when you need Ana told from Ben. The window says so under the key box.</p>
 <ol>
-<li>Click <strong>Add custom API</strong> at the end of the cloud tiles.</li>
+<li>Click <strong>Add custom API</strong> at the end of the cloud tiles (or the <strong>Mistral</strong> tile for Voxtral).</li>
 <li>Pick the service. Its <strong>Name</strong> and address are filled in for you.</li>
-<li>Paste the key from the service&#39;s website into <strong>API key</strong>. <strong>Speaches</strong> shows <strong>Runs on this PC: no key needed</strong> instead.</li>
+<li>Paste the key into <strong>API key</strong>. Don&#39;t have one? <strong>Get a Together key →</strong> (with the service&#39;s own name) under the box opens the service&#39;s own key page in your browser. <strong>Speaches</strong> shows <strong>Runs on this PC: no key needed</strong> instead, and has no link.</li>
 <li>Look at <strong>Model</strong>. A moment after the key is in (at once for Speaches) it becomes a list of that service&#39;s speech models, with a Whisper-class one already chosen. <strong>Refresh list</strong> asks again; <strong>Type a name…</strong> at the end of the list lets you enter one the list lacks. If the list can&#39;t be loaded, <strong>Model</strong> stays a box you type in, and one line says why.</li>
 <li>Click <strong>Test</strong>. It sends a 2-second test clip, the same way a dictation is sent, and shows what it heard and how long it took, for example <strong>Heard “Testing one two three.” · 0.31 s</strong>.</li>
 <li>Click <strong>Save</strong>.</li>
 </ol>
-<p><figure class="shot"><img src="/img/docs/speech-models-custom-picker-1x.webp" srcset="/img/docs/speech-models-custom-picker-1x.webp 1x, /img/docs/speech-models-custom-picker.webp 2x" width="552" height="340" alt="Choosing a service for speech" loading="lazy" decoding="async"><figcaption>Pick the service; the address is filled in.</figcaption></figure></p>
-<p><figure class="shot"><img src="/img/docs/speech-models-custom-1x.webp" srcset="/img/docs/speech-models-custom-1x.webp 1x, /img/docs/speech-models-custom.webp 2x" width="552" height="482" alt="A pasted key and the model list" loading="lazy" decoding="async"><figcaption>1: key. 2: the model list. 3: test.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-custom-picker-1x.webp" srcset="/img/docs/speech-models-custom-picker-1x.webp 1x, /img/docs/speech-models-custom-picker.webp 2x" width="552" height="368" alt="Choosing a service for speech" loading="lazy" decoding="async"><figcaption>Pick the service; the address is filled in.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/speech-models-custom-1x.webp" srcset="/img/docs/speech-models-custom-1x.webp 1x, /img/docs/speech-models-custom.webp 2x" width="552" height="510" alt="A pasted key and the model list" loading="lazy" decoding="async"><figcaption>1: key. 2: the model list. 3: test.</figcaption></figure></p>
 <p><strong>Advanced</strong> is closed to begin with. For a service from the list it holds <strong>Name</strong>, <strong>Base URL</strong> (the filled-in address, which you can change), <strong>Extra header (optional)</strong> and <strong>Header value</strong>; the line under them says <strong>Only needed for company servers that ask for an extra ID.</strong> The value goes into Credential Manager like a key.</p>
 <p>When something is wrong, <strong>Test</strong> and the list say so in plain words, for example <strong>Local server not running: nothing answers at localhost:8000. Start Speaches on this PC, then try again.</strong>, <strong>… rejected the key</strong>, <strong>Nothing answers at this address (404). The Base URL looks wrong; it usually ends in /v1.</strong> or <strong>… doesn&#39;t have a model called &quot;…&quot;</strong>.</p>
 <p><strong>Other (OpenAI-compatible)</strong> is the plain form: <strong>Name</strong>, <strong>Base URL</strong> such as <code>http://localhost:8000/v1</code>, <strong>API key (optional)</strong>, <strong>Model</strong> and, under <strong>Advanced</strong>, the extra header. Servers added before presets existed open this way, unchanged. Only the Base URL is required to save. For notes, the server must answer with timestamps (the Whisper <code>verbose_json</code> style). <strong>Disconnect</strong> on a custom server removes the provider and its saved key and header.</p>
@@ -362,7 +362,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.22</a>
+        <a class="sf-ver" href="/changelog/">v0.7.23</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

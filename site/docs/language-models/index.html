@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.22"
+      "softwareVersion": "0.7.23"
     }
   ]
 }
@@ -122,7 +122,7 @@
       <nav class="docs-nav" aria-label="Manual">
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/" aria-current="page">Language models</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/" aria-current="page">Language models</a></li><li><a href="/docs/usage-and-cost/">Usage and cost</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Language models</h1>
       <p class="docs-lead">Add the AI models that write your meeting summaries, answer Ask, and tidy your dictation with Enhance with AI. Use a cloud key or a model on your own PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.22</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.24</p>
       <p>A language model reads text and writes text. <a href="/docs/speech-models/">Speech models</a> turn your voice into words; language models do things with the words:</p>
 <ul>
 <li><strong>Summaries:</strong> after a meeting, one request writes the summary, a title and tags for the note.</li>
@@ -234,13 +234,13 @@
 <ol>
 <li>Click <strong>Add custom API</strong>.</li>
 <li>Pick the service. Its <strong>Name</strong> and address are filled in for you.</li>
-<li>Paste the key from the service&#39;s website into <strong>API key</strong>. A service on this PC shows <strong>Runs on this PC: no key needed</strong> instead.</li>
+<li>Paste the key into <strong>API key</strong>. Don&#39;t have one? <strong>Get a DeepSeek key →</strong> (with the service&#39;s own name) under the box opens the service&#39;s own key page in your browser (for a service whose docs name no direct key page, its console or sign-up page). A service on this PC shows <strong>Runs on this PC: no key needed</strong> instead, and has no link.</li>
 <li>Look at <strong>Model</strong>. A moment after the key is in, it becomes a list of that service&#39;s chat models, with a small, cheap one already chosen. Pick another if you like. <strong>Refresh list</strong> asks again; <strong>Type a name…</strong> at the end of the list lets you enter one the list lacks. If the list can&#39;t be loaded, <strong>Model</strong> stays a box you type in, and one line says why.</li>
 <li>Click <strong>Test</strong>. It sends one short chat message and shows the model&#39;s answer and how long it took, for example <strong>“Hello, nice to meet you!” · 0.64 s</strong>. Nothing is saved yet.</li>
 <li>Click <strong>Save</strong>. Then choose where to use it with <strong>Change</strong> on a job under <strong>What each job uses</strong>.</li>
 </ol>
-<p><figure class="shot"><img src="/img/docs/language-models-custom-picker-1x.webp" srcset="/img/docs/language-models-custom-picker-1x.webp 1x, /img/docs/language-models-custom-picker.webp 2x" width="552" height="538" alt="Choosing a service in Add custom API" loading="lazy" decoding="async"><figcaption>Pick the service; the address is filled in.</figcaption></figure></p>
-<p><figure class="shot"><img src="/img/docs/language-models-custom-deepseek-1x.webp" srcset="/img/docs/language-models-custom-deepseek-1x.webp 1x, /img/docs/language-models-custom-deepseek.webp 2x" width="552" height="482" alt="A pasted key and the model list" loading="lazy" decoding="async"><figcaption>1: key. 2: the model list. 3: test.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/language-models-custom-picker-1x.webp" srcset="/img/docs/language-models-custom-picker-1x.webp 1x, /img/docs/language-models-custom-picker.webp 2x" width="552" height="566" alt="Choosing a service in Add custom API" loading="lazy" decoding="async"><figcaption>Pick the service; the address is filled in.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/language-models-custom-deepseek-1x.webp" srcset="/img/docs/language-models-custom-deepseek-1x.webp 1x, /img/docs/language-models-custom-deepseek.webp 2x" width="552" height="510" alt="A pasted key and the model list" loading="lazy" decoding="async"><figcaption>1: key. 2: the model list. 3: test.</figcaption></figure></p>
 <h3 id="when-something-is-wrong">When something is wrong<a class="anchor" href="#when-something-is-wrong" aria-label="Link to When something is wrong">#</a></h3>
 <p><strong>Test</strong> and the model list say what happened in plain words:</p>
 <ul>
@@ -288,7 +288,7 @@
 </ul>
 
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
-      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/speech-models/"><span class="docs-step-l">Previous</span><span>Speech models</span></a><a class="docs-step next" href="/docs/recording-a-meeting/"><span class="docs-step-l">Next</span><span>Recording a meeting</span></a></nav>
+      <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/speech-models/"><span class="docs-step-l">Previous</span><span>Speech models</span></a><a class="docs-step next" href="/docs/usage-and-cost/"><span class="docs-step-l">Next</span><span>Usage and cost</span></a></nav>
     </article>
     <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#set-up-a-provider">Set up a provider</a></li><li class="d3"><a href="#providers-and-key-pages">Providers and key pages</a></li><li class="d3"><a href="#a-key-you-already-added">A key you already added</a></li><li class="d2"><a href="#choose-which-model-does-what">Choose which model does what</a></li><li class="d3"><a href="#summaries-and-titles">Summaries and titles</a></li><li class="d3"><a href="#long-meetings">Long meetings</a></li><li class="d3"><a href="#ask">Ask</a></li><li class="d3"><a href="#enhance">Enhance</a></li><li class="d3"><a href="#the-ai-chip">The AI chip</a></li><li class="d3"><a href="#when-a-model-fails">When a model fails</a></li><li class="d2"><a href="#enhance-with-ai">Enhance with AI</a></li><li class="d3"><a href="#what-it-never-does">What it never does</a></li><li class="d3"><a href="#when-it-is-skipped">When it is skipped</a></li><li class="d2"><a href="#adding-another-service">Adding another service</a></li><li class="d3"><a href="#when-something-is-wrong">When something is wrong</a></li><li class="d3"><a href="#advanced">Advanced</a></li><li class="d3"><a href="#the-line-about-your-data">The line about your data</a></li><li class="d3"><a href="#your-own-server-other">Your own server (Other)</a></li><li class="d2"><a href="#use-a-model-on-your-own-pc">Use a model on your own PC</a></li><li class="d2"><a href="#what-it-costs">What it costs</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
@@ -305,7 +305,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.22</a>
+        <a class="sf-ver" href="/changelog/">v0.7.23</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
