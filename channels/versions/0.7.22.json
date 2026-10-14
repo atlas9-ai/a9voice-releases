@@ -1,0 +1,13 @@
+{
+  "version": "0.7.22",
+  "notes": "- **A new install now costs nothing to use.** Setup downloads **Parakeet** for dictation *and* meeting notes (speakers told apart, nothing leaves your PC): V2 when Windows is displayed in English, V3 otherwise, with **Use the other one**. The last step is now **Summaries**: **Summaries and Ask need a free Groq key. It takes 2 minutes and no card.** A Groq key saved anywhere in setup sets Summaries, Ask and Enhance to GPT-OSS 20B on Groq, with long meetings written in parts. See [Free setup](/docs/getting-started/#free-setup). If you were using A9 Voice before this, one card on **Settings › Models**, **Free setup available**, shows what it would change and applies only what you have not chosen yourself.\n- **Honest about meetings on this PC.** Parakeet is the free default for dictation and works for meeting notes, but its live transcript lags and it is less reliable at telling callers apart on busy calls. Setup says so and offers **Add a Deepgram key** / **Add an ElevenLabs key**; saving one moves Meeting notes to it with speakers told apart. Settings › Models shows a quiet line and **Upgrade** on a local meeting engine, the engine list has a speed hint per engine, and the first note made on this PC carries a one-time tip.\n- **No key yet? The note waits, and a used-up day says when it's back.** A note recorded with no language model says **Add a free Groq key to get a summary**; add the key and every such note is summarized, oldest first, with nothing to click. When a model's allowance for the day is used up, the note shows the reset time, for example **resets in 3 h (around 6:40 PM)**, and offers **Use another model**.",
+  "pub_date": "2026-10-14T15:22:35Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEIzK0hVeXMydU9HdGUxeWY2OC81SEN3bXJTNktUN3JkQjNPK096OVVNNnpRZ05sNE4yREUyNFNKK2ZYRmVDRE4wZitEd0hUTGNkUm5JZExROEYzL1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTkxMjk5CWZpbGU6QTkgVm9pY2VfMC43LjIyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMjIKS2dzbitURnlibGxSVW5DZk5UQm0zS1o2a2R5L3F5R25LM25ldVQ3SnMwdmxSZCtnUGhPMXpwRTlnYkpJbC9jb1NoMEVZcHhTRW5UekVVNnlKNFlNRFE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.22/A9Voice_0.7.22_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "7f18959d8b3880287c287af18c4aa3cc9e4931bb8a6e36652a90d0852939e5a3",
+  "installer_size": 11840420
+}
