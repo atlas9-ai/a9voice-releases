@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Language models</h1>
       <p class="docs-lead">Add the AI models that write your meeting summaries, answer Ask, and tidy your dictation with Enhance with AI. Use a cloud key or a model on your own PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.21</p>
+      <p class="docs-updated">Last updated for A9 Voice 0.7.22</p>
       <p>A language model reads text and writes text. <a href="/docs/speech-models/">Speech models</a> turn your voice into words; language models do things with the words:</p>
 <ul>
 <li><strong>Summaries:</strong> after a meeting, one request writes the summary, a title and tags for the note.</li>
@@ -270,7 +270,7 @@
 <li><strong>… key missing</strong>: add a key for that provider.</li>
 <li><strong>… rate limit (429)</strong> or <strong>… took too long</strong>: the provider is busy. Summaries and Ask move to the next model; Enhance pastes the text as heard.</li>
 <li><strong>request too large for … on this model</strong>: the request is bigger than that model takes (its context window, or Groq&#39;s per-minute token cap). It never counts as usage. A summary is written in parts instead (see <a href="#long-meetings">Long meetings</a>); Ask and Enhance go to the next model.</li>
-<li><strong>… daily token limit for this model is used up; resets in …</strong>: the provider&#39;s allowance for the day is spent. Waiting a minute won&#39;t help. Pick another model, or try again after the time it names.</li>
+<li><strong>… daily token limit for this model is used up; resets in …</strong>: the provider&#39;s allowance for the day is spent. Waiting a minute won&#39;t help. On a note, <strong>Use another model</strong> opens Settings › Models; the line also says about what time of day it is back, for example <strong>resets in 3 h (around 6:40 PM)</strong>. Or try again after that.</li>
 <li><strong>No internet</strong>: language models need a connection unless they run on your PC.</li>
 <li><strong>Add your OpenRouter key in Settings › Models to get summaries</strong>: no model is set up. Add a key for any provider above.</li>
 <li><strong>Test</strong> is greyed out on a custom server: it needs a <strong>Base URL</strong>, a <strong>Model</strong> and, for a service in the list, your key. The line next to it says which.</li>
