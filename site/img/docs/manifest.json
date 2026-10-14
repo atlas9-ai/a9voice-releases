@@ -167,9 +167,17 @@
   "w": 288,
   "h": 286
  },
+ "language-models-custom-deepseek": {
+  "w": 552,
+  "h": 482
+ },
+ "language-models-custom-picker": {
+  "w": 552,
+  "h": 538
+ },
  "language-models-custom": {
   "w": 552,
-  "h": 632
+  "h": 408
  },
  "language-models-enhance": {
   "w": 900,
@@ -177,7 +185,7 @@
  },
  "language-models-google-key": {
   "w": 552,
-  "h": 499
+  "h": 527
  },
  "language-models-groq-saved": {
   "w": 552,
@@ -193,7 +201,7 @@
  },
  "language-models-page": {
   "w": 912,
-  "h": 185
+  "h": 218
  },
  "language-models-summary-model": {
   "w": 898,

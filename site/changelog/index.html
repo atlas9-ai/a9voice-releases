@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.18"
+      "softwareVersion": "0.7.20"
     }
   ]
 }
@@ -111,7 +111,14 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-20">
+  <section class="log-entry" aria-labelledby="v-0-7-21">
+  <h2 id="v-0-7-21">0.7.21 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>Add custom API asks &quot;Which service?&quot; first.</strong> DeepSeek, Mistral, xAI, Together, Fireworks and Cerebras fill in their own address, so you paste a key and you&#39;re done. Ollama and LM Studio (on this PC) need no key. <strong>Other (OpenAI-compatible)</strong> is the old form, and entries you made before open that way, unchanged. See <a href="/docs/language-models/#adding-another-service">Adding another service</a>.</li>
+<li><strong>Model is a list.</strong> Once your key is in (at once for Ollama and LM Studio), the window asks the service which chat models it has and preselects a small, cheap one. If it can&#39;t, <strong>Model</strong> stays a box and one line says why. The extra header and an editable Base URL moved under <strong>Advanced</strong>.</li>
+<li><strong>A line about your data where the terms say something.</strong> Google&#39;s free tier, DeepSeek and Mistral&#39;s free plan show one neutral sentence on the window and the tile. Nothing is shown where a service&#39;s terms say it doesn&#39;t train on what you send.</li>
+<li><strong>Test says what&#39;s wrong in plain words</strong>: wrong key, wrong address, no such model, or <strong>Local server not running</strong>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-20">
   <h2 id="v-0-7-20">0.7.20 <time datetime="2026-10-13">October 13, 2026</time></h2>
   <ul><li><strong>A very long meeting no longer stops at &quot;wouldn&#39;t fit&quot;.</strong> When putting the notes of many parts together, a merge that came back cut off could leave the notes too big for the last step and the summary failed. The merge now gets more room, and if it still isn&#39;t usable the notes are put together and trimmed without it, keeping every action item and decision.</li></ul>
 </section>
@@ -469,7 +476,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.18</a>
+        <a class="sf-ver" href="/changelog/">v0.7.20</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
