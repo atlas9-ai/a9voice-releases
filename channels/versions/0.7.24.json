@@ -1,0 +1,13 @@
+{
+  "version": "0.7.24",
+  "notes": "- **\"Don't have one? Get a DeepSeek key →\" under every preset's API key box** (with the service's own name). DeepSeek, Mistral, xAI, Together, Fireworks and Cerebras (language models) and Together and Mistral (speech) open the service's own key page in your browser. Servers on this PC and **Other** have no link, and a built-in service's window keeps the link under the key box after **Manage key**.\n- **The Mistral tile in Speech services is live.** It opens the Mistral (Voxtral) preset instead of sitting dimmed as **Soon**; once you save it, your entry is the tile. AssemblyAI, Speechmatics and Gladia stay **Soon**.\n- **A line under each \"Which service?\" list** says where the other kind of service is added: summaries and Ask under Language models, dictation and meeting transcripts under Speech services.",
+  "pub_date": "2026-10-14T17:42:39Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdFa21GVTQ5Y2JkbzlKL3pvR2ZuM0hyRWRZMkFISXp2TUtWK0owTFpaeXIzUFRxak1sNTBrUkVKTngwSzZQcTRZbjJVd0xqeThoSHA2bFc2ZksyT3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTk5NzA1CWZpbGU6QTkgVm9pY2VfMC43LjI0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMjQKb2JiS0gvWmtyYlpLcmJ5VGlPYnlYT2hiazlISEpNSEZVQURoSTArK0h1NmhqaUJlekErditLdG1CRERIRU93MjRWRkpTZ3VwM0RrQUFWdGtTbUJSRHc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.24/A9Voice_0.7.24_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "239823678a7d3285f72a122ad7017efa9c9b4577fbbee88cddf964978f9a4843",
+  "installer_size": 11846614
+}
