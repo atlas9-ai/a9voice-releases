@@ -1,13 +1,13 @@
 {
-  "version": "0.7.18",
-  "notes": "- **Long meetings now summarize on any model, including a free Groq key.** A meeting too long for the Summary model's limit (Groq's free tier allows 8,000 tokens a minute, less than a 30-minute meeting) is read in parts and put together into the same summary, title, tags and action items. While it works the note says **Writing summary… part 2 of 4**, and **waiting for Groq's per-minute limit** when it waits. See [Long meetings](/docs/language-models/#long-meetings).\n- **Summaries that failed as \"too large\" write themselves again.** The first time you open this version, a note whose summary failed with **request too large** in the last 30 days is summarized again, oldest first, with nothing to click. A limit that stops it now says which one and when it resets, for example **Groq's daily token limit for this model is used up; resets in 3 h.**\n- **Ask AI on a long note answers.** When the whole transcript won't fit the model, it is given the summary and the passages that match the question, and the footer says **answered from the summary + 14 relevant passages**.\n- **A new choice, Settings › Transcript & summary › Long meetings:** **Chunk on the same model** (default) or **Use fallback model**. With Groq as your only language model, Settings › Models says long meetings are handled in parts.",
-  "pub_date": "2026-10-13T21:09:03Z",
+  "version": "0.7.20",
+  "notes": "- **A very long meeting no longer stops at \"wouldn't fit\".** When putting the notes of many parts together, a merge that came back cut off could leave the notes too big for the last step and the summary failed. The merge now gets more room, and if it still isn't usable the notes are put together and trimmed without it, keeping every action item and decision.",
+  "pub_date": "2026-10-14T00:49:32Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE1TNTVQNFlqRHp2bzRGUWZEQUhkVHJDR3B3WmFmR2pBWEpPbjVqZkcwTGtMTzQzTTZHUEI5bnkrL2NqQm1WUkI4OEpjRzdkYnZvVEJkTDhQRDlwSXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTI1NzAxCWZpbGU6QTkgVm9pY2VfMC43LjE4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMTgKN0VGOVVwdDJDSHBTNnpaeHFDbnpVbE5Ba2YzWlZqeTg3RFVlWHBoVnd4YVZtblplMU9EcWtaR0FPK3VSMDFNd055TWVqZ3lmZTFUZVlWQm9YYmlxQmc9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.18/A9Voice_0.7.18_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEttSTZaYnRsUnNLWkVzOVBabDExMVhpL1Zmb0RJS1VqOGFuc0sxY21oRWU5cTJzNzZTMDJUVCs4OUoxYmtJNUxvNlloc2p3bW5aakFvRE1TdzgzZndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM4OTM0CWZpbGU6QTkgVm9pY2VfMC43LjIwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjcuMjAKVFFxYUx6Rit0Y3JVaVZIeEFrNE9DZ3JlRjJETTJ5RGNFdnhjNUI4RkRwcjRPOUZlQkNVd1VaS2lsMnhwVU14S3RzM0RLVXlJeWdmSnoyMHBWSGhFQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v0.7.20/A9Voice_0.7.20_x64-setup.exe"
     }
   },
-  "installer_sha256": "ddfc3496b0da07845d013133e9b18e65ebad9382b3de2e1e225c12ce32a4775e",
-  "installer_size": 11798887
+  "installer_sha256": "3ac0a600b50b7c50cce3f2864270543d52f3782e38325578a3dda784ea31dfe8",
+  "installer_size": 11806767
 }
