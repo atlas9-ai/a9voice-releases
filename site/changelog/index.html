@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.20"
+      "softwareVersion": "0.7.22"
     }
   ]
 }
@@ -111,7 +111,12 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-22">
+  <section class="log-entry" aria-labelledby="v-0-7-23">
+  <h2 id="v-0-7-23">0.7.23 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>Speech services › Add custom API asks &quot;Which service?&quot; too.</strong> Together (Whisper and others), Mistral (Voxtral) and Speaches on this PC (no key) fill in their own address; <strong>Other (OpenAI-compatible)</strong> keeps the plain form, and entries you made before open that way, unchanged. <strong>Model</strong> is a list asked of the server (a text box with the reason when it can&#39;t), the extra header and an editable Base URL sit under <strong>Advanced</strong>, and <strong>Test</strong> sends the 2-second clip and says in plain words what&#39;s wrong. Each says it doesn&#39;t tell speakers apart, so Meeting notes show <strong>One speaker for everyone else</strong>. See <a href="/docs/speech-models/#adding-another-service">Adding another service</a>.</li>
+<li><strong>The &quot;Add custom API&quot; tile is one tile tall</strong> in both Speech services and Language models, however tall the tiles beside it are.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-22">
   <h2 id="v-0-7-22">0.7.22 <time datetime="2026-10-14">October 14, 2026</time></h2>
   <ul><li><strong>A new install now costs nothing to use.</strong> Setup downloads <strong>Parakeet</strong> for dictation <em>and</em> meeting notes (speakers told apart, nothing leaves your PC): V2 when Windows is displayed in English, V3 otherwise, with <strong>Use the other one</strong>. The last step is now <strong>Summaries</strong>: <strong>Summaries and Ask need a free Groq key. It takes 2 minutes and no card.</strong> A Groq key saved anywhere in setup sets Summaries, Ask and Enhance to GPT-OSS 20B on Groq, with long meetings written in parts. See <a href="/docs/getting-started/#free-setup">Free setup</a>. If you were using A9 Voice before this, one card on <strong>Settings › Models</strong>, <strong>Free setup available</strong>, shows what it would change and applies only what you have not chosen yourself.</li>
 <li><strong>Honest about meetings on this PC.</strong> Parakeet is the free default for dictation and works for meeting notes, but its live transcript lags and it is less reliable at telling callers apart on busy calls. Setup says so and offers <strong>Add a Deepgram key</strong> / <strong>Add an ElevenLabs key</strong>; saving one moves Meeting notes to it with speakers told apart. Settings › Models shows a quiet line and <strong>Upgrade</strong> on a local meeting engine, the engine list has a speed hint per engine, and the first note made on this PC carries a one-time tip.</li>
@@ -481,7 +486,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.20</a>
+        <a class="sf-ver" href="/changelog/">v0.7.22</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

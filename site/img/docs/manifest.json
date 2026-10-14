@@ -571,9 +571,13 @@
   "w": 1032,
   "h": 760
  },
+ "speech-models-custom-picker": {
+  "w": 552,
+  "h": 340
+ },
  "speech-models-custom": {
   "w": 552,
-  "h": 632
+  "h": 482
  },
  "speech-models-deepgram": {
   "w": 552,
