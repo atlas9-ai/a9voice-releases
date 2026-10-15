@@ -785,7 +785,7 @@
  },
  "usage-gauge": {
   "w": 806,
-  "h": 864
+  "h": 868
  },
  "usage-history": {
   "w": 806,
@@ -793,7 +793,7 @@
  },
  "usage-overview": {
   "w": 806,
-  "h": 1991
+  "h": 2256
  },
  "usage-prices": {
   "w": 806,
@@ -886,5 +886,9 @@
  "webhooks-test": {
   "w": 790,
   "h": 845
+ },
+ "usage-savings": {
+  "w": 806,
+  "h": 1889
  }
 }

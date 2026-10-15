@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.23"
+      "softwareVersion": "1.0.0"
     }
   ]
 }
@@ -228,10 +228,11 @@
 </ul>
 <p>Details: <a href="/docs/models/">Models</a>, <a href="/docs/speech-models/">Speech models</a> and <a href="/docs/language-models/">Language models</a>.</p>
 <h2 id="usage-and-cost">Usage &amp; cost<a class="anchor" href="#usage-and-cost" aria-label="Link to Usage &amp; cost">#</a></h2>
-<p>Part of the <strong>Shared</strong> group. It estimates what meetings, dictation, summaries and Ask cost from what A9 Voice sent and a price table. You pay each provider directly with your own keys, and the provider&#39;s bill is the final word. The page has three tabs, and its own manual page: <a href="/docs/usage-and-cost/">Usage and cost</a>.</p>
+<p>Part of the <strong>Shared</strong> group. It estimates what meetings, dictation, summaries and Ask cost from what A9 Voice sent and a price table. You pay each provider directly with your own keys, and the provider&#39;s bill is the final word. The page has four tabs, and its own manual page: <a href="/docs/usage-and-cost/">Usage and cost</a>.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-usage-and-cost-1x.webp" srcset="/img/docs/settings-reference-usage-and-cost-1x.webp 1x, /img/docs/settings-reference-usage-and-cost.webp 2x" width="1032" height="760" alt="Settings › Usage &amp; cost: this month's gauge, the cost per meeting hour and dictation." loading="lazy" decoding="async"></figure></p>
 <ul>
 <li id="opt-overview"><strong>Overview:</strong> a period switch (this month, last month, 90 days, All time), the gauge against an optional <strong>monthly budget</strong>, <strong>Cost per meeting hour</strong> with an optional target, <strong>Meetings</strong>, <strong>Dictation</strong>, <strong>Summaries &amp; Ask</strong>, <strong>Daily spend</strong>, <strong>By provider</strong> and <strong>Most expensive</strong>.</li>
+<li id="opt-savings"><strong>Savings:</strong> whether the models in use are a good fit, a cost-versus-speed map for Meeting notes, a card for each option with <strong>Switch</strong> and <strong>Compare on a meeting</strong>, and a price check.</li>
 <li id="opt-history"><strong>History:</strong> every note and dictation by day, the filters <strong>All</strong>, <strong>Meetings</strong>, <strong>Dictation</strong> and <strong>Ask</strong>, a search, <strong>Export CSV</strong>, a calendar and <strong>This month at a glance</strong>.</li>
 <li id="opt-prices"><strong>Prices:</strong> one row per model. Speech has <strong>After the call</strong> and <strong>Live</strong> rates per audio hour; language models have <strong>Input</strong> and <strong>Output</strong> per 1M tokens. Click a price to change it; an edited price is marked <strong>Edited</strong> and survives updates. <strong>Reset to defaults</strong> puts the shipped prices back.</li>
 </ul>
@@ -318,7 +319,8 @@
 <p>Part of the <strong>Notes</strong> group. See who said what while the meeting is still going, tag a voice with a name, mark moments and ask questions.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-live-window-1x.webp" srcset="/img/docs/settings-reference-live-window-1x.webp 1x, /img/docs/settings-reference-live-window.webp 2x" width="1032" height="760" alt="Settings › Live window: the three options." loading="lazy" decoding="async"></figure></p>
 <ul>
-<li id="opt-live-transcript"><strong>Live transcript:</strong> shows a live transcript while you record. If Notes use a speech model on this PC that keeps up, the live transcript is made on this PC. Otherwise, with a Deepgram key saved, both sides stream to Deepgram (billed per channel). With no Deepgram key it uses a downloaded model that keeps up, and if there is none the note is still recorded without a live transcript. On for a new install.</li>
+<li id="opt-live-transcript"><strong>Live transcript:</strong> when the live transcript streams. <strong>While the live window is open</strong> (the default) runs the cloud stream only while the Live window is showing, plus a minute after it closes; <strong>Always</strong> runs it for the whole recording; <strong>Off</strong> has none. The live transcript is billed by your speech provider at its live rate. Your notes are made after the call either way. A speech model on this PC that keeps up makes it free. Otherwise it goes to Deepgram only when Deepgram writes your notes, or you turn on <strong>Use Deepgram for the live transcript</strong>.</li>
+<li id="opt-use-deepgram-for-the-live-transcript"><strong>Use Deepgram for the live transcript:</strong> shown when another engine writes your notes. Off by default. With no speech model on this PC for the live part, nothing streams to Deepgram unless this is on, because Deepgram would bill it on top of your notes engine.</li>
 <li id="opt-open-the-live-window-when-a-meeting-starts"><strong>Open the Live window when a meeting starts:</strong> the window opens docked under the recording bar and moves with it. Otherwise open it from the bar&#39;s Live button. On for a new install.</li>
 <li id="opt-keep-dictation-out-of-notes"><strong>Keep dictation out of notes:</strong> what you dictate into other apps during a meeting is not recorded as part of it. On for a new install.</li>
 </ul>
@@ -437,7 +439,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.23</a>
+        <a class="sf-ver" href="/changelog/">v1.0.0</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

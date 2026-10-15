@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.23"
+      "softwareVersion": "1.0.0"
     }
   ]
 }
@@ -111,7 +111,21 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-0-7-25">
+  <section class="log-entry" aria-labelledby="v-1-0-1">
+  <h2 id="v-1-0-1">1.0.1 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>The live transcript now only runs while the live window is open, so you don&#39;t pay for it when nobody&#39;s watching.</strong> Until now each side of a call streamed to Deepgram for the whole recording at the live rate, and was then uploaded again after the call. Now it streams while the Live window is showing, plus a minute after you close it, and where it was closed the transcript says so. Your notes are made from the whole recording either way, and names you give still land on the right people. Everyone gets this new default; <strong>Settings › Notes › Live window › Live transcript</strong> has <strong>While the live window is open</strong>, <strong>Always</strong> (the old behavior) and <strong>Off</strong>. See <a href="/docs/live-window/">Live window</a>.</li>
+<li><strong>It never bills a second provider on its own.</strong> When another engine writes your notes, the live transcript uses a speech model on this PC if one is installed (free, and the window says so), and otherwise streams to Deepgram only if you choose <strong>Use Deepgram for the live transcript</strong>. With neither, the window says what it needs.</li>
+<li><strong>Usage &amp; cost shows it.</strong> Only the seconds really sent are counted, the monthly figures use your real live hours, and <strong>Savings</strong> says when <strong>Always</strong> ran with the window closed, with a one-click <strong>Switch to While open</strong>. See <a href="/docs/usage-and-cost/">Usage and cost</a>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-0">
+  <h2 id="v-1-0-0">1.0.0 <time datetime="2026-10-14">October 14, 2026</time></h2>
+  <ul><li><strong>Usage &amp; cost shows what you really spend, and whether it is worth it.</strong> Every upload is written down as it happens (a meeting&#39;s live stream and its after-the-call transcript are priced separately), prices are per model, and the page has an <strong>Overview</strong> with a monthly budget and a cost-per-meeting-hour target, a <strong>History</strong> that stays short, and <strong>Prices</strong> you can edit. The new <strong>Savings</strong> tab says, for Meeting notes, Summaries &amp; Ask and Dictation, whether you are on a good fit or could save, shows the options on a cost-versus-speed map, and can <strong>Compare on a meeting</strong>: your own audio through a second provider, side by side, with the cost shown first. <strong>Switch</strong> moves Meeting notes only. See <a href="/docs/usage-and-cost/">Usage and cost</a>.</li>
+<li><strong>A new install costs nothing to start.</strong> Setup downloads Parakeet for dictation and meeting notes, and a free Groq key covers summaries and Ask, with long meetings written in parts so they work on any model. <strong>Add custom API</strong> asks &quot;Which service?&quot; for DeepSeek, Mistral, xAI, Together, Fireworks, Cerebras, Ollama and LM Studio, for language models and for speech.</li>
+<li><strong>Meetings you can trust.</strong> <strong>Not part of the meeting</strong> leaves lines out for good, <strong>Regenerate transcript</strong> keeps your names, a short recording-consent notice starts Notes, and the Live window holds still while you name someone and takes a yes or no on a guess in one click.</li>
+<li><strong>Works where networks get in the way.</strong> A9 Voice reaches its servers through a mirror when a work network blocks a9voice.com, and the live transcript connects on networks that inspect traffic.</li>
+<li><strong>Smaller things.</strong> Home keeps counting and has a range switch, a larger Windows Text size and <strong>Settings › General › Interface size</strong> are respected, and the Notes trial, license and update checks work the same on 1.0.0.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-0-7-25">
   <h2 id="v-0-7-25">0.7.25 <time datetime="2026-10-14">October 14, 2026</time></h2>
   <ul><li><strong>Usage &amp; cost is rebuilt, and the estimate is no longer low.</strong> A meeting with the live window on is billed twice by Deepgram (streamed live, then uploaded after the call) and the old table counted only the second. Each side of a call is now written down as it is sent, live or after the call, and priced at the rate for that mode. <strong>Overview</strong> has a gauge against an optional monthly budget, the cost per meeting hour against an optional target, daily spend by provider, and your most expensive notes. See <a href="/docs/usage-and-cost/">Usage and cost</a>.</li>
 <li><strong>Prices are per model, with two speech rates.</strong> <strong>After the call</strong> and <strong>Live</strong> per audio hour, <strong>Input</strong> and <strong>Output</strong> per 1M tokens, so Claude Haiku 5.5 and Haiku 4.5 are no longer priced alike. A price you type is marked <strong>Edited</strong> and stays through updates; <strong>Reset to defaults</strong> puts the shipped ones back. Where OpenRouter reports what a call cost, that number is used.</li>
@@ -499,7 +513,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.23</a>
+        <a class="sf-ver" href="/changelog/">v1.0.0</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

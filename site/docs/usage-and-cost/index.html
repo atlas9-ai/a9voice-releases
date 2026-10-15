@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.23"
+      "softwareVersion": "1.0.0"
     }
   ]
 }
@@ -134,21 +134,21 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Usage and cost</h1>
       <p class="docs-lead">What your notes, dictation and Ask cost at your own keys' rates, how the estimate is made, and how to change the prices it uses.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.25</p>
-      <p>A9 Voice is free. The speech and language services you connect bill you directly, with your own keys. <strong>Settings › Usage &amp; cost</strong> estimates that bill. It has three tabs: <strong>Overview</strong>, <strong>History</strong> and <strong>Prices</strong>. The estimate is built from what A9 Voice sent and a price table, so your provider&#39;s own bill is always the final word.</p>
-<p><figure class="shot"><img src="/img/docs/usage-overview-1x.webp" srcset="/img/docs/usage-overview-1x.webp 1x, /img/docs/usage-overview.webp 2x" width="806" height="1991" alt="Settings › Usage &amp; cost, Overview: this month's gauge, the cost per meeting hour, daily spend and the biggest notes." loading="lazy" decoding="async"><figcaption>Overview, for a fictional October.</figcaption></figure></p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.1</p>
+      <p>A9 Voice is free. The speech and language services you connect bill you directly, with your own keys. <strong>Settings › Usage &amp; cost</strong> estimates that bill. It has four tabs: <strong>Overview</strong>, <strong>Savings</strong>, <strong>History</strong> and <strong>Prices</strong>. The estimate is built from what A9 Voice sent and a price table, so your provider&#39;s own bill is always the final word.</p>
+<p><figure class="shot"><img src="/img/docs/usage-overview-1x.webp" srcset="/img/docs/usage-overview-1x.webp 1x, /img/docs/usage-overview.webp 2x" width="806" height="2256" alt="Settings › Usage &amp; cost, Overview: this month's gauge, the cost per meeting hour, daily spend and the biggest notes." loading="lazy" decoding="async"><figcaption>Overview, for a fictional October.</figcaption></figure></p>
 <h2 id="what-is-counted">What is counted<a class="anchor" href="#what-is-counted" aria-label="Link to What is counted">#</a></h2>
 <p>Every time something is sent to a service you pay for, A9 Voice writes it down, with the model and how it was sent:</p>
 <ul>
-<li><strong>A meeting&#39;s audio, live.</strong> With the live transcript on and a Deepgram key saved, each side of the call (you, and the other people) is streamed while the meeting runs. That is billed at the provider&#39;s live rate, for each side, for as long as it streams.</li>
+<li><strong>A meeting&#39;s audio, live.</strong> With the live transcript on and a Deepgram key saved, each side of the call (you, and the other people) is streamed while the Live window is open. That is billed at the provider&#39;s live rate, for each side, for as long as it streams: only the seconds that were really sent are counted, and a meeting nobody watched has none.</li>
 <li><strong>A meeting&#39;s audio, after the call.</strong> When the meeting ends, each side is uploaded again to the Meeting notes model for the final transcript, at its after-the-call rate. A side that was silent is not uploaded and costs nothing.</li>
 <li><strong>Dictation.</strong> Each clip you dictate, at the after-the-call rate of the dictation model that answered. Dictation on this PC costs nothing.</li>
 <li><strong>Summaries, Ask and Enhance.</strong> Each call to a language model, by the tokens the provider counted. OpenRouter also says what each call cost, and that number is used instead of the table.</li>
 </ul>
-<p>A meeting with the live window on is therefore billed twice: once live, once after the call. Turn off <strong>Live transcript</strong> in <strong>Settings › Notes › Live window</strong> if you only want the final notes.</p>
+<p>A meeting you watched is billed twice for the part you watched: once live, once after the call. The live part runs only while the window is open (<strong>Settings › Notes › Live window › Live transcript</strong>), and it goes to Deepgram when another engine writes the notes only if you chose that. Set it to <strong>Off</strong> if you only want the final notes.</p>
 <p>Models on this PC (Parakeet, Whisper) are always $0.00.</p>
 <h2 id="overview">Overview<a class="anchor" href="#overview" aria-label="Link to Overview">#</a></h2>
-<p><figure class="shot"><img src="/img/docs/usage-gauge-1x.webp" srcset="/img/docs/usage-gauge-1x.webp 1x, /img/docs/usage-gauge.webp 2x" width="806" height="864" alt="The gauge: spent so far this month, the pale arc for where the month is heading, and the monthly budget." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/usage-gauge-1x.webp" srcset="/img/docs/usage-gauge-1x.webp 1x, /img/docs/usage-gauge.webp 2x" width="806" height="868" alt="The gauge: spent so far this month, the pale arc for where the month is heading, and the monthly budget." loading="lazy" decoding="async"></figure></p>
 <p>Pick a period at the top right: <strong>this month</strong> (the default), <strong>last month</strong>, <strong>90 days</strong> or <strong>All time</strong>. Everything on the tab follows it.</p>
 <ul>
 <li><strong>The gauge</strong> shows what you spent against an optional <strong>monthly budget</strong>. The pale arc is where the month ends if you keep this pace. With no budget the arc scales to that projection and the card says <strong>Set a budget</strong>. Over budget it turns amber and says so in words.</li>
@@ -160,6 +160,19 @@
 <li><strong>By provider</strong> is the same money by provider, with one sentence about where most of it goes.</li>
 <li><strong>Most expensive</strong> lists the three notes that cost the most. Click one to open it.</li>
 </ul>
+<h2 id="savings">Savings<a class="anchor" href="#savings" aria-label="Link to Savings">#</a></h2>
+<p><figure class="shot"><img src="/img/docs/usage-savings-1x.webp" srcset="/img/docs/usage-savings-1x.webp 1x, /img/docs/usage-savings.webp 2x" width="806" height="1889" alt="Savings: a verdict for each job, the cost-versus-speed map and a card for each option." loading="lazy" decoding="async"></figure></p>
+<p>The <strong>Savings</strong> tab asks one question: are you on the right models for what you do? It reads the last 30 days of your own usage.</p>
+<ul>
+<li><strong>A verdict for each job</strong> (Meeting transcripts, Summaries &amp; Ask, Dictation). <strong>Good fit</strong> means no other option with the same live speed and the same speaker labels is more than a quarter cheaper. Otherwise it says <strong>Could save</strong> and how much a month. Dictation on this PC says <strong>Already free</strong>.</li>
+<li><strong>A price check</strong> (amber) appears when a provider you use was billed in a way the price table has no rate for, or when a price you typed is far from the shipped one. It links to Prices.</li>
+<li><strong>The map</strong> puts each meeting engine by what it costs per audio hour after the call (left is cheaper) and by its live speed: <strong>Live, instant</strong>, <strong>After the call only</strong> or <strong>Live, falls behind</strong>. Your engine is ringed.</li>
+<li><strong>A card for each option</strong>: what it would cost a month at your pace, what you would save a month and a year, its live speed, how well it tells speakers apart, and its accuracy. <strong>Accuracy</strong> says <strong>Not measured yet</strong> until you run a comparison.</li>
+<li><strong>Your live transcript.</strong> Only Deepgram streams a live transcript from the cloud. The monthly figure uses the live hours really sent, so the default (stream only while the window is open) shows up as less to pay right away. If you chose Deepgram for the live part while another engine writes the notes, a card says it stays on, billed separately.</li>
+<li><strong>A nudge for &quot;Always&quot;.</strong> If <strong>Live transcript</strong> is set to <strong>Always</strong> and the Live window was closed for most of the streamed time in the last 30 days, a line says how many hours and what they cost, with <strong>Switch to While open</strong> to change it in one click.</li>
+</ul>
+<p><strong>Switch</strong> changes the Meeting notes engine after you confirm, and nothing else: Dictation, Summaries and Ask keep their models, and notes you already have stay as they are. With no key saved for that provider it takes you to <strong>Settings › Models</strong> to add one.</p>
+<p><strong>Compare on a meeting</strong> sends one recent meeting&#39;s audio to a second provider after the call and shows both transcripts&#39; word counts, how many words differ, speaker counts, the time it took and its cost. It shows the cost before it sends anything, it counts in Usage &amp; cost like any upload, and your note is not changed. The result fills in that engine&#39;s <strong>Accuracy</strong> and <strong>Source</strong>. A model on this PC can&#39;t be compared this way.</p>
 <h2 id="history">History<a class="anchor" href="#history" aria-label="Link to History">#</a></h2>
 <p><figure class="shot"><img src="/img/docs/usage-history-1x.webp" srcset="/img/docs/usage-history-1x.webp 1x, /img/docs/usage-history.webp 2x" width="806" height="1837" alt="History: Today and Yesterday open, earlier days of the month in one group, past months as one line each." loading="lazy" decoding="async"></figure></p>
 <p>Every note and dictation, newest first. <strong>Today</strong> and <strong>Yesterday</strong> are open. The rest of the month is one group, <strong>Earlier in October</strong>, and every past month is one line with its total. Open one and it shows 25 rows at a time, with <strong>Newer</strong> and <strong>Older</strong> buttons.</p>
@@ -199,7 +212,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/language-models/"><span class="docs-step-l">Previous</span><span>Language models</span></a><a class="docs-step next" href="/docs/recording-a-meeting/"><span class="docs-step-l">Next</span><span>Recording a meeting</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-counted">What is counted</a></li><li class="d2"><a href="#overview">Overview</a></li><li class="d2"><a href="#history">History</a></li><li class="d2"><a href="#prices">Prices</a></li><li class="d2"><a href="#if-something-looks-wrong">If something looks wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-counted">What is counted</a></li><li class="d2"><a href="#overview">Overview</a></li><li class="d2"><a href="#savings">Savings</a></li><li class="d2"><a href="#history">History</a></li><li class="d2"><a href="#prices">Prices</a></li><li class="d2"><a href="#if-something-looks-wrong">If something looks wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -214,7 +227,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.23</a>
+        <a class="sf-ver" href="/changelog/">v1.0.0</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

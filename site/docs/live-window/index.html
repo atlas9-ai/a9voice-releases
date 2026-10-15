@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "0.7.23"
+      "softwareVersion": "1.0.0"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.17</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.1</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window sits beside your call while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -178,13 +178,24 @@
 <p>The smallest size is 380 by 320 pixels. At narrow sizes the markers and pickers wrap onto a second line.</p>
 <p><figure class="shot"><img src="/img/docs/live-window-small-1x.webp" srcset="/img/docs/live-window-small-1x.webp 1x, /img/docs/live-window-small.webp 2x" width="380" height="480" alt="The Live window at its narrowest" loading="lazy" decoding="async"><figcaption>At 380 pixels wide everything is still there.</figcaption></figure></p>
 <h2 id="the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source<a class="anchor" href="#the-live-transcript-needs-a-speech-source" aria-label="Link to The Live transcript needs a speech source">#</a></h2>
-<p>The live lines come from a live speech service, separate from the transcript of the finished note:</p>
+<p>The live lines come from a live speech service, separate from the transcript of the finished note. Where they come from depends on which speech model writes your notes:</p>
 <ul>
-<li>With a Deepgram key the two sides stream to Deepgram while you record. Deepgram bills it per channel.</li>
-<li>When Notes use a model on this PC, or when you have no Deepgram key but a model on this PC is installed, the live lines are made on this PC, but only if that model keeps up with real time on your PC.</li>
-<li>With neither, the window says <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></li>
+<li><strong>Deepgram writes the notes.</strong> With a Deepgram key, the two sides stream to Deepgram while the window is open. Deepgram bills it per channel, at its live rate.</li>
+<li><strong>Another cloud service writes the notes</strong> (ElevenLabs, Groq, OpenAI or one you added). If a speech model on this PC is installed and keeps up with real time, the live lines are made there, free, and the window says <strong>Live transcript on this PC (free).</strong> Nothing streams to a cloud service.</li>
+<li><strong>Another cloud service writes the notes, and no model on this PC takes the live part.</strong> Nothing streams to Deepgram on its own, because Deepgram is not the one writing your notes and would bill you separately. The window says so and offers <strong>Use Deepgram for the live transcript</strong>; once you do, it says <strong>Live transcript via Deepgram, billed separately.</strong> Without a Deepgram key it says <strong>Live transcript needs a speech model on this PC or a Deepgram key.</strong> with an <strong>Open Models</strong> link.</li>
+<li><strong>Notes use a model on this PC.</strong> The live lines are made there too, if that model keeps up. If it doesn&#39;t, the window says <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></li>
 </ul>
-<p><strong>Settings › Notes › Live window › Live transcript</strong> turns it off. See <a href="/docs/speech-models/">Speech models</a>.</p>
+<p><strong>Settings › Notes › Live window › Live transcript</strong> sets when the cloud stream runs, or turns it off. See <a href="/docs/speech-models/">Speech models</a>.</p>
+<h2 id="when-the-live-transcript-runs">When the live transcript runs<a class="anchor" href="#when-the-live-transcript-runs" aria-label="Link to When the live transcript runs">#</a></h2>
+<p>The live transcript is billed by your speech provider at its live rate, and your notes are made from the whole recording after the call either way. So by default it runs <strong>while the Live window is open</strong>:</p>
+<ul>
+<li>It starts when the window shows and keeps going for a minute after you close or minimize it, so closing and reopening quickly changes nothing.</li>
+<li>When you open the window again it starts a new stream from that moment. Where the window was closed, the transcript shows one quiet line: <strong>Live transcript paused while the window was closed. Your notes will include everything.</strong></li>
+<li>Names you give while the window is open still land on the right people in the finished note. Each stream numbers its speakers on its own, so the same person can show as a second speaker after a gap; <strong>Merge</strong> puts them together.</li>
+<li>The first time a gap appears, a one-time tip explains it. <strong>Got it</strong> closes it for good.</li>
+</ul>
+<p>A recording that nobody watches therefore sends no live audio at all: Usage &amp; cost shows no live line for it. <strong>Always</strong> keeps the old behavior (the stream runs for the whole recording); <strong>Off</strong> never streams. A model on this PC isn&#39;t billed, so it keeps running whatever you choose.</p>
+<p>The recording itself never depends on the live transcript. The audio, <strong>Still recording?</strong>, and stopping when the call ends work the same with the stream off.</p>
 <p>If you hear the call from speakers instead of a headset, your microphone also hears them. A9 Voice does not show those repeats as lines from you.</p>
 <h2 id="name-the-people">Name the people<a class="anchor" href="#name-the-people" aria-label="Link to Name the people">#</a></h2>
 <p>New to naming people? Watch Sara name a speaker live, then on the note page.</p>
@@ -329,7 +340,8 @@
 <h2 id="settings-for-the-live-window">Settings for the Live window<a class="anchor" href="#settings-for-the-live-window" aria-label="Link to Settings for the Live window">#</a></h2>
 <p><figure class="shot"><img src="/img/docs/live-window-settings-1x.webp" srcset="/img/docs/live-window-settings-1x.webp 1x, /img/docs/live-window-settings.webp 2x" width="698" height="314" alt="Settings, Notes, Live window" loading="lazy" decoding="async"><figcaption>Three switches.</figcaption></figure></p>
 <ul>
-<li><strong>Live transcript:</strong> streams both sides while you record. Off means no Live window text; the note is still made afterwards.</li>
+<li><strong>Live transcript:</strong> when the cloud stream runs. <strong>While the live window is open</strong> (the default) streams only while the window is showing, plus a minute. <strong>Always</strong> streams the whole recording. <strong>Off</strong> means no Live window text; the note is still made afterwards.</li>
+<li><strong>Use Deepgram for the live transcript:</strong> shown when another engine writes your notes. Off by default; Deepgram bills the stream on top of that engine.</li>
 <li><strong>Open the Live window when a meeting starts:</strong> it opens docked under the recording bar and moves with it. Off means you open it from the bar&#39;s <strong>Live window</strong> button.</li>
 <li><strong>Keep dictation out of notes:</strong> what you dictate into other apps during a meeting is not recorded as part of it.</li>
 </ul>
@@ -353,7 +365,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/recording-a-meeting/"><span class="docs-step-l">Previous</span><span>Recording a meeting</span></a><a class="docs-step next" href="/docs/note-page/"><span class="docs-step-l">Next</span><span>The note page</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-it-is">What it is</a></li><li class="d3"><a href="#the-window-holds-still">The window holds still</a></li><li class="d2"><a href="#open-it">Open it</a></li><li class="d3"><a href="#where-it-sits">Where it sits</a></li><li class="d2"><a href="#the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source</a></li><li class="d2"><a href="#name-the-people">Name the people</a></li><li class="d3"><a href="#the-speaker-strip-and-now">The speaker strip and Now</a></li><li class="d3"><a href="#name-a-speaker-from-their-chip">Name a speaker from their chip</a></li><li class="d3"><a href="#add-someone-who-hasnt-spoken-person">Add someone who hasn't spoken: + Person</a></li><li class="d3"><a href="#answer-a-guess">Answer a guess</a></li><li class="d3"><a href="#name-whoever-is-talking-whos-talking">Name whoever is talking: Who's talking?</a></li><li class="d3"><a href="#fix-one-line-or-everything-from-a-speaker">Fix one line, or everything from a speaker</a></li><li class="d3"><a href="#one-name-one-person">One name, one person</a></li><li class="d3"><a href="#undo">Undo</a></li><li class="d3"><a href="#what-is-learned-from-your-names">What is learned from your names</a></li><li class="d2"><a href="#ask-during-the-meeting">Ask during the meeting</a></li><li class="d2"><a href="#mark-moments-and-add-notes">Mark moments and add notes</a></li><li class="d2"><a href="#add-a-screenshot">Add a screenshot</a></li><li class="d2"><a href="#other-buttons">Other buttons</a></li><li class="d2"><a href="#settings-for-the-live-window">Settings for the Live window</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-it-is">What it is</a></li><li class="d3"><a href="#the-window-holds-still">The window holds still</a></li><li class="d2"><a href="#open-it">Open it</a></li><li class="d3"><a href="#where-it-sits">Where it sits</a></li><li class="d2"><a href="#the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source</a></li><li class="d2"><a href="#when-the-live-transcript-runs">When the live transcript runs</a></li><li class="d2"><a href="#name-the-people">Name the people</a></li><li class="d3"><a href="#the-speaker-strip-and-now">The speaker strip and Now</a></li><li class="d3"><a href="#name-a-speaker-from-their-chip">Name a speaker from their chip</a></li><li class="d3"><a href="#add-someone-who-hasnt-spoken-person">Add someone who hasn't spoken: + Person</a></li><li class="d3"><a href="#answer-a-guess">Answer a guess</a></li><li class="d3"><a href="#name-whoever-is-talking-whos-talking">Name whoever is talking: Who's talking?</a></li><li class="d3"><a href="#fix-one-line-or-everything-from-a-speaker">Fix one line, or everything from a speaker</a></li><li class="d3"><a href="#one-name-one-person">One name, one person</a></li><li class="d3"><a href="#undo">Undo</a></li><li class="d3"><a href="#what-is-learned-from-your-names">What is learned from your names</a></li><li class="d2"><a href="#ask-during-the-meeting">Ask during the meeting</a></li><li class="d2"><a href="#mark-moments-and-add-notes">Mark moments and add notes</a></li><li class="d2"><a href="#add-a-screenshot">Add a screenshot</a></li><li class="d2"><a href="#other-buttons">Other buttons</a></li><li class="d2"><a href="#settings-for-the-live-window">Settings for the Live window</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -368,7 +380,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v0.7.23</a>
+        <a class="sf-ver" href="/changelog/">v1.0.0</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
