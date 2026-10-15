@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.3</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.4</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
@@ -207,13 +207,13 @@
 <p>To see the folders and what Export offers:</p>
 <p><a class="lesson-card" href="/media/a9voice-lesson-files-16x9.mp4" data-lesson="files" data-title="Your notes, your files" data-src16="/media/a9voice-lesson-files-16x9.mp4" data-src9="/media/a9voice-lesson-files-9x16.mp4" data-poster="/media/a9voice-lesson-files-poster.jpg" data-vtt="/media/a9voice-lesson-files-16x9.vtt" aria-label="Play video: Your notes, your files (0:45)"><span class="lesson-thumb"><img src="/media/a9voice-lesson-files-card.webp" srcset="/media/a9voice-lesson-files-card.webp 640w, /media/a9voice-lesson-files-card-960.webp 960w, /media/a9voice-lesson-files-card-1280.webp 1280w" sizes="(max-width: 600px) min(100vw, 360px), 320px" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="lesson-play" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" focusable="false"><path d="M6.5 3.2v13.6L17 10z" fill="currentColor"/></svg></span><span class="lesson-dur" aria-hidden="true">0:45</span></span><span class="lesson-title">Your notes, your files</span><span class="lesson-sub">Watch the 45-second video</span></a></p>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">What</th><th scope="col">Where</th></tr></thead><tbody>
-<tr><td>Settings, history, notes database, search index, voice database</td><td><code>%APPDATA%\com.riptide9.scribe</code> (the folder name is the app&#39;s permanent internal identifier): <code>settings.json</code>, <code>history.db</code>, <code>notes.db</code>, <code>search.db</code>, <code>voices.db</code>, <code>ask-recent.json</code> (your last 50 Ask questions and their answers) and <code>window.json</code> (the main window&#39;s size and place)</td></tr>
-<tr><td>Template logos</td><td><code>%APPDATA%\com.riptide9.scribe\templates</code></td></tr>
-<tr><td>Logs</td><td><code>%APPDATA%\com.riptide9.scribe\logs</code> (<strong>Open logs folder</strong> in Settings › General › About)</td></tr>
+<tr><td>Settings, history, notes database, search index, voice database</td><td><code>%APPDATA%\ai.atlas9.a9voice</code> (the folder is named after the app&#39;s identifier): <code>settings.json</code>, <code>history.db</code>, <code>notes.db</code>, <code>search.db</code>, <code>voices.db</code>, <code>ask-recent.json</code> (your last 50 Ask questions and their answers) and <code>window.json</code> (the main window&#39;s size and place)</td></tr>
+<tr><td>Template logos</td><td><code>%APPDATA%\ai.atlas9.a9voice\templates</code></td></tr>
+<tr><td>Logs</td><td><code>%APPDATA%\ai.atlas9.a9voice\logs</code>, the current one <code>a9voice.log</code> (<strong>Open logs folder</strong> in Settings › General › About)</td></tr>
 <tr><td>Notes (summary, transcript, images)</td><td><code>Documents\A9 Voice\Notes</code>, or the folder you pick in <strong>Settings › Storage</strong></td></tr>
 <tr><td>Audio (dictation and meetings)</td><td><code>Documents\A9 Voice\Audio</code>, or the folder you pick in <strong>Settings › Dictation audio</strong>. Dictation audio is in <strong>Transcribe</strong>, meeting audio in <strong>Notes</strong></td></tr>
 <tr><td>Speech models and graphics-card support</td><td><code>%LOCALAPPDATA%\A9 Voice\models</code></td></tr>
-<tr><td>API keys, webhook addresses and secrets</td><td>Windows Credential Manager, under names that start with <code>com.riptide9.scribe/</code></td></tr>
+<tr><td>API keys, webhook addresses and secrets</td><td>Windows Credential Manager, under names that start with <code>ai.atlas9.a9voice/</code></td></tr>
 </tbody></table></div>
 <p>A copy of a recording is also kept briefly while it is being recorded and written up, in a temporary <code>notes-spool</code> folder in the app&#39;s data folder. It is removed afterwards.</p>
 <p>Settings, the databases and the logs stay in the app&#39;s data folder on purpose: Documents may be synced by a cloud-storage service you use, and a synced database file can be damaged. The notes and audio folders are in Documents by default, so if your Documents folder is synced, they are too. That is your choice of folder, not something A9 Voice does.</p>
@@ -274,13 +274,21 @@
 <h2 id="delete-your-data">Delete your data<a class="anchor" href="#delete-your-data" aria-label="Link to Delete your data">#</a></h2>
 <p>Pick what you want gone. Everything below is on your PC only.</p>
 <ol>
-<li><strong>Dictation history:</strong> open <strong>Transcribe</strong> and use <strong>Clear all</strong>, or delete single dictations. Set <strong>Save audio recordings</strong> off in Settings › Dictation audio to stop keeping new audio.</li>
-<li><strong>Notes:</strong> in <strong>Notes</strong>, open the <strong>⋯</strong> menu of a note and choose <strong>Delete…</strong>, then <strong>Delete audio, files and note</strong>.</li>
-<li><strong>Voiceprints:</strong> <strong>Settings › Voices › Delete all voices</strong>.</li>
-<li><strong>Keys:</strong> <strong>Disconnect</strong> on each provider in Speech models and Language models. This removes the key from Credential Manager.</li>
-<li><strong>Webhooks:</strong> <strong>Delete…</strong> on each one in Integrations removes its address and secrets.</li>
-<li><strong>Models:</strong> open a model under <strong>On this PC</strong> and choose <strong>Delete</strong>.</li>
-<li><strong>Everything else:</strong> uninstall A9 Voice in Windows <strong>Settings › Apps</strong>. To also remove the files it leaves, delete the app&#39;s data folder, <code>%APPDATA%\com.riptide9.scribe</code>, the models folder in <code>%LOCALAPPDATA%\A9 Voice</code>, and your notes and audio folders in <code>Documents\A9 Voice</code>. Then open Windows <strong>Credential Manager</strong>, choose <strong>Windows Credentials</strong>, and remove any entries whose names start with <code>com.riptide9.scribe/</code>.</li>
+<li><p><strong>Dictation history:</strong> open <strong>Transcribe</strong> and use <strong>Clear all</strong>, or delete single dictations. Set <strong>Save audio recordings</strong> off in Settings › Dictation audio to stop keeping new audio.</p>
+</li>
+<li><p><strong>Notes:</strong> in <strong>Notes</strong>, open the <strong>⋯</strong> menu of a note and choose <strong>Delete…</strong>, then <strong>Delete audio, files and note</strong>.</p>
+</li>
+<li><p><strong>Voiceprints:</strong> <strong>Settings › Voices › Delete all voices</strong>.</p>
+</li>
+<li><p><strong>Keys:</strong> <strong>Disconnect</strong> on each provider in Speech models and Language models. This removes the key from Credential Manager.</p>
+</li>
+<li><p><strong>Webhooks:</strong> <strong>Delete…</strong> on each one in Integrations removes its address and secrets.</p>
+</li>
+<li><p><strong>Models:</strong> open a model under <strong>On this PC</strong> and choose <strong>Delete</strong>.</p>
+</li>
+<li><p><strong>Everything else:</strong> uninstall A9 Voice in Windows <strong>Settings › Apps</strong>. To also remove the files it leaves, delete the app&#39;s data folder, <code>%APPDATA%\ai.atlas9.a9voice</code>, the models folder in <code>%LOCALAPPDATA%\A9 Voice</code>, and your notes and audio folders in <code>Documents\A9 Voice</code>. Then open Windows <strong>Credential Manager</strong>, choose <strong>Windows Credentials</strong>, and remove any entries whose names start with <code>ai.atlas9.a9voice/</code>.</p>
+<p>If you used a version before 1.0.4, there is an older copy of the same things to remove too: A9 Voice copied your data to its own folder on the first start of 1.0.4 and left the originals where they were, so the previous version still works if you go back. They are the other folder in <code>%APPDATA%</code> that holds the same files (its name starts with <code>com.</code>; the one to keep is <code>ai.atlas9.a9voice</code>), the matching folder in <code>%LOCALAPPDATA%</code>, and the Credential Manager entries whose names start with that older folder&#39;s name and a <code>/</code>.</p>
+</li>
 </ol>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
 <ul>
