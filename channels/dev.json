@@ -1,13 +1,13 @@
 {
-  "version": "1.0.1",
-  "notes": "- **The live transcript now only runs while the live window is open, so you don't pay for it when nobody's watching.** Until now each side of a call streamed to Deepgram for the whole recording at the live rate, and was then uploaded again after the call. Now it streams while the Live window is showing, plus a minute after you close it, and where it was closed the transcript says so. Your notes are made from the whole recording either way, and names you give still land on the right people. Everyone gets this new default; **Settings › Notes › Live window › Live transcript** has **While the live window is open**, **Always** (the old behavior) and **Off**. See [Live window](/docs/live-window/).\n- **It never bills a second provider on its own.** When another engine writes your notes, the live transcript uses a speech model on this PC if one is installed (free, and the window says so), and otherwise streams to Deepgram only if you choose **Use Deepgram for the live transcript**. With neither, the window says what it needs.\n- **Usage & cost shows it.** Only the seconds really sent are counted, the monthly figures use your real live hours, and **Savings** says when **Always** ran with the window closed, with a one-click **Switch to While open**. See [Usage and cost](/docs/usage-and-cost/).",
-  "pub_date": "2026-10-15T04:07:10Z",
+  "version": "1.0.2",
+  "notes": "- **Mistral (Voxtral) can now be set up for speech, with speaker separation.** The Mistral tile in Speech services used to stop at \"Mistral listed no chat models\" because Mistral's model list wasn't read right, and nothing could be saved. It now opens with `voxtral-mini-latest` filled in, Test sends the short test clip and shows what it heard, and in Meeting notes Mistral labels the other people on a call so naming and voice tags work as with Deepgram. Your Dictionary words go along as spelling hints, and its price is in **Usage & cost**. The same list fix applies to Mistral under Language models. See [Speech models](/docs/speech-models/).\n- **A service you can't test yet can still be saved.** If Test fails or can't run (no key yet), **Save** stays available and the tile says **Not tested yet:** with the reason, for speech and language services alike.",
+  "pub_date": "2026-10-15T16:05:55Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExMM2dUWmVKbTJySWs5Y3V4M2J0VTNVVDV3Zk1ucFJPa2ZyOXZ4ais1R21YNjhTWXpZWGlNc0s4VDF1WDdMMC9aQSs0RzVGMDJJQ29DaFRBTHExWWdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDM3MTg3CWZpbGU6QTkgVm9pY2VfMS4wLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xCjh1aHowVnBISzh5SWV6c2ZtNjhEQmJWSy8yTVZuK2Y1aXdQbFp6d05PcnpTWGhIYXgreTQ0eGhRZno4cmRwemIzTUN4NE5xUmNVU2N2YUpldDBWbERnPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.1/A9Voice_1.0.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExlMnFxUlQySm9jbjZub2ZncHhybUVuNnpnZDdqaUsya1pJRFVSU3RELzZheWJhU0Q3Y2EzbVdOTXo0WU5TUFQ4SUdZZWVFOTZ6K3l4UmdpWlEvVkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDgwMzExCWZpbGU6QTkgVm9pY2VfMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCjdhWjltdCtzK1J2djh0a0VLMWQxMkVvNUFFc0dueTdEN0xpcUQ1aEZiQkw4eEQ1NHhIdHJEWTQxUm42STFiVlZXc3hmNnJxL0t6Vm9VOHc2NkY4a0N3PT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.2/A9Voice_1.0.2_x64-setup.exe"
     }
   },
-  "installer_sha256": "cc91ecd6903fd366eb5d8330ad410a372a18068d20376793fce19eb54969a46f",
-  "installer_size": 12002780
+  "installer_sha256": "a7d382bc461d60fa9d39b6bbdb62cd236ed2cefbb19d1a2d6502a7da4b218fce",
+  "installer_size": 12014117
 }
