@@ -1,13 +1,13 @@
 {
-  "version": "1.0.1",
-  "notes": "- **The live transcript now only runs while the live window is open, so you don't pay for it when nobody's watching.** Until now each side of a call streamed to Deepgram for the whole recording at the live rate, and was then uploaded again after the call. Now it streams while the Live window is showing, plus a minute after you close it, and where it was closed the transcript says so. Your notes are made from the whole recording either way, and names you give still land on the right people. Everyone gets this new default; **Settings › Notes › Live window › Live transcript** has **While the live window is open**, **Always** (the old behavior) and **Off**. See [Live window](/docs/live-window/).\n- **It never bills a second provider on its own.** When another engine writes your notes, the live transcript uses a speech model on this PC if one is installed (free, and the window says so), and otherwise streams to Deepgram only if you choose **Use Deepgram for the live transcript**. With neither, the window says what it needs.\n- **Usage & cost shows it.** Only the seconds really sent are counted, the monthly figures use your real live hours, and **Savings** says when **Always** ran with the window closed, with a one-click **Switch to While open**. See [Usage and cost](/docs/usage-and-cost/).",
-  "pub_date": "2026-10-15T04:07:10Z",
+  "version": "1.0.6",
+  "notes": "- **The Meeting notes engine list now says truthfully what each engine does during the call.** Under each name one chip reads **Live: speakers named during the call** (Deepgram, AssemblyAI), **Live: delayed · speakers named during the call** (a model on this PC), **Live transcript · speakers after the call**, or **No live transcript**, and the **Identifies speakers** badges line up in one column. The chips come from the same facts the Live window uses, so they can't drift from what it does. AssemblyAI no longer says its speakers come only after the call. See [Models](/docs/models/).",
+  "pub_date": "2026-10-15T21:54:49Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExMM2dUWmVKbTJySWs5Y3V4M2J0VTNVVDV3Zk1ucFJPa2ZyOXZ4ais1R21YNjhTWXpZWGlNc0s4VDF1WDdMMC9aQSs0RzVGMDJJQ29DaFRBTHExWWdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDM3MTg3CWZpbGU6QTkgVm9pY2VfMS4wLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xCjh1aHowVnBISzh5SWV6c2ZtNjhEQmJWSy8yTVZuK2Y1aXdQbFp6d05PcnpTWGhIYXgreTQ0eGhRZno4cmRwemIzTUN4NE5xUmNVU2N2YUpldDBWbERnPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.1/A9Voice_1.0.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEMwTE4zbGtwRmw4TU5tVG96NjhSaitXVUJ0OWVkaDBEWHlSOUJTcEd4ajRPazN6UkM2VGt5dTJQZEhSd2RaWHFjR1RXYTdkay9YR1BMTW15TkdSb3dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTAxMjMzCWZpbGU6QTkgVm9pY2VfMS4wLjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC42CjNjTnJuanU2UTJjNTlKc1U1TVFpUEJpN0NjMVAycHRtSk5CTGx0dDVqWjhINUVyNVREcnF3YVprMVRQRjBTaGRBOHZlaGtrTVhuK3o1U2J6cXVFYkJnPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.6/A9Voice_1.0.6_x64-setup.exe"
     }
   },
-  "installer_sha256": "cc91ecd6903fd366eb5d8330ad410a372a18068d20376793fce19eb54969a46f",
-  "installer_size": 12002780
+  "installer_sha256": "358c43073007aad04a8d83aba6436b4c90f9a720c502b2bcd8e9d194336acca7",
+  "installer_size": 12061548
 }
