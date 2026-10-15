@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.0"
+      "softwareVersion": "1.0.1"
     }
   ]
 }
@@ -111,7 +111,12 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-1">
+  <section class="log-entry" aria-labelledby="v-1-0-2">
+  <h2 id="v-1-0-2">1.0.2 <time datetime="2026-10-15">October 15, 2026</time></h2>
+  <ul><li><strong>Mistral (Voxtral) can now be set up for speech, with speaker separation.</strong> The Mistral tile in Speech services used to stop at &quot;Mistral listed no chat models&quot; because Mistral&#39;s model list wasn&#39;t read right, and nothing could be saved. It now opens with <code>voxtral-mini-latest</code> filled in, Test sends the short test clip and shows what it heard, and in Meeting notes Mistral labels the other people on a call so naming and voice tags work as with Deepgram. Your Dictionary words go along as spelling hints, and its price is in <strong>Usage &amp; cost</strong>. The same list fix applies to Mistral under Language models. See <a href="/docs/speech-models/">Speech models</a>.</li>
+<li><strong>A service you can&#39;t test yet can still be saved.</strong> If Test fails or can&#39;t run (no key yet), <strong>Save</strong> stays available and the tile says <strong>Not tested yet:</strong> with the reason, for speech and language services alike.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-1">
   <h2 id="v-1-0-1">1.0.1 <time datetime="2026-10-14">October 14, 2026</time></h2>
   <ul><li><strong>The live transcript now only runs while the live window is open, so you don&#39;t pay for it when nobody&#39;s watching.</strong> Until now each side of a call streamed to Deepgram for the whole recording at the live rate, and was then uploaded again after the call. Now it streams while the Live window is showing, plus a minute after you close it, and where it was closed the transcript says so. Your notes are made from the whole recording either way, and names you give still land on the right people. Everyone gets this new default; <strong>Settings › Notes › Live window › Live transcript</strong> has <strong>While the live window is open</strong>, <strong>Always</strong> (the old behavior) and <strong>Off</strong>. See <a href="/docs/live-window/">Live window</a>.</li>
 <li><strong>It never bills a second provider on its own.</strong> When another engine writes your notes, the live transcript uses a speech model on this PC if one is installed (free, and the window says so), and otherwise streams to Deepgram only if you choose <strong>Use Deepgram for the live transcript</strong>. With neither, the window says what it needs.</li>
@@ -513,7 +518,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.0</a>
+        <a class="sf-ver" href="/changelog/">v1.0.1</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

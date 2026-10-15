@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.0"
+      "softwareVersion": "1.0.1"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.24</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.2</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="385" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -153,7 +153,7 @@
 <p>The fallback is tried once when the model in use fails, is rate-limited, or takes longer than the limit shown under <strong>Fallback for dictation</strong> (4 s). In the pill you see <strong>via</strong> and the fallback&#39;s name when it answered.</p>
 <p>If you have a model on this PC and both cloud models fail, it answers last. With no internet at all, the cloud fallback is skipped (it would fail too) and a model on this PC answers straight away; the pill says <strong>offline</strong>. More in <a href="#without-internet">Without internet</a>.</p>
 <h3 id="which-models-tell-speakers-apart">Which models tell speakers apart<a class="anchor" href="#which-models-tell-speakers-apart" aria-label="Link to Which models tell speakers apart">#</a></h3>
-<p>For meeting notes, <strong>Deepgram</strong> and <strong>ElevenLabs</strong> (and models on this PC with <strong>Identify speakers</strong> on) tell the people on a call apart. Groq, OpenAI and custom servers can&#39;t: notes label everyone but you as one speaker. Choosing one of those for <strong>Meeting notes</strong> shows an amber warning with a <strong>Fix this</strong> button, and asks <strong>Use it anyway?</strong> once. See <a href="/docs/models/#telling-the-other-people-on-a-call-apart">Models</a>.</p>
+<p>For meeting notes, <strong>Deepgram</strong>, <strong>ElevenLabs</strong> and <strong>Mistral (Voxtral)</strong> (and models on this PC with <strong>Identify speakers</strong> on) tell the people on a call apart. Groq, OpenAI and other custom servers can&#39;t: notes label everyone but you as one speaker. Choosing one of those for <strong>Meeting notes</strong> shows an amber warning with a <strong>Fix this</strong> button, and asks <strong>Use it anyway?</strong> once. See <a href="/docs/models/#telling-the-other-people-on-a-call-apart">Models</a>.</p>
 <p>When you save your first Deepgram key and your notes model can&#39;t tell speakers apart, the key window shows a box, <strong>Also use Deepgram for Meeting notes</strong>, checked. Leave it checked and Meeting notes move to Deepgram, which means your meeting audio is sent there. Uncheck it and the key is saved while Meeting notes stay on the model they use now. It asks only for a first key, and never when Meeting notes already use Deepgram, ElevenLabs or a model on this PC. Your dictation model is never changed by this. You can change Meeting notes later under <strong>What each job uses</strong>.</p>
 <h2 id="set-up-a-cloud-provider">Set up a cloud provider<a class="anchor" href="#set-up-a-cloud-provider" aria-label="Link to Set up a cloud provider">#</a></h2>
 <p>The steps are the same for every provider. The only things that change are where you get the key and which model you pick. Your keys stay on your PC: they go into Windows Credential Manager and never into a file, a log or the app&#39;s storage. A9 Voice only ever learns &quot;key saved&quot; or &quot;no key&quot;.</p>
@@ -193,11 +193,12 @@
 <h3 id="adding-another-service">Adding another service<a class="anchor" href="#adding-another-service" aria-label="Link to Adding another service">#</a></h3>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Service</th><th scope="col">You need</th><th scope="col">Good to know</th></tr></thead><tbody>
 <tr><td><strong>Together</strong></td><td>its API key</td><td>Whisper and other speech models.</td></tr>
-<tr><td><strong>Mistral (Voxtral)</strong></td><td>its API key</td><td>On Mistral&#39;s free plan, requests may be used for training.</td></tr>
+<tr><td><strong>Mistral (Voxtral)</strong></td><td>its API key</td><td>Tells speakers apart in Meeting notes, after the call. On Mistral&#39;s free plan, requests may be used for training.</td></tr>
 <tr><td><strong>Speaches (on this PC)</strong></td><td>nothing; its server must be running (<code>http://localhost:8000/v1</code>)</td><td>Nothing leaves your PC.</td></tr>
 <tr><td><strong>Other (OpenAI-compatible)</strong></td><td>the server&#39;s address, and a key if it wants one</td><td>Any server with an <code>/audio/transcriptions</code> address, on this PC or your network.</td></tr>
 </tbody></table></div>
-<p>Every one of them is Whisper-style: A9 Voice sends the audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint, and gets back the text. None of them is asked to tell speakers apart, so in <strong>Meeting notes</strong> each shows <strong>One speaker for everyone else</strong>: it works for dictation and for notes with you and one other voice, but use Deepgram, ElevenLabs or a model on this PC when you need Ana told from Ben. The window says so under the key box.</p>
+<p>Together, Speaches and <strong>Other</strong> are Whisper-style: A9 Voice sends the audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint, and gets back the text. None of them is asked to tell speakers apart, so in <strong>Meeting notes</strong> each shows <strong>One speaker for everyone else</strong>: it works for dictation and for notes with you and one other voice, but use Deepgram, ElevenLabs, Mistral (Voxtral) or a model on this PC when you need Ana told from Ben. The window says so under the key box.</p>
+<p><strong>Mistral (Voxtral)</strong> uses Mistral&#39;s own transcription request instead (<code>voxtral-mini-latest</code>, Voxtral Mini Transcribe, after the call). The window opens with that model already filled in, so you can paste a key and <strong>Test</strong> at once. It is used for dictation and for Meeting notes, where it labels the other people (Speaker 2, Speaker 3) so naming and voice tags work as they do with Deepgram. Your <a href="/docs/dictionary/">Dictionary</a> words (up to 100) are sent along as spelling hints. Mistral&#39;s live model is not used: the live transcript stays on Deepgram or a model on this PC. In <strong>Usage &amp; cost</strong> its audio is priced at Mistral&#39;s per-minute rate, which you can edit under <strong>Prices</strong>.</p>
 <ol>
 <li>Click <strong>Add custom API</strong> at the end of the cloud tiles (or the <strong>Mistral</strong> tile for Voxtral).</li>
 <li>Pick the service. Its <strong>Name</strong> and address are filled in for you.</li>
@@ -206,6 +207,7 @@
 <li>Click <strong>Test</strong>. It sends a 2-second test clip, the same way a dictation is sent, and shows what it heard and how long it took, for example <strong>Heard “Testing one two three.” · 0.31 s</strong>.</li>
 <li>Click <strong>Save</strong>.</li>
 </ol>
+<p><strong>Save never waits for Test.</strong> If you type a model name and Test fails, or can&#39;t be run yet (no key pasted), you can still save: the window says &quot;You can still save it&quot;, and the service&#39;s tile then shows <strong>Not tested yet:</strong> with the reason, until a Test passes (open the tile, <strong>Test</strong>, <strong>Save</strong>). A Test that failed still shows its error. This is the same for language models.</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-custom-picker-1x.webp" srcset="/img/docs/speech-models-custom-picker-1x.webp 1x, /img/docs/speech-models-custom-picker.webp 2x" width="552" height="368" alt="Choosing a service for speech" loading="lazy" decoding="async"><figcaption>Pick the service; the address is filled in.</figcaption></figure></p>
 <p><figure class="shot"><img src="/img/docs/speech-models-custom-1x.webp" srcset="/img/docs/speech-models-custom-1x.webp 1x, /img/docs/speech-models-custom.webp 2x" width="552" height="510" alt="A pasted key and the model list" loading="lazy" decoding="async"><figcaption>1: key. 2: the model list. 3: test.</figcaption></figure></p>
 <p><strong>Advanced</strong> is closed to begin with. For a service from the list it holds <strong>Name</strong>, <strong>Base URL</strong> (the filled-in address, which you can change), <strong>Extra header (optional)</strong> and <strong>Header value</strong>; the line under them says <strong>Only needed for company servers that ask for an extra ID.</strong> The value goes into Credential Manager like a key.</p>
@@ -362,7 +364,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.0</a>
+        <a class="sf-ver" href="/changelog/">v1.0.1</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
