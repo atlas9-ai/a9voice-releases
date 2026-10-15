@@ -1,13 +1,13 @@
 {
-  "version": "1.0.4",
-  "notes": "- **A9 Voice now uses its own name for its program file, data folder and log.** Your settings, notes and keys move over automatically the first time this version starts: nothing to do, and the windows come up as before. The log is now `a9voice.log` in the folder **Settings › General › Open logs folder** opens, and the program file is `a9voice.exe`.\n- **Nothing is deleted, and going back works.** The earlier data and keys are left where they were, so the previous version still runs with its own data. If the move can't finish, one notice says so and A9 Voice tries again on its next start. See [Troubleshooting](/docs/troubleshooting/).\n- **The installer lists \"Atlas9 LLC\" as the publisher**, and updates carry your Start menu entry, desktop shortcut, taskbar pin and \"Start with Windows\" over to the new program file.",
-  "pub_date": "2026-10-15T19:58:15Z",
+  "version": "1.0.5",
+  "notes": "- **With AssemblyAI, the Live window now tells the other people on a call apart.** Each person is their own speaker to tag, **Now:** shows who is talking, and the names carry into the finished note, as with Deepgram. It costs $0.12 an hour more, for the other people's side only, and the cost line and **Usage & cost** include it (and $0.04 an hour for key terms, which the live stream was already sending).\n- **A live service that can't tell speakers apart no longer renames everyone.** A name you give covers the line being spoken and what follows until a pause, and the window says \"This service can't tell the other speakers apart live. Your notes will.\"",
+  "pub_date": "2026-10-15T20:41:12Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJabFFUV3gzYjMyanhkZTdIeWJBczkrOUhBSzlYU3RhK1VKQ0ViZ05nQTV4S2dDMGtSejB5ZVA5RTd3RDJGV3NDbXZGdURWZlRyak5iMzhZN3ZUUGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDk0MjQ1CWZpbGU6QTkgVm9pY2VfMS4wLjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC40CklsTUNHUUczYkdyZkw4dkhPZ2Q5aWxGcExRdU51R1RYaFA5QVI2MzJPVTZmNmRCWHVsMEtMOGxkMnZicXIzdTdFNmdGWWxFc0RHZmNJTVRnemRkL0F3PT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.4/A9Voice_1.0.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEx5cVRDcU9PMHl6Rk9mb2ZrYmtYMWIvamcrZkZCY0pDdkJKeW8wNXJJSGhTZVo3U29lUk51VVF6K25Vd3dXM0F0ei8zdDRXVWtnZ3NiUENqeHVoSlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDk2ODE1CWZpbGU6QTkgVm9pY2VfMS4wLjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC41CkRXaW9UU2gxa3AvZlk0bnJ4UFN0Ulc1cWU2SkwxL3dMOGdOQ2ZGZE5nakJKWWZvTVJkbWdoenMzcnA5ekZGUTcyZ0FkbkYyR0hqWlhoRzFDV3gvZUJBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.5/A9Voice_1.0.5_x64-setup.exe"
     }
   },
-  "installer_sha256": "68bb9c51b6ca490b86625941f5764af53afde1a36b29ecfdc87c30ccfab0c4a6",
-  "installer_size": 12059240
+  "installer_sha256": "e80602b682028bf908d81aabcd4e5f5a69aebfefa708bf77d5c40a18e58d2350",
+  "installer_size": 12058160
 }
