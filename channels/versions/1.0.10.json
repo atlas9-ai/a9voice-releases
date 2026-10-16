@@ -1,0 +1,13 @@
+{
+  "version": "1.0.10",
+  "notes": "- **When a work network blocks your speech service, A9 Voice now says so and transcribes on your PC instead.** A security gateway that answers for a service (a block page, a refused connection) used to show up as \"Deepgram error 503\", which read as a broken app. A9 Voice now tells a block from a real problem with the service: a block is said in plain words (\"Your network is blocking Deepgram (api.deepgram.com). The recording is saved.\"), in notes, in the Live window and in every service's **Test** button, while a wrong key, no credit or the service being down keep their own messages.\n- **A note the network blocked is still transcribed.** With a speech model on this PC, the note is transcribed there by itself and says \"Transcribed on this PC because your network blocks Deepgram.\", with **Transcribe with Deepgram** for when you are on another network. Without one, the note offers **Download the on-PC model** and tries the cloud again by itself when your network changes, and every 15 minutes for 24 hours. After two blocked notes, **Settings › Models** offers once to use the on-PC engine on that network; nothing changes until you click. A9 Voice never sends your audio around a block.\n- **The Live transcript moves to your PC again when the network blocks it.** It does so within a few seconds and says \"Live transcript on this PC (your network blocks Deepgram).\" A change in 1.0.1 had stopped this from working with Deepgram. With no model on this PC the Live window says the network is blocking the service, and the recording goes on. See [Troubleshooting](/docs/troubleshooting/#work-networks).",
+  "pub_date": "2026-10-16T16:00:03Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERVRGVLRThTNnM3bnRRaURUSndZaEIyYkhsTnFUZCt4WlluT1RaQ2tOWE5NdUNlQjVoMWY1N2RiQWNlT09xeHN3VzhZRlBxdmdGUnBQckhWUlY2RGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTY2MzQ2CWZpbGU6QTkgVm9pY2VfMS4wLjEwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTAKTi9zNHlnU3Rra1VYTDV5NHZ5c0JXeHpFK0NPZmZNNkozOWcyZDhPUmp0bVBRU0cyYmVZZC9qamdCeFp1czQxYm5SQkc0U2p2bm1QTHFreE1QQ1JJQ2c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.10/A9Voice_1.0.10_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "a925ebad1e0b4020808e2a25725896774c34e1feb57533295ea98ad41d2ed45e",
+  "installer_size": 12630070
+}
