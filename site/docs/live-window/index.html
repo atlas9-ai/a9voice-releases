@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.8"
+      "softwareVersion": "1.0.11"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.6</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.10</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window sits beside your call while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -350,6 +350,7 @@
 <h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
 <ul>
 <li><strong>The window says Listening… and stays empty.</strong> Nobody has spoken on either side yet, or <strong>Computer audio</strong> is <strong>Off</strong>. Check the bar&#39;s pickers.</li>
+<li><strong>The window says &quot;Your network is blocking Deepgram&quot;.</strong> The network answered in the service&#39;s place (a block page), so the Live connection can&#39;t be made. The recording goes on and the full transcript with speakers is made when you stop. With a speech model installed on this PC the Live transcript switches to it within a few seconds and says <strong>Live transcript on this PC (your network blocks Deepgram)</strong>; nothing is sent to a second paid service. See <a href="/docs/troubleshooting/#work-networks">Troubleshooting</a>.</li>
 <li><strong>The window says &quot;Live transcript can&#39;t connect from this network&quot;.</strong> The connection to the speech service is blocked, often on a work network. The recording goes on and the full transcript with speakers is made when you stop. A9 Voice keeps trying every 30 seconds, and the line goes away when it connects. With a speech model installed on this PC it switches to that and says &quot;Live transcript on this PC&quot;.</li>
 <li><strong>My words show up under someone else, or theirs under me.</strong> Click the name above the line and move it. A headset prevents most of this.</li>
 <li><strong>A name will not stick.</strong> It may belong to another speaker; look for the <strong>Same person?</strong> question.</li>
@@ -382,7 +383,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.8</a>
+        <a class="sf-ver" href="/changelog/">v1.0.11</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

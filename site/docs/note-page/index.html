@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.8"
+      "softwareVersion": "1.0.11"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>The note page</h1>
       <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.8</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.10</p>
       <p>Every recording becomes a note. You find it in the <strong>Notes</strong> list, open it, and the note page shows the summary, the transcript, the people, the pictures and the audio in one place. Everything you change here is also written to the note&#39;s folder on your PC at once.</p>
 <h2 id="the-notes-list">The Notes list<a class="anchor" href="#the-notes-list" aria-label="Link to The Notes list">#</a></h2>
 <p>Click <strong>Notes</strong> in the sidebar.</p>
@@ -398,6 +398,7 @@
 <p><figure class="shot"><img src="/img/docs/note-page-failed-1x.webp" srcset="/img/docs/note-page-failed-1x.webp 1x, /img/docs/note-page-failed.webp 2x" width="704" height="72" alt="A note that failed, with the reason and Try again" loading="lazy" decoding="async"><figcaption>A failed note names the reason. Try again runs the transcript again.</figcaption></figure></p>
 <ul>
 <li><strong>A note says &quot;Needs a look&quot; and shows a reason.</strong> Read the reason, for example that the speech provider could not be reached. Fix that (see <a href="/docs/speech-models/">Speech models</a>), then click <strong>Try again</strong>. <strong>Try again</strong> needs the audio; if the audio was removed it is greyed out. The audio of a failed or unfinished note is never removed by the retention rule, so you can try again.</li>
+<li><strong>A note says &quot;Your network is blocking Deepgram (api.deepgram.com). The recording is saved.&quot;</strong> Your network blocks the speech service. With a model on this PC the note is transcribed there and marked <strong>Transcribed on this PC because your network blocks Deepgram.</strong>, with <strong>Transcribe with Deepgram</strong> for later. Without one, the note shows <strong>Download the on-PC model</strong> and tries again by itself when your network changes and every 15 minutes for 24 hours. See <a href="/docs/troubleshooting/#work-networks">Work networks</a>.</li>
 <li><strong>The summary is missing and a grey bar shows a message.</strong> Often no language model is set up. The transcript is still a good note. Add a key in <strong>Settings › Models</strong> (see <a href="/docs/language-models/">Language models</a>), then click <strong>Regenerate summary</strong>.</li>
 <li><strong>The summary is old after you edited the transcript.</strong> Click <strong>Re-summarize</strong> in the bar.</li>
 <li><strong>A speaker is wrong everywhere.</strong> Rename or merge the speaker in the right-hand column, or run the transcript again with <strong>Identify speakers</strong> ticked.</li>
@@ -463,7 +464,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.8</a>
+        <a class="sf-ver" href="/changelog/">v1.0.11</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

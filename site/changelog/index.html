@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.8"
+      "softwareVersion": "1.0.11"
     }
   ]
 }
@@ -111,7 +111,24 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-9">
+  <section class="log-entry" aria-labelledby="v-1-0-12">
+  <h2 id="v-1-0-12">1.0.12 <time datetime="2026-10-16">October 16, 2026</time></h2>
+  <ul><li><strong>Compare on a meeting now says what it compares against.</strong> The window names the engine that wrote the meeting you picked (<strong>Compared against: AssemblyAI Universal-3.5 Pro</strong>, or <strong>your existing transcript</strong> for an older note that didn&#39;t keep it), and the result&#39;s left column carries the same name. The provider list used to leave out the engine in use now, which hid the very engine a meeting written on another one (a Parakeet note, after you switched to AssemblyAI) should be compared with; it now leaves out the one that wrote that meeting. See <a href="/docs/usage-and-cost/">Usage &amp; cost</a>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-11">
+  <h2 id="v-1-0-11">1.0.11 <time datetime="2026-10-16">October 16, 2026</time></h2>
+  <ul><li><strong>Updates no longer leave A9 Voice closed if Windows or security software interrupts them.</strong> A9 Voice used to end itself two seconds after handing over to the installer, even when Windows had not started the installer yet (it can take a while when security software looks at the new file); the installer then never ran and nothing was left open. Now A9 Voice ends only once the installer is running, a slow start only delays the update, and the installer starts the copy you already had if it cannot finish. See <a href="/docs/updates-and-channels/#if-an-update-is-interrupted">Updates and channels</a>.</li>
+<li><strong>A backstop that starts A9 Voice again.</strong> Right before it hands over to the installer, A9 Voice asks Windows to start it again two minutes later if it is not running: a one-time entry in your own Task Scheduler (no administrator rights, nothing run from a temporary folder). It removes the entry the next time it starts.</li>
+<li><strong>An update that keeps failing stops after two tries in a day.</strong> A9 Voice then shows &quot;The update didn&#39;t install. You can try again now or install it from the download page.&quot; with <strong>Try again</strong>, and tries by itself again tomorrow. Updates still never install while you are dictating or recording.</li>
+<li><strong>The installer keeps its history.</strong> <code>installer.log</code> in the logs folder now has a header line for every run (time, versions, how it was started) and a line for how it ended, and keeps about the last 200 KB. A9 Voice&#39;s log names what is still running if it ever has to end itself.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-10">
+  <h2 id="v-1-0-10">1.0.10 <time datetime="2026-10-16">October 16, 2026</time></h2>
+  <ul><li><strong>When a work network blocks your speech service, A9 Voice now says so and transcribes on your PC instead.</strong> A security gateway that answers for a service (a block page, a refused connection) used to show up as &quot;Deepgram error 503&quot;, which read as a broken app. A9 Voice now tells a block from a real problem with the service: a block is said in plain words (&quot;Your network is blocking Deepgram (api.deepgram.com). The recording is saved.&quot;), in notes, in the Live window and in every service&#39;s <strong>Test</strong> button, while a wrong key, no credit or the service being down keep their own messages.</li>
+<li><strong>A note the network blocked is still transcribed.</strong> With a speech model on this PC, the note is transcribed there by itself and says &quot;Transcribed on this PC because your network blocks Deepgram.&quot;, with <strong>Transcribe with Deepgram</strong> for when you are on another network. Without one, the note offers <strong>Download the on-PC model</strong> and tries the cloud again by itself when your network changes, and every 15 minutes for 24 hours. After two blocked notes, <strong>Settings › Models</strong> offers once to use the on-PC engine on that network; nothing changes until you click. A9 Voice never sends your audio around a block.</li>
+<li><strong>The Live transcript moves to your PC again when the network blocks it.</strong> It does so within a few seconds and says &quot;Live transcript on this PC (your network blocks Deepgram).&quot; A change in 1.0.1 had stopped this from working with Deepgram. With no model on this PC the Live window says the network is blocking the service, and the recording goes on. See <a href="/docs/troubleshooting/#work-networks">Troubleshooting</a>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-9">
   <h2 id="v-1-0-9">1.0.9 <time datetime="2026-10-15">October 15, 2026</time></h2>
   <ul><li><strong>Search by meaning, on your PC.</strong> Turn it on in <strong>Settings › Search › Search by meaning</strong> (a one-time download of about 24 MB, or 135 MB for a PC whose Windows is not in English) and Search, Quick and Deep answers and the connector find what you meant as well as the words you typed: ask about &quot;funding&quot; and the meeting that said &quot;the budget got approved&quot; comes up. Your notes are read once in the background at low priority (not while you record) and the numbers stay on this PC; nothing is sent anywhere. What you type word for word, like a name or a ticket number, still ranks first, and <strong>Remove</strong> goes back to words only. See <a href="/docs/search-and-ask/#search-by-meaning">Search and Ask</a>.</li></ul>
 </section>
@@ -554,7 +571,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.8</a>
+        <a class="sf-ver" href="/changelog/">v1.0.11</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

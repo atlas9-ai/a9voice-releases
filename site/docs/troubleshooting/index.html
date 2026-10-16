@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.8"
+      "softwareVersion": "1.0.11"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Troubleshooting and FAQ</h1>
       <p class="docs-lead">Fixes for the things that go wrong most often, how to copy the diagnostics that help someone find the cause, and short answers to common questions.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.4</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.11</p>
       <p>Find the symptom, read the cause, try the fix. Each entry links to the page with the full story. If none of them helps, <a href="#report-a-problem">copy your diagnostics and report the problem</a>.</p>
 <h2 id="dictation">Dictation<a class="anchor" href="#dictation" aria-label="Link to Dictation">#</a></h2>
 <h3 id="i-hear-no-tone-when-i-start-dictating">I hear no tone when I start dictating<a class="anchor" href="#i-hear-no-tone-when-i-start-dictating" aria-label="Link to I hear no tone when I start dictating">#</a></h3>
@@ -170,6 +170,7 @@
 <li><strong>&quot;Groq key missing&quot; or &quot;Groq key rejected&quot;</strong> (or the name of whichever service you use). The key is not saved or the service refused it. Open the service in <strong>Settings › Models</strong>, paste a fresh key and press <strong>Test</strong>.</li>
 <li><strong>&quot;Groq rate limit hit&quot;.</strong> You sent too many requests, or your plan&#39;s limit was reached. Wait a moment, or use another service as the <strong>fallback</strong>.</li>
 <li><strong>&quot;Groq timed out&quot; or &quot;Groq error 503&quot;</strong> (an error followed by a number). The service is slow or down. If a fallback is set, A9 Voice already tried it once.</li>
+<li><strong>&quot;Your network is blocking Groq (api.groq.com)&quot;.</strong> Your network answered in the service&#39;s place, usually a work network&#39;s security gateway, so the problem is not your key or the service. A fallback is tried once; a model on this PC works without the internet. See <a href="#work-networks">Work networks</a>.</li>
 <li><strong>&quot;No internet&quot;.</strong> A9 Voice could not reach the service. If you have downloaded a model on this PC, it answers automatically, and the pill adds <strong>offline</strong> to the result.</li>
 <li><strong>&quot;Groq sent a bad reply&quot; or &quot;Groq couldn&#39;t run&quot;.</strong> The service gave something A9 Voice could not read. Try again; if it repeats, copy the diagnostics.</li>
 <li><strong>&quot;Pick how A9 Voice hears you first&quot;.</strong> No speech service or model is set up yet. Open <strong>Settings › Models</strong>.</li>
@@ -205,6 +206,7 @@
 <li><strong>Wait for it to finish.</strong> A long meeting takes a while to write up. The note shows its stage: transcribing, then &quot;Writing the summary…&quot;.</li>
 <li><strong>After a crash or a restart,</strong> A9 Voice finishes any note that was left unfinished the next time it starts. Open A9 Voice and give it a minute.</li>
 <li><strong>If the note says it failed,</strong> read the message on the note, then press <strong>Try again</strong> (this needs the audio, which is kept for a failed note). If a service rejected your key, fix it in <strong>Settings › Models</strong> first.</li>
+<li><strong>If it says &quot;Your network is blocking Deepgram (api.deepgram.com). The recording is saved.&quot;</strong> see <a href="#work-networks">Work networks</a>: the note is not lost, and a model on this PC can transcribe it.</li>
 <li><strong>If the transcript is fine but there is no summary,</strong> add a key in <strong>Settings › Models</strong>, then press <strong>Regenerate summary</strong> in the right-hand column of the note. You can also choose another speech model and press <strong>Regenerate transcript</strong>.</li>
 </ul>
 <p>More: <a href="/docs/note-page/">Note page</a>.</p>
@@ -259,14 +261,22 @@
 <h2 id="updates">Updates<a class="anchor" href="#updates" aria-label="Link to Updates">#</a></h2>
 <h3 id="an-update-did-not-finish">An update did not finish<a class="anchor" href="#an-update-did-not-finish" aria-label="Link to An update did not finish">#</a></h3>
 <p>You pressed <strong>Restart to update</strong>, or A9 Voice restarted itself, and afterwards the version is still the old one. When it starts, A9 Voice says &quot;The update to X didn&#39;t finish. A9 Voice will try again when you&#39;re not dictating or recording.&quot; and tries once more by itself, once for each time it starts.</p>
-<p>If it keeps failing, restart the PC and open A9 Voice again; it picks the update up on its own. The installer logs each step it takes to <code>installer.log</code> in the logs folder (<strong>Settings › General › About › Open logs folder</strong>), and A9 Voice&#39;s own log, <code>a9voice.log</code> (<code>scribe.log</code> before 1.0.4), has lines starting &quot;update hand-off&quot; and &quot;handing off to the installer&quot;. Copy them into a report with the <a href="#copy-diagnostics">diagnostics</a>. See <a href="/docs/updates-and-channels/#if-something-goes-wrong">Updates and channels</a>.</p>
+<p>After two failures of the same version in one day, A9 Voice stops trying by itself until tomorrow and shows &quot;The update didn&#39;t install. You can try again now or install it from the download page.&quot; Press <strong>Try again</strong>, or open the <strong>Download page</strong> and install by hand.</p>
+<p>If it keeps failing, restart the PC and open A9 Voice again; it picks the update up on its own. A9 Voice does not stay closed when an update is interrupted: it starts again within a couple of minutes (see <a href="/docs/updates-and-channels/#if-an-update-is-interrupted">If an update is interrupted</a>). The installer adds each run to <code>installer.log</code> in the logs folder (<strong>Settings › General › About › Open logs folder</strong>), with a header line per run (<code>=== Setup 1.0.11 started …</code>) and how it ended; the last 200 KB or so is kept. A9 Voice&#39;s own log, <code>a9voice.log</code> (<code>scribe.log</code> before 1.0.4), has lines starting &quot;update hand-off&quot;, &quot;installer started in … ms&quot; and &quot;relaunch guard&quot;. Copy them into a report with the <a href="#copy-diagnostics">diagnostics</a>. See <a href="/docs/updates-and-channels/#if-something-goes-wrong">Updates and channels</a>.</p>
 <h3 id="restart-your-pc-to-finish-the-update">&quot;Restart your PC to finish the update&quot;<a class="anchor" href="#restart-your-pc-to-finish-the-update" aria-label="Link to &quot;Restart your PC to finish the update&quot;">#</a></h3>
-<p>The installer waited for the running A9 Voice to close, tried to end it, and it still would not go. Nothing was replaced, so the version you have keeps working. Restart the PC; the update installs by itself the next time A9 Voice starts.</p>
+<p>The installer waited for the running A9 Voice to close, tried to end it twice, and it still would not go. Nothing was replaced, so the version you have keeps working, and the installer starts A9 Voice again before it stops. Restart the PC; the update installs by itself the next time A9 Voice starts.</p>
 <h2 id="work-networks">Work networks<a class="anchor" href="#work-networks" aria-label="Link to Work networks">#</a></h2>
 <h3 id="activation-updates-or-the-live-transcript-dont-work-at-work">Activation, updates or the Live transcript don&#39;t work at work<a class="anchor" href="#activation-updates-or-the-live-transcript-dont-work-at-work" aria-label="Link to Activation, updates or the Live transcript don't work at work">#</a></h3>
 <p>Some company networks block a9voice.com because it is a new domain, or re-sign HTTPS traffic with their own certificate. A9 Voice copes with both:</p>
 <ul>
 <li><strong>a9voice.com is blocked.</strong> Activating a license, the Notes trial and the update check then use <strong>a9voice.atlas9.ai</strong>, a copy of the same server, by themselves, and remember which one worked. If you see &quot;Couldn&#39;t reach a9voice.com or a9voice.atlas9.ai&quot;, the network blocks both: ask your IT team to allow them, or activate from another network.</li>
+<li><strong>A note says &quot;Your network is blocking Deepgram (api.deepgram.com). The recording is saved.&quot;</strong> A work network (a firewall, proxy or security gateway) answered in the speech service&#39;s place, so nothing is wrong with your key or the service, and the recording is safe. A9 Voice tells this from the service&#39;s own errors, which keep their own words (a rejected key, no credit, the service being down). What happens next depends on whether a speech model is installed on this PC:<ul>
+<li><strong>With a model on this PC,</strong> the note is transcribed there by itself and says <strong>Transcribed on this PC because your network blocks Deepgram.</strong> <strong>Transcribe with Deepgram</strong> runs it through the service again, for when you are on another network.</li>
+<li><strong>Without one,</strong> the note offers <strong>Download the on-PC model</strong> (with its size) and tries the service again by itself when your network changes (another Wi-Fi, a VPN switched), and every 15 minutes for 24 hours. The message goes away when it works. <strong>Try again</strong> tries at once.</li>
+<li>After two blocked notes, <strong>Settings › Models</strong> offers once to use the on-PC engine for Meeting notes on that network. Nothing changes until you click. A9 Voice never sends your audio around a block; ask your IT team to allow the address if you want the cloud service.</li>
+</ul>
+</li>
+<li><strong>The Live window says the network is blocking the service.</strong> The Live transcript connection was blocked the same way. The recording goes on and the full transcript with speakers is made when you stop. With a speech model installed on this PC, the Live transcript switches to it within a few seconds and says <strong>Live transcript on this PC (your network blocks Deepgram)</strong>. Otherwise A9 Voice keeps retrying, and the line goes away when it connects.</li>
 <li><strong>The Live window says &quot;Live transcript can&#39;t connect from this network&quot;.</strong> The recording is fine and the full transcript with speakers is made when you stop. A9 Voice keeps retrying, and the line goes away when it connects. With a speech model installed on this PC, the Live transcript switches to it and says so. A network that only lets traffic out through a proxy server can still block the live connection; Windows&#39; proxy is not used for it.</li>
 </ul>
 <p>More: <a href="/docs/live-window/">Live window</a> and <a href="/docs/privacy/">Privacy and data</a>.</p>
@@ -340,7 +350,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.8</a>
+        <a class="sf-ver" href="/changelog/">v1.0.11</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
