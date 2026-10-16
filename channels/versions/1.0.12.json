@@ -1,0 +1,13 @@
+{
+  "version": "1.0.12",
+  "notes": "- **Savings tells the truth about the AI model you use.** The AI card prices the last 30 days' summaries and Ask on the model you use **today** instead of counting money spent on models you have since left, only suggests a model of the same quality tier or better (never a weaker one), and says **Could save** only for at least $1 a month, so cents no longer count as an idea on the tab or in the headline. A suggestion names the model (**Switch to GPT-4.1 mini to save $1.40/mo**) with a **Switch** button that changes only the **AI** chip. The three cards now run Dictation, Meeting notes, AI, the same names and order as the chips, and Claude Haiku 5.5's higher price for prompts over 100,000 tokens is in the price table. See [Usage & cost](/docs/usage-and-cost/).\n- **Compare on a meeting now says what it compares against.** The window names the engine that wrote the meeting you picked (**Compared against: AssemblyAI Universal-3.5 Pro**, or **your existing transcript** for an older note that didn't keep it), and the result's left column carries the same name. The provider list used to leave out the engine in use now, which hid the very engine a meeting written on another one (a Parakeet note, after you switched to AssemblyAI) should be compared with; it now leaves out the one that wrote that meeting. See [Usage & cost](/docs/usage-and-cost/).",
+  "pub_date": "2026-10-16T20:09:25Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEtrMS9ZemF6dUhqWkVSSG1FNTNCdWVGSS9SWlhSODhsUXUwK0pUUnh2RlRIMzhrR2xRVVZUTlhmUnk2TldTTzlIRmd5aW5EbnlJNzNKbWh2SXpVWVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTgxMzA5CWZpbGU6QTkgVm9pY2VfMS4wLjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTIKOVNSZS9WeldlK0NLWUpGY0xyZWtJckkrYytJNVRDRkk0YjdEUVMxUlp1MUUrSnBORm53eWlZUHI4UHVIc3JTSXVmcnBMTDNLTDN6eHNCcHRDM3IzRGc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.12/A9Voice_1.0.12_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "401d9b52cc3afa9242e4b4ff09f828fbf62f5f80974a2ed2a70f643c30db395b",
+  "installer_size": 12657771
+}
