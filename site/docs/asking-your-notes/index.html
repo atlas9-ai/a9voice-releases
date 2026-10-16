@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.6"
+      "softwareVersion": "1.0.8"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Asking your notes</h1>
       <p class="docs-lead">Ask a question in plain words across every meeting you have recorded and get an answer that links to the exact moment. Use Quick for a short answer and Deep to find every meeting a topic came up in.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.7</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.8</p>
       <p><strong>Ask</strong> answers a question from your notes. A9 Voice searches everything on your PC, picks the passages that matter,
 and writes an answer in which every fact links to the moment it was said. Answers come only from your notes (and your
 dictations, if you search them), and when the notes don&#39;t cover the question, it says so.</p>
@@ -313,6 +313,43 @@ chip to pick one, and the question is asked again.</p>
 <p>A9 Voice never leaves you with an empty page without saying why. If nothing matches the chips, it says, for example,
 &quot;Nothing from Priya on Wed Oct 7. Showing the nearest days instead.&quot; and looks three days either side. If that finds
 nothing, it searches without the chips and says so.</p>
+<h2 id="everything-someone-said">Everything someone said<a class="anchor" href="#everything-someone-said" aria-label="Link to Everything someone said">#</a></h2>
+<p>Some questions are not questions for a model. &quot;What did Nick say over the last month and a half?&quot; is a filter: every
+line Nick said, across every meeting. A9 Voice answers it from the search index on your PC, so it is instant, free and
+sends nothing anywhere.</p>
+<p>Open it from any of these:</p>
+<ul>
+<li><strong>The Ask page&#39;s person filter.</strong> Click <strong>Anyone</strong>, find or type a name, and press <strong>Everything Nick said</strong> under the
+buttons.</li>
+<li><strong>A speaker on a note.</strong> In the Speakers panel, the <strong>⋯</strong> menu of a named speaker has <strong>Everything Nick said</strong>.</li>
+<li><strong>Ctrl+K.</strong> Type a known person&#39;s name (a first name works) and <strong>Everything Nick said</strong> appears above the results.</li>
+</ul>
+<p>The view replaces the answer area; <strong>Back</strong> returns to your question.</p>
+<p><figure class="shot"><img src="/img/docs/asking-your-notes-said-by-1x.webp" srcset="/img/docs/asking-your-notes-said-by-1x.webp 1x, /img/docs/asking-your-notes-said-by.webp 2x" width="646" height="731" alt="Everything Dana said: the person, a range, a Containing box, the totals line, and meetings with their first lines." loading="lazy" decoding="async"><figcaption>Everything one person said. The totals line is counted on your PC, never written by a model.</figcaption></figure></p>
+<ol>
+<li><strong>The person and the range.</strong> The name opens the same picker to switch people. The range is <strong>This week</strong>, <strong>30 days</strong>
+(the default), <strong>90 days</strong>, <strong>All</strong>, or <strong>Custom</strong> with a from and a to date.</li>
+<li><strong>Containing.</strong> Type words to keep only the lines that have them. It matches the way Search does, and the matches are
+highlighted. The counts follow.</li>
+<li><strong>Meetings, newest first.</strong> Each shows its title, date, how many lines Nick said in it and about how long that took.
+The first three lines show; <strong>Show all 42 lines</strong> opens the rest. A time stamp opens the note at that moment, like a
+citation in an answer. Fifty meetings show at a time and the next fifty load as you scroll.</li>
+<li><strong>The totals line.</strong> &quot;Nick spoke in 23 meetings (Sep 2 – Oct 15): 1,412 lines, about 3 h 10 m.&quot; is counted from the
+index. When other meetings list Nick but no speaker there is named as Nick yet, the line says so (&quot;4 more meetings
+list Nick but have speakers not named yet.&quot;) and <strong>See the 4 meetings</strong> lists them. Open one, name the speaker (see
+<a href="/docs/note-page/">The note page</a>), and those lines are here when you come back.</li>
+<li><strong>Copy and save.</strong> <strong>Copy</strong> puts the view on the clipboard as Markdown. <strong>Save as .md</strong> and <strong>Save as .csv</strong> ask where
+to save (Downloads by default). The CSV has the columns meeting, date, time and line.</li>
+</ol>
+<p>Only lines a speaker said count: the summary, typed notes and what other people said about Nick are not in it. Notes
+from an added folder count when their transcript has speaker names. Names match as written in your notes; pick the full
+name when two people share a first name.</p>
+<h3 id="ask-about-what-nick-said">Ask about what Nick said<a class="anchor" href="#ask-about-what-nick-said" aria-label="Link to Ask about what Nick said">#</a></h3>
+<p>The one place a model comes in, and only when you press it. <strong>Ask about what Nick said</strong> opens a question box. Your
+question goes to the <strong>Ask: Quick</strong> model with only these lines, after the range and <strong>Containing</strong>: no summaries, no other
+speakers. A long list is cut to the lines that matter most to the question and fit your model&#39;s request, and the line under
+the answer says how many were sent (&quot;Sent 120 of 412 lines Nick said, from 23 meetings.&quot;) and what it cost. Citations open
+the exact moment. Without a language model set up, everything above still works; only this button needs one.</p>
 <h2 id="keys-in-the-ask-box">Keys in the Ask box<a class="anchor" href="#keys-in-the-ask-box" aria-label="Link to Keys in the Ask box">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead><tbody>
 <tr><td><kbd>Enter</kbd></td><td>Asks in the selected mode.</td></tr>
@@ -398,7 +435,7 @@ more room for <strong>Ask: Deep</strong>.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/search-and-ask/"><span class="docs-step-l">Previous</span><span>Search and Ask</span></a><a class="docs-step next" href="/docs/connector/"><span class="docs-step-l">Next</span><span>Connector for AI apps (MCP)</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-ask-page">The Ask page</a></li><li class="d3"><a href="#start-with-an-example">Start with an example</a></li><li class="d3"><a href="#limit-the-question">Limit the question</a></li><li class="d2"><a href="#quick-and-deep">Quick and Deep</a></li><li class="d3"><a href="#what-deep-does">What Deep does</a></li><li class="d3"><a href="#what-ask-reads-passages-or-whole-meetings">What Ask reads: passages, or whole meetings</a></li><li class="d3"><a href="#choose-the-deep-model">Choose the Deep model</a></li><li class="d2"><a href="#the-template-menu">The Template menu</a></li><li class="d3"><a href="#answer-templates">Answer templates</a></li><li class="d3"><a href="#edit-the-templates">Edit the templates</a></li><li class="d2"><a href="#plain-language-times-and-people">Plain-language times and people</a></li><li class="d3"><a href="#times">Times</a></li><li class="d3"><a href="#people">People</a></li><li class="d3"><a href="#when-nothing-matches">When nothing matches</a></li><li class="d2"><a href="#keys-in-the-ask-box">Keys in the Ask box</a></li><li class="d2"><a href="#recent-questions-and-follow-ups">Recent questions and follow-ups</a></li><li class="d3"><a href="#recent-questions">Recent questions</a></li><li class="d3"><a href="#ask-a-follow-up">Ask a follow-up</a></li><li class="d2"><a href="#from-ctrl-k">From Ctrl+K</a></li><li class="d2"><a href="#what-ask-sends-and-where-it-goes">What Ask sends and where it goes</a></li><li class="d2"><a href="#when-there-is-no-answer">When there is no answer</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-ask-page">The Ask page</a></li><li class="d3"><a href="#start-with-an-example">Start with an example</a></li><li class="d3"><a href="#limit-the-question">Limit the question</a></li><li class="d2"><a href="#quick-and-deep">Quick and Deep</a></li><li class="d3"><a href="#what-deep-does">What Deep does</a></li><li class="d3"><a href="#what-ask-reads-passages-or-whole-meetings">What Ask reads: passages, or whole meetings</a></li><li class="d3"><a href="#choose-the-deep-model">Choose the Deep model</a></li><li class="d2"><a href="#the-template-menu">The Template menu</a></li><li class="d3"><a href="#answer-templates">Answer templates</a></li><li class="d3"><a href="#edit-the-templates">Edit the templates</a></li><li class="d2"><a href="#plain-language-times-and-people">Plain-language times and people</a></li><li class="d3"><a href="#times">Times</a></li><li class="d3"><a href="#people">People</a></li><li class="d3"><a href="#when-nothing-matches">When nothing matches</a></li><li class="d2"><a href="#everything-someone-said">Everything someone said</a></li><li class="d3"><a href="#ask-about-what-nick-said">Ask about what Nick said</a></li><li class="d2"><a href="#keys-in-the-ask-box">Keys in the Ask box</a></li><li class="d2"><a href="#recent-questions-and-follow-ups">Recent questions and follow-ups</a></li><li class="d3"><a href="#recent-questions">Recent questions</a></li><li class="d3"><a href="#ask-a-follow-up">Ask a follow-up</a></li><li class="d2"><a href="#from-ctrl-k">From Ctrl+K</a></li><li class="d2"><a href="#what-ask-sends-and-where-it-goes">What Ask sends and where it goes</a></li><li class="d2"><a href="#when-there-is-no-answer">When there is no answer</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -413,7 +450,7 @@ more room for <strong>Ask: Deep</strong>.</li>
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.6</a>
+        <a class="sf-ver" href="/changelog/">v1.0.8</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
