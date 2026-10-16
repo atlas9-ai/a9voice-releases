@@ -1,13 +1,13 @@
 {
-  "version": "1.0.6",
-  "notes": "- **The Meeting notes engine list now says truthfully what each engine does during the call.** Under each name one chip reads **Live: speakers named during the call** (Deepgram, AssemblyAI), **Live: delayed · speakers named during the call** (a model on this PC), **Live transcript · speakers after the call**, or **No live transcript**, and the **Identifies speakers** badges line up in one column. The chips come from the same facts the Live window uses, so they can't drift from what it does. AssemblyAI no longer says its speakers come only after the call. See [Models](/docs/models/).",
-  "pub_date": "2026-10-15T21:54:49Z",
+  "version": "1.0.7",
+  "notes": "- **Ask reads a meeting whole when a question lands on three meetings or fewer.** Deep used to send the same handful of passages from one meeting (6) that Quick sent (10); it now sends the summary and the full transcript, with the time and speaker on every line so citations still open the exact moment, and a meeting too long for your model's request is cut to its summary and the parts that matter most. The line under the answer says what was read (\"Read the full transcript of 1 meeting (Oct 14).\"). See [Asking your notes](/docs/asking-your-notes/).\n- **A follow-up stays on the same meetings, in the same mode.** It starts on the mode of the question it follows (a Deep answer's follow-up is Deep, and the control beside it can be changed) and reads only the meetings the answer cited, shown as a **From the 2 meetings above** chip; remove it to ask over everything.\n- **Notes get tags without a click, so Ask's tag filter has tags.** With **AI auto-tag** on, a new tag the AI suggests is added to the note (with an **×** to remove it) when it fits; the dashed suggestion chip is gone, and suggestions already waiting on your notes were applied once. **Any tag** says **No tags yet** until a note has one.\n- **The person list in Ask reaches the last name.** **Anyone** (and the other name pickers) stopped after 50 names, about the letter J, unless you typed.",
+  "pub_date": "2026-10-16T02:27:45Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEMwTE4zbGtwRmw4TU5tVG96NjhSaitXVUJ0OWVkaDBEWHlSOUJTcEd4ajRPazN6UkM2VGt5dTJQZEhSd2RaWHFjR1RXYTdkay9YR1BMTW15TkdSb3dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTAxMjMzCWZpbGU6QTkgVm9pY2VfMS4wLjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC42CjNjTnJuanU2UTJjNTlKc1U1TVFpUEJpN0NjMVAycHRtSk5CTGx0dDVqWjhINUVyNVREcnF3YVprMVRQRjBTaGRBOHZlaGtrTVhuK3o1U2J6cXVFYkJnPT0K",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.6/A9Voice_1.0.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBEcjBNUkU2SDluTmgvV1FHVHh5Z0lzTG9nUHAwbVRyUnBtQXlpSHVhR2M1ZGovN2VpZ3hqZk9WNlN1YVJhYks2Znp2MWxqazJmMHZ1Rm84Q05lYlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTE3NjE0CWZpbGU6QTkgVm9pY2VfMS4wLjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC43CnhwMzJNaTMxM1BscHNsSUJJanpDdDlLZUNCTFlWZUFiV2xLT054WEdYMC9RYjhiNmViNTJ1K0t4UEl4c3VPVTV0V2lpZkRPVUZuanlYRTNXQW9ISERnPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.7/A9Voice_1.0.7_x64-setup.exe"
     }
   },
-  "installer_sha256": "358c43073007aad04a8d83aba6436b4c90f9a720c502b2bcd8e9d194336acca7",
-  "installer_size": 12061548
+  "installer_sha256": "c4446011e3e3c793a83f50ef3a68801552b6f3d3aa35d571b039d35bb8dd5167",
+  "installer_size": 12084957
 }
