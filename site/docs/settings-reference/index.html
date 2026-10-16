@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.1"
+      "softwareVersion": "1.0.6"
     }
   ]
 }
@@ -335,7 +335,7 @@
 <li id="opt-summary-model"><strong>Summary model:</strong> the language model that writes the summary, title and tags, and answers Ask. <strong>Automatic</strong> is the default. If it hits a rate limit or takes too long, the next set-up model answers.</li>
 <li id="opt-long-meetings"><strong>Long meetings:</strong> what happens when a meeting is too long for the Summary model&#39;s limit. <strong>Chunk on the same model</strong> (the default) writes it in parts on that model; <strong>Use fallback model</strong> gives it whole to a set-up model that takes it in one request, when there is one. See <a href="/docs/language-models/#long-meetings">Long meetings</a>.</li>
 <li id="opt-summary-template"><strong>Summary template:</strong> the sections and rules used unless a note picks another. Default <strong>Meeting Notes</strong>. Edit them in Templates.</li>
-<li id="opt-ai-auto-tag"><strong>AI auto-tag:</strong> after the summary, adds up to 3 of your existing tags that clearly fit. A new tag is only ever suggested. On for a new install.</li>
+<li id="opt-ai-auto-tag"><strong>AI auto-tag:</strong> after the summary, adds up to 3 tags: your existing ones that clearly fit, and one new tag when none does. New tags show on the note like any other and can be removed. On for a new install.</li>
 <li id="opt-tags"><strong>Tags:</strong> the list of your tags, with how many notes use each. <strong>Rename or merge</strong> (type an existing tag&#39;s name to merge two) and <strong>Delete</strong> change every note&#39;s files.</li>
 </ul>
 <p>Details: <a href="/docs/note-page/">Note page</a> and <a href="/docs/templates-and-export/">Templates and export</a>.</p>
@@ -439,7 +439,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.1</a>
+        <a class="sf-ver" href="/changelog/">v1.0.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

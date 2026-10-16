@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.1"
+      "softwareVersion": "1.0.6"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Models</h1>
       <p class="docs-lead">One page for every model A9 Voice uses, organized by job: dictation, meeting notes, summaries, Ask and Enhance.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.2</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.6</p>
       <p>People think in jobs, not in engines. <strong>Settings › Models</strong> starts with what each job uses and a <strong>Change</strong> button for each, and keeps the keys and downloads underneath.</p>
 <p><figure class="shot"><img src="/img/docs/models-jobs-1x.webp" srcset="/img/docs/models-jobs-1x.webp 1x, /img/docs/models-jobs.webp 2x" width="806" height="803" alt="Settings, Models: a row per job, each with its model and a blue Change button." loading="lazy" decoding="async"><figcaption>What each job uses. Change opens the right list.</figcaption></figure></p>
 <h2 id="what-each-job-uses">What each job uses<a class="anchor" href="#what-each-job-uses" aria-label="Link to What each job uses">#</a></h2>
@@ -152,7 +152,7 @@
 <p>The three chips at the top of every window, <strong>Dictation</strong>, <strong>Meeting notes</strong> and <strong>AI</strong>, show the same choices. Click one to switch, or use <strong>Settings…</strong> to open this page.</p>
 <h2 id="free-setup">Free setup<a class="anchor" href="#free-setup" aria-label="Link to Free setup">#</a></h2>
 <p>A9 Voice starts new installs on Parakeet (on this PC) for Dictation and Meeting notes and on Groq&#39;s free tier for Summaries, Ask and Enhance. If you were here before that, or skipped setup, a card at the top of this page says <strong>Free setup available</strong> once. It shows what each job uses now and what it would use, keeps every job you picked yourself, and <strong>Apply what is ready</strong> changes the rest. Jobs that need the Parakeet download or a free Groq key say so on their line. <strong>Not now</strong> closes the card for good. See <a href="/docs/getting-started/#free-setup">Getting started</a>.</p>
-<p>While Meeting notes run on a model on this PC, the row says so quietly: <strong>Running on this PC: free, but slower and less accurate at telling callers apart. Deepgram or ElevenLabs are faster.</strong> <strong>Upgrade</strong> opens the engine list with only the cloud engines that identify speakers; with no Deepgram or ElevenLabs key yet it takes you to the keys. In that list each engine has a short hint: <strong>Live: instant</strong> (Deepgram), <strong>Live: delayed on most PCs</strong> (a model on this PC), <strong>No live transcript</strong> (the others; ElevenLabs transcribes quickly after the call).</p>
+<p>While Meeting notes run on a model on this PC, the row says so quietly: <strong>Running on this PC: free, but slower and less accurate at telling callers apart. Deepgram or ElevenLabs are faster.</strong> <strong>Upgrade</strong> opens the engine list with only the cloud engines that identify speakers; with no Deepgram or ElevenLabs key yet it takes you to the keys. In that list each engine has a live-status chip (see below).</p>
 <h2 id="change-a-jobs-model">Change a job&#39;s model<a class="anchor" href="#change-a-jobs-model" aria-label="Link to Change a job's model">#</a></h2>
 <ol>
 <li>Open <strong>Settings › Models</strong> and click <strong>Change</strong> on the job.</li>
@@ -166,7 +166,15 @@
 <p><figure class="shot"><img src="/img/docs/models-warning-1x.webp" srcset="/img/docs/models-warning-1x.webp 1x, /img/docs/models-warning.webp 2x" width="796" height="232" alt="The Meeting notes row with an amber border, the warning and a Fix this button." loading="lazy" decoding="async"><figcaption>Fix this opens the engines that identify speakers.</figcaption></figure></p>
 <ul>
 <li><strong>Fix this</strong> opens the list with only the engines that identify speakers. <strong>Only engines that identify speakers</strong> can be unticked to see the rest.</li>
-<li>In the list, engines that identify speakers come first with an <strong>Identifies speakers</strong> badge. The others say <strong>One speaker for everyone else</strong>.</li>
+<li>In the list, engines that identify speakers come first with an <strong>Identifies speakers</strong> badge, in one column on the right. The others say <strong>One speaker for everyone else</strong>.</li>
+<li>Under each name is one chip that says what the engine does during the call, the same facts the <a href="/docs/live-window/">Live window</a> acts on:<ul>
+<li>green <strong>Live: speakers named during the call</strong>: it writes the live transcript and labels the other people live, so you can tag them and ask about them while the call goes on (Deepgram, AssemblyAI);</li>
+<li>yellow <strong>Live: delayed · speakers named during the call</strong>: a model on this PC, behind the call on most PCs, with speakers guessed from their voices as they talk;</li>
+<li>yellow <strong>Live transcript · speakers after the call</strong>: live text, with the people told apart only in the finished note;</li>
+<li>grey <strong>No live transcript</strong>: the engine works after the call (ElevenLabs, Groq, OpenAI, servers you added). With a model on this PC installed, the Live window can still show a live transcript from it.
+After the chip, a short note in grey, such as <strong>Fast after the call</strong>.</li>
+</ul>
+</li>
 <li>Choosing one of those asks <strong>Use it anyway?</strong> once. That is fine when you only record calls with one other person.</li>
 <li>When the engine can do it but <strong>Identify speakers</strong> is off, the row says so and <strong>Turn on</strong> switches it on.</li>
 </ul>
@@ -219,7 +227,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.1</a>
+        <a class="sf-ver" href="/changelog/">v1.0.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

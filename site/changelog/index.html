@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.1"
+      "softwareVersion": "1.0.6"
     }
   ]
 }
@@ -111,7 +111,23 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-4">
+  <section class="log-entry" aria-labelledby="v-1-0-7">
+  <h2 id="v-1-0-7">1.0.7 <time datetime="2026-10-15">October 15, 2026</time></h2>
+  <ul><li><strong>Ask reads a meeting whole when a question lands on three meetings or fewer.</strong> Deep used to send the same handful of passages from one meeting (6) that Quick sent (10); it now sends the summary and the full transcript, with the time and speaker on every line so citations still open the exact moment, and a meeting too long for your model&#39;s request is cut to its summary and the parts that matter most. The line under the answer says what was read (&quot;Read the full transcript of 1 meeting (Oct 14).&quot;). See <a href="/docs/asking-your-notes/">Asking your notes</a>.</li>
+<li><strong>A follow-up stays on the same meetings, in the same mode.</strong> It starts on the mode of the question it follows (a Deep answer&#39;s follow-up is Deep, and the control beside it can be changed) and reads only the meetings the answer cited, shown as a <strong>From the 2 meetings above</strong> chip; remove it to ask over everything.</li>
+<li><strong>Notes get tags without a click, so Ask&#39;s tag filter has tags.</strong> With <strong>AI auto-tag</strong> on, a new tag the AI suggests is added to the note (with an <strong>×</strong> to remove it) when it fits; the dashed suggestion chip is gone, and suggestions already waiting on your notes were applied once. <strong>Any tag</strong> says <strong>No tags yet</strong> until a note has one.</li>
+<li><strong>The person list in Ask reaches the last name.</strong> <strong>Anyone</strong> (and the other name pickers) stopped after 50 names, about the letter J, unless you typed.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-6">
+  <h2 id="v-1-0-6">1.0.6 <time datetime="2026-10-15">October 15, 2026</time></h2>
+  <ul><li><strong>The Meeting notes engine list now says truthfully what each engine does during the call.</strong> Under each name one chip reads <strong>Live: speakers named during the call</strong> (Deepgram, AssemblyAI), <strong>Live: delayed · speakers named during the call</strong> (a model on this PC), <strong>Live transcript · speakers after the call</strong>, or <strong>No live transcript</strong>, and the <strong>Identifies speakers</strong> badges line up in one column. The chips come from the same facts the Live window uses, so they can&#39;t drift from what it does. AssemblyAI no longer says its speakers come only after the call. See <a href="/docs/models/">Models</a>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-5">
+  <h2 id="v-1-0-5">1.0.5 <time datetime="2026-10-15">October 15, 2026</time></h2>
+  <ul><li><strong>With AssemblyAI, the Live window now tells the other people on a call apart.</strong> Each person is their own speaker to tag, <strong>Now:</strong> shows who is talking, and the names carry into the finished note, as with Deepgram. It costs $0.12 an hour more, for the other people&#39;s side only, and the cost line and <strong>Usage &amp; cost</strong> include it (and $0.04 an hour for key terms, which the live stream was already sending).</li>
+<li><strong>A live service that can&#39;t tell speakers apart no longer renames everyone.</strong> A name you give covers the line being spoken and what follows until a pause, and the window says &quot;This service can&#39;t tell the other speakers apart live. Your notes will.&quot;</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-4">
   <h2 id="v-1-0-4">1.0.4 <time datetime="2026-10-15">October 15, 2026</time></h2>
   <ul><li><strong>A9 Voice now uses its own name for its program file, data folder and log.</strong> Your settings, notes and keys move over automatically the first time this version starts: nothing to do, and the windows come up as before. The log is now <code>a9voice.log</code> in the folder <strong>Settings › General › Open logs folder</strong> opens, and the program file is <code>a9voice.exe</code>.</li>
 <li><strong>Nothing is deleted, and going back works.</strong> The earlier data and keys are left where they were, so the previous version still runs with its own data. If the move can&#39;t finish, one notice says so and A9 Voice tries again on its next start. See <a href="/docs/troubleshooting/">Troubleshooting</a>.</li>
@@ -528,7 +544,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.1</a>
+        <a class="sf-ver" href="/changelog/">v1.0.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

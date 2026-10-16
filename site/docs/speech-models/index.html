@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.1"
+      "softwareVersion": "1.0.6"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.3</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.5</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="385" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -189,9 +189,9 @@
 <p>Models, under <strong>Model</strong>: <strong>Universal-3.5 Pro</strong> (the default, the most accurate) and <strong>Universal-2</strong> (cheaper, 99 languages). <strong>Test</strong> sends the 2-second test clip and shows what it heard and how long it took; a key that is wrong, an account with no credit left, or a model your plan doesn&#39;t have is said in plain words.</p>
 <ul>
 <li><strong>Meeting notes.</strong> The two sides are sent separately after the call, and the other people&#39;s side has speaker labels switched on, so the people on the call show as Speaker 2, 3 and so on and are named like they are with Deepgram. A &quot;speaker&quot; who says only a few words in the whole call is folded into the person next to them, so a stray label doesn&#39;t turn into someone to name.</li>
-<li><strong>The live transcript.</strong> When AssemblyAI writes your notes, the Live window streams to AssemblyAI&#39;s Universal-Streaming on the same key, only while the window is open (plus a minute), and says what it costs: about $0.30 an hour for both sides. Nothing goes to a second provider. The live lines have no speaker labels (AssemblyAI bills those on top); the finished note has them.</li>
+<li><strong>The live transcript.</strong> When AssemblyAI writes your notes, the Live window streams to AssemblyAI&#39;s Universal-Streaming on the same key, only while the window is open (plus a minute), and says what it costs: about $0.42 an hour for both sides with speaker labels, $0.50 when your Dictionary has words. Nothing goes to a second provider. The other people&#39;s side has speaker labels live, so <strong>Who&#39;s this?</strong>, <strong>Now:</strong> and the names carried into the finished note work as they do with Deepgram; your own side doesn&#39;t ask for them.</li>
 <li><strong>Your Dictionary.</strong> The words in your <a href="/docs/dictionary/">Dictionary</a> are sent as key terms (up to 100 live, up to 1,000 after the call; a phrase can be six words). On Universal-3.5 Pro, AssemblyAI charges extra for key terms; Universal-2 includes them.</li>
-<li><strong>Cost.</strong> Universal-3.5 Pro is $0.21 an hour and Universal-2 $0.15, plus $0.02 an hour for speaker labels. In <strong>Usage &amp; cost</strong> each combination is its own row under <strong>Prices</strong>, and the live stream is billed by how long it stays connected.</li>
+<li><strong>Cost.</strong> After the call, Universal-3.5 Pro is $0.21 an hour and Universal-2 $0.15, plus $0.02 an hour for speaker labels. Live, Universal-Streaming is $0.15 an hour, plus $0.12 for speaker labels (the other people&#39;s side only) and $0.04 for key terms. In <strong>Usage &amp; cost</strong> each combination is its own row under <strong>Prices</strong>, and the live stream is billed by how long it stays connected.</li>
 <li><strong>Dictation.</strong> It works for dictation too, but it is an upload-and-wait service, so a few seconds slower than Groq or Deepgram.</li>
 </ul>
 <p>A9 Voice asks AssemblyAI to delete each transcript right after it has read it. AssemblyAI&#39;s own terms say it may use what you send to train its models unless a paid account opts out under <strong>Data Controls</strong> in its dashboard, so the window and the tile say so in one line.</p>
@@ -375,7 +375,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.1</a>
+        <a class="sf-ver" href="/changelog/">v1.0.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

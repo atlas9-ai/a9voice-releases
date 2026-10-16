@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.1"
+      "softwareVersion": "1.0.6"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Asking your notes</h1>
       <p class="docs-lead">Ask a question in plain words across every meeting you have recorded and get an answer that links to the exact moment. Use Quick for a short answer and Deep to find every meeting a topic came up in.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.7</p>
       <p><strong>Ask</strong> answers a question from your notes. A9 Voice searches everything on your PC, picks the passages that matter,
 and writes an answer in which every fact links to the moment it was said. Answers come only from your notes (and your
 dictations, if you search them), and when the notes don&#39;t cover the question, it says so.</p>
@@ -173,6 +173,9 @@ after it.</p>
 you press <strong>Ask</strong> to answer only from that slice, for example only notes tagged vendor, or only meetings where
 Marcus spoke. <strong>Any meeting</strong> lists <strong>Same meeting:</strong> names, and appears once you have meetings with the same name on
 different days, such as a weekly stand-up.</p>
+<p><strong>Any tag</strong> lists the tags your notes have, including the ones the AI added after each summary (see
+<a href="/docs/note-page/#tags">The note page</a>). Until a note has a tag it says <strong>No tags yet</strong>. <strong>Anyone</strong> lists every person
+your notes know, in alphabetical order, all the way to the last name; type to narrow it.</p>
 <p>Dates and names you write in the question itself work too: see
 <a href="#plain-language-times-and-people">Plain-language times and people</a>.</p>
 <h2 id="quick-and-deep">Quick and Deep<a class="anchor" href="#quick-and-deep" aria-label="Link to Quick and Deep">#</a></h2>
@@ -184,10 +187,11 @@ answered.</p>
 <li><strong>Template</strong> answers in a set shape, such as a briefing or who owes what (see <a href="#the-template-menu">The Template menu</a>).</li>
 </ul>
 <p><strong>Deep</strong> and a template apply to <strong>that one question only</strong>. After the answer, the control goes back to <strong>Quick</strong>. If you
-would rather start on Deep, change <strong>Default answer</strong> in <strong>Settings › Notes › Search</strong>.</p>
+would rather start on Deep, change <strong>Default answer</strong> in <strong>Settings › Notes › Search</strong>. (A follow-up keeps the mode of
+the question it follows; see <a href="#ask-a-follow-up">Ask a follow-up</a>.)</p>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col"></th><th scope="col">Quick</th><th scope="col">Deep</th></tr></thead><tbody>
 <tr><td>What you get</td><td>A short answer in a few sentences.</td><td>A direct answer, then each item with every dated meeting it came up in, then what was searched.</td></tr>
-<tr><td>Reads</td><td>about 10 passages</td><td>up to 120 passages, up to about 60,000 tokens</td></tr>
+<tr><td>Reads</td><td>about 10 passages</td><td>up to 120 passages, up to about 60,000 tokens; when it lands on three meetings or fewer, those meetings in full</td></tr>
 <tr><td>Searches</td><td>the words of your question</td><td>your question 3 to 5 ways</td></tr>
 <tr><td>Good for</td><td>&quot;When was the last QBR?&quot;</td><td>&quot;Every time we discussed the budget&quot;, &quot;How many times did we talk about certificate management?&quot;</td></tr>
 </tbody></table></div>
@@ -210,6 +214,21 @@ dated list of the meetings. The last line says what was covered, and the same li
 </blockquote>
 <p><figure class="shot"><img src="/img/docs/asking-your-notes-deep-1x.webp" srcset="/img/docs/asking-your-notes-deep-1x.webp 1x, /img/docs/asking-your-notes-deep.webp 2x" width="746" height="457" alt="A Deep answer: a direct answer, three items each with dated meetings and citations, the coverage line, and the footer Deep, Answered by, 96 passages sent, 7 meetings, about $0.01." loading="lazy" decoding="async"><figcaption>A Deep answer. The coverage line says what was searched.</figcaption></figure></p>
 <p>If the notes don&#39;t settle the question, Deep says what is missing instead of padding the answer.</p>
+<h3 id="what-ask-reads-passages-or-whole-meetings">What Ask reads: passages, or whole meetings<a class="anchor" href="#what-ask-reads-passages-or-whole-meetings" aria-label="Link to What Ask reads: passages, or whole meetings">#</a></h3>
+<p>Ask never sends your whole library to the model. It sends what it picked, and the footer says how many passages.</p>
+<ul>
+<li><strong>Quick</strong> sends the best passages, each with the two lines before and after it, and a one-line overview of its
+meeting.</li>
+<li><strong>Deep</strong> sends the best few passages of every meeting that matched (up to 6 from one meeting), so a question that
+came up in twelve meetings reads all twelve.</li>
+<li><strong>When Deep (or a wide template) lands on three meetings or fewer, it reads those meetings whole</strong>: the summary and
+the full transcript of each, with the time and the speaker on every line, so a citation still opens the exact
+moment. If a meeting is too long for your model&#39;s request, which happens on Groq&#39;s free tier, it reads the summary
+and the parts of the transcript that matter most to your question, and gives each meeting an even share.</li>
+</ul>
+<p>The line under the answer says which it was: &quot;Read the full transcript of 1 meeting (Oct 14).&quot;, &quot;Read 2 meetings in
+full and the best parts of 1.&quot; or &quot;Read the best parts of 1 meeting (Oct 14).&quot; With four meetings or more, Deep
+works as before.</p>
 <p>Deep takes longer than Quick (the app says up to a minute while it works) and costs more, &quot;a few cents at most&quot;. Hover
 over <strong>Deep</strong> to see an estimate for your model, such as &quot;Deep · about 2¢ with Claude Haiku 5.5&quot;. The footer under each
 answer says what that answer cost.</p>
@@ -324,6 +343,16 @@ never sent anywhere. They also include questions you ask from <kbd>Ctrl</kbd>+<k
 <p>Under an answer, <strong>Ask a follow-up</strong> opens a second box. Type a question about the answer and press <kbd>Enter</kbd>.
 The question and answer above go along as context, and the same filters apply. The follow-up&#39;s answer appears under the
 first, labeled <strong>Follow-up</strong>.</p>
+<p>A follow-up stays on the same meetings, in the same mode:</p>
+<ul>
+<li><strong>Same mode.</strong> The mode control beside the follow-up box starts on the mode of the question it follows, so a follow-up
+to a Deep answer is a Deep follow-up. Change it before you ask if you want another. The main box still goes back to
+<strong>Quick</strong> (or your default) after an answer.</li>
+<li><strong>Same meetings.</strong> The follow-up reads only the meetings the answer above cited, shown as a chip, <strong>From the 2
+meetings above</strong>. With three or fewer it reads them whole, in Quick too, so &quot;what did Marcus say about the deadline?&quot;
+is answered from the full meeting, not a few lines of it.</li>
+<li><strong>Click the chip&#39;s ✕</strong> to ask the follow-up again over all your notes.</li>
+</ul>
 <p>There is one follow-up, not a chat. To go further, start a new question; the one you just asked is in Recent questions.</p>
 <h2 id="from-ctrl-k">From Ctrl+K<a class="anchor" href="#from-ctrl-k" aria-label="Link to From Ctrl+K">#</a></h2>
 <p>Press <kbd>Ctrl</kbd>+<kbd>K</kbd> anywhere in the A9 Voice window and open the <strong>Ask your notes</strong> tab to ask without
@@ -369,7 +398,7 @@ more room for <strong>Ask: Deep</strong>.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/search-and-ask/"><span class="docs-step-l">Previous</span><span>Search and Ask</span></a><a class="docs-step next" href="/docs/connector/"><span class="docs-step-l">Next</span><span>Connector for AI apps (MCP)</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-ask-page">The Ask page</a></li><li class="d3"><a href="#start-with-an-example">Start with an example</a></li><li class="d3"><a href="#limit-the-question">Limit the question</a></li><li class="d2"><a href="#quick-and-deep">Quick and Deep</a></li><li class="d3"><a href="#what-deep-does">What Deep does</a></li><li class="d3"><a href="#choose-the-deep-model">Choose the Deep model</a></li><li class="d2"><a href="#the-template-menu">The Template menu</a></li><li class="d3"><a href="#answer-templates">Answer templates</a></li><li class="d3"><a href="#edit-the-templates">Edit the templates</a></li><li class="d2"><a href="#plain-language-times-and-people">Plain-language times and people</a></li><li class="d3"><a href="#times">Times</a></li><li class="d3"><a href="#people">People</a></li><li class="d3"><a href="#when-nothing-matches">When nothing matches</a></li><li class="d2"><a href="#keys-in-the-ask-box">Keys in the Ask box</a></li><li class="d2"><a href="#recent-questions-and-follow-ups">Recent questions and follow-ups</a></li><li class="d3"><a href="#recent-questions">Recent questions</a></li><li class="d3"><a href="#ask-a-follow-up">Ask a follow-up</a></li><li class="d2"><a href="#from-ctrl-k">From Ctrl+K</a></li><li class="d2"><a href="#what-ask-sends-and-where-it-goes">What Ask sends and where it goes</a></li><li class="d2"><a href="#when-there-is-no-answer">When there is no answer</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-ask-page">The Ask page</a></li><li class="d3"><a href="#start-with-an-example">Start with an example</a></li><li class="d3"><a href="#limit-the-question">Limit the question</a></li><li class="d2"><a href="#quick-and-deep">Quick and Deep</a></li><li class="d3"><a href="#what-deep-does">What Deep does</a></li><li class="d3"><a href="#what-ask-reads-passages-or-whole-meetings">What Ask reads: passages, or whole meetings</a></li><li class="d3"><a href="#choose-the-deep-model">Choose the Deep model</a></li><li class="d2"><a href="#the-template-menu">The Template menu</a></li><li class="d3"><a href="#answer-templates">Answer templates</a></li><li class="d3"><a href="#edit-the-templates">Edit the templates</a></li><li class="d2"><a href="#plain-language-times-and-people">Plain-language times and people</a></li><li class="d3"><a href="#times">Times</a></li><li class="d3"><a href="#people">People</a></li><li class="d3"><a href="#when-nothing-matches">When nothing matches</a></li><li class="d2"><a href="#keys-in-the-ask-box">Keys in the Ask box</a></li><li class="d2"><a href="#recent-questions-and-follow-ups">Recent questions and follow-ups</a></li><li class="d3"><a href="#recent-questions">Recent questions</a></li><li class="d3"><a href="#ask-a-follow-up">Ask a follow-up</a></li><li class="d2"><a href="#from-ctrl-k">From Ctrl+K</a></li><li class="d2"><a href="#what-ask-sends-and-where-it-goes">What Ask sends and where it goes</a></li><li class="d2"><a href="#when-there-is-no-answer">When there is no answer</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -384,7 +413,7 @@ more room for <strong>Ask: Deep</strong>.</li>
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.1</a>
+        <a class="sf-ver" href="/changelog/">v1.0.6</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
