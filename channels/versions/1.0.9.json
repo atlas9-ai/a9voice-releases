@@ -1,0 +1,13 @@
+{
+  "version": "1.0.9",
+  "notes": "- **Search by meaning, on your PC.** Turn it on in **Settings › Search › Search by meaning** (a one-time download of about 24 MB, or 135 MB for a PC whose Windows is not in English) and Search, Quick and Deep answers and the connector find what you meant as well as the words you typed: ask about \"funding\" and the meeting that said \"the budget got approved\" comes up. Your notes are read once in the background at low priority (not while you record) and the numbers stay on this PC; nothing is sent anywhere. What you type word for word, like a name or a ticket number, still ranks first, and **Remove** goes back to words only. See [Search and Ask](/docs/search-and-ask/#search-by-meaning).",
+  "pub_date": "2026-10-16T12:36:10Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENCVDJNdzBobWxZdXptWUxWVHRTZnk2aUZFQ29OQU1MVDF0K0Z3a1RDQVNPNmFqYVJJaWFnYm9iUG02c0JIRmprNmZSeHF4dFVkRjFha0NxV0RtOUE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTU0MTI4CWZpbGU6QTkgVm9pY2VfMS4wLjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC45CmdFaFVCWFU0djc2Sk83WjdBRVc5WmlZSU8zMU9kWnl0QnEvWFo2MFk1MnZhblNZTHJiQzlVL3dOMkhveTQwbFhqSzBDeGxuU1B5ZGhQb2xGZVV4d0JBPT0K",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.9/A9Voice_1.0.9_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "a90581ae24f92d2c348c791ce916f9c53ec73e408f12bcaa8a7077780ee6edb1",
+  "installer_size": 12607139
+}
