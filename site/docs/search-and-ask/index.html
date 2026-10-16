@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Search and Ask</h1>
       <p class="docs-lead">Find anything you or anyone said in your notes with Ctrl+K, and add folders of older notes to search alongside the new ones. To ask a question and get an answer, see Asking your notes.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.1</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.9</p>
       <p><strong>Search</strong> finds words in your notes. <strong>Ask</strong> answers a question from them, on its own page (see
 <a href="/docs/asking-your-notes/">Asking your notes</a>). Both read one index that A9 Voice keeps on your PC, and both open the
 note at the moment you need.</p>
@@ -196,6 +196,28 @@ questions and a follow-up. Everything about it is on <a href="/docs/asking-your-
 <p><figure class="shot"><img src="/img/docs/ask-quick-1x.webp" srcset="/img/docs/ask-quick-1x.webp 1x, /img/docs/ask-quick.webp 2x" width="760" height="358" alt="The Ask your notes tab of the search window: a question, the Quick, Deep and Template control, a short answer with two blue citations, and Open in Ask at the bottom." loading="lazy" decoding="async"><figcaption>The Ask your notes tab. Open in Ask moves the answer to the Ask page.</figcaption></figure></p>
 <p>Questions asked here are in <strong>Recent questions</strong> on the Ask page too. Only the passages A9 Voice picked go to your
 language model; see <a href="/docs/asking-your-notes/#what-ask-sends-and-where-it-goes">What Ask sends and where it goes</a>.</p>
+<h2 id="search-by-meaning">Search by meaning<a class="anchor" href="#search-by-meaning" aria-label="Link to Search by meaning">#</a></h2>
+<p>Search finds the words you type. <strong>Search by meaning</strong> also finds what you meant: ask about &quot;funding&quot; and it finds the
+meeting that said &quot;finance signed off on the budget&quot;, ask about &quot;people who were let go&quot; and it finds &quot;we had to lay off
+six contractors&quot;. It works on your own PC and costs nothing to run.</p>
+<p>How it works, in plain words:</p>
+<ol>
+<li>You download a small model once (about 24 MB, or 135 MB for a PC whose Windows is not in English, which reads about
+100 languages). It is made by third parties under the MIT or Apache-2.0 license, A9 Voice checks every file against a
+fixed checksum, and a file that does not match is refused and deleted.</li>
+<li>In the background, at low priority, A9 Voice reads your notes once and writes a list of numbers for each stretch of
+conversation, summary paragraph, action item, typed note and image caption. Dictations are left out. It waits while you
+are recording or a note is being written up, and it picks up where it stopped after a restart.</li>
+<li>A question is turned into numbers the same way and compared with all of them, on your PC. The words result and the
+meaning result are merged, so a meeting that matches either way is found. What you type word for word still ranks
+first: a quoted phrase, a name or a ticket number (<strong>ENG-4417</strong>) is found by its words before anything else.</li>
+<li>It applies to <strong>Search</strong> (<kbd>Ctrl</kbd>+<kbd>K</kbd>), <strong>Quick</strong> and <strong>Deep</strong> in <a href="/docs/asking-your-notes/">Ask</a>, and
+the <a href="/docs/connector/">connector</a>&#39;s search. The footer of a result or answer says <strong>+ meaning</strong> when it was used.</li>
+</ol>
+<p>Nothing is sent anywhere for this: the model, the numbers and the comparing all stay on your PC. Turn it on in <strong>Settings ›
+Search › Search by meaning</strong>, where it also shows how far the reading of your notes has got (&quot;Search by meaning: 812 of
+1,240 notes ready&quot;). Search works the whole time: a note that is not done yet is found by its words. <strong>Remove</strong> deletes the
+model and the numbers, and search carries on by words, as it did before.</p>
 <h2 id="search-dictations-too">Search dictations too<a class="anchor" href="#search-dictations-too" aria-label="Link to Search dictations too">#</a></h2>
 <p>Search and Ask can include everything you have dictated. This is on to begin with. To leave dictations out, open
 <strong>Settings › General</strong> and switch off <strong>Search dictations too</strong>. The same switch decides whether connected AI apps (see
@@ -289,7 +311,7 @@ then try <strong>Read again now</strong>.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/templates-and-export/"><span class="docs-step-l">Previous</span><span>Templates and export</span></a><a class="docs-step next" href="/docs/asking-your-notes/"><span class="docs-step-l">Next</span><span>Asking your notes</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-gets-searched">What gets searched</a></li><li class="d2"><a href="#search">Search</a></li><li class="d3"><a href="#narrow-it-down">Narrow it down</a></li><li class="d2"><a href="#ask-your-notes">Ask your notes</a></li><li class="d2"><a href="#search-dictations-too">Search dictations too</a></li><li class="d2"><a href="#also-search-these-folders">Also search these folders</a></li><li class="d3"><a href="#the-first-run-hint">The first-run hint</a></li><li class="d3"><a href="#open-a-note-from-an-added-folder">Open a note from an added folder</a></li><li class="d3"><a href="#copy-a-whole-folder">Copy a whole folder</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-gets-searched">What gets searched</a></li><li class="d2"><a href="#search">Search</a></li><li class="d3"><a href="#narrow-it-down">Narrow it down</a></li><li class="d2"><a href="#ask-your-notes">Ask your notes</a></li><li class="d2"><a href="#search-by-meaning">Search by meaning</a></li><li class="d2"><a href="#search-dictations-too">Search dictations too</a></li><li class="d2"><a href="#also-search-these-folders">Also search these folders</a></li><li class="d3"><a href="#the-first-run-hint">The first-run hint</a></li><li class="d3"><a href="#open-a-note-from-an-added-folder">Open a note from an added folder</a></li><li class="d3"><a href="#copy-a-whole-folder">Copy a whole folder</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
