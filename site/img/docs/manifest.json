@@ -317,11 +317,11 @@
  },
  "note-page-list-filter": {
   "w": 936,
-  "h": 362
+  "h": 430
  },
  "note-page-list": {
   "w": 936,
-  "h": 891
+  "h": 975
  },
  "note-page-menu": {
   "w": 316,
@@ -890,5 +890,9 @@
  "usage-savings": {
   "w": 806,
   "h": 1889
+ },
+ "note-page-list-weeks": {
+  "w": 936,
+  "h": 889
  }
 }
