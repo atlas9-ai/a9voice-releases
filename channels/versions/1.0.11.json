@@ -1,0 +1,13 @@
+{
+  "version": "1.0.11",
+  "notes": "- **Updates no longer leave A9 Voice closed if Windows or security software interrupts them.** A9 Voice used to end itself two seconds after handing over to the installer, even when Windows had not started the installer yet (it can take a while when security software looks at the new file); the installer then never ran and nothing was left open. Now A9 Voice ends only once the installer is running, a slow start only delays the update, and the installer starts the copy you already had if it cannot finish. See [Updates and channels](/docs/updates-and-channels/#if-an-update-is-interrupted).\n- **A backstop that starts A9 Voice again.** Right before it hands over to the installer, A9 Voice asks Windows to start it again two minutes later if it is not running: a one-time entry in your own Task Scheduler (no administrator rights, nothing run from a temporary folder). It removes the entry the next time it starts.\n- **An update that keeps failing stops after two tries in a day.** A9 Voice then shows \"The update didn't install. You can try again now or install it from the download page.\" with **Try again**, and tries by itself again tomorrow. Updates still never install while you are dictating or recording.\n- **The installer keeps its history.** `installer.log` in the logs folder now has a header line for every run (time, versions, how it was started) and a line for how it ended, and keeps about the last 200 KB. A9 Voice's log names what is still running if it ever has to end itself.",
+  "pub_date": "2026-10-16T16:31:02Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE8yV0lZUUlRbVh5OVNJYmt2V3p2LzlyODFQTlZ2YjRnSDNqMWhoVmtGZlpSc0VJWlBsL2Z4dTZMeWRxVjhXNnNzbFlaZ3FHczFTdmxtYndGWVFJTWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTY4MjAyCWZpbGU6QTkgVm9pY2VfMS4wLjExX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTEKUzR2cDJoaXEwc3VxWTBuWGVnc1Y5bEFUWU1WQ3hHdGlwaHY4RDlLME9lQ09PMnNGS1dxNjROUjBFdnBXWWZvTnhBWS9ERmlXaW1hZ1BhTk9YWUNOQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.11/A9Voice_1.0.11_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "73cce1331a0bc716ede577ca5b420377cc3f148529b8dd76d66f1d8cb1ae89cb",
+  "installer_size": 12653634
+}
