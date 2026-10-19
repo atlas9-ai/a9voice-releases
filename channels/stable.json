@@ -1,13 +1,13 @@
 {
-  "version": "1.0.12",
-  "notes": "- **Savings tells the truth about the AI model you use.** The AI card prices the last 30 days' summaries and Ask on the model you use **today** instead of counting money spent on models you have since left, only suggests a model of the same quality tier or better (never a weaker one), and says **Could save** only for at least $1 a month, so cents no longer count as an idea on the tab or in the headline. A suggestion names the model (**Switch to GPT-4.1 mini to save $1.40/mo**) with a **Switch** button that changes only the **AI** chip. The three cards now run Dictation, Meeting notes, AI, the same names and order as the chips, and Claude Haiku 5.5's higher price for prompts over 100,000 tokens is in the price table. See [Usage & cost](/docs/usage-and-cost/).\n- **Compare on a meeting now says what it compares against.** The window names the engine that wrote the meeting you picked (**Compared against: AssemblyAI Universal-3.5 Pro**, or **your existing transcript** for an older note that didn't keep it), and the result's left column carries the same name. The provider list used to leave out the engine in use now, which hid the very engine a meeting written on another one (a Parakeet note, after you switched to AssemblyAI) should be compared with; it now leaves out the one that wrote that meeting. See [Usage & cost](/docs/usage-and-cost/).",
-  "pub_date": "2026-10-16T20:09:25Z",
+  "version": "1.0.14",
+  "notes": "- **Minimize can no longer lose a recording.** The bar and the Live feed now go to a mini pill that is always on top and never leaves the screen: a pulsing red dot and the time (an amber pause mark when paused), lower left of the screen above the taskbar to begin with, draggable and remembered. Hover it or click it and the bar comes back where it was, with the feed as you left it. The tray click and the show / hide key switch between the bar and the pill instead of hiding everything, and A9 Voice checks the pill against Windows once a second and puts it back if it is ever hidden, minimized or off screen. See [Recording a meeting](/docs/recording-a-meeting/).\n- **Every stop asks first.** The Stop in the Live window used to end the recording and start the notes at once. Now it, the sidebar and note page Stop, the tray's **Stop recording** and the record key all bring the bar back and ask **Stop recording?** with **Stop**, **Stop & discard…** and an **x**; nothing stops until you answer.",
+  "pub_date": "2026-10-19T20:49:35Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEtrMS9ZemF6dUhqWkVSSG1FNTNCdWVGSS9SWlhSODhsUXUwK0pUUnh2RlRIMzhrR2xRVVZUTlhmUnk2TldTTzlIRmd5aW5EbnlJNzNKbWh2SXpVWVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTgxMzA5CWZpbGU6QTkgVm9pY2VfMS4wLjEyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTIKOVNSZS9WeldlK0NLWUpGY0xyZWtJckkrYytJNVRDRkk0YjdEUVMxUlp1MUUrSnBORm53eWlZUHI4UHVIc3JTSXVmcnBMTDNLTDN6eHNCcHRDM3IzRGc9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.12/A9Voice_1.0.12_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpkemlGMUpRc2h2OGZZa0QwekFyYzFtOUdCVXdmRWRsYnVSTkcrczdsbWg5b3RQUGpzRnBqTjJkUDFjT0tFcThTWEVpaDRTenlXbEllcW5uYTZGRkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDQyOTI0CWZpbGU6QTkgVm9pY2VfMS4wLjE0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTQKeUs1S3FSaURpa3lPR0JMc1pqdDJtQmFhbGdkNDlTS2RmbWZjMUZ5WWVLWnN3RUNrU2tReTZVMjVuUFhIbFZxeFJOOUdPVDVvUDc1RzdJcHRBL25LRFE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.14/A9Voice_1.0.14_x64-setup.exe"
     }
   },
-  "installer_sha256": "401d9b52cc3afa9242e4b4ff09f828fbf62f5f80974a2ed2a70f643c30db395b",
-  "installer_size": 12657771
+  "installer_sha256": "5e36d0211d7a7a7d2f9c607b4f432539641258b6c953948c0a679d28abc50342",
+  "installer_size": 12669379
 }
