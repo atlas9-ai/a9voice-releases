@@ -212,11 +212,11 @@
   "h": 560
  },
  "live-window-bar-button-on": {
-  "w": 529,
+  "w": 437,
   "h": 96
  },
  "live-window-bar-button": {
-  "w": 529,
+  "w": 437,
   "h": 96
  },
  "live-window-change": {
@@ -257,14 +257,14 @@
  },
  "live-window-settings": {
   "w": 698,
-  "h": 314
+  "h": 346
  },
  "live-window-small": {
   "w": 380,
   "h": 480
  },
  "live-window-snip-toast": {
-  "w": 372,
+  "w": 425,
   "h": 160
  },
  "live-window-tagged": {
@@ -384,15 +384,15 @@
   "h": 1109
  },
  "recording-a-meeting-back": {
-  "w": 372,
+  "w": 425,
   "h": 211
  },
  "recording-a-meeting-bar-hover": {
-  "w": 529,
+  "w": 528,
   "h": 96
  },
  "recording-a-meeting-bar": {
-  "w": 284,
+  "w": 425,
   "h": 84
  },
  "recording-a-meeting-discard": {
@@ -400,7 +400,7 @@
   "h": 84
  },
  "recording-a-meeting-ended": {
-  "w": 372,
+  "w": 425,
   "h": 211
  },
  "recording-a-meeting-held-back": {
@@ -408,7 +408,7 @@
   "h": 111
  },
  "recording-a-meeting-mic-menu": {
-  "w": 517,
+  "w": 516,
   "h": 300
  },
  "recording-a-meeting-mini-pill": {
@@ -420,7 +420,7 @@
   "h": 600
  },
  "recording-a-meeting-notice": {
-  "w": 372,
+  "w": 425,
   "h": 227
  },
  "recording-a-meeting-other-app": {
@@ -428,7 +428,7 @@
   "h": 233
  },
  "recording-a-meeting-paused": {
-  "w": 284,
+  "w": 425,
   "h": 84
  },
  "recording-a-meeting-record-button": {
@@ -448,7 +448,7 @@
   "h": 884
  },
  "recording-a-meeting-still": {
-  "w": 372,
+  "w": 425,
   "h": 215
  },
  "recording-a-meeting-stop": {
