@@ -1,0 +1,13 @@
+{
+  "version": "1.0.13",
+  "notes": "- **The Live window now docks to the recording bar; Snip and Live are always one click away.** While a note records, the bar is the Live window's header: the feed hangs directly off it with no gap, lined up with the bar, and moves with it when you drag the bar or the feed's header, onto another screen too. It opens below the bar, or above it near the bottom of the screen, and never leaves the screen. **Snip** and a **Live feed** toggle (filled while the feed is open) are on the bar all the time. The chevron in the feed's lower right corner (**Hide live feed**) replaces the **x**, which could be read as ending the recording; it and the bar's button only hide the feed, and never stop or pause the recording. A9 Voice remembers whether you left the feed open, and its size, for the next meeting and the next start. See [Recording a meeting](/docs/recording-a-meeting/) and [Live window](/docs/live-window/).\n- **Hovering the bar now only adds the microphone and computer-audio pickers.** They appear to the right of the buttons, and neither the bar nor the feed under it moves.\n- **The tray icon says what is happening while the bar is minimized.** It shows the plain icon when idle, a red dot while recording and a pause mark while paused, and its tooltip reads **A9 Voice - Recording 12:34** or **A9 Voice - Paused 12:34**.",
+  "pub_date": "2026-10-19T18:18:35Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE5SMkRLTytuamVFa1l4MnJPYXhDMVJmWFJncEdYaDNrekxtbEhRQU54TVZQOFYzTHdCMXgydDh1eDJoQkFJNHZ0bkoxZEFRS0ZyU0k5ckVVWVpTRmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDMzODY0CWZpbGU6QTkgVm9pY2VfMS4wLjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTMKVU1hZU5KOGIxTGtDbkJaMHRUM0hxaXM2bjlEemZRWlM5eXBDQy9qZzJCbU1PeEo1ZHNwMnM0blNlUlo2TTNuSUlYcVBhMHQraEs1M1NUTHQ1bFNoQVE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.13/A9Voice_1.0.13_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "9cfb4acea97257ab673c6713326e1cdddb5918c67fc76bca80088974d1be9572",
+  "installer_size": 12666709
+}
