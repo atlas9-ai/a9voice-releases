@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.12"
+      "softwareVersion": "1.0.14"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.14</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.15</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window hangs off the recording bar while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -328,12 +328,14 @@
 <p>They show up in the note at that time. See <a href="/docs/note-page/">The note page</a>.</p>
 <h2 id="add-a-screenshot">Add a screenshot<a class="anchor" href="#add-a-screenshot" aria-label="Link to Add a screenshot">#</a></h2>
 <ol>
-<li>Press <strong>Snip</strong> in the footer (the number beside it counts the pictures so far) or on the recording bar, or press <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>. The Windows snipping tool opens.</li>
+<li>Press <strong>Snip</strong> in the footer (the number beside it counts the pictures so far) or on the recording bar, or press the Snip key (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>). The Windows snipping tool opens.</li>
 <li>Choose the area. A9 Voice saves it to the note, and the bar shows a thumbnail with <strong>Saved to note at 12:03</strong>.</li>
 <li>Press <strong>Undo</strong> on that card if you took the wrong one.</li>
 </ol>
 <p><figure class="shot"><img src="/img/docs/live-window-snip-toast-1x.webp" srcset="/img/docs/live-window-snip-toast-1x.webp 1x, /img/docs/live-window-snip-toast.webp 2x" width="425" height="160" alt="The bar after a snip, with a thumbnail and Undo" loading="lazy" decoding="async"><figcaption>The picture goes in the note's images folder.</figcaption></figure></p>
-<p>Any picture you copy to the clipboard while the recording runs is saved too, from any snipping tool. A picture copied before the recording started is not. You can also set a <strong>Snip key</strong> in <strong>Settings › Notes › Recording</strong>.</p>
+<p>Only A9 Snip adds screenshots to a meeting. Press the <strong>Snip</strong> button on the bar or in the Live window, or the <strong>Snip key</strong> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd> to begin with; change it in <strong>Settings › Notes › Recording</strong>), and take the picture. A screenshot you take for something else, with <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> or <kbd>PrtScn</kbd>, stays out of the meeting, and A9 Voice does not read the clipboard for it.</p>
+<p>To have those in the meeting too, turn on <strong>Also add Windows screenshots to the meeting</strong> in <strong>Settings › Notes › Recording</strong>. Then any picture that reaches the clipboard while the recording runs is saved, from any snipping tool. A picture copied before the recording started is not, and the same picture is only ever saved once (a snip that also stays on the clipboard, or an image copied twice).</p>
+<p>The crop icon in the Live window&#39;s footer counts the snips in this meeting (<strong>Snips this meeting (n)</strong>) and follows the note as pictures are added or removed, also after you hide and show the feed or minimize the bar.</p>
 <p>Snips are placed in the transcript at the moment you took them and are kept in the note&#39;s folder under <code>images</code>. Snip works only while a recording is running.</p>
 <h2 id="other-buttons">Other buttons<a class="anchor" href="#other-buttons" aria-label="Link to Other buttons">#</a></h2>
 <ul>
@@ -386,7 +388,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.12</a>
+        <a class="sf-ver" href="/changelog/">v1.0.14</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

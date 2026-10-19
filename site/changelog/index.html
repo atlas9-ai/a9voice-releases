@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.12"
+      "softwareVersion": "1.0.14"
     }
   ]
 }
@@ -111,7 +111,12 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-14">
+  <section class="log-entry" aria-labelledby="v-1-0-15">
+  <h2 id="v-1-0-15">1.0.15 <time datetime="2026-10-19">October 19, 2026</time></h2>
+  <ul><li><strong>Only A9 Snip adds screenshots to a meeting now.</strong> Turn on <strong>Also add Windows screenshots</strong> (Settings › Notes › Recording) to include Win+Shift+S / PrtScn. It used to take every image that reached the clipboard during a meeting, so a screenshot you pasted into a chat landed in the notes. It is off for everyone, A9 Voice reads the clipboard only for the snip you just asked for, and with it on the same picture is added once. A9 Snip has its own key, <strong>Ctrl+Alt+S</strong> to begin with, shown in the Snip button&#39;s tooltip. See <a href="/docs/live-window/">Live window</a>.</li>
+<li><strong>The Live window&#39;s Snip counter now counts.</strong> It stayed at 0 because the window read the number once, when it opened; it now follows the note as pictures are added or removed, and reads <strong>Snips this meeting (n)</strong>.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-14">
   <h2 id="v-1-0-14">1.0.14 <time datetime="2026-10-19">October 19, 2026</time></h2>
   <ul><li><strong>Minimize can no longer lose a recording.</strong> The bar and the Live feed now go to a mini pill that is always on top and never leaves the screen: a pulsing red dot and the time (an amber pause mark when paused), lower left of the screen above the taskbar to begin with, draggable and remembered. Hover it or click it and the bar comes back where it was, with the feed as you left it. The tray click and the show / hide key switch between the bar and the pill instead of hiding everything, and A9 Voice checks the pill against Windows once a second and puts it back if it is ever hidden, minimized or off screen. See <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</li>
 <li><strong>Every stop asks first.</strong> The Stop in the Live window used to end the recording and start the notes at once. Now it, the sidebar and note page Stop, the tray&#39;s <strong>Stop recording</strong> and the record key all bring the bar back and ask <strong>Stop recording?</strong> with <strong>Stop</strong>, <strong>Stop &amp; discard…</strong> and an <strong>x</strong>; nothing stops until you answer.</li></ul>
@@ -583,7 +588,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.12</a>
+        <a class="sf-ver" href="/changelog/">v1.0.14</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
