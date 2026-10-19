@@ -1,0 +1,13 @@
+{
+  "version": "1.0.15",
+  "notes": "- **Only A9 Snip adds screenshots to a meeting now.** Turn on **Also add Windows screenshots** (Settings › Notes › Recording) to include Win+Shift+S / PrtScn. It used to take every image that reached the clipboard during a meeting, so a screenshot you pasted into a chat landed in the notes. It is off for everyone, A9 Voice reads the clipboard only for the snip you just asked for, and with it on the same picture is added once. A9 Snip has its own key, **Ctrl+Alt+S** to begin with, shown in the Snip button's tooltip. See [Live window](/docs/live-window/).\n- **The Live window's Snip counter now counts.** It stayed at 0 because the window read the number once, when it opened; it now follows the note as pictures are added or removed, and reads **Snips this meeting (n)**.",
+  "pub_date": "2026-10-19T22:09:32Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpzbmxFUHUxaG5CQ1I0QXJEZEhJd3pFV0hXMVkwREViOUFRYUpOMjVFbXhkZy83L3ZmWDVLVkR2RmdOanJEUVhGdnJvSjRWajY3N1pwdWxIMVhtV3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDQ3NzI2CWZpbGU6QTkgVm9pY2VfMS4wLjE1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTUKSFA2TDMyL1VIODJCRWZLNkl3bkIzRndid2NvdGJyT013VDdza2NTSnRjenE3MTNnd3BFYjZjVUJpSEZCd2JmblJMVDJRcWpFS2ZwbWZCWmpuUHErQ3c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.15/A9Voice_1.0.15_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "8267b11df4f3e69e56ad4e86750313a1d664a63ec7e667bddc7296e0d00b6f85",
+  "installer_size": 12676095
+}
