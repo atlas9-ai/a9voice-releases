@@ -1,13 +1,13 @@
 {
-  "version": "1.0.13",
-  "notes": "- **The Live window now docks to the recording bar; Snip and Live are always one click away.** While a note records, the bar is the Live window's header: the feed hangs directly off it with no gap, lined up with the bar, and moves with it when you drag the bar or the feed's header, onto another screen too. It opens below the bar, or above it near the bottom of the screen, and never leaves the screen. **Snip** and a **Live feed** toggle (filled while the feed is open) are on the bar all the time. The chevron in the feed's lower right corner (**Hide live feed**) replaces the **x**, which could be read as ending the recording; it and the bar's button only hide the feed, and never stop or pause the recording. A9 Voice remembers whether you left the feed open, and its size, for the next meeting and the next start. See [Recording a meeting](/docs/recording-a-meeting/) and [Live window](/docs/live-window/).\n- **Hovering the bar now only adds the microphone and computer-audio pickers.** They appear to the right of the buttons, and neither the bar nor the feed under it moves.\n- **The tray icon says what is happening while the bar is minimized.** It shows the plain icon when idle, a red dot while recording and a pause mark while paused, and its tooltip reads **A9 Voice - Recording 12:34** or **A9 Voice - Paused 12:34**.",
-  "pub_date": "2026-10-19T18:18:35Z",
+  "version": "1.0.14",
+  "notes": "- **Minimize can no longer lose a recording.** The bar and the Live feed now go to a mini pill that is always on top and never leaves the screen: a pulsing red dot and the time (an amber pause mark when paused), lower left of the screen above the taskbar to begin with, draggable and remembered. Hover it or click it and the bar comes back where it was, with the feed as you left it. The tray click and the show / hide key switch between the bar and the pill instead of hiding everything, and A9 Voice checks the pill against Windows once a second and puts it back if it is ever hidden, minimized or off screen. See [Recording a meeting](/docs/recording-a-meeting/).\n- **Every stop asks first.** The Stop in the Live window used to end the recording and start the notes at once. Now it, the sidebar and note page Stop, the tray's **Stop recording** and the record key all bring the bar back and ask **Stop recording?** with **Stop**, **Stop & discard…** and an **x**; nothing stops until you answer.",
+  "pub_date": "2026-10-19T20:49:35Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE5SMkRLTytuamVFa1l4MnJPYXhDMVJmWFJncEdYaDNrekxtbEhRQU54TVZQOFYzTHdCMXgydDh1eDJoQkFJNHZ0bkoxZEFRS0ZyU0k5ckVVWVpTRmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDMzODY0CWZpbGU6QTkgVm9pY2VfMS4wLjEzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTMKVU1hZU5KOGIxTGtDbkJaMHRUM0hxaXM2bjlEemZRWlM5eXBDQy9qZzJCbU1PeEo1ZHNwMnM0blNlUlo2TTNuSUlYcVBhMHQraEs1M1NUTHQ1bFNoQVE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.13/A9Voice_1.0.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpkemlGMUpRc2h2OGZZa0QwekFyYzFtOUdCVXdmRWRsYnVSTkcrczdsbWg5b3RQUGpzRnBqTjJkUDFjT0tFcThTWEVpaDRTenlXbEllcW5uYTZGRkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDQyOTI0CWZpbGU6QTkgVm9pY2VfMS4wLjE0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTQKeUs1S3FSaURpa3lPR0JMc1pqdDJtQmFhbGdkNDlTS2RmbWZjMUZ5WWVLWnN3RUNrU2tReTZVMjVuUFhIbFZxeFJOOUdPVDVvUDc1RzdJcHRBL25LRFE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.14/A9Voice_1.0.14_x64-setup.exe"
     }
   },
-  "installer_sha256": "9cfb4acea97257ab673c6713326e1cdddb5918c67fc76bca80088974d1be9572",
-  "installer_size": 12666709
+  "installer_sha256": "5e36d0211d7a7a7d2f9c607b4f432539641258b6c953948c0a679d28abc50342",
+  "installer_size": 12669379
 }
