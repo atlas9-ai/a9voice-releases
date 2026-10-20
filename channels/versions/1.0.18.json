@@ -1,0 +1,13 @@
+{
+  "version": "1.0.18",
+  "notes": "- **Speak your own language.** New installs on a non-English Windows transcribe in that language, the setting is now on the Models page as **Language you speak** and covers meetings as well as dictation, and summaries follow the meeting's language. If you installed earlier and Windows is in another language, a one-time card on Models asks whether to switch; nothing changes without your click. More than 60 languages are in the list, shown with their own names (German (Deutsch)), in both Language you speak and Summary language. See [Models](/docs/models/#language-you-speak) and [Languages by engine](/docs/speech-models/#languages-by-engine).\n- **A model that can't do your language says so.** When the model for Dictation or Meeting notes doesn't understand the language you set (for example Parakeet V2 with German), its row turns amber with **Fix this**, which lists only the engines that do and recommends the multilingual model on this PC. The Dictation page shows the same line. Speech services you added yourself are never warned about.\n- **Summaries and answers match the language.** With **Summary language** on **Same as the meeting**, the title, headings, summary, action items and tags are written in the transcript's main language, even though the built-in section headings are in English. Ask answers in the language of your question.\n- **The offline fallback no longer picks a model that can't hear your language.** With no internet, dictation and notes use a model on this PC only if it understands the language you set (before, Japanese could land on Parakeet V3, which has no Japanese).",
+  "pub_date": "2026-10-20T15:57:01Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEc0TWdjRjZYeHlSU1cwVVo0dGtPUkd3K3hscjFveDE4Nzhkend0V3lpNEJFZE1SSGQrS3Zrb1FpSGFzR1dmM0JhMVRzeUhQREJMM1Jpb2RPSjErRHdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTExNzczCWZpbGU6QTkgVm9pY2VfMS4wLjE4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTgKdTBPMTRvaHViNy9lMEZDL25nd3JUajVXL2p4cUxyNUZwMllSMGphSUs3TlM0MkVUUlRqL2drNVR6RHhUK2MzdjNSN1lhVWJEeWxMYkZ6ZC9BSGJvQlE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.18/A9Voice_1.0.18_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "6588e0e7dc078da589527fc6fcb2c05a9a7963cf4854d2368fccc2a7717d0e7b",
+  "installer_size": 12735337
+}
