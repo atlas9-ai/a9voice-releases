@@ -898,5 +898,13 @@
  "asking-your-notes-said-by": {
   "w": 646,
   "h": 731
+ },
+ "speakers-on-this-pc-setting": {
+  "w": 662,
+  "h": 365
+ },
+ "speakers-on-this-pc-live": {
+  "w": 760,
+  "h": 600
  }
 }

@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.14"
+      "softwareVersion": "1.0.15"
     }
   ]
 }
@@ -123,7 +123,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li><li><a href="/docs/usage-and-cost/">Usage and cost</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/speakers-on-this-pc/">Speakers on this PC</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/" aria-current="page">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
@@ -322,6 +322,7 @@
 <ul>
 <li id="opt-live-transcript"><strong>Live transcript:</strong> when the live transcript streams. <strong>While the live window is open</strong> (the default) runs the cloud stream only while the Live window is showing, plus a minute after it closes; <strong>Always</strong> runs it for the whole recording; <strong>Off</strong> has none. The live transcript is billed by your speech provider at its live rate. Your notes are made after the call either way. A speech model on this PC that keeps up makes it free. Otherwise it goes to Deepgram only when Deepgram writes your notes, or you turn on <strong>Use Deepgram for the live transcript</strong>.</li>
 <li id="opt-use-deepgram-for-the-live-transcript"><strong>Use Deepgram for the live transcript:</strong> shown when another engine writes your notes. Off by default. With no speech model on this PC for the live part, nothing streams to Deepgram unless this is on, because Deepgram would bill it on top of your notes engine.</li>
+<li id="opt-speakers-during-the-call"><strong>Speakers during the call:</strong> who tells the other people apart while the meeting goes on. <strong>Automatic</strong> (the default) uses your PC when the live transcript is written on your PC and a cloud service&#39;s own speaker labels otherwise. <strong>On this PC (free)</strong> uses your PC for any live transcript, including one from a service that has no speaker labels. <strong>The live service&#39;s labels</strong> never uses your PC. It needs <strong>Identify speakers</strong> and the speaker model from Voices (80.3 MB, downloaded when needed). See <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>.</li>
 <li id="opt-open-the-live-window-when-a-meeting-starts"><strong>Open the Live window when a meeting starts:</strong> the window opens docked to the recording bar and moves with it, open or closed the way you last left it (the bar&#39;s <strong>Live feed</strong> button or the chevron in the feed&#39;s corner). Off means you open it from the bar&#39;s Live feed button. On for a new install.</li>
 <li id="opt-keep-dictation-out-of-notes"><strong>Keep dictation out of notes:</strong> what you dictate into other apps during a meeting is not recorded as part of it. On for a new install.</li>
 </ul>
@@ -441,7 +442,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.14</a>
+        <a class="sf-ver" href="/changelog/">v1.0.15</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

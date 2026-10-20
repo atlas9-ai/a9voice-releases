@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.14"
+      "softwareVersion": "1.0.15"
     }
   ]
 }
@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-15">
+  <section class="log-entry" aria-labelledby="v-1-0-16">
+  <h2 id="v-1-0-16">1.0.16 <time datetime="2026-10-19">October 19, 2026</time></h2>
+  <ul><li><strong>Live speaker separation now runs on your PC for free.</strong> While a meeting is going, the other people on the call get their own colors and names (Speaker 2, Speaker 3, …) in the Live window without Deepgram, AssemblyAI or any key: A9 Voice tells their voices apart on your PC, using the same speaker model as Voices, and nothing leaves your computer. It is on by itself when your live transcript is written on your PC; <strong>Settings › Notes › Live window › Speakers during the call</strong> switches it to <strong>On this PC (free)</strong> for a cloud live transcript too, or back to the service&#39;s own labels. A line appears a few seconds after the speech with its speaker, two speakers that turn out to be one person are joined, and a name is only put on a speaker when one saved voice is clearly the best match. See <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>.</li>
+<li><strong>The note gets a final pass over the whole meeting.</strong> When the recording stops, A9 Voice reads every fingerprint again with the speakers as the meeting settled them, and the note&#39;s speakers come from that when the speech engine can&#39;t tell people apart or runs on your PC; a cloud service that labels speakers keeps its own. The names you gave during the call carry over. Each note keeps one set of numbers per speaker (no audio) in A9 Voice&#39;s data folder, never in exports, so names can be matched again later.</li>
+<li><strong>Naming a speaker in the Live window picks whoever had the floor in the last few seconds</strong> when nobody is shown as talking, and the live transcript&#39;s timing no longer drifts when the recording drops a block of audio.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-15">
   <h2 id="v-1-0-15">1.0.15 <time datetime="2026-10-19">October 19, 2026</time></h2>
   <ul><li><strong>Only A9 Snip adds screenshots to a meeting now.</strong> Turn on <strong>Also add Windows screenshots</strong> (Settings › Notes › Recording) to include Win+Shift+S / PrtScn. It used to take every image that reached the clipboard during a meeting, so a screenshot you pasted into a chat landed in the notes. It is off for everyone, A9 Voice reads the clipboard only for the snip you just asked for, and with it on the same picture is added once. A9 Snip has its own key, <strong>Ctrl+Alt+S</strong> to begin with, shown in the Snip button&#39;s tooltip. See <a href="/docs/live-window/">Live window</a>.</li>
 <li><strong>The Live window&#39;s Snip counter now counts.</strong> It stayed at 0 because the window read the number once, when it opened; it now follows the note as pictures are added or removed, and reads <strong>Snips this meeting (n)</strong>.</li></ul>
@@ -588,7 +594,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.14</a>
+        <a class="sf-ver" href="/changelog/">v1.0.15</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

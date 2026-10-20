@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.14"
+      "softwareVersion": "1.0.15"
     }
   ]
 }
@@ -123,7 +123,7 @@
 <div class="docs-group"><h2 class="docs-group-h">Start here</h2><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/video-tutorials/">Video tutorials</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Transcribe</h2><ul><li><a href="/docs/transcribe/">Transcribe</a></li><li><a href="/docs/dictionary/">Dictionary</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Speech and AI</h2><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/speech-models/">Speech models</a></li><li><a href="/docs/language-models/">Language models</a></li><li><a href="/docs/usage-and-cost/">Usage and cost</a></li></ul></div>
-<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
+<div class="docs-group"><h2 class="docs-group-h">Notes</h2><ul><li><a href="/docs/recording-a-meeting/">Recording a meeting</a></li><li><a href="/docs/live-window/">Live window</a></li><li><a href="/docs/speakers-on-this-pc/">Speakers on this PC</a></li><li><a href="/docs/note-page/">The note page</a></li><li><a href="/docs/voices/">Voices (voice recognition)</a></li><li><a href="/docs/templates-and-export/">Templates and export</a></li><li><a href="/docs/search-and-ask/">Search and Ask</a></li><li><a href="/docs/asking-your-notes/">Asking your notes</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Connect</h2><ul><li><a href="/docs/connector/">Connector for AI apps (MCP)</a></li><li><a href="/docs/webhooks/">Webhooks</a></li></ul></div>
 <div class="docs-group"><h2 class="docs-group-h">Reference</h2><ul><li><a href="/docs/settings-reference/">Settings reference</a></li><li><a href="/docs/updates-and-channels/">Updates and channels</a></li><li><a href="/docs/privacy-and-data/" aria-current="page">Privacy and data</a></li><li><a href="/docs/privacy/">Anonymous usage counts</a></li><li><a href="/docs/keyboard-shortcuts/">Keyboard shortcuts</a></li><li><a href="/docs/troubleshooting/">Troubleshooting and FAQ</a></li></ul></div>
       </nav>
@@ -226,6 +226,7 @@
 <p>The log files record timings, lengths (&quot;90 characters&quot;), status codes, provider and model names, and the name of the app a dictation went into. They never hold API keys or what you said. The files are kept to about 2 MB each, with a few older ones; the oldest are removed.</p>
 <p>One more file is local and worth knowing about: <code>meeting-titles.jsonl</code> in the logs folder. When <strong>Name notes after the meeting</strong> is on (or logging), A9 Voice reads the call app&#39;s window titles for the first 90 seconds of a call to find the meeting&#39;s name. This file keeps the titles it saw and the name it chose, for the last 200 calls, so you can check a wrong pick. It stays on your PC.</p>
 <h2 id="voiceprints">Voiceprints<a class="anchor" href="#voiceprints" aria-label="Link to Voiceprints">#</a></h2>
+<p><strong>Speakers on this PC</strong> (the Live window&#39;s free speaker separation, see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>) makes voice fingerprints of the other people&#39;s side of a call, in memory, while it records. When the recording stops, each note keeps who talked when and one set of numbers per speaker in <code>notes.db</code>: no audio, and not in the note&#39;s folder, exports, webhooks or the connector. Deleting the note deletes them. They are matched against saved voices only when <strong>Recognize people by voice</strong> is on.</p>
 <p><strong>Recognize people by voice</strong> is off until you turn it on, after an explainer. When on, A9 Voice keeps a <strong>voiceprint</strong> for a person you tag in the Live window or name in a note: numbers that describe how they sound, not a recording. Voiceprints:</p>
 <ul>
 <li>are stored only in <code>voices.db</code> in the app&#39;s data folder, and the database is set up to overwrite deleted data;</li>
@@ -316,7 +317,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.14</a>
+        <a class="sf-ver" href="/changelog/">v1.0.15</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
