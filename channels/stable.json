@@ -1,13 +1,13 @@
 {
-  "version": "1.0.15",
-  "notes": "- **Only A9 Snip adds screenshots to a meeting now.** Turn on **Also add Windows screenshots** (Settings › Notes › Recording) to include Win+Shift+S / PrtScn. It used to take every image that reached the clipboard during a meeting, so a screenshot you pasted into a chat landed in the notes. It is off for everyone, A9 Voice reads the clipboard only for the snip you just asked for, and with it on the same picture is added once. A9 Snip has its own key, **Ctrl+Alt+S** to begin with, shown in the Snip button's tooltip. See [Live window](/docs/live-window/).\n- **The Live window's Snip counter now counts.** It stayed at 0 because the window read the number once, when it opened; it now follows the note as pictures are added or removed, and reads **Snips this meeting (n)**.",
-  "pub_date": "2026-10-19T22:09:32Z",
+  "version": "1.0.17",
+  "notes": "- **Minimize now shrinks the bar in place.** The bar is one bar in three sizes (Small, Bar, and the bar with the Live feed), with the same left edge, top and screen. Minimize collapses it to Small where it is, with the animated level bars, the time and a **›** button, and the feed hides with it. It no longer jumps to another spot or screen, and hovering Small no longer expands it, so it can be dragged: only a click on **›** or on Small expands it, in place (from wherever you dragged it). Small stays above every other window, including the main A9 Voice window. The size and position are remembered across restarts, and the first spot is the lower left of your main screen. See [Recording a meeting](/docs/recording-a-meeting/).\n- **The note page says what adds screenshots.** While recording it reads **Use Snip (Ctrl+Alt+S) to add a screenshot to this note.** and mentions Win+Shift+S only when **Also add Windows screenshots to the meeting** is on.",
+  "pub_date": "2026-10-20T02:16:09Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpzbmxFUHUxaG5CQ1I0QXJEZEhJd3pFV0hXMVkwREViOUFRYUpOMjVFbXhkZy83L3ZmWDVLVkR2RmdOanJEUVhGdnJvSjRWajY3N1pwdWxIMVhtV3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDQ3NzI2CWZpbGU6QTkgVm9pY2VfMS4wLjE1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTUKSFA2TDMyL1VIODJCRWZLNkl3bkIzRndid2NvdGJyT013VDdza2NTSnRjenE3MTNnd3BFYjZjVUJpSEZCd2JmblJMVDJRcWpFS2ZwbWZCWmpuUHErQ3c9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.15/A9Voice_1.0.15_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENkdHREdVM3V0FUNUMxMTVFK3VFeFQycS9XVFIza3paSG9kb0svdmlOdkR5ZjUxSUNRRUIvdVFuQWxtZ0luMk5saDFxWGVPaUVEaWNZemdvMmxHOWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDYyNTI1CWZpbGU6QTkgVm9pY2VfMS4wLjE3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTcKSVh1Z0VLV0pHbDZVeXAvdzhYSlA0Z1pqQVFwOXBlL3BKMWRhVHFtNWdjNVdhTkxJNjgvTjQweklvTEFiSnFWaVd2Vzc4M0hqdUtsajRWRUNwc0h0Q1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.17/A9Voice_1.0.17_x64-setup.exe"
     }
   },
-  "installer_sha256": "8267b11df4f3e69e56ad4e86750313a1d664a63ec7e667bddc7296e0d00b6f85",
-  "installer_size": 12676095
+  "installer_sha256": "26622b4e35578306f27351a246f20cc63816e56babb833acbb88de738a1a8163",
+  "installer_size": 12723254
 }
