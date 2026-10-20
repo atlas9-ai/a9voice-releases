@@ -11,6 +11,8 @@ site/compare/granola/index.html: regions
 site/compare/granola.html: regions
 site/compare/fireflies/index.html: regions
 site/compare/fireflies.html: regions
+site/compare/superwhisper/index.html: regions
+site/compare/superwhisper.html: regions
 site/guides/voice-typing-windows/index.html: regions
 site/guides/voice-typing-windows.html: regions
 site/brand.html: scribe

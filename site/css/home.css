@@ -194,7 +194,7 @@ a { color: var(--signal); }
 /* What changes when you switch */
 .vsrow { padding-block: clamp(64px, 9vw, 112px); }
 .vsrow h2 { margin-top: 14px; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -.035em; font-weight: 650; }
-.vsgrid { margin-top: 32px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.vsgrid { margin-top: 32px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
 .vsgrid div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
 .vsgrid h3 { font-size: 16px; font-weight: 700; letter-spacing: 0; }
 .vsgrid h3 a { color: var(--text); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
@@ -204,7 +204,7 @@ a { color: var(--signal); }
 .vsrow .src { margin-top: 14px; font-size: 12px; color: var(--faint); max-width: 70ch; }
 .vsrow .more { display: inline-block; margin-top: 22px; font-size: 15px; color: var(--muted); text-decoration: none; }
 .vsrow .more:hover { color: var(--signal); }
-@media (max-width: 900px) { .vsgrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 1100px) { .vsgrid { grid-template-columns: 1fr 1fr; } .vsgrid div:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .vsgrid { grid-template-columns: 1fr; } }
 
 /* Final call to action */

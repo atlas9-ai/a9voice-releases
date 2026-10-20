@@ -17,6 +17,7 @@
 - [A9 Voice vs Otter](https://a9voice.com/compare/otter/)
 - [A9 Voice vs Granola](https://a9voice.com/compare/granola/)
 - [A9 Voice vs Fireflies](https://a9voice.com/compare/fireflies/)
+- [A9 Voice vs Superwhisper](https://a9voice.com/compare/superwhisper/)
 
 ## Manual
 - [Manual](https://a9voice.com/docs/): every page, Getting started to Troubleshooting
