@@ -1,0 +1,13 @@
+{
+  "version": "1.0.19",
+  "notes": "- **Settings › Speech services no longer shows services that aren't available yet.**",
+  "pub_date": "2026-10-20T17:37:52Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEFaUjBDd3duZjFoMFlLbzNDL1JvbGtpWjRkWDBLbUd2aVc2MnVVM2wvYjVMMjhXWm0waWVwRXRwYkJSNUhCc0Z5cXRSMFpadTR6OGExd01OaHdEakFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTE3ODExCWZpbGU6QTkgVm9pY2VfMS4wLjE5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTkKMWZWSTIvM2FqRGdZVU01OC96WE42QWhVdEVFTXVRSjFtclhDMlNLRFAybE9IK3hhVzNPbnQ5QjdGSzl4bHplZitKVEFlV0lSM0Q4Z3F5VGhJcDJFQmc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.19/A9Voice_1.0.19_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "9c67f598384b69606fb75b3677b28d92584905a3a510b82adf20aa6f4c4a4e27",
+  "installer_size": 12733992
+}
