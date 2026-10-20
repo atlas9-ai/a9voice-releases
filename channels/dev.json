@@ -1,13 +1,13 @@
 {
-  "version": "1.0.16",
-  "notes": "- **Live speaker separation now runs on your PC for free.** While a meeting is going, the other people on the call get their own colors and names (Speaker 2, Speaker 3, …) in the Live window without Deepgram, AssemblyAI or any key: A9 Voice tells their voices apart on your PC, using the same speaker model as Voices, and nothing leaves your computer. It is on by itself when your live transcript is written on your PC; **Settings › Notes › Live window › Speakers during the call** switches it to **On this PC (free)** for a cloud live transcript too, or back to the service's own labels. A line appears a few seconds after the speech with its speaker, two speakers that turn out to be one person are joined, and a name is only put on a speaker when one saved voice is clearly the best match. See [Speakers on this PC](/docs/speakers-on-this-pc/).\n- **The note gets a final pass over the whole meeting.** When the recording stops, A9 Voice reads every fingerprint again with the speakers as the meeting settled them, and the note's speakers come from that when the speech engine can't tell people apart or runs on your PC; a cloud service that labels speakers keeps its own. The names you gave during the call carry over. Each note keeps one set of numbers per speaker (no audio) in A9 Voice's data folder, never in exports, so names can be matched again later.\n- **Naming a speaker in the Live window picks whoever had the floor in the last few seconds** when nobody is shown as talking, and the live transcript's timing no longer drifts when the recording drops a block of audio.",
-  "pub_date": "2026-10-20T00:30:33Z",
+  "version": "1.0.17",
+  "notes": "- **Minimize now shrinks the bar in place.** The bar is one bar in three sizes (Small, Bar, and the bar with the Live feed), with the same left edge, top and screen. Minimize collapses it to Small where it is, with the animated level bars, the time and a **›** button, and the feed hides with it. It no longer jumps to another spot or screen, and hovering Small no longer expands it, so it can be dragged: only a click on **›** or on Small expands it, in place (from wherever you dragged it). Small stays above every other window, including the main A9 Voice window. The size and position are remembered across restarts, and the first spot is the lower left of your main screen. See [Recording a meeting](/docs/recording-a-meeting/).\n- **The note page says what adds screenshots.** While recording it reads **Use Snip (Ctrl+Alt+S) to add a screenshot to this note.** and mentions Win+Shift+S only when **Also add Windows screenshots to the meeting** is on.",
+  "pub_date": "2026-10-20T02:16:09Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEVTbmo4RTA2bTlPOUdicjZLeDQxVUNaTDc2L3BWRkJoWHRzcXVpdXg2Wlg0enhTSFFxU2p0RTd2di9HWFhDUkRjdEtzMWVYL0VYVXhRTzdvMllXNEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDU2MTg0CWZpbGU6QTkgVm9pY2VfMS4wLjE2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTYKMWt5N3dpeVJnZ05DT2RhSnh1SGI5K1pQV0FwQ3VmVjFlYVpZVFVRU1JOSkk5SkVvS3E0ZUxvMDd4MWtYQXFjZWpkalNCdzZnbmczdHZtWGxwQ3h1REE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.16/A9Voice_1.0.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENkdHREdVM3V0FUNUMxMTVFK3VFeFQycS9XVFIza3paSG9kb0svdmlOdkR5ZjUxSUNRRUIvdVFuQWxtZ0luMk5saDFxWGVPaUVEaWNZemdvMmxHOWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDYyNTI1CWZpbGU6QTkgVm9pY2VfMS4wLjE3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTcKSVh1Z0VLV0pHbDZVeXAvdzhYSlA0Z1pqQVFwOXBlL3BKMWRhVHFtNWdjNVdhTkxJNjgvTjQweklvTEFiSnFWaVd2Vzc4M0hqdUtsajRWRUNwc0h0Q1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.17/A9Voice_1.0.17_x64-setup.exe"
     }
   },
-  "installer_sha256": "690445160be31f7589f0a83c60c7d30ec243db0ebfb608f2f84dc6f99f5739a5",
-  "installer_size": 12725397
+  "installer_sha256": "26622b4e35578306f27351a246f20cc63816e56babb833acbb88de738a1a8163",
+  "installer_size": 12723254
 }

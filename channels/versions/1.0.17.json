@@ -1,0 +1,13 @@
+{
+  "version": "1.0.17",
+  "notes": "- **Minimize now shrinks the bar in place.** The bar is one bar in three sizes (Small, Bar, and the bar with the Live feed), with the same left edge, top and screen. Minimize collapses it to Small where it is, with the animated level bars, the time and a **›** button, and the feed hides with it. It no longer jumps to another spot or screen, and hovering Small no longer expands it, so it can be dragged: only a click on **›** or on Small expands it, in place (from wherever you dragged it). Small stays above every other window, including the main A9 Voice window. The size and position are remembered across restarts, and the first spot is the lower left of your main screen. See [Recording a meeting](/docs/recording-a-meeting/).\n- **The note page says what adds screenshots.** While recording it reads **Use Snip (Ctrl+Alt+S) to add a screenshot to this note.** and mentions Win+Shift+S only when **Also add Windows screenshots to the meeting** is on.",
+  "pub_date": "2026-10-20T02:16:09Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENkdHREdVM3V0FUNUMxMTVFK3VFeFQycS9XVFIza3paSG9kb0svdmlOdkR5ZjUxSUNRRUIvdVFuQWxtZ0luMk5saDFxWGVPaUVEaWNZemdvMmxHOWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDYyNTI1CWZpbGU6QTkgVm9pY2VfMS4wLjE3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTcKSVh1Z0VLV0pHbDZVeXAvdzhYSlA0Z1pqQVFwOXBlL3BKMWRhVHFtNWdjNVdhTkxJNjgvTjQweklvTEFiSnFWaVd2Vzc4M0hqdUtsajRWRUNwc0h0Q1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.17/A9Voice_1.0.17_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "26622b4e35578306f27351a246f20cc63816e56babb833acbb88de738a1a8163",
+  "installer_size": 12723254
+}
