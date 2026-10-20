@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.15"
+      "softwareVersion": "1.0.17"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.5</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.18</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="385" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -242,7 +242,7 @@
 <tr><td>Whisper Small, Base, Tiny</td><td>99 languages</td><td>the processor (Small can also use the graphics card)</td></tr>
 <tr><td>Whisper Medium, Large v3, Large v3 Turbo</td><td>99 languages</td><td>the graphics card only</td></tr>
 </tbody></table></div>
-<p>The multilingual Whisper models use the language set for dictation. Parakeet V3 detects it by itself.</p>
+<p>The multilingual Whisper models use <strong>Language you speak</strong>. Parakeet V3 detects among its 25 languages by itself, so it ignores the setting.</p>
 <h3 id="download-a-model">Download a model<a class="anchor" href="#download-a-model" aria-label="Link to Download a model">#</a></h3>
 <ol>
 <li>Click a model&#39;s tile. The window says what it is, its languages, its <strong>Size</strong>, and how much room is free: for example <strong>111.8 GB free on this drive</strong>.</li>
@@ -271,8 +271,22 @@
 <li><strong>Whisper Small, Base and Tiny</strong>: Small is more accurate, Tiny is the smallest and the least accurate.</li>
 <li><strong>Whisper Medium, Large v3 Turbo and Large v3</strong> are for a PC with a graphics card; see <a href="#graphics-card">Graphics card</a>.</li>
 </ul>
+<h2 id="languages-by-engine">Languages by engine<a class="anchor" href="#languages-by-engine" aria-label="Link to Languages by engine">#</a></h2>
+<p><strong>Language you speak</strong> (on <strong>Settings › Models</strong> and on the Dictation page) is sent to the speech engine for dictation and for meeting notes. What each engine understands, read from the provider&#39;s own pages on 20 October 2026:</p>
+<ul>
+<li>Groq: every language in the list.</li>
+<li>OpenAI: every language in the list.</li>
+<li>ElevenLabs: every language in the list except Albanian and Basque.</li>
+<li>Deepgram: every language in the list except Albanian, Azerbaijani, Basque, Galician, Icelandic, Malayalam, Maltese, Swahili, Uzbek and Welsh.</li>
+<li>AssemblyAI: every language in the list. Its live transcript does English, Spanish, German, French, Portuguese and Italian.</li>
+<li>Mistral: English, Chinese, Hindi, Spanish, Arabic, French, Portuguese, Russian, German, Japanese, Korean, Italian and Dutch.</li>
+<li>Parakeet V3 (this PC): Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish, Russian and Ukrainian.</li>
+<li>Parakeet V2 and the English Whisper models (this PC): English only.</li>
+<li>Whisper Tiny, Base, Small, Medium, Large v3 and Large v3 Turbo (this PC): every language in the list.</li>
+</ul>
+<p>Where the pages are silent, A9 Voice assumes the newest model: Deepgram&#39;s list is Nova-3&#39;s for both pre-recorded and live audio, OpenAI&#39;s is Whisper&#39;s, and Scribe v1 is treated like Scribe v2. When an engine can&#39;t do your language, <strong>Settings › Models</strong> says so and <strong>Fix this</strong> shows the engines that can. See <a href="/docs/models/#language-you-speak">Models</a>.</p>
 <h3 id="without-internet">Without internet<a class="anchor" href="#without-internet" aria-label="Link to Without internet">#</a></h3>
-<p>With no internet, dictation and notes use a model on this PC by themselves, no clicking needed. For dictation, A9 Voice picks the best model you have downloaded for your language, in this order for English: Parakeet V2, Parakeet V3, then Whisper Small, Base and Tiny. For other languages: Parakeet V3, then Whisper Small, Base and Tiny. Models that need a graphics card are never chosen this way.</p>
+<p>With no internet, dictation and notes use a model on this PC by themselves, no clicking needed. For dictation, A9 Voice picks the best model you have downloaded for your language, in this order for English: Parakeet V2, Parakeet V3, then Whisper Small, Base and Tiny. For another language, only a model that understands it is used: Parakeet V3 if the language is one of its 25, otherwise a multilingual Whisper, the largest you have first. With <strong>Detect automatically</strong>: Parakeet V3, then a multilingual Whisper, then the English-only models. A language no downloaded model understands gets no offline fallback (rather than a model that would write the wrong language). Models that need a graphics card are only chosen when this PC can run them.</p>
 <p>The pill says <strong>offline</strong> when this happened. Notes whose cloud model can&#39;t be reached are transcribed on the PC the same way. If you have no model downloaded, dictation ends with <strong>No internet</strong>.</p>
 <h3 id="the-models-folder">The models folder<a class="anchor" href="#the-models-folder" aria-label="Link to The models folder">#</a></h3>
 <p>Models are stored in <code>%LOCALAPPDATA%\A9 Voice\models</code>. Click <strong>the models folder</strong> under the tiles to open it.</p>
@@ -360,7 +374,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/models/"><span class="docs-step-l">Previous</span><span>Models</span></a><a class="docs-step next" href="/docs/language-models/"><span class="docs-step-l">Next</span><span>Language models</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#choose-who-does-what">Choose who does what</a></li><li class="d3"><a href="#what-the-fallback-does">What the fallback does</a></li><li class="d3"><a href="#which-models-tell-speakers-apart">Which models tell speakers apart</a></li><li class="d2"><a href="#set-up-a-cloud-provider">Set up a cloud provider</a></li><li class="d3"><a href="#groq">Groq</a></li><li class="d3"><a href="#deepgram">Deepgram</a></li><li class="d3"><a href="#openai">OpenAI</a></li><li class="d3"><a href="#elevenlabs">ElevenLabs</a></li><li class="d3"><a href="#assemblyai">AssemblyAI</a></li><li class="d3"><a href="#providers-marked-soon">Providers marked Soon</a></li><li class="d3"><a href="#what-the-capability-line-means">What the capability line means</a></li><li class="d3"><a href="#add-a-custom-api">Add a custom API</a></li><li class="d3"><a href="#adding-another-service">Adding another service</a></li><li class="d3"><a href="#change-a-key-or-remove-a-provider">Change a key or remove a provider</a></li><li class="d2"><a href="#on-this-pc">On this PC</a></li><li class="d3"><a href="#download-a-model">Download a model</a></li><li class="d3"><a href="#use-a-model">Use a model</a></li><li class="d3"><a href="#speed-on-this-pc">Speed on this PC</a></li><li class="d3"><a href="#which-one-to-pick">Which one to pick</a></li><li class="d3"><a href="#without-internet">Without internet</a></li><li class="d3"><a href="#the-models-folder">The models folder</a></li><li class="d3"><a href="#delete-a-model">Delete a model</a></li><li class="d2"><a href="#graphics-card">Graphics card</a></li><li class="d3"><a href="#what-uses-the-card">What uses the card</a></li><li class="d3"><a href="#turn-it-on-and-download-support">Turn it on and download support</a></li><li class="d3"><a href="#download-a-model-for-the-card">Download a model for the card</a></li><li class="d3"><a href="#choose-a-card">Choose a card</a></li><li class="d3"><a href="#memory-and-the-needs-about-message">Memory and the &quot;Needs about&quot; message</a></li><li class="d3"><a href="#every-state-you-can-see">Every state you can see</a></li><li class="d3"><a href="#when-the-card-fails">When the card fails</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#choose-who-does-what">Choose who does what</a></li><li class="d3"><a href="#what-the-fallback-does">What the fallback does</a></li><li class="d3"><a href="#which-models-tell-speakers-apart">Which models tell speakers apart</a></li><li class="d2"><a href="#set-up-a-cloud-provider">Set up a cloud provider</a></li><li class="d3"><a href="#groq">Groq</a></li><li class="d3"><a href="#deepgram">Deepgram</a></li><li class="d3"><a href="#openai">OpenAI</a></li><li class="d3"><a href="#elevenlabs">ElevenLabs</a></li><li class="d3"><a href="#assemblyai">AssemblyAI</a></li><li class="d3"><a href="#providers-marked-soon">Providers marked Soon</a></li><li class="d3"><a href="#what-the-capability-line-means">What the capability line means</a></li><li class="d3"><a href="#add-a-custom-api">Add a custom API</a></li><li class="d3"><a href="#adding-another-service">Adding another service</a></li><li class="d3"><a href="#change-a-key-or-remove-a-provider">Change a key or remove a provider</a></li><li class="d2"><a href="#on-this-pc">On this PC</a></li><li class="d3"><a href="#download-a-model">Download a model</a></li><li class="d3"><a href="#use-a-model">Use a model</a></li><li class="d3"><a href="#speed-on-this-pc">Speed on this PC</a></li><li class="d3"><a href="#which-one-to-pick">Which one to pick</a></li><li class="d2"><a href="#languages-by-engine">Languages by engine</a></li><li class="d3"><a href="#without-internet">Without internet</a></li><li class="d3"><a href="#the-models-folder">The models folder</a></li><li class="d3"><a href="#delete-a-model">Delete a model</a></li><li class="d2"><a href="#graphics-card">Graphics card</a></li><li class="d3"><a href="#what-uses-the-card">What uses the card</a></li><li class="d3"><a href="#turn-it-on-and-download-support">Turn it on and download support</a></li><li class="d3"><a href="#download-a-model-for-the-card">Download a model for the card</a></li><li class="d3"><a href="#choose-a-card">Choose a card</a></li><li class="d3"><a href="#memory-and-the-needs-about-message">Memory and the &quot;Needs about&quot; message</a></li><li class="d3"><a href="#every-state-you-can-see">Every state you can see</a></li><li class="d3"><a href="#when-the-card-fails">When the card fails</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -375,7 +389,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.15</a>
+        <a class="sf-ver" href="/changelog/">v1.0.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

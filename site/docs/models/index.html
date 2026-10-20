@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.15"
+      "softwareVersion": "1.0.17"
     }
   ]
 }
@@ -134,11 +134,12 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Models</h1>
       <p class="docs-lead">One page for every model A9 Voice uses, organized by job: dictation, meeting notes, summaries, Ask and Enhance.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.10</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.18</p>
       <p>People think in jobs, not in engines. <strong>Settings › Models</strong> starts with what each job uses and a <strong>Change</strong> button for each, and keeps the keys and downloads underneath.</p>
 <p><figure class="shot"><img src="/img/docs/models-jobs-1x.webp" srcset="/img/docs/models-jobs-1x.webp 1x, /img/docs/models-jobs.webp 2x" width="806" height="803" alt="Settings, Models: a row per job, each with its model and a blue Change button." loading="lazy" decoding="async"><figcaption>What each job uses. Change opens the right list.</figcaption></figure></p>
 <h2 id="what-each-job-uses">What each job uses<a class="anchor" href="#what-each-job-uses" aria-label="Link to What each job uses">#</a></h2>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Job</th><th scope="col">What it does</th><th scope="col">Picks from</th></tr></thead><tbody>
+<tr><td><strong>Language you speak</strong></td><td>The language of your dictation and your meetings. Used for dictation and meeting notes. Setting it is faster and more accurate than detecting.</td><td>English, Detect automatically, then more than 60 languages</td></tr>
 <tr><td><strong>Dictation</strong></td><td>Speech-to-text for typing with your voice. Speed matters most.</td><td>speech services and models on this PC</td></tr>
 <tr><td><strong>Fallback for dictation</strong></td><td>Tried once if the dictation model fails, is rate-limited or takes too long.</td><td>the same list, or none</td></tr>
 <tr><td><strong>Meeting notes</strong></td><td>Speech-to-text for recordings. Telling speakers apart matters most.</td><td>speech services and models on this PC</td></tr>
@@ -150,6 +151,10 @@
 <p>When Groq is the only language model you have set up, a quiet line under <strong>Summaries</strong> says that Groq&#39;s free tier handles long meetings in parts, so they take a bit longer, and that another provider&#39;s key makes them single-pass. See <a href="/docs/language-models/#long-meetings">Long meetings</a>.</p>
 <p>A job set to <strong>Same as Summaries</strong> follows the Summaries row: change that one and the others move with it. Summaries itself can be <strong>Automatic</strong>, which uses the first model you have set up (Claude Haiku 5.5 on Anthropic or OpenRouter, then the others).</p>
 <p>The three chips at the top of every window, <strong>Dictation</strong>, <strong>Meeting notes</strong> and <strong>AI</strong>, show the same choices. Click one to switch, or use <strong>Settings…</strong> to open this page.</p>
+<h2 id="language-you-speak">Language you speak<a class="anchor" href="#language-you-speak" aria-label="Link to Language you speak">#</a></h2>
+<p>The first row sets the language that dictation and meeting notes listen for. A new install on a Windows that is not in English starts with that language (German on a German Windows), or <strong>Detect automatically</strong> when the language isn&#39;t in the list; English Windows starts on English. Nothing changes a language you already chose.</p>
+<p>If you installed before this and Windows is in another language, a card at the top of this page asks once: <strong>Windows is in German. Transcribe in German? Dictation and meeting notes are set to English.</strong> <strong>Use German</strong> changes the setting; <strong>Keep English</strong> leaves it. Neither answer brings the card back.</p>
+<p>When the speech model for Dictation or Meeting notes can&#39;t do the language, that row turns amber and says why, for example <strong>Parakeet V2 only understands English. Pick an engine for German.</strong> <strong>Fix this</strong> opens the model list with only the engines that understand the language, and recommends the multilingual model on this PC (Parakeet V3 for its 25 European languages, otherwise Whisper Small): shown first when it is downloaded, with a <strong>Download</strong> button when it isn&#39;t. <strong>Detect automatically</strong> gets the same warning on an English-only model. A speech service you added yourself with <strong>Add custom API</strong> is never warned about: A9 Voice can&#39;t know what it understands. Which engine does which language is in <a href="/docs/speech-models/#languages-by-engine">Languages by engine</a>.</p>
 <h2 id="free-setup">Free setup<a class="anchor" href="#free-setup" aria-label="Link to Free setup">#</a></h2>
 <p>A9 Voice starts new installs on Parakeet (on this PC) for Dictation and Meeting notes and on Groq&#39;s free tier for Summaries, Ask and Enhance. If you were here before that, or skipped setup, a card at the top of this page says <strong>Free setup available</strong> once. It shows what each job uses now and what it would use, keeps every job you picked yourself, and <strong>Apply what is ready</strong> changes the rest. Jobs that need the Parakeet download or a free Groq key say so on their line. <strong>Not now</strong> closes the card for good. See <a href="/docs/getting-started/#free-setup">Getting started</a>.</p>
 <p>While Meeting notes run on a model on this PC, the row says so quietly: <strong>Running on this PC: free, but slower and less accurate at telling callers apart. Deepgram or ElevenLabs are faster.</strong> <strong>Upgrade</strong> opens the engine list with only the cloud engines that identify speakers; with no Deepgram or ElevenLabs key yet it takes you to the keys. In that list each engine has a live-status chip (see below).</p>
@@ -214,7 +219,7 @@ After the chip, a short note in grey, such as <strong>Fast after the call</stron
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/dictionary/"><span class="docs-step-l">Previous</span><span>Dictionary</span></a><a class="docs-step next" href="/docs/speech-models/"><span class="docs-step-l">Next</span><span>Speech models</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-each-job-uses">What each job uses</a></li><li class="d2"><a href="#free-setup">Free setup</a></li><li class="d2"><a href="#change-a-jobs-model">Change a job's model</a></li><li class="d2"><a href="#telling-the-other-people-on-a-call-apart">Telling the other people on a call apart</a></li><li class="d2"><a href="#pick-a-language-model">Pick a language model</a></li><li class="d2"><a href="#a-newer-model">A newer model</a></li><li class="d2"><a href="#providers-and-keys">Providers and keys</a></li><li class="d2"><a href="#when-your-network-blocks-a-speech-service">When your network blocks a speech service</a></li><li class="d2"><a href="#when-a-model-cant-take-a-request">When a model can't take a request</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-each-job-uses">What each job uses</a></li><li class="d2"><a href="#language-you-speak">Language you speak</a></li><li class="d2"><a href="#free-setup">Free setup</a></li><li class="d2"><a href="#change-a-jobs-model">Change a job's model</a></li><li class="d2"><a href="#telling-the-other-people-on-a-call-apart">Telling the other people on a call apart</a></li><li class="d2"><a href="#pick-a-language-model">Pick a language model</a></li><li class="d2"><a href="#a-newer-model">A newer model</a></li><li class="d2"><a href="#providers-and-keys">Providers and keys</a></li><li class="d2"><a href="#when-your-network-blocks-a-speech-service">When your network blocks a speech service</a></li><li class="d2"><a href="#when-a-model-cant-take-a-request">When a model can't take a request</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -229,7 +234,7 @@ After the chip, a short note in grey, such as <strong>Fast after the call</stron
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.15</a>
+        <a class="sf-ver" href="/changelog/">v1.0.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

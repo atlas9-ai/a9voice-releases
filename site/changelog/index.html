@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.15"
+      "softwareVersion": "1.0.17"
     }
   ]
 }
@@ -111,7 +111,14 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-17">
+  <section class="log-entry" aria-labelledby="v-1-0-18">
+  <h2 id="v-1-0-18">1.0.18 <time datetime="2026-10-20">October 20, 2026</time></h2>
+  <ul><li><strong>Speak your own language.</strong> New installs on a non-English Windows transcribe in that language, the setting is now on the Models page as <strong>Language you speak</strong> and covers meetings as well as dictation, and summaries follow the meeting&#39;s language. If you installed earlier and Windows is in another language, a one-time card on Models asks whether to switch; nothing changes without your click. More than 60 languages are in the list, shown with their own names (German (Deutsch)), in both Language you speak and Summary language. See <a href="/docs/models/#language-you-speak">Models</a> and <a href="/docs/speech-models/#languages-by-engine">Languages by engine</a>.</li>
+<li><strong>A model that can&#39;t do your language says so.</strong> When the model for Dictation or Meeting notes doesn&#39;t understand the language you set (for example Parakeet V2 with German), its row turns amber with <strong>Fix this</strong>, which lists only the engines that do and recommends the multilingual model on this PC. The Dictation page shows the same line. Speech services you added yourself are never warned about.</li>
+<li><strong>Summaries and answers match the language.</strong> With <strong>Summary language</strong> on <strong>Same as the meeting</strong>, the title, headings, summary, action items and tags are written in the transcript&#39;s main language, even though the built-in section headings are in English. Ask answers in the language of your question.</li>
+<li><strong>The offline fallback no longer picks a model that can&#39;t hear your language.</strong> With no internet, dictation and notes use a model on this PC only if it understands the language you set (before, Japanese could land on Parakeet V3, which has no Japanese).</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-17">
   <h2 id="v-1-0-17">1.0.17 <time datetime="2026-10-20">October 20, 2026</time></h2>
   <ul><li><strong>Minimize now shrinks the bar in place.</strong> The bar is one bar in three sizes (Small, Bar, and the bar with the Live feed), with the same left edge, top and screen. Minimize collapses it to Small where it is, with the animated level bars, the time and a <strong>›</strong> button, and the feed hides with it. It no longer jumps to another spot or screen, and hovering Small no longer expands it, so it can be dragged: only a click on <strong>›</strong> or on Small expands it, in place (from wherever you dragged it). Small stays above every other window, including the main A9 Voice window. The size and position are remembered across restarts, and the first spot is the lower left of your main screen. See <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</li>
 <li><strong>The note page says what adds screenshots.</strong> While recording it reads <strong>Use Snip (Ctrl+Alt+S) to add a screenshot to this note.</strong> and mentions Win+Shift+S only when <strong>Also add Windows screenshots to the meeting</strong> is on.</li></ul>
@@ -599,7 +606,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.15</a>
+        <a class="sf-ver" href="/changelog/">v1.0.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

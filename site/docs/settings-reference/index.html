@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.15"
+      "softwareVersion": "1.0.17"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Settings reference</h1>
       <p class="docs-lead">Every page in Settings and every option on it, in the order the app shows them, with what it does and what a new install starts with.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.17</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.18</p>
       <p>Open <strong>Settings</strong> at the bottom of the sidebar. The list on the left has four parts: <strong>Account</strong>, <strong>General</strong> and <strong>Privacy</strong> at the top, then <strong>Shared</strong>, <strong>Transcribe</strong> and <strong>Notes</strong>. In a narrow window the list turns into a drop-down called <strong>Settings page</strong>. The sidebar itself starts open at any window width; <strong>Shrink sidebar</strong> at its bottom shrinks it to icons, and A9 Voice remembers your choice.</p>
 <p>This page follows that list. Each option is one line: its name exactly as the app shows it, what it does, and its default for a <strong>new install</strong>. A copy that was updated from an older version keeps the choices it already had. Changes save as you make them; there is no Save button except where a page says so.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-list-1x.webp" srcset="/img/docs/settings-reference-list-1x.webp 1x, /img/docs/settings-reference-list.webp 2x" width="190" height="760" alt="The Settings list: Account and General, then Shared, Transcribe and Notes." loading="lazy" decoding="async"><figcaption>The Settings list. The page you pick opens on the right.</figcaption></figure></p>
@@ -201,6 +201,7 @@
 <p>Part of the <strong>Shared</strong> group. One page for every model, job first: what each job uses with a <strong>Change</strong> button, then <strong>Providers and keys</strong>. Your keys are kept in Windows Credential Manager and nowhere else.</p>
 <p><figure class="shot"><img src="/img/docs/settings-reference-models-1x.webp" srcset="/img/docs/settings-reference-models-1x.webp 1x, /img/docs/settings-reference-models.webp 2x" width="1032" height="760" alt="Settings › Models: a row per job, then the provider cards." loading="lazy" decoding="async"></figure></p>
 <ul>
+<li id="opt-language-you-speak"><strong>Language you speak:</strong> the same setting as on the Dictation page. An amber line on <strong>Dictation</strong> or <strong>Meeting notes</strong> with <strong>Fix this</strong> appears when the model there can&#39;t do the language.</li>
 <li id="opt-dictation"><strong>Dictation:</strong> the speech model that hears you when you hold the dictation key. Default Groq.</li>
 <li id="opt-fallback-for-dictation"><strong>Fallback for dictation:</strong> the model tried once if the dictation model fails, is rate limited or takes longer than 4 seconds. Default Deepgram. It has to be a different model from the one used for dictation.</li>
 <li id="opt-meeting-notes"><strong>Meeting notes:</strong> the speech model that transcribes meetings. Default Deepgram. It gets an amber border and a <strong>Fix this</strong> button when it can&#39;t tell the other people on a call apart.</li>
@@ -258,7 +259,7 @@
 <li id="opt-put-my-clipboard-back-afterwards"><strong>Put my clipboard back afterwards:</strong> restores whatever you had copied once the text is in. On for a new install.</li>
 <li id="opt-add-a-space-after"><strong>Add a space after:</strong> adds a space after the text so the next sentence does not run on. On for a new install.</li>
 <li id="opt-keep-out-of-clipboard-history"><strong>Keep out of clipboard history:</strong> shows <strong>Always</strong>. Dictations never appear in Win+V or the cloud clipboard.</li>
-<li id="opt-language"><strong>Language:</strong> the language you speak. Choices: English (the default), Detect automatically, Spanish, French, German, Portuguese, Italian, Dutch, Japanese, Chinese. Setting it is faster and more accurate than detecting.</li>
+<li id="opt-language-you-speak-2"><strong>Language you speak:</strong> the language of your dictation and your meeting notes. Choices: English (the default; a new install on a non-English Windows starts with that language), Detect automatically, then more than 60 languages shown with their own names. Used for dictation and meeting notes. Setting it is faster and more accurate than detecting. The same setting is the first row under <strong>What each job uses</strong> on <strong>Settings › Models</strong>.</li>
 <li id="opt-hands-free-mode"><strong>Hands-free mode:</strong> <strong>Off</strong> (the default for a new install), <strong>Its own key</strong> (press once to start, again to stop and insert; Esc cancels) or <strong>Tap the dictation key</strong> (a quick tap starts it and the next tap stops).</li>
 <li id="opt-hands-free-key"><strong>Hands-free key:</strong> appears with <strong>Its own key</strong>. Default <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>. You can clear it.</li>
 <li id="opt-hands-free-limit"><strong>Hands-free limit:</strong> appears when hands-free is on. Stops and pastes after this long, with a warning a minute before. Choices: 1, 2, 5, 10, 15 or 30 minutes. Default 10 minutes.</li>
@@ -353,7 +354,7 @@
 <li id="opt-rules"><strong>Rules:</strong> the rules the AI follows for every section.</li>
 <li id="opt-capture-system-audio"><strong>Capture system audio:</strong> record the other people, not just your mic. On in new templates.</li>
 <li id="opt-generate-ai-summary"><strong>Generate AI summary:</strong> off means transcript, title and tags only. On in new templates.</li>
-<li id="opt-summary-language"><strong>Summary language:</strong> the language the summary is written in: <strong>Same as the meeting</strong> (the default), English, Spanish, French, German, Portuguese, Italian, Dutch, Japanese or Chinese.</li>
+<li id="opt-summary-language"><strong>Summary language:</strong> the language the summary is written in: <strong>Same as the meeting</strong> (the default; it follows the transcript&#39;s main language, headings included) or a language from the same list as <strong>Language you speak</strong>.</li>
 <li id="opt-tags-2"><strong>Tags:</strong> added to every note that uses the template.</li>
 <li id="opt-logo"><strong>Logo:</strong> <strong>Upload logo…</strong> (PNG, SVG or JPG, up to 2 MB), with an optional version for dark backgrounds. It shows on PDF, Word and email exports and on <strong>Copy for email</strong>; the note&#39;s summary.md stays plain.</li>
 <li id="opt-placement"><strong>Placement:</strong> Left (the default), Center or Right.</li>
@@ -442,7 +443,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.15</a>
+        <a class="sf-ver" href="/changelog/">v1.0.17</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
