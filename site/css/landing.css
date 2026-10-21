@@ -1,0 +1,14 @@
+/* Landing pages (site/landing/<slug>/, built at /<slug>/): the shared look on top of site.css. */
+.hero-media { align-items: stretch; }
+.hero-media img { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0,0,0,.5); background: var(--surface); }
+.hero-media figcaption { font-size: 14px; color: var(--muted-2); }
+.hero .lead { max-width: 540px; }
+.ticks { max-width: 760px; }
+.ticks li { font-size: 16px; color: var(--text-2); }
+.steps { max-width: 820px; }
+.steps li > span { font-size: 16px; line-height: 1.55; color: var(--text-2); }
+.steps strong { color: var(--text); font-weight: 600; }
+@media (max-width: 640px) {
+  .hero { padding-top: 40px; gap: 32px; }
+  .pad { padding-bottom: 64px; }
+}

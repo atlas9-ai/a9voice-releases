@@ -6,6 +6,7 @@
 
 ## Product
 - [Home](https://a9voice.com/): what it does, questions and answers
+- [Free dictation for Windows](https://a9voice.com/free-dictation/): hold Ctrl+Space and talk, no account, no word limit, speech models that run on your PC
 - [Features](https://a9voice.com/features/): the full tour, measured numbers, comparison table
 - [Pricing](https://a9voice.com/pricing): Transcribe free, Notes $49 once
 - [About](https://a9voice.com/about): Atlas9 LLC, how the numbers were measured, contact
