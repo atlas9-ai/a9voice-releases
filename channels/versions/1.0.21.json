@@ -1,0 +1,13 @@
+{
+  "version": "1.0.21",
+  "notes": "- **Recognize people by voice stays on when you change another setting afterwards.** A Settings page that was open before you turned a setting on could save its older copy and switch it back off. Pages now save only what you changed, and every page re-reads settings the app changed itself.",
+  "pub_date": "2026-10-23T18:40:55Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJLcVV3VG0zUEUwOXFiK2VhNG5SNEU5QkNUVXdEb1NRSE9XZXNMb3hBRHM5R3NzMzhOdjV6eTdMVm5XQzhsTEFqNXZSdnJISGltYnBlQzM3QnhrS0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzgwNzg4CWZpbGU6QTkgVm9pY2VfMS4wLjIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjEKUThnUFlnaUFyQmNTRG5rdGhJN1BFRzZ3Z3dZWkdaRnVtVjNIWGh6RjExbk8xVklNYUpYYnlGVFdZOE12UnZBaHhzbVd1WjlCYkg0UkVab1dzOGVsQ1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.21/A9Voice_1.0.21_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "d7c276c27de43833d41d116f617ccd086017485dd9a821a88e550f63c2642943",
+  "installer_size": 12750341
+}
