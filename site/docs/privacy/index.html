@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.20"
+      "softwareVersion": "1.0.21"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Anonymous usage counts</h1>
       <p class="docs-lead">What A9 Voice counts, what it is, what never leaves your PC, and how to turn it off or reset it.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.19</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.22</p>
       <p>A9 Voice counts installs so we know whether anyone is using it, which version they are on, and whether people get through setup and use it. The count is anonymous: there is no account to tie it to, and it carries nothing you said, wrote or recorded. It is on by default and you can turn it off in <strong>Settings › Privacy</strong>.</p>
 <h2 id="what-is-counted">What is counted<a class="anchor" href="#what-is-counted" aria-label="Link to What is counted">#</a></h2>
 <p>When A9 Voice checks for an update, the request to a9voice.com carries a random ID, the app version, your update channel (Stable or Dev), your Windows version (for example &quot;Windows 11, build 26200&quot;) and your PC&#39;s processor type. a9voice.com adds your country, worked out from the request. The ID is a random number made on your PC the first time A9 Voice ran. It is not made from your name, your PC or your account, and it cannot be turned back into any of them. A brand-new install also sends one extra message the first time it starts, so we can tell a real install from a download that was never opened. Installers downloaded from a9voice.com carry a random code in the file name. The app sends it once with the first-launch count so we know which link the download came from. It isn&#39;t tied to you. If you installed A9 Voice from the Microsoft Store, that same first message says so (&quot;store&quot;), so we can count Store installs; it carries nothing else.</p>
@@ -149,8 +149,11 @@
 <li><strong>The recording-consent notice&#39;s version.</strong> When Notes starts, A9 Voice shows a short notice about getting consent before you record other people (see <a href="/docs/privacy-and-data/#recording-consent">Recording consent</a>). The Notes trial start, and the next trial or license check if you pressed <strong>Got it</strong> later, carries one flag with it: <code>consent_v</code>, the version number of that notice, such as 1. a9voice.com stores the number with the time it arrived, on the same trial or license record. It is a number and nothing else: no name, no email, no content. It rides on a check A9 Voice already makes, never as a request of its own, and it is never sent back to the app.</li>
 <li><strong>What never goes with it.</strong> Audio, text, names, notes, file names, your keys and your settings.</li>
 </ul>
+<h2 id="problem-reports-are-separate">Problem reports are separate<a class="anchor" href="#problem-reports-are-separate" aria-label="Link to Problem reports are separate">#</a></h2>
+<p><strong>Report a problem</strong> (the About card at the bottom of <strong>Settings › General</strong>, or the tray menu under <strong>Help</strong>) is not part of the count and has no switch, because it does nothing until you press <strong>Send</strong>. A report holds what you typed in the two boxes, the email address if you gave one, and, if you leave <strong>Include diagnostics</strong> on, the text under <strong>Show what&#39;s sent</strong>: the version, update channel, Windows version, the type of microphone, a summary of switches and engine names, display and graphics-card details, and the last 200 lines of the log. Keys, the Windows user folder, people&#39;s names, note titles, recent dictations and email addresses are taken out first, and it never holds audio, transcripts, summaries, voiceprints or file paths under your profile. The report also carries a code made from your PC (the same one-way hash the Notes trial uses) that only limits reports to five a day.</p>
+<p>It goes to a9voice.com (or its mirror a9voice.atlas9.ai when a network blocks the first), is stored with a report ID, and is mailed to <a href="mailto:support@a9voice.com">support@a9voice.com</a>. We use it to find and fix the problem and to reply if you gave an address. Reports are deleted after 180 days. A report that could not be sent stays in the app&#39;s data folder, in <code>reports-pending.json</code>, and is sent at the next update check for up to 14 days; delete the file to discard it.</p>
 <h2 id="what-never-leaves-your-pc">What never leaves your PC<a class="anchor" href="#what-never-leaves-your-pc" aria-label="Link to What never leaves your PC">#</a></h2>
-<p>Audio, dictated or transcribed text, notes, names, voiceprints, file names and paths, your API keys and your settings never go with the count. Audio and text go only to the speech and language services you set up yourself; see <a href="/docs/privacy-and-data/">Privacy and data</a> for every place.</p>
+<p>Audio, dictated or transcribed text, notes, names, voiceprints, file names and paths, your API keys and your settings never go with the count. (A problem report you choose to send is a different thing; see above.) Audio and text go only to the speech and language services you set up yourself; see <a href="/docs/privacy-and-data/">Privacy and data</a> for every place.</p>
 <h2 id="turn-it-off">Turn it off<a class="anchor" href="#turn-it-off" aria-label="Link to Turn it off">#</a></h2>
 <ol>
 <li>Open <strong>Settings › Privacy</strong>.</li>
@@ -170,7 +173,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/privacy-and-data/"><span class="docs-step-l">Previous</span><span>Privacy and data</span></a><a class="docs-step next" href="/docs/keyboard-shortcuts/"><span class="docs-step-l">Next</span><span>Keyboard shortcuts</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-counted">What is counted</a></li><li class="d2"><a href="#the-notes-trial-and-license-are-separate">The Notes trial and license are separate</a></li><li class="d2"><a href="#what-never-leaves-your-pc">What never leaves your PC</a></li><li class="d2"><a href="#turn-it-off">Turn it off</a></li><li class="d2"><a href="#reset-the-id">Reset the ID</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-counted">What is counted</a></li><li class="d2"><a href="#the-notes-trial-and-license-are-separate">The Notes trial and license are separate</a></li><li class="d2"><a href="#problem-reports-are-separate">Problem reports are separate</a></li><li class="d2"><a href="#what-never-leaves-your-pc">What never leaves your PC</a></li><li class="d2"><a href="#turn-it-off">Turn it off</a></li><li class="d2"><a href="#reset-the-id">Reset the ID</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -185,7 +188,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.20</a>
+        <a class="sf-ver" href="/changelog/">v1.0.21</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

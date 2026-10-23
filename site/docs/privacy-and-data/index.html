@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.20"
+      "softwareVersion": "1.0.21"
     }
   ]
 }
@@ -134,12 +134,13 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Privacy and data</h1>
       <p class="docs-lead">What leaves your PC and where it goes, how to keep everything on your PC, where your files live, how long they are kept and how to delete them.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.9</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.22</p>
       <p>A9 Voice keeps your data on your PC. It calls speech and language services with <strong>your own keys</strong>, and only the ones <strong>you</strong> set up. There is no A9 Voice server in between, no account and no sign-in. This page lists every place data can go. Where something is a promise about how the app is built rather than a setting you can change, it says so.</p>
 <h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to The short version">#</a></h2>
 <ul>
 <li><strong>Audio and text go only to the services you choose</strong>, with your keys. If you use models on this PC, nothing you say leaves it.</li>
 <li><strong>One anonymous count, which you can turn off.</strong> The update check carries a random ID, the version, your channel, your Windows version and your country, so we can count installs, and five one-time messages (setup finished, first dictation, first note, Notes trial started, Notes bought) say how far people get. No crash reports, never what you said or recorded. See <a href="/docs/privacy/">Anonymous usage counts</a>.</li>
+<li><strong>Problem reports are sent only when you press Send,</strong> and you can read the exact text first. They hold your words and a scrubbed block of diagnostics, never keys, audio, transcripts or names. See <a href="/docs/troubleshooting/#reporting-a-problem">Reporting a problem</a>.</li>
 <li><strong>Your keys live in Windows Credential Manager</strong> and nowhere else: not in settings, logs, the repository or the app&#39;s own storage.</li>
 <li><strong>Logs hold timings, lengths and status codes, never your words or your keys.</strong> This is also a rule of how the app is built.</li>
 <li><strong>Voiceprints stay on this PC</strong>, are opt-in, and you can delete any of them or all of them at any time.</li>
@@ -202,6 +203,8 @@
 <li><strong>Downloads you start.</strong> Speech models come from Hugging Face. <strong>Graphics-card support</strong> (about 25 MB, once) comes from files.pythonhosted.org. The speaker model for voice recognition comes from the project&#39;s release page on GitHub. All are fixed to one version and checked against a known checksum before use. After they are downloaded you can work with no internet at all.</li>
 <li><strong>Web pages you open.</strong> The <strong>Get your key</strong> buttons open the provider&#39;s own page in your browser. That is your browser, not A9 Voice.</li>
 </ul>
+<h2 id="problem-reports">Problem reports<a class="anchor" href="#problem-reports" aria-label="Link to Problem reports">#</a></h2>
+<p><strong>Report a problem</strong> sends one report when you press <strong>Send</strong>: what you typed, an optional email address for the reply, and (if you leave <strong>Include diagnostics</strong> on) the text that <strong>Show what&#39;s sent</strong> displays. That text is Copy diagnostics with the names of people, note titles, recent dictations, email addresses, the Windows user folder and the microphone&#39;s name taken out, plus a summary of switches and engine names. It goes to a9voice.com (or its mirror) and is mailed to <a href="mailto:support@a9voice.com">support@a9voice.com</a>. See <a href="/docs/troubleshooting/#reporting-a-problem">Reporting a problem</a> and <a href="/docs/privacy/#problem-reports-are-separate">Problem reports</a>.</p>
 <h2 id="anonymous-usage-counts">Anonymous usage counts<a class="anchor" href="#anonymous-usage-counts" aria-label="Link to Anonymous usage counts">#</a></h2>
 <p>A9 Voice sends no crash reports and no content-based analytics. The one thing it counts is installs and how far they get: with the update check it sends a random ID, the app version, the channel, your Windows version and processor type, and a9voice.com adds the country; and once each, with the same fields, a message when you finish setup, make your first dictation, record your first note, start the Notes trial and buy Notes. Installers downloaded from a9voice.com carry a random code in the file name. The app sends it once with the first-launch count so we know which link the download came from. It isn&#39;t tied to you. If you ask us to email you the download link from your phone, we send that one email and don&#39;t keep your address. It is on by default and has a switch in <strong>Settings › Privacy</strong>. With it off, nothing extra is sent and nothing is recorded. The page <a href="/docs/privacy/">Anonymous usage counts</a> says exactly what is counted and what never is. The only network calls are to the speech and language services you set up, to the update locations above, to a9voice.com for the Notes trial and license (see the table), to the download locations above, and to webhook addresses you add.</p>
 <h2 id="where-your-files-live">Where your files live<a class="anchor" href="#where-your-files-live" aria-label="Link to Where your files live">#</a></h2>
@@ -244,6 +247,7 @@
 <tr><td>Notes audio</td><td>30 days, or the time you choose in <strong>Keep notes audio</strong>. Only the audio goes; the summary, transcript and images stay. Audio of a note that failed is kept.</td></tr>
 <tr><td>Voiceprints</td><td>Until you forget them. The Voices page can show people not recognized in 60 days or more.</td></tr>
 <tr><td>Logs</td><td>A few files of about 2 MB.</td></tr>
+<tr><td>Problem reports</td><td>180 days on our server. One that could not be sent is kept on your PC for up to 14 days, then dropped.</td></tr>
 <tr><td>Meeting-title log</td><td>The last 200 calls.</td></tr>
 </tbody></table></div>
 <h2 id="exporting-and-importing-your-setup">Exporting and importing your setup<a class="anchor" href="#exporting-and-importing-your-setup" aria-label="Link to Exporting and importing your setup">#</a></h2>
@@ -302,7 +306,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/updates-and-channels/"><span class="docs-step-l">Previous</span><span>Updates and channels</span></a><a class="docs-step next" href="/docs/privacy/"><span class="docs-step-l">Next</span><span>Anonymous usage counts</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#anonymous-usage-counts">Anonymous usage counts</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d3"><a href="#the-notice">The notice</a></li><li class="d3"><a href="#what-is-recorded-about-it">What is recorded about it</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#the-short-version">The short version</a></li><li class="d2"><a href="#what-leaves-your-pc-feature-by-feature">What leaves your PC, feature by feature</a></li><li class="d2"><a href="#what-each-service-receives">What each service receives</a></li><li class="d2"><a href="#keeping-everything-on-this-pc">Keeping everything on this PC</a></li><li class="d2"><a href="#problem-reports">Problem reports</a></li><li class="d2"><a href="#anonymous-usage-counts">Anonymous usage counts</a></li><li class="d2"><a href="#where-your-files-live">Where your files live</a></li><li class="d2"><a href="#your-keys">Your keys</a></li><li class="d2"><a href="#what-the-logs-hold">What the logs hold</a></li><li class="d2"><a href="#voiceprints">Voiceprints</a></li><li class="d2"><a href="#how-long-things-are-kept">How long things are kept</a></li><li class="d2"><a href="#exporting-and-importing-your-setup">Exporting and importing your setup</a></li><li class="d2"><a href="#the-connector-and-webhooks">The connector and webhooks</a></li><li class="d2"><a href="#recording-consent">Recording consent</a></li><li class="d3"><a href="#the-notice">The notice</a></li><li class="d3"><a href="#what-is-recorded-about-it">What is recorded about it</a></li><li class="d2"><a href="#delete-your-data">Delete your data</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -317,7 +321,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.20</a>
+        <a class="sf-ver" href="/changelog/">v1.0.21</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
