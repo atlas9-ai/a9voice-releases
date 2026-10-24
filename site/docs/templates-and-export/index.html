@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Templates and export · A9 Voice Manual</title>
-<meta name="description" content="Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions.">
+<meta name="description" content="Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions, and move your notes to a new PC.">
 
 <meta name="theme-color" content="#0B0C0E">
 <meta name="color-scheme" content="dark">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="A9 Voice">
 <meta property="og:title" content="Templates and export · A9 Voice Manual">
-<meta property="og:description" content="Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions.">
+<meta property="og:description" content="Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions, and move your notes to a new PC.">
 <meta property="og:url" content="https://a9voice.com/docs/templates-and-export/">
 <meta property="og:image" content="https://a9voice.com/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,8 +133,8 @@
     <article class="docs-article">
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Templates and export</h1>
-      <p class="docs-lead">Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.18</p>
+      <p class="docs-lead">Choose how each summary is written, put your own logo on it, and save or send a note as Markdown, a PDF, a Word file, an email or captions, and move your notes to a new PC.</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.22</p>
       <p>A <strong>template</strong> decides what a summary contains: which sections, in what order, with what rules. It can also carry your logo and colors. When you <strong>export</strong> a note, you pick what to save (the summary, the transcript or the audio) and in which file type.</p>
 <p>Templates live in <strong>Settings › Notes › Templates</strong>. Export is the <strong>Export</strong> button on every <a href="/docs/note-page/">note page</a>.</p>
 <p>To see a note&#39;s files, the Export window and a template added from the library:</p>
@@ -308,17 +308,39 @@ answers; see <a href="/docs/asking-your-notes/#edit-the-templates">Edit the temp
 <li><strong>Open in mail app says &quot;No mail app is set up to open emails on this PC.&quot;</strong> Use <strong>Copy for email</strong> and paste, or save the HTML file.</li>
 </ul>
 <p>For anything else, see <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
+<h2 id="moving-your-notes-to-a-new-pc">Moving your notes to a new PC<a class="anchor" href="#moving-your-notes-to-a-new-pc" aria-label="Link to Moving your notes to a new PC">#</a></h2>
+<p>Your list of notes lives on each PC (in A9 Voice&#39;s data folder); the Notes folder is where the files go. So a new PC that points at a folder already full of your notes (OneDrive, a copied folder) starts with an empty list. There are two ways to bring the notes in, and they work together.</p>
+<h3 id="find-the-notes-that-are-already-in-your-notes-folder">Find the notes that are already in your Notes folder<a class="anchor" href="#find-the-notes-that-are-already-in-your-notes-folder" aria-label="Link to Find the notes that are already in your Notes folder">#</a></h3>
+<p>This needs nothing but the folder, so it works when the old PC is gone.</p>
+<ol>
+<li>In <strong>Settings › Notes › Storage</strong>, press <strong>Change…</strong> and pick the folder that holds your notes. If notes are in it, A9 Voice offers them at once. You can also press <strong>Find…</strong> next to <strong>Find notes in this folder</strong> at any time, and A9 Voice offers them once at startup when your list is empty.</li>
+<li>It says <strong>Found 312 notes in this folder that aren&#39;t in your list. Add them?</strong> and, when it applies, how many couldn&#39;t be read. Nothing is added until you press <strong>Add them</strong>.</li>
+<li>Your list fills as the notes are added. <strong>Stop</strong> keeps the ones already added, and you can run it again for the rest.</li>
+</ol>
+<p>Each note comes from its own files: the title, date, length, tags and template from the top of <code>summary.md</code>, the summary, and the lines and speakers from <code>transcript.md</code>. There is no audio, so a note shows that no recording is available. It never changes a file: nothing in the folder is renamed or rewritten, which matters when another PC is syncing the same folder. A9 Voice writes to a note&#39;s files only when you edit that note. Running <strong>Find…</strong> again adds nothing that is already in your list, and picks up notes another PC added since.</p>
+<p>The names you gave speakers, the people you tagged and the lines you left out are kept in the app, not in the files, so a note found this way has the speaker names the files show. To bring the rest across, export from the old PC.</p>
+<h3 id="bring-everything-with-an-export">Bring everything with an export<a class="anchor" href="#bring-everything-with-an-export" aria-label="Link to Bring everything with an export">#</a></h3>
+<p>On the old PC, open <strong>Settings › Account</strong>, press <strong>Export…</strong> and leave <strong>Include my notes</strong> ticked. The window shows how big the zip will be. Audio is never included. Tick <strong>Include learned voices</strong> too if you want the new PC to recognize the same people; they are stored in the zip, so keep the file private.</p>
+<p>On the new PC press <strong>Import…</strong>, pick the zip and check what is inside (&quot;Settings, Dictionary, 312 notes, 4 voices&quot;). Tick the parts you want and press <strong>Import</strong>.</p>
+<ul>
+<li><strong>Notes are merged, never replaced.</strong> A note you already have (the same folder name and start time) is left as it is, and nothing is deleted.</li>
+<li><strong>One exception:</strong> a note that <strong>Find</strong> added and that you haven&#39;t edited since takes the zip&#39;s speaker names, tags, edits and what you left out. It keeps its place in your list and its folder. So you can run <strong>Find</strong> first and import later.</li>
+<li><strong>Folders move with you.</strong> Each note&#39;s folder is moved from the old Notes folder to this PC&#39;s. If the folder is already there (OneDrive synced it), its files stay exactly as they are and the note is just pointed at it; otherwise the files come from the zip.</li>
+<li><strong>Older and newer files.</strong> A zip from an older A9 Voice is brought up to date first. A zip from a newer one says <strong>This file is from a newer A9 Voice. Update first.</strong></li>
+</ul>
+<p>Your API keys, your license and this PC&#39;s install ID are never in an export and never imported.</p>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
 <ul>
 <li><a href="/docs/note-page/">The note page</a>: regenerate a summary with another template, and see what a note holds.</li>
 <li><a href="/docs/webhooks/">Webhooks</a>: send a summary to a channel automatically.</li>
+<li><a href="/docs/settings-reference/#account">Settings reference</a>: Export and Import, and Find notes in this folder under Storage.</li>
 <li><a href="/docs/language-models/">Language models</a>: the AI that writes the summary.</li>
 </ul>
 
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/voices/"><span class="docs-step-l">Previous</span><span>Voices (voice recognition)</span></a><a class="docs-step next" href="/docs/search-and-ask/"><span class="docs-step-l">Next</span><span>Search and Ask</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#templates">Templates</a></li><li class="d3"><a href="#open-the-templates">Open the templates</a></li><li class="d3"><a href="#add-a-template-from-the-library">Add a template from the library</a></li><li class="d3"><a href="#create-your-own">Create your own</a></li><li class="d3"><a href="#change-the-name-the-sections-and-the-rules">Change the name, the sections and the rules</a></li><li class="d3"><a href="#custom-instructions-and-the-full-prompt">Custom instructions and the full prompt</a></li><li class="d3"><a href="#save-cancel-delete">Save, cancel, delete</a></li><li class="d2"><a href="#branding">Branding</a></li><li class="d3"><a href="#add-a-logo">Add a logo</a></li><li class="d3"><a href="#add-a-version-for-dark-backgrounds-optional">Add a version for dark backgrounds (optional)</a></li><li class="d3"><a href="#place-and-size-it-add-a-header-and-a-footer">Place and size it, add a header and a footer</a></li><li class="d2"><a href="#export-a-note">Export a note</a></li><li class="d3"><a href="#what-each-file-type-is-for">What each file type is for</a></li><li class="d3"><a href="#the-switches">The switches</a></li><li class="d3"><a href="#summary-as-a-pdf">Summary as a PDF</a></li><li class="d3"><a href="#captions">Captions</a></li><li class="d3"><a href="#audio">Audio</a></li><li class="d2"><a href="#send-a-summary-by-email">Send a summary by email</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#templates">Templates</a></li><li class="d3"><a href="#open-the-templates">Open the templates</a></li><li class="d3"><a href="#add-a-template-from-the-library">Add a template from the library</a></li><li class="d3"><a href="#create-your-own">Create your own</a></li><li class="d3"><a href="#change-the-name-the-sections-and-the-rules">Change the name, the sections and the rules</a></li><li class="d3"><a href="#custom-instructions-and-the-full-prompt">Custom instructions and the full prompt</a></li><li class="d3"><a href="#save-cancel-delete">Save, cancel, delete</a></li><li class="d2"><a href="#branding">Branding</a></li><li class="d3"><a href="#add-a-logo">Add a logo</a></li><li class="d3"><a href="#add-a-version-for-dark-backgrounds-optional">Add a version for dark backgrounds (optional)</a></li><li class="d3"><a href="#place-and-size-it-add-a-header-and-a-footer">Place and size it, add a header and a footer</a></li><li class="d2"><a href="#export-a-note">Export a note</a></li><li class="d3"><a href="#what-each-file-type-is-for">What each file type is for</a></li><li class="d3"><a href="#the-switches">The switches</a></li><li class="d3"><a href="#summary-as-a-pdf">Summary as a PDF</a></li><li class="d3"><a href="#captions">Captions</a></li><li class="d3"><a href="#audio">Audio</a></li><li class="d2"><a href="#send-a-summary-by-email">Send a summary by email</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#moving-your-notes-to-a-new-pc">Moving your notes to a new PC</a></li><li class="d3"><a href="#find-the-notes-that-are-already-in-your-notes-folder">Find the notes that are already in your Notes folder</a></li><li class="d3"><a href="#bring-everything-with-an-export">Bring everything with an export</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">

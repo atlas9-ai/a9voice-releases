@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Voices (voice recognition)</h1>
       <p class="docs-lead">Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.17</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.22</p>
       <p>Without this, people on a call show up as <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, until you name them. With
 <strong>Recognize people by voice</strong> on, A9 Voice remembers how each person you have named sounds, and names them for you
 in later meetings, both on the live transcript and in the finished note.</p>
@@ -145,8 +145,8 @@ speaker is you, because that is your microphone.</p>
 <ul>
 <li><strong>A voiceprint:</strong> a set of numbers that describes how a person sounds. It is not a recording.</li>
 <li><strong>Where:</strong> in a file called <code>voices.db</code> in A9 Voice&#39;s own data folder on your PC. Not in your Notes folder.</li>
-<li><strong>Never anywhere else:</strong> voiceprints are never put in a note, a log, an export, a webhook, or any request to a
-speech or AI service. The <a href="/docs/connector/">connector for AI apps</a> never returns them either.</li>
+<li><strong>Never anywhere else:</strong> voiceprints are never put in a note, a log, a webhook, or any request to a
+speech or AI service, and they stay on this PC unless you include them in an export you make (<strong>Include learned voices</strong> in <strong>Settings › Account › Export</strong>; the zip then holds the prints themselves, so keep it private). The <a href="/docs/connector/">connector for AI apps</a> never returns them either.</li>
 <li><strong>Next to each person:</strong> a short history in plain words (when the voice was learned or strengthened, renamed, merged).</li>
 </ul>
 <p>For everything else A9 Voice keeps, see <a href="/docs/privacy-and-data/">Privacy and your data</a>.</p>
@@ -262,8 +262,7 @@ note, then rename or forget the wrong one yourself.</p>
 <h3 id="import-voices-from-a-file">Import voices from a file<a class="anchor" href="#import-voices-from-a-file" aria-label="Link to Import voices from a file">#</a></h3>
 <p><strong>Import voices from a file...</strong> reads a voiceprints file you already have and lets you pick who to add. People who are
 already here are shown as <strong>already here</strong> and left as they are, and nothing is replaced. Choose who to add and press
-<strong>Import</strong> with the number of people. A9 Voice does not export voices, so this is only for a file that came from somewhere
-else. A file it cannot use gives an error such as &quot;Not a voiceprints file&quot;.</p>
+<strong>Import</strong> with the number of people. To move your saved voices to another PC, tick <strong>Include learned voices</strong> when you export your setup; importing that zip adds them (people already there are skipped, and voice recognition stays as that PC has it). This box is for a voiceprints file that came from somewhere else. A file it cannot use gives an error such as &quot;Not a voiceprints file&quot;.</p>
 <p><figure class="shot"><img src="/img/docs/voices-import-1x.webp" srcset="/img/docs/voices-import-1x.webp 1x, /img/docs/voices-import.webp 2x" width="794" height="213" alt="The Import voices box: Priya marked already here, Tomas and Ines ticked, and the buttons Import 2 and Cancel." loading="lazy" decoding="async"></figure></p>
 <h3 id="delete-all-voices">Delete all voices<a class="anchor" href="#delete-all-voices" aria-label="Link to Delete all voices">#</a></h3>
 <p>At the bottom of the page, <strong>Delete all voices</strong> removes every voice from your PC at once. Type <code>DELETE</code> in the box and
