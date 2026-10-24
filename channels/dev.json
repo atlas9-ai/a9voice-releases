@@ -1,13 +1,13 @@
 {
-  "version": "1.0.21",
-  "notes": "- **Recognize people by voice stays on when you change another setting afterwards.** A Settings page that was open before you turned a setting on could save its older copy and switch it back off. Pages now save only what you changed, and every page re-reads settings the app changed itself.",
-  "pub_date": "2026-10-23T18:40:55Z",
+  "version": "1.0.22",
+  "notes": "- **Report a problem from Settings › General (the About card) or the tray; you see exactly what's sent.** Describe what went wrong and press Send. Under **Show what's sent** you can read the version, Windows details, a summary of switches and engine names and the recent log lines that go with it, with keys, names and your user folder taken out. Nothing is sent until you press Send, and you get a report ID. See [Reporting a problem](/docs/troubleshooting/#reporting-a-problem).",
+  "pub_date": "2026-10-24T22:06:43Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJLcVV3VG0zUEUwOXFiK2VhNG5SNEU5QkNUVXdEb1NRSE9XZXNMb3hBRHM5R3NzMzhOdjV6eTdMVm5XQzhsTEFqNXZSdnJISGltYnBlQzM3QnhrS0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzgwNzg4CWZpbGU6QTkgVm9pY2VfMS4wLjIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjEKUThnUFlnaUFyQmNTRG5rdGhJN1BFRzZ3Z3dZWkdaRnVtVjNIWGh6RjExbk8xVklNYUpYYnlGVFdZOE12UnZBaHhzbVd1WjlCYkg0UkVab1dzOGVsQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.21/A9Voice_1.0.21_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE5YN3JOcGh5Z1ZBN2RWL3FqNW5wcURnc3F5S2hocmZ2WkVEZ0I3TGxtaVpKZldGRkZvN2pVN1BjdnRLU0dZUEJLUWdWWC9MYXJPditjT1pNcUhXMEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODc5NTQzCWZpbGU6QTkgVm9pY2VfMS4wLjIyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjIKQ0IzRkJhYXIwSk1VTGdnK3kzc0VsdXBmSTNrek9zTWdoMmJ3MDA2d09CaTFuYWdkZVo3Y1crKzJmcThZdTdXOFJxZGN1dVRKUXNoOGdtOWFITGhxQ1E9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.22/A9Voice_1.0.22_x64-setup.exe"
     }
   },
-  "installer_sha256": "d7c276c27de43833d41d116f617ccd086017485dd9a821a88e550f63c2642943",
-  "installer_size": 12750341
+  "installer_sha256": "a35b3c58814ee93c76d22cfbf3a89d8764c8172aa3a47875a01841b4e177f913",
+  "installer_size": 12793385
 }
