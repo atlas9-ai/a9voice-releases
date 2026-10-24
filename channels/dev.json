@@ -1,13 +1,13 @@
 {
-  "version": "1.0.22",
-  "notes": "- **Report a problem from Settings › General (the About card) or the tray; you see exactly what's sent.** Describe what went wrong and press Send. Under **Show what's sent** you can read the version, Windows details, a summary of switches and engine names and the recent log lines that go with it, with keys, names and your user folder taken out. Nothing is sent until you press Send, and you get a report ID. See [Reporting a problem](/docs/troubleshooting/#reporting-a-problem).",
-  "pub_date": "2026-10-24T22:06:43Z",
+  "version": "1.0.23",
+  "notes": "- **New PC? Point A9 Voice at your notes folder and it finds the notes already there.** A new PC pointed at a folder that already holds your notes started with an empty list. **Find notes in this folder** (Settings › Notes › Storage) now offers the notes it finds, right after **Change…**, at startup over an empty list, or when you press **Find…**. It only reads the files and changes nothing until you edit a note. See [Moving your notes to a new PC](/docs/templates-and-export/#moving-your-notes-to-a-new-pc).\n- **Export can now include your notes and learned voices.** **Include my notes** carries summaries, transcripts, images and the details a folder can't hold, never audio. **Include learned voices** is off unless you tick it. Import shows what is in the file with a checkbox for each part and merges notes without replacing or deleting any.",
+  "pub_date": "2026-10-24T23:57:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE5YN3JOcGh5Z1ZBN2RWL3FqNW5wcURnc3F5S2hocmZ2WkVEZ0I3TGxtaVpKZldGRkZvN2pVN1BjdnRLU0dZUEJLUWdWWC9MYXJPditjT1pNcUhXMEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODc5NTQzCWZpbGU6QTkgVm9pY2VfMS4wLjIyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjIKQ0IzRkJhYXIwSk1VTGdnK3kzc0VsdXBmSTNrek9zTWdoMmJ3MDA2d09CaTFuYWdkZVo3Y1crKzJmcThZdTdXOFJxZGN1dVRKUXNoOGdtOWFITGhxQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.22/A9Voice_1.0.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdJYW56WjZrN0t2dDFkejFLOGsxUE5tbHhlaHV0bHkya2F1QUdHMFQrTGsvQlJiZXN1OEpWWDZoQUg4QXZUS2dzdzU2NFdIdnZLQkhrR1g5S0RzalE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODg2MTU4CWZpbGU6QTkgVm9pY2VfMS4wLjIzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjMKUjJ6ZXRPSkw4T2NKdHhqelBtWm5Zek1Zbll4Qy8xVit5R0tEaG5PUHhtdmY4MDdGbjZUbmE2QlFtNkE1L1ZMa1h4dHpiMWkvN0ZDY21NdUN0S1NlRGc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.23/A9Voice_1.0.23_x64-setup.exe"
     }
   },
-  "installer_sha256": "a35b3c58814ee93c76d22cfbf3a89d8764c8172aa3a47875a01841b4e177f913",
-  "installer_size": 12793385
+  "installer_sha256": "ccd2ec78d9bb5d6ecec8e666d0c4f47c8bc67d12526f4df575eb8730982c7ee6",
+  "installer_size": 12864592
 }

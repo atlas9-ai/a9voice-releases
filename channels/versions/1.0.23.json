@@ -1,0 +1,13 @@
+{
+  "version": "1.0.23",
+  "notes": "- **New PC? Point A9 Voice at your notes folder and it finds the notes already there.** A new PC pointed at a folder that already holds your notes started with an empty list. **Find notes in this folder** (Settings › Notes › Storage) now offers the notes it finds, right after **Change…**, at startup over an empty list, or when you press **Find…**. It only reads the files and changes nothing until you edit a note. See [Moving your notes to a new PC](/docs/templates-and-export/#moving-your-notes-to-a-new-pc).\n- **Export can now include your notes and learned voices.** **Include my notes** carries summaries, transcripts, images and the details a folder can't hold, never audio. **Include learned voices** is off unless you tick it. Import shows what is in the file with a checkbox for each part and merges notes without replacing or deleting any.",
+  "pub_date": "2026-10-24T23:57:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdJYW56WjZrN0t2dDFkejFLOGsxUE5tbHhlaHV0bHkya2F1QUdHMFQrTGsvQlJiZXN1OEpWWDZoQUg4QXZUS2dzdzU2NFdIdnZLQkhrR1g5S0RzalE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODg2MTU4CWZpbGU6QTkgVm9pY2VfMS4wLjIzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjMKUjJ6ZXRPSkw4T2NKdHhqelBtWm5Zek1Zbll4Qy8xVit5R0tEaG5PUHhtdmY4MDdGbjZUbmE2QlFtNkE1L1ZMa1h4dHpiMWkvN0ZDY21NdUN0S1NlRGc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.23/A9Voice_1.0.23_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "ccd2ec78d9bb5d6ecec8e666d0c4f47c8bc67d12526f4df575eb8730982c7ee6",
+  "installer_size": 12864592
+}
