@@ -1,0 +1,13 @@
+{
+  "version": "1.0.24",
+  "notes": "- **Calls are detected again on current Windows 11.** Newer Windows 11 builds stopped listing which apps use the microphone where A9 Voice looked, so Teams, Zoom, Google Meet in Chrome and the rest were never picked up and nothing started by itself. A9 Voice now also asks Windows' audio system, on every microphone and not only the default one, and a call counts when either source shows it. Start and stop timing, the **Browser calls** switch and its default, and the notices are unchanged.\n- **Detection check** (Settings › Recording): lists the apps holding each microphone right now and which of them would start a recording. Copy diagnostics and problem reports carry the same lines, and the log says which way each call was seen.",
+  "pub_date": "2026-10-26T19:58:44Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJiejNuNGN6TmlzdW9GbllRaEx3bnVsRmJva1lIQUcxZnJGRWo3emE0M05NMmIzVlljb0F5S0RCZFZsZXZFQmRzU1AwQmswQkNOa0U3T3J5UVVjdFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMDQ0NjQ5CWZpbGU6QTkgVm9pY2VfMS4wLjI0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjQKZzA1bGdmbFBuY3cwZi84MUxkV243TnhPWUxUSGtjQjhNOElNUUZVMGFpbDUyc0NHMEZzVjV3MWN5dWloR2JYYkszQTByTTRrNzNxZ1dheUNud3NtQmc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.24/A9Voice_1.0.24_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "0ece4f1a89dbade0b3c6ed4958e55ccfe44e8cd4557601049814806f4c8c6e5c",
+  "installer_size": 12895859
+}
