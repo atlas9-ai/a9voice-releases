@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.21"
+      "softwareVersion": "1.0.23"
     }
   ]
 }
@@ -111,7 +111,12 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-23">
+  <section class="log-entry" aria-labelledby="v-1-0-24">
+  <h2 id="v-1-0-24">1.0.24 <time datetime="2026-10-26">October 26, 2026</time></h2>
+  <ul><li><strong>Calls are detected again on current Windows 11.</strong> Newer Windows 11 builds stopped listing which apps use the microphone where A9 Voice looked, so Teams, Zoom, Google Meet in Chrome and the rest were never picked up and nothing started by itself. A9 Voice now also asks Windows&#39; audio system, on every microphone and not only the default one, and a call counts when either source shows it. Start and stop timing, the <strong>Browser calls</strong> switch and its default, and the notices are unchanged.</li>
+<li><strong>Detection check</strong> (Settings › Recording): lists the apps holding each microphone right now and which of them would start a recording. Copy diagnostics and problem reports carry the same lines, and the log says which way each call was seen.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-23">
   <h2 id="v-1-0-23">1.0.23 <time datetime="2026-10-24">October 24, 2026</time></h2>
   <ul><li><strong>New PC? Point A9 Voice at your notes folder and it finds the notes already there.</strong> A new PC pointed at a folder that already holds your notes started with an empty list. <strong>Find notes in this folder</strong> (Settings › Notes › Storage) now offers the notes it finds, right after <strong>Change…</strong>, at startup over an empty list, or when you press <strong>Find…</strong>. It only reads the files and changes nothing until you edit a note. See <a href="/docs/templates-and-export/#moving-your-notes-to-a-new-pc">Moving your notes to a new PC</a>.</li>
 <li><strong>Export can now include your notes and learned voices.</strong> <strong>Include my notes</strong> carries summaries, transcripts, images and the details a folder can&#39;t hold, never audio. <strong>Include learned voices</strong> is off unless you tick it. Import shows what is in the file with a checkbox for each part and merges notes without replacing or deleting any.</li></ul>
@@ -627,7 +632,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.21</a>
+        <a class="sf-ver" href="/changelog/">v1.0.23</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
