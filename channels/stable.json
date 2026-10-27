@@ -1,13 +1,13 @@
 {
-  "version": "1.0.21",
-  "notes": "- **Recognize people by voice stays on when you change another setting afterwards.** A Settings page that was open before you turned a setting on could save its older copy and switch it back off. Pages now save only what you changed, and every page re-reads settings the app changed itself.",
-  "pub_date": "2026-10-23T18:40:55Z",
+  "version": "1.0.25",
+  "notes": "- **A9 Voice now reopens itself if Windows closes it for a restart that doesn't finish.** Run entries only start apps at sign-in, so a restart that was called off left A9 Voice closed, and a call after it was not recorded. When Windows ends the session, A9 Voice sets a one-time reminder that opens it in the tray two minutes later (the sign-in start removes it if the PC really restarts), and registers with Windows' own restart-apps path. Quitting from the tray still means quit. A recording that was running is saved and finished at the next start. See [A9 Voice was closed after a restart that did not finish](/docs/troubleshooting/#a9-voice-was-closed-after-a-restart-that-did-not-finish).\n- **The log now says how A9 Voice ended and how it started**: quit from the tray, Windows ending the session, a crash (with the place in the code), and on the next start the way it was started.\n- **Fewer repeated audio warnings.** A microphone buffer underrun is logged once with a count instead of once per callback, and it no longer makes the next dictation close and reopen the microphone.",
+  "pub_date": "2026-10-27T13:27:01Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEJLcVV3VG0zUEUwOXFiK2VhNG5SNEU5QkNUVXdEb1NRSE9XZXNMb3hBRHM5R3NzMzhOdjV6eTdMVm5XQzhsTEFqNXZSdnJISGltYnBlQzM3QnhrS0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzgwNzg4CWZpbGU6QTkgVm9pY2VfMS4wLjIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjEKUThnUFlnaUFyQmNTRG5rdGhJN1BFRzZ3Z3dZWkdaRnVtVjNIWGh6RjExbk8xVklNYUpYYnlGVFdZOE12UnZBaHhzbVd1WjlCYkg0UkVab1dzOGVsQ1E9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.21/A9Voice_1.0.21_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcENWNnF0RTN3T1lJVzM2ZmNFcXl4Z1psMFpOMmdNdWtWQUhkbmIxVktsODQyNDdrRk9UY0tUbkFDcHczWDg5ZzhTOGhGaThrZVQyVllENXVhY1Jtd0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMTA3NTU5CWZpbGU6QTkgVm9pY2VfMS4wLjI1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjUKcUR4TnQzZXliai94MnNQdWc1MHpNU0NINzBPemFSYjZIVTRBVWlTZmx0bXV5QUM0b1grblNpOTVWQ25CYWw5aVNLb01FNnNGWnhERTRrbFY4T2l4Q3c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.25/A9Voice_1.0.25_x64-setup.exe"
     }
   },
-  "installer_sha256": "d7c276c27de43833d41d116f617ccd086017485dd9a821a88e550f63c2642943",
-  "installer_size": 12750341
+  "installer_sha256": "1827c9acf1f7e57205d1fece6892e20ccf51e4d5db1d68b74f596d547214dc6e",
+  "installer_size": 12895613
 }
