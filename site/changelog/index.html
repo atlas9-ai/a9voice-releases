@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.23"
+      "softwareVersion": "1.0.21"
     }
   ]
 }
@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-24">
+  <section class="log-entry" aria-labelledby="v-1-0-25">
+  <h2 id="v-1-0-25">1.0.25 <time datetime="2026-10-27">October 27, 2026</time></h2>
+  <ul><li><strong>A9 Voice now reopens itself if Windows closes it for a restart that doesn&#39;t finish.</strong> Run entries only start apps at sign-in, so a restart that was called off left A9 Voice closed, and a call after it was not recorded. When Windows ends the session, A9 Voice sets a one-time reminder that opens it in the tray two minutes later (the sign-in start removes it if the PC really restarts), and registers with Windows&#39; own restart-apps path. Quitting from the tray still means quit. A recording that was running is saved and finished at the next start. See <a href="/docs/troubleshooting/#a9-voice-was-closed-after-a-restart-that-did-not-finish">A9 Voice was closed after a restart that did not finish</a>.</li>
+<li><strong>The log now says how A9 Voice ended and how it started</strong>: quit from the tray, Windows ending the session, a crash (with the place in the code), and on the next start the way it was started.</li>
+<li><strong>Fewer repeated audio warnings.</strong> A microphone buffer underrun is logged once with a count instead of once per callback, and it no longer makes the next dictation close and reopen the microphone.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-24">
   <h2 id="v-1-0-24">1.0.24 <time datetime="2026-10-26">October 26, 2026</time></h2>
   <ul><li><strong>Calls are detected again on current Windows 11.</strong> Newer Windows 11 builds stopped listing which apps use the microphone where A9 Voice looked, so Teams, Zoom, Google Meet in Chrome and the rest were never picked up and nothing started by itself. A9 Voice now also asks Windows&#39; audio system, on every microphone and not only the default one, and a call counts when either source shows it. Start and stop timing, the <strong>Browser calls</strong> switch and its default, and the notices are unchanged.</li>
 <li><strong>Detection check</strong> (Settings › Recording): lists the apps holding each microphone right now and which of them would start a recording. Copy diagnostics and problem reports carry the same lines, and the log says which way each call was seen.</li></ul>
@@ -632,7 +638,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.23</a>
+        <a class="sf-ver" href="/changelog/">v1.0.21</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
