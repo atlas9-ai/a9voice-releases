@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.21"
+      "softwareVersion": "1.0.25"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Reference</p>
       <h1>Updates and channels</h1>
       <p class="docs-lead">How A9 Voice keeps itself current, the difference between Stable and Dev, and how to check for or install an update yourself.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.11</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.26</p>
       <p>A9 Voice looks for updates in the background, downloads them, checks that they are genuine and installs them when it is safe to. You do not have to do anything, but you can check by hand, choose how early you get new builds, and decide when the app restarts.</p>
 <h2 id="stable-and-dev">Stable and Dev<a class="anchor" href="#stable-and-dev" aria-label="Link to Stable and Dev">#</a></h2>
 <p>There are two channels. A channel is just a stream of builds you follow.</p>
@@ -194,6 +194,16 @@
 <li><strong>Restart automatically when idle</strong> is the switch described above.</li>
 </ul>
 <p>Every option is described on the <a href="/docs/settings-reference/">Settings reference</a>.</p>
+<h2 id="the-microsoft-store-copy">The Microsoft Store copy<a class="anchor" href="#the-microsoft-store-copy" aria-label="Link to The Microsoft Store copy">#</a></h2>
+<p>If you installed A9 Voice from the Microsoft Store, the Store updates it, and A9 Voice does not look for updates itself.</p>
+<ul>
+<li><strong>Settings › General › Updates</strong> shows your version and &quot;Updates come from the Microsoft Store.&quot; There is no channel, no <strong>Check now</strong> and no <strong>Restart automatically when idle</strong>, and the sidebar has no <strong>Check for updates</strong> link. To check by hand, open the Microsoft Store, then <strong>Library</strong>, then <strong>Get updates</strong>.</li>
+<li><strong>Start with Windows</strong> uses the startup setting Windows keeps for apps. If you turned A9 Voice off in Task Manager (Startup apps) or in Settings › Apps › Startup, the switch in A9 Voice cannot turn it back on, and says so under the switch. Turn it on there.</li>
+<li><strong>Your files are separate.</strong> A Store copy keeps its settings, notes and downloaded speech models in a private folder that belongs to the package, under <code>%LOCALAPPDATA%\Packages</code>. It does not read the folders of a copy installed from a9voice.com, and the other way round. Your API keys are in Windows Credential Manager, which both copies use. Removing the Store copy removes the files in its private folder, so export what you want to keep first (Settings › Notes › Storage, and <a href="/docs/templates-and-export/#moving-your-notes-to-a-new-pc">Moving your notes to a new PC</a>). <strong>Show in folder</strong> and <strong>Open the logs folder</strong> open the folder where the files really are.</li>
+<li><strong>Both installed.</strong> If A9 Voice finds a copy from a9voice.com on the PC too, it says &quot;A9 Voice is also installed from a9voice.com. Keep one; they don&#39;t share notes.&quot; once, at the top of the window. It removes nothing and moves nothing.</li>
+<li><strong>Sending a problem report</strong> works the same. The report starts with a line that says the copy is from a package.</li>
+</ul>
+<p>The copy from a9voice.com is unchanged: it updates itself as described above.</p>
 <h2 id="if-an-update-is-interrupted">If an update is interrupted<a class="anchor" href="#if-an-update-is-interrupted" aria-label="Link to If an update is interrupted">#</a></h2>
 <p>An update closes A9 Voice, runs the installer and starts the new version. If something in the middle stops it, for example Windows or security software holding the installer back, A9 Voice does not stay closed:</p>
 <ul>
@@ -221,7 +231,7 @@
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/settings-reference/"><span class="docs-step-l">Previous</span><span>Settings reference</span></a><a class="docs-step next" href="/docs/privacy-and-data/"><span class="docs-step-l">Next</span><span>Privacy and data</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#stable-and-dev">Stable and Dev</a></li><li class="d3"><a href="#switch-channel">Switch channel</a></li><li class="d3"><a href="#going-back-to-stable">Going back to Stable</a></li><li class="d2"><a href="#how-an-update-reaches-you">How an update reaches you</a></li><li class="d2"><a href="#the-sidebar-version-line">The sidebar version line</a></li><li class="d2"><a href="#restart-automatically-when-idle">Restart automatically when idle</a></li><li class="d2"><a href="#the-updates-card">The Updates card</a></li><li class="d2"><a href="#if-an-update-is-interrupted">If an update is interrupted</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#stable-and-dev">Stable and Dev</a></li><li class="d3"><a href="#switch-channel">Switch channel</a></li><li class="d3"><a href="#going-back-to-stable">Going back to Stable</a></li><li class="d2"><a href="#how-an-update-reaches-you">How an update reaches you</a></li><li class="d2"><a href="#the-sidebar-version-line">The sidebar version line</a></li><li class="d2"><a href="#restart-automatically-when-idle">Restart automatically when idle</a></li><li class="d2"><a href="#the-updates-card">The Updates card</a></li><li class="d2"><a href="#the-microsoft-store-copy">The Microsoft Store copy</a></li><li class="d2"><a href="#if-an-update-is-interrupted">If an update is interrupted</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -236,7 +246,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.21</a>
+        <a class="sf-ver" href="/changelog/">v1.0.25</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

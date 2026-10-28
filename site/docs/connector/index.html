@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.21"
+      "softwareVersion": "1.0.25"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Connect</p>
       <h1>Connector for AI apps (MCP)</h1>
       <p class="docs-lead">Let an AI app on your PC, such as Claude Desktop or ChatGPT desktop, search and read your A9 Voice notes, so you can ask it about your meetings. It is read only, off until you turn it on, and nothing leaves your PC except what that app reads.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.6.0</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.26</p>
       <p>The connector is a small helper that AI apps can start on your PC. Once an app is connected, you can ask it things like
 &quot;What did Priya say about the approval routing?&quot; or &quot;What action items do I have from this week?&quot; and it looks the
 answer up in your notes.</p>
@@ -205,6 +205,12 @@ connector is on. Quit and reopen Claude Desktop to load it.&quot;</p>
 <p>If Claude Desktop is not installed on your PC, the page says so (&quot;Claude Desktop isn&#39;t installed on this PC. You can
 connect it later, or use the steps for other apps below.&quot;).</p>
 <p><figure class="shot"><img src="/img/docs/connector-claude-missing-1x.webp" srcset="/img/docs/connector-claude-missing-1x.webp 1x, /img/docs/connector-claude-missing.webp 2x" width="794" height="116" alt="The Claude Desktop section when it is not installed, with the message and the connect button." loading="lazy" decoding="async"></figure></p>
+<h3 id="a-microsoft-store-copy">A Microsoft Store copy<a class="anchor" href="#a-microsoft-store-copy" aria-label="Link to A Microsoft Store copy">#</a></h3>
+<p>A Store copy of A9 Voice cannot change another app&#39;s settings file, so there is no <strong>Connect</strong> button. The page tells you so
+and shows <strong>Copy settings (JSON)</strong> instead. In Claude Desktop open <strong>Settings › Developer › Edit Config</strong>, paste the settings
+into that file (add the <code>a9-voice</code> entry next to any others), save, and quit and reopen Claude Desktop. The command in it
+is <code>a9voice.exe</code> in <code>%LOCALAPPDATA%\Microsoft\WindowsApps</code>, the shortcut Windows keeps for the Store copy, and it reads the
+Store copy&#39;s notes. A copy from a9voice.com has its own connector and its own notes.</p>
 <h2 id="connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app<a class="anchor" href="#connect-chatgpt-desktop-or-another-app" aria-label="Link to Connect ChatGPT desktop or another app">#</a></h2>
 <p>Under <strong>Other apps</strong>, A9 Voice gives you two things to copy.</p>
 <ul>
@@ -259,7 +265,7 @@ was installed. Click <strong>Connect</strong> again to update it.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/asking-your-notes/"><span class="docs-step-l">Previous</span><span>Asking your notes</span></a><a class="docs-step next" href="/docs/webhooks/"><span class="docs-step-l">Next</span><span>Webhooks</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-the-connector-does">What the connector does</a></li><li class="d3"><a href="#what-an-ai-app-can-ask-for">What an AI app can ask for</a></li><li class="d3"><a href="#what-an-ai-app-can-never-get">What an AI app can never get</a></li><li class="d3"><a href="#what-it-can-read-once-you-connect-it">What it can read once you connect it</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#connect-claude-desktop">Connect Claude Desktop</a></li><li class="d2"><a href="#connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app</a></li><li class="d2"><a href="#see-what-apps-asked">See what apps asked</a></li><li class="d2"><a href="#turn-it-off-or-remove-it">Turn it off or remove it</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-the-connector-does">What the connector does</a></li><li class="d3"><a href="#what-an-ai-app-can-ask-for">What an AI app can ask for</a></li><li class="d3"><a href="#what-an-ai-app-can-never-get">What an AI app can never get</a></li><li class="d3"><a href="#what-it-can-read-once-you-connect-it">What it can read once you connect it</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#connect-claude-desktop">Connect Claude Desktop</a></li><li class="d3"><a href="#a-microsoft-store-copy">A Microsoft Store copy</a></li><li class="d2"><a href="#connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app</a></li><li class="d2"><a href="#see-what-apps-asked">See what apps asked</a></li><li class="d2"><a href="#turn-it-off-or-remove-it">Turn it off or remove it</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
@@ -274,7 +280,7 @@ was installed. Click <strong>Connect</strong> again to update it.</li>
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.21</a>
+        <a class="sf-ver" href="/changelog/">v1.0.25</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
