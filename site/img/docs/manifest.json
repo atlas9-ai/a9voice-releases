@@ -817,11 +817,11 @@
  },
  "voices-forget": {
   "w": 638,
-  "h": 328
+  "h": 317
  },
  "voices-history": {
   "w": 638,
-  "h": 375
+  "h": 364
  },
  "voices-import": {
   "w": 642,
@@ -845,11 +845,11 @@
  },
  "voices-people": {
   "w": 638,
-  "h": 847
+  "h": 970
  },
  "voices-stale": {
   "w": 638,
-  "h": 776
+  "h": 899
  },
  "webhooks-add-button": {
   "w": 156,
@@ -910,5 +910,9 @@
  "voices-tuneup": {
   "w": 642,
   "h": 210
+ },
+ "voices-scorecard": {
+  "w": 642,
+  "h": 136
  }
 }

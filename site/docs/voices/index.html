@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Voices (voice recognition)</h1>
       <p class="docs-lead">Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.28</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.30</p>
       <p>Without this, people on a call show up as <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, until you name them. With
 <strong>Recognize people by voice</strong> on, A9 Voice remembers how each person you have named sounds, and names them for you
 in later meetings, both on the live transcript and in the finished note.</p>
@@ -204,14 +204,16 @@ different person you taught, A9 Voice names the speaker with that other person a
 <p>Each time a voice is learned, the stretch it came from is also kept as a <strong>sample</strong> under that person. A name you
 gave a speaker counts in full. A name A9 Voice gave by voice and that you <strong>left alone</strong> counts too, at half weight, once
 you have opened the note (or a day after it was made): the guess stood, so it is probably right. If you change that
-name to someone else instead, the sample is not kept for the wrong person. Nothing is learned from a note while a call is
-going on.</p>
+name to someone else instead, that is a <strong>correction</strong>: the wrong person&#39;s guessed sample from that speaker is set aside
+(marked &quot;corrected&quot;, and a line goes into their history), the right person&#39;s voice learns from the speaker as usual, and the
+next tune-up uses both. A correction never edits a voice directly. Nothing is learned from a note while a call is going on.</p>
 <p>The <strong>Samples</strong> column on the Voices page counts the samples a voice is built from.</p>
 <h2 id="how-names-show-up">How names show up<a class="anchor" href="#how-names-show-up" aria-label="Link to How names show up">#</a></h2>
 <h3 id="during-a-call">During a call<a class="anchor" href="#during-a-call" aria-label="Link to During a call">#</a></h3>
 <p>A9 Voice starts to compare a speaker with the voices you taught it after about 8 seconds of that speaker&#39;s talking, and
 tries again as more speech comes in. A name is shown only once two tries in a row agree on it, and it does not change
-after that.</p>
+after that. For people you are likely to be in the meeting with (see <a href="#expected-people">Expected people</a>), one try is enough
+when the match is a sure one.</p>
 <ul>
 <li><strong>A sure match</strong> (the voice is alike enough, and clearly closer to this person than to anyone else you taught)
 names the speaker on every line, past and future.</li>
@@ -235,7 +237,7 @@ speaker.</p>
 <p>Naming a speaker yourself always wins over a guess.</p>
 <h2 id="the-voices-page">The Voices page<a class="anchor" href="#the-voices-page" aria-label="Link to The Voices page">#</a></h2>
 <p>Open <strong>Settings › Notes › Voices</strong> to see everyone A9 Voice has learned.</p>
-<p><figure class="shot"><img src="/img/docs/voices-people-1x.webp" srcset="/img/docs/voices-people-1x.webp 1x, /img/docs/voices-people.webp 2x" width="638" height="847" alt="The Voices page: the switch is on and the People table lists Priya, Marcus, Dana, Omar and Lena with Samples, Last recognized and Meetings." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/voices-people-1x.webp" srcset="/img/docs/voices-people-1x.webp 1x, /img/docs/voices-people.webp 2x" width="638" height="970" alt="The Voices page: the switch is on and the People table lists Priya, Marcus, Dana, Omar and Lena with Samples, Last recognized and Meetings." loading="lazy" decoding="async"></figure></p>
 <p>Each row shows the person&#39;s <strong>Name</strong>, <strong>Meetings (90 days)</strong>, <strong>Last heard</strong> (the date, or <strong>Never</strong>) and <strong>Samples</strong>.
 The list starts sorted by <strong>Meetings (90 days)</strong>, most first; click a column heading to sort by it (click again to flip
 the order).</p>
@@ -258,14 +260,32 @@ how many samples each had.</li>
 <strong>Forget</strong>. The space the voiceprint used is overwritten, so nothing about that voice is left on your PC.</li>
 </ul>
 <p><figure class="shot"><img src="/img/docs/voices-merge-1x.webp" srcset="/img/docs/voices-merge-1x.webp 1x, /img/docs/voices-merge.webp 2x" width="1080" height="820" alt="The name picker under Merge, listing the other saved people." loading="lazy" decoding="async"></figure></p>
-<p><figure class="shot"><img src="/img/docs/voices-forget-1x.webp" srcset="/img/docs/voices-forget-1x.webp 1x, /img/docs/voices-forget.webp 2x" width="638" height="328" alt="The row under Dana asking Forget Dana's voice now? It's removed from this PC for good, with a Forget button." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/voices-forget-1x.webp" srcset="/img/docs/voices-forget-1x.webp 1x, /img/docs/voices-forget.webp 2x" width="638" height="317" alt="The row under Dana asking Forget Dana's voice now? It's removed from this PC for good, with a Forget button." loading="lazy" decoding="async"></figure></p>
 <p>Click a person&#39;s name to open their history, one short line per event.</p>
-<p><figure class="shot"><img src="/img/docs/voices-history-1x.webp" srcset="/img/docs/voices-history-1x.webp 1x, /img/docs/voices-history.webp 2x" width="638" height="375" alt="Priya's history opened under her name: learned from a tag, strengthened from naming a speaker, not updated because the voice was too different, strengthened from a tag." loading="lazy" decoding="async"><figcaption>A person's history.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/voices-history-1x.webp" srcset="/img/docs/voices-history-1x.webp 1x, /img/docs/voices-history.webp 2x" width="638" height="364" alt="Priya's history opened under her name: learned from a tag, strengthened from naming a speaker, not updated because the voice was too different, strengthened from a tag." loading="lazy" decoding="async"><figcaption>A person's history.</figcaption></figure></p>
+<h3 id="the-scorecard">The scorecard<a class="anchor" href="#the-scorecard" aria-label="Link to The scorecard">#</a></h3>
+<p>At the top of the page, <strong>Scorecard</strong> says how well naming by voice is doing over the last 30 days, for example: &quot;Named by
+voice: 82% right (41 of 50) · Corrections: 0.6 per meeting · Time to a name: 14 s (median).&quot;</p>
+<ul>
+<li><strong>Named by voice … right</strong> counts the speakers A9 Voice named by voice, and how many of those you did not change to
+someone else.</li>
+<li><strong>Corrections</strong> is how many times you changed a name A9 Voice gave, per meeting.</li>
+<li><strong>Time to a name</strong> is the middle time, in the Live window, from a speaker&#39;s first line to their name appearing.</li>
+<li>With fewer than 5 meetings in those 30 days it says &quot;Not enough meetings yet.&quot;</li>
+</ul>
+<p><figure class="shot"><img src="/img/docs/voices-scorecard-1x.webp" srcset="/img/docs/voices-scorecard-1x.webp 1x, /img/docs/voices-scorecard.webp 2x" width="642" height="136" alt="The scorecard: named by voice 82 percent right, 41 of 50, corrections 0.6 per meeting, time to a name 14 seconds." loading="lazy" decoding="async"></figure></p>
+<p>The numbers are counts and times only, kept in <code>voices.db</code> on this PC: no names, never exported and never sent anywhere.</p>
+<h3 id="expected-people">Expected people<a class="anchor" href="#expected-people" aria-label="Link to Expected people">#</a></h3>
+<p>When a recording starts, A9 Voice works out who is probably there: the people named in the last 3 notes of the same
+meeting (the same name once dates and numbers are ignored, as soon as the meeting&#39;s name is known), then Core people heard in the
+last 14 days, 25 at most. In the Live window, an expected person can be named after one sure try instead of two. Nothing
+else changes: the thresholds are the same, and anyone outside the set is named as before. Nothing new shows on screen; it just
+names sooner.</p>
 <h3 id="clear-out-voices-you-no-longer-need">Clear out voices you no longer need<a class="anchor" href="#clear-out-voices-you-no-longer-need" aria-label="Link to Clear out voices you no longer need">#</a></h3>
 <p>A row of filters sits above the list, each with its count: <strong>All</strong>, <strong>Core</strong>, <strong>Heard once</strong> (people in one meeting
 only) and <strong>Not heard in 60 days</strong>. A person counts as not heard in 60 days when their newest note, or the day they
 were added if they were never heard, is that old.</p>
-<p><figure class="shot"><img src="/img/docs/voices-stale-1x.webp" srcset="/img/docs/voices-stale-1x.webp 1x, /img/docs/voices-stale.webp 2x" width="638" height="776" alt="The People list under the Heard once filter, with the link to select everyone heard once and not in 60 days." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/voices-stale-1x.webp" srcset="/img/docs/voices-stale-1x.webp 1x, /img/docs/voices-stale.webp 2x" width="638" height="899" alt="The People list under the Heard once filter, with the link to select everyone heard once and not in 60 days." loading="lazy" decoding="async"></figure></p>
 <p>Tick the box on a row to select it (or the box in the header to select everyone shown). With people selected,
 <strong>Forget selected</strong> asks once, listing the names and how many there are, and then removes them together. When there
 are people heard once and not in 60 days, a link above the list, <strong>Select all N heard once and not in 60 days</strong>, selects
@@ -334,7 +354,7 @@ from each speaker.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/note-page/"><span class="docs-step-l">Previous</span><span>The note page</span></a><a class="docs-step next" href="/docs/templates-and-export/"><span class="docs-step-l">Next</span><span>Templates and export</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-stored-and-where">What is stored, and where</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#how-a9-voice-learns-a-voice">How A9 Voice learns a voice</a></li><li class="d2"><a href="#how-names-show-up">How names show up</a></li><li class="d3"><a href="#during-a-call">During a call</a></li><li class="d3"><a href="#in-the-finished-note">In the finished note</a></li><li class="d2"><a href="#the-voices-page">The Voices page</a></li><li class="d3"><a href="#manage-people">Manage people</a></li><li class="d3"><a href="#clear-out-voices-you-no-longer-need">Clear out voices you no longer need</a></li><li class="d2"><a href="#tune-up-your-voices">Tune up your voices</a></li><li class="d3"><a href="#reading-your-past-meetings">Reading your past meetings</a></li><li class="d3"><a href="#check-voiceprints">Check voiceprints</a></li><li class="d3"><a href="#import-voices-from-a-file">Import voices from a file</a></li><li class="d3"><a href="#delete-all-voices">Delete all voices</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-is-stored-and-where">What is stored, and where</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#how-a9-voice-learns-a-voice">How A9 Voice learns a voice</a></li><li class="d2"><a href="#how-names-show-up">How names show up</a></li><li class="d3"><a href="#during-a-call">During a call</a></li><li class="d3"><a href="#in-the-finished-note">In the finished note</a></li><li class="d2"><a href="#the-voices-page">The Voices page</a></li><li class="d3"><a href="#manage-people">Manage people</a></li><li class="d3"><a href="#the-scorecard">The scorecard</a></li><li class="d3"><a href="#expected-people">Expected people</a></li><li class="d3"><a href="#clear-out-voices-you-no-longer-need">Clear out voices you no longer need</a></li><li class="d2"><a href="#tune-up-your-voices">Tune up your voices</a></li><li class="d3"><a href="#reading-your-past-meetings">Reading your past meetings</a></li><li class="d3"><a href="#check-voiceprints">Check voiceprints</a></li><li class="d3"><a href="#import-voices-from-a-file">Import voices from a file</a></li><li class="d3"><a href="#delete-all-voices">Delete all voices</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">
