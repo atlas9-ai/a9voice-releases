@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Speakers on this PC</h1>
       <p class="docs-lead">Tell the other people on a call apart while it is still going, on your own PC, for free. Nothing is sent anywhere and no key is needed.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.17</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.28</p>
       <p>In the <a href="/docs/live-window/">Live window</a>, each person on the other side of the call gets a color and a name, <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, so you can see who is saying what as it happens. Some speech services do this in the cloud. This page is about doing it on your PC instead, which is how it works when your live transcript is written on your PC (the free setup).</p>
 <h2 id="how-it-works">How it works<a class="anchor" href="#how-it-works" aria-label="Link to How it works">#</a></h2>
 <ul>
@@ -148,12 +148,13 @@
 <p>It is <strong>Automatic</strong> to begin with:</p>
 <ul>
 <li><strong>Live transcript on this PC:</strong> speakers are told apart on this PC.</li>
-<li><strong>Live transcript from Deepgram or AssemblyAI:</strong> their own speaker labels are used, as before.</li>
+<li><strong>Live transcript from Deepgram or AssemblyAI, speaker model installed:</strong> speakers are told apart on this PC, free. The service isn&#39;t asked for speaker labels, so its speaker-label add-on (about $0.12 an hour for AssemblyAI, the same for Deepgram) isn&#39;t billed.</li>
+<li><strong>Live transcript from Deepgram or AssemblyAI, speaker model not installed yet:</strong> the service&#39;s own speaker labels are used until you download the model.</li>
 </ul>
 <p>To choose, open <strong>Settings › Notes › Live window</strong> and use <strong>Speakers during the call</strong>:</p>
 <p><figure class="shot"><img src="/img/docs/speakers-on-this-pc-setting-1x.webp" srcset="/img/docs/speakers-on-this-pc-setting-1x.webp 1x, /img/docs/speakers-on-this-pc-setting.webp 2x" width="662" height="365" alt="Settings › Notes › Live window with Speakers during the call set to On this PC (free)." loading="lazy" decoding="async"></figure></p>
 <ul>
-<li><strong>Automatic:</strong> this PC when the live transcript is written on this PC, otherwise the service&#39;s labels.</li>
+<li><strong>Automatic:</strong> this PC when the live transcript is written on this PC, or when the speaker model is installed; otherwise the service&#39;s labels.</li>
 <li><strong>On this PC (free):</strong> this PC for any live transcript, including one from a service that has no speaker labels.</li>
 <li><strong>The live service&#39;s labels:</strong> only what the live service labels. Nothing is done on this PC.</li>
 </ul>
