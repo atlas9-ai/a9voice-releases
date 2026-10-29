@@ -1,13 +1,13 @@
 {
-  "version": "1.0.26",
-  "notes": "- **A9 Voice can run from a Microsoft Store package.** The program is the same one; it notices when it runs from the package. A Store copy is updated by the Store, so it makes no update checks and Settings › General › Updates just says \"Updates come from the Microsoft Store.\". **Start with Windows** uses Windows' own startup setting for apps, and a Store copy keeps its files in the package's private folder, so it does not share notes with a copy installed from a9voice.com. If both are installed, A9 Voice tells you once. Nothing changes for the version from a9voice.com. See [The Microsoft Store copy](/docs/updates-and-channels/#the-microsoft-store-copy).\n- **Connecting Claude Desktop from a Store copy is by hand.** The Store keeps a copy from changing another app's settings file, so Connectors shows the entry to paste instead of **Connect**. See [Connector for AI apps](/docs/connector/#a-microsoft-store-copy).",
-  "pub_date": "2026-10-28T02:30:36Z",
+  "version": "1.0.27",
+  "notes": "- **Home shows your numbers right after the app starts or updates.** The tiles used to stay empty until you opened another page and came back. They now wait for A9 Voice to finish starting, fill in on their own, and update when a dictation or a note finishes while Home is open.",
+  "pub_date": "2026-10-29T13:09:46Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcExBZ01MVVRnamdsaHE4cWRoZ2tZa2ROSjZiL0dHV212TXd2QkpCNGZHY1UwRWNXaTJMay9FeTE0Smd5YTNtMDhzcG4wank0eE9NUmhVcmtBbXcrT1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMTU0NTY1CWZpbGU6QTkgVm9pY2VfMS4wLjI2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjYKbktNVmtrVFNLam1JVnB0SDZyYk85bU02R1Y2dTQvTWprTG9vekYyU2U3T0NGUDVGT1NFM2NmMDRrVDZkZ2VVdVg4QWx3WlR6TEZEUlZNdGllMFBGRFE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.26/A9Voice_1.0.26_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEsrRzU0NUIxblNzR1hqMVpHOXhBc2hWL3FwVFdxTEtlbkxYcnRGcmtybS8xbVFkTE1Id1Z2UTUveERkMitPd1VIM0VSemVTRVhnTXkrWVBiaGRpbUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjc5MzEwCWZpbGU6QTkgVm9pY2VfMS4wLjI3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjcKRU1IZm9BUHB5TUI1bzlNdTEyY0hoVHU4aWI1QWt3NTIzbEUwUDk0N2R4TThXVXp4aW94M3lrV0pyTDdUbUI2NTZTL0dpSnlvRDA5dktLRk9qUDB2QWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.27/A9Voice_1.0.27_x64-setup.exe"
     }
   },
-  "installer_sha256": "5884661babb23fe1a2f74ababb5d5a1032e1870117bd1b04769976a5358ce664",
-  "installer_size": 12917554
+  "installer_sha256": "ceb19193eec96d85fe7b52331da35d27e0f6a6f205240212630a14af595f6b16",
+  "installer_size": 12918640
 }

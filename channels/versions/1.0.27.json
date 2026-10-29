@@ -1,0 +1,13 @@
+{
+  "version": "1.0.27",
+  "notes": "- **Home shows your numbers right after the app starts or updates.** The tiles used to stay empty until you opened another page and came back. They now wait for A9 Voice to finish starting, fill in on their own, and update when a dictation or a note finishes while Home is open.",
+  "pub_date": "2026-10-29T13:09:46Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEsrRzU0NUIxblNzR1hqMVpHOXhBc2hWL3FwVFdxTEtlbkxYcnRGcmtybS8xbVFkTE1Id1Z2UTUveERkMitPd1VIM0VSemVTRVhnTXkrWVBiaGRpbUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjc5MzEwCWZpbGU6QTkgVm9pY2VfMS4wLjI3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjcKRU1IZm9BUHB5TUI1bzlNdTEyY0hoVHU4aWI1QWt3NTIzbEUwUDk0N2R4TThXVXp4aW94M3lrV0pyTDdUbUI2NTZTL0dpSnlvRDA5dktLRk9qUDB2QWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.27/A9Voice_1.0.27_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "ceb19193eec96d85fe7b52331da35d27e0f6a6f205240212630a14af595f6b16",
+  "installer_size": 12918640
+}
