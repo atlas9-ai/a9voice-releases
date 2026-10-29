@@ -105,6 +105,16 @@
 
     if (first) beacon("visit");
 
+    // A click on the Microsoft Store badge: one store_click row with the badge's placement (pl) and the visit's
+    // tags, so the Store's share of the installs can be read next to the installer's (download rows). The link goes on
+    // as it is; sendBeacon outlives the page leaving.
+    // Delegated, so the badge the demo lightbox builds later counts too.
+    document.addEventListener("click", function (e) {
+      if (e.button > 0) return;
+      var a = e.target && e.target.closest ? e.target.closest("a[data-store]") : null;
+      if (a) beacon("store_click", { pl: a.getAttribute("data-pl") || "" });
+    });
+
     // The download page loaded in a browser that ran this script: the human denominator for the click rate.
     // (The Worker's own download_page row is written when the page is served, so scanners count there.)
     var path = String(location.pathname || "").replace(/\/+$/, "");
@@ -266,6 +276,12 @@
       };
       // The demo's lightbox builds its Download button on the first click, long after this script ran.
       window.a9vPhone = { label: LABEL, convert: convert };
+
+      // The Store badge is no use on a phone: its box shows the Download button instead (css/chrome.css), which the
+      // loop below turns into "Send it to my PC" like every other one.
+      Array.prototype.forEach.call(document.querySelectorAll("[data-store-cta]"), function (box) {
+        box.className = (box.className || "") + " is-phone";
+      });
 
       var converted = 0;
       Array.prototype.forEach.call(document.querySelectorAll('a[href^="/download"]'), function (a) {

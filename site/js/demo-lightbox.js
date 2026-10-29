@@ -29,11 +29,21 @@
     const row = el("div", "lb-row");
     const yt = el("a", "lb-link", { href: YT, target: "_blank", rel: "noopener" }, "Watch on YouTube \u2197");
     const page = el("a", "lb-link", { href: "/demo" }, "Open demo page");
-    const dl = el("a", "btn btn-primary", { href: link.dataset.dl || "/download?pl=demo", "data-pl": "demo" }, "Download free");
-    // On a phone (js/chrome.js) this button sends the link to a PC like every other Download button.
+    const href = link.dataset.dl || "/download?pl=demo";
+    // The same Download control as the page (render.mjs storeCta): the Microsoft badge, the installer link under it, and
+    // on a phone (js/chrome.js) the button that sends the link to a PC like every other Download button.
+    const dl = el("div", "store-cta", { "data-store-cta": "" });
+    if (link.dataset.store) {
+      const badge = el("a", "store-badge", { href: link.dataset.store, "data-store": "", "data-pl": "demo", rel: "noopener" });
+      badge.append(el("img", "", { src: "/img/ms-store-badge-dark.svg", width: "161", height: "44", alt: "Download from the Microsoft Store" }));
+      dl.append(badge, el("a", "store-alt", { href }, "Work PC that blocks the Store? Download the installer"));
+    }
+    const phoneBtn = el("a", "btn btn-primary store-phone", { href, "data-pl": "demo" }, "Download free");
+    dl.append(phoneBtn);
     if (window.a9vPhone) {
-      window.a9vPhone.convert(dl);
-      dl.addEventListener("click", () => dlg.close());
+      dl.classList.add("is-phone");
+      window.a9vPhone.convert(phoneBtn);
+      phoneBtn.addEventListener("click", () => dlg.close());
     }
     row.append(yt, page, dl);
     box.append(close, frame, row);

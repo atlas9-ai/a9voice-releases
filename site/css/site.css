@@ -231,7 +231,10 @@ kbd.wide { padding: 0 28px; }
 .dlp figure.shot img { width: 100%; max-width: 720px; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .dlp .winget { margin-top: 26px; }
 .dlp code { font-family: var(--mono); font-size: .92em; background: var(--surface); padding: 2px 6px; border-radius: 6px; }
-.dlp .dl-card { margin: 28px 0 32px; }
+.dlp .dl-store { margin: 24px 0 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+.dlp .dl-store .dl-store-line { margin: 0; color: var(--text); font-weight: 600; }
+.dlp .dl-store.is-phone { display: none; }
+.dlp .dl-card { margin: 18px 0 32px; }
 .dlp .dl-card .btn { max-width: 100%; white-space: normal; text-align: center; }
 .dlp .dl-file { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 .dlp .dl-file code { background: none; padding: 0; color: var(--text-2); overflow-wrap: anywhere; }

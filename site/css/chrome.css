@@ -21,6 +21,26 @@ body:not(.home) .sn-wrap { padding-inline: 24px; }
 .sn-btn { display: inline-flex; align-items: center; justify-content: center; height: 38px; padding: 0 16px; border-radius: 10px; background: var(--action); color: #fff; font: 600 14px/1 "Geist", "Segoe UI", system-ui, sans-serif; text-decoration: none; white-space: nowrap; border: 1px solid transparent; transition: background .2s, transform .2s; }
 .sn-btn:hover { background: #3A68E0; color: #fff; transform: translateY(-1px); }
 
+/* The Download control: Microsoft's badge, then the installer's link. The artwork is used as shipped (never recoloured or
+   cropped), at least 32 px tall, with 1/4 of its height clear around it (gap 11 px at 44 px; 13 px at 52 px; 8 px at 32 px). */
+.store-cta { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 11px; vertical-align: top; max-width: 100%; }
+.store-badge { display: inline-block; line-height: 0; border-radius: 5px; transition: transform .2s; }
+.store-badge:hover { transform: translateY(-1px); }
+.store-badge:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+.store-badge img { display: block; height: 44px; width: auto; max-width: 100%; }
+.store-xl { align-items: center; gap: 13px; }
+.store-xl .store-badge img { height: 52px; }
+.store-nav { gap: 8px; }
+.store-nav .store-badge img { height: 32px; }
+.store-alt { font-size: 13px; line-height: 1.4; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(154,157,164,.5); text-align: inherit; }
+.store-alt:hover { color: var(--text); text-decoration-color: currentColor; }
+.store-cta .store-phone { display: none; }
+.store-cta.is-phone .store-badge, .store-cta.is-phone .store-alt { display: none; }
+.store-cta.is-phone .store-phone { display: inline-flex; }
+.sn-sheet .store-cta { width: 100%; }
+.sn-sheet .store-cta .store-alt { padding: 4px 0; }
+.pr-cta .store-cta { align-self: flex-start; }
+
 .sn-menu { display: none; width: 40px; height: 40px; flex: none; align-items: center; justify-content: center; border-radius: 10px; border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--text); cursor: pointer; padding: 0; }
 .sn-menu:hover { border-color: var(--signal); }
 .sn-menu .x { display: none; }
@@ -40,7 +60,7 @@ body:not(.home) .sn-wrap { padding-inline: 24px; }
 @media (max-width: 820px) {
   .sn-links, .sn-in > .gh-chip { display: none; }
   .sn-menu { display: inline-flex; }
-  .sn-btn { margin-left: auto; }
+  .sn-btn, .sn-in > .store-cta { margin-left: auto; }
 }
 @media (max-width: 820px) { .sn-logo img { height: 32px; } }
 @media (max-width: 380px) { .sn-logo img { height: 24px; } .sn-btn { padding: 0 12px; } }
