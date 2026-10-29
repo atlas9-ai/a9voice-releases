@@ -800,31 +800,31 @@
   "h": 830
  },
  "voices-check": {
-  "w": 794,
+  "w": 642,
   "h": 183
  },
  "voices-delete-all": {
-  "w": 794,
-  "h": 140
+  "w": 642,
+  "h": 156
  },
  "voices-download": {
-  "w": 794,
-  "h": 153
+  "w": 642,
+  "h": 169
  },
  "voices-explainer": {
   "w": 592,
   "h": 394
  },
  "voices-forget": {
-  "w": 790,
-  "h": 298
+  "w": 638,
+  "h": 328
  },
  "voices-history": {
-  "w": 790,
-  "h": 345
+  "w": 638,
+  "h": 375
  },
  "voices-import": {
-  "w": 794,
+  "w": 642,
   "h": 213
  },
  "voices-live-suggestion": {
@@ -840,16 +840,16 @@
   "h": 402
  },
  "voices-off": {
-  "w": 790,
-  "h": 345
+  "w": 638,
+  "h": 423
  },
  "voices-people": {
-  "w": 790,
-  "h": 633
+  "w": 638,
+  "h": 847
  },
  "voices-stale": {
-  "w": 790,
-  "h": 571
+  "w": 638,
+  "h": 776
  },
  "webhooks-add-button": {
   "w": 156,
@@ -906,5 +906,9 @@
  "speakers-on-this-pc-live": {
   "w": 760,
   "h": 600
+ },
+ "voices-tuneup": {
+  "w": 642,
+  "h": 210
  }
 }
