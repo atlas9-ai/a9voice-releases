@@ -134,14 +134,14 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Speakers on this PC</h1>
       <p class="docs-lead">Tell the other people on a call apart while it is still going, on your own PC, for free. Nothing is sent anywhere and no key is needed.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.28</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.29</p>
       <p>In the <a href="/docs/live-window/">Live window</a>, each person on the other side of the call gets a color and a name, <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, so you can see who is saying what as it happens. Some speech services do this in the cloud. This page is about doing it on your PC instead, which is how it works when your live transcript is written on your PC (the free setup).</p>
 <h2 id="how-it-works">How it works<a class="anchor" href="#how-it-works" aria-label="Link to How it works">#</a></h2>
 <ul>
 <li>A9 Voice listens to the <strong>computer audio</strong>, the other people. It never looks at your microphone: you are always <strong>Me</strong>, because your microphone is its own channel.</li>
 <li>Every couple of seconds it makes a <strong>voice fingerprint</strong> of the last few seconds of the other side: numbers that describe how the voice sounds, not a recording. It uses the same speaker model as <a href="/docs/voices/">Voices</a>.</li>
 <li>Fingerprints that sound alike belong to one speaker. A new speaker appears only after two fingerprints agree that someone new is talking, so one cough or a laugh does not make a <strong>Speaker 5</strong>. About once a minute it checks whether two speakers are really one person and joins them; their lines are relabeled in the window.</li>
-<li>A line shows up a few seconds after the speech, with its speaker. A line is given to the speaker who talked for most of it.</li>
+<li>A line shows up a few seconds after the speech. It gets a speaker only when the fingerprints around it are sure: a voice that has less than about ten seconds of speech behind it, or a fingerprint nearly as close to one speaker as to another, leaves the line as <strong>Identifying…</strong> until the next fingerprints settle it, in place. If it is still unsure about six seconds later, the line goes to the nearest speaker. A line is then given to the speaker who talked for most of it. It never takes the name of whoever spoke before. See <a href="/docs/live-window/#identifying-and-the-checks-after-a-name">Identifying… and the checks</a>.</li>
 <li>When the recording stops, A9 Voice reads the whole meeting again with what it learned, and that <strong>final pass</strong> gives the note its speakers. The live labels are a draft; the note has the more careful answer. Names you gave during the call are carried into the note.</li>
 </ul>
 <h2 id="turn-it-on">Turn it on<a class="anchor" href="#turn-it-on" aria-label="Link to Turn it on">#</a></h2>
@@ -172,6 +172,7 @@
 <p>See <a href="/docs/privacy-and-data/">Privacy and your data</a>.</p>
 <h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
 <ul>
+<li><strong>A line says Identifying… for a while.</strong> Someone new has started talking and A9 Voice is making sure they are a new person, or two speakers sound alike. It resolves by itself within seconds, and you can click it to say who it is. The note made after the call has the more careful answer.</li>
 <li><strong>Two people show as one speaker, or one person as two.</strong> It can happen on a short meeting, or with people who sound alike. Join two speakers or move a line from the speaker&#39;s menu, as in the <a href="/docs/live-window/">Live window</a>. The final pass in the note is usually better.</li>
 <li><strong>The Live window says it needs the speaker model.</strong> Press <strong>Download</strong>. The live lines keep the transcript&#39;s speakers until it is ready, and speakers on this PC start with the next meeting.</li>
 <li><strong>Everyone is one speaker in the note.</strong> Check that <strong>Identify speakers</strong> is on in <strong>Settings › Notes › Transcript &amp; summary</strong>.</li>
