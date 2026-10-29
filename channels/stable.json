@@ -1,13 +1,13 @@
 {
-  "version": "1.0.29",
-  "notes": "- **The live transcript shows a name only when it knows.** A new voice's first lines used to carry the name of whoever spoke before, then flip a few lines later. Now a line says **Identifying…** until A9 Voice is sure, then becomes its speaker in place; a check after a name means it was matched by voice, and a filled check means you named or confirmed it. The note page shows the same checks. With a cloud service's speaker labels, the window says so and a name never carries over from the line before. See [Identifying… and the checks](/docs/live-window/#identifying-and-the-checks-after-a-name).",
-  "pub_date": "2026-10-29T19:19:02Z",
+  "version": "1.0.30",
+  "notes": "- **Fewer names change on screen in the live transcript.** A voice A9 Voice has only just opened (a cough or half a sentence can look like a new person) used to be given a name after six seconds and then joined into someone else a minute later, so its lines changed name. Its lines now say **Identifying…** until it is joined into the right person or has said enough to be believed, which can take a couple of minutes. On public test meetings, names that changed fell from 3.9 % of lines to 1.7 %, and the finished note's speakers are unchanged. See [Speakers on this PC](/docs/speakers-on-this-pc/).\n- **A scorecard shows how often voices are named right.** Settings › Voices has a card for the last 30 days: how many names given by voice you left alone, corrections per meeting and the time to a name in the Live window. Only counts and times, kept on this PC. See [The scorecard](/docs/voices/#the-scorecard).\n- **Voices name the people you meet most, sooner.** The live transcript names someone you are likely to be with (from the last meetings of the same name, and people you meet often) after one sure match instead of two. Nothing else about naming changes. See [Expected people](/docs/voices/#expected-people).\n- **Changing a name a voice gave now teaches it.** The wrong person's guessed stretch from that speaker is set aside, and the next tune-up uses the right one. See [How A9 Voice learns a voice](/docs/voices/#how-a9-voice-learns-a-voice).",
+  "pub_date": "2026-10-29T21:40:09Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcElxZVZUeVdRczJ4U2Fqai9tN3REWnhwa1pVTy9NYjkyMnJaWkZlN2xEMlQ0d0xwMXllclhoRE41WDZreUNNcythbzV3T3pDd1FJcHhGREk0MTEyS2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzAxNDczCWZpbGU6QTkgVm9pY2VfMS4wLjI5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMjkKVDhnVnJKc3dMYWpGMjA5ZUFTRFFHclpRUVBmd2FHQTUxTE1MdlRxWTZyaVM5NTFPQVpTeGpDc3F6ZkJHVUJGczVrUlZ0TzRxS20vR083UlNscHpqQUE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.29/A9Voice_1.0.29_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE0rc1VQekFUYldJLy9qdVc2YjFwdkxMYnVjNHZFVXorNC9QSSs3WVVRM05iWUhKb3JoN2tZWllZRUhlZlJCUXBzRHRRTkRlMkw3NDVpbUVEaTQrZEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzA5OTQ2CWZpbGU6QTkgVm9pY2VfMS4wLjMwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzAKblJsMzRIdFNDa1FwUVFvRHkreVkvYTZHdTZKUVdvMEl5N1lvZWNPbk83aGJ3SkZobmhWTHpaVmY3ZHhPQ1Y4dzRVaHk2ZnJOaXoyK1FSSEdvQ1JqQkE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.30/A9Voice_1.0.30_x64-setup.exe"
     }
   },
-  "installer_sha256": "8a74321448e6432750acfb0007972c8cbfba0d94fd3c47598fb1eb2d43d1a8eb",
-  "installer_size": 12975734
+  "installer_sha256": "daa47842a890d3162e5892eea9e15d1aca78e529e4bf4b99178fc42798e579a1",
+  "installer_size": 12992537
 }
