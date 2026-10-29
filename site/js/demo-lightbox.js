@@ -34,7 +34,7 @@
     // on a phone (js/chrome.js) the button that sends the link to a PC like every other Download button.
     const dl = el("div", "store-cta", { "data-store-cta": "" });
     if (link.dataset.store) {
-      const badge = el("a", "store-badge", { href: link.dataset.store, "data-store": "", "data-pl": "demo", rel: "noopener" });
+      const badge = el("a", "store-badge", { href: link.dataset.store, "data-store": "", "data-pl": "demo", target: "_blank", rel: "noopener" });
       badge.append(el("img", "", { src: "/img/ms-store-badge-dark.svg", width: "161", height: "44", alt: "Download from the Microsoft Store" }));
       dl.append(badge, el("a", "store-alt", { href }, "Work PC that blocks the Store? Download the installer"));
     }
