@@ -113,6 +113,7 @@
     <a class="store-badge" href="https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct" data-store data-pl="download-page" target="_blank" rel="noopener"><img src="/img/ms-store-badge-dark.svg" width="161" height="44" alt="Download from the Microsoft Store"></a>
   </div>
 
+  <p class="dl-alt-lead">Work PC that blocks the Store? Download the installer:</p>
   <div class="dl-card">
     <a id="dl" class="btn btn-primary btn-lg" href="__A9V_GO__"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v10M5 8l4 4 4-4M3 15h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="dl-label">Download A9 Voice <span id="dl-version">__A9V_VERSION__</span> for Windows</span></a>
     <p class="dl-file" id="dl-file"><code>__A9V_FILE__</code><!--A9V-SIZE--> · __A9V_SIZE__<!--/A9V-SIZE--></p>
@@ -129,7 +130,7 @@
     </dl>
   </section>
 
-  <details class="dl-note" id="new-publisher" open>
+  <details class="dl-note" id="new-publisher">
     <summary>What Windows shows for a new publisher</summary>
     <div class="dl-note-body">
       <p class="lesson-row"><a class="lesson-card" href="/media/a9voice-lesson-install-16x9.mp4" data-lesson="install" data-title="Installing A9 Voice" data-src16="/media/a9voice-lesson-install-16x9.mp4" data-src9="/media/a9voice-lesson-install-9x16.mp4" data-poster="/media/a9voice-lesson-install-poster.jpg" data-vtt="/media/a9voice-lesson-install-16x9.vtt" aria-label="Play video: Installing A9 Voice (0:59)"><span class="lesson-thumb"><img src="/media/a9voice-lesson-install-card.webp" srcset="/media/a9voice-lesson-install-card.webp 640w, /media/a9voice-lesson-install-card-960.webp 960w, /media/a9voice-lesson-install-card-1280.webp 1280w" sizes="(max-width: 600px) min(100vw, 360px), 320px" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="lesson-play" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" focusable="false"><path d="M6.5 3.2v13.6L17 10z" fill="currentColor"/></svg></span><span class="lesson-dur" aria-hidden="true">0:59</span></span><span class="lesson-title">Installing A9 Voice</span><span class="lesson-sub">Watch the 1-minute video</span></a></p>
@@ -168,6 +169,13 @@
     <p class="sf-note">Photos are illustrative; people shown are fictional.</p>
   </div>
 </footer>
+<script>
+// The publisher note is closed until asked for; a link to /download#new-publisher opens it.
+(function () {
+  var d = document.getElementById("new-publisher");
+  if (d && location.hash === "#new-publisher") d.open = true;
+})();
+</script>
 <script>
 // Served without the edge Worker the placeholders are still in the page: send the button to the real download page,
 // which the Worker fills in and counts (never to GitHub's release page: it offers the installer, uncounted), and drop

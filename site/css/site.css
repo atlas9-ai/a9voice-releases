@@ -234,7 +234,8 @@ kbd.wide { padding: 0 28px; }
 .dlp .dl-store { margin: 24px 0 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
 .dlp .dl-store .dl-store-line { margin: 0; color: var(--text); font-weight: 600; }
 .dlp .dl-store.is-phone { display: none; }
-.dlp .dl-card { margin: 18px 0 32px; }
+.dlp .dl-alt-lead { margin: 22px 0 0; font-size: 14px; color: var(--muted); }
+.dlp .dl-card { margin: 10px 0 32px; }
 .dlp .dl-card .btn { max-width: 100%; white-space: normal; text-align: center; }
 .dlp .dl-file { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 .dlp .dl-file code { background: none; padding: 0; color: var(--text-2); overflow-wrap: anywhere; }
@@ -259,3 +260,11 @@ kbd.wide { padding: 0 28px; }
 .steps kbd, kbd.sm { height: 26px; padding: 0 8px; font-size: 13px; vertical-align: middle; }
 .cmp.cmp-narrow { min-width: 0; }
 .cmp-narrow tbody th { width: 46%; }
+
+/* The manual's "If your work PC blocks the Microsoft Store": closed until asked for, quieter than the main path. */
+details.install-alt { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); margin: 18px 0 22px; }
+details.install-alt > summary { cursor: pointer; padding: 12px 16px; font-weight: 600; color: var(--text-2); }
+details.install-alt > summary:focus-visible { outline: 2px solid var(--signal, #7AA2F7); outline-offset: 2px; border-radius: 12px; }
+details.install-alt[open] > summary { color: var(--text); }
+details.install-alt > :not(summary) { margin-left: 16px; margin-right: 16px; }
+details.install-alt > :last-child { margin-bottom: 14px; }

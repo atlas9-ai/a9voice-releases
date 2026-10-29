@@ -38,8 +38,8 @@ A9 Voice is for Windows 10 and 11 (64-bit). It has two parts:
 
 ## Install
 
-1. [Download the installer](https://a9voice.com/download?pl=readme&src=github) and run it. It installs for your Windows user only: no admin rights.
-2. The installer isn't code-signed yet, so Windows shows a note for new publishers. The [download page](https://a9voice.com/download) explains it and lists the installer's SHA-256.
+1. [Get A9 Voice from the Microsoft Store](https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct). It installs with no Windows warning and updates itself.
+2. Work PC that blocks the Store? [Download the installer](https://a9voice.com/download?pl=readme&src=github) and run it. It installs for your Windows user only: no admin rights. It isn't code-signed yet, so Windows shows a note for new publishers; the [download page](https://a9voice.com/download) explains it and lists the installer's SHA-256.
 3. Follow the first-run steps, then see [Getting started](https://a9voice.com/docs/getting-started/).
 
 Everything else (every screen, every setting, webhooks, troubleshooting) is in the [manual](https://a9voice.com/docs/).
