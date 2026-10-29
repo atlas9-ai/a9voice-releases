@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.28"
+      "softwareVersion": "1.0.30"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.19</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.31</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="353" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -260,10 +260,11 @@
 <p>The window shows <strong>Speed on this PC</strong>, for example <strong>0.2 s for 3 s of speech (14× faster than speaking)</strong>. It is measured on a short built-in clip after the download. Click <strong>Test speed</strong> to measure again.</p>
 <p>Under the speed, one line tells you about live notes:</p>
 <ul>
-<li><strong>Fast enough for the live transcript.</strong> The model is at least twice as fast as speech.</li>
+<li><strong>Fast enough for the live transcript.</strong> The model is at least twice as fast as speech. For a model set to run on the graphics card, that speed has to be one measured on the card; a time from the processor does not count for it.</li>
 <li><strong>Too slow for the live transcript on this PC; notes are transcribed after the call.</strong> The note is still recorded and gets its transcript afterwards.</li>
 </ul>
 <p>If notes use a model that is too slow, the live transcript stays off for that recording with the message <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></p>
+<p>A model that is fast enough can write the live transcript even when it isn&#39;t the one that writes your notes: with a graphics card, a Whisper model there can keep up with a meeting, free and private, while the notes use the service you chose. You pick it, or leave it to Automatic, under <strong>Settings › Notes › Live window › Live transcript by</strong>. See <a href="/docs/live-window/#live-on-your-graphics-card">Live on your graphics card</a>.</p>
 <h3 id="which-one-to-pick">Which one to pick<a class="anchor" href="#which-one-to-pick" aria-label="Link to Which one to pick">#</a></h3>
 <ul>
 <li><strong>Parakeet V2</strong> is the app&#39;s recommendation for English, especially on a PC without a graphics card: it adds punctuation and capitals. It&#39;s the one setup offers first.</li>
@@ -389,7 +390,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.28</a>
+        <a class="sf-ver" href="/changelog/">v1.0.30</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
