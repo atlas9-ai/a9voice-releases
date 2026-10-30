@@ -1,0 +1,13 @@
+{
+  "version": "1.0.31",
+  "notes": "- **With a graphics card, the live transcript can run on your PC and keep up: free and private, while your notes still use the service you chose.** **Live transcript by** now lists each speech model on your PC that keeps up with a meeting, by name and where it runs (**Whisper Large v3 Turbo · graphics card**, **Parakeet V2 · processor**), and Automatic takes the fastest, a graphics card first. A model on the card is timed on the card, its live lines are cut into shorter pieces so they appear sooner, and if the card gives out mid-meeting the processor finishes the piece and the window says so. The Savings tab shows what your month would be with the live transcript on your card. See [Live on your graphics card](/docs/live-window/#live-on-your-graphics-card).",
+  "pub_date": "2026-10-30T00:24:56Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcERleGhhc05HSzhMSW9zRUFHemQwY3crTmVzTFVseVcvaTJock01aTRmZDN2SlZ4TTJvcC9VZkE4YjZqRm5UYkUvS2tqT3JlY01oaDlNWWFGZC9XclFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzE5ODQ5CWZpbGU6QTkgVm9pY2VfMS4wLjMxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzEKcUdFS3g2MlhNeGhEdGd0ZmhWWnNDQXZVUDh6OUpBVnU0SVRad0lQazU2L0hxSGpSMHRVU0RJUmdIZnZmSWYxN2R6R3pWL054MVZOK2M1NkhERlcyQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.31/A9Voice_1.0.31_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "cd0b73df1c0061577238b411405171f113a5235990c18f3bcabdb7ea06bf0d45",
+  "installer_size": 12994251
+}
