@@ -1,13 +1,13 @@
 {
-  "version": "1.0.32",
-  "notes": "- **Speakers told apart on this PC are named sooner when they're people you usually meet, and count toward the Voices scorecard.** With **Speakers during the call** on this PC, an expected person is now named after one sure match, as with a speech service's speaker labels, and the time to their name goes into the scorecard. Anyone else still needs two matches in a row.\n- **A narrow note page keeps excluded lines readable.** The **Include again** link drops under the line's text instead of squeezing it into a sliver.",
-  "pub_date": "2026-10-30T01:08:37Z",
+  "version": "1.0.33",
+  "notes": "- **With a graphics card, the speaker model that tells people apart during a call runs on the card.** The live fingerprints are the same numbers as before, made on your card instead of your processor, so the processor is left to the call and your other apps. If the card isn't available or its answers differ from the processor's, A9 Voice uses the processor and nothing else changes. See [Speakers on this PC](/docs/speakers-on-this-pc/#on-your-graphics-card).\n- **The install video now shows the Microsoft Store.** [Install A9 Voice from the Microsoft Store](/docs/getting-started/#install) (under 1 minute) goes from a9voice.com's Store badge to your first dictation, with no Windows warning on the way. It sits in the first step of Getting started; the steps for a work PC that blocks the Store stay as text.\n- **The live transcript keeps the conversation in order.** When you speak again after others, your words start a new line instead of joining your earlier one. A line also ends at a long pause, so a quiet stretch no longer ties two things you said minutes apart into one.",
+  "pub_date": "2026-10-30T20:21:42Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdSejI1eUJ1UXZlZlhXeFRtd0hQSW5SQk0yRC9lN3RxaURiTjRDcStDT1B6M0F4VDkrVk1TT3JpQUl6RXNWNDhJTEF3Z2F5TXJMcEs1Qjc4QzdSOHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzIyNDcyCWZpbGU6QTkgVm9pY2VfMS4wLjMyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzIKcENqOCtIWGVhaS9LdnpWaVd5aUJ1S0h0c2VFaEducGJabG1SQk1xUmUwaC9TRjliaDdqWS9Pd0w5aG1aOCtZeWtCajFIQkh3RUVsT3FuenNFQWhoREE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.32/A9Voice_1.0.32_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEFWaUtPZ3dhQS90c0gzUWQ0TlZPL05wanJaSWI4TUpKR3ZzUVl5a0pGUG5xSUtXaU5McjVlT3Z1Qlc1Qm9tL0QyVkp3emQraXM1Z0NKaDJqYnNGZWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzkxNjQ4CWZpbGU6QTkgVm9pY2VfMS4wLjMzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzMKZ2loRnpmS0h4dlVqR0RZczVyN0RNKzUrdWxuODhVaDNpQXEwQVFCNXJocnZ2TjVOZG5yNjVNdUVVTi8xOGpnejZMSldjOHExZ2JWS2V0TlZxMVNSQ2c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.33/A9Voice_1.0.33_x64-setup.exe"
     }
   },
-  "installer_sha256": "d2560cee27262465bef27c3464af5d056b884c399cbf63bee3808ab3d424d6a3",
-  "installer_size": 13003006
+  "installer_sha256": "c06f32c6414109fc41ba3e3e30362404589b918803e36b22bf7e4dbf275e43c3",
+  "installer_size": 13003286
 }
