@@ -1,9 +1,9 @@
 [
   {
     "id": "install",
-    "title": "Installing A9 Voice",
-    "chip": "Installing",
-    "duration": "0:59",
+    "title": "Install A9 Voice from the Microsoft Store",
+    "chip": "Install from the Store",
+    "duration": "0:56",
     "src16x9": "/media/a9voice-lesson-install-16x9.mp4",
     "src9x16": "/media/a9voice-lesson-install-9x16.mp4",
     "poster": "/media/a9voice-lesson-install-poster.jpg",
@@ -11,11 +11,7 @@
     "cardLabel": "Install",
     "number": 1,
     "guide": "/docs/getting-started/#install",
-    "summary": "Download A9 Voice and see what your browser and Windows show for a new app that isn't code-signed yet, step by step. Then check the file's SHA-256 fingerprint on the download page if you want to be sure.",
-    "guide2": {
-      "href": "/docs/troubleshooting/",
-      "label": "Troubleshooting"
-    }
+    "summary": "Click the Microsoft Store badge on a9voice.com, install A9 Voice from the Store with no Windows warning, pick the free speech model that runs on your PC, then dictate your first sentence."
   },
   {
     "id": "dictation",
