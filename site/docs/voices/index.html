@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Voices (voice recognition)</h1>
       <p class="docs-lead">Let A9 Voice put names on the people in your meetings by how they sound. It is off until you turn it on, and the voiceprints stay on your PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.30</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.32</p>
       <p>Without this, people on a call show up as <strong>Speaker 2</strong>, <strong>Speaker 3</strong> and so on, until you name them. With
 <strong>Recognize people by voice</strong> on, A9 Voice remembers how each person you have named sounds, and names them for you
 in later meetings, both on the live transcript and in the finished note.</p>
@@ -270,7 +270,7 @@ voice: 82% right (41 of 50) · Corrections: 0.6 per meeting · Time to a name: 1
 <li><strong>Named by voice … right</strong> counts the speakers A9 Voice named by voice, and how many of those you did not change to
 someone else.</li>
 <li><strong>Corrections</strong> is how many times you changed a name A9 Voice gave, per meeting.</li>
-<li><strong>Time to a name</strong> is the middle time, in the Live window, from a speaker&#39;s first line to their name appearing.</li>
+<li><strong>Time to a name</strong> is the middle time, in the Live window, from a speaker&#39;s first line to their name appearing. It counts speakers told apart on this PC too.</li>
 <li>With fewer than 5 meetings in those 30 days it says &quot;Not enough meetings yet.&quot;</li>
 </ul>
 <p><figure class="shot"><img src="/img/docs/voices-scorecard-1x.webp" srcset="/img/docs/voices-scorecard-1x.webp 1x, /img/docs/voices-scorecard.webp 2x" width="642" height="136" alt="The scorecard: named by voice 82 percent right, 41 of 50, corrections 0.6 per meeting, time to a name 14 seconds." loading="lazy" decoding="async"></figure></p>
@@ -278,7 +278,7 @@ someone else.</li>
 <h3 id="expected-people">Expected people<a class="anchor" href="#expected-people" aria-label="Link to Expected people">#</a></h3>
 <p>When a recording starts, A9 Voice works out who is probably there: the people named in the last 3 notes of the same
 meeting (the same name once dates and numbers are ignored, as soon as the meeting&#39;s name is known), then Core people heard in the
-last 14 days, 25 at most. In the Live window, an expected person can be named after one sure try instead of two. Nothing
+last 14 days, 25 at most. In the Live window, an expected person can be named after one sure try instead of two, whether the speakers are told apart by a speech service or <a href="/docs/speakers-on-this-pc/">on this PC</a>. Nothing
 else changes: the thresholds are the same, and anyone outside the set is named as before. Nothing new shows on screen; it just
 names sooner.</p>
 <h3 id="clear-out-voices-you-no-longer-need">Clear out voices you no longer need<a class="anchor" href="#clear-out-voices-you-no-longer-need" aria-label="Link to Clear out voices you no longer need">#</a></h3>
