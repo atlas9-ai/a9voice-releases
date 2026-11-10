@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Connect</p>
       <h1>Connector for AI apps (MCP)</h1>
       <p class="docs-lead">Let an AI app on your PC, such as Claude Desktop or ChatGPT desktop, search and read your A9 Voice notes, so you can ask it about your meetings. It is read only, off until you turn it on, and nothing leaves your PC except what that app reads.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.26</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.35</p>
       <p>The connector is a small helper that AI apps can start on your PC. Once an app is connected, you can ask it things like
 &quot;What did Priya say about the approval routing?&quot; or &quot;What action items do I have from this week?&quot; and it looks the
 answer up in your notes.</p>
@@ -179,7 +179,7 @@ off when you do not want to share.</p>
 <li><p>Open <strong>Settings › Connectors</strong>.</p>
 </li>
 <li><p>Switch <strong>Connector for AI apps</strong> on. The switch is marked 1 below.</p>
-<p><figure class="shot"><img src="/img/docs/connector-page-off-1x.webp" srcset="/img/docs/connector-page-off-1x.webp 1x, /img/docs/connector-page-off.webp 2x" width="790" height="689" alt="The Connectors page: a short explanation, the switch Connector for AI apps (marked 1, currently Off), a Claude Desktop section with a Turn on and connect button, Other apps with the Copy command and Copy settings (JSON) buttons, and an empty Recent requests list." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/connector-page-off-1x.webp" srcset="/img/docs/connector-page-off-1x.webp 1x, /img/docs/connector-page-off.webp 2x" width="638" height="775" alt="The Connectors page: a short explanation, the switch Connector for AI apps (marked 1, currently Off), a Claude Desktop section with a Turn on and connect button, Other apps with the Copy command and Copy settings (JSON) buttons, and an empty Recent requests list." loading="lazy" decoding="async"></figure></p>
 </li>
 </ol>
 <p>Then connect an app: either Claude Desktop with one button, or any other app by pasting a command.</p>
@@ -187,30 +187,65 @@ off when you do not want to share.</p>
 <p>Under <strong>Claude Desktop</strong>, click <strong>Connect to Claude Desktop...</strong> (or <strong>Turn on &amp; connect to Claude Desktop...</strong> if the
 switch is still off).</p>
 <ol>
-<li><p>A9 Voice first <strong>shows what it will change</strong>, before it changes anything. It lists one line: it adds (or updates, if it
-is already there) an entry called <code>a9-voice</code>, the &quot;A9 Voice notes connector&quot;, in Claude Desktop&#39;s settings file.</p>
-<p><figure class="shot"><img src="/img/docs/connector-claude-preview-1x.webp" srcset="/img/docs/connector-claude-preview-1x.webp 1x, /img/docs/connector-claude-preview.webp 2x" width="794" height="191" alt="The preview: This change goes into Claude Desktop's settings file, Adds a9-voice, A9 Voice notes connector. The rest of the file stays as it is. A backup copy of the file is made first. Buttons Turn on and connect, and Cancel." loading="lazy" decoding="async"></figure></p>
+<li><p>A9 Voice first <strong>shows what it will change</strong>, before it changes anything. It lists one line for each settings file it
+will change, with the file&#39;s path: it adds (or updates, if it is already there) an entry called <code>a9-voice</code>, the
+&quot;A9 Voice notes connector&quot;.</p>
+<p><figure class="shot"><img src="/img/docs/connector-claude-preview-1x.webp" srcset="/img/docs/connector-claude-preview-1x.webp 1x, /img/docs/connector-claude-preview.webp 2x" width="642" height="499" alt="The preview: This change goes into Claude Desktop's settings file, Adds a9-voice, A9 Voice notes connector, with the path of the file. The rest of the file stays as it is. A backup copy is made first. Buttons Turn on and connect, and Cancel." loading="lazy" decoding="async"></figure></p>
 </li>
-<li><p>The rest of the file stays exactly as it is. Your other connectors and settings are not touched. If the file already
-exists, A9 Voice makes a backup copy of it first, in the same folder, with <code>.a9v-backup</code> added to the name.</p>
+<li><p>The rest of each file stays exactly as it is. Your other connectors and settings are not touched. If a file already
+exists, A9 Voice makes a backup copy of it first, in the same folder, with <code>.a9v-backup</code> added to the name. A file that is
+not valid JSON is left alone and named, and the other file still gets the entry.</p>
 </li>
 <li><p>Click <strong>Connect</strong> (or <strong>Turn on &amp; connect</strong>, which also turns the connector on), or <strong>Cancel</strong> to change nothing.</p>
 </li>
-<li><p>Quit Claude Desktop completely and open it again, so it loads the new connector. The page says &quot;Connected, and the
-connector is on. Quit and reopen Claude Desktop to load it.&quot;</p>
+<li><p><strong>Quit Claude from the tray and open it again.</strong> Closing Claude&#39;s window leaves it running, and it reads its settings
+only when it starts. Right-click Claude&#39;s icon in the tray (the arrow by the clock may be hiding it), then choose <strong>Quit</strong>.</p>
 </li>
 </ol>
-<p><figure class="shot"><img src="/img/docs/connector-connected-1x.webp" srcset="/img/docs/connector-connected-1x.webp 1x, /img/docs/connector-connected.webp 2x" width="790" height="752" alt="The Claude Desktop section saying Connected, Restart Claude Desktop if you just connected it, then ask it about your meetings." loading="lazy" decoding="async"><figcaption>Connected. The switch is On and Recent requests show what has been asked.</figcaption></figure></p>
-<p>Claude Desktop&#39;s settings file is <code>%APPDATA%\Claude\claude_desktop_config.json</code>.</p>
+<h3 id="which-settings-file-claude-reads">Which settings file Claude reads<a class="anchor" href="#which-settings-file-claude-reads" aria-label="Link to Which settings file Claude reads">#</a></h3>
+<p>There are two kinds of Claude Desktop for Windows, and they keep their settings in different places. A9 Voice finds out
+which you have and writes the file that one reads:</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table><thead><tr><th scope="col">Your Claude Desktop</th><th scope="col">Its settings file</th></tr></thead><tbody>
+<tr><td>The current download (it installs like an app from the Microsoft Store)</td><td><code>%LOCALAPPDATA%\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json</code></td></tr>
+<tr><td>An older install</td><td><code>%APPDATA%\Claude\claude_desktop_config.json</code></td></tr>
+</tbody></table></div>
+<p>To tell which you have, look at the path under <strong>Claude Desktop</strong> on the Connectors page: it is the file Claude reads.
+The Open folder button beside it opens the folder. If you have both, A9 Voice writes both. Use the path on the Connectors
+page rather than a button inside Claude that opens its settings file: on the current Claude, that button can open a different
+file from the one Claude reads.</p>
+<h3 id="connected-and-claude-loaded-it">&quot;Connected&quot; and &quot;Claude loaded it&quot;<a class="anchor" href="#connected-and-claude-loaded-it" aria-label="Link to &quot;Connected&quot; and &quot;Claude loaded it&quot;">#</a></h3>
+<p><strong>Connected</strong> means the A9 Voice entry is in the file Claude reads. The line under it says whether Claude has actually started
+the connector:</p>
+<p><figure class="shot"><img src="/img/docs/connector-connected-1x.webp" srcset="/img/docs/connector-connected-1x.webp 1x, /img/docs/connector-connected.webp 2x" width="638" height="865" alt="The Claude Desktop section saying Connected, then Claude Desktop last loaded the connector today at 12:40, with the settings file's path and an Open folder button." loading="lazy" decoding="async"><figcaption>Connected, and Claude Desktop has loaded it. The switch is On and Recent requests show what has been asked.</figcaption></figure></p>
+<ul>
+<li><p><strong>&quot;Claude Desktop last loaded the connector today at 12:40.&quot;</strong> Claude started it. You can ask Claude about your meetings.</p>
+</li>
+<li><p><strong>&quot;Claude Desktop hasn&#39;t loaded the connector yet.&quot;</strong> Quit Claude from the tray and open it again, as above.</p>
+<p><figure class="shot"><img src="/img/docs/connector-never-loaded-1x.webp" srcset="/img/docs/connector-never-loaded-1x.webp 1x, /img/docs/connector-never-loaded.webp 2x" width="642" height="199" alt="The Claude Desktop section saying Connected, then Claude Desktop hasn't loaded the connector yet with the tray steps, and if it still doesn't appear, your company may limit local connectors in Claude." loading="lazy" decoding="async"></figure></p>
+<p>If it is still not loaded after a real restart, your company may limit local connectors in Claude. Ask whoever manages
+your Claude plan.</p>
+</li>
+</ul>
+<p>A9 Voice keeps only the name Claude gave when it started the connector, its version and the time, in a small file on your PC
+(<code>connector-seen.json</code>). It is never sent anywhere.</p>
+<h3 id="if-you-connected-before-this-was-fixed">If you connected before this was fixed<a class="anchor" href="#if-you-connected-before-this-was-fixed" aria-label="Link to If you connected before this was fixed">#</a></h3>
+<p>Earlier versions wrote only the older file, so on the current Claude the page said &quot;Connected&quot; while Claude never saw it.
+Now the page shows an amber message, <strong>Claude Desktop on this PC reads a different settings file, so it can&#39;t see A9 Voice
+yet</strong>, with a <strong>Finish connecting...</strong> button. It opens the same preview, so you see the change before it happens. A9 Voice
+never changes another app&#39;s file without showing you first.</p>
+<p><figure class="shot"><img src="/img/docs/connector-needs-fix-1x.webp" srcset="/img/docs/connector-needs-fix-1x.webp 1x, /img/docs/connector-needs-fix.webp 2x" width="642" height="161" alt="The Claude Desktop section in amber: Claude Desktop on this PC reads a different settings file, so it can't see A9 Voice yet, with the settings file's path and a Finish connecting button." loading="lazy" decoding="async"></figure></p>
+<p>The same amber message appears when A9 Voice has moved since you connected it (the entry points to its old place). <strong>Finish
+connecting...</strong> updates it.</p>
 <p>If Claude Desktop is not installed on your PC, the page says so (&quot;Claude Desktop isn&#39;t installed on this PC. You can
 connect it later, or use the steps for other apps below.&quot;).</p>
-<p><figure class="shot"><img src="/img/docs/connector-claude-missing-1x.webp" srcset="/img/docs/connector-claude-missing-1x.webp 1x, /img/docs/connector-claude-missing.webp 2x" width="794" height="116" alt="The Claude Desktop section when it is not installed, with the message and the connect button." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/connector-claude-missing-1x.webp" srcset="/img/docs/connector-claude-missing-1x.webp 1x, /img/docs/connector-claude-missing.webp 2x" width="642" height="160" alt="The Claude Desktop section when it is not installed, with the message and the connect button." loading="lazy" decoding="async"></figure></p>
 <h3 id="a-microsoft-store-copy">A Microsoft Store copy<a class="anchor" href="#a-microsoft-store-copy" aria-label="Link to A Microsoft Store copy">#</a></h3>
-<p>A Store copy of A9 Voice cannot change another app&#39;s settings file, so there is no <strong>Connect</strong> button. The page tells you so
-and shows <strong>Copy settings (JSON)</strong> instead. In Claude Desktop open <strong>Settings › Developer › Edit Config</strong>, paste the settings
-into that file (add the <code>a9-voice</code> entry next to any others), save, and quit and reopen Claude Desktop. The command in it
-is <code>a9voice.exe</code> in <code>%LOCALAPPDATA%\Microsoft\WindowsApps</code>, the shortcut Windows keeps for the Store copy, and it reads the
-Store copy&#39;s notes. A copy from a9voice.com has its own connector and its own notes.</p>
+<p>A Store copy of A9 Voice cannot change another app&#39;s settings file, so there is no <strong>Connect</strong> button. The page shows the
+file Claude reads, with <strong>Copy path</strong>, <strong>Open folder</strong> and <strong>Copy settings (JSON)</strong>. Open that file (create it if it is not there), paste
+the settings into it (add the <code>a9-voice</code> entry next to any others), save, then quit Claude from the tray and open it
+again. The command in it is <code>a9voice.exe</code> in <code>%LOCALAPPDATA%\Microsoft\WindowsApps</code>, the shortcut Windows keeps for the Store
+copy, and it reads the Store copy&#39;s notes. A copy from a9voice.com has its own connector and its own notes.</p>
+<p><figure class="shot"><img src="/img/docs/connector-store-1x.webp" srcset="/img/docs/connector-store-1x.webp 1x, /img/docs/connector-store.webp 2x" width="642" height="190" alt="The Claude Desktop section in a Store copy of A9 Voice: the path of the settings file with Open folder and Copy path buttons, and Copy settings (JSON)." loading="lazy" decoding="async"></figure></p>
 <h2 id="connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app<a class="anchor" href="#connect-chatgpt-desktop-or-another-app" aria-label="Link to Connect ChatGPT desktop or another app">#</a></h2>
 <p>Under <strong>Other apps</strong>, A9 Voice gives you two things to copy.</p>
 <ul>
@@ -218,7 +253,7 @@ Store copy&#39;s notes. A copy from a9voice.com has its own connector and its ow
 <code>--mcp</code>.</li>
 <li><strong>Copy settings (JSON)</strong> copies the same thing as a settings block, for apps that read a settings file.</li>
 </ul>
-<p><figure class="shot"><img src="/img/docs/connector-other-apps-1x.webp" srcset="/img/docs/connector-other-apps-1x.webp 1x, /img/docs/connector-other-apps.webp 2x" width="794" height="204" alt="The Other apps section with the steps for ChatGPT desktop and Cursor, and the Copy command and Copy settings (JSON) buttons." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/connector-other-apps-1x.webp" srcset="/img/docs/connector-other-apps-1x.webp 1x, /img/docs/connector-other-apps.webp 2x" width="642" height="224" alt="The Other apps section with the steps for ChatGPT desktop and Cursor, and the Copy command and Copy settings (JSON) buttons." loading="lazy" decoding="async"></figure></p>
 <p>The steps, as the page words them:</p>
 <ul>
 <li><strong>ChatGPT desktop:</strong> <strong>Settings › MCP servers › Add server.</strong> Pick STDIO, paste the command, save, then Restart.
@@ -233,26 +268,32 @@ app&#39;s own section on connectors or MCP servers.</p>
 <p><strong>Recent requests</strong> lists what connected apps have asked for, newest first: the time, what kind of request it was
 (<strong>Searched</strong>, <strong>Listed notes</strong>, <strong>Read</strong>, <strong>Action items</strong>) and what it was about, such as the words searched. It keeps
 the latest requests on your PC, nothing more.</p>
-<p><figure class="shot"><img src="/img/docs/connector-requests-1x.webp" srcset="/img/docs/connector-requests-1x.webp 1x, /img/docs/connector-requests.webp 2x" width="794" height="152" alt="Recent requests: four lines, Read note 1 summary, Searched approval routing, Action items Priya, Listed notes stand-up, each with a time." loading="lazy" decoding="async"></figure></p>
+<p><figure class="shot"><img src="/img/docs/connector-requests-1x.webp" srcset="/img/docs/connector-requests-1x.webp 1x, /img/docs/connector-requests.webp 2x" width="642" height="152" alt="Recent requests: four lines, Read note 1 summary, Searched approval routing, Action items Priya, Listed notes stand-up, each with a time." loading="lazy" decoding="async"></figure></p>
 <p>Requests made while the connector is off are not run, so they do not show here.</p>
 <h2 id="turn-it-off-or-remove-it">Turn it off or remove it<a class="anchor" href="#turn-it-off-or-remove-it" aria-label="Link to Turn it off or remove it">#</a></h2>
 <ul>
 <li><strong>Pause sharing:</strong> switch <strong>Connector for AI apps</strong> off. Connected apps stay set up, but they get the short &quot;turned
 off&quot; message instead of your notes. Switch it back on to resume.</li>
 <li><strong>Remove an app for good:</strong> A9 Voice has no remove button. In the other app, delete the <code>a9-voice</code> connector in its own
-settings. For Claude Desktop that means removing the <code>a9-voice</code> entry from <code>claude_desktop_config.json</code> (A9 Voice&#39;s
-backup, <code>claude_desktop_config.json.a9v-backup</code>, is the file as it was before). The A9 Voice page shows &quot;Connected&quot; for
-as long as that entry is there.</li>
+settings. For Claude Desktop that means removing the <code>a9-voice</code> entry from <code>claude_desktop_config.json</code> in <strong>each</strong> of
+the two places listed under <a href="#which-settings-file-claude-reads">Which settings file Claude reads</a> that exist on your
+PC (A9 Voice&#39;s backup, <code>claude_desktop_config.json.a9v-backup</code> beside each, is the file as it was before). Then quit Claude from the
+tray and open it again. The A9 Voice page shows &quot;Connected&quot; for as long as that entry is there.</li>
 </ul>
 <h2 id="if-something-goes-wrong">If something goes wrong<a class="anchor" href="#if-something-goes-wrong" aria-label="Link to If something goes wrong">#</a></h2>
 <ul>
+<li><strong>A9 Voice says Connected but Claude shows nothing.</strong> Look at the line under Connected. If it says Claude hasn&#39;t loaded
+the connector yet, quit Claude from the tray (right-click its icon, then <strong>Quit</strong>; closing the window is not enough) and open it
+again. If the page shows an amber message instead, press <strong>Finish connecting...</strong>: your Claude reads a different
+settings file than the one A9 Voice wrote before. If it still doesn&#39;t appear after a real restart, your company may
+limit local connectors in Claude; ask whoever manages your Claude plan.</li>
 <li><strong>The AI app says it has no tools from A9 Voice.</strong> Quit and reopen the app fully after connecting, and check that the
 switch on <strong>Settings › Connectors</strong> is On.</li>
 <li><strong>The app says the connector is turned off.</strong> Switch <strong>Connector for AI apps</strong> on.</li>
 <li><strong>Connect to Claude Desktop shows an error about the file.</strong> The settings file is not valid JSON. Fix or remove it,
-then try again.</li>
+then try again. With two settings files, the other one is still connected.</li>
 <li><strong>A9 Voice does not show Connected after you moved or reinstalled it.</strong> The connected entry points to where A9 Voice
-was installed. Click <strong>Connect</strong> again to update it.</li>
+was installed. Click <strong>Finish connecting...</strong> to update it.</li>
 </ul>
 <p>More in <a href="/docs/troubleshooting/">Troubleshooting</a>.</p>
 <h2 id="related">Related<a class="anchor" href="#related" aria-label="Link to Related">#</a></h2>
@@ -265,7 +306,7 @@ was installed. Click <strong>Connect</strong> again to update it.</li>
       <p class="docs-help">Something missing or wrong? <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>, or use <strong>Copy diagnostics</strong> in Settings › General when asking for help.</p>
       <nav class="docs-steps" aria-label="Previous and next page"><a class="docs-step prev" href="/docs/asking-your-notes/"><span class="docs-step-l">Previous</span><span>Asking your notes</span></a><a class="docs-step next" href="/docs/webhooks/"><span class="docs-step-l">Next</span><span>Webhooks</span></a></nav>
     </article>
-    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-the-connector-does">What the connector does</a></li><li class="d3"><a href="#what-an-ai-app-can-ask-for">What an AI app can ask for</a></li><li class="d3"><a href="#what-an-ai-app-can-never-get">What an AI app can never get</a></li><li class="d3"><a href="#what-it-can-read-once-you-connect-it">What it can read once you connect it</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#connect-claude-desktop">Connect Claude Desktop</a></li><li class="d3"><a href="#a-microsoft-store-copy">A Microsoft Store copy</a></li><li class="d2"><a href="#connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app</a></li><li class="d2"><a href="#see-what-apps-asked">See what apps asked</a></li><li class="d2"><a href="#turn-it-off-or-remove-it">Turn it off or remove it</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
+    <nav class="docs-toc" aria-label="On this page"><h2 class="docs-toc-h">On this page</h2><ul><li class="d2"><a href="#what-the-connector-does">What the connector does</a></li><li class="d3"><a href="#what-an-ai-app-can-ask-for">What an AI app can ask for</a></li><li class="d3"><a href="#what-an-ai-app-can-never-get">What an AI app can never get</a></li><li class="d3"><a href="#what-it-can-read-once-you-connect-it">What it can read once you connect it</a></li><li class="d2"><a href="#turn-it-on">Turn it on</a></li><li class="d2"><a href="#connect-claude-desktop">Connect Claude Desktop</a></li><li class="d3"><a href="#which-settings-file-claude-reads">Which settings file Claude reads</a></li><li class="d3"><a href="#connected-and-claude-loaded-it">&quot;Connected&quot; and &quot;Claude loaded it&quot;</a></li><li class="d3"><a href="#if-you-connected-before-this-was-fixed">If you connected before this was fixed</a></li><li class="d3"><a href="#a-microsoft-store-copy">A Microsoft Store copy</a></li><li class="d2"><a href="#connect-chatgpt-desktop-or-another-app">Connect ChatGPT desktop or another app</a></li><li class="d2"><a href="#see-what-apps-asked">See what apps asked</a></li><li class="d2"><a href="#turn-it-off-or-remove-it">Turn it off or remove it</a></li><li class="d2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="d2"><a href="#related">Related</a></li></ul></nav>
   </main>
 </div>
 <footer class="sitefoot">

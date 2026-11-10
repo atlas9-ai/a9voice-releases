@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-34">
+  <section class="log-entry" aria-labelledby="v-1-0-35">
+  <h2 id="v-1-0-35">1.0.35 <time datetime="2026-11-10">November 10, 2026</time></h2>
+  <ul><li><strong>The Claude Desktop connector now writes the file Claude really reads, and &quot;Connected&quot; says whether Claude loaded it.</strong> The current Claude Desktop keeps its settings in its own folder, so earlier versions could say &quot;Connected&quot; for a file it never opened and Claude showed no A9 Voice. <strong>Settings › Connectors</strong> now finds the settings file Claude reads (and the older one, if you have it), shows its path with <strong>Open folder</strong>, and shows the proof: &quot;Claude Desktop last loaded the connector today at 12:40&quot;, or what to do (quit Claude from the tray and open it again). See <a href="/docs/connector/#connect-claude-desktop">Connect Claude Desktop</a>.</li>
+<li><strong>If you connected before, the page tells you when Claude can&#39;t see it.</strong> An amber message and <strong>Finish connecting...</strong> show the change before anything is written; nothing is fixed silently.</li>
+<li><strong>A Microsoft Store copy shows the exact file to paste into</strong> with <strong>Copy path</strong>, <strong>Open folder</strong> and <strong>Copy settings (JSON)</strong>, instead of a step inside Claude that could open the wrong file.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-34">
   <h2 id="v-1-0-34">1.0.34 <time datetime="2026-10-31">October 31, 2026</time></h2>
   <ul><li><strong>The Live window shows what is writing the live transcript and telling speakers apart: the service or model, and whether it runs on your graphics card or processor.</strong> A line above the transcript follows what is really running. If the card gives out mid-meeting it switches to the processor and says so in words. Settings › Live window › <strong>Live transcript by</strong> adds <strong>Last meeting used</strong>. See <a href="/docs/live-window/#what-is-doing-the-work">What is doing the work</a>.</li></ul>
 </section>

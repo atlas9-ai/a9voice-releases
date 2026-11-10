@@ -35,29 +35,45 @@
   "w": 266,
   "h": 381
  },
+ "asking-your-notes-said-by": {
+  "w": 646,
+  "h": 731
+ },
  "connector-claude-missing": {
-  "w": 794,
-  "h": 116
+  "w": 642,
+  "h": 160
  },
  "connector-claude-preview": {
-  "w": 794,
-  "h": 191
+  "w": 642,
+  "h": 499
  },
  "connector-connected": {
-  "w": 790,
-  "h": 752
+  "w": 638,
+  "h": 865
+ },
+ "connector-needs-fix": {
+  "w": 642,
+  "h": 161
+ },
+ "connector-never-loaded": {
+  "w": 642,
+  "h": 199
  },
  "connector-other-apps": {
-  "w": 794,
-  "h": 204
+  "w": 642,
+  "h": 224
  },
  "connector-page-off": {
-  "w": 790,
-  "h": 689
+  "w": 638,
+  "h": 775
  },
  "connector-requests": {
-  "w": 794,
+  "w": 642,
   "h": 152
+ },
+ "connector-store": {
+  "w": 642,
+  "h": 190
  },
  "dictionary-add-fix": {
   "w": 908,
@@ -319,6 +335,10 @@
   "w": 936,
   "h": 430
  },
+ "note-page-list-weeks": {
+  "w": 936,
+  "h": 889
+ },
  "note-page-list": {
   "w": 936,
   "h": 975
@@ -571,6 +591,14 @@
   "w": 1032,
   "h": 760
  },
+ "speakers-on-this-pc-live": {
+  "w": 760,
+  "h": 600
+ },
+ "speakers-on-this-pc-setting": {
+  "w": 662,
+  "h": 365
+ },
  "speech-models-custom-picker": {
   "w": 552,
   "h": 368
@@ -799,6 +827,10 @@
   "w": 806,
   "h": 830
  },
+ "usage-savings": {
+  "w": 806,
+  "h": 1889
+ },
  "voices-check": {
   "w": 642,
   "h": 183
@@ -847,9 +879,17 @@
   "w": 638,
   "h": 970
  },
+ "voices-scorecard": {
+  "w": 642,
+  "h": 136
+ },
  "voices-stale": {
   "w": 638,
   "h": 899
+ },
+ "voices-tuneup": {
+  "w": 642,
+  "h": 210
  },
  "webhooks-add-button": {
   "w": 156,
@@ -886,33 +926,5 @@
  "webhooks-test": {
   "w": 790,
   "h": 845
- },
- "usage-savings": {
-  "w": 806,
-  "h": 1889
- },
- "note-page-list-weeks": {
-  "w": 936,
-  "h": 889
- },
- "asking-your-notes-said-by": {
-  "w": 646,
-  "h": 731
- },
- "speakers-on-this-pc-setting": {
-  "w": 662,
-  "h": 365
- },
- "speakers-on-this-pc-live": {
-  "w": 760,
-  "h": 600
- },
- "voices-tuneup": {
-  "w": 642,
-  "h": 210
- },
- "voices-scorecard": {
-  "w": 642,
-  "h": 136
  }
 }
