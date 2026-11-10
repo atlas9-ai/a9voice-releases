@@ -1,13 +1,13 @@
 {
-  "version": "1.0.34",
-  "notes": "- **The Live window shows what is writing the live transcript and telling speakers apart: the service or model, and whether it runs on your graphics card or processor.** A line above the transcript follows what is really running. If the card gives out mid-meeting it switches to the processor and says so in words. Settings › Live window › **Live transcript by** adds **Last meeting used**. See [What is doing the work](/docs/live-window/#what-is-doing-the-work).",
-  "pub_date": "2026-10-31T14:41:44Z",
+  "version": "1.0.35",
+  "notes": "- **The Claude Desktop connector now writes the file Claude really reads, and \"Connected\" says whether Claude loaded it.** The current Claude Desktop keeps its settings in its own folder, so earlier versions could say \"Connected\" for a file it never opened and Claude showed no A9 Voice. **Settings › Connectors** now finds the settings file Claude reads (and the older one, if you have it), shows its path with **Open folder**, and shows the proof: \"Claude Desktop last loaded the connector today at 12:40\", or what to do (quit Claude from the tray and open it again). See [Connect Claude Desktop](/docs/connector/#connect-claude-desktop).\n- **If you connected before, the page tells you when Claude can't see it.** An amber message and **Finish connecting...** show the change before anything is written; nothing is fixed silently.\n- **A Microsoft Store copy shows the exact file to paste into** with **Copy path**, **Open folder** and **Copy settings (JSON)**, instead of a step inside Claude that could open the wrong file.",
+  "pub_date": "2026-11-10T22:41:21Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE5zeWNwWVhEbUROSitwdmFMeWxIdFo0bm9oUHlycEYrWEl0YmZNV1dqS0hQa3pDS1IrZ2d1NnFnZ2pOTFlxUHdwaEdydlpwYWRNQ3lNOEhwOTV2bkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDU3NjU3CWZpbGU6QTkgVm9pY2VfMS4wLjM0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzQKb3FnSGs4RVNLSjFQTlBKay8xY2d6TU5pL0NXWnVaZDQ5cXBuMzZhWDhuQVc4TjBud1hGeDFHOFBzRm11UWJGZDd1L21OVWJ4ekh6ZmM5amNsYWQwQmc9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.34/A9Voice_1.0.34_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBkQXRNTUprT2RaTm9SOHhCWGVBdXQ2b0svSmpJMGZnWm1zbXkvWXUwYXlCR2hDQUgvMFRUQjl1blMwTFpLT21UOHk3eHZITlpYbDFrNGdJVE84NndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzUwNDI2CWZpbGU6QTkgVm9pY2VfMS4wLjM1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzUKTG5ySGtnb05QQVJYcUZqbU5xRjFBd3NzdU9TbGpTRnJDcE15R1psNVJMbEJMMXdWcWxpRlg0UVRkM3N5bDZCN0ZTaWFwdEh4WlJZMHg0U2t2SWxqRHc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.35/A9Voice_1.0.35_x64-setup.exe"
     }
   },
-  "installer_sha256": "b5209ae4a4259079a9af5c34a395750bb49ccdc4f414525af4d60e64b25757a4",
-  "installer_size": 13019816
+  "installer_sha256": "6d2f8b5357f3634fba9d7b4f8bd21af5315432c2a3b9d1853d0f9e0bc1e46062",
+  "installer_size": 13033441
 }
