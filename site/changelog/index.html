@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.34"
+      "softwareVersion": "1.0.35"
     }
   ]
 }
@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-35">
+  <section class="log-entry" aria-labelledby="v-1-0-36">
+  <h2 id="v-1-0-36">1.0.36 <time datetime="2026-11-11">November 11, 2026</time></h2>
+  <ul><li><strong>The recording bar now shows the microphone that is really recording.</strong> If you saved a microphone in <strong>Settings › Notes › Recording</strong>, the bar&#39;s menu opens ticked on it, and its last line names the device that is open, instead of showing <strong>Auto (Windows default)</strong> and the headset. The Live window&#39;s pickers say the same thing in the same words. See <a href="/docs/recording-a-meeting/#choose-the-microphone-and-computer-audio">Choose the microphone and computer audio</a>.</li>
+<li><strong>Changing one side on the bar no longer moves the other.</strong> Switching computer audio used to send the microphone back to the Windows default for that recording, and picking a microphone dropped a saved output device.</li>
+<li><strong>A saved device that isn&#39;t connected is said out loud.</strong> The recording still starts on the Windows default, and the bar says &quot;Your saved microphone isn&#39;t connected&quot; once, with the device it is recording from. In Settings, the <strong>Output device</strong>, <strong>Microphone (Me)</strong> and <strong>Dictation microphone</strong> boxes show <strong>Not connected · Windows default used</strong> instead of going blank.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-35">
   <h2 id="v-1-0-35">1.0.35 <time datetime="2026-11-10">November 10, 2026</time></h2>
   <ul><li><strong>The Claude Desktop connector now writes the file Claude really reads, and &quot;Connected&quot; says whether Claude loaded it.</strong> The current Claude Desktop keeps its settings in its own folder, so earlier versions could say &quot;Connected&quot; for a file it never opened and Claude showed no A9 Voice. <strong>Settings › Connectors</strong> now finds the settings file Claude reads (and the older one, if you have it), shows its path with <strong>Open folder</strong>, and shows the proof: &quot;Claude Desktop last loaded the connector today at 12:40&quot;, or what to do (quit Claude from the tray and open it again). See <a href="/docs/connector/#connect-claude-desktop">Connect Claude Desktop</a>.</li>
 <li><strong>If you connected before, the page tells you when Claude can&#39;t see it.</strong> An amber message and <strong>Finish connecting...</strong> show the change before anything is written; nothing is fixed silently.</li>
@@ -692,7 +698,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.34</a>
+        <a class="sf-ver" href="/changelog/">v1.0.35</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

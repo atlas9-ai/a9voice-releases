@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.34"
+      "softwareVersion": "1.0.35"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Recording a meeting</h1>
       <p class="docs-lead">Notes records a call, a video or a voice note from your microphone and your computer's audio, with no bot in the meeting. Use this page to start, watch and stop a recording, by hand or by itself.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.24</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.36</p>
       <p>New to it? Watch Sara record a first meeting.</p>
 <p><a class="lesson-card" href="/media/a9voice-lesson-meeting-16x9.mp4" data-lesson="meeting" data-title="Your first meeting" data-src16="/media/a9voice-lesson-meeting-16x9.mp4" data-src9="/media/a9voice-lesson-meeting-9x16.mp4" data-poster="/media/a9voice-lesson-meeting-poster.jpg" data-vtt="/media/a9voice-lesson-meeting-16x9.vtt" aria-label="Play video: Your first meeting (0:57)"><span class="lesson-thumb"><img src="/media/a9voice-lesson-meeting-card.webp" srcset="/media/a9voice-lesson-meeting-card.webp 640w, /media/a9voice-lesson-meeting-card-960.webp 960w, /media/a9voice-lesson-meeting-card-1280.webp 1280w" sizes="(max-width: 600px) min(100vw, 360px), 320px" width="640" height="360" alt="" loading="lazy" decoding="async"><span class="lesson-play" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" focusable="false"><path d="M6.5 3.2v13.6L17 10z" fill="currentColor"/></svg></span><span class="lesson-dur" aria-hidden="true">0:57</span></span><span class="lesson-title">Your first meeting</span><span class="lesson-sub">Watch the 1-minute video</span></a></p>
 <h2 id="what-notes-records">What Notes records<a class="anchor" href="#what-notes-records" aria-label="Link to What Notes records">#</a></h2>
@@ -209,21 +209,23 @@
 <h3 id="choose-the-microphone-and-computer-audio">Choose the microphone and computer audio<a class="anchor" href="#choose-the-microphone-and-computer-audio" aria-label="Link to Choose the microphone and computer audio">#</a></h3>
 <ol>
 <li>Rest the mouse on the bar and press the <strong>Microphone</strong> button (or <strong>Computer audio</strong>).</li>
+<li>The menu opens ticked on what is recording now. If you saved a microphone in <strong>Settings › Notes › Recording</strong>, the tick is on that microphone; <strong>Auto (Windows default)</strong> is ticked only when Windows&#39; default is what you chose.</li>
 <li>Pick one:<ul>
 <li><strong>Auto (Windows default)</strong> follows whatever Windows uses, and shows its name underneath.</li>
 <li>A device from the list.</li>
 <li><strong>Off</strong> to stop recording that side.</li>
 </ul>
 </li>
-<li>The last line shows the result, for example <strong>Recording from:</strong> and the device name. It says <strong>Not recording from this source</strong> when you chose <strong>Off</strong>.</li>
+<li>The last line shows the result, for example <strong>Recording from:</strong> and the name of the device that is really open. It says <strong>Not recording from this source</strong> when you chose <strong>Off</strong>.</li>
 </ol>
 <p><figure class="shot"><img src="/img/docs/recording-a-meeting-mic-menu-1x.webp" srcset="/img/docs/recording-a-meeting-mic-menu-1x.webp 1x, /img/docs/recording-a-meeting-mic-menu.webp 2x" width="516" height="300" alt="The microphone list on the bar" loading="lazy" decoding="async"><figcaption>The list is the same for Computer audio.</figcaption></figure></p>
-<p>The change applies straight away, to this recording only. With <strong>Auto</strong> on computer audio, A9 Voice listens to every output and uses the one that is playing, so a headset that Windows switches to call mode still works.</p>
-<p>The <strong>Computer audio</strong> button only shows when the recording includes computer audio. To set the defaults for every recording, use <strong>Settings › Notes › Recording › What gets recorded</strong>:</p>
+<p>The change applies straight away, to this recording only, and nothing is saved to your settings. A pick changes only its own side: choosing a microphone leaves computer audio as it was, and the other way round. The Live window&#39;s microphone and computer audio buttons show the same menu, and a change made in one window shows in the other. With <strong>Auto</strong> on computer audio, A9 Voice listens to every output and uses the one that is playing, so a headset that Windows switches to call mode still works.</p>
+<p>If the microphone or output device you saved isn&#39;t connected, the recording starts anyway with the Windows default, and the bar says so once: <strong>Your saved microphone isn&#39;t connected.</strong> (or <strong>Your saved output device isn&#39;t connected.</strong>) with the device it is recording from. The menu then shows <strong>Auto (Windows default)</strong> ticked, because that is what is recording.</p>
+<p>The <strong>Computer audio</strong> button is always on the bar; it opens at <strong>Off</strong> when the recording doesn&#39;t include computer audio. To set the defaults for every recording, use <strong>Settings › Notes › Recording › What gets recorded</strong>:</p>
 <p><figure class="shot"><img src="/img/docs/recording-a-meeting-settings-while-1x.webp" srcset="/img/docs/recording-a-meeting-settings-while-1x.webp 1x, /img/docs/recording-a-meeting-settings-while.webp 2x" width="698" height="884" alt="What gets recorded and the settings used while recording" loading="lazy" decoding="async"><figcaption>Settings › Notes › Recording, further down.</figcaption></figure></p>
 <ul>
-<li><strong>Microphone (Me)</strong> is <strong>Same as Transcribe</strong> unless you pick another one.</li>
-<li><strong>Computer audio (Them)</strong> is on or off, and <strong>Output device</strong> follows the Windows default unless you pick one.</li>
+<li><strong>Microphone (Me)</strong> is <strong>Same as Transcribe</strong> unless you pick another one. If the one you picked isn&#39;t on this PC, the box says <strong>Not connected · Windows default used</strong> and keeps your choice for when it is back.</li>
+<li><strong>Computer audio (Them)</strong> is on or off, and <strong>Output device</strong> follows the Windows default (<strong>Windows default (name)</strong>) unless you pick one.</li>
 <li>A summary template can switch computer audio off for the notes that use it (<strong>Capture system audio</strong> in <a href="/docs/templates-and-export/">Templates and export</a>).</li>
 </ul>
 <h3 id="move-it-minimize-it-bring-it-back">Move it, minimize it, bring it back<a class="anchor" href="#move-it-minimize-it-bring-it-back" aria-label="Link to Move it, minimize it, bring it back">#</a></h3>
@@ -352,7 +354,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.34</a>
+        <a class="sf-ver" href="/changelog/">v1.0.35</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
