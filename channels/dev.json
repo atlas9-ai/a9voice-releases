@@ -1,13 +1,13 @@
 {
-  "version": "1.0.35",
-  "notes": "- **The Claude Desktop connector now writes the file Claude really reads, and \"Connected\" says whether Claude loaded it.** The current Claude Desktop keeps its settings in its own folder, so earlier versions could say \"Connected\" for a file it never opened and Claude showed no A9 Voice. **Settings › Connectors** now finds the settings file Claude reads (and the older one, if you have it), shows its path with **Open folder**, and shows the proof: \"Claude Desktop last loaded the connector today at 12:40\", or what to do (quit Claude from the tray and open it again). See [Connect Claude Desktop](/docs/connector/#connect-claude-desktop).\n- **If you connected before, the page tells you when Claude can't see it.** An amber message and **Finish connecting...** show the change before anything is written; nothing is fixed silently.\n- **A Microsoft Store copy shows the exact file to paste into** with **Copy path**, **Open folder** and **Copy settings (JSON)**, instead of a step inside Claude that could open the wrong file.",
-  "pub_date": "2026-11-10T22:41:21Z",
+  "version": "1.0.36",
+  "notes": "- **The recording bar now shows the microphone that is really recording.** If you saved a microphone in **Settings › Notes › Recording**, the bar's menu opens ticked on it, and its last line names the device that is open, instead of showing **Auto (Windows default)** and the headset. The Live window's pickers say the same thing in the same words. See [Choose the microphone and computer audio](/docs/recording-a-meeting/#choose-the-microphone-and-computer-audio).\n- **Changing one side on the bar no longer moves the other.** Switching computer audio used to send the microphone back to the Windows default for that recording, and picking a microphone dropped a saved output device.\n- **A saved device that isn't connected is said out loud.** The recording still starts on the Windows default, and the bar says \"Your saved microphone isn't connected\" once, with the device it is recording from. In Settings, the **Output device**, **Microphone (Me)** and **Dictation microphone** boxes show **Not connected · Windows default used** instead of going blank.",
+  "pub_date": "2026-11-12T02:02:34Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcFBkQXRNTUprT2RaTm9SOHhCWGVBdXQ2b0svSmpJMGZnWm1zbXkvWXUwYXlCR2hDQUgvMFRUQjl1blMwTFpLT21UOHk3eHZITlpYbDFrNGdJVE84NndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzUwNDI2CWZpbGU6QTkgVm9pY2VfMS4wLjM1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzUKTG5ySGtnb05QQVJYcUZqbU5xRjFBd3NzdU9TbGpTRnJDcE15R1psNVJMbEJMMXdWcWxpRlg0UVRkM3N5bDZCN0ZTaWFwdEh4WlJZMHg0U2t2SWxqRHc9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.35/A9Voice_1.0.35_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEFwYWJHbnRZY3NJNkpkbFVsYVNaVm1oWVZNemhHU0hLbndnRU0zQkdBb0lWS3hXNTFKZzBYUGRXdDUya1BWR0RjNXBNUTh3OFJPcHlHQW5FNDlWT0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDQ4OTAyCWZpbGU6QTkgVm9pY2VfMS4wLjM2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzYKQUxtRjdiT3pVMjZGQ1k4bW9PajhUdHdBaDZ0OTZrNUVQWXNRV3BiZHpwbENrNFkrSjd3YWdKUzJRb1FJNUROUFpIQnFhQXJKSUcxejBsdEt0bE5EQmc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.36/A9Voice_1.0.36_x64-setup.exe"
     }
   },
-  "installer_sha256": "6d2f8b5357f3634fba9d7b4f8bd21af5315432c2a3b9d1853d0f9e0bc1e46062",
-  "installer_size": 13033441
+  "installer_sha256": "81dffc91ac1e66c6a9e192bd484b1186b94898bd70a9b3a7767e353304313da9",
+  "installer_size": 13036087
 }
