@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting notes with no bot in your meeting · A9 Voice</title>
+<meta name="description" content="A9 Voice records Teams or Zoom from your PC. Nobody else sees a bot join, and it tells the speakers apart. Windows 10 and 11.">
+<!-- A campaign page (film 05): kept out of search so it never competes with the home page, and out of the sitemap (build.mjs). It stays crawlable on purpose: robots.txt must not Disallow it, or the noindex is never read. -->
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://a9voice.com/no-bot/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A9 Voice">
+<meta property="og:title" content="Meeting notes with no bot in your meeting">
+<meta property="og:description" content="Records Teams or Zoom from your PC. Nobody else sees a bot join.">
+<meta property="og:url" content="https://a9voice.com/no-bot/">
+<meta property="og:image" content="https://a9voice.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/chrome.css">
+<link rel="stylesheet" href="/css/landing.css">
+<script src="/js/chrome.js" defer></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ae721dd5a82b40b5844414bb9f3b9522"}'></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="sitenav" id="top-nav">
+  <div class="sn-wrap sn-in">
+    <a class="sn-logo" href="/" aria-label="A9 Voice home"><img src="/img/lockup-dark.svg" alt="" width="161" height="32"></a>
+    <nav class="sn-links" aria-label="Main"><a href="/#day">A day with it</a><a href="/#switch">Why switch</a><a href="/#compare">Compare</a><a href="/pricing">Pricing</a><a href="/docs/">Manual</a></nav>
+    <a class="gh-chip" href="https://github.com/atlas9-ai/a9voice-releases" aria-label="A9 Voice on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+    <div class="store-cta store-nav" data-store-cta><a class="store-badge" href="https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct&amp;cid=a9voice-web" data-store data-pl="nav" target="_blank" rel="noopener"><img src="/img/ms-store-badge-dark.svg" width="161" height="44" alt="Download from the Microsoft Store"></a><a class="sn-btn store-phone" href="/download?pl=nav">Download free</a></div>
+    <button class="sn-menu" type="button" aria-expanded="false" aria-controls="sn-sheet" aria-label="Menu">
+      <svg class="bars3" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="x" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="sn-sheet" id="sn-sheet">
+    <nav aria-label="Menu"><a href="/#day">A day with it</a><a href="/#switch">Why switch</a><a href="/#compare">Compare</a><a href="/pricing">Pricing</a><a href="/docs/">Manual</a></nav>
+    <div class="sn-sheet-row"><a class="gh-chip" href="https://github.com/atlas9-ai/a9voice-releases" aria-label="A9 Voice on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a><div class="store-cta store-lg" data-store-cta><a class="store-badge" href="https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct&amp;cid=a9voice-web" data-store data-pl="nav" target="_blank" rel="noopener"><img src="/img/ms-store-badge-dark.svg" width="161" height="44" alt="Download from the Microsoft Store"></a><a class="store-alt" href="/download?pl=nav">Work PC that blocks the Store? Download the installer</a><a class="sn-btn store-phone" href="/download?pl=nav">Download free</a></div></div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero hero-nobot wrap">
+  <div class="hero-copy">
+    <h1>Meeting notes with <span class="blue">no bot</span> in your meeting</h1>
+    <p class="lead">A9 Voice records Teams or Zoom from your PC. Nobody else sees a bot join, and it knows who said what.</p>
+    <div class="ctas">
+      <div class="store-cta store-lg" data-store-cta><a class="store-badge" href="https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct&amp;cid=a9voice-web" data-store data-pl="no-bot-hero" target="_blank" rel="noopener"><img src="/img/ms-store-badge-dark.svg" width="161" height="44" alt="Download from the Microsoft Store"></a><a class="store-alt" href="/download?pl=no-bot-hero">Work PC that blocks the Store? Download the installer</a><a class="btn btn-primary store-phone" href="/download?pl=no-bot-hero">Download free</a></div>
+    </div>
+    <span class="fine">Windows 10 and 11, 64-bit · Notes is free for 30 days, then $49 once · <a href="/pricing">Pricing</a></span>
+  </div>
+  <figure class="hero-media">
+    <div class="people" role="img" aria-label="An example participant list for a call with three people: Priya, Tom and You. No assistant or bot is in it.">
+      <div class="people-head"><span>In this call</span><span class="people-n">3</span></div>
+      <ul>
+        <li><span class="av">P</span><span>Priya N.</span></li>
+        <li><span class="av">T</span><span>Tom R.</span></li>
+        <li><span class="av you">Y</span><span>You</span></li>
+      </ul>
+      <div class="people-foot">No assistant joined. A9 Voice listens on your PC.</div>
+    </div>
+    <figcaption>An example participant list, with made-up names. A9 Voice never appears in it.</figcaption>
+  </figure>
+</section>
+
+<section id="how" class="wrap pad stack-md" aria-labelledby="how-h">
+  <div class="head wide">
+    <span class="eyebrow">HOW IT WORKS</span>
+    <h2 id="how-h">Install it, join your call, read your notes.</h2>
+  </div>
+  <ol class="steps">
+    <li><span><strong>Install A9 Voice.</strong> Setup takes five short steps and asks how you want your voice turned into text. It installs for your Windows user only and needs no administrator rights. Open Notes and press <strong>Try Notes free</strong> to start the 30 days: no signup, no card.</span></li>
+    <li><span><strong>Join your call as you always do.</strong> When Teams or another meeting app you picked opens your microphone, A9 Voice starts recording on its own, and you get eight seconds to discard it. Zoom is off until you turn it on in Settings › Notes › Recording. You can also start by hand with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd>.</span></li>
+    <li><span><strong>Hang up.</strong> A transcript with a name on every line, a summary and the action items appear in your Notes list, as plain files in a folder you pick.</span></li>
+  </ol>
+</section>
+
+<section id="what" class="wrap pad stack-md" aria-labelledby="what-h">
+  <div class="head wide">
+    <span class="eyebrow">WHAT IT DOES</span>
+    <h2 id="what-h">It listens on your PC, not in the call.</h2>
+    <p class="sub">There is no assistant to invite, admit or explain to a client.</p>
+  </div>
+  <div class="grid g280">
+    <div class="card"><h3>Both sides of the call</h3><p>It records your microphone and the sound your PC plays, and keeps the two apart. The meeting app keeps working as before.</p></div>
+    <div class="card"><h3>Who said what</h3><p>Speakers are told apart and each line carries a name. Tag a voice once, say Speaker 3 is Priya, and every line from that person carries her name. Voice matching is off until you turn it on.</p></div>
+    <div class="card"><h3>Notes you own</h3><p>Summaries, transcripts and pictures are plain Markdown files on your PC. Speech can be turned into text on your PC, or with your own keys.</p></div>
+  </div>
+  <span class="fine">Telling speakers apart needs a speech engine that can do it: a model on your PC with Identify speakers on, or Deepgram, ElevenLabs, AssemblyAI or Mistral. Some engines, such as Groq and OpenAI, label everyone but you as one speaker. <a href="/docs/speech-models/#which-models-tell-speakers-apart">Which models tell speakers apart</a>.</span>
+</section>
+
+<section id="honest" class="wrap narrow pad stack-md" aria-labelledby="honest-h">
+  <div class="head">
+    <span class="eyebrow">ONE THING TO DO</span>
+    <h2 id="honest-h">Tell people you’re recording.</h2>
+    <p class="sub">Because no bot joins, nothing announces the recording. Laws differ by place, and some require everyone’s consent. Telling the people on the call is up to you. <a href="/docs/privacy-and-data/#recording-consent">More on recording consent</a>.</p>
+  </div>
+</section>
+
+<section id="faq" class="wrap narrow pad stack-md">
+  <h2 class="h2s">Questions</h2>
+  <div class="faq">
+    <details><summary>Will anyone on the call see A9 Voice?<span class="plus" aria-hidden="true">+</span></summary><p>No. It records your microphone and your computer’s audio on your PC, so nobody sees an assistant in the participant list.</p></details>
+    <details><summary>Does it work with Teams and Zoom?<span class="plus" aria-hidden="true">+</span></summary><p>Yes. It records what your PC plays and what your microphone hears, so it works with any call you can hear. It can start by itself when Teams, Zoom, Webex, Slack huddles, Discord or a call in your browser opens the microphone; Teams is on to begin with and you turn on the others in Settings › Notes › Recording.</p></details>
+    <details><summary>What does it cost?<span class="plus" aria-hidden="true">+</span></summary><p>Notes is free for 30 days, starting when you press Try Notes free, and then $49 once. Dictation is free. If you use cloud speech or language models you pay those providers directly with your own keys; models that run on your PC cost nothing per use. <a href="/pricing">See pricing</a>.</p></details>
+    <details><summary>Where do my notes and recordings go?<span class="plus" aria-hidden="true">+</span></summary><p>Into a folder you pick on your PC. With a speech model on your PC, your audio never leaves it. With a cloud service, the audio goes to the one service you chose, with your key.</p></details>
+  </div>
+</section>
+
+<section id="download" class="wrap pad">
+  <div class="dl">
+    <img src="/img/icon-64.svg" alt="" width="64" height="64">
+    <h2>Take notes without a bot.</h2>
+    <p class="sub">Free to start. One small installer, no admin rights needed.</p>
+    <div class="store-cta store-xl" data-store-cta><a class="store-badge" href="https://apps.microsoft.com/detail/9N0Z4DJH4K3B?mode=direct&amp;cid=a9voice-web" data-store data-pl="no-bot-end" target="_blank" rel="noopener"><img src="/img/ms-store-badge-dark.svg" width="161" height="44" alt="Download from the Microsoft Store"></a><a class="store-alt" href="/download?pl=no-bot-end">Work PC that blocks the Store? Download the installer</a><a class="btn btn-primary store-phone" href="/download?pl=no-bot-end">Download free</a></div>
+    <span class="fine">Windows 10/11, 64-bit · <a href="/docs/recording-a-meeting/">How recording works</a></span>
+  </div>
+</section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="sn-wrap">
+    <div class="sf-row">
+      <span class="sf-brand"><img src="/img/lockup-dark.svg" alt="A9 Voice" width="121" height="24" loading="lazy"><span>© 2026 Atlas9 LLC</span></span>
+      <nav class="sf-links" aria-label="Footer">
+        <a href="/docs/">Manual</a>
+        <a href="/demo">Demo</a>
+        <a href="/features/">All features</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/guides/voice-typing-windows/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/changelog/">Changelog</a>
+        <a class="sf-ver" href="/changelog/">v1.0.36</a>
+        <a href="/docs/privacy-and-data/">Privacy</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
+        <a href="https://github.com/atlas9-ai/a9voice-releases">GitHub</a>
+        <a class="sf-icon" href="https://www.youtube.com/@a9voiceapp" target="_blank" rel="noopener" aria-label="A9 Voice on YouTube"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="mailto:contact@a9voice.com">contact@a9voice.com</a>
+      </nav>
+    </div>
+    <p class="sf-featured">Featured on <a href="https://peerpush.com/p/a9-voice" target="_blank" rel="noopener">PeerPush</a></p>
+    <p class="sf-note">Photos are illustrative; people shown are fictional.</p>
+  </div>
+</footer>
+</body>
+</html>

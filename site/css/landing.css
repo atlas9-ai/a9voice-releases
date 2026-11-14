@@ -12,3 +12,16 @@
   .hero { padding-top: 40px; gap: 32px; }
   .pad { padding-bottom: 64px; }
 }
+
+/* /no-bot/: an example participant list (fictional names) in place of a screenshot. */
+.people { width: 100%; max-width: 360px; align-self: center; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 30px 80px rgba(0,0,0,.5); overflow: hidden; }
+.people-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.people-n { font-family: var(--mono); color: var(--text-2); }
+.people ul { list-style: none; margin: 0; padding: 8px 0; }
+.people li { display: flex; align-items: center; gap: 14px; padding: 10px 18px; font-size: 16px; color: var(--text); }
+.people .av { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--raised); border: 1px solid var(--line-2); font-size: 14px; color: var(--text-2); }
+.people .av.you { background: var(--action); border-color: var(--action); color: #fff; }
+.people-foot { padding: 14px 18px; border-top: 1px dashed var(--line-2); font-size: 14px; color: var(--signal); }
+.hero-media .people + figcaption { text-align: center; }
+.hero-nobot h1 { font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; }
+.hero-nobot .hero-copy { flex-basis: 480px; }

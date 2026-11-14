@@ -35,6 +35,7 @@
     const dl = el("div", "store-cta", { "data-store-cta": "" });
     if (link.dataset.store) {
       const badge = el("a", "store-badge", { href: link.dataset.store, "data-store": "", "data-pl": "demo", target: "_blank", rel: "noopener" });
+      if (window.a9vStore) window.a9vStore.link(badge); // the visit's campaign on the Store link (js/chrome.js)
       badge.append(el("img", "", { src: "/img/ms-store-badge-dark.svg", width: "161", height: "44", alt: "Download from the Microsoft Store" }));
       dl.append(badge, el("a", "store-alt", { href }, "Work PC that blocks the Store? Download the installer"));
     }

@@ -8,6 +8,14 @@
 
   // Tags are lower case a-z 0-9 _ . : - and at most 40 long; anything else is dropped.
   var tag = function (v) { v = String(v || "").trim().toLowerCase(); return /^[a-z0-9_.:-]{1,40}$/.test(v) ? v : ""; };
+  // Microsoft's campaign ID for a Store link (`cid`, up to 100 characters; learn.microsoft.com/windows/apps/publish/
+  // create-a-custom-app-promotion-campaign). Ours is lower case a-z 0-9 and "-": anything else becomes one "-", so a
+  // hostile or odd campaign name can never put a quote, a space or another parameter into the link.
+  var cidOf = function (v) {
+    return String(v || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+/, "").slice(0, 100).replace(/-+$/, "");
+  };
+  var STORE_HOST = "apps.microsoft.com";
+  var DEFAULT_CID = "a9voice-web";
   var OWN = /(^|\.)a9voice\.com$/;
   // Referrer host -> the name a person would give the place. The Worker has the same table (worker/src/index.js);
   // site/lib/chrome.test.mjs checks the two agree.
@@ -73,7 +81,8 @@
       if (!/^\/[a-z0-9/_.~%-]*$/.test(land)) land = "";
       seen = {
         src: tag(q.get("utm_source")), med: tag(q.get("utm_medium")), ct: tag(q.get("utm_content")), cmp: tag(q.get("utm_campaign")),
-        ref: rh, land: land.slice(0, 60)
+        ref: rh, land: land.slice(0, 60),
+        cid: cidOf(q.get("utm_campaign") || q.get("cmp"))
       };
       first = true;
       try { sessionStorage.setItem(KEY, JSON.stringify(seen)); } catch (e) { first = false; /* private mode: no way to send it once */ }
@@ -103,16 +112,37 @@
       a.setAttribute("href", u.pathname + u.search);
     });
 
+    // Every Microsoft Store link carries the visit's campaign as `cid`, so Partner Center's Acquisitions report can
+    // split Store installs by campaign. A visit with none (direct, organic) is `a9voice-web`. A tab opened before
+    // this stored `cid` falls back to its `cmp`. mode=direct and the rest of the link stay as they are.
+    var storeCid = function () { return (seen && (seen.cid || cidOf(seen.cmp))) || DEFAULT_CID; };
+    var storeLink = function (a) {
+      try {
+        var href = a.getAttribute("href");
+        var u = new URL(href);
+        if (u.protocol !== "https:" || u.hostname !== STORE_HOST) return;
+        u.searchParams.set("cid", storeCid());
+        a.setAttribute("href", u.toString());
+      } catch (e) { /* not an absolute link: leave it */ }
+    };
+    Array.prototype.forEach.call(document.querySelectorAll('a[href^="https://' + STORE_HOST + '/"]'), storeLink);
+    // The demo's lightbox builds its badge on the first click, and a click is also the last chance to tag a link a
+    // page changed. (window.a9vStore.link is for the lightbox.)
+    window.a9vStore = { link: storeLink, cid: storeCid };
+
     if (first) beacon("visit");
 
-    // A click on the Microsoft Store badge: one store_click row with the badge's placement (pl) and the visit's
-    // tags, so the Store's share of the installs can be read next to the installer's (download rows). The link goes on
-    // as it is; sendBeacon outlives the page leaving.
+    // A click on the Microsoft Store badge: one store_click row with the badge's placement (pl), the visit's
+    // tags and dest=store, so Store intent can be read per campaign next to the installer's (download rows) before
+    // Partner Center is connected. The link goes on, tagged with its cid; sendBeacon outlives the page leaving.
     // Delegated, so the badge the demo lightbox builds later counts too.
     document.addEventListener("click", function (e) {
       if (e.button > 0) return;
       var a = e.target && e.target.closest ? e.target.closest("a[data-store]") : null;
-      if (a) beacon("store_click", { pl: a.getAttribute("data-pl") || "" });
+      if (a) {
+        storeLink(a);
+        beacon("store_click", { pl: a.getAttribute("data-pl") || "", dest: "store" });
+      }
     });
 
     // The download page loaded in a browser that ran this script: the human denominator for the click rate.
