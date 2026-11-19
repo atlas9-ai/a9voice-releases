@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.38"
+      "softwareVersion": "1.0.39"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.34</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.40</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window hangs off the recording bar while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. The other people can be told apart while the call goes on by a cloud service or, free and private, on your own PC: see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -186,7 +186,7 @@
 <p><strong>Automatic</strong> follows the speech model that writes your notes:</p>
 <ul>
 <li><strong>Deepgram writes the notes.</strong> With a Deepgram key, the two sides stream to Deepgram while the window is open. Deepgram bills it per channel, at its live rate.</li>
-<li><strong>AssemblyAI writes the notes.</strong> With its key, the two sides stream to AssemblyAI&#39;s Universal-Streaming while the window is open, on the same key (no second bill). The window says <strong>Live transcript via AssemblyAI</strong> with what it costs; the other people&#39;s side has speaker labels, so each person is their own speaker to name.</li>
+<li><strong>AssemblyAI writes the notes.</strong> With its key, the two sides stream to AssemblyAI (Universal-Streaming, or AssemblyAI-STT-3.7 Realtime when your notes use STT-3.7 or you choose it) while the window is open, on the same key (no second bill). The window says <strong>Live transcript via AssemblyAI</strong> with what it costs; the other people&#39;s side has speaker labels, so each person is their own speaker to name.</li>
 <li><strong>Another cloud service writes the notes</strong> (ElevenLabs, Groq, OpenAI or one you added). If a speech model on this PC is installed and keeps up with real time, the live lines are made there, free, and the window says <strong>Live transcript on this PC (free).</strong> Nothing streams to a cloud service.</li>
 <li><strong>Another cloud service writes the notes, and no model on this PC takes the live part.</strong> Nothing streams to a second service on its own, because it is not the one writing your notes and would bill you separately. The window says so and offers <strong>Use Deepgram for the live transcript</strong>; once you do, <strong>Live transcript by</strong> is set to Deepgram and the window says <strong>Live transcript via Deepgram, billed separately.</strong> Without a Deepgram key it says <strong>Live transcript needs a speech model on this PC or a Deepgram key.</strong> with an <strong>Open Models</strong> link. You can also pick AssemblyAI under <strong>Live transcript by</strong>.</li>
 <li><strong>Notes use a model on this PC.</strong> The live lines are made there too, if that model keeps up. If it doesn&#39;t, the window says <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></li>
@@ -408,7 +408,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.38</a>
+        <a class="sf-ver" href="/changelog/">v1.0.39</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
