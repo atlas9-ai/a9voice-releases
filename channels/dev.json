@@ -1,13 +1,13 @@
 {
-  "version": "1.0.39",
-  "notes": "- **Groq, OpenAI and other services without speaker labels now get speakers told apart on this PC.** After a call, A9 Voice runs the speaker model over the other people's side of the recording (the Live window no longer has to be open) and gives each line to the person who spoke it; where the service sends word times, a line is cut where the speaker changes. It needs the speaker files and **Identify speakers**; **Models** and the Savings card say so, and offer the download. See [Speakers on this PC](/docs/speakers-on-this-pc/#after-the-call-for-a-service-with-no-labels).\n- **ElevenLabs Scribe v3.** New ElevenLabs picks use Scribe v3 ($0.20 an hour, with speaker labels), and the older Scribe rows say **Scribe v3 is available**. Nobody is moved: a copy that uses Scribe v2 stays on it.\n- **Prices checked again on 19 Nov.** Scribe v2 is $0.20 an hour after the call and Scribe v3 and v2 live are $0.22. The Savings tab uses them.",
-  "pub_date": "2026-11-19T14:20:49Z",
+  "version": "1.0.40",
+  "notes": "- **AssemblyAI's new STT-3.7 models are available for notes and for the live transcript.** AssemblyAI-STT-3.7 is $0.21 an hour after the call, like Universal-3.5 Pro, and a new AssemblyAI pick uses it. **AssemblyAI · STT-3.7 Realtime** is a choice of its own under **Settings › Notes › Live window › Live transcript by**, with its price an hour. If your notes use Universal-3.5 Pro, **Models** and the Savings card say STT-3.7 is available at the same price, with **Compare on a meeting** and a **Switch**; nobody is moved.\n- **Prices checked against AssemblyAI's page.** Speaker labels on Universal-3.5 Pro are $0.065 an hour, not $0.02 (they are $0.02 on STT-3.7). Savings and Usage & cost use the new figures.",
+  "pub_date": "2026-11-19T19:13:36Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcE56LzJROTV2dmE3SHluL3V0VktjdkpRMWk1R0I3YUh2ZGFXd0IwdUQ4MC80TGFDS2EwZk82d3ZhZGNua2lrOXpKck9VZW02VGJTY1A4ZWdzM2xEZndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDk3OTY3CWZpbGU6QTkgVm9pY2VfMS4wLjM5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzkKazVvTEU5bUJCNE5TK3dWRGFkbE5OZWFuSEpua21yQUNGNURLUmtCZTNiY1FKb3hUVUlFQkorTklrOElxZGpyalFZby9ESTdIVXhGbVlhNzErMHpCQ2c9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.39/A9Voice_1.0.39_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEl0clFNY0N4d3FkdEIxVVJUL25GeC9LbkQ4MTVWMXRqVk9HZWNYclBMSzU1Q2VIditqazBmVEUzQUNSZ3JucVVUbEMvTE95eUZEZjNBT3JOM0hDSVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTE1NTUwCWZpbGU6QTkgVm9pY2VfMS4wLjQwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDAKSHBzdGJMMGhXRnd4eGx1VFQ1RlZVaFc0Z0tXWUJuMjUvZVJHYXc1T3diTVB2RHNNUU5ST1FoTVUrN3l4b20veWVNRkM0NW9SNjc5a1FSR1NyaTBZQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.40/A9Voice_1.0.40_x64-setup.exe"
     }
   },
-  "installer_sha256": "f4d1b6478d00c774710a086652f6ca848e824eee201fddab93bcef8294459e8f",
-  "installer_size": 13241628
+  "installer_sha256": "6e46c3d8f2abd8d113d820270e039898c3837f64cbd1eb6f44120c415154196b",
+  "installer_size": 13242628
 }
