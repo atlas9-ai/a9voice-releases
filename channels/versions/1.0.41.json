@@ -1,0 +1,13 @@
+{
+  "version": "1.0.41",
+  "notes": "- **New speech service: Soniox, for notes and the live transcript.** Add a key from the **Soniox** tile in Speech services and pick it for **Meeting notes** or under **Settings › Notes › Live window › Live transcript by**. It tells the people on a call apart, in 60 languages, at about $0.10 an hour after the call and $0.12 an hour live, speaker labels included. Soniox says it never uses your audio or transcripts to improve its models, and A9 Voice deletes each file from its servers once your notes are made.\n- **Soniox is billed by tokens, so its prices are marked as about right.** Savings, Compare on a meeting and Usage & cost list it beside the other services; try Compare on one real meeting before you switch.",
+  "pub_date": "2026-11-19T20:58:24Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEt0SE1LVDJzNThob2xyV3RZUGIvR0NQMitTM2hTM00wVGFRT0hEc0VURzRENENjVXJaQitwcTV2V29VYXVhdFgyUkcwNkM4K2tDb2xjVzIzc0d3bndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTIxODQ3CWZpbGU6QTkgVm9pY2VfMS4wLjQxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDEKTUt1ZHFhTFFqby8yWGpUeGJvcVdUbXFTdG9TUHpRMnkzRlVGR3B0aEExaWZnekxwbmticUw2aUdMbjRudnRHYTJZMFFseVJETG5DN216Z3IyV2hmQ2c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.41/A9Voice_1.0.41_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "0f4bfde6abf8ecde29967eac8f51637ea75f67feedacdfe78fc3ee6493104e56",
+  "installer_size": 13271076
+}
