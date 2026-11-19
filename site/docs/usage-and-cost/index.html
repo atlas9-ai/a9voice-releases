@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.36"
+      "softwareVersion": "1.0.38"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Usage and cost</h1>
       <p class="docs-lead">What your notes, dictation and Ask cost at your own keys' rates, how the estimate is made, and how to change the prices it uses.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.38</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.39</p>
       <p>A9 Voice is free. The speech and language services you connect bill you directly, with your own keys. <strong>Settings › Usage &amp; cost</strong> estimates that bill. It has four tabs: <strong>Overview</strong>, <strong>Savings</strong>, <strong>History</strong> and <strong>Prices</strong>. The estimate is built from what A9 Voice sent and a price table, so your provider&#39;s own bill is always the final word.</p>
 <p><figure class="shot"><img src="/img/docs/usage-overview-1x.webp" srcset="/img/docs/usage-overview-1x.webp 1x, /img/docs/usage-overview.webp 2x" width="806" height="2256" alt="Settings › Usage &amp; cost, Overview: this month's gauge, the cost per meeting hour, daily spend and the biggest notes." loading="lazy" decoding="async"><figcaption>Overview, for a fictional October.</figcaption></figure></p>
 <h2 id="what-is-counted">What is counted<a class="anchor" href="#what-is-counted" aria-label="Link to What is counted">#</a></h2>
@@ -169,7 +169,7 @@
 <li><strong>Each tile names its saving.</strong> It says <strong>You use:</strong> and the model you use now, and when something is cheaper the amber line says <strong>Could save $24.64/mo with Deepgram Nova-3</strong>: the engine the saving is with, never the one you already use. On the Meeting notes tile the line jumps to that engine&#39;s card, and its figure is the Current card&#39;s month minus that card&#39;s month.</li>
 <li><strong>A price check</strong> (amber) appears when a provider you use was billed in a way the price table has no rate for, or when a price you typed is far from the shipped one. It links to Prices.</li>
 <li><strong>The map</strong> puts each meeting engine by what it costs per meeting hour all in (left is cheaper) and by its live speed: <strong>Live, instant</strong>, <strong>After the call only</strong> or <strong>Live, falls behind</strong>. Your engine is ringed. Every dot, your own included, is priced with the live transcript set as it is now, and the line under the map&#39;s title says which one that is (<strong>Live transcript: this PC, free</strong>). A model on this PC that keeps up with a live meeting sits on the first row too, and its card reads <strong>A few seconds behind · this PC (free)</strong>. Sorting the cards by price gives the map&#39;s left-to-right order.</li>
-<li><strong>A card for each option</strong>: what it would cost a month at your pace, what you would save a month and a year, its live speed, how well it tells speakers apart, and its accuracy. <strong>Accuracy</strong> says <strong>Not measured yet</strong> until you run a comparison.</li>
+<li><strong>A card for each option</strong>: what it would cost a month at your pace, what you would save a month and a year, its live speed, how well it tells speakers apart (an engine with no labels of its own reads <strong>Told apart on this PC, less reliable on busy calls</strong> once the speaker files are installed, and offers their download until then), and its accuracy. <strong>Accuracy</strong> says <strong>Not measured yet</strong> until you run a comparison.</li>
 <li><strong>Your live transcript.</strong> Deepgram and AssemblyAI stream a live transcript from the cloud (billed by how long the stream stays connected). The monthly figure uses the live hours really sent, so the default (stream only while the window is open) shows up as less to pay right away. If you chose a live service other than the one that writes your notes (<strong>Settings › Notes › Live window › Live transcript by</strong>), a card says it stays on, billed separately. A live transcript written by a model on this PC, including one on your graphics card, costs nothing. When a model on your card keeps up with a live meeting, the card for the engine you use also says <strong>With the live transcript on your graphics card:</strong> and what its month would come to without the cloud live stream.</li>
 <li><strong>Every add-on is counted.</strong> AssemblyAI and Deepgram bill speaker labels and your Dictionary&#39;s words (key terms) on top of the plain rate, after the call and live. The card for the engine you use is made from what it really billed you in the last 30 days (with its live stream left out once your live transcript is not a cloud one): those meetings&#39; priced rows, live and after the call together, at your pace for a month. The other cards come from the price table with the add-ons your settings would turn on for that engine. With less than two meeting hours on your engine, its card is made from the table too.</li>
 <li><strong>The basis</strong> is written under the cards: <em>At your pace over the last 30 days: 48 meeting hours. Last 7 days on AssemblyAI: $16.30.</em> The second sentence appears when your engine has rows in the last 7 days. When the live transcript is on this PC it says <em>Live transcript on this PC since Nov 19: not counted.</em>, because the stream your older meetings paid for is no longer part of what you pay.</li>
@@ -232,7 +232,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.36</a>
+        <a class="sf-ver" href="/changelog/">v1.0.38</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

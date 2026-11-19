@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.36"
+      "softwareVersion": "1.0.38"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Speech models</h1>
       <p class="docs-lead">Choose what turns your voice into text, with a cloud service and your own key, a model on this PC, or (new in 0.6.0) your graphics card.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.31</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.39</p>
       <p>A speech model is the engine that listens to audio and writes the words. A9 Voice has no engine of its own that you pay for: you bring a key for a cloud service, or you download a model that runs on your PC. You can mix them, and you can use a different one for dictation, for notes and as a spare.</p>
 <p>Everything here is in <strong>Settings › Models</strong>. Which job uses which engine is chosen at the top, under <strong>What each job uses</strong> (see <a href="/docs/models/">Models</a>). Under <strong>Providers and keys</strong> the speech part has two groups: <strong>SPEECH SERVICES</strong> (services you reach with a key) and <strong>ON THIS PC</strong> (models that work offline).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-page-1x.webp" srcset="/img/docs/speech-models-page-1x.webp 1x, /img/docs/speech-models-page.webp 2x" width="912" height="353" alt="The speech services under Providers and keys" loading="lazy" decoding="async"><figcaption>1: the speech services. 2: your own server.</figcaption></figure></p>
@@ -153,7 +153,7 @@
 <p>The fallback is tried once when the model in use fails, is rate-limited, or takes longer than the limit shown under <strong>Fallback for dictation</strong> (4 s). In the pill you see <strong>via</strong> and the fallback&#39;s name when it answered.</p>
 <p>If you have a model on this PC and both cloud models fail, it answers last. With no internet at all, the cloud fallback is skipped (it would fail too) and a model on this PC answers straight away; the pill says <strong>offline</strong>. More in <a href="#without-internet">Without internet</a>.</p>
 <h3 id="which-models-tell-speakers-apart">Which models tell speakers apart<a class="anchor" href="#which-models-tell-speakers-apart" aria-label="Link to Which models tell speakers apart">#</a></h3>
-<p>For meeting notes, <strong>Deepgram</strong>, <strong>ElevenLabs</strong>, <strong>AssemblyAI</strong> and <strong>Mistral (Voxtral)</strong> (and models on this PC with <strong>Identify speakers</strong> on) tell the people on a call apart. Groq, OpenAI and other custom servers can&#39;t: notes label everyone but you as one speaker. Choosing one of those for <strong>Meeting notes</strong> shows an amber warning with a <strong>Fix this</strong> button, and asks <strong>Use it anyway?</strong> once. See <a href="/docs/models/#telling-the-other-people-on-a-call-apart">Models</a>.</p>
+<p>For meeting notes, <strong>Deepgram</strong>, <strong>ElevenLabs</strong>, <strong>AssemblyAI</strong> and <strong>Mistral (Voxtral)</strong> (and models on this PC with <strong>Identify speakers</strong> on) tell the people on a call apart. Groq, OpenAI and other custom servers have no speaker labels of their own. With the speaker files downloaded and <strong>Identify speakers</strong> on, A9 Voice tells the other people apart on this PC after the call (see <a href="/docs/speakers-on-this-pc/#after-the-call-for-a-service-with-no-labels">Speakers on this PC</a>); without them, notes label everyone but you as one speaker, the row shows an amber warning with a <strong>Download</strong> button, and choosing one of those for <strong>Meeting notes</strong> asks <strong>Use it anyway?</strong> once. See <a href="/docs/models/#telling-the-other-people-on-a-call-apart">Models</a>.</p>
 <p>When you save your first Deepgram key and your notes model can&#39;t tell speakers apart, the key window shows a box, <strong>Also use Deepgram for Meeting notes</strong>, checked. Leave it checked and Meeting notes move to Deepgram, which means your meeting audio is sent there. Uncheck it and the key is saved while Meeting notes stay on the model they use now. It asks only for a first key, and never when Meeting notes already use Deepgram, ElevenLabs or a model on this PC. Your dictation model is never changed by this. You can change Meeting notes later under <strong>What each job uses</strong>.</p>
 <h2 id="set-up-a-cloud-provider">Set up a cloud provider<a class="anchor" href="#set-up-a-cloud-provider" aria-label="Link to Set up a cloud provider">#</a></h2>
 <p>The steps are the same for every provider. The only things that change are where you get the key and which model you pick. Your keys stay on your PC: they go into Windows Credential Manager and never into a file, a log or the app&#39;s storage. A9 Voice only ever learns &quot;key saved&quot; or &quot;no key&quot;.</p>
@@ -171,7 +171,7 @@
 <p><figure class="shot"><img src="/img/docs/speech-models-groq-key-1x.webp" srcset="/img/docs/speech-models-groq-key-1x.webp 1x, /img/docs/speech-models-groq-key.webp 2x" width="552" height="562" alt="The Groq window with no key yet" loading="lazy" decoding="async"><figcaption>1: the key button opens Groq's key page.</figcaption></figure></p>
 <p>Paste the key and test it. Then choose the model (<strong>Whisper Large v3 Turbo</strong> or <strong>Whisper Large v3</strong>).</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-groq-tested-1x.webp" srcset="/img/docs/speech-models-groq-tested-1x.webp 1x, /img/docs/speech-models-groq-tested.webp 2x" width="552" height="562" alt="A pasted key and a passed test" loading="lazy" decoding="async"><figcaption>2: paste. 3: test. 4: save.</figcaption></figure></p>
-<p>Groq can&#39;t tell speakers apart and doesn&#39;t stream. The same Groq key is also used for <a href="/docs/language-models/">Language models</a>, so you only add it once.</p>
+<p>Groq doesn&#39;t label speakers and doesn&#39;t stream; A9 Voice tells the other people apart on this PC after the call when the speaker files are installed. The same Groq key is also used for <a href="/docs/language-models/">Language models</a>, so you only add it once.</p>
 <h3 id="deepgram">Deepgram<a class="anchor" href="#deepgram" aria-label="Link to Deepgram">#</a></h3>
 <p>Key page: <a href="https://console.deepgram.com/">console.deepgram.com</a>. The window says <strong>$200 of free credit, no card needed.</strong> and the button reads <strong>Get your free Deepgram key →</strong>.</p>
 <p>Models: <strong>Nova-3</strong> and <strong>Nova-2</strong>. Deepgram tells speakers apart, which makes it the best choice for notes, and it is the one used for the live transcript during a recording (see <a href="/docs/live-window/">Live window</a>).</p>
@@ -180,10 +180,10 @@
 <h3 id="openai">OpenAI<a class="anchor" href="#openai" aria-label="Link to OpenAI">#</a></h3>
 <p>Key page: <a href="https://platform.openai.com/api-keys">platform.openai.com/api-keys</a>. The button reads <strong>Get your OpenAI key →</strong>, with no promise of a free tier.</p>
 <p><figure class="shot"><img src="/img/docs/speech-models-openai-key-1x.webp" srcset="/img/docs/speech-models-openai-key-1x.webp 1x, /img/docs/speech-models-openai-key.webp 2x" width="552" height="538" alt="The OpenAI window with no key yet" loading="lazy" decoding="async"><figcaption>The model list is a drop-down.</figcaption></figure></p>
-<p>Models: <strong>GPT-4o mini Transcribe</strong>, <strong>GPT-4o Transcribe</strong> and <strong>Whisper</strong>. OpenAI can&#39;t tell speakers apart. For notes, A9 Voice uses <strong>Whisper</strong> with OpenAI because the GPT-4o models don&#39;t give the timestamps a note needs. The same key is used for OpenAI <a href="/docs/language-models/">language models</a>.</p>
+<p>Models: <strong>GPT-4o mini Transcribe</strong>, <strong>GPT-4o Transcribe</strong> and <strong>Whisper</strong>. OpenAI doesn&#39;t label speakers (this PC does, after the call, when the speaker files are installed). For notes, A9 Voice uses <strong>Whisper</strong> with OpenAI because the GPT-4o models don&#39;t give the timestamps a note needs. The same key is used for OpenAI <a href="/docs/language-models/">language models</a>.</p>
 <h3 id="elevenlabs">ElevenLabs<a class="anchor" href="#elevenlabs" aria-label="Link to ElevenLabs">#</a></h3>
 <p>Key page: <a href="https://elevenlabs.io/app/settings/api-keys">elevenlabs.io/app/settings/api-keys</a>. The button reads <strong>Get your ElevenLabs key →</strong>.</p>
-<p>Models: <strong>Scribe v2</strong> and <strong>Scribe v1</strong>. ElevenLabs tells speakers apart, so it works well for notes.</p>
+<p>Models: <strong>Scribe v3</strong>, <strong>Scribe v2</strong> and <strong>Scribe v1</strong>. A new pick uses Scribe v3, which ElevenLabs lists at $0.20 an hour; a copy that already uses Scribe v2 stays on it, and the list says <strong>Scribe v3 is available</strong> under the older rows. ElevenLabs tells speakers apart, so it works well for notes.</p>
 <h3 id="assemblyai">AssemblyAI<a class="anchor" href="#assemblyai" aria-label="Link to AssemblyAI">#</a></h3>
 <p>Key page: <a href="https://www.assemblyai.com/dashboard/api-keys">assemblyai.com/dashboard/api-keys</a>. The button reads <strong>Get your AssemblyAI key →</strong>.</p>
 <p>Models, under <strong>Model</strong>: <strong>Universal-3.5 Pro</strong> (the default, the most accurate) and <strong>Universal-2</strong> (cheaper, 99 languages). <strong>Test</strong> sends the 2-second test clip and shows what it heard and how long it took; a key that is wrong, an account with no credit left, or a model your plan doesn&#39;t have is said in plain words.</p>
@@ -208,7 +208,7 @@
 <tr><td><strong>Speaches (on this PC)</strong></td><td>nothing; its server must be running (<code>http://localhost:8000/v1</code>)</td><td>Nothing leaves your PC.</td></tr>
 <tr><td><strong>Other (OpenAI-compatible)</strong></td><td>the server&#39;s address, and a key if it wants one</td><td>Any server with an <code>/audio/transcriptions</code> address, on this PC or your network.</td></tr>
 </tbody></table></div>
-<p>Together, Speaches and <strong>Other</strong> are Whisper-style: A9 Voice sends the audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint, and gets back the text. None of them is asked to tell speakers apart, so in <strong>Meeting notes</strong> each shows <strong>One speaker for everyone else</strong>: it works for dictation and for notes with you and one other voice, but use Deepgram, ElevenLabs, Mistral (Voxtral) or a model on this PC when you need Ana told from Ben. The window says so under the key box.</p>
+<p>Together, Speaches and <strong>Other</strong> are Whisper-style: A9 Voice sends the audio, the model name, your dictation language and your <a href="/docs/dictionary/">Dictionary</a> words as a hint, and gets back the text. None of them is asked to tell speakers apart. With the speaker files downloaded, this PC tells the other people apart after the call; without them <strong>Meeting notes</strong> shows <strong>One speaker for everyone else</strong>, which works for notes with you and one other voice. Deepgram, ElevenLabs, Mistral (Voxtral) and a model on this PC label speakers themselves. The window says so under the key box.</p>
 <p><strong>Mistral (Voxtral)</strong> uses Mistral&#39;s own transcription request instead (<code>voxtral-mini-latest</code>, Voxtral Mini Transcribe, after the call). The window opens with that model already filled in, so you can paste a key and <strong>Test</strong> at once. It is used for dictation and for Meeting notes, where it labels the other people (Speaker 2, Speaker 3) so naming and voice tags work as they do with Deepgram. Your <a href="/docs/dictionary/">Dictionary</a> words (up to 100) are sent along as spelling hints. Mistral&#39;s live model is not used: the live transcript stays on Deepgram or a model on this PC. In <strong>Usage &amp; cost</strong> its audio is priced at Mistral&#39;s per-minute rate, which you can edit under <strong>Prices</strong>.</p>
 <ol>
 <li>Click <strong>Add custom API</strong> at the end of the cloud tiles (or the <strong>Mistral</strong> tile for Voxtral).</li>
@@ -390,7 +390,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.36</a>
+        <a class="sf-ver" href="/changelog/">v1.0.38</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>

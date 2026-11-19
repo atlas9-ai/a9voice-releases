@@ -83,7 +83,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.36"
+      "softwareVersion": "1.0.38"
     }
   ]
 }
@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-38">
+  <section class="log-entry" aria-labelledby="v-1-0-39">
+  <h2 id="v-1-0-39">1.0.39 <time datetime="2026-11-19">November 19, 2026</time></h2>
+  <ul><li><strong>Groq, OpenAI and other services without speaker labels now get speakers told apart on this PC.</strong> After a call, A9 Voice runs the speaker model over the other people&#39;s side of the recording (the Live window no longer has to be open) and gives each line to the person who spoke it; where the service sends word times, a line is cut where the speaker changes. It needs the speaker files and <strong>Identify speakers</strong>; <strong>Models</strong> and the Savings card say so, and offer the download. See <a href="/docs/speakers-on-this-pc/#after-the-call-for-a-service-with-no-labels">Speakers on this PC</a>.</li>
+<li><strong>ElevenLabs Scribe v3.</strong> New ElevenLabs picks use Scribe v3 ($0.20 an hour, with speaker labels), and the older Scribe rows say <strong>Scribe v3 is available</strong>. Nobody is moved: a copy that uses Scribe v2 stays on it.</li>
+<li><strong>Prices checked again on 19 Nov.</strong> Scribe v2 is $0.20 an hour after the call and Scribe v3 and v2 live are $0.22. The Savings tab uses them.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-38">
   <h2 id="v-1-0-38">1.0.38 <time datetime="2026-11-18">November 18, 2026</time></h2>
   <ul><li><strong>The Savings tab prices your current setup with the live transcript you have chosen, and shows moving it to your graphics card as an offer.</strong> The Current card used to keep the cost of a live stream you had already moved to this PC, and the map and the cards used different bases. Now the dots, your own dot and the cards share one price per meeting hour, the map says which live source it assumes (<strong>Live transcript: this PC, free</strong>), and a model on this PC that keeps up reads <strong>A few seconds behind · this PC (free)</strong>. <strong>Live transcript by</strong> shows what is set now and what an hour of it costs, and <strong>Move the live transcript to your graphics card</strong> has a <strong>Switch</strong>. See <a href="/docs/usage-and-cost/#savings">Savings</a>.</li>
 <li><strong>Each Savings tile says what you use and where the saving is.</strong> <strong>You use: AssemblyAI Universal-3.5 Pro</strong>, then <strong>Could save $X/mo with Deepgram Nova-3</strong>, which jumps to that engine&#39;s card. The figure is the Current card&#39;s month minus that card&#39;s month, so a tile can no longer disagree with the cards under it.</li>
@@ -710,7 +716,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.36</a>
+        <a class="sf-ver" href="/changelog/">v1.0.38</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
