@@ -1,0 +1,13 @@
+{
+  "version": "1.0.42",
+  "notes": "- New speech service: Modulate, the lowest price per hour. Read its data-use note before you choose it.\n- **Modulate may train on the audio you send unless you opt out with them.** Its key window and its row in the list say so in amber, with a link to what Modulate says, and the first time you make it your notes engine, your live transcript or your dictation, A9 Voice asks once: **Use Modulate** or **Cancel**. It is never part of the free setup, and Savings shows its price without a verdict: no **Best value**, no **Good fit**, no **Could save**.\n- **Notes and the live transcript on one key.** After the call each side goes up in parts, with speaker labels on the other people's side and your Dictionary as custom terms (**Velma Multilingual**, about $0.03 an hour; **Velma English Fast**, $0.025, English only and without the Dictionary). Live uses the English stream when **Language you speak** is English, else the multilingual one, about $0.10 and $0.12 an hour for both sides. Modulate allows three requests at a time per model, so a busy moment waits and tries again instead of failing your note.",
+  "pub_date": "2026-11-19T22:45:48Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEc3Ym5uZUJWWkVEKzBoZkZSK2oxT3Y0bHZKc1hPa3I2bzI5TzZ5V3ZwTTl0QW9JK0ZFTmxHSGZaS0ozU1hiRHROeHBia2Z1Y09XSExKU1NYRmtJQVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTI4Mjk0CWZpbGU6QTkgVm9pY2VfMS4wLjQyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDIKdzF0ZHN6T2VLM0JPOW5LSk5RODlWMTVzdFlUMHNiRXhRTUJMUnVSSkZtT3V1eEd6eUhXd1ZZcVZKMXRWN091Mll3T29YSXdLQWcyWFpHa2NUMzVnQlE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.42/A9Voice_1.0.42_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "01224a3a7a5b03655ce4bf390a1a4410d33490c817b7addf3b1d8ee6239e88b2",
+  "installer_size": 13297139
+}
