@@ -1,0 +1,13 @@
+{
+  "version": "1.0.37",
+  "notes": "- **Connect to Claude Desktop with one click: A9 Voice now installs as a Claude extension, so it keeps working when Claude updates.** **Settings › Connectors › Add to Claude** opens the extension file and Claude shows its own Install window; A9 Voice no longer has to edit Claude's settings file for you. The page says \"Claude Desktop last loaded the connector today at 12:40 (extension)\" once Claude has really started it. See [Add A9 Voice to Claude Desktop](/docs/connector/#add-a9-voice-to-claude-desktop).\n- **If your company manages Claude, send the extension file to your Claude admin.** **Save the extension file…** saves `A9Voice-Connector.mcpb` (it is also on every release), and the page and the manual explain how an owner of a Team or Enterprise plan adds it for the whole organization. See [If your company manages Claude](/docs/connector/#if-your-company-manages-claude).\n- **One copy only.** If you connected through the settings file before and Claude now loads A9 Voice as the extension, the page asks whether to remove the old entry (a backup copy first, never without your click). The settings-file way, and other AI apps, stay under **Other ways to connect**, and nothing you connected before is changed.",
+  "pub_date": "2026-11-19T03:21:10Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdMMHQzbFNqK1RLS0lIYUNjUTB2TlNQNXpVVGxVMGxNUDlrdks4ZjNCem5SQnRxODN6VkdjUVpJVFJCSkF0S3g1bnpwR1VsMmdRaEh3SWpYZTZjdEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU4NDAxCWZpbGU6QTkgVm9pY2VfMS4wLjM3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMzcKT1RlOWhZYktXbU85UzhKNEE2WW8wVW5SZ3J1UHprOEpIVmRpYVBUWVZacU9pelR4cVhtaGRTN2QzUHdEZWhWZHlIMTAxdnhZRGR2MklOaEdxbDg2Qmc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.37/A9Voice_1.0.37_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "987c75bbb36ef84907be0792ec1b11bc2bb825ec28e24eef5b1258cffb19c4bc",
+  "installer_size": 13213153
+}
