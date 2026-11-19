@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.39"
+      "softwareVersion": "1.0.41"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.41</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.42</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window hangs off the recording bar while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. The other people can be told apart while the call goes on by a cloud service or, free and private, on your own PC: see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -182,14 +182,15 @@
 <p>The smallest size is 380 by 320 pixels. At narrow sizes the markers and pickers wrap onto a second line.</p>
 <p><figure class="shot"><img src="/img/docs/live-window-small-1x.webp" srcset="/img/docs/live-window-small-1x.webp 1x, /img/docs/live-window-small.webp 2x" width="380" height="480" alt="The Live window at its narrowest" loading="lazy" decoding="async"><figcaption>At 380 pixels wide everything is still there.</figcaption></figure></p>
 <h2 id="the-live-transcript-needs-a-speech-source">The Live transcript needs a speech source<a class="anchor" href="#the-live-transcript-needs-a-speech-source" aria-label="Link to The Live transcript needs a speech source">#</a></h2>
-<p>The live lines come from a live speech service, separate from the transcript of the finished note. <strong>Settings › Notes › Live window › Live transcript by</strong> says who writes them: <strong>Automatic</strong> (the default), <strong>AssemblyAI</strong>, <strong>Soniox</strong>, <strong>Deepgram</strong> or a <strong>speech model on this PC</strong>. It lists only what can stream with what you have set up: a service whose key is saved, and a model on this PC that keeps up with real time (one that doesn&#39;t is listed switched off, <strong>Falls behind on this PC</strong>). Each choice shows what it costs an hour while it streams, with your settings. If a choice stops working (its key or model is gone), Automatic is used instead and the row says so.</p>
+<p>The live lines come from a live speech service, separate from the transcript of the finished note. <strong>Settings › Notes › Live window › Live transcript by</strong> says who writes them: <strong>Automatic</strong> (the default), <strong>AssemblyAI</strong>, <strong>Soniox</strong>, <strong>Modulate</strong>, <strong>Deepgram</strong> or a <strong>speech model on this PC</strong>. Modulate may train on the audio you send unless you opt out with it: choosing it asks once, and Automatic never picks it. It lists only what can stream with what you have set up: a service whose key is saved, and a model on this PC that keeps up with real time (one that doesn&#39;t is listed switched off, <strong>Falls behind on this PC</strong>). Each choice shows what it costs an hour while it streams, with your settings. If a choice stops working (its key or model is gone), Automatic is used instead and the row says so.</p>
 <p><strong>Automatic</strong> follows the speech model that writes your notes:</p>
 <ul>
 <li><strong>Deepgram writes the notes.</strong> With a Deepgram key, the two sides stream to Deepgram while the window is open. Deepgram bills it per channel, at its live rate.</li>
 <li><strong>AssemblyAI writes the notes.</strong> With its key, the two sides stream to AssemblyAI (Universal-Streaming, or AssemblyAI-STT-3.7 Realtime when your notes use STT-3.7 or you choose it) while the window is open, on the same key (no second bill). The window says <strong>Live transcript via AssemblyAI</strong> with what it costs; the other people&#39;s side has speaker labels, so each person is their own speaker to name.</li>
+<li><strong>Modulate writes the notes.</strong> With its key, the two sides stream to Modulate while the window is open, on the same key (no second bill): <strong>Velma English Streaming</strong> when <strong>Language you speak</strong> is English, <strong>Velma Multilingual Streaming</strong> otherwise. The window says <strong>Live transcript via Modulate</strong> with what it costs (about $0.10 or $0.12 an hour for both sides, speaker labels included). If Modulate has all three of its streams taken, the window keeps asking, and says so after a while; it never drops the transcript for that. Text settles into a line when the speaker pauses, and the other people&#39;s lines show <strong>Identifying…</strong> until Modulate says who spoke.</li>
 <li><strong>Soniox writes the notes.</strong> With its key, the two sides stream to Soniox while the window is open, on the same key (no second bill). The window says <strong>Live transcript via Soniox</strong> with what it costs (about $0.24 an hour for both sides, speaker labels included); the other people&#39;s side has Soniox&#39;s speaker labels, which can shift as the call goes on, or this PC tells them apart when the speaker files are installed.</li>
 <li><strong>Another cloud service writes the notes</strong> (ElevenLabs, Groq, OpenAI or one you added). If a speech model on this PC is installed and keeps up with real time, the live lines are made there, free, and the window says <strong>Live transcript on this PC (free).</strong> Nothing streams to a cloud service.</li>
-<li><strong>Another cloud service writes the notes, and no model on this PC takes the live part.</strong> Nothing streams to a second service on its own, because it is not the one writing your notes and would bill you separately. The window says so and offers <strong>Use Deepgram for the live transcript</strong>; once you do, <strong>Live transcript by</strong> is set to Deepgram and the window says <strong>Live transcript via Deepgram, billed separately.</strong> Without a Deepgram key it says <strong>Live transcript needs a speech model on this PC or a Deepgram key.</strong> with an <strong>Open Models</strong> link. You can also pick AssemblyAI or Soniox under <strong>Live transcript by</strong>.</li>
+<li><strong>Another cloud service writes the notes, and no model on this PC takes the live part.</strong> Nothing streams to a second service on its own, because it is not the one writing your notes and would bill you separately. The window says so and offers <strong>Use Deepgram for the live transcript</strong>; once you do, <strong>Live transcript by</strong> is set to Deepgram and the window says <strong>Live transcript via Deepgram, billed separately.</strong> Without a Deepgram key it says <strong>Live transcript needs a speech model on this PC or a Deepgram key.</strong> with an <strong>Open Models</strong> link. You can also pick AssemblyAI, Soniox or Modulate under <strong>Live transcript by</strong>.</li>
 <li><strong>Notes use a model on this PC.</strong> The live lines are made there too, if that model keeps up. If it doesn&#39;t, the window says <strong>Live transcript needs a cloud speech key or a faster PC. The note is still recorded.</strong></li>
 </ul>
 <p><strong>Settings › Notes › Live window › Live transcript</strong> sets when the cloud stream runs, or turns it off. See <a href="/docs/speech-models/">Speech models</a>.</p>
@@ -233,7 +234,7 @@
 <tr><td><strong>Priya</strong> with a filled check</td><td>You named them, or confirmed a match (&quot;You confirmed this&quot;). A name you gave to just one line has it too.</td></tr>
 </tbody></table></div>
 <p>An <strong>Identifying…</strong> line becomes its speaker in place, with a brief fade, when the speech around it settles. Nothing in the transcript moves or jumps, and a line you fixed by hand never changes. Click <strong>Identifying…</strong> to say who it is yourself: for such a line the choice is <strong>Just this line</strong>, since there is no speaker to name yet. A line that stays <strong>Identifying…</strong> after the call is still there in the finished note, which is made again from the whole recording.</p>
-<p>When the live service labels the speakers instead of your PC (see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>), the window says <strong>Speakers by Deepgram · labels may shift</strong> (or AssemblyAI or Soniox). The service gives no sureness, so a label can change as the call goes on. A turn it cannot make out shows as <strong>Identifying…</strong>, and a name never appears on a line only because the line before it had that name.</p>
+<p>When the live service labels the speakers instead of your PC (see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>), the window says <strong>Speakers by Deepgram · labels may shift</strong> (or AssemblyAI, Soniox or Modulate). The service gives no sureness, so a label can change as the call goes on. A turn it cannot make out shows as <strong>Identifying…</strong>, and a name never appears on a line only because the line before it had that name.</p>
 <h3 id="name-a-speaker-from-their-chip">Name a speaker from their chip<a class="anchor" href="#name-a-speaker-from-their-chip" aria-label="Link to Name a speaker from their chip">#</a></h3>
 <ol>
 <li>Click the chip of the person you want to name.</li>
@@ -409,7 +410,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.39</a>
+        <a class="sf-ver" href="/changelog/">v1.0.41</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
