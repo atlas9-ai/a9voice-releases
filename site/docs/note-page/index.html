@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>The note page</h1>
       <p class="docs-lead">Where a finished recording lives. Read the summary, fix a wrong speaker name or a misheard word, leave out something that was never part of the meeting, play any line back, and run the transcript or summary again.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.29</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.38</p>
       <p>Every recording becomes a note. You find it in the <strong>Notes</strong> list, open it, and the note page shows the summary, the transcript, the people, the pictures and the audio in one place. Everything you change here is also written to the note&#39;s folder on your PC at once.</p>
 <h2 id="the-notes-list">The Notes list<a class="anchor" href="#the-notes-list" aria-label="Link to The Notes list">#</a></h2>
 <p>Click <strong>Notes</strong> in the sidebar.</p>
@@ -346,14 +346,14 @@
 <ol>
 <li>Under <strong>Regenerate transcript</strong>, pick a speech model. Models that are not set up yet are greyed out &quot;(set up first)&quot;. Models on this PC appear as &quot;(on this PC)&quot;.</li>
 <li>Leave <strong>Identify speakers</strong> ticked to separate the people. It is greyed out for a model that cannot do it.</li>
-<li>Click <strong>Regenerate transcript</strong>.</li>
+<li>Click <strong>Regenerate transcript</strong>. With <strong>Send only speech</strong> on and a cloud speech model, <strong>Send the whole recording</strong> next to it sends both sides whole instead of only the parts with speech (it is billed for the whole sides, and the estimate says so). Use it if a very quiet passage was missed.</li>
 </ol>
 <p>The audio is transcribed again and the note shows &quot;Transcribing…&quot; until it is done. What this does:</p>
 <ul>
 <li>It replaces every line. Corrections you made to lines are not kept.</li>
 <li>It keeps the names you gave speakers, matching them by who spoke when.</li>
 <li>It does not write the summary again. Click <strong>Regenerate summary</strong> afterwards if you want a new one.</li>
-<li>A cloud speech model uses your own key with that provider, and is billed by them to you. A model on this PC works without the internet.</li>
+<li>A cloud speech model uses your own key with that provider, and is billed by them to you. With <strong>Settings › Transcript &amp; summary › Send only speech</strong> on (it is off by default), long quiet stretches are not sent, and the note&#39;s details say <strong>Transcribed from the parts with speech (silence not sent)</strong>. A model on this PC works without the internet.</li>
 <li>It needs the audio. If the audio has been removed, the button is greyed out.</li>
 </ul>
 <h3 id="run-the-summary-again">Run the summary again<a class="anchor" href="#run-the-summary-again" aria-label="Link to Run the summary again">#</a></h3>
