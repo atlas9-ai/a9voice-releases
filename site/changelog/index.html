@@ -111,7 +111,13 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-36">
+  <section class="log-entry" aria-labelledby="v-1-0-37">
+  <h2 id="v-1-0-37">1.0.37 <time datetime="2026-11-18">November 18, 2026</time></h2>
+  <ul><li><strong>Connect to Claude Desktop with one click: A9 Voice now installs as a Claude extension, so it keeps working when Claude updates.</strong> <strong>Settings › Connectors › Add to Claude</strong> opens the extension file and Claude shows its own Install window; A9 Voice no longer has to edit Claude&#39;s settings file for you. The page says &quot;Claude Desktop last loaded the connector today at 12:40 (extension)&quot; once Claude has really started it. See <a href="/docs/connector/#add-a9-voice-to-claude-desktop">Add A9 Voice to Claude Desktop</a>.</li>
+<li><strong>If your company manages Claude, send the extension file to your Claude admin.</strong> <strong>Save the extension file…</strong> saves <code>A9Voice-Connector.mcpb</code> (it is also on every release), and the page and the manual explain how an owner of a Team or Enterprise plan adds it for the whole organization. See <a href="/docs/connector/#if-your-company-manages-claude">If your company manages Claude</a>.</li>
+<li><strong>One copy only.</strong> If you connected through the settings file before and Claude now loads A9 Voice as the extension, the page asks whether to remove the old entry (a backup copy first, never without your click). The settings-file way, and other AI apps, stay under <strong>Other ways to connect</strong>, and nothing you connected before is changed.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-36">
   <h2 id="v-1-0-36">1.0.36 <time datetime="2026-11-11">November 11, 2026</time></h2>
   <ul><li><strong>The recording bar now shows the microphone that is really recording.</strong> If you saved a microphone in <strong>Settings › Notes › Recording</strong>, the bar&#39;s menu opens ticked on it, and its last line names the device that is open, instead of showing <strong>Auto (Windows default)</strong> and the headset. The Live window&#39;s pickers say the same thing in the same words. See <a href="/docs/recording-a-meeting/#choose-the-microphone-and-computer-audio">Choose the microphone and computer audio</a>.</li>
 <li><strong>Changing one side on the bar no longer moves the other.</strong> Switching computer audio used to send the microphone back to the Windows default for that recording, and picking a microphone dropped a saved output device.</li>

@@ -41,31 +41,51 @@
  },
  "connector-claude-missing": {
   "w": 642,
-  "h": 160
+  "h": 168
  },
  "connector-claude-preview": {
   "w": 642,
-  "h": 499
+  "h": 568
  },
  "connector-connected": {
   "w": 638,
-  "h": 865
+  "h": 1101
+ },
+ "connector-extension-add": {
+  "w": 642,
+  "h": 158
+ },
+ "connector-extension-loaded": {
+  "w": 642,
+  "h": 98
+ },
+ "connector-extension-managed": {
+  "w": 642,
+  "h": 213
+ },
+ "connector-extension-two": {
+  "w": 642,
+  "h": 171
+ },
+ "connector-extension-waiting": {
+  "w": 642,
+  "h": 212
  },
  "connector-needs-fix": {
   "w": 642,
-  "h": 161
+  "h": 230
  },
  "connector-never-loaded": {
   "w": 642,
-  "h": 199
+  "h": 268
  },
  "connector-other-apps": {
   "w": 642,
-  "h": 224
+  "h": 251
  },
  "connector-page-off": {
   "w": 638,
-  "h": 775
+  "h": 1027
  },
  "connector-requests": {
   "w": 642,
@@ -73,7 +93,7 @@
  },
  "connector-store": {
   "w": 642,
-  "h": 190
+  "h": 259
  },
  "dictionary-add-fix": {
   "w": 908,
