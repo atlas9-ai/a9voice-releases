@@ -1,13 +1,13 @@
 {
-  "version": "1.0.42",
-  "notes": "- New speech service: Modulate, the lowest price per hour. Read its data-use note before you choose it.\n- **Modulate may train on the audio you send unless you opt out with them.** Its key window and its row in the list say so in amber, with a link to what Modulate says, and the first time you make it your notes engine, your live transcript or your dictation, A9 Voice asks once: **Use Modulate** or **Cancel**. It is never part of the free setup, and Savings shows its price without a verdict: no **Best value**, no **Good fit**, no **Could save**.\n- **Notes and the live transcript on one key.** After the call each side goes up in parts, with speaker labels on the other people's side and your Dictionary as custom terms (**Velma Multilingual**, about $0.03 an hour; **Velma English Fast**, $0.025, English only and without the Dictionary). Live uses the English stream when **Language you speak** is English, else the multilingual one, about $0.10 and $0.12 an hour for both sides. Modulate allows three requests at a time per model, so a busy moment waits and tries again instead of failing your note.",
-  "pub_date": "2026-11-19T22:45:48Z",
+  "version": "1.0.45",
+  "notes": "- **Command Mode: select text, hold the key and say what to do with it.** \"Make this shorter and friendlier\", \"turn this into bullet points\", \"translate this into German\": the answer replaces the selection in one paste, so your program's own Undo takes it back, and Esc cancels before it. With nothing selected, what you ask for (\"write a reply saying Thursday works\") is typed at the cursor. Off until you switch it on under **Settings › Dictation › Command Mode**, and it needs a language model. See [Command Mode](/docs/transcribe/#command-mode).\n- **Only the instruction and the selected text leave your PC**, to the language model you chose for it. It only ever produces text, treats the selection as material and never as instructions, refuses a selection over 8,000 characters, and changes nothing when it cannot read the selection or the model is too slow.",
+  "pub_date": "2026-11-20T07:28:07Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEc3Ym5uZUJWWkVEKzBoZkZSK2oxT3Y0bHZKc1hPa3I2bzI5TzZ5V3ZwTTl0QW9JK0ZFTmxHSGZaS0ozU1hiRHROeHBia2Z1Y09XSExKU1NYRmtJQVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTI4Mjk0CWZpbGU6QTkgVm9pY2VfMS4wLjQyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDIKdzF0ZHN6T2VLM0JPOW5LSk5RODlWMTVzdFlUMHNiRXhRTUJMUnVSSkZtT3V1eEd6eUhXd1ZZcVZKMXRWN091Mll3T29YSXdLQWcyWFpHa2NUMzVnQlE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.42/A9Voice_1.0.42_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdIakx1QlZQbWIwSUpLRmp2Yzc5S2V2a2xuUnZ1Tkg1OXZCaWFwYVJDd2tmTW4yMGxpN1lJb204d3h3UWtZQ0x2Um5pZE1UMFd3bnVidW81QzBvbmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTU5NjIzCWZpbGU6QTkgVm9pY2VfMS4wLjQ1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDUKbzFSMjZYbVBYbVVvUXY4SkNFWkZYSmYrR2NscTZDK3FLU29xZ1l0MUpKUCtob21zYVdXMzRCM0pIdHFJTlJpWFdublZhblphY2Q3WEJVakowRW9WREE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.45/A9Voice_1.0.45_x64-setup.exe"
     }
   },
-  "installer_sha256": "01224a3a7a5b03655ce4bf390a1a4410d33490c817b7addf3b1d8ee6239e88b2",
-  "installer_size": 13297139
+  "installer_sha256": "a98dd0638bc4e552c4c9ab2ec36d72cc8dbf9d66ffa5f4bea0868ec02f7c519d",
+  "installer_size": 13353787
 }
