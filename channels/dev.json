@@ -1,13 +1,13 @@
 {
-  "version": "1.0.43",
-  "notes": "- Savings: the price per meeting hour now belongs to the engine shown, a different model of the same service is priced on its own, and the chart's rows say what your live transcript really does.\n- Savings: a service that may train on your audio is now compared like the others, always with its warning, and one switch hides such services.",
-  "pub_date": "2026-11-20T02:58:21Z",
+  "version": "1.0.44",
+  "notes": "- **Dictation can use a different tone in each app.** With **Enhance with AI** on, mail programs start **Formal**, chat programs **Casual**, and terminals, code editors and AI chat boxes **Raw**: exactly what you said, with no language model at all. In a browser the site in the tab decides (Gmail, Slack, ChatGPT and more); the tab's title is read on your PC for that and never saved or sent. Add your own tones with a name and instructions, and set a tone for any app under **Settings › Dictation › Tones**. See [Tones](/docs/transcribe/#tones).\n- **The pill shows the tone for a moment when you start, and you can change it there.** Click the tone to list them; A9 Voice remembers your pick for that app and uses it for this dictation too. History keeps the name of the tone each dictation used.\n- **Nothing changes by itself.** With Enhance off, every app is Raw and nothing goes to a language model, as before. If Enhance was already on, your style and custom instructions became your default tone (**My style**) and every app keeps it until you turn on **Suggested tones for mail, chat and terminals**.",
+  "pub_date": "2026-11-20T03:42:10Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEFKSmpSb0NqTkJqdlAwRVZnNzNoeTY4RW9XVnhxQVVoRFhoMVZsYVBKdjVleGxvSVdWK1pMOEhwc3VYajFXd2Jsa0Y5Z1RGZmk3VFNrVVhCNnhmOUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQzNDM0CWZpbGU6QTkgVm9pY2VfMS4wLjQzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDMKbmF4UFJaT0duaFlETi9GZXFLRWNnd3dPYjBaNHlRS1BUcDJSSndjcnFUNFJ5ZGt5M3RsZU1IT0Exa2hsYW9XTWI1U2JrY1ZrMkJPUEtqMGdHa2t0REE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.43/A9Voice_1.0.43_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpXQ241N2pIQ0ZZdUNUS2Nia2NVUDhQK1QyN1ZPMm5oUkU2ZnJ1NTFEbUtTYzdlaVlUZTdKNG4ydHFibnhSc0Nyb2NyVENKOUV3bUJBcDM1WWJWTGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQ2MDY2CWZpbGU6QTkgVm9pY2VfMS4wLjQ0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDQKYWd1L1VNOVNwbWlZd2ZwSWZGbnNIUDhRQVRRMDZMSXRVc2VIeDhUZy8vNHNqTDdKa1YzWGdMQTl3REt5Wm41bW5EUW9aMDhnbW91TExLOWpQMzFaQUE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.44/A9Voice_1.0.44_x64-setup.exe"
     }
   },
-  "installer_sha256": "3d156cb084dd0ee1e91c69c8db150e7f85bd257c2eddfc682a1b1864301a04c9",
-  "installer_size": 13303446
+  "installer_sha256": "7f48b6a308ecf5a646ed14781469887958c61ca31897fd8e34a1735718166121",
+  "installer_size": 13333604
 }
