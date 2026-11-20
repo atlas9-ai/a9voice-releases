@@ -1,13 +1,13 @@
 {
-  "version": "1.0.44",
-  "notes": "- **Dictation can use a different tone in each app.** With **Enhance with AI** on, mail programs start **Formal**, chat programs **Casual**, and terminals, code editors and AI chat boxes **Raw**: exactly what you said, with no language model at all. In a browser the site in the tab decides (Gmail, Slack, ChatGPT and more); the tab's title is read on your PC for that and never saved or sent. Add your own tones with a name and instructions, and set a tone for any app under **Settings › Dictation › Tones**. See [Tones](/docs/transcribe/#tones).\n- **The pill shows the tone for a moment when you start, and you can change it there.** Click the tone to list them; A9 Voice remembers your pick for that app and uses it for this dictation too. History keeps the name of the tone each dictation used.\n- **Nothing changes by itself.** With Enhance off, every app is Raw and nothing goes to a language model, as before. If Enhance was already on, your style and custom instructions became your default tone (**My style**) and every app keeps it until you turn on **Suggested tones for mail, chat and terminals**.",
-  "pub_date": "2026-11-20T03:42:10Z",
+  "version": "1.0.45",
+  "notes": "- **Command Mode: select text, hold the key and say what to do with it.** \"Make this shorter and friendlier\", \"turn this into bullet points\", \"translate this into German\": the answer replaces the selection in one paste, so your program's own Undo takes it back, and Esc cancels before it. With nothing selected, what you ask for (\"write a reply saying Thursday works\") is typed at the cursor. Off until you switch it on under **Settings › Dictation › Command Mode**, and it needs a language model. See [Command Mode](/docs/transcribe/#command-mode).\n- **Only the instruction and the selected text leave your PC**, to the language model you chose for it. It only ever produces text, treats the selection as material and never as instructions, refuses a selection over 8,000 characters, and changes nothing when it cannot read the selection or the model is too slow.",
+  "pub_date": "2026-11-20T07:28:07Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpXQ241N2pIQ0ZZdUNUS2Nia2NVUDhQK1QyN1ZPMm5oUkU2ZnJ1NTFEbUtTYzdlaVlUZTdKNG4ydHFibnhSc0Nyb2NyVENKOUV3bUJBcDM1WWJWTGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQ2MDY2CWZpbGU6QTkgVm9pY2VfMS4wLjQ0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDQKYWd1L1VNOVNwbWlZd2ZwSWZGbnNIUDhRQVRRMDZMSXRVc2VIeDhUZy8vNHNqTDdKa1YzWGdMQTl3REt5Wm41bW5EUW9aMDhnbW91TExLOWpQMzFaQUE9PQo=",
-      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.44/A9Voice_1.0.44_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEdIakx1QlZQbWIwSUpLRmp2Yzc5S2V2a2xuUnZ1Tkg1OXZCaWFwYVJDd2tmTW4yMGxpN1lJb204d3h3UWtZQ0x2Um5pZE1UMFd3bnVidW81QzBvbmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTU5NjIzCWZpbGU6QTkgVm9pY2VfMS4wLjQ1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDUKbzFSMjZYbVBYbVVvUXY4SkNFWkZYSmYrR2NscTZDK3FLU29xZ1l0MUpKUCtob21zYVdXMzRCM0pIdHFJTlJpWFdublZhblphY2Q3WEJVakowRW9WREE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.45/A9Voice_1.0.45_x64-setup.exe"
     }
   },
-  "installer_sha256": "7f48b6a308ecf5a646ed14781469887958c61ca31897fd8e34a1735718166121",
-  "installer_size": 13333604
+  "installer_sha256": "a98dd0638bc4e552c4c9ab2ec36d72cc8dbf9d66ffa5f4bea0868ec02f7c519d",
+  "installer_size": 13353787
 }
