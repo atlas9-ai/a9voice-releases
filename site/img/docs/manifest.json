@@ -217,7 +217,7 @@
  },
  "language-models-enhance": {
   "w": 900,
-  "h": 485
+  "h": 265
  },
  "language-models-google-key": {
   "w": 552,
@@ -761,7 +761,7 @@
  },
  "transcribe-enhance": {
   "w": 818,
-  "h": 464
+  "h": 244
  },
  "transcribe-hands-free": {
   "w": 818,
@@ -782,6 +782,10 @@
  "transcribe-saved-audio": {
   "w": 810,
   "h": 345
+ },
+ "transcribe-tones": {
+  "w": 818,
+  "h": 784
  },
  "troubleshooting-diagnostics": {
   "w": 818,

@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Speech and AI</p>
       <h1>Language models</h1>
       <p class="docs-lead">Add the AI models that write your meeting summaries, answer Ask, and tidy your dictation with Enhance with AI. Use a cloud key or a model on your own PC.</p>
-      <p class="docs-updated">Last updated for A9 Voice 0.7.24</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.44</p>
       <p>A language model reads text and writes text. <a href="/docs/speech-models/">Speech models</a> turn your voice into words; language models do things with the words:</p>
 <ul>
 <li><strong>Summaries:</strong> after a meeting, one request writes the summary, a title and tags for the note.</li>
@@ -205,13 +205,12 @@
 <p>So the most reliable setup is two providers with keys. <strong>Enhance is different:</strong> it uses only its own model and has a short time limit. If it can&#39;t answer in time, you get the text as heard (see below).</p>
 <h2 id="enhance-with-ai">Enhance with AI<a class="anchor" href="#enhance-with-ai" aria-label="Link to Enhance with AI">#</a></h2>
 <p>Enhance tidies each dictation before it is typed. It is off until you turn it on, in <strong>Settings › Dictation</strong>, under <strong>Enhance with AI</strong>.</p>
-<p><figure class="shot"><img src="/img/docs/language-models-enhance-1x.webp" srcset="/img/docs/language-models-enhance-1x.webp 1x, /img/docs/language-models-enhance.webp 2x" width="900" height="485" alt="The Enhance with AI settings" loading="lazy" decoding="async"><figcaption>Model, style, time limit and your own instructions.</figcaption></figure></p>
+<p><figure class="shot"><img src="/img/docs/language-models-enhance-1x.webp" srcset="/img/docs/language-models-enhance-1x.webp 1x, /img/docs/language-models-enhance.webp 2x" width="900" height="265" alt="The Enhance with AI settings" loading="lazy" decoding="async"><figcaption>Model and time limit; tones are on the Tones card under it.</figcaption></figure></p>
 <ul>
 <li><strong>Enhance with AI:</strong> the switch. It removes “um” and “uh”, fixes punctuation and capitals, and spells your <a href="/docs/dictionary/">Dictionary</a> words right.</li>
 <li><strong>Model:</strong> the model that does it. <strong>Same as Summaries</strong> is the default. If no model is set up, the row says <strong>Add a key in Settings › Models first. Until then, text is pasted as heard.</strong></li>
-<li><strong>Style:</strong> <strong>Light cleanup</strong> or <strong>Formal</strong>. Formal only adjusts the tone a little: it can expand contractions and swap very casual words for neutral ones. It never adds content.</li>
 <li><strong>Wait at most:</strong> <strong>1.0 s</strong>, <strong>1.5 s</strong> (the starting value), <strong>2.0 s</strong> or <strong>3.0 s</strong>. Past this, the raw text is pasted so dictation never stalls.</li>
-<li><strong>Custom instructions:</strong> your own rules, for example how a name should be spelled. They can&#39;t override the rules below.</li>
+<li><strong>Tones:</strong> each app can have its own: <strong>Raw</strong> (no model at all), <strong>Light</strong>, <strong>Casual</strong>, <strong>Formal</strong> or one you add with your own instructions. See <a href="/docs/transcribe/#tones">Tones</a>.</li>
 </ul>
 <h3 id="what-it-never-does">What it never does<a class="anchor" href="#what-it-never-does" aria-label="Link to What it never does">#</a></h3>
 <p>It never rewrites, shortens, reorders, summarizes, translates or answers what you said. If you dictate a question, you get the question, tidied, not an answer. What you dictated is treated as text to edit, never as instructions.</p>
