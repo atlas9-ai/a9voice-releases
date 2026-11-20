@@ -755,6 +755,10 @@
   "w": 818,
   "h": 161
  },
+ "transcribe-command": {
+  "w": 818,
+  "h": 407
+ },
  "transcribe-dictation-settings": {
   "w": 818,
   "h": 573

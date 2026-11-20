@@ -111,7 +111,12 @@
   <p class="eyebrow">CHANGELOG</p>
   <h1>What changed</h1>
   <p class="docs-lead">What changed in each version of A9 Voice, newest first. New builds reach the Dev channel first and move to Stable once they have been tried; see <a href="/docs/updates-and-channels/">Updates and channels</a>.</p>
-  <section class="log-entry" aria-labelledby="v-1-0-44">
+  <section class="log-entry" aria-labelledby="v-1-0-45">
+  <h2 id="v-1-0-45">1.0.45 <time datetime="2026-11-19">November 19, 2026</time></h2>
+  <ul><li><strong>Command Mode: select text, hold the key and say what to do with it.</strong> &quot;Make this shorter and friendlier&quot;, &quot;turn this into bullet points&quot;, &quot;translate this into German&quot;: the answer replaces the selection in one paste, so your program&#39;s own Undo takes it back, and Esc cancels before it. With nothing selected, what you ask for (&quot;write a reply saying Thursday works&quot;) is typed at the cursor. Off until you switch it on under <strong>Settings › Dictation › Command Mode</strong>, and it needs a language model. See <a href="/docs/transcribe/#command-mode">Command Mode</a>.</li>
+<li><strong>Only the instruction and the selected text leave your PC</strong>, to the language model you chose for it. It only ever produces text, treats the selection as material and never as instructions, refuses a selection over 8,000 characters, and changes nothing when it cannot read the selection or the model is too slow.</li></ul>
+</section>
+<section class="log-entry" aria-labelledby="v-1-0-44">
   <h2 id="v-1-0-44">1.0.44 <time datetime="2026-11-19">November 19, 2026</time></h2>
   <ul><li><strong>Dictation can use a different tone in each app.</strong> With <strong>Enhance with AI</strong> on, mail programs start <strong>Formal</strong>, chat programs <strong>Casual</strong>, and terminals, code editors and AI chat boxes <strong>Raw</strong>: exactly what you said, with no language model at all. In a browser the site in the tab decides (Gmail, Slack, ChatGPT and more); the tab&#39;s title is read on your PC for that and never saved or sent. Add your own tones with a name and instructions, and set a tone for any app under <strong>Settings › Dictation › Tones</strong>. See <a href="/docs/transcribe/#tones">Tones</a>.</li>
 <li><strong>The pill shows the tone for a moment when you start, and you can change it there.</strong> Click the tone to list them; A9 Voice remembers your pick for that app and uses it for this dictation too. History keeps the name of the tone each dictation used.</li>
