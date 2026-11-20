@@ -84,7 +84,7 @@
           "priceCurrency": "USD"
         }
       ],
-      "softwareVersion": "1.0.42"
+      "softwareVersion": "1.0.45"
     }
   ]
 }
@@ -134,7 +134,7 @@
       <p class="docs-crumb"><a href="/docs/">Manual</a> · Notes</p>
       <h1>Live window</h1>
       <p class="docs-lead">The Live window shows the transcript as people talk, so you can name each speaker, mark moments, ask questions and add screenshots while the meeting is still going.</p>
-      <p class="docs-updated">Last updated for A9 Voice 1.0.42</p>
+      <p class="docs-updated">Last updated for A9 Voice 1.0.46</p>
       <h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is" aria-label="Link to What it is">#</a></h2>
 <p>The Live window hangs off the recording bar while a note records. It is a working copy of the transcript: each person has their own color, and you can tell A9 Voice who is who as you go. When the call ends, the finished note is made from the whole recording, and the names you gave are carried into it.</p>
 <p>You do not need it. A9 Voice records without it. The other people can be told apart while the call goes on by a cloud service or, free and private, on your own PC: see <a href="/docs/speakers-on-this-pc/">Speakers on this PC</a>. Use it when you want names on the note, or answers and markers during the call. For starting and stopping, see <a href="/docs/recording-a-meeting/">Recording a meeting</a>.</p>
@@ -199,7 +199,7 @@
 <p>On the card the live lines are cut at pauses into shorter pieces than on the processor (about 6 seconds instead of 12), so a line appears sooner after someone speaks. If the card gives out in the middle of a meeting, the processor finishes the piece it was reading and goes on; no line is lost, the window says <strong>Graphics card unavailable, used the processor</strong>, and the lines may lag behind the speech after that. Your notes are not affected. See <a href="/docs/speech-models/">Speech models</a> for setting up the card, and <a href="/docs/usage-and-cost/">Usage &amp; cost</a> for what it saves.</p>
 <h2 id="what-is-doing-the-work">What is doing the work<a class="anchor" href="#what-is-doing-the-work" aria-label="Link to What is doing the work">#</a></h2>
 <p>A line above the transcript says what is writing the live lines and telling the other people apart, as it is running now, not as the settings say. For example <strong>Live: Whisper Large v3 Turbo · graphics card · Speakers: this PC · graphics card</strong>, <strong>Live: AssemblyAI · Universal-Streaming · cloud · Speakers: this PC · processor</strong>, or <strong>Live: Deepgram · Nova-3 · cloud · Speakers: Deepgram labels</strong>. It has three facts: who writes the live transcript and which model, where it runs (<strong>cloud</strong>, <strong>graphics card</strong> or <strong>processor</strong>), and who tells the other people apart live (<strong>this PC</strong>, with where, or the service&#39;s own labels). If nothing tells them apart live, that last part is left out.</p>
-<p>It follows what happens in the meeting. If the graphics card gives out, the line changes to the processor and adds <strong>(graphics card unavailable)</strong> in amber, next to the one-time notice below the header; the words are there so the color is never the only signal. In the shortest Live window there is no room for the line, so it stays out of the way until the card gives out. Hover the line for the graphics card&#39;s name, what the live part costs an hour (<strong>nothing</strong> when it runs on this PC) and which engine writes your notes after the call. The same facts for the last meeting are under <strong>Settings › Notes › Live window › Live transcript by</strong> as <strong>Last meeting used</strong>, so you can check what ran without making a call.</p>
+<p>It follows what happens in the meeting. If the graphics card gives out, the line changes to the processor and adds <strong>(graphics card unavailable)</strong> in amber, next to the one-time notice below the header; the words are there so the color is never the only signal. In the shortest Live window there is no room for the line, so it stays out of the way until the card gives out. Hover the line for the two passes in one sentence (<em>During the call: ... writes the live transcript, a draft. After the call: ... writes the transcript your notes are made from.</em>), the graphics card&#39;s name and what the live part costs an hour (<strong>nothing</strong> when it runs on this PC). The same facts for the last meeting are under <strong>Settings › Notes › Live window › Live transcript by</strong> as <strong>Last meeting used</strong>, so you can check what ran without making a call.</p>
 <h2 id="when-the-live-transcript-runs">When the live transcript runs<a class="anchor" href="#when-the-live-transcript-runs" aria-label="Link to When the live transcript runs">#</a></h2>
 <p>The live transcript is billed by your speech provider at its live rate, and your notes are made from the whole recording after the call either way. So by default it runs <strong>while the Live window is open</strong>:</p>
 <ul>
@@ -410,7 +410,7 @@
         <a href="/guides/voice-typing-windows/">Guides</a>
         <a href="/about">About</a>
         <a href="/changelog/">Changelog</a>
-        <a class="sf-ver" href="/changelog/">v1.0.42</a>
+        <a class="sf-ver" href="/changelog/">v1.0.45</a>
         <a href="/docs/privacy-and-data/">Privacy</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/blob/main/LICENSE">License</a>
         <a href="https://github.com/atlas9-ai/a9voice-releases/issues/new/choose">Report an issue</a>
