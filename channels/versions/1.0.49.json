@@ -1,0 +1,13 @@
+{
+  "version": "1.0.49",
+  "notes": "- **A new model for the live transcript on this PC shows words as they are spoken, with far fewer mistakes.** Nemotron streaming (English only, free, private) is a 662 MB download for PCs fast enough to run it. After the download A9 Voice times it on your PC; where it keeps up, Automatic uses it (a model on your graphics card still goes first), and you can pick it under **Settings › Notes › Live window › Live transcript by**. See [Words as they are spoken](/docs/live-window/#words-as-they-are-spoken).\n- **Nobody gets a download they didn't ask for.** A PC that would use the model that reads a piece at a time sees one offer on that page and once in the Live window, with **Download** and **Not now**. In a meeting, a model that can't keep up for a minute hands the live transcript back to the lighter model, says so once and loses no line.\n- Savings says a model on your PC can write the live transcript **a moment behind** when it is this one, a few seconds behind for the others, and NVIDIA's licence line is in About and the manual.",
+  "pub_date": "2026-11-24T23:43:38Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEpZZ2RTK2pCZXMvZ3dhTWhHenNkMjVWejVyUDFJUGNqZVg0bnNEUXFqck9CdnJNWFAwaVVOWFNta2VkY3YvMTRuQnRzSldvMWhhYlcxSjFIajRwNUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTYzNzY1CWZpbGU6QTkgVm9pY2VfMS4wLjQ5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNDkKcUs5MXpnekpmakN4NVZrb2hqdVNSc1JXbXJ5cHI2cVl4T3BIOG92OUZhWHRTc3pZelRnWXgvc2Y0aXE0cS8yK3BRS1VCdUY3dEwwbjNxSHFhK29TQWc9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.49/A9Voice_1.0.49_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "92a122adee01ecd6b02dee942bc11714a9bf0a068c19f4af5e4fc3ac263ae233",
+  "installer_size": 13502687
+}
