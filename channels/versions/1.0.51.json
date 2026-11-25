@@ -1,0 +1,13 @@
+{
+  "version": "1.0.51",
+  "notes": "- The installer and the program are now signed by Atlas9 LLC, so Windows (including Smart App Control) no longer blocks the download.",
+  "pub_date": "2026-11-25T13:17:57Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEVXL1ZiL1lJMDhWYVFyUjU0Vm1ieFMxSU4zU2thTjJjZkVjdU1zVE9JSUdEb05GK1gwVlZYY1lQNjErb0dIMXY3cGpWOUYyODM0WlZCdmNsSXlKZVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEyMjI4CWZpbGU6QTkgVm9pY2VfMS4wLjUxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNTEKYTl6N0U3dUhTNk9ESUN5K3JRK2hlU25YL3VleDBsWFVPaFdJMnE1UVBWTmc3SUNtUm9xejhRSEMrVW41cC93SVBEUThHN0hxUTlycEg4SDNlOEVKRFE9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.51/A9Voice_1.0.51_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "5deecb525c92ab49f8668de3726667a9812aea62be22925f6a26c19581f0e815",
+  "installer_size": 13584184
+}
