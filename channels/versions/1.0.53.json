@@ -1,0 +1,13 @@
+{
+  "version": "1.0.53",
+  "notes": "- **Snip uses A9 Snap when it's installed** (0.22.0 or later). Its picker opens, the picture goes into your meeting note as before, and it also stays in A9 Snap's folder. See [Snip with A9 Snap](/docs/live-window/#snip-with-a9-snap).\n- Without A9 Snap, Snip works as before. The first snip offers it once, and **Settings › Notes › Recording** has a **Get A9 Snap** link. With an older A9 Snap you are told once to update it.\n- To keep the Windows snipping tool, turn off **Use A9 Snap for Snip when installed**.",
+  "pub_date": "2026-11-27T21:20:21Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRSDhlVko1ZGhMcEFaM09aWU1MSCtZcWhKVkJNWGpCR1k2TWF0bU1HSVF5QjBuaDNsa284SWI2blQ3Q1d1TVJMWjA4USt2bVdETnprQld1YkRUQXNLNDV1ZExpa1dLRXdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODE0MDE4CWZpbGU6QTkgVm9pY2VfMS4wLjUzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNTMKR0pnR1hnVFdTVFY0K1ZVL0JqcG5rTEI3Q2FOaThHbEpvZUV5cHAxUWFXVFJRekhxTTRURWFlVTdQT2FzSnVzV0E2RWlQdHBsUmpYWmhmWkNlN3k1Q2c9PQo=",
+      "url": "https://github.com/atlas9-ai/a9voice-releases/releases/download/v1.0.53/A9Voice_1.0.53_x64-setup.exe"
+    }
+  },
+  "installer_sha256": "b70a99dd8a158738aa36648301bd65ae62a5aaff2457bbb53392d34bc62f5fe2",
+  "installer_size": 13619888
+}
